@@ -1,0 +1,33 @@
+name: Scrape Rugby Matches
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 毎日UTC 00:00に実行
+  workflow_dispatch: # 手動実行用
+
+jobs:
+  scrape-epcr-challenge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+      - name: Run EPCR Challenge Cup scraper
+        run: python -m src.main epcr-challenge
+      - name: Commit and push if changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/matches/
+          git commit -m "Update EPCR Challenge Cup matches data" || exit 0
+          git push
