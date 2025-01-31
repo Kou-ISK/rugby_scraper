@@ -72,89 +72,94 @@ class EPCRChallengeCupScraper(BaseScraper):
             print(traceback.format_exc())
             return []
 
-    def _extract_match_details(self, driver, match_id):
+    def _extract_match_details(self, url):
+        """
+        試合詳細ページから情報を抽出する
+        Args:
+            url (str): 試合詳細ページのURL
+        Returns:
+            dict: 試合情報
+        """
         try:
-            # __NUXT_DATA__からマッチデータを抽出
-            nuxt_data_element = driver.find_element(By.ID, "__NUXT_DATA__")
-            nuxt_data_json = nuxt_data_element.get_attribute('textContent')
-            data = json.loads(nuxt_data_json)
-
-            # マッチデータを探索
-            match_data = None
-            for item in data:
-                if isinstance(item, dict):
-                    if 'match' in item:
-                        match_info = item['match']
-                        if str(match_info.get('id')) == str(match_id):
-                            match_data = match_info
-                            break
-                    elif 'data' in item and isinstance(item['data'], dict) and 'match' in item['data']:
-                        match_info = item['data']['match']
-                        if str(match_info.get('id')) == str(match_id):
-                            match_data = match_info
-                            break
-
-            if match_data:
-                print({
-                    'id': match_id,
-                    'date': match_data.get('date'),
-                    'home_team': match_data.get('homeTeam', {}).get('name'),
-                    'away_team': match_data.get('awayTeam', {}).get('name'),
-                    'venue': match_data.get('venue'),
-                    'broadcasters': [
-                        {
-                            'name': broadcaster.get('name'),
-                            'region': broadcaster.get('region')
-                        }
-                        for broadcaster in match_data.get('broadcasters', [])
-                    ]
-                })
-                return {
-                    'id': match_id,
-                    'date': match_data.get('date'),
-                    'home_team': match_data.get('homeTeam', {}).get('name'),
-                    'away_team': match_data.get('awayTeam', {}).get('name'),
-                    'venue': match_data.get('venue'),
-                    'broadcasters': [
-                        {
-                            'name': broadcaster.get('name'),
-                            'region': broadcaster.get('region')
-                        }
-                        for broadcaster in match_data.get('broadcasters', [])
-                    ]
-                }
-            return None
+            # ページにアクセス
+            self.driver.get(url)
+            print(f"試合詳細ページにアクセス: {url}")
+            
+            # JavaScriptの実行完了を待機
+            WebDriverWait(self.driver, 10).until(
+                lambda d: d.execute_script('return document.readyState') == 'complete'
+            )
+            
+            # APIレスポンスを待機
+            time.sleep(2)
+            
+            # ページのHTMLを取得
+            html_content = self.driver.page_source
+            soup = BeautifulSoup(html_content, 'html.parser')
+            
+            # 試合情報を抽出
+            match_info = {}
+            
+            # 日時を取得
+            date_element = soup.select_one('header .flex:has(svg:has(path[d*="M11.99 2C6.47"]))')
+            if date_element:
+                # 日時のみを抽出（改行以降は除外）
+                date_text = date_element.text.strip()
+                match_info['date'] = date_text.split('\n')[0].strip()
+            
+            # 場所を取得
+            venue_text = soup.select_one('header .flex:has(svg:has(path[d*="M12 2C8.13"]))')
+            if venue_text:
+                # 会場名のみを抽出
+                venue_lines = [v.strip() for v in venue_text.text.split('\n') if v.strip()]
+                # 日付形式を含まない行を探す（会場名を取得）
+                venue = next((v for v in venue_lines if not any(x in v for x in [':', '-', 'Attendance'])), '')
+                match_info['venue'] = venue
+            
+            # チーム名を取得
+            teams = soup.select('header a[href*="/challenge-cup/clubs/"]')
+            if len(teams) >= 2:
+                match_info['home_team'] = teams[0].text.strip()
+                match_info['away_team'] = teams[1].text.strip()
+            
+            # 放送局を取得
+            broadcaster_text = soup.select_one('header .flex:has(svg):has(path[d*="21 6H13"])')
+            if broadcaster_text:
+                broadcasters = broadcaster_text.text.strip().split('/')
+                match_info['broadcasters'] = [b.strip() for b in broadcasters]
+                
+            print(f"取得した試合情報: {match_info}")
+            return match_info
+            
         except Exception as e:
-            print(f"試合詳細の抽出に失敗 (ID: {match_id}): {str(e)}")
+            print(f"試合詳細の抽出に失敗: {str(e)}")
+            import traceback
+            print(traceback.format_exc())
             return None
 
     def scrape(self):
-        driver = None
         try:
-            driver = self._setup_driver()
-            driver.get(self.url)
+            self.driver = self._setup_driver()  # self.driverとして保存
+            self.driver.get(self.url)
             print(f"ページにアクセス: {self.url}")
             
             # ページの完全な読み込みを待機
-            WebDriverWait(driver, 30).until(
+            WebDriverWait(self.driver, 30).until(
                 lambda d: d.execute_script('return document.readyState') == 'complete'
             )
             time.sleep(5)
 
             # 試合リンクを取得
-            match_links = self._extract_match_links(driver)
+            match_links = self._extract_match_links(self.driver)
             if not match_links:
                 return None
 
             # 各試合の詳細を取得
             matches = []
             for match_link in match_links:
-                print(f"試合詳細ページにアクセス: {match_link['url']}")
-                driver.get(match_link['url'])
-                time.sleep(3)  # ページ読み込み待機
-                
-                match_info = self._extract_match_details(driver, match_link['id'])
+                match_info = self._extract_match_details(match_link['url'])
                 if match_info:
+                    match_info['id'] = match_link['id']  # IDも保存
                     matches.append(match_info)
 
             print(f"処理した試合数: {len(matches)}")
@@ -164,8 +169,8 @@ class EPCRChallengeCupScraper(BaseScraper):
             print(f"スクレイピングエラー: {str(e)}")
             return None
         finally:
-            if driver:
-                driver.quit()
+            if hasattr(self, 'driver'):
+                self.driver.quit()
 
     def save_to_json(self, data: list, filename: str = "epcr-challenge"):
         super().save_to_json(data, filename)
