@@ -1,1 +1,519 @@
-[]
+[
+  {
+    "date": "Fri, 6 Dec 2024  - 20:00",
+    "venue": "Rodney Parade",
+    "home_team": "Dragons RFC",
+    "away_team": "Montpellier Hérault Rugby",
+    "broadcasters": [
+      "S4C",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282738"
+  },
+  {
+    "date": "Sat, 7 Dec 2024  - 05:00",
+    "venue": "Kingsholm",
+    "home_team": "Gloucester Rugby",
+    "away_team": "Edinburgh Rugby",
+    "broadcasters": [
+      "Premier Sports",
+      "FloRugby"
+    ],
+    "id": "282737"
+  },
+  {
+    "date": "Sat, 7 Dec 2024  - 22:00",
+    "venue": "Stade Jean Dauger",
+    "home_team": "Aviron Bayonnais",
+    "away_team": "Scarlets",
+    "broadcasters": [
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282739"
+  },
+  {
+    "date": "Sat, 7 Dec 2024  - 22:00",
+    "venue": "Mikheil Meskhi Stadium",
+    "home_team": "Black Lion",
+    "away_team": "RC Vannes",
+    "broadcasters": [
+      "Rugby TV",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282740"
+  },
+  {
+    "date": "Sun, 8 Dec 2024  - 00:15",
+    "venue": "Matmut Stadium de Gerland",
+    "home_team": "Lyon Olympique Universitaire",
+    "away_team": "Cardiff Rugby",
+    "broadcasters": [
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282741"
+  },
+  {
+    "date": "Sun, 8 Dec 2024  - 05:00",
+    "venue": "Dexcom Stadium",
+    "home_team": "Connacht Rugby",
+    "away_team": "Zebre Parma",
+    "broadcasters": [
+      "Premier Sports",
+      "FloRugby"
+    ],
+    "id": "282742"
+  },
+  {
+    "date": "Sun, 8 Dec 2024  - 22:00",
+    "venue": "Stade du Hameau",
+    "home_team": "Section Paloise",
+    "away_team": "Newcastle Falcons",
+    "broadcasters": [
+      "France TV",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282743"
+  },
+  {
+    "date": "Sun, 8 Dec 2024  - 22:00",
+    "venue": "NRCA Stadium",
+    "home_team": "Toyota Cheetahs",
+    "away_team": "USAP",
+    "broadcasters": [
+      "SuperSport",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282744"
+  },
+  {
+    "date": "Mon, 9 Dec 2024  - 00:15",
+    "venue": "Parc y Scarlets",
+    "home_team": "Ospreys",
+    "away_team": "Emirates Lions",
+    "broadcasters": [
+      "Premier Sports",
+      "SuperSport",
+      "FloRugby"
+    ],
+    "id": "282745"
+  },
+  {
+    "date": "Sat, 14 Dec 2024  - 05:00",
+    "venue": "Hive Stadium",
+    "home_team": "Edinburgh Rugby",
+    "away_team": "Aviron Bayonnais",
+    "broadcasters": [
+      "Premier Sports",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282746"
+  },
+  {
+    "date": "Sat, 14 Dec 2024  - 22:00",
+    "venue": "GGL Stadium",
+    "home_team": "Montpellier Hérault Rugby",
+    "away_team": "Ospreys",
+    "broadcasters": [
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282748"
+  },
+  {
+    "date": "Sat, 14 Dec 2024  - 22:00",
+    "venue": "Stadio Sergio Lanfranchi",
+    "home_team": "Zebre Parma",
+    "away_team": "Lyon Olympique Universitaire",
+    "broadcasters": [
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282747"
+  },
+  {
+    "date": "Sun, 15 Dec 2024  - 00:15",
+    "venue": "Emirates Airline Park",
+    "home_team": "Emirates Lions",
+    "away_team": "Section Paloise",
+    "broadcasters": [
+      "SuperSport",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282749"
+  },
+  {
+    "date": "Sun, 15 Dec 2024  - 02:30",
+    "venue": "Stade de la Rabine",
+    "home_team": "RC Vannes",
+    "away_team": "Gloucester Rugby",
+    "broadcasters": [
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282750"
+  },
+  {
+    "date": "Sun, 15 Dec 2024  - 05:00",
+    "venue": "Cardiff Arms Park",
+    "home_team": "Cardiff Rugby",
+    "away_team": "Toyota Cheetahs",
+    "broadcasters": [
+      "S4C",
+      "SuperSport",
+      "FloRugby"
+    ],
+    "id": "282751"
+  },
+  {
+    "date": "Sun, 15 Dec 2024  - 22:00",
+    "venue": "Parc y Scarlets",
+    "home_team": "Scarlets",
+    "away_team": "Black Lion",
+    "broadcasters": [
+      "Premier Sports",
+      "Rugby TV",
+      "FloRugby"
+    ],
+    "id": "282752"
+  },
+  {
+    "date": "Sun, 15 Dec 2024  - 22:00",
+    "venue": "Stade Aime Giral",
+    "home_team": "USAP",
+    "away_team": "Connacht Rugby",
+    "broadcasters": [
+      "Premier Sports",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282753"
+  },
+  {
+    "date": "Mon, 16 Dec 2024  - 00:15",
+    "venue": "Kingston Park",
+    "home_team": "Newcastle Falcons",
+    "away_team": "Dragons RFC",
+    "broadcasters": [
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282754"
+  },
+  {
+    "date": "Sat, 11 Jan 2025  - 05:00",
+    "venue": "Kingsholm",
+    "home_team": "Gloucester Rugby",
+    "away_team": "Scarlets",
+    "broadcasters": [
+      "Premier Sports",
+      "FloRugby"
+    ],
+    "id": "282755"
+  },
+  {
+    "date": "Sat, 11 Jan 2025  - 22:00",
+    "venue": "Stade Aime Giral",
+    "home_team": "USAP",
+    "away_team": "Cardiff Rugby",
+    "broadcasters": [
+      "France TV",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282756"
+  },
+  {
+    "date": "Sat, 11 Jan 2025  - 22:00",
+    "venue": "Stade de la Rabine",
+    "home_team": "RC Vannes",
+    "away_team": "Edinburgh Rugby",
+    "broadcasters": [
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282757"
+  },
+  {
+    "date": "Sun, 12 Jan 2025  - 00:15",
+    "venue": "Mikheil Meskhi Stadium",
+    "home_team": "Black Lion",
+    "away_team": "Aviron Bayonnais",
+    "broadcasters": [
+      "Rugby TV",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282758"
+  },
+  {
+    "date": "Sun, 12 Jan 2025  - 02:30",
+    "venue": "Swansea.com Stadium",
+    "home_team": "Ospreys",
+    "away_team": "Newcastle Falcons",
+    "broadcasters": [
+      "S4C",
+      "FloRugby"
+    ],
+    "id": "282759"
+  },
+  {
+    "date": "Sun, 12 Jan 2025  - 02:30",
+    "venue": "GGL Stadium",
+    "home_team": "Montpellier Hérault Rugby",
+    "away_team": "Emirates Lions",
+    "broadcasters": [
+      "epcrugby.tv",
+      "SuperSport",
+      "FloRugby"
+    ],
+    "id": "282760"
+  },
+  {
+    "date": "Sun, 12 Jan 2025  - 05:00",
+    "venue": "Dexcom Stadium",
+    "home_team": "Connacht Rugby",
+    "away_team": "Lyon Olympique Universitaire",
+    "broadcasters": [
+      "Premier Sports",
+      "FloRugby"
+    ],
+    "id": "282761"
+  },
+  {
+    "date": "Sun, 12 Jan 2025  - 22:00",
+    "venue": "NRCA Stadium",
+    "home_team": "Toyota Cheetahs",
+    "away_team": "Zebre Parma",
+    "broadcasters": [
+      "SuperSport",
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282762"
+  },
+  {
+    "date": "Mon, 13 Jan 2025  - 00:15",
+    "venue": "Rodney Parade",
+    "home_team": "Dragons RFC",
+    "away_team": "Section Paloise",
+    "broadcasters": [
+      "Premier Sports",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282763"
+  },
+  {
+    "date": "Sat, 18 Jan 2025  - 05:00",
+    "venue": "Cardiff Arms Park",
+    "home_team": "Cardiff Rugby",
+    "away_team": "Connacht Rugby",
+    "broadcasters": [
+      "Premier Sports",
+      "FloRugby"
+    ],
+    "id": "282764"
+  },
+  {
+    "date": "Sat, 18 Jan 2025  - 05:00",
+    "venue": "Kingston Park",
+    "home_team": "Newcastle Falcons",
+    "away_team": "Montpellier Hérault Rugby",
+    "broadcasters": [
+      "epcrugby.tv",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282765"
+  },
+  {
+    "date": "Sat, 18 Jan 2025  - 22:00",
+    "venue": "Stade du Hameau",
+    "home_team": "Section Paloise",
+    "away_team": "Ospreys",
+    "broadcasters": [
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282766"
+  },
+  {
+    "date": "Sun, 19 Jan 2025  - 00:15",
+    "venue": "Emirates Airline Park",
+    "home_team": "Emirates Lions",
+    "away_team": "Dragons RFC",
+    "broadcasters": [
+      "SuperSport",
+      "FloRugby"
+    ],
+    "id": "282767"
+  },
+  {
+    "date": "Sun, 19 Jan 2025  - 02:30",
+    "venue": "Parc y Scarlets",
+    "home_team": "Scarlets",
+    "away_team": "RC Vannes",
+    "broadcasters": [
+      "S4C",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282768"
+  },
+  {
+    "date": "Sun, 19 Jan 2025  - 02:30",
+    "venue": "Matmut Stadium de Gerland",
+    "home_team": "Lyon Olympique Universitaire",
+    "away_team": "Toyota Cheetahs",
+    "broadcasters": [
+      "epcrugby.tv",
+      "SuperSport",
+      "FloRugby"
+    ],
+    "id": "282769"
+  },
+  {
+    "date": "Sun, 19 Jan 2025  - 22:00",
+    "venue": "Hive Stadium",
+    "home_team": "Edinburgh Rugby",
+    "away_team": "Black Lion",
+    "broadcasters": [
+      "Premier Sports",
+      "Rugby TV",
+      "FloRugby"
+    ],
+    "id": "282770"
+  },
+  {
+    "date": "Sun, 19 Jan 2025  - 22:00",
+    "venue": "Stade Jean Dauger",
+    "home_team": "Aviron Bayonnais",
+    "away_team": "Gloucester Rugby",
+    "broadcasters": [
+      "France TV",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282771"
+  },
+  {
+    "date": "Mon, 20 Jan 2025  - 00:15",
+    "venue": "Stadio Sergio Lanfranchi",
+    "home_team": "Zebre Parma",
+    "away_team": "USAP",
+    "broadcasters": [
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282772"
+  },
+  {
+    "date": "Sat, 5 Apr 2025  - 04:00",
+    "venue": "Hive Stadium",
+    "home_team": "Edinburgh Rugby",
+    "away_team": "Emirates Lions",
+    "broadcasters": [
+      "Premier Sports",
+      "beIN SPORTS",
+      "SuperSport",
+      "FloRugby"
+    ],
+    "id": "282775"
+  },
+  {
+    "date": "Sat, 5 Apr 2025  - 04:00",
+    "venue": "Stade du Hameau",
+    "home_team": "Section Paloise",
+    "away_team": "Bath Rugby",
+    "broadcasters": [
+      "beIN SPORTS",
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282779"
+  },
+  {
+    "date": "Sat, 5 Apr 2025  - 20:30",
+    "venue": "Stade Jean Dauger",
+    "home_team": "Aviron Bayonnais",
+    "away_team": "Vodacom Bulls",
+    "broadcasters": [
+      "France TV",
+      "beIN SPORTS",
+      "SuperSport",
+      "FloRugby",
+      "epcrugby.tv"
+    ],
+    "id": "282778"
+  },
+  {
+    "date": "Sun, 6 Apr 2025  - 01:30",
+    "venue": "GGL Stadium",
+    "home_team": "Montpellier Hérault Rugby",
+    "away_team": "Gloucester Rugby",
+    "broadcasters": [
+      "beIN SPORTS",
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282774"
+  },
+  {
+    "date": "Sun, 6 Apr 2025  - 04:00",
+    "venue": "Stade Aime Giral",
+    "home_team": "USAP",
+    "away_team": "Racing 92",
+    "broadcasters": [
+      "beIN SPORTS",
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282780"
+  },
+  {
+    "date": "Sun, 6 Apr 2025  - 04:00",
+    "venue": "Dexcom Stadium",
+    "home_team": "Connacht Rugby",
+    "away_team": "Cardiff Rugby",
+    "broadcasters": [
+      "Premier Sports",
+      "beIN SPORTS",
+      "FloRugby"
+    ],
+    "id": "282773"
+  },
+  {
+    "date": "Mon, 7 Apr 2025  - 01:30",
+    "venue": "Matmut Stadium de Gerland",
+    "home_team": "Lyon Olympique Universitaire",
+    "away_team": "Hollywoodbets Sharks",
+    "broadcasters": [
+      "beIN SPORTS",
+      "SuperSport",
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282777"
+  },
+  {
+    "date": "Mon, 7 Apr 2025  - 01:30",
+    "venue": "Swansea.com Stadium",
+    "home_team": "Ospreys",
+    "away_team": "Scarlets",
+    "broadcasters": [
+      "S4C",
+      "beIN SPORTS",
+      "epcrugby.tv",
+      "FloRugby"
+    ],
+    "id": "282776"
+  }
+]
