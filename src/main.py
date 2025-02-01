@@ -1,5 +1,6 @@
 import sys
 from src.scraper.epcr import EPCRChallengeCupScraper, EPCRChampionsCupScraper
+from src.scraper.top14 import Top14Scraper
 
 def main():
     if len(sys.argv) != 2:
@@ -10,6 +11,7 @@ def main():
     scrapers = {
         "epcr-challenge": EPCRChallengeCupScraper(),
         "epcr-champions": EPCRChampionsCupScraper(),
+        "top14": Top14Scraper(),
         # 他のスクレイパーを追加
     }
     
