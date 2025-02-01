@@ -8,7 +8,7 @@ class SixNationsScraper(BaseScraper):
     def __init__(self):
         super().__init__()
         self.base_url = "https://www.sixnationsrugby.com"
-        self.calendar_url = self.base_url + "/fixtures/"
+        self.calendar_url = self.base_url + "/en/m6n/fixtures/"
         
     def scrape(self):
         try:
@@ -16,8 +16,8 @@ class SixNationsScraper(BaseScraper):
             # 現在の日付を取得
             current_date = datetime.now()
             year = str(current_date.year)
-            
-            url = f"{self.calendar_url}/{year}"
+
+            url = f"{self.calendar_url}{year}"
             
             response = requests.get(url)
             if response.status_code != 200:
@@ -38,30 +38,45 @@ class SixNationsScraper(BaseScraper):
 
     def _extract_matches(self, soup):
         matches = []
+        current_date = None
         
         # 試合カードを直接取得
         match_cards = soup.find_all("article", class_="fixturesResultsCard_fixturesResults__qdiE7")
         
         for card in match_cards:
             try:
+                # 日付を取得（前の要素から）
+                date_element = card.find_previous("h2", class_="fixturesResultsListing_dateTitle__P0IBW")
+
+                # 時間
+                time_element = card.find("div", class_="fixturesResultsCard_status__yNPfa")
+
                 # 会場
                 venue_element = card.find("div", class_="fixturesResultsCard_stadium__eRJIL")
-                
+
                 # チーム情報
                 teams = card.find_all('span', class_="fixturesResultsCard_teamName__M7vfR")
-                
+
                 # 試合詳細URL
                 match_url = card.find("a", class_="fixturesResultsCard_cardLink__c6BTy")['href']
                 
-                if not all([venue_element, teams, match_url]):
+                # 日時を解析してdatetimeオブジェクトに変換
+                try:
+                    match_datetime = date_element.text.strip() + " " + time_element.text.strip()
+                except ValueError as e:
+                    print(f"日時の解析に失敗: {str(e)}")
                     continue
                 
                 match_info = {
+                    'date': match_datetime,
                     'venue': venue_element.text.strip(),
                     'home_team': teams[0].text.strip(),
                     'away_team': teams[1].text.strip(),
+                    'broadcasters': "",
                     'url': self.base_url + match_url
                 }
+
+                print(match_info)
                 matches.append(match_info)
                 
             except Exception as e:
