@@ -1,6 +1,7 @@
 import sys
 from src.scraper.epcr import EPCRChallengeCupScraper, EPCRChampionsCupScraper
 from src.scraper.league_one import LeagueOneScraper
+from src.scraper.six_nations import SixNationsScraper
 from src.scraper.top14 import Top14Scraper
 
 def main():
@@ -10,6 +11,7 @@ def main():
     
     scraper_type = sys.argv[1]
     scrapers = {
+        "six-nations": SixNationsScraper(),
         "epcr-challenge": EPCRChallengeCupScraper(),
         "epcr-champions": EPCRChampionsCupScraper(),
         "top14": Top14Scraper(),
