@@ -1,3 +1,4 @@
+import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -75,26 +76,23 @@ class Top14Scraper(BaseScraper):
 
     def _extract_match_details(self, url):
         try:
-            self.driver.get(url)
+            response = requests.get(url)
             print(f"試合詳細ページにアクセス: {url}")
-            
-            # ページの完全な読み込みを待つ
-            WebDriverWait(self.driver, 30).until(
-                lambda d: d.execute_script('return document.readyState') == 'complete'
-            )
             time.sleep(5)
             
             # ページソースを取得してBeautifulSoupで解析
-            html_content = self.driver.page_source
+            html_content = response.text
             soup = BeautifulSoup(html_content, 'html.parser')
+
+            match_header = soup.find('div', class_='match-header__title')
 
             # 試合情報を取得
             match_info = {
-                'date': self._get_match_date(soup),
+                'date': self._get_match_date(match_header),
                 'venue': self._get_venue(soup),
                 'home_team': self._get_team_name(soup, 'home'),
                 'away_team': self._get_team_name(soup, 'away'),
-                'broadcasters': self._get_broadcasters(soup),
+                'broadcasters': self._get_broadcasters(match_header),
                 'id': self._get_match_id(url)
             }
             print(match_info)
@@ -146,6 +144,7 @@ class Top14Scraper(BaseScraper):
 
     def scrape(self):
         try:
+            self._extract_match_details("https://top14.lnr.fr/feuille-de-match/2024-2025/j16/10978-bayonne-bordeaux-begles")
             self.driver = self._setup_driver()
             self.driver.get(self.calendar_url)
             print(f"ページにアクセス: {self.calendar_url}")
@@ -170,10 +169,10 @@ class Top14Scraper(BaseScraper):
             if self.driver:
                 self.driver.quit()
 
-    def _get_match_date(self, soup):
+    def _get_match_date(self, match_header):
         try:
-            date_element = soup.find('div', class_='title--large')
-            time_element = soup.find('span', class_='match-header-broadcast__hour')
+            date_element = match_header.find('div', class_='title title--large title--textured title--centered')
+            time_element = match_header.find('span', class_='match-header-broadcast__hour')
             
             if date_element and time_element:
                 return f"{date_element.text.strip()} - {time_element.text.strip()}"
@@ -204,14 +203,10 @@ class Top14Scraper(BaseScraper):
             print(f"{team_type}チーム名の取得に失敗: {str(e)}")
             return None
 
-    def _get_broadcasters(self, soup):
+    def _get_broadcasters(self, match_header):
         try:
-            broadcaster_elements = soup.find_all('img', class_='match-header-broadcast__channel')
-            broadcasters = []
-            for element in broadcaster_elements:
-                alt_text = element.get('alt')
-                if alt_text and alt_text not in broadcasters:
-                    broadcasters.append(alt_text)
+            broadcaster_elements = match_header.find('div', class_='match-header-broadcast').find_all('img')
+            broadcasters = [img.get('alt') for img in broadcaster_elements]
             return broadcasters
         except Exception as e:
             print(f"放送局の取得に失敗: {str(e)}")
