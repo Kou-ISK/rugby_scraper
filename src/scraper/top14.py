@@ -105,41 +105,33 @@ class Top14Scraper(BaseScraper):
 
     def _extract_all_season_match_links(self):
         try:
-            # 節選択のセレクタを修正
+            # まずページの読み込みを待つ
             WebDriverWait(self.driver, 30).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, '.filters-block__filters select'))
+                lambda d: d.execute_script('return document.readyState') == 'complete'
             )
-            time.sleep(2)
+            time.sleep(5)
+            
+            # プルダウンの要素を探す
+            round_select = Select(self.driver.find_element(By.ID, 'Journée'))
+            round_options = [option.text for option in round_select.options]
             
             all_match_links = []
             
-            while True:
+            for round_option in round_options:
                 try:
-                    # 節のプルダウンを毎回取得し直す
-                    round_select = Select(self.driver.find_element(By.CSS_SELECTOR, '.filters-block__filters select'))
-                    round_options = [option.text for option in round_select.options]
-                    
-                    # 現在選択されている節を取得
-                    current_round = round_select.first_selected_option.text
-                    current_index = round_options.index(current_round)
+                    # 節を選択
+                    round_select = Select(self.driver.find_element(By.ID, 'Journée'))
+                    round_select.select_by_visible_text(round_option)
+                    time.sleep(3)
                     
                     # 試合リンクを取得
                     match_links = self._extract_match_links()
                     all_match_links.extend(match_links)
                     
-                    # 次の節がある場合は選択
-                    if current_index < len(round_options) - 1:
-                        next_round = round_options[current_index + 1]
-                        round_select = Select(self.driver.find_element(By.CSS_SELECTOR, '.filters-block__filters select'))
-                        round_select.select_by_visible_text(next_round)
-                        time.sleep(3)
-                    else:
-                        break
-                    
                 except StaleElementReferenceException:
                     time.sleep(2)
                     continue
-                
+            
             print(f"全節の試合リンク数: {len(all_match_links)}")
             return all_match_links
             
