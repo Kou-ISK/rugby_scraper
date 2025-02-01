@@ -1,1 +1,76 @@
-null
+[
+  {
+    "date": "15 FÉVRIER 2025 - 14h30",
+    "venue": "Stade Jean Dauger",
+    "home_team": "Aviron Bayonnais",
+    "away_team": "Union Bordeaux-Bègles",
+    "broadcasters": [
+      "Canal + Sport"
+    ],
+    "id": "10978"
+  },
+  {
+    "date": "15 FÉVRIER 2025 - 16h30",
+    "venue": "Matmut Stadium Gerland",
+    "home_team": "LOU Rugby",
+    "away_team": "Stade Rochelais",
+    "broadcasters": [
+      "Canal +",
+      "Canal + Live"
+    ],
+    "id": "10979"
+  },
+  {
+    "date": "15 FÉVRIER 2025 - 16h30",
+    "venue": "Paris La Défense Arena",
+    "home_team": "Racing 92",
+    "away_team": "RC Vannes",
+    "broadcasters": [
+      "Canal +",
+      "Canal + Live"
+    ],
+    "id": "10981"
+  },
+  {
+    "date": "15 FÉVRIER 2025 - 16h30",
+    "venue": "Stade Jean Bouin",
+    "home_team": "Stade Français Paris",
+    "away_team": "Section Paloise",
+    "broadcasters": [
+      "Canal +",
+      "Canal + Sport"
+    ],
+    "id": "10982"
+  },
+  {
+    "date": "15 FÉVRIER 2025 - 16h30",
+    "venue": "Stade Aimé Giral",
+    "home_team": "USA Perpignan",
+    "away_team": "Castres Olympique",
+    "broadcasters": [
+      "Canal +",
+      "Canal + Live"
+    ],
+    "id": "10983"
+  },
+  {
+    "date": "15 FÉVRIER 2025 - 21h05",
+    "venue": "GGL Stadium",
+    "home_team": "Montpellier Hérault Rugby",
+    "away_team": "RC Toulon",
+    "broadcasters": [
+      "Canal +"
+    ],
+    "id": "10980"
+  },
+  {
+    "date": "16 FÉVRIER 2025 - 21h05",
+    "venue": "Stade Marcel Michelin",
+    "home_team": "ASM Clermont",
+    "away_team": "Stade Toulousain",
+    "broadcasters": [
+      "Canal +"
+    ],
+    "id": "10977"
+  }
+]

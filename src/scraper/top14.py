@@ -105,8 +105,9 @@ class Top14Scraper(BaseScraper):
 
     def _extract_all_season_match_links(self):
         try:
+            # 節選択のセレクタを修正
             WebDriverWait(self.driver, 30).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, 'select[name="Journée"]'))
+                EC.presence_of_element_located((By.CSS_SELECTOR, '.filters-block__filters select'))
             )
             time.sleep(2)
             
@@ -115,7 +116,7 @@ class Top14Scraper(BaseScraper):
             while True:
                 try:
                     # 節のプルダウンを毎回取得し直す
-                    round_select = Select(self.driver.find_element(By.ID, 'Journée'))
+                    round_select = Select(self.driver.find_element(By.CSS_SELECTOR, '.filters-block__filters select'))
                     round_options = [option.text for option in round_select.options]
                     
                     # 現在選択されている節を取得
@@ -129,7 +130,7 @@ class Top14Scraper(BaseScraper):
                     # 次の節がある場合は選択
                     if current_index < len(round_options) - 1:
                         next_round = round_options[current_index + 1]
-                        round_select = Select(self.driver.find_element(By.ID, 'Journée'))
+                        round_select = Select(self.driver.find_element(By.CSS_SELECTOR, '.filters-block__filters select'))
                         round_select.select_by_visible_text(next_round)
                         time.sleep(3)
                     else:
