@@ -1,0 +1,6858 @@
+[
+  {
+    "date": "12.21 土 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [
+      "J SPORTS 3",
+      "三重テレビ",
+      "イッツコムチャンネル",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27447"
+  },
+  {
+    "date": "12.21 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27446"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27445"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27448"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 4", "tvk", "J SPORTSオンデマンド", "Lemino"],
+    "url": "https://league-one.jp/match/27449"
+  },
+  {
+    "date": "12.22 日 15:05",
+    "venue": "日産スタジアム (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [
+      "J SPORTS 1",
+      "日本テレビ（関東ローカル）",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27450"
+  },
+  {
+    "date": "12.28 土 13:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "TOKYO MX（録画）",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27452"
+  },
+  {
+    "date": "12.28 土 13:05",
+    "venue": "えがお健康スタジアム (熊本県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [
+      "J SPORTS ３（録画）",
+      "千葉テレビ",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27456"
+  },
+  {
+    "date": "12.28 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27451"
+  },
+  {
+    "date": "12.28 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27453"
+  },
+  {
+    "date": "12.29 日 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27454"
+  },
+  {
+    "date": "12.29 日 14:30",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27455"
+  },
+  {
+    "date": "01.04 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27462"
+  },
+  {
+    "date": "01.04 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27457"
+  },
+  {
+    "date": "01.04 土 13:00",
+    "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 3", "TOKYO MX1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27458"
+  },
+  {
+    "date": "01.04 土 14:30",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27459"
+  },
+  {
+    "date": "01.05 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27461"
+  },
+  {
+    "date": "01.05 日 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27460"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "Uvanceとどろきスタジアム by Fujitsu (神奈川県)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27463"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 1", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27464"
+  },
+  {
+    "date": "01.11 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27465"
+  },
+  {
+    "date": "01.12 日 14:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS １", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27467"
+  },
+  {
+    "date": "01.12 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27466"
+  },
+  {
+    "date": "01.12 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 3", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27468"
+  },
+  {
+    "date": "01.18 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27469"
+  },
+  {
+    "date": "01.18 土 13:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27471"
+  },
+  {
+    "date": "01.18 土 14:10",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [
+      "J SPORTS 3",
+      "テレビ神奈川",
+      "J:COMチャンネル（神奈川エリア）",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27470"
+  },
+  {
+    "date": "01.19 日 12:05",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 3", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27472"
+  },
+  {
+    "date": "01.19 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 1", "三重テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27474"
+  },
+  {
+    "date": "01.19 日 14:30",
+    "venue": "ミクニワールドスタジアム北九州 (福岡県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27473"
+  },
+  {
+    "date": "02.01 土 12:00",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27479"
+  },
+  {
+    "date": "02.01 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27477"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [
+      "J SPORTS 4",
+      "テレビ埼玉",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27475"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27476"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27478"
+  },
+  {
+    "date": "02.02 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 3", "三重テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27480"
+  },
+  {
+    "date": "02.08 土 12:00",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 2", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27483"
+  },
+  {
+    "date": "02.08 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27486"
+  },
+  {
+    "date": "02.08 土 12:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [
+      "J SPORTS 3",
+      "千葉テレビ",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27481"
+  },
+  {
+    "date": "02.08 土 14:10",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 1", "テレビ神奈川 (堀)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27482"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27484"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27485"
+  },
+  {
+    "date": "02.15 土 14:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 1", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27488"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27487"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27489"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 4", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27492"
+  },
+  {
+    "date": "02.16 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27491"
+  },
+  {
+    "date": "02.16 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 4", "J SPORTS オンデマンド"],
+    "url": "https://league-one.jp/match/27490"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27493"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27494"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27495"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27496"
+  },
+  {
+    "date": "02.23 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27497"
+  },
+  {
+    "date": "02.23 日 13:05",
+    "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27498"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27500"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27504"
+  },
+  {
+    "date": "03.01 土 13:00",
+    "venue": "白波スタジアム (鹿児島県)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27499"
+  },
+  {
+    "date": "03.02 日 13:05",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27503"
+  },
+  {
+    "date": "03.02 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27501"
+  },
+  {
+    "date": "03.02 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27502"
+  },
+  {
+    "date": "03.14 金 19:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27505"
+  },
+  {
+    "date": "03.15 土 13:05",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27509"
+  },
+  {
+    "date": "03.15 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27507"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27506"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27508"
+  },
+  {
+    "date": "03.16 日 14:30",
+    "venue": "たけびしスタジアム京都 (京都府)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27510"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27515"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27512"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "IAIスタジアム日本平 (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27513"
+  },
+  {
+    "date": "03.22 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27516"
+  },
+  {
+    "date": "03.22 土 15:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27511"
+  },
+  {
+    "date": "03.23 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27514"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27517"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27518"
+  },
+  {
+    "date": "03.29 土 12:05",
+    "venue": "キューアンドエースタジアムみやぎ (宮城県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27519"
+  },
+  {
+    "date": "03.30 日 13:00",
+    "venue": "大和ハウス プレミストドーム (北海道)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27520"
+  },
+  {
+    "date": "03.30 日 13:05",
+    "venue": "クラサスドーム大分（旧レゾナックドーム） (大分県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27522"
+  },
+  {
+    "date": "03.30 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27521"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27524"
+  },
+  {
+    "date": "04.05 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27525"
+  },
+  {
+    "date": "04.05 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27523"
+  },
+  {
+    "date": "04.05 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27526"
+  },
+  {
+    "date": "04.06 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27527"
+  },
+  {
+    "date": "04.06 日 14:30",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27528"
+  },
+  {
+    "date": "04.11 金 19:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27529"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "ベネックス総合運動公園 かきどまり陸上競技場 (長崎県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27530"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27531"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "浦安D-Rocks",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27533"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27534"
+  },
+  {
+    "date": "04.13 日 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27532"
+  },
+  {
+    "date": "04.25 金 19:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27535"
+  },
+  {
+    "date": "04.26 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27537"
+  },
+  {
+    "date": "04.26 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27536"
+  },
+  {
+    "date": "04.26 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27538"
+  },
+  {
+    "date": "04.27 日 14:00",
+    "venue": "エコパスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27539"
+  },
+  {
+    "date": "04.27 日 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27540"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27542"
+  },
+  {
+    "date": "05.03 土 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27543"
+  },
+  {
+    "date": "05.03 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27544"
+  },
+  {
+    "date": "05.03 土 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27541"
+  },
+  {
+    "date": "05.04 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27545"
+  },
+  {
+    "date": "05.04 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27546"
+  },
+  {
+    "date": "05.09 金 18:35",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27547"
+  },
+  {
+    "date": "05.10 土 13:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27550"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27548"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27551"
+  },
+  {
+    "date": "05.10 土 17:00",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27549"
+  },
+  {
+    "date": "05.11 日 14:30",
+    "venue": "未定",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27552"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [
+      "J SPORTS 2(録画)",
+      "奈良テレビ(録画)",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27553"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "ベスト電器スタジアム (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 3", "福岡放送(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27554"
+  },
+  {
+    "date": "12.22 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27555"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 1(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27556"
+  },
+  {
+    "date": "12.28 土 13:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 1(録画)", "IBC岩手放送", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27557"
+  },
+  {
+    "date": "12.28 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS 3(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27558"
+  },
+  {
+    "date": "12.29 日 14:30",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27559"
+  },
+  {
+    "date": "01.05 日 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27560"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "ミクニワールドスタジアム北九州 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27564"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27562"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": ["J SPORTS3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27563"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27561"
+  },
+  {
+    "date": "01.18 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27566"
+  },
+  {
+    "date": "01.18 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS1(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27565"
+  },
+  {
+    "date": "01.18 土 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27567"
+  },
+  {
+    "date": "01.25 土 13:00",
+    "venue": "ハワイアンズスタジアムいわき (福島県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27568"
+  },
+  {
+    "date": "02.01 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27569"
+  },
+  {
+    "date": "02.02 日 16:00",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27572"
+  },
+  {
+    "date": "02.08 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27570"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27571"
+  },
+  {
+    "date": "02.15 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27573"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "長崎市総合運動公園　かきどまり陸上競技場 (長崎県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27576"
+  },
+  {
+    "date": "02.22 土 13:00",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27575"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27574"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27578"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27577"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27579"
+  },
+  {
+    "date": "03.08 土 13:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27580"
+  },
+  {
+    "date": "03.15 土 13:00",
+    "venue": "いわぎんスタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27581"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27582"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "ヨドコウ桜スタジアム (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27583"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "東平尾公園博多の森陸上競技場 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27584"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27585"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27586"
+  },
+  {
+    "date": "03.23 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27587"
+  },
+  {
+    "date": "03.23 日 14:30",
+    "venue": "えがお健康スタジアム (熊本県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27588"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27589"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27590"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27591"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27592"
+  },
+  {
+    "date": "04.11 金 19:30",
+    "venue": "東平尾公園博多の森陸上競技場 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27595"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27593"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27594"
+  },
+  {
+    "date": "04.12 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27596"
+  },
+  {
+    "date": "04.18 金 19:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27598"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27597"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27600"
+  },
+  {
+    "date": "04.20 日 12:00",
+    "venue": "岩手県内 (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27599"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27604"
+  },
+  {
+    "date": "05.02 金 19:00",
+    "venue": "ヨドコウ桜スタジアム (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27602"
+  },
+  {
+    "date": "05.03 土 12:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27601"
+  },
+  {
+    "date": "05.03 土 13:00",
+    "venue": "宮崎県山之口陸上競技場 (宮崎県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27603"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27607"
+  },
+  {
+    "date": "05.10 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27605"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27608"
+  },
+  {
+    "date": "05.11 日 12:00",
+    "venue": "岩手県内 (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27606"
+  },
+  {
+    "date": "12.21 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27609"
+  },
+  {
+    "date": "12.22 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27611"
+  },
+  {
+    "date": "12.22 日 13:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27610"
+  },
+  {
+    "date": "12.28 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27612"
+  },
+  {
+    "date": "12.29 日 12:00",
+    "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27613"
+  },
+  {
+    "date": "01.05 日 13:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27614"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "栃木県グリーンスタジアム (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27615"
+  },
+  {
+    "date": "01.11 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27616"
+  },
+  {
+    "date": "01.12 日 12:00",
+    "venue": "栃木県グリーンスタジアム (栃木県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27617"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27618"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27619"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "維新みらいふスタジアム (山口県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27620"
+  },
+  {
+    "date": "01.25 土 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27621"
+  },
+  {
+    "date": "02.01 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27623"
+  },
+  {
+    "date": "02.02 日 12:00",
+    "venue": "アースケア敷島サッカー・ラグビー場 (群馬県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27622"
+  },
+  {
+    "date": "02.15 土 13:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27624"
+  },
+  {
+    "date": "02.15 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27625"
+  },
+  {
+    "date": "02.16 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27626"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27628"
+  },
+  {
+    "date": "02.22 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27627"
+  },
+  {
+    "date": "02.23 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27629"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27630"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "福山通運ローズスタジアム (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27631"
+  },
+  {
+    "date": "03.02 日 12:00",
+    "venue": "福山通運ローズスタジアム (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27632"
+  },
+  {
+    "date": "03.08 土 12:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27633"
+  },
+  {
+    "date": "03.08 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27634"
+  },
+  {
+    "date": "03.16 日 13:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27635"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27636"
+  },
+  {
+    "date": "03.22 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27637"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27638"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27639"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "海老名運動公園陸上競技場 (神奈川県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27640"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27641"
+  },
+  {
+    "date": "03.30 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27643"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27644"
+  },
+  {
+    "date": "04.12 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27642"
+  },
+  {
+    "date": "04.19 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27647"
+  },
+  {
+    "date": "04.19 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27646"
+  },
+  {
+    "date": "04.20 日 14:00",
+    "venue": "維新みらいふスタジアム (山口県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27645"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ルリーロ福岡",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27650"
+  },
+  {
+    "date": "04.27 日 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27648"
+  },
+  {
+    "date": "04.27 日 13:00",
+    "venue": "小田原市城山陸上競技場 (神奈川県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27649"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27652"
+  },
+  {
+    "date": "05.10 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27653"
+  },
+  {
+    "date": "05.11 日 14:30",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27651"
+  },
+  {
+    "date": "12.21 土 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [
+      "J SPORTS 3",
+      "三重テレビ",
+      "イッツコムチャンネル",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27447"
+  },
+  {
+    "date": "12.21 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27446"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27445"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27448"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 4", "tvk", "J SPORTSオンデマンド", "Lemino"],
+    "url": "https://league-one.jp/match/27449"
+  },
+  {
+    "date": "12.22 日 15:05",
+    "venue": "日産スタジアム (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [
+      "J SPORTS 1",
+      "日本テレビ（関東ローカル）",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27450"
+  },
+  {
+    "date": "12.28 土 13:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "TOKYO MX（録画）",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27452"
+  },
+  {
+    "date": "12.28 土 13:05",
+    "venue": "えがお健康スタジアム (熊本県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [
+      "J SPORTS ３（録画）",
+      "千葉テレビ",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27456"
+  },
+  {
+    "date": "12.28 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27451"
+  },
+  {
+    "date": "12.28 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27453"
+  },
+  {
+    "date": "12.29 日 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27454"
+  },
+  {
+    "date": "12.29 日 14:30",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27455"
+  },
+  {
+    "date": "01.04 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27462"
+  },
+  {
+    "date": "01.04 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27457"
+  },
+  {
+    "date": "01.04 土 13:00",
+    "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 3", "TOKYO MX1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27458"
+  },
+  {
+    "date": "01.04 土 14:30",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27459"
+  },
+  {
+    "date": "01.05 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27461"
+  },
+  {
+    "date": "01.05 日 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27460"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "Uvanceとどろきスタジアム by Fujitsu (神奈川県)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27463"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 1", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27464"
+  },
+  {
+    "date": "01.11 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27465"
+  },
+  {
+    "date": "01.12 日 14:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS １", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27467"
+  },
+  {
+    "date": "01.12 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27466"
+  },
+  {
+    "date": "01.12 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 3", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27468"
+  },
+  {
+    "date": "01.18 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27469"
+  },
+  {
+    "date": "01.18 土 13:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27471"
+  },
+  {
+    "date": "01.18 土 14:10",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [
+      "J SPORTS 3",
+      "テレビ神奈川",
+      "J:COMチャンネル（神奈川エリア）",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27470"
+  },
+  {
+    "date": "01.19 日 12:05",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 3", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27472"
+  },
+  {
+    "date": "01.19 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 1", "三重テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27474"
+  },
+  {
+    "date": "01.19 日 14:30",
+    "venue": "ミクニワールドスタジアム北九州 (福岡県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27473"
+  },
+  {
+    "date": "02.01 土 12:00",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27479"
+  },
+  {
+    "date": "02.01 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27477"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [
+      "J SPORTS 4",
+      "テレビ埼玉",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27475"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27476"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27478"
+  },
+  {
+    "date": "02.02 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 3", "三重テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27480"
+  },
+  {
+    "date": "02.08 土 12:00",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 2", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27483"
+  },
+  {
+    "date": "02.08 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27486"
+  },
+  {
+    "date": "02.08 土 12:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [
+      "J SPORTS 3",
+      "千葉テレビ",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27481"
+  },
+  {
+    "date": "02.08 土 14:10",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 1", "テレビ神奈川 (堀)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27482"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27484"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27485"
+  },
+  {
+    "date": "02.15 土 14:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 1", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27488"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27487"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27489"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 4", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27492"
+  },
+  {
+    "date": "02.16 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27491"
+  },
+  {
+    "date": "02.16 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 4", "J SPORTS オンデマンド"],
+    "url": "https://league-one.jp/match/27490"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27493"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27494"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27495"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27496"
+  },
+  {
+    "date": "02.23 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27497"
+  },
+  {
+    "date": "02.23 日 13:05",
+    "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27498"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27500"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27504"
+  },
+  {
+    "date": "03.01 土 13:00",
+    "venue": "白波スタジアム (鹿児島県)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27499"
+  },
+  {
+    "date": "03.02 日 13:05",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27503"
+  },
+  {
+    "date": "03.02 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27501"
+  },
+  {
+    "date": "03.02 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27502"
+  },
+  {
+    "date": "03.14 金 19:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27505"
+  },
+  {
+    "date": "03.15 土 13:05",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27509"
+  },
+  {
+    "date": "03.15 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27507"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27506"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27508"
+  },
+  {
+    "date": "03.16 日 14:30",
+    "venue": "たけびしスタジアム京都 (京都府)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27510"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27515"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27512"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "IAIスタジアム日本平 (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27513"
+  },
+  {
+    "date": "03.22 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27516"
+  },
+  {
+    "date": "03.22 土 15:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27511"
+  },
+  {
+    "date": "03.23 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27514"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27517"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27518"
+  },
+  {
+    "date": "03.29 土 12:05",
+    "venue": "キューアンドエースタジアムみやぎ (宮城県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27519"
+  },
+  {
+    "date": "03.30 日 13:00",
+    "venue": "大和ハウス プレミストドーム (北海道)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27520"
+  },
+  {
+    "date": "03.30 日 13:05",
+    "venue": "クラサスドーム大分（旧レゾナックドーム） (大分県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27522"
+  },
+  {
+    "date": "03.30 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27521"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27524"
+  },
+  {
+    "date": "04.05 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27525"
+  },
+  {
+    "date": "04.05 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27523"
+  },
+  {
+    "date": "04.05 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27526"
+  },
+  {
+    "date": "04.06 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27527"
+  },
+  {
+    "date": "04.06 日 14:30",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27528"
+  },
+  {
+    "date": "04.11 金 19:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27529"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "ベネックス総合運動公園 かきどまり陸上競技場 (長崎県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27530"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27531"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "浦安D-Rocks",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27533"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27534"
+  },
+  {
+    "date": "04.13 日 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27532"
+  },
+  {
+    "date": "04.25 金 19:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27535"
+  },
+  {
+    "date": "04.26 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27537"
+  },
+  {
+    "date": "04.26 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27536"
+  },
+  {
+    "date": "04.26 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27538"
+  },
+  {
+    "date": "04.27 日 14:00",
+    "venue": "エコパスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27539"
+  },
+  {
+    "date": "04.27 日 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27540"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27542"
+  },
+  {
+    "date": "05.03 土 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27543"
+  },
+  {
+    "date": "05.03 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27544"
+  },
+  {
+    "date": "05.03 土 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27541"
+  },
+  {
+    "date": "05.04 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27545"
+  },
+  {
+    "date": "05.04 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27546"
+  },
+  {
+    "date": "05.09 金 18:35",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27547"
+  },
+  {
+    "date": "05.10 土 13:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27550"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27548"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27551"
+  },
+  {
+    "date": "05.10 土 17:00",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27549"
+  },
+  {
+    "date": "05.11 日 14:30",
+    "venue": "未定",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27552"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [
+      "J SPORTS 2(録画)",
+      "奈良テレビ(録画)",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27553"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "ベスト電器スタジアム (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 3", "福岡放送(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27554"
+  },
+  {
+    "date": "12.22 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27555"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 1(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27556"
+  },
+  {
+    "date": "12.28 土 13:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 1(録画)", "IBC岩手放送", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27557"
+  },
+  {
+    "date": "12.28 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS 3(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27558"
+  },
+  {
+    "date": "12.29 日 14:30",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27559"
+  },
+  {
+    "date": "01.05 日 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27560"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "ミクニワールドスタジアム北九州 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27564"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27562"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": ["J SPORTS3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27563"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27561"
+  },
+  {
+    "date": "01.18 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27566"
+  },
+  {
+    "date": "01.18 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS1(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27565"
+  },
+  {
+    "date": "01.18 土 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27567"
+  },
+  {
+    "date": "01.25 土 13:00",
+    "venue": "ハワイアンズスタジアムいわき (福島県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27568"
+  },
+  {
+    "date": "02.01 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27569"
+  },
+  {
+    "date": "02.02 日 16:00",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27572"
+  },
+  {
+    "date": "02.08 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27570"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27571"
+  },
+  {
+    "date": "02.15 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27573"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "長崎市総合運動公園　かきどまり陸上競技場 (長崎県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27576"
+  },
+  {
+    "date": "02.22 土 13:00",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27575"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27574"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27578"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27577"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27579"
+  },
+  {
+    "date": "03.08 土 13:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27580"
+  },
+  {
+    "date": "03.15 土 13:00",
+    "venue": "いわぎんスタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27581"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27582"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "ヨドコウ桜スタジアム (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27583"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "東平尾公園博多の森陸上競技場 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27584"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27585"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27586"
+  },
+  {
+    "date": "03.23 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27587"
+  },
+  {
+    "date": "03.23 日 14:30",
+    "venue": "えがお健康スタジアム (熊本県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27588"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27589"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27590"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27591"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27592"
+  },
+  {
+    "date": "04.11 金 19:30",
+    "venue": "東平尾公園博多の森陸上競技場 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27595"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27593"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27594"
+  },
+  {
+    "date": "04.12 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27596"
+  },
+  {
+    "date": "04.18 金 19:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27598"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27597"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27600"
+  },
+  {
+    "date": "04.20 日 12:00",
+    "venue": "岩手県内 (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27599"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27604"
+  },
+  {
+    "date": "05.02 金 19:00",
+    "venue": "ヨドコウ桜スタジアム (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27602"
+  },
+  {
+    "date": "05.03 土 12:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27601"
+  },
+  {
+    "date": "05.03 土 13:00",
+    "venue": "宮崎県山之口陸上競技場 (宮崎県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27603"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27607"
+  },
+  {
+    "date": "05.10 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27605"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27608"
+  },
+  {
+    "date": "05.11 日 12:00",
+    "venue": "岩手県内 (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27606"
+  },
+  {
+    "date": "12.21 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27609"
+  },
+  {
+    "date": "12.22 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27611"
+  },
+  {
+    "date": "12.22 日 13:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27610"
+  },
+  {
+    "date": "12.28 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27612"
+  },
+  {
+    "date": "12.29 日 12:00",
+    "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27613"
+  },
+  {
+    "date": "01.05 日 13:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27614"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "栃木県グリーンスタジアム (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27615"
+  },
+  {
+    "date": "01.11 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27616"
+  },
+  {
+    "date": "01.12 日 12:00",
+    "venue": "栃木県グリーンスタジアム (栃木県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27617"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27618"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27619"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "維新みらいふスタジアム (山口県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27620"
+  },
+  {
+    "date": "01.25 土 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27621"
+  },
+  {
+    "date": "02.01 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27623"
+  },
+  {
+    "date": "02.02 日 12:00",
+    "venue": "アースケア敷島サッカー・ラグビー場 (群馬県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27622"
+  },
+  {
+    "date": "02.15 土 13:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27624"
+  },
+  {
+    "date": "02.15 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27625"
+  },
+  {
+    "date": "02.16 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27626"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27628"
+  },
+  {
+    "date": "02.22 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27627"
+  },
+  {
+    "date": "02.23 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27629"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27630"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "福山通運ローズスタジアム (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27631"
+  },
+  {
+    "date": "03.02 日 12:00",
+    "venue": "福山通運ローズスタジアム (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27632"
+  },
+  {
+    "date": "03.08 土 12:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27633"
+  },
+  {
+    "date": "03.08 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27634"
+  },
+  {
+    "date": "03.16 日 13:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27635"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27636"
+  },
+  {
+    "date": "03.22 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27637"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27638"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27639"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "海老名運動公園陸上競技場 (神奈川県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27640"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27641"
+  },
+  {
+    "date": "03.30 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27643"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27644"
+  },
+  {
+    "date": "04.12 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27642"
+  },
+  {
+    "date": "04.19 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27647"
+  },
+  {
+    "date": "04.19 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27646"
+  },
+  {
+    "date": "04.20 日 14:00",
+    "venue": "維新みらいふスタジアム (山口県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27645"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ルリーロ福岡",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27650"
+  },
+  {
+    "date": "04.27 日 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27648"
+  },
+  {
+    "date": "04.27 日 13:00",
+    "venue": "小田原市城山陸上競技場 (神奈川県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27649"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27652"
+  },
+  {
+    "date": "05.10 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27653"
+  },
+  {
+    "date": "05.11 日 14:30",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27651"
+  },
+  {
+    "date": "12.21 土 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [
+      "J SPORTS 3",
+      "三重テレビ",
+      "イッツコムチャンネル",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27447"
+  },
+  {
+    "date": "12.21 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27446"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27445"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27448"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 4", "tvk", "J SPORTSオンデマンド", "Lemino"],
+    "url": "https://league-one.jp/match/27449"
+  },
+  {
+    "date": "12.22 日 15:05",
+    "venue": "日産スタジアム (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [
+      "J SPORTS 1",
+      "日本テレビ（関東ローカル）",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27450"
+  },
+  {
+    "date": "12.28 土 13:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "TOKYO MX（録画）",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27452"
+  },
+  {
+    "date": "12.28 土 13:05",
+    "venue": "えがお健康スタジアム (熊本県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [
+      "J SPORTS ３（録画）",
+      "千葉テレビ",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27456"
+  },
+  {
+    "date": "12.28 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27451"
+  },
+  {
+    "date": "12.28 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27453"
+  },
+  {
+    "date": "12.29 日 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27454"
+  },
+  {
+    "date": "12.29 日 14:30",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27455"
+  },
+  {
+    "date": "01.04 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27462"
+  },
+  {
+    "date": "01.04 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27457"
+  },
+  {
+    "date": "01.04 土 13:00",
+    "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 3", "TOKYO MX1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27458"
+  },
+  {
+    "date": "01.04 土 14:30",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27459"
+  },
+  {
+    "date": "01.05 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27461"
+  },
+  {
+    "date": "01.05 日 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27460"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "Uvanceとどろきスタジアム by Fujitsu (神奈川県)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27463"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 1", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27464"
+  },
+  {
+    "date": "01.11 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27465"
+  },
+  {
+    "date": "01.12 日 14:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS １", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27467"
+  },
+  {
+    "date": "01.12 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27466"
+  },
+  {
+    "date": "01.12 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 3", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27468"
+  },
+  {
+    "date": "01.18 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27469"
+  },
+  {
+    "date": "01.18 土 13:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27471"
+  },
+  {
+    "date": "01.18 土 14:10",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [
+      "J SPORTS 3",
+      "テレビ神奈川",
+      "J:COMチャンネル（神奈川エリア）",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27470"
+  },
+  {
+    "date": "01.19 日 12:05",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 3", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27472"
+  },
+  {
+    "date": "01.19 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 1", "三重テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27474"
+  },
+  {
+    "date": "01.19 日 14:30",
+    "venue": "ミクニワールドスタジアム北九州 (福岡県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27473"
+  },
+  {
+    "date": "02.01 土 12:00",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27479"
+  },
+  {
+    "date": "02.01 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27477"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [
+      "J SPORTS 4",
+      "テレビ埼玉",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27475"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27476"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27478"
+  },
+  {
+    "date": "02.02 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 3", "三重テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27480"
+  },
+  {
+    "date": "02.08 土 12:00",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 2", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27483"
+  },
+  {
+    "date": "02.08 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27486"
+  },
+  {
+    "date": "02.08 土 12:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [
+      "J SPORTS 3",
+      "千葉テレビ",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27481"
+  },
+  {
+    "date": "02.08 土 14:10",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 1", "テレビ神奈川 (堀)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27482"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27484"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27485"
+  },
+  {
+    "date": "02.15 土 14:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 1", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27488"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27487"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27489"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 4", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27492"
+  },
+  {
+    "date": "02.16 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27491"
+  },
+  {
+    "date": "02.16 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 4", "J SPORTS オンデマンド"],
+    "url": "https://league-one.jp/match/27490"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27493"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27494"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27495"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27496"
+  },
+  {
+    "date": "02.23 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27497"
+  },
+  {
+    "date": "02.23 日 13:05",
+    "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27498"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27500"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27504"
+  },
+  {
+    "date": "03.01 土 13:00",
+    "venue": "白波スタジアム (鹿児島県)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27499"
+  },
+  {
+    "date": "03.02 日 13:05",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27503"
+  },
+  {
+    "date": "03.02 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27501"
+  },
+  {
+    "date": "03.02 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27502"
+  },
+  {
+    "date": "03.14 金 19:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27505"
+  },
+  {
+    "date": "03.15 土 13:05",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27509"
+  },
+  {
+    "date": "03.15 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27507"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27506"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27508"
+  },
+  {
+    "date": "03.16 日 14:30",
+    "venue": "たけびしスタジアム京都 (京都府)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27510"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27515"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27512"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "IAIスタジアム日本平 (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27513"
+  },
+  {
+    "date": "03.22 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27516"
+  },
+  {
+    "date": "03.22 土 15:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27511"
+  },
+  {
+    "date": "03.23 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27514"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27517"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27518"
+  },
+  {
+    "date": "03.29 土 12:05",
+    "venue": "キューアンドエースタジアムみやぎ (宮城県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27519"
+  },
+  {
+    "date": "03.30 日 13:00",
+    "venue": "大和ハウス プレミストドーム (北海道)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27520"
+  },
+  {
+    "date": "03.30 日 13:05",
+    "venue": "クラサスドーム大分（旧レゾナックドーム） (大分県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27522"
+  },
+  {
+    "date": "03.30 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27521"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27524"
+  },
+  {
+    "date": "04.05 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27525"
+  },
+  {
+    "date": "04.05 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27523"
+  },
+  {
+    "date": "04.05 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27526"
+  },
+  {
+    "date": "04.06 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27527"
+  },
+  {
+    "date": "04.06 日 14:30",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27528"
+  },
+  {
+    "date": "04.11 金 19:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27529"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "ベネックス総合運動公園 かきどまり陸上競技場 (長崎県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27530"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27531"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "浦安D-Rocks",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27533"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27534"
+  },
+  {
+    "date": "04.13 日 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27532"
+  },
+  {
+    "date": "04.25 金 19:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27535"
+  },
+  {
+    "date": "04.26 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27537"
+  },
+  {
+    "date": "04.26 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27536"
+  },
+  {
+    "date": "04.26 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27538"
+  },
+  {
+    "date": "04.27 日 14:00",
+    "venue": "エコパスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27539"
+  },
+  {
+    "date": "04.27 日 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27540"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27542"
+  },
+  {
+    "date": "05.03 土 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27543"
+  },
+  {
+    "date": "05.03 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27544"
+  },
+  {
+    "date": "05.03 土 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27541"
+  },
+  {
+    "date": "05.04 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27545"
+  },
+  {
+    "date": "05.04 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27546"
+  },
+  {
+    "date": "05.09 金 18:35",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27547"
+  },
+  {
+    "date": "05.10 土 13:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27550"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27548"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27551"
+  },
+  {
+    "date": "05.10 土 17:00",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27549"
+  },
+  {
+    "date": "05.11 日 14:30",
+    "venue": "未定",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27552"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [
+      "J SPORTS 2(録画)",
+      "奈良テレビ(録画)",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27553"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "ベスト電器スタジアム (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 3", "福岡放送(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27554"
+  },
+  {
+    "date": "12.22 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27555"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 1(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27556"
+  },
+  {
+    "date": "12.28 土 13:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 1(録画)", "IBC岩手放送", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27557"
+  },
+  {
+    "date": "12.28 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS 3(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27558"
+  },
+  {
+    "date": "12.29 日 14:30",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27559"
+  },
+  {
+    "date": "01.05 日 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27560"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "ミクニワールドスタジアム北九州 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27564"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27562"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": ["J SPORTS3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27563"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27561"
+  },
+  {
+    "date": "01.18 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27566"
+  },
+  {
+    "date": "01.18 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS1(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27565"
+  },
+  {
+    "date": "01.18 土 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27567"
+  },
+  {
+    "date": "01.25 土 13:00",
+    "venue": "ハワイアンズスタジアムいわき (福島県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27568"
+  },
+  {
+    "date": "02.01 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27569"
+  },
+  {
+    "date": "02.02 日 16:00",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27572"
+  },
+  {
+    "date": "02.08 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27570"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27571"
+  },
+  {
+    "date": "02.15 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27573"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "長崎市総合運動公園　かきどまり陸上競技場 (長崎県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27576"
+  },
+  {
+    "date": "02.22 土 13:00",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27575"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27574"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27578"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27577"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27579"
+  },
+  {
+    "date": "03.08 土 13:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27580"
+  },
+  {
+    "date": "03.15 土 13:00",
+    "venue": "いわぎんスタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27581"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27582"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "ヨドコウ桜スタジアム (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27583"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "東平尾公園博多の森陸上競技場 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27584"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27585"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27586"
+  },
+  {
+    "date": "03.23 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27587"
+  },
+  {
+    "date": "03.23 日 14:30",
+    "venue": "えがお健康スタジアム (熊本県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27588"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27589"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27590"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27591"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27592"
+  },
+  {
+    "date": "04.11 金 19:30",
+    "venue": "東平尾公園博多の森陸上競技場 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27595"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27593"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27594"
+  },
+  {
+    "date": "04.12 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27596"
+  },
+  {
+    "date": "04.18 金 19:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27598"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27597"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27600"
+  },
+  {
+    "date": "04.20 日 12:00",
+    "venue": "岩手県内 (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27599"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27604"
+  },
+  {
+    "date": "05.02 金 19:00",
+    "venue": "ヨドコウ桜スタジアム (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27602"
+  },
+  {
+    "date": "05.03 土 12:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27601"
+  },
+  {
+    "date": "05.03 土 13:00",
+    "venue": "宮崎県山之口陸上競技場 (宮崎県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27603"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27607"
+  },
+  {
+    "date": "05.10 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27605"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27608"
+  },
+  {
+    "date": "05.11 日 12:00",
+    "venue": "岩手県内 (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27606"
+  },
+  {
+    "date": "12.21 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27609"
+  },
+  {
+    "date": "12.22 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27611"
+  },
+  {
+    "date": "12.22 日 13:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27610"
+  },
+  {
+    "date": "12.28 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27612"
+  },
+  {
+    "date": "12.29 日 12:00",
+    "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27613"
+  },
+  {
+    "date": "01.05 日 13:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27614"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "栃木県グリーンスタジアム (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27615"
+  },
+  {
+    "date": "01.11 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27616"
+  },
+  {
+    "date": "01.12 日 12:00",
+    "venue": "栃木県グリーンスタジアム (栃木県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27617"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27618"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27619"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "維新みらいふスタジアム (山口県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27620"
+  },
+  {
+    "date": "01.25 土 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27621"
+  },
+  {
+    "date": "02.01 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27623"
+  },
+  {
+    "date": "02.02 日 12:00",
+    "venue": "アースケア敷島サッカー・ラグビー場 (群馬県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27622"
+  },
+  {
+    "date": "02.15 土 13:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27624"
+  },
+  {
+    "date": "02.15 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27625"
+  },
+  {
+    "date": "02.16 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27626"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27628"
+  },
+  {
+    "date": "02.22 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27627"
+  },
+  {
+    "date": "02.23 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27629"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27630"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "福山通運ローズスタジアム (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27631"
+  },
+  {
+    "date": "03.02 日 12:00",
+    "venue": "福山通運ローズスタジアム (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27632"
+  },
+  {
+    "date": "03.08 土 12:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27633"
+  },
+  {
+    "date": "03.08 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27634"
+  },
+  {
+    "date": "03.16 日 13:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27635"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27636"
+  },
+  {
+    "date": "03.22 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27637"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27638"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27639"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "海老名運動公園陸上競技場 (神奈川県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27640"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27641"
+  },
+  {
+    "date": "03.30 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27643"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27644"
+  },
+  {
+    "date": "04.12 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27642"
+  },
+  {
+    "date": "04.19 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27647"
+  },
+  {
+    "date": "04.19 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27646"
+  },
+  {
+    "date": "04.20 日 14:00",
+    "venue": "維新みらいふスタジアム (山口県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27645"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ルリーロ福岡",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27650"
+  },
+  {
+    "date": "04.27 日 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27648"
+  },
+  {
+    "date": "04.27 日 13:00",
+    "venue": "小田原市城山陸上競技場 (神奈川県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27649"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27652"
+  },
+  {
+    "date": "05.10 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27653"
+  },
+  {
+    "date": "05.11 日 14:30",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27651"
+  },
+  {
+    "date": "12.21 土 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [
+      "J SPORTS 3",
+      "三重テレビ",
+      "イッツコムチャンネル",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27447"
+  },
+  {
+    "date": "12.21 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27446"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27445"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27448"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 4", "tvk", "J SPORTSオンデマンド", "Lemino"],
+    "url": "https://league-one.jp/match/27449"
+  },
+  {
+    "date": "12.22 日 15:05",
+    "venue": "日産スタジアム (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [
+      "J SPORTS 1",
+      "日本テレビ（関東ローカル）",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27450"
+  },
+  {
+    "date": "12.28 土 13:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "TOKYO MX（録画）",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27452"
+  },
+  {
+    "date": "12.28 土 13:05",
+    "venue": "えがお健康スタジアム (熊本県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [
+      "J SPORTS ３（録画）",
+      "千葉テレビ",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27456"
+  },
+  {
+    "date": "12.28 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27451"
+  },
+  {
+    "date": "12.28 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27453"
+  },
+  {
+    "date": "12.29 日 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27454"
+  },
+  {
+    "date": "12.29 日 14:30",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27455"
+  },
+  {
+    "date": "01.04 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27462"
+  },
+  {
+    "date": "01.04 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27457"
+  },
+  {
+    "date": "01.04 土 13:00",
+    "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 3", "TOKYO MX1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27458"
+  },
+  {
+    "date": "01.04 土 14:30",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27459"
+  },
+  {
+    "date": "01.05 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27461"
+  },
+  {
+    "date": "01.05 日 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27460"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "Uvanceとどろきスタジアム by Fujitsu (神奈川県)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27463"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 1", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27464"
+  },
+  {
+    "date": "01.11 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27465"
+  },
+  {
+    "date": "01.12 日 14:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS １", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27467"
+  },
+  {
+    "date": "01.12 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27466"
+  },
+  {
+    "date": "01.12 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 3", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27468"
+  },
+  {
+    "date": "01.18 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27469"
+  },
+  {
+    "date": "01.18 土 13:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27471"
+  },
+  {
+    "date": "01.18 土 14:10",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [
+      "J SPORTS 3",
+      "テレビ神奈川",
+      "J:COMチャンネル（神奈川エリア）",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27470"
+  },
+  {
+    "date": "01.19 日 12:05",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 3", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27472"
+  },
+  {
+    "date": "01.19 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 1", "三重テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27474"
+  },
+  {
+    "date": "01.19 日 14:30",
+    "venue": "ミクニワールドスタジアム北九州 (福岡県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27473"
+  },
+  {
+    "date": "02.01 土 12:00",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27479"
+  },
+  {
+    "date": "02.01 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27477"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [
+      "J SPORTS 4",
+      "テレビ埼玉",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27475"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27476"
+  },
+  {
+    "date": "02.01 土 14:30",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27478"
+  },
+  {
+    "date": "02.02 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 3", "三重テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27480"
+  },
+  {
+    "date": "02.08 土 12:00",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 2", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27483"
+  },
+  {
+    "date": "02.08 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27486"
+  },
+  {
+    "date": "02.08 土 12:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [
+      "J SPORTS 3",
+      "千葉テレビ",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27481"
+  },
+  {
+    "date": "02.08 土 14:10",
+    "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": ["J SPORTS 1", "テレビ神奈川 (堀)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27482"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27484"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "相模原ギオンスタジアム (神奈川県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27485"
+  },
+  {
+    "date": "02.15 土 14:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": ["J SPORTS 1", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27488"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27487"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27489"
+  },
+  {
+    "date": "02.15 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 4", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27492"
+  },
+  {
+    "date": "02.16 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27491"
+  },
+  {
+    "date": "02.16 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": ["J SPORTS 4", "J SPORTS オンデマンド"],
+    "url": "https://league-one.jp/match/27490"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27493"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27494"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27495"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27496"
+  },
+  {
+    "date": "02.23 日 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27497"
+  },
+  {
+    "date": "02.23 日 13:05",
+    "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27498"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27500"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "Jヴィレッジスタジアム (福島県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27504"
+  },
+  {
+    "date": "03.01 土 13:00",
+    "venue": "白波スタジアム (鹿児島県)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27499"
+  },
+  {
+    "date": "03.02 日 13:05",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27503"
+  },
+  {
+    "date": "03.02 日 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27501"
+  },
+  {
+    "date": "03.02 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27502"
+  },
+  {
+    "date": "03.14 金 19:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27505"
+  },
+  {
+    "date": "03.15 土 13:05",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27509"
+  },
+  {
+    "date": "03.15 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27507"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27506"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27508"
+  },
+  {
+    "date": "03.16 日 14:30",
+    "venue": "たけびしスタジアム京都 (京都府)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27510"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27515"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27512"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "IAIスタジアム日本平 (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27513"
+  },
+  {
+    "date": "03.22 土 14:40",
+    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27516"
+  },
+  {
+    "date": "03.22 土 15:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27511"
+  },
+  {
+    "date": "03.23 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27514"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27517"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27518"
+  },
+  {
+    "date": "03.29 土 12:05",
+    "venue": "キューアンドエースタジアムみやぎ (宮城県)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27519"
+  },
+  {
+    "date": "03.30 日 13:00",
+    "venue": "大和ハウス プレミストドーム (北海道)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27520"
+  },
+  {
+    "date": "03.30 日 13:05",
+    "venue": "クラサスドーム大分（旧レゾナックドーム） (大分県)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27522"
+  },
+  {
+    "date": "03.30 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27521"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27524"
+  },
+  {
+    "date": "04.05 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27525"
+  },
+  {
+    "date": "04.05 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27523"
+  },
+  {
+    "date": "04.05 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27526"
+  },
+  {
+    "date": "04.06 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27527"
+  },
+  {
+    "date": "04.06 日 14:30",
+    "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27528"
+  },
+  {
+    "date": "04.11 金 19:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27529"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "ベネックス総合運動公園 かきどまり陸上競技場 (長崎県)",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27530"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27531"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "浦安D-Rocks",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27533"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27534"
+  },
+  {
+    "date": "04.13 日 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27532"
+  },
+  {
+    "date": "04.25 金 19:05",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27535"
+  },
+  {
+    "date": "04.26 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27537"
+  },
+  {
+    "date": "04.26 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27536"
+  },
+  {
+    "date": "04.26 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27538"
+  },
+  {
+    "date": "04.27 日 14:00",
+    "venue": "エコパスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27539"
+  },
+  {
+    "date": "04.27 日 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27540"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "三菱重工相模原ダイナボアーズ",
+    "away_team": "東芝ブレイブルーパス東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27542"
+  },
+  {
+    "date": "05.03 土 13:00",
+    "venue": "味の素スタジアム (東京都)",
+    "home_team": "東京サンゴリアス",
+    "away_team": "ブラックラムズ東京",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27543"
+  },
+  {
+    "date": "05.03 土 14:00",
+    "venue": "ヤマハスタジアム (静岡県)",
+    "home_team": "静岡ブルーレヴズ",
+    "away_team": "浦安D-Rocks",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27544"
+  },
+  {
+    "date": "05.03 土 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "クボタスピアーズ船橋・東京ベイ",
+    "away_team": "埼玉ワイルドナイツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27541"
+  },
+  {
+    "date": "05.04 日 12:10",
+    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
+    "home_team": "三重ホンダヒート",
+    "away_team": "トヨタヴェルブリッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27545"
+  },
+  {
+    "date": "05.04 日 14:30",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "横浜キヤノンイーグルス",
+    "away_team": "コベルコ神戸スティーラーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27546"
+  },
+  {
+    "date": "05.09 金 18:35",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "浦安D-Rocks",
+    "away_team": "三菱重工相模原ダイナボアーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27547"
+  },
+  {
+    "date": "05.10 土 13:00",
+    "venue": "秩父宮ラグビー場 (東京都)",
+    "home_team": "東芝ブレイブルーパス東京",
+    "away_team": "横浜キヤノンイーグルス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27550"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
+    "home_team": "埼玉ワイルドナイツ",
+    "away_team": "東京サンゴリアス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27548"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "豊田スタジアム (愛知県)",
+    "home_team": "トヨタヴェルブリッツ",
+    "away_team": "クボタスピアーズ船橋・東京ベイ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27551"
+  },
+  {
+    "date": "05.10 土 17:00",
+    "venue": "ノエビアスタジアム神戸 (兵庫県)",
+    "home_team": "コベルコ神戸スティーラーズ",
+    "away_team": "静岡ブルーレヴズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27549"
+  },
+  {
+    "date": "05.11 日 14:30",
+    "venue": "未定",
+    "home_team": "ブラックラムズ東京",
+    "away_team": "三重ホンダヒート",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27552"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [
+      "J SPORTS 2(録画)",
+      "奈良テレビ(録画)",
+      "J SPORTSオンデマンド"
+    ],
+    "url": "https://league-one.jp/match/27553"
+  },
+  {
+    "date": "12.21 土 14:30",
+    "venue": "ベスト電器スタジアム (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 3", "福岡放送(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27554"
+  },
+  {
+    "date": "12.22 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27555"
+  },
+  {
+    "date": "12.22 日 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 1(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27556"
+  },
+  {
+    "date": "12.28 土 13:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 1(録画)", "IBC岩手放送", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27557"
+  },
+  {
+    "date": "12.28 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS 3(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27558"
+  },
+  {
+    "date": "12.29 日 14:30",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27559"
+  },
+  {
+    "date": "01.05 日 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27560"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "ミクニワールドスタジアム北九州 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27564"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27562"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": ["J SPORTS3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27563"
+  },
+  {
+    "date": "01.11 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27561"
+  },
+  {
+    "date": "01.18 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27566"
+  },
+  {
+    "date": "01.18 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS1(録画)", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27565"
+  },
+  {
+    "date": "01.18 土 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27567"
+  },
+  {
+    "date": "01.25 土 13:00",
+    "venue": "ハワイアンズスタジアムいわき (福島県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27568"
+  },
+  {
+    "date": "02.01 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27569"
+  },
+  {
+    "date": "02.02 日 16:00",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27572"
+  },
+  {
+    "date": "02.08 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27570"
+  },
+  {
+    "date": "02.09 日 14:30",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27571"
+  },
+  {
+    "date": "02.15 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27573"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "長崎市総合運動公園　かきどまり陸上競技場 (長崎県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27576"
+  },
+  {
+    "date": "02.22 土 13:00",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27575"
+  },
+  {
+    "date": "02.22 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27574"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27578"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27577"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27579"
+  },
+  {
+    "date": "03.08 土 13:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27580"
+  },
+  {
+    "date": "03.15 土 13:00",
+    "venue": "いわぎんスタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27581"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27582"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "ヨドコウ桜スタジアム (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27583"
+  },
+  {
+    "date": "03.15 土 14:30",
+    "venue": "東平尾公園博多の森陸上競技場 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27584"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27585"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27586"
+  },
+  {
+    "date": "03.23 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27587"
+  },
+  {
+    "date": "03.23 日 14:30",
+    "venue": "えがお健康スタジアム (熊本県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27588"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27589"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27590"
+  },
+  {
+    "date": "03.29 土 14:30",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27591"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27592"
+  },
+  {
+    "date": "04.11 金 19:30",
+    "venue": "東平尾公園博多の森陸上競技場 (福岡県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27595"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "釜石鵜住居復興スタジアム (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27593"
+  },
+  {
+    "date": "04.12 土 12:00",
+    "venue": "ヤンマースタジアム長居 (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27594"
+  },
+  {
+    "date": "04.12 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27596"
+  },
+  {
+    "date": "04.18 金 19:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27598"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27597"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27600"
+  },
+  {
+    "date": "04.20 日 12:00",
+    "venue": "岩手県内 (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27599"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "豊田自動織機シャトルズ愛知",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27604"
+  },
+  {
+    "date": "05.02 金 19:00",
+    "venue": "ヨドコウ桜スタジアム (大阪府)",
+    "home_team": "レッドハリケーンズ大阪",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27602"
+  },
+  {
+    "date": "05.03 土 12:00",
+    "venue": "東大阪市花園ラグビー場 (大阪府)",
+    "home_team": "花園近鉄ライナーズ",
+    "away_team": "グリーンロケッツ東葛",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27601"
+  },
+  {
+    "date": "05.03 土 13:00",
+    "venue": "宮崎県山之口陸上競技場 (宮崎県)",
+    "home_team": "九州電力キューデンヴォルテクス",
+    "away_team": "清水建設江東ブルーシャークス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27603"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "レッドハリケーンズ大阪",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27607"
+  },
+  {
+    "date": "05.10 土 12:00",
+    "venue": "ウェーブスタジアム刈谷 (愛知県)",
+    "home_team": "豊田自動織機シャトルズ愛知",
+    "away_team": "花園近鉄ライナーズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27605"
+  },
+  {
+    "date": "05.10 土 14:30",
+    "venue": "江東区夢の島競技場 (東京都)",
+    "home_team": "清水建設江東ブルーシャークス",
+    "away_team": "日野レッドドルフィンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27608"
+  },
+  {
+    "date": "05.11 日 12:00",
+    "venue": "岩手県内 (岩手県)",
+    "home_team": "日本製鉄釜石シーウェイブス",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27606"
+  },
+  {
+    "date": "12.21 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27609"
+  },
+  {
+    "date": "12.22 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27611"
+  },
+  {
+    "date": "12.22 日 13:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27610"
+  },
+  {
+    "date": "12.28 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27612"
+  },
+  {
+    "date": "12.29 日 12:00",
+    "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27613"
+  },
+  {
+    "date": "01.05 日 13:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27614"
+  },
+  {
+    "date": "01.11 土 12:00",
+    "venue": "栃木県グリーンスタジアム (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27615"
+  },
+  {
+    "date": "01.11 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27616"
+  },
+  {
+    "date": "01.12 日 12:00",
+    "venue": "栃木県グリーンスタジアム (栃木県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27617"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27618"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27619"
+  },
+  {
+    "date": "01.19 日 13:00",
+    "venue": "維新みらいふスタジアム (山口県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27620"
+  },
+  {
+    "date": "01.25 土 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": ["J SPORTSオンデマンド"],
+    "url": "https://league-one.jp/match/27621"
+  },
+  {
+    "date": "02.01 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27623"
+  },
+  {
+    "date": "02.02 日 12:00",
+    "venue": "アースケア敷島サッカー・ラグビー場 (群馬県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27622"
+  },
+  {
+    "date": "02.15 土 13:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27624"
+  },
+  {
+    "date": "02.15 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27625"
+  },
+  {
+    "date": "02.16 日 12:00",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27626"
+  },
+  {
+    "date": "02.22 土 12:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27628"
+  },
+  {
+    "date": "02.22 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27627"
+  },
+  {
+    "date": "02.23 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27629"
+  },
+  {
+    "date": "03.01 土 12:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27630"
+  },
+  {
+    "date": "03.01 土 14:30",
+    "venue": "福山通運ローズスタジアム (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27631"
+  },
+  {
+    "date": "03.02 日 12:00",
+    "venue": "福山通運ローズスタジアム (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27632"
+  },
+  {
+    "date": "03.08 土 12:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27633"
+  },
+  {
+    "date": "03.08 土 12:00",
+    "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27634"
+  },
+  {
+    "date": "03.16 日 13:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27635"
+  },
+  {
+    "date": "03.22 土 12:00",
+    "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27636"
+  },
+  {
+    "date": "03.22 土 13:00",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27637"
+  },
+  {
+    "date": "03.22 土 14:30",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27638"
+  },
+  {
+    "date": "03.29 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27639"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "海老名運動公園陸上競技場 (神奈川県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27640"
+  },
+  {
+    "date": "04.05 土 12:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27641"
+  },
+  {
+    "date": "03.30 日 12:00",
+    "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27643"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27644"
+  },
+  {
+    "date": "04.12 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27642"
+  },
+  {
+    "date": "04.19 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27647"
+  },
+  {
+    "date": "04.19 土 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27646"
+  },
+  {
+    "date": "04.20 日 14:00",
+    "venue": "維新みらいふスタジアム (山口県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27645"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ルリーロ福岡",
+    "away_team": "スカイアクティブズ広島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27650"
+  },
+  {
+    "date": "04.27 日 13:00",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "中国電力レッドレグリオンズ",
+    "away_team": "クリタウォーターガッシュ昭島",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27648"
+  },
+  {
+    "date": "04.27 日 13:00",
+    "venue": "小田原市城山陸上競技場 (神奈川県)",
+    "home_team": "狭山セコムラガッツ",
+    "away_team": "ヤクルトレビンズ戸田",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27649"
+  },
+  {
+    "date": "日付未定 ",
+    "venue": "未定",
+    "home_team": "ヤクルトレビンズ戸田",
+    "away_team": "ルリーロ福岡",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27652"
+  },
+  {
+    "date": "05.10 土 12:00",
+    "venue": "厚木市荻野運動公園競技場 (神奈川県)",
+    "home_team": "クリタウォーターガッシュ昭島",
+    "away_team": "狭山セコムラガッツ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27653"
+  },
+  {
+    "date": "05.11 日 14:30",
+    "venue": "Balcom BMW Stadium (広島県)",
+    "home_team": "スカイアクティブズ広島",
+    "away_team": "中国電力レッドレグリオンズ",
+    "broadcasters": [],
+    "url": "https://league-one.jp/match/27651"
+  }
+]

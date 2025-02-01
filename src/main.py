@@ -1,5 +1,6 @@
 import sys
 from src.scraper.epcr import EPCRChallengeCupScraper, EPCRChampionsCupScraper
+from src.scraper.league_one import LeagueOneScraper
 from src.scraper.top14 import Top14Scraper
 
 def main():
@@ -12,7 +13,7 @@ def main():
         "epcr-challenge": EPCRChallengeCupScraper(),
         "epcr-champions": EPCRChampionsCupScraper(),
         "top14": Top14Scraper(),
-        # 他のスクレイパーを追加
+        "league-one": LeagueOneScraper(),
     }
     
     if scraper_type not in scrapers:
