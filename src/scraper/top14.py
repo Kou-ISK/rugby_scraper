@@ -149,9 +149,6 @@ class Top14Scraper(BaseScraper):
             self.driver = self._setup_driver()
             self.driver.get(self.calendar_url)
             print(f"ページにアクセス: {self.calendar_url}")
-
-            # デバッグ
-            self._extract_match_details("https://top14.lnr.fr/feuille-de-match/2024-2025/j16/10978-bayonne-bordeaux-begles")
             
             match_links = self._extract_all_season_match_links()
             if not match_links:
