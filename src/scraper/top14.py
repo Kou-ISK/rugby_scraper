@@ -3,7 +3,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 import time
@@ -84,17 +83,21 @@ class Top14Scraper(BaseScraper):
                 lambda d: d.execute_script('return document.readyState') == 'complete'
             )
             time.sleep(5)
+            
+            # ページソースを取得してBeautifulSoupで解析
+            html_content = self.driver.page_source
+            soup = BeautifulSoup(html_content, 'html.parser')
 
             # 試合情報を取得
             match_info = {
-                'date': self._get_match_date(),
-                'venue': self._get_venue(),
-                'home_team': self._get_team_name('home'),
-                'away_team': self._get_team_name('away'),
-                'broadcasters': self._get_broadcasters(),
+                'date': self._get_match_date(soup),
+                'venue': self._get_venue(soup),
+                'home_team': self._get_team_name(soup, 'home'),
+                'away_team': self._get_team_name(soup, 'away'),
+                'broadcasters': self._get_broadcasters(soup),
                 'id': self._get_match_id(url)
             }
-            
+            print(match_info)
             return match_info
 
         except Exception as e:
@@ -146,6 +149,9 @@ class Top14Scraper(BaseScraper):
             self.driver = self._setup_driver()
             self.driver.get(self.calendar_url)
             print(f"ページにアクセス: {self.calendar_url}")
+
+            # デバッグ
+            self._extract_match_details("https://top14.lnr.fr/feuille-de-match/2024-2025/j16/10978-bayonne-bordeaux-begles")
             
             match_links = self._extract_all_season_match_links()
             if not match_links:
@@ -167,48 +173,47 @@ class Top14Scraper(BaseScraper):
             if self.driver:
                 self.driver.quit()
 
-    def _get_match_date(self):
+    def _get_match_date(self, soup):
         try:
-            date_element = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, '.match-header__title .title--large'))
-            )
-            time_element = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, '.match-header-broadcast__hour'))
-            )
-            return f"{date_element.text} - {time_element.text}"
+            date_element = soup.find('div', class_='title--large')
+            time_element = soup.find('span', class_='match-header-broadcast__hour')
+            
+            if date_element and time_element:
+                return f"{date_element.text.strip()} - {time_element.text.strip()}"
+            return None
         except Exception as e:
             print(f"日付の取得に失敗: {str(e)}")
             return None
 
-    def _get_venue(self):
+    def _get_venue(self, soup):
         try:
-            venue_elements = self.driver.find_elements(By.CSS_SELECTOR, '.match-header__info')
-            if len(venue_elements) >= 2:  # 2つ目の要素を取得
-                return venue_elements[1].text
+            venue_elements = soup.find_all('div', class_='match-header__info')
+            if len(venue_elements) >= 2:
+                return venue_elements[1].text.strip()
             return None
         except Exception as e:
             print(f"会場の取得に失敗: {str(e)}")
             return None
 
-    def _get_team_name(self, team_type):
+    def _get_team_name(self, soup, team_type):
         try:
-            # インデックスを使用してホーム/アウェイを区別
             index = 0 if team_type == 'home' else 1
-            team_elements = self.driver.find_elements(By.CLASS_NAME, 'match-header-club__title')
+
+            team_elements = soup.find_all('a', class_='match-header-club__title')
             if len(team_elements) > index:
-                return team_elements[index].text
+                return team_elements[index].text.strip()
             return None
         except Exception as e:
             print(f"{team_type}チーム名の取得に失敗: {str(e)}")
             return None
 
-    def _get_broadcasters(self):
+    def _get_broadcasters(self, soup):
         try:
-            broadcaster_elements = self.driver.find_elements(By.CSS_SELECTOR, '.match-header-broadcast__channel')
+            broadcaster_elements = soup.find_all('img', class_='match-header-broadcast__channel')
             broadcasters = []
             for element in broadcaster_elements:
-                alt_text = element.get_attribute('alt')
-                if alt_text and alt_text not in broadcasters:  # 重複を防ぐ
+                alt_text = element.get('alt')
+                if alt_text and alt_text not in broadcasters:
                     broadcasters.append(alt_text)
             return broadcasters
         except Exception as e:
