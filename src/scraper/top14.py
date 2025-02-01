@@ -93,7 +93,7 @@ class Top14Scraper(BaseScraper):
                 'home_team': self._get_team_name(soup, 'home'),
                 'away_team': self._get_team_name(soup, 'away'),
                 'broadcasters': self._get_broadcasters(match_header),
-                'id': self._get_match_id(url)
+                'url': url
             }
             print(match_info)
             return match_info
@@ -144,7 +144,6 @@ class Top14Scraper(BaseScraper):
 
     def scrape(self):
         try:
-            self._extract_match_details("https://top14.lnr.fr/feuille-de-match/2024-2025/j16/10978-bayonne-bordeaux-begles")
             self.driver = self._setup_driver()
             self.driver.get(self.calendar_url)
             print(f"ページにアクセス: {self.calendar_url}")
@@ -211,12 +210,3 @@ class Top14Scraper(BaseScraper):
         except Exception as e:
             print(f"放送局の取得に失敗: {str(e)}")
             return []
-
-    def _get_match_id(self, url):
-        try:
-            # URLから試合IDを抽出 (例: /feuille-de-match/2024-2025/j16/10977-clermont-toulouse から10977を取得)
-            match_id = url.split('/')[-1].split('-')[0]
-            return match_id
-        except Exception as e:
-            print(f"試合IDの取得に失敗: {str(e)}")
-            return None 
