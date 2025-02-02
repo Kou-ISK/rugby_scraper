@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 from .base import BaseScraper
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 class EPCRBaseScraper(BaseScraper):
     def __init__(self, competition_type):
@@ -68,7 +69,7 @@ class EPCRBaseScraper(BaseScraper):
                     date_element = info_container.select_one('.flex.items-center.uppercase')
                     if date_element:
                         date_text = date_element.text.strip()
-                        match_info['date'] = date_text
+                        match_info['date'] = self.format_date_string(date_text)
 
                     venue_element = info_container.select_one('.flex.items-center.lg\\:ml-4')
                     if venue_element:
@@ -85,7 +86,25 @@ class EPCRBaseScraper(BaseScraper):
                 matches.append(match_info)
 
         return matches
+    
+    def format_date_string(self, date_string):
+        try:
+            parts = date_string.split(", ")
+            date_time = parts[1].split(" - ")
+            date_part = date_time[0].split()
+            time_part = date_time[1]
 
+            day = date_part[0]
+            month = date_part[1]
+            year = date_part[2]
+
+            # 月の省略形を数字に変換
+            month_number = datetime.strptime(month, "%b").month
+
+            formatted_string = f"{year}-{month_number:02}-{day} {time_part}:00"
+            return formatted_string
+        except (ValueError, IndexError):
+            return None  # 変換できない場合
 
     def scrape(self):
         try:

@@ -68,7 +68,7 @@ class LeagueOneScraper(BaseScraper):
                     continue
                 
                 match_info = {
-                    'date': self._format_date(date_element),
+                    'date': self.format_date_string(self._format_date(date_element)),
                     'venue': venue_element.text.strip(),
                     'home_team': self._get_team_name(teams[0]),
                     'away_team': self._get_team_name(teams[1]),
@@ -135,3 +135,24 @@ class LeagueOneScraper(BaseScraper):
         except Exception as e:
             print(f"放送局の取得に失敗: {str(e)}")
             return []
+        
+    from datetime import datetime
+
+    def format_date_string(self,date_string):
+        try:
+            parts = date_string.split()
+            date_part = parts[0].split(".")
+            time_part = parts[2]
+
+            month = int(date_part[0])
+            day = int(date_part[1])
+
+            # 現在の日付を取得
+            current_date = datetime.now()
+            # 12月以降は次のシーズン、1月は現在のシーズン
+            year = str(current_date.year - 1) if current_date.month < 12 else str(current_date.year)
+
+            formatted_string = f"{year}-{month:02}-{day} {time_part}:00"
+            return formatted_string
+        except (ValueError, IndexError):
+            return None  # 変換できない場合

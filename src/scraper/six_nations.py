@@ -80,7 +80,7 @@ class SixNationsScraper(BaseScraper):
             match_url = self._get_match_url(card)
 
             return {
-                'date': f"{current_date} {time_element.text.strip()}" if time_element else current_date,
+                'date': self.format_date_string(f"{current_date} {time_element.text.strip()}") if time_element else self.format_date_string(current_date),
                 'venue': venue_element.text.strip(),
                 'home_team': teams[0].text.strip(),
                 'away_team': teams[1].text.strip(),
@@ -94,6 +94,29 @@ class SixNationsScraper(BaseScraper):
     def _get_match_url(self, card):
         raw_match_url = card.find("a", class_="fixturesResultsCard_cardLink__c6BTy")
         return raw_match_url.get('href') if raw_match_url else None
+    
+    def format_date_string(self,date_string):
+        try:
+            parts = date_string.split()
+            day = parts[1]
+            month = parts[2]
+
+            # 月の省略形を数字に変換
+            month_number = datetime.strptime(month, "%b").month
+
+            # 年は現在年を取得 (必要に応じて変更)
+            year = datetime.now().year
+
+            # 時間の有無を確認
+            if len(parts) == 4:
+                time = parts[3]
+                formatted_string = f"{year}-{month_number:02}-{day} {time}:00"
+            else:  # 時間がない場合
+                formatted_string = f"{year}-{month_number:02}-{day} 00:00:00"  # 00:00:00を設定
+
+            return formatted_string
+        except (ValueError, IndexError):
+            return None  # 変換できない場合
 
     def _setup_driver(self):
         chrome_options = Options()

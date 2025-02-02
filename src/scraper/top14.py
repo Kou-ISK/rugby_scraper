@@ -37,86 +37,81 @@ class Top14Scraper(BaseScraper):
             print(f"ドライバーの初期化エラー: {str(e)}")
             raise
 
-    def _extract_match_links(self):
-        try:
-            WebDriverWait(self.driver, 30).until(
-                lambda d: d.execute_script('return document.readyState') == 'complete'
-            )
-            time.sleep(5)
+    def _extract_matches(self, soup):
+        matches = []
+        
+        # 日付を取得
+        calendar_inner = soup.find('div', class_='calendar-results__inner')
+        if not calendar_inner:
+            return matches
+        
+        current_date = None
+        
+        # calendar_inner内のすべての要素を順番に処理
+        for element in calendar_inner.children:
+            if not hasattr(element, 'get'):  # NavigableStringをスキップ
+                continue
             
-            html_content = self.driver.page_source
-            soup = BeautifulSoup(html_content, 'html.parser')
+            # 日付要素の場合
+            if element.get('class') and 'calendar-results__fixture-date' in element.get('class'):
+                current_date = element.text.strip()
             
-            match_links = []
-            links = soup.select('a.match-links__link[href*="/feuille-de-match/"]')
-            
-            for link in links:
-                # hrefの値から正しいURLを作成
-                href = link['href']
-                if href.startswith('http'):
-                    match_url = href
-                else:
-                    # 重複するドメイン部分を削除
-                    href = href.replace(self.base_url, '').lstrip('/')
-                    match_url = f"{self.base_url}/{href}"
+            # 試合要素の場合
+            elif element.get('class') and 'calendar-results__line' in element.get('class'):
+                if not current_date:
+                    continue
+                    
+                match_info = {}
+                match_info['date'] = current_date
                 
-                match_links.append({
-                    'url': match_url
-                })
-            # デバッグ用のプリント
-            print(f"取得した試合リンク数: {len(match_links)}")
-            print(f"リンク: {match_url}")
-            return match_links
-            
-        except Exception as e:
-            print(f"試合リンクの抽出に失敗: {str(e)}")
-            import traceback
-            print(traceback.format_exc())
-            return []
+                # 時刻を取得
+                time_element = element.select_one('.match-line__time')
+                if time_element:
+                    match_info['time'] = time_element.text.strip()
+                
+                # チーム名を取得
+                home_team = element.select_one('.club-line--reversed .club-line__name')
+                away_team = element.select_one('.club-line--table-format:not(.club-line--reversed) .club-line__name')
+                
+                if home_team and away_team:
+                    match_info['home_team'] = home_team.text.strip()
+                    match_info['away_team'] = away_team.text.strip()
+                
+                # 放送局を取得
+                broadcasters = []
+                broadcaster_elements = element.select('.match-line__broadcaster-link img')
+                for broadcaster in broadcaster_elements:
+                    broadcasters.append(broadcaster['alt'])
+                
+                if broadcasters:
+                    match_info['broadcasters'] = broadcasters
+                
+                # URLを取得
+                match_link = element.select_one('.match-links__link[href*="/feuille-de-match/"]')
+                if match_link:
+                    match_info['url'] = f"{self.base_url}{match_link['href']}"
+                
+                matches.append(match_info)
+                print(match_info)
+        
+        return matches
 
-    def _extract_match_details(self, url):
+    def scrape(self):
         try:
-            response = requests.get(url)
-            print(f"試合詳細ページにアクセス: {url}")
-            time.sleep(5)
+            self.driver = self._setup_driver()
+            self.driver.get(self.calendar_url)
+            print(f"ページにアクセス: {self.calendar_url}")
             
-            # ページソースを取得してBeautifulSoupで解析
-            html_content = response.text
-            soup = BeautifulSoup(html_content, 'html.parser')
-
-            match_header = soup.find('div', class_='match-header__title')
-
-            # 試合情報を取得
-            match_info = {
-                'date': self._get_match_date(match_header),
-                'venue': self._get_venue(soup),
-                'home_team': self._get_team_name(soup, 'home'),
-                'away_team': self._get_team_name(soup, 'away'),
-                'broadcasters': self._get_broadcasters(match_header),
-                'url': url
-            }
-            print(match_info)
-            return match_info
-
-        except Exception as e:
-            print(f"試合詳細の抽出に失敗: {str(e)}")
-            import traceback
-            print(traceback.format_exc())
-            return None
-
-    def _extract_all_season_match_links(self):
-        try:
             # まずページの読み込みを待つ
             WebDriverWait(self.driver, 30).until(
                 lambda d: d.execute_script('return document.readyState') == 'complete'
             )
-            time.sleep(5)
             
             # プルダウンの要素を探す
             round_select = Select(self.driver.find_element(By.ID, 'Journée'))
             round_options = [option.text for option in round_select.options]
             
-            all_match_links = []
+            all_matches = []
             
             for round_option in round_options:
                 try:
@@ -125,41 +120,20 @@ class Top14Scraper(BaseScraper):
                     round_select.select_by_visible_text(round_option)
                     time.sleep(3)
                     
-                    # 試合リンクを取得
-                    match_links = self._extract_match_links()
-                    all_match_links.extend(match_links)
+                    # ページソースを取得してBeautifulSoupで解析
+                    html_content = self.driver.page_source
+                    soup = BeautifulSoup(html_content, 'html.parser')
+                    
+                    # 試合情報を直接取得
+                    matches = self._extract_matches(soup)
+                    all_matches.extend(matches)
                     
                 except StaleElementReferenceException:
                     time.sleep(2)
                     continue
             
-            print(f"全節の試合リンク数: {len(all_match_links)}")
-            return all_match_links
-            
-        except Exception as e:
-            print(f"試合リンクの抽出に失敗: {str(e)}")
-            import traceback
-            print(traceback.format_exc())
-            return []
-
-    def scrape(self):
-        try:
-            self.driver = self._setup_driver()
-            self.driver.get(self.calendar_url)
-            print(f"ページにアクセス: {self.calendar_url}")
-            
-            match_links = self._extract_all_season_match_links()
-            if not match_links:
-                return None
-
-            matches = []
-            for match_link in match_links:
-                match_info = self._extract_match_details(match_link['url'])
-                if match_info:
-                    matches.append(match_info)
-
-            print(f"処理した試合数: {len(matches)}")
-            return matches
+            print(f"処理した試合数: {len(all_matches)}")
+            return all_matches
             
         except Exception as e:
             print(f"スクレイピングエラー: {str(e)}")
@@ -167,46 +141,3 @@ class Top14Scraper(BaseScraper):
         finally:
             if self.driver:
                 self.driver.quit()
-
-    def _get_match_date(self, match_header):
-        try:
-            date_element = match_header.find('div', class_='title title--large title--textured title--centered')
-            time_element = match_header.find('span', class_='match-header-broadcast__hour')
-            
-            if date_element and time_element:
-                return f"{date_element.text.strip()} - {time_element.text.strip()}"
-            return None
-        except Exception as e:
-            print(f"日付の取得に失敗: {str(e)}")
-            return None
-
-    def _get_venue(self, soup):
-        try:
-            venue_elements = soup.find_all('div', class_='match-header__info')
-            if len(venue_elements) >= 2:
-                return venue_elements[1].text.strip()
-            return None
-        except Exception as e:
-            print(f"会場の取得に失敗: {str(e)}")
-            return None
-
-    def _get_team_name(self, soup, team_type):
-        try:
-            index = 0 if team_type == 'home' else 1
-
-            team_elements = soup.find_all('a', class_='match-header-club__title')
-            if len(team_elements) > index:
-                return team_elements[index].text.strip()
-            return None
-        except Exception as e:
-            print(f"{team_type}チーム名の取得に失敗: {str(e)}")
-            return None
-
-    def _get_broadcasters(self, match_header):
-        try:
-            broadcaster_elements = match_header.find('div', class_='match-header-broadcast').find_all('img')
-            broadcasters = [img.get('alt') for img in broadcaster_elements]
-            return broadcasters
-        except Exception as e:
-            print(f"放送局の取得に失敗: {str(e)}")
-            return []
