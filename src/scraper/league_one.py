@@ -35,7 +35,6 @@ class LeagueOneScraper(BaseScraper):
                     continue
                 
                 soup = BeautifulSoup(response.content, 'html.parser')
-                print(soup)
                 matches = self._extract_matches(soup)
                 all_matches.extend(matches)
                 

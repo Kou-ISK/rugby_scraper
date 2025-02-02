@@ -17,7 +17,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27446"
   },
   {
@@ -25,7 +28,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27445"
   },
   {
@@ -33,7 +39,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27448"
   },
   {
@@ -41,7 +50,12 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 4", "tvk", "J SPORTSオンデマンド", "Lemino"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "tvk",
+      "J SPORTSオンデマンド",
+      "Lemino"
+    ],
     "url": "https://league-one.jp/match/27449"
   },
   {
@@ -87,7 +101,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27451"
   },
   {
@@ -95,7 +112,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "三重ホンダヒート",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27453"
   },
   {
@@ -103,7 +123,11 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27454"
   },
   {
@@ -111,7 +135,10 @@
     "venue": "ノエビアスタジアム神戸 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27455"
   },
   {
@@ -119,7 +146,11 @@
     "venue": "Jヴィレッジスタジアム (福島県)",
     "home_team": "浦安D-Rocks",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27462"
   },
   {
@@ -127,7 +158,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27457"
   },
   {
@@ -135,7 +169,11 @@
     "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 3", "TOKYO MX1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "TOKYO MX1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27458"
   },
   {
@@ -143,7 +181,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27459"
   },
   {
@@ -151,7 +192,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27461"
   },
   {
@@ -159,7 +203,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27460"
   },
   {
@@ -167,7 +214,11 @@
     "venue": "Uvanceとどろきスタジアム by Fujitsu (神奈川県)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27463"
   },
   {
@@ -175,7 +226,11 @@
     "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 1", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27464"
   },
   {
@@ -183,7 +238,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27465"
   },
   {
@@ -191,7 +249,12 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS １", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS １",
+      "BS日テレ",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27467"
   },
   {
@@ -199,7 +262,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "三重ホンダヒート",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27466"
   },
   {
@@ -207,7 +273,11 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 3", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27468"
   },
   {
@@ -215,7 +285,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27469"
   },
   {
@@ -223,7 +296,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27471"
   },
   {
@@ -244,7 +320,11 @@
     "venue": "ノエビアスタジアム神戸 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 3", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27472"
   },
   {
@@ -252,7 +332,11 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 1", "三重テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "三重テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27474"
   },
   {
@@ -260,7 +344,10 @@
     "venue": "ミクニワールドスタジアム北九州 (福岡県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27473"
   },
   {
@@ -268,7 +355,10 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27479"
   },
   {
@@ -276,7 +366,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27477"
   },
   {
@@ -309,7 +402,11 @@
     "venue": "豊田スタジアム (愛知県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "中京テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27478"
   },
   {
@@ -317,7 +414,11 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 3", "三重テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "三重テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27480"
   },
   {
@@ -325,7 +426,11 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 2", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27483"
   },
   {
@@ -333,7 +438,10 @@
     "venue": "Jヴィレッジスタジアム (福島県)",
     "home_team": "ブラックラムズ東京",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27486"
   },
   {
@@ -354,7 +462,11 @@
     "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 1", "テレビ神奈川 (堀)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "テレビ神奈川 (堀)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27482"
   },
   {
@@ -362,7 +474,11 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27484"
   },
   {
@@ -370,7 +486,10 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27485"
   },
   {
@@ -378,7 +497,12 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 1", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "BS日テレ",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27488"
   },
   {
@@ -386,7 +510,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27487"
   },
   {
@@ -394,7 +521,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27489"
   },
   {
@@ -402,7 +532,11 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 4", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27492"
   },
   {
@@ -410,7 +544,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27491"
   },
   {
@@ -418,7 +555,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 4", "J SPORTS オンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTS オンデマンド"
+    ],
     "url": "https://league-one.jp/match/27490"
   },
   {
@@ -426,7 +566,11 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27493"
   },
   {
@@ -434,7 +578,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27494"
   },
   {
@@ -442,7 +589,11 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "中京テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27495"
   },
   {
@@ -450,7 +601,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27496"
   },
   {
@@ -458,7 +612,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27497"
   },
   {
@@ -466,7 +623,11 @@
     "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
     "home_team": "東京サンゴリアス",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27498"
   },
   {
@@ -918,7 +1079,11 @@
     "venue": "ベスト電器スタジアム (福岡県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 3", "福岡放送(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "福岡放送(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27554"
   },
   {
@@ -926,7 +1091,10 @@
     "venue": "太田市運動公園陸上競技場 (群馬県)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27555"
   },
   {
@@ -934,7 +1102,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 1(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27556"
   },
   {
@@ -942,7 +1113,11 @@
     "venue": "釜石鵜住居復興スタジアム (岩手県)",
     "home_team": "日本製鉄釜石シーウェイブス",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 1(録画)", "IBC岩手放送", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1(録画)",
+      "IBC岩手放送",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27557"
   },
   {
@@ -950,7 +1125,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS 3(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27558"
   },
   {
@@ -958,7 +1136,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "レッドハリケーンズ大阪",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27559"
   },
   {
@@ -966,7 +1147,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27560"
   },
   {
@@ -974,7 +1158,10 @@
     "venue": "ミクニワールドスタジアム北九州 (福岡県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "豊田自動織機シャトルズ愛知",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27564"
   },
   {
@@ -982,7 +1169,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27562"
   },
   {
@@ -990,7 +1180,10 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "レッドハリケーンズ大阪",
-    "broadcasters": ["J SPORTS3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27563"
   },
   {
@@ -998,7 +1191,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "日野レッドドルフィンズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27561"
   },
   {
@@ -1006,7 +1202,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27566"
   },
   {
@@ -1014,7 +1213,10 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS1(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS1(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27565"
   },
   {
@@ -1022,7 +1224,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27567"
   },
   {
@@ -1030,7 +1235,10 @@
     "venue": "ハワイアンズスタジアムいわき (福島県)",
     "home_team": "日本製鉄釜石シーウェイブス",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27568"
   },
   {
@@ -1038,7 +1246,10 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27569"
   },
   {
@@ -1046,7 +1257,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27572"
   },
   {
@@ -1054,7 +1268,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "豊田自動織機シャトルズ愛知",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27570"
   },
   {
@@ -1062,7 +1279,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27571"
   },
   {
@@ -1070,7 +1290,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27573"
   },
   {
@@ -1078,7 +1301,10 @@
     "venue": "長崎市総合運動公園　かきどまり陸上競技場 (長崎県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27576"
   },
   {
@@ -1086,7 +1312,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "日野レッドドルフィンズ",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27575"
   },
   {
@@ -1094,7 +1323,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27574"
   },
   {
@@ -1358,7 +1590,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "中国電力レッドレグリオンズ",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27609"
   },
   {
@@ -1366,7 +1600,9 @@
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
     "home_team": "ルリーロ福岡",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27611"
   },
   {
@@ -1374,7 +1610,9 @@
     "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "クリタウォーターガッシュ昭島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27610"
   },
   {
@@ -1382,7 +1620,9 @@
     "venue": "厚木市荻野運動公園競技場 (神奈川県)",
     "home_team": "クリタウォーターガッシュ昭島",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27612"
   },
   {
@@ -1390,7 +1630,9 @@
     "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27613"
   },
   {
@@ -1406,7 +1648,9 @@
     "venue": "栃木県グリーンスタジアム (栃木県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "ルリーロ福岡",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27615"
   },
   {
@@ -1414,7 +1658,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "スカイアクティブズ広島",
     "away_team": "クリタウォーターガッシュ昭島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27616"
   },
   {
@@ -1422,7 +1668,9 @@
     "venue": "栃木県グリーンスタジアム (栃木県)",
     "home_team": "ヤクルトレビンズ戸田",
     "away_team": "中国電力レッドレグリオンズ",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27617"
   },
   {
@@ -1430,7 +1678,9 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "クリタウォーターガッシュ昭島",
     "away_team": "ルリーロ福岡",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27618"
   },
   {
@@ -1438,7 +1688,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "スカイアクティブズ広島",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27619"
   },
   {
@@ -1446,7 +1698,9 @@
     "venue": "維新みらいふスタジアム (山口県)",
     "home_team": "中国電力レッドレグリオンズ",
     "away_team": "狭山セコムラガッツ",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27620"
   },
   {
@@ -1454,7 +1708,9 @@
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
     "home_team": "ルリーロ福岡",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27621"
   },
   {
@@ -1731,7 +1987,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27446"
   },
   {
@@ -1739,7 +1998,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27445"
   },
   {
@@ -1747,7 +2009,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27448"
   },
   {
@@ -1755,7 +2020,12 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 4", "tvk", "J SPORTSオンデマンド", "Lemino"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "tvk",
+      "J SPORTSオンデマンド",
+      "Lemino"
+    ],
     "url": "https://league-one.jp/match/27449"
   },
   {
@@ -1801,7 +2071,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27451"
   },
   {
@@ -1809,7 +2082,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "三重ホンダヒート",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27453"
   },
   {
@@ -1817,7 +2093,11 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27454"
   },
   {
@@ -1825,7 +2105,10 @@
     "venue": "ノエビアスタジアム神戸 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27455"
   },
   {
@@ -1833,7 +2116,11 @@
     "venue": "Jヴィレッジスタジアム (福島県)",
     "home_team": "浦安D-Rocks",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27462"
   },
   {
@@ -1841,7 +2128,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27457"
   },
   {
@@ -1849,7 +2139,11 @@
     "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 3", "TOKYO MX1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "TOKYO MX1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27458"
   },
   {
@@ -1857,7 +2151,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27459"
   },
   {
@@ -1865,7 +2162,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27461"
   },
   {
@@ -1873,7 +2173,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27460"
   },
   {
@@ -1881,7 +2184,11 @@
     "venue": "Uvanceとどろきスタジアム by Fujitsu (神奈川県)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27463"
   },
   {
@@ -1889,7 +2196,11 @@
     "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 1", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27464"
   },
   {
@@ -1897,7 +2208,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27465"
   },
   {
@@ -1905,7 +2219,12 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS １", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS １",
+      "BS日テレ",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27467"
   },
   {
@@ -1913,7 +2232,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "三重ホンダヒート",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27466"
   },
   {
@@ -1921,7 +2243,11 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 3", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27468"
   },
   {
@@ -1929,7 +2255,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27469"
   },
   {
@@ -1937,7 +2266,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27471"
   },
   {
@@ -1958,7 +2290,11 @@
     "venue": "ノエビアスタジアム神戸 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 3", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27472"
   },
   {
@@ -1966,7 +2302,11 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 1", "三重テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "三重テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27474"
   },
   {
@@ -1974,7 +2314,10 @@
     "venue": "ミクニワールドスタジアム北九州 (福岡県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27473"
   },
   {
@@ -1982,7 +2325,10 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27479"
   },
   {
@@ -1990,7 +2336,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27477"
   },
   {
@@ -2023,7 +2372,11 @@
     "venue": "豊田スタジアム (愛知県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "中京テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27478"
   },
   {
@@ -2031,7 +2384,11 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 3", "三重テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "三重テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27480"
   },
   {
@@ -2039,7 +2396,11 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 2", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27483"
   },
   {
@@ -2047,7 +2408,10 @@
     "venue": "Jヴィレッジスタジアム (福島県)",
     "home_team": "ブラックラムズ東京",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27486"
   },
   {
@@ -2068,7 +2432,11 @@
     "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 1", "テレビ神奈川 (堀)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "テレビ神奈川 (堀)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27482"
   },
   {
@@ -2076,7 +2444,11 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27484"
   },
   {
@@ -2084,7 +2456,10 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27485"
   },
   {
@@ -2092,7 +2467,12 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 1", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "BS日テレ",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27488"
   },
   {
@@ -2100,7 +2480,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27487"
   },
   {
@@ -2108,7 +2491,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27489"
   },
   {
@@ -2116,7 +2502,11 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 4", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27492"
   },
   {
@@ -2124,7 +2514,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27491"
   },
   {
@@ -2132,7 +2525,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 4", "J SPORTS オンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTS オンデマンド"
+    ],
     "url": "https://league-one.jp/match/27490"
   },
   {
@@ -2140,7 +2536,11 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27493"
   },
   {
@@ -2148,7 +2548,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27494"
   },
   {
@@ -2156,7 +2559,11 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "中京テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27495"
   },
   {
@@ -2164,7 +2571,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27496"
   },
   {
@@ -2172,7 +2582,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27497"
   },
   {
@@ -2180,7 +2593,11 @@
     "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
     "home_team": "東京サンゴリアス",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27498"
   },
   {
@@ -2632,7 +3049,11 @@
     "venue": "ベスト電器スタジアム (福岡県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 3", "福岡放送(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "福岡放送(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27554"
   },
   {
@@ -2640,7 +3061,10 @@
     "venue": "太田市運動公園陸上競技場 (群馬県)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27555"
   },
   {
@@ -2648,7 +3072,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 1(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27556"
   },
   {
@@ -2656,7 +3083,11 @@
     "venue": "釜石鵜住居復興スタジアム (岩手県)",
     "home_team": "日本製鉄釜石シーウェイブス",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 1(録画)", "IBC岩手放送", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1(録画)",
+      "IBC岩手放送",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27557"
   },
   {
@@ -2664,7 +3095,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS 3(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27558"
   },
   {
@@ -2672,7 +3106,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "レッドハリケーンズ大阪",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27559"
   },
   {
@@ -2680,7 +3117,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27560"
   },
   {
@@ -2688,7 +3128,10 @@
     "venue": "ミクニワールドスタジアム北九州 (福岡県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "豊田自動織機シャトルズ愛知",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27564"
   },
   {
@@ -2696,7 +3139,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27562"
   },
   {
@@ -2704,7 +3150,10 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "レッドハリケーンズ大阪",
-    "broadcasters": ["J SPORTS3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27563"
   },
   {
@@ -2712,7 +3161,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "日野レッドドルフィンズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27561"
   },
   {
@@ -2720,7 +3172,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27566"
   },
   {
@@ -2728,7 +3183,10 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS1(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS1(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27565"
   },
   {
@@ -2736,7 +3194,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27567"
   },
   {
@@ -2744,7 +3205,10 @@
     "venue": "ハワイアンズスタジアムいわき (福島県)",
     "home_team": "日本製鉄釜石シーウェイブス",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27568"
   },
   {
@@ -2752,7 +3216,10 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27569"
   },
   {
@@ -2760,7 +3227,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27572"
   },
   {
@@ -2768,7 +3238,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "豊田自動織機シャトルズ愛知",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27570"
   },
   {
@@ -2776,7 +3249,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27571"
   },
   {
@@ -2784,7 +3260,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27573"
   },
   {
@@ -2792,7 +3271,10 @@
     "venue": "長崎市総合運動公園　かきどまり陸上競技場 (長崎県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27576"
   },
   {
@@ -2800,7 +3282,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "日野レッドドルフィンズ",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27575"
   },
   {
@@ -2808,7 +3293,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27574"
   },
   {
@@ -3072,7 +3560,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "中国電力レッドレグリオンズ",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27609"
   },
   {
@@ -3080,7 +3570,9 @@
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
     "home_team": "ルリーロ福岡",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27611"
   },
   {
@@ -3088,7 +3580,9 @@
     "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "クリタウォーターガッシュ昭島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27610"
   },
   {
@@ -3096,7 +3590,9 @@
     "venue": "厚木市荻野運動公園競技場 (神奈川県)",
     "home_team": "クリタウォーターガッシュ昭島",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27612"
   },
   {
@@ -3104,7 +3600,9 @@
     "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27613"
   },
   {
@@ -3120,7 +3618,9 @@
     "venue": "栃木県グリーンスタジアム (栃木県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "ルリーロ福岡",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27615"
   },
   {
@@ -3128,7 +3628,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "スカイアクティブズ広島",
     "away_team": "クリタウォーターガッシュ昭島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27616"
   },
   {
@@ -3136,7 +3638,9 @@
     "venue": "栃木県グリーンスタジアム (栃木県)",
     "home_team": "ヤクルトレビンズ戸田",
     "away_team": "中国電力レッドレグリオンズ",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27617"
   },
   {
@@ -3144,7 +3648,9 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "クリタウォーターガッシュ昭島",
     "away_team": "ルリーロ福岡",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27618"
   },
   {
@@ -3152,7 +3658,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "スカイアクティブズ広島",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27619"
   },
   {
@@ -3160,7 +3668,9 @@
     "venue": "維新みらいふスタジアム (山口県)",
     "home_team": "中国電力レッドレグリオンズ",
     "away_team": "狭山セコムラガッツ",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27620"
   },
   {
@@ -3168,7 +3678,9 @@
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
     "home_team": "ルリーロ福岡",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27621"
   },
   {
@@ -3445,7 +3957,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27446"
   },
   {
@@ -3453,7 +3968,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27445"
   },
   {
@@ -3461,7 +3979,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27448"
   },
   {
@@ -3469,7 +3990,12 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 4", "tvk", "J SPORTSオンデマンド", "Lemino"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "tvk",
+      "J SPORTSオンデマンド",
+      "Lemino"
+    ],
     "url": "https://league-one.jp/match/27449"
   },
   {
@@ -3515,7 +4041,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27451"
   },
   {
@@ -3523,7 +4052,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "三重ホンダヒート",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27453"
   },
   {
@@ -3531,7 +4063,11 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27454"
   },
   {
@@ -3539,7 +4075,10 @@
     "venue": "ノエビアスタジアム神戸 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27455"
   },
   {
@@ -3547,7 +4086,11 @@
     "venue": "Jヴィレッジスタジアム (福島県)",
     "home_team": "浦安D-Rocks",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27462"
   },
   {
@@ -3555,7 +4098,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27457"
   },
   {
@@ -3563,7 +4109,11 @@
     "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 3", "TOKYO MX1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "TOKYO MX1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27458"
   },
   {
@@ -3571,7 +4121,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27459"
   },
   {
@@ -3579,7 +4132,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27461"
   },
   {
@@ -3587,7 +4143,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27460"
   },
   {
@@ -3595,7 +4154,11 @@
     "venue": "Uvanceとどろきスタジアム by Fujitsu (神奈川県)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27463"
   },
   {
@@ -3603,7 +4166,11 @@
     "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 1", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27464"
   },
   {
@@ -3611,7 +4178,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27465"
   },
   {
@@ -3619,7 +4189,12 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS １", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS １",
+      "BS日テレ",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27467"
   },
   {
@@ -3627,7 +4202,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "三重ホンダヒート",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27466"
   },
   {
@@ -3635,7 +4213,11 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 3", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27468"
   },
   {
@@ -3643,7 +4225,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27469"
   },
   {
@@ -3651,7 +4236,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27471"
   },
   {
@@ -3672,7 +4260,11 @@
     "venue": "ノエビアスタジアム神戸 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 3", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27472"
   },
   {
@@ -3680,7 +4272,11 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 1", "三重テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "三重テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27474"
   },
   {
@@ -3688,7 +4284,10 @@
     "venue": "ミクニワールドスタジアム北九州 (福岡県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27473"
   },
   {
@@ -3696,7 +4295,10 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27479"
   },
   {
@@ -3704,7 +4306,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27477"
   },
   {
@@ -3737,7 +4342,11 @@
     "venue": "豊田スタジアム (愛知県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "中京テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27478"
   },
   {
@@ -3745,7 +4354,11 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 3", "三重テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "三重テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27480"
   },
   {
@@ -3753,7 +4366,11 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 2", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27483"
   },
   {
@@ -3761,7 +4378,10 @@
     "venue": "Jヴィレッジスタジアム (福島県)",
     "home_team": "ブラックラムズ東京",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27486"
   },
   {
@@ -3782,7 +4402,11 @@
     "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 1", "テレビ神奈川 (堀)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "テレビ神奈川 (堀)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27482"
   },
   {
@@ -3790,7 +4414,11 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27484"
   },
   {
@@ -3798,7 +4426,10 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27485"
   },
   {
@@ -3806,7 +4437,12 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 1", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "BS日テレ",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27488"
   },
   {
@@ -3814,7 +4450,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27487"
   },
   {
@@ -3822,7 +4461,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27489"
   },
   {
@@ -3830,7 +4472,11 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 4", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27492"
   },
   {
@@ -3838,7 +4484,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27491"
   },
   {
@@ -3846,7 +4495,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 4", "J SPORTS オンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTS オンデマンド"
+    ],
     "url": "https://league-one.jp/match/27490"
   },
   {
@@ -3854,7 +4506,11 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27493"
   },
   {
@@ -3862,7 +4518,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27494"
   },
   {
@@ -3870,7 +4529,11 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "中京テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27495"
   },
   {
@@ -3878,7 +4541,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27496"
   },
   {
@@ -3886,7 +4552,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27497"
   },
   {
@@ -3894,7 +4563,11 @@
     "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
     "home_team": "東京サンゴリアス",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27498"
   },
   {
@@ -4346,7 +5019,11 @@
     "venue": "ベスト電器スタジアム (福岡県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 3", "福岡放送(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "福岡放送(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27554"
   },
   {
@@ -4354,7 +5031,10 @@
     "venue": "太田市運動公園陸上競技場 (群馬県)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27555"
   },
   {
@@ -4362,7 +5042,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 1(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27556"
   },
   {
@@ -4370,7 +5053,11 @@
     "venue": "釜石鵜住居復興スタジアム (岩手県)",
     "home_team": "日本製鉄釜石シーウェイブス",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 1(録画)", "IBC岩手放送", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1(録画)",
+      "IBC岩手放送",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27557"
   },
   {
@@ -4378,7 +5065,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS 3(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27558"
   },
   {
@@ -4386,7 +5076,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "レッドハリケーンズ大阪",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27559"
   },
   {
@@ -4394,7 +5087,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27560"
   },
   {
@@ -4402,7 +5098,10 @@
     "venue": "ミクニワールドスタジアム北九州 (福岡県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "豊田自動織機シャトルズ愛知",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27564"
   },
   {
@@ -4410,7 +5109,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27562"
   },
   {
@@ -4418,7 +5120,10 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "レッドハリケーンズ大阪",
-    "broadcasters": ["J SPORTS3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27563"
   },
   {
@@ -4426,7 +5131,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "日野レッドドルフィンズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27561"
   },
   {
@@ -4434,7 +5142,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27566"
   },
   {
@@ -4442,7 +5153,10 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS1(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS1(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27565"
   },
   {
@@ -4450,7 +5164,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27567"
   },
   {
@@ -4458,7 +5175,10 @@
     "venue": "ハワイアンズスタジアムいわき (福島県)",
     "home_team": "日本製鉄釜石シーウェイブス",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27568"
   },
   {
@@ -4466,7 +5186,10 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27569"
   },
   {
@@ -4474,7 +5197,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27572"
   },
   {
@@ -4482,7 +5208,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "豊田自動織機シャトルズ愛知",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27570"
   },
   {
@@ -4490,7 +5219,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27571"
   },
   {
@@ -4498,7 +5230,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27573"
   },
   {
@@ -4506,7 +5241,10 @@
     "venue": "長崎市総合運動公園　かきどまり陸上競技場 (長崎県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27576"
   },
   {
@@ -4514,7 +5252,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "日野レッドドルフィンズ",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27575"
   },
   {
@@ -4522,7 +5263,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27574"
   },
   {
@@ -4786,7 +5530,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "中国電力レッドレグリオンズ",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27609"
   },
   {
@@ -4794,7 +5540,9 @@
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
     "home_team": "ルリーロ福岡",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27611"
   },
   {
@@ -4802,7 +5550,9 @@
     "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "クリタウォーターガッシュ昭島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27610"
   },
   {
@@ -4810,7 +5560,9 @@
     "venue": "厚木市荻野運動公園競技場 (神奈川県)",
     "home_team": "クリタウォーターガッシュ昭島",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27612"
   },
   {
@@ -4818,7 +5570,9 @@
     "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27613"
   },
   {
@@ -4834,7 +5588,9 @@
     "venue": "栃木県グリーンスタジアム (栃木県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "ルリーロ福岡",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27615"
   },
   {
@@ -4842,7 +5598,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "スカイアクティブズ広島",
     "away_team": "クリタウォーターガッシュ昭島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27616"
   },
   {
@@ -4850,7 +5608,9 @@
     "venue": "栃木県グリーンスタジアム (栃木県)",
     "home_team": "ヤクルトレビンズ戸田",
     "away_team": "中国電力レッドレグリオンズ",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27617"
   },
   {
@@ -4858,7 +5618,9 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "クリタウォーターガッシュ昭島",
     "away_team": "ルリーロ福岡",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27618"
   },
   {
@@ -4866,7 +5628,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "スカイアクティブズ広島",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27619"
   },
   {
@@ -4874,7 +5638,9 @@
     "venue": "維新みらいふスタジアム (山口県)",
     "home_team": "中国電力レッドレグリオンズ",
     "away_team": "狭山セコムラガッツ",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27620"
   },
   {
@@ -4882,7 +5648,9 @@
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
     "home_team": "ルリーロ福岡",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27621"
   },
   {
@@ -5159,7 +5927,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27446"
   },
   {
@@ -5167,7 +5938,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27445"
   },
   {
@@ -5175,7 +5949,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27448"
   },
   {
@@ -5183,7 +5960,12 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 4", "tvk", "J SPORTSオンデマンド", "Lemino"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "tvk",
+      "J SPORTSオンデマンド",
+      "Lemino"
+    ],
     "url": "https://league-one.jp/match/27449"
   },
   {
@@ -5229,7 +6011,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27451"
   },
   {
@@ -5237,7 +6022,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "三重ホンダヒート",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27453"
   },
   {
@@ -5245,7 +6033,11 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27454"
   },
   {
@@ -5253,7 +6045,10 @@
     "venue": "ノエビアスタジアム神戸 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27455"
   },
   {
@@ -5261,7 +6056,11 @@
     "venue": "Jヴィレッジスタジアム (福島県)",
     "home_team": "浦安D-Rocks",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27462"
   },
   {
@@ -5269,7 +6068,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27457"
   },
   {
@@ -5277,7 +6079,11 @@
     "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 3", "TOKYO MX1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "TOKYO MX1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27458"
   },
   {
@@ -5285,7 +6091,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27459"
   },
   {
@@ -5293,7 +6102,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27461"
   },
   {
@@ -5301,7 +6113,10 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27460"
   },
   {
@@ -5309,7 +6124,11 @@
     "venue": "Uvanceとどろきスタジアム by Fujitsu (神奈川県)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27463"
   },
   {
@@ -5317,7 +6136,11 @@
     "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 1", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27464"
   },
   {
@@ -5325,7 +6148,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27465"
   },
   {
@@ -5333,7 +6159,12 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS １", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS １",
+      "BS日テレ",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27467"
   },
   {
@@ -5341,7 +6172,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "三重ホンダヒート",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27466"
   },
   {
@@ -5349,7 +6183,11 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 3", "テレビ神奈川", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "テレビ神奈川",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27468"
   },
   {
@@ -5357,7 +6195,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27469"
   },
   {
@@ -5365,7 +6206,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27471"
   },
   {
@@ -5386,7 +6230,11 @@
     "venue": "ノエビアスタジアム神戸 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 3", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27472"
   },
   {
@@ -5394,7 +6242,11 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 1", "三重テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "三重テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27474"
   },
   {
@@ -5402,7 +6254,10 @@
     "venue": "ミクニワールドスタジアム北九州 (福岡県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27473"
   },
   {
@@ -5410,7 +6265,10 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27479"
   },
   {
@@ -5418,7 +6276,10 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27477"
   },
   {
@@ -5451,7 +6312,11 @@
     "venue": "豊田スタジアム (愛知県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "中京テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27478"
   },
   {
@@ -5459,7 +6324,11 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 3", "三重テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "三重テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27480"
   },
   {
@@ -5467,7 +6336,11 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 2", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27483"
   },
   {
@@ -5475,7 +6348,10 @@
     "venue": "Jヴィレッジスタジアム (福島県)",
     "home_team": "ブラックラムズ東京",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27486"
   },
   {
@@ -5496,7 +6372,11 @@
     "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "broadcasters": ["J SPORTS 1", "テレビ神奈川 (堀)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "テレビ神奈川 (堀)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27482"
   },
   {
@@ -5504,7 +6384,11 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27484"
   },
   {
@@ -5512,7 +6396,10 @@
     "venue": "相模原ギオンスタジアム (神奈川県)",
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27485"
   },
   {
@@ -5520,7 +6407,12 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "東京サンゴリアス",
-    "broadcasters": ["J SPORTS 1", "BS日テレ", "Hulu", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "BS日テレ",
+      "Hulu",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27488"
   },
   {
@@ -5528,7 +6420,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27487"
   },
   {
@@ -5536,7 +6431,10 @@
     "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27489"
   },
   {
@@ -5544,7 +6442,11 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 4", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27492"
   },
   {
@@ -5552,7 +6454,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27491"
   },
   {
@@ -5560,7 +6465,10 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "埼玉ワイルドナイツ",
-    "broadcasters": ["J SPORTS 4", "J SPORTS オンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTS オンデマンド"
+    ],
     "url": "https://league-one.jp/match/27490"
   },
   {
@@ -5568,7 +6476,11 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "東芝ブレイブルーパス東京",
-    "broadcasters": ["J SPORTS 1", "TOKYO MX", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "TOKYO MX",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27493"
   },
   {
@@ -5576,7 +6488,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "静岡ブルーレヴズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27494"
   },
   {
@@ -5584,7 +6499,11 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "トヨタヴェルブリッツ",
-    "broadcasters": ["J SPORTS 1", "中京テレビ", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "中京テレビ",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27495"
   },
   {
@@ -5592,7 +6511,10 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27496"
   },
   {
@@ -5600,7 +6522,10 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "横浜キヤノンイーグルス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27497"
   },
   {
@@ -5608,7 +6533,11 @@
     "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
     "home_team": "東京サンゴリアス",
     "away_team": "浦安D-Rocks",
-    "broadcasters": ["J SPORTS 1", "Lemino", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "Lemino",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27498"
   },
   {
@@ -6060,7 +6989,11 @@
     "venue": "ベスト電器スタジアム (福岡県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 3", "福岡放送(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "福岡放送(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27554"
   },
   {
@@ -6068,7 +7001,10 @@
     "venue": "太田市運動公園陸上競技場 (群馬県)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27555"
   },
   {
@@ -6076,7 +7012,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 1(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27556"
   },
   {
@@ -6084,7 +7023,11 @@
     "venue": "釜石鵜住居復興スタジアム (岩手県)",
     "home_team": "日本製鉄釜石シーウェイブス",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 1(録画)", "IBC岩手放送", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1(録画)",
+      "IBC岩手放送",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27557"
   },
   {
@@ -6092,7 +7035,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS 3(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27558"
   },
   {
@@ -6100,7 +7046,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "レッドハリケーンズ大阪",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27559"
   },
   {
@@ -6108,7 +7057,10 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27560"
   },
   {
@@ -6116,7 +7068,10 @@
     "venue": "ミクニワールドスタジアム北九州 (福岡県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "豊田自動織機シャトルズ愛知",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27564"
   },
   {
@@ -6124,7 +7079,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27562"
   },
   {
@@ -6132,7 +7090,10 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "レッドハリケーンズ大阪",
-    "broadcasters": ["J SPORTS3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27563"
   },
   {
@@ -6140,7 +7101,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "日野レッドドルフィンズ",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27561"
   },
   {
@@ -6148,7 +7112,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "グリーンロケッツ東葛",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27566"
   },
   {
@@ -6156,7 +7123,10 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS1(録画)", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS1(録画)",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27565"
   },
   {
@@ -6164,7 +7134,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27567"
   },
   {
@@ -6172,7 +7145,10 @@
     "venue": "ハワイアンズスタジアムいわき (福島県)",
     "home_team": "日本製鉄釜石シーウェイブス",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 1", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 1",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27568"
   },
   {
@@ -6180,7 +7156,10 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "日野レッドドルフィンズ",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27569"
   },
   {
@@ -6188,7 +7167,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27572"
   },
   {
@@ -6196,7 +7178,10 @@
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "豊田自動織機シャトルズ愛知",
-    "broadcasters": ["J SPORTS 2", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27570"
   },
   {
@@ -6204,7 +7189,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "九州電力キューデンヴォルテクス",
-    "broadcasters": ["J SPORTS 3", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27571"
   },
   {
@@ -6212,7 +7200,10 @@
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "broadcasters": ["J SPORTS 4", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27573"
   },
   {
@@ -6220,7 +7211,10 @@
     "venue": "長崎市総合運動公園　かきどまり陸上競技場 (長崎県)",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "花園近鉄ライナーズ",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27576"
   },
   {
@@ -6228,7 +7222,10 @@
     "venue": "ヤンマースタジアム長居 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "日野レッドドルフィンズ",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27575"
   },
   {
@@ -6236,7 +7233,10 @@
     "venue": "柏の葉公園総合競技場 (千葉県)",
     "home_team": "グリーンロケッツ東葛",
     "away_team": "清水建設江東ブルーシャークス",
-    "broadcasters": ["J SPORTS 2（録画）", "J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27574"
   },
   {
@@ -6500,7 +7500,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "中国電力レッドレグリオンズ",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27609"
   },
   {
@@ -6508,7 +7510,9 @@
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
     "home_team": "ルリーロ福岡",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27611"
   },
   {
@@ -6516,7 +7520,9 @@
     "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "クリタウォーターガッシュ昭島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27610"
   },
   {
@@ -6524,7 +7530,9 @@
     "venue": "厚木市荻野運動公園競技場 (神奈川県)",
     "home_team": "クリタウォーターガッシュ昭島",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27612"
   },
   {
@@ -6532,7 +7540,9 @@
     "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27613"
   },
   {
@@ -6548,7 +7558,9 @@
     "venue": "栃木県グリーンスタジアム (栃木県)",
     "home_team": "狭山セコムラガッツ",
     "away_team": "ルリーロ福岡",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27615"
   },
   {
@@ -6556,7 +7568,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "スカイアクティブズ広島",
     "away_team": "クリタウォーターガッシュ昭島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27616"
   },
   {
@@ -6564,7 +7578,9 @@
     "venue": "栃木県グリーンスタジアム (栃木県)",
     "home_team": "ヤクルトレビンズ戸田",
     "away_team": "中国電力レッドレグリオンズ",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27617"
   },
   {
@@ -6572,7 +7588,9 @@
     "venue": "AGFフィールド (東京都)",
     "home_team": "クリタウォーターガッシュ昭島",
     "away_team": "ルリーロ福岡",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27618"
   },
   {
@@ -6580,7 +7598,9 @@
     "venue": "Balcom BMW Stadium (広島県)",
     "home_team": "スカイアクティブズ広島",
     "away_team": "ヤクルトレビンズ戸田",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27619"
   },
   {
@@ -6588,7 +7608,9 @@
     "venue": "維新みらいふスタジアム (山口県)",
     "home_team": "中国電力レッドレグリオンズ",
     "away_team": "狭山セコムラガッツ",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27620"
   },
   {
@@ -6596,7 +7618,9 @@
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
     "home_team": "ルリーロ福岡",
     "away_team": "スカイアクティブズ広島",
-    "broadcasters": ["J SPORTSオンデマンド"],
+    "broadcasters": [
+      "J SPORTSオンデマンド"
+    ],
     "url": "https://league-one.jp/match/27621"
   },
   {
