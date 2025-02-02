@@ -13,8 +13,7 @@ class BaseScraper(ABC):
         pass
     
     def save_to_json(self, data: dict, filename: str):
-        timestamp = datetime.utcnow().strftime("%Y%m%d")
-        output_path = self.output_dir / f"{filename}_{timestamp}.json"
+        output_path = self.output_dir / f"{filename}.json"
         
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(data, ensure_ascii=False, indent=2, fp=f) 

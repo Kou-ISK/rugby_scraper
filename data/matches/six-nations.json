@@ -1,0 +1,122 @@
+[
+  {
+    "date": "Fri 31 Jan",
+    "venue": "Stade de France",
+    "home_team": "FRA",
+    "away_team": "WAL",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/france-v-wales-31012025-2115/report",
+    "broadcasters": ""
+  },
+  {
+    "date": "Fri 31 Jan",
+    "venue": "Scottish Gas Murrayfield",
+    "home_team": "SCO",
+    "away_team": "ITA",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/scotland-v-italy-01022025-1415/report",
+    "broadcasters": ""
+  },
+  {
+    "date": "Fri 31 Jan",
+    "venue": "Aviva Stadium",
+    "home_team": "IRE",
+    "away_team": "ENG",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/ireland-v-england-01022025-1645/report",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 8 Feb 23:15",
+    "venue": "Stadio Olimpico",
+    "home_team": "ITA",
+    "away_team": "WAL",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/italy-v-wales-08022025-1515/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 8 Feb 01:45",
+    "venue": "Allianz Stadium Twickenham",
+    "home_team": "ENG",
+    "away_team": "FRA",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/england-v-france-08022025-1645/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 8 Feb 00:00",
+    "venue": "Scottish Gas Murrayfield",
+    "home_team": "SCO",
+    "away_team": "IRE",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/scotland-v-ireland-09022025-1500/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 22 Feb 23:15",
+    "venue": "Principality Stadium",
+    "home_team": "WAL",
+    "away_team": "IRE",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/wales-v-ireland-22022025-1415/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 22 Feb 01:45",
+    "venue": "Allianz Stadium Twickenham",
+    "home_team": "ENG",
+    "away_team": "SCO",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/england-v-scotland-22022025-1645/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 22 Feb 00:00",
+    "venue": "Stadio Olimpico",
+    "home_team": "ITA",
+    "away_team": "FRA",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/italy-v-france-23022025-1600/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 8 Mar 23:15",
+    "venue": "Aviva Stadium",
+    "home_team": "IRE",
+    "away_team": "FRA",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/ireland-v-france-08032025-1415/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 8 Mar 01:45",
+    "venue": "Scottish Gas Murrayfield",
+    "home_team": "SCO",
+    "away_team": "WAL",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/scotland-v-wales-08032025-1645/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 8 Mar 00:00",
+    "venue": "Allianz Stadium Twickenham",
+    "home_team": "ENG",
+    "away_team": "ITA",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/england-v-italy-09032025-1500/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 15 Mar 23:15",
+    "venue": "Stadio Olimpico",
+    "home_team": "ITA",
+    "away_team": "IRE",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/italy-v-ireland-15032025-1515/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 15 Mar 01:45",
+    "venue": "Principality Stadium",
+    "home_team": "WAL",
+    "away_team": "ENG",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/wales-v-england-15032025-1645/build-up",
+    "broadcasters": ""
+  },
+  {
+    "date": "Sat 15 Mar 05:00",
+    "venue": "Stade de France",
+    "home_team": "FRA",
+    "away_team": "SCO",
+    "url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2025/france-v-scotland-15032025-2100/build-up",
+    "broadcasters": ""
+  }
+]
