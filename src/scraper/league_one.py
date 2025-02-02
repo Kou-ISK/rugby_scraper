@@ -9,12 +9,6 @@ class LeagueOneScraper(BaseScraper):
         super().__init__()
         self.base_url = "https://league-one.jp"
         self.calendar_url = self.base_url + "/schedule/"
-        self.divisions = {
-            "0": "Division 1",
-            "1": "Division 2",
-            "2": "Division 3",
-            "3": "入れ替え戦"
-        }
         
     def scrape(self):
         try:
@@ -24,22 +18,16 @@ class LeagueOneScraper(BaseScraper):
             # 12月以降は次のシーズン、1月は現在のシーズン
             year = str(current_date.year - 1) if current_date.month < 12 else str(current_date.year)
             
-            # 各ディビジョンの試合を取得
-            for division_id, division_name in self.divisions.items():
-                url = f"{self.calendar_url}?year={year}&t1={division_id}"
-                print(f"{division_name}の試合情報を取得中...")
+            url = f"{self.calendar_url}?year={year}"
                 
-                response = requests.get(url)
-                if response.status_code != 200:
-                    print(f"ページの取得に失敗: {url}")
-                    continue
-                
-                soup = BeautifulSoup(response.content, 'html.parser')
-                matches = self._extract_matches(soup)
-                all_matches.extend(matches)
-                
-                # サーバーへの負荷を考慮して少し待機
-                time.sleep(2)
+            response = requests.get(url)
+            if response.status_code != 200:
+                print(f"ページの取得に失敗: {url}")
+                return None
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            matches = self._extract_matches(soup)
+            all_matches.extend(matches)
             
             print(f"取得した試合数: {len(all_matches)}")
             return all_matches
@@ -136,9 +124,7 @@ class LeagueOneScraper(BaseScraper):
             print(f"放送局の取得に失敗: {str(e)}")
             return []
         
-    from datetime import datetime
-
-    def format_date_string(self,date_string):
+    def format_date_string(self, date_string):
         try:
             parts = date_string.split()
             date_part = parts[0].split(".")
@@ -149,8 +135,13 @@ class LeagueOneScraper(BaseScraper):
 
             # 現在の日付を取得
             current_date = datetime.now()
-            # 12月以降は次のシーズン、1月は現在のシーズン
-            year = str(current_date.year - 1) if current_date.month < 12 else str(current_date.year)
+            current_year = current_date.year
+
+            # シーズン開始月
+            season_start_month = 12
+
+            # シーズン開始月より前の場合は今年、それ以降は去年
+            year = current_year -1 if month >= season_start_month else current_year
 
             formatted_string = f"{year}-{month:02}-{day} {time_part}:00"
             return formatted_string
