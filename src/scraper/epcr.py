@@ -31,82 +31,61 @@ class EPCRBaseScraper(BaseScraper):
             return driver
         except Exception as e:
             print(f"ドライバーの初期化エラー: {str(e)}")
-            raise
+            raise    
 
-    def _extract_match_links(self, driver):
-        try:
-            WebDriverWait(driver, 10).until(
-                lambda d: d.execute_script('return document.readyState') == 'complete'
-            )
-            
-            html_content = driver.page_source
-            soup = BeautifulSoup(html_content, 'html.parser')
-            
-            match_links = []
-            links = soup.find_all('a', href=lambda x: x and f'/{self.competition_type}/matches/' in x)
-            
-            for link in links:
-                match_id = link['href'].split('/')[-2]
-                if match_id.isdigit():
-                    match_url = f"{self.base_url}/{self.competition_type}/matches/{match_id}/news"
-                    match_links.append({
-                        'id': match_id,
-                        'url': match_url
-                    })
-            
-            print(f"取得した試合リンク数: {len(match_links)}")
-            return match_links
-            
-        except Exception as e:
-            print(f"試合リンクの抽出に失敗: {str(e)}")
-            import traceback
-            print(traceback.format_exc())
-            return []
-
-    def _extract_match_details(self, url):
-        try:
-            self.driver.get(url)
-            print(f"試合詳細ページにアクセス: {url}")
-            
-            WebDriverWait(self.driver, 10).until(
-                lambda d: d.execute_script('return document.readyState') == 'complete'
-            )
-            
-            time.sleep(2)
-            
-            html_content = self.driver.page_source
-            soup = BeautifulSoup(html_content, 'html.parser')
-            
+    def _extract_matches(self):
+        html_content = self.driver.page_source
+        soup = BeautifulSoup(html_content, 'html.parser')
+        matches = []
+        
+        game_containers = soup.find('div', class_='container max-w-7xl').find_all('div', class_='relative flex w-full card-shadow group')
+        
+        for game_container in game_containers:
             match_info = {}
             
-            date_element = soup.select_one('header .flex:has(svg:has(path[d*="M11.99 2C6.47"]))')
-            if date_element:
-                date_text = date_element.text.strip()
-                match_info['date'] = date_text.split('\n')[0].strip()
+            url_element = game_container.find('a', class_='absolute z-30 w-full h-full group')
+            if url_element:
+                match_info['url'] = f"{self.base_url}{url_element['href']}"
             
-            venue_text = soup.select_one('header .flex:has(svg:has(path[d*="M12 2C8.13"]))')
-            if venue_text:
-                venue_lines = [v.strip() for v in venue_text.text.split('\n') if v.strip()]
-                venue = next((v for v in venue_lines if not any(x in v for x in [':', '-', 'Attendance'])), '')
-                match_info['venue'] = venue
-            
-            teams = soup.select(f'header a[href*="/{self.competition_type}/clubs/"]')
-            if len(teams) >= 2:
-                match_info['home_team'] = teams[0].text.strip()
-                match_info['away_team'] = teams[1].text.strip()
-            
-            broadcaster_text = soup.select_one('header .flex:has(svg):has(path[d*="21 6H13"])')
-            if broadcaster_text:
-                broadcasters = broadcaster_text.text.strip().split('/')
-                match_info['broadcasters'] = [b.strip() for b in broadcasters]
+            inner_container = game_container.find('div', class_='w-full flex flex-col bg-white lg:pr-12 pr-8 pb-2')
+            if inner_container:
+                info_containers = inner_container.find_all('div', class_='flex flex-col lg:flex-row items-start lg:items-center lg:ml-10 ml-4 border-solid border-b py-1 lg:py-0')
                 
-            return match_info
-            
-        except Exception as e:
-            print(f"試合詳細の抽出に失敗: {str(e)}")
-            import traceback
-            print(traceback.format_exc())
-            return None
+                home_team_element = inner_container.find('div', class_='font-primary font-average lg:text-4xl text:sm uppercase flex items-center lg:ml-10 ml-4 py-4')
+                away_team_element = inner_container.find('div', class_='font-primary font-average lg:text-4xl text:sm uppercase flex items-center lg:ml-10 ml-4 pb-4')
+
+                if home_team_element and away_team_element:
+                    home_team = home_team_element.text.strip()
+                    away_team = away_team_element.text.strip()
+                    
+                    home_team = ' '.join(home_team.split()[:-1])
+                    away_team = ' '.join(away_team.split()[:-1])
+                    
+                    match_info['home_team'] = home_team
+                    match_info['away_team'] = away_team
+
+                for info_container in info_containers:
+                    date_element = info_container.select_one('.flex.items-center.uppercase')
+                    if date_element:
+                        date_text = date_element.text.strip()
+                        match_info['date'] = date_text
+
+                    venue_element = info_container.select_one('.flex.items-center.lg\\:ml-4')
+                    if venue_element:
+                        venue_text = venue_element.text.strip()
+                        match_info['venue'] = venue_text
+
+                    broadcaster_element = info_container.select_one('.flex.items-center.lg\\:ml-4:has(svg:has(path[d*="21 6H13"]))')
+                    if broadcaster_element:
+                        broadcaster_text = broadcaster_element.text.strip()
+                        broadcasters = [b.strip() for b in broadcaster_text.split('/')]
+                        match_info['broadcasters'] = broadcasters
+
+            if match_info:
+                matches.append(match_info)
+
+        return matches
+
 
     def scrape(self):
         try:
@@ -119,16 +98,7 @@ class EPCRBaseScraper(BaseScraper):
             )
             time.sleep(5)
 
-            match_links = self._extract_match_links(self.driver)
-            if not match_links:
-                return None
-
-            matches = []
-            for match_link in match_links:
-                match_info = self._extract_match_details(match_link['url'])
-                if match_info:
-                    match_info['id'] = match_link['id']
-                    matches.append(match_info)
+            matches = self._extract_matches()
 
             print(f"処理した試合数: {len(matches)}")
             return matches
