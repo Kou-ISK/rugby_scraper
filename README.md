@@ -94,6 +94,23 @@ itsuneru 側から取得する場合は、以下の JSON パスを参照して�
 ## 大会メタデータ
 大会ごとの詳細情報は `data/competitions.json` にまとめています。
 
+主なフィールド:
+- id / name / short_name
+- sport / category / gender / age_grade / tier / region
+- governing_body / organizer
+- official_sites / official_feeds
+- timezone_default / season_pattern / match_url_template
+- data_paths
+- coverage.broadcast_regions / coverage.analysis_providers
+- teams
+- data_summary.match_count / data_summary.seasons / data_summary.date_range / data_summary.last_updated
+
+`data/competitions.json` は取得済みの試合データから自動生成されます。
+
+```bash
+python -m src.metadata.generate_competitions
+```
+
 ## GitHub Raw での取得URL例
 `data` ブランチに更新されるため、以下の形式で最新データを取得できます。
 

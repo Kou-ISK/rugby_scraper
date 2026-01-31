@@ -64,11 +64,14 @@ jobs:
             python -m src.main super-rugby-pacific
             python -m src.main world-rugby-internationals
           fi
+      - name: Generate competitions metadata
+        run: |
+          python -m src.metadata.generate_competitions
       - name: Commit and push if changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/matches/
+          git add data/matches/ data/competitions.json
           git diff --cached --quiet || git commit -m "Update match data"
           git pull --rebase origin data
           git push origin data
