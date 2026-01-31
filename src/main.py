@@ -12,6 +12,7 @@ from src.scraper.rugbyviz import (
 )
 from src.scraper.super_rugby import SuperRugbyPacificScraper
 from src.scraper.top14 import Top14Scraper
+from src.scraper.world_rugby import WorldRugbyInternationalsScraper
 
 def main():
     if len(sys.argv) != 2:
@@ -30,6 +31,7 @@ def main():
         "gallagher-premiership": GallagherPremiershipScraper(),
         "urc": UnitedRugbyChampionshipScraper(),
         "super-rugby-pacific": SuperRugbyPacificScraper(),
+        "world-rugby-internationals": WorldRugbyInternationalsScraper(),
     }
     
     if scraper_type not in scrapers:

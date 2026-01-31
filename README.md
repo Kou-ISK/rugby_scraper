@@ -27,6 +27,10 @@ itsuneru 向けに世界のラグビー試合日程を取得するスクレイ�
   - 公式サイト: super.rugby
   - 公式PDF日程: super.rugby の公開PDF
   - ソース種別: official
+- World Rugby Internationals (Autumn Nations Series / The Rugby Championship / Test Matches)
+  - 公式サイト: world.rugby
+  - 公式データ: api.wr-rims-prod.pulselive.com (World Rugby の公開データエンドポイント)
+  - ソース種別: official
 
 ## 出力JSONの共通スキーマ
 各スクレイパーは以下の統一フォーマットで出力します。
@@ -69,4 +73,5 @@ python src/main.py six-nations
 python src/main.py gallagher-premiership
 python src/main.py urc
 python src/main.py super-rugby-pacific
+python src/main.py world-rugby-internationals
 ```
