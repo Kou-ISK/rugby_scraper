@@ -4,6 +4,25 @@ on:
   schedule:
     - cron: '0 0 * * 0' # 毎週UTC 00:00に実行（日曜）
   workflow_dispatch: # 手動実行用
+    inputs:
+      scraper:
+        description: "Run a specific scraper or 'all'"
+        required: true
+        default: "all"
+        type: choice
+        options:
+          - all
+          - six-nations
+          - six-nations-women
+          - six-nations-u20
+          - epcr-challenge
+          - epcr-champions
+          - top14
+          - league-one
+          - gallagher-premiership
+          - urc
+          - super-rugby-pacific
+          - world-rugby-internationals
 
 permissions:
   contents: write
@@ -29,17 +48,21 @@ jobs:
           sudo apt-get install -y google-chrome-stable
       - name: Run scrapers
         run: |
-          python -m src.main six-nations
-          python -m src.main six-nations-women
-          python -m src.main six-nations-u20
-          python -m src.main epcr-challenge
-          python -m src.main epcr-champions
-          python -m src.main top14
-          python -m src.main league-one
-          python -m src.main gallagher-premiership
-          python -m src.main urc
-          python -m src.main super-rugby-pacific
-          python -m src.main world-rugby-internationals
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.scraper }}" != "all" ]; then
+            python -m src.main "${{ inputs.scraper }}"
+          else
+            python -m src.main six-nations
+            python -m src.main six-nations-women
+            python -m src.main six-nations-u20
+            python -m src.main epcr-challenge
+            python -m src.main epcr-champions
+            python -m src.main top14
+            python -m src.main league-one
+            python -m src.main gallagher-premiership
+            python -m src.main urc
+            python -m src.main super-rugby-pacific
+            python -m src.main world-rugby-internationals
+          fi
       - name: Commit and push if changes
         run: |
           git config --local user.email "action@github.com"
