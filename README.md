@@ -91,6 +91,9 @@ itsuneru 側から取得する場合は、以下の JSON パスを参照して�
 - Super Rugby Pacific: `data/matches/super-rugby-pacific.json`
 - World Rugby Internationals: `data/matches/world-rugby-internationals.json`
 
+## 大会メタデータ
+大会ごとの詳細情報は `data/competitions.json` にまとめています。
+
 ## GitHub Raw での取得URL例
 `data` ブランチに更新されるため、以下の形式で最新データを取得できます。
 
