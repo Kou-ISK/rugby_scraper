@@ -92,14 +92,14 @@ itsuneru 側から取得する場合は、以下の JSON パスを参照して�
 - World Rugby Internationals: `data/matches/world-rugby-internationals.json`
 
 ## GitHub Raw での取得URL例
-`main` ブランチに更新されるため、以下の形式で最新データを取得できます。
+`data` ブランチに更新されるため、以下の形式で最新データを取得できます。
 
 ```
-https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/main/data/matches/<file>.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/<file>.json
 ```
 
 例:
 
 ```
-https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/main/data/matches/six-nations.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/six-nations.json
 ```

@@ -33,6 +33,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: data
           persist-credentials: true
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -69,5 +70,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add data/matches/
           git diff --cached --quiet || git commit -m "Update match data"
-          git pull --rebase
-          git push
+          git pull --rebase origin data
+          git push origin data
