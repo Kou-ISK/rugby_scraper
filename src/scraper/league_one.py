@@ -20,7 +20,11 @@ class LeagueOneScraper(BaseScraper):
             
             url = f"{self.calendar_url}?year={year}"
                 
-            response = requests.get(url)
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+            self.current_url = url
+            response = requests.get(url, headers=headers, timeout=30)
             if response.status_code != 200:
                 print(f"ページの取得に失敗: {url}")
                 return None
@@ -55,14 +59,25 @@ class LeagueOneScraper(BaseScraper):
                 if not all([date_element, venue_element, teams]):
                     continue
                 
-                match_info = {
-                    'date': self.format_date_string(self._format_date(date_element)),
-                    'venue': venue_element.text.strip(),
-                    'home_team': self._get_team_name(teams[0]),
-                    'away_team': self._get_team_name(teams[1]),
-                    'broadcasters': self._get_broadcasters(broadcasters),
-                    'url': self._get_match_url(container)
-                }
+                kickoff = self.format_date_string(self._format_date(date_element))
+                match_info = self.build_match(
+                    competition="Japan Rugby League One",
+                    competition_id="",
+                    season=str(datetime.now().year),
+                    round_name="",
+                    status="",
+                    kickoff=kickoff,
+                    timezone_name="Asia/Tokyo",
+                    timezone_source="competition_default",
+                    venue=venue_element.text.strip(),
+                    home_team=self._get_team_name(teams[0]) or "",
+                    away_team=self._get_team_name(teams[1]) or "",
+                    match_url=self._get_match_url(container) or "",
+                    broadcasters=self._get_broadcasters(broadcasters),
+                    source_name="Japan Rugby League One",
+                    source_url=self.current_url if hasattr(self, "current_url") else self.calendar_url,
+                    source_type="official",
+                )
                 matches.append(match_info)
                 
             except Exception as e:

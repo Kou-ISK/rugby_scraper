@@ -1,4 +1,7 @@
-import requests
+import re
+import time
+import unicodedata
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -6,7 +9,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
-import time
 from .base import BaseScraper
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import StaleElementReferenceException
@@ -32,6 +34,7 @@ class Top14Scraper(BaseScraper):
             driver = webdriver.Chrome(service=service, options=chrome_options)
             driver.set_page_load_timeout(30)
             driver.implicitly_wait(10)
+            self.apply_timezone_override(driver, "Europe/Paris")
             return driver
         except Exception as e:
             print(f"ドライバーの初期化エラー: {str(e)}")
@@ -61,21 +64,18 @@ class Top14Scraper(BaseScraper):
                 if not current_date:
                     continue
                     
-                match_info = {}
-                match_info['date'] = current_date
-                
                 # 時刻を取得
                 time_element = element.select_one('.match-line__time')
-                if time_element:
-                    match_info['time'] = time_element.text.strip()
+                time_text = time_element.text.strip() if time_element else None
+                kickoff = self._format_date_time(current_date, time_text)
                 
                 # チーム名を取得
                 home_team = element.select_one('.club-line--reversed .club-line__name')
                 away_team = element.select_one('.club-line--table-format:not(.club-line--reversed) .club-line__name')
                 
                 if home_team and away_team:
-                    match_info['home_team'] = home_team.text.strip()
-                    match_info['away_team'] = away_team.text.strip()
+                    home_team_name = home_team.text.strip()
+                    away_team_name = away_team.text.strip()
                 
                 # 放送局を取得
                 broadcasters = []
@@ -84,13 +84,33 @@ class Top14Scraper(BaseScraper):
                     broadcasters.append(broadcaster['alt'])
                 
                 if broadcasters:
-                    match_info['broadcasters'] = broadcasters
+                    match_broadcasters = broadcasters
+                else:
+                    match_broadcasters = []
                 
                 # URLを取得
                 match_link = element.select_one('.match-links__link[href*="/feuille-de-match/"]')
-                if match_link:
-                    match_info['url'] = f"{self.base_url}{match_link['href']}"
-                
+                match_url = f"{self.base_url}{match_link['href']}" if match_link else ""
+
+                match_info = self.build_match(
+                    competition="Top 14",
+                    competition_id="",
+                    season=str(datetime.now().year),
+                    round_name="",
+                    status="",
+                    kickoff=kickoff,
+                    timezone_name="Europe/Paris",
+                    timezone_source="competition_default",
+                    venue="",
+                    home_team=home_team_name if home_team else "",
+                    away_team=away_team_name if away_team else "",
+                    match_url=match_url,
+                    broadcasters=match_broadcasters,
+                    source_name="LNR Top 14",
+                    source_url=self.calendar_url,
+                    source_type="official",
+                )
+
                 matches.append(match_info)
                 print(match_info)
         
@@ -141,3 +161,57 @@ class Top14Scraper(BaseScraper):
         finally:
             if self.driver:
                 self.driver.quit()
+
+    def _format_date_time(self, date_text, time_text):
+        if not date_text:
+            return None
+        normalized = unicodedata.normalize("NFKD", date_text).encode("ascii", "ignore").decode("ascii")
+        day_match = re.search(r"\\b(\\d{1,2})\\b", normalized)
+        month_match = re.search(r"\\b(janvier|fevrier|mars|avril|mai|juin|juillet|aout|septembre|octobre|novembre|decembre)\\b", normalized)
+        if not day_match or not month_match:
+            return None
+
+        day = int(day_match.group(1))
+        month_name = month_match.group(1)
+        month_map = {
+            "janvier": 1,
+            "fevrier": 2,
+            "mars": 3,
+            "avril": 4,
+            "mai": 5,
+            "juin": 6,
+            "juillet": 7,
+            "aout": 8,
+            "septembre": 9,
+            "octobre": 10,
+            "novembre": 11,
+            "decembre": 12,
+        }
+        month = month_map.get(month_name)
+        if not month:
+            return None
+
+        year = self._infer_season_year(month)
+        time_value = self._normalize_time(time_text) or "00:00"
+        return f"{year}-{month:02}-{day:02} {time_value}:00"
+
+    def _normalize_time(self, time_text):
+        if not time_text:
+            return None
+        normalized = time_text.strip().lower().replace("h", ":")
+        if re.match(r"^\\d{1,2}:\\d{2}$", normalized):
+            return normalized
+        if re.match(r"^\\d{1,2}:$", normalized):
+            return normalized + "00"
+        if re.match(r"^\\d{1,2}$", normalized):
+            return normalized + ":00"
+        return None
+
+    def _infer_season_year(self, month):
+        now = datetime.now()
+        season_start_month = 8
+        if month >= season_start_month and now.month < season_start_month:
+            return now.year - 1
+        if month < season_start_month and now.month >= season_start_month:
+            return now.year + 1
+        return now.year

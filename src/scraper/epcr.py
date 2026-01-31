@@ -29,6 +29,7 @@ class EPCRBaseScraper(BaseScraper):
             driver = webdriver.Chrome(service=service, options=chrome_options)
             driver.set_page_load_timeout(30)
             driver.implicitly_wait(10)
+            self.apply_timezone_override(driver, "Europe/Paris")
             return driver
         except Exception as e:
             print(f"ドライバーの初期化エラー: {str(e)}")
@@ -133,6 +134,58 @@ class EPCRChampionsCupScraper(EPCRBaseScraper):
     def __init__(self):
         super().__init__('champions-cup')
 
+    def scrape(self):
+        raw_matches = super().scrape()
+        if not raw_matches:
+            return raw_matches
+        return [
+            self.build_match(
+                competition="EPCR Champions Cup",
+                competition_id="",
+                season=str(datetime.now().year),
+                round_name="",
+                status="",
+                kickoff=match.get("date"),
+                timezone_name="Europe/Paris",
+                timezone_source="competition_default",
+                venue=match.get("venue", ""),
+                home_team=match.get("home_team", ""),
+                away_team=match.get("away_team", ""),
+                match_url=match.get("url", ""),
+                broadcasters=match.get("broadcasters") or [],
+                source_name="EPCR",
+                source_url=self.url,
+                source_type="official",
+            )
+            for match in raw_matches
+        ]
+
 class EPCRChallengeCupScraper(EPCRBaseScraper):
     def __init__(self):
         super().__init__('challenge-cup')
+
+    def scrape(self):
+        raw_matches = super().scrape()
+        if not raw_matches:
+            return raw_matches
+        return [
+            self.build_match(
+                competition="EPCR Challenge Cup",
+                competition_id="",
+                season=str(datetime.now().year),
+                round_name="",
+                status="",
+                kickoff=match.get("date"),
+                timezone_name="Europe/Paris",
+                timezone_source="competition_default",
+                venue=match.get("venue", ""),
+                home_team=match.get("home_team", ""),
+                away_team=match.get("away_team", ""),
+                match_url=match.get("url", ""),
+                broadcasters=match.get("broadcasters") or [],
+                source_name="EPCR",
+                source_url=self.url,
+                source_type="official",
+            )
+            for match in raw_matches
+        ]
