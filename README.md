@@ -75,3 +75,18 @@ python src/main.py urc
 python src/main.py super-rugby-pacific
 python src/main.py world-rugby-internationals
 ```
+
+## 取得パス一覧 (itsuneru向け)
+itsuneru 側から取得する場合は、以下の JSON パスを参照してください。
+
+- Six Nations: `data/matches/six-nations.json`
+- Women's Six Nations: `data/matches/six-nations-women.json`
+- Six Nations U20: `data/matches/six-nations-u20.json`
+- EPCR Champions Cup: `data/matches/epcr-champions.json`
+- EPCR Challenge Cup: `data/matches/epcr-challenge.json`
+- Top 14: `data/matches/top14.json`
+- Japan Rugby League One: `data/matches/league-one.json`
+- Gallagher Premiership: `data/matches/gallagher-premiership.json`
+- United Rugby Championship: `data/matches/urc.json`
+- Super Rugby Pacific: `data/matches/super-rugby-pacific.json`
+- World Rugby Internationals: `data/matches/world-rugby-internationals.json`
