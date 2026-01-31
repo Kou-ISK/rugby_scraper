@@ -69,4 +69,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add data/matches/
           git diff --cached --quiet || git commit -m "Update match data"
+          git pull --rebase
           git push
