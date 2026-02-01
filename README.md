@@ -106,6 +106,7 @@ itsuneru 側から取得する場合は、以下の JSON パスを参照して�
 - data_summary.match_count / data_summary.seasons / data_summary.date_range / data_summary.last_updated
 
 `data/competitions.json` は取得済みの試合データから自動生成されます。
+一部の大会は `data_paths` が空のままなので、今後の取得拡充対象として扱えます。
 
 ```bash
 python -m src.metadata.generate_competitions

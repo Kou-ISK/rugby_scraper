@@ -3,6 +3,22 @@ from pathlib import Path
 from datetime import datetime
 from dateutil import parser as date_parser
 
+
+GLOBAL_ANALYSIS_PROVIDERS = [
+    {
+        "name": "ESPN Rugby",
+        "official_source": "https://www.espn.com/rugby/",
+    },
+    {
+        "name": "RugbyPass",
+        "official_source": "https://www.rugbypass.com/",
+    },
+    {
+        "name": "RugbyPass TV",
+        "official_source": "https://info.rugbypass.tv/",
+    },
+]
+
 BASE_COMPETITIONS = [
     {
         "id": "six-nations",
@@ -22,6 +38,36 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://www.sixnationsrugby.com/en/m6n/fixtures/{season}/{slug}",
         "data_paths": ["data/matches/six-nations.json"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "JP",
+                    "providers": ["WOWOW"],
+                    "official_source": "https://www.sixnationsrugby.com/en/m6n/where-to-watch-guinness-six-nations",
+                },
+                {
+                    "region": "UK",
+                    "providers": ["ITV", "BBC", "Premier Sports"],
+                    "official_source": "https://www.sixnationsrugby.com/en/m6n/where-to-watch-guinness-six-nations",
+                },
+                {
+                    "region": "IE",
+                    "providers": ["RTÉ", "Virgin Media", "Premier Sports"],
+                    "official_source": "https://www.sixnationsrugby.com/en/m6n/where-to-watch-guinness-six-nations",
+                },
+                {
+                    "region": "AU",
+                    "providers": ["Stan Sport"],
+                    "official_source": "https://www.sixnationsrugby.com/en/m6n/where-to-watch-guinness-six-nations",
+                },
+                {
+                    "region": "NZ",
+                    "providers": ["Sky"],
+                    "official_source": "https://www.sixnationsrugby.com/en/m6n/where-to-watch-guinness-six-nations",
+                },
+            ],
+            "analysis_providers": [],
+        },
     },
     {
         "id": "six-nations-women",
@@ -136,6 +182,16 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://league-one.jp/match/{matchId}",
         "data_paths": ["data/matches/league-one.json"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "JP",
+                    "providers": ["J SPORTS", "J SPORTSオンデマンド", "Lemino (selected matches)"],
+                    "official_source": "https://league-one.jp/news/3842",
+                }
+            ],
+            "analysis_providers": [],
+        },
     },
     {
         "id": "gallagher-premiership",
@@ -155,6 +211,16 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://www.premiershiprugby.com/fixture/{matchId}",
         "data_paths": ["data/matches/gallagher-premiership.json"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "UK/IE",
+                    "providers": ["TNT Sports", "discovery+"],
+                    "official_source": "https://www.tntsports.co.uk/rugby/premiership/2023-2024/tnt-sports-and-discovery-renew-deal-with-gallagher-premiership-rugby-to-remain-home-of-english-club_sto10068404/story.shtml",
+                }
+            ],
+            "analysis_providers": [],
+        },
     },
     {
         "id": "urc",
@@ -193,6 +259,79 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://www.super.rugby/superrugby/match-centre/{matchId}",
         "data_paths": ["data/matches/super-rugby-pacific.json"],
+    },
+    {
+        "id": "rugby-championship",
+        "name": "The Rugby Championship",
+        "short_name": "TRC",
+        "sport": "rugby union",
+        "category": "international",
+        "gender": "men",
+        "age_grade": "senior",
+        "tier": "tier-1",
+        "region": "Oceania/Americas/Africa",
+        "governing_body": "SANZAAR",
+        "organizer": "SANZAAR",
+        "official_sites": ["https://www.therugbychampionship.com"],
+        "official_feeds": [],
+        "timezone_default": "UTC",
+        "season_pattern": "variable",
+        "match_url_template": "",
+        "data_paths": [],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "JP",
+                    "providers": ["WOWOW"],
+                    "official_source": "https://news.wowow.co.jp/2344.html",
+                },
+                {
+                    "region": "Select countries (no local broadcaster)",
+                    "providers": ["NZR+"],
+                    "official_source": "https://www.allblacks.com/all-blacks-live-rugby-championship",
+                },
+            ],
+            "analysis_providers": [],
+        },
+    },
+    {
+        "id": "autumn-nations-series",
+        "name": "Autumn Nations Series",
+        "short_name": "ANS",
+        "sport": "rugby union",
+        "category": "international",
+        "gender": "men",
+        "age_grade": "senior",
+        "tier": "tier-1",
+        "region": "Europe",
+        "governing_body": "Six Nations Rugby",
+        "organizer": "Six Nations Rugby",
+        "official_sites": ["https://autumnnationsseries.com"],
+        "official_feeds": [],
+        "timezone_default": "Europe/London",
+        "season_pattern": "annual",
+        "match_url_template": "",
+        "data_paths": [],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "JP",
+                    "providers": ["WOWOW"],
+                    "official_source": "https://news.wowow.co.jp/2425.html",
+                },
+                {
+                    "region": "UK/IE",
+                    "providers": ["TNT Sports", "discovery+"],
+                    "official_source": "https://www.tntsports.co.uk/rugby/tnt-sports-discovery-exclusively-broadcast-2025-quilter-nations-series-all-22-fixtures-announced_sto20080891/story.shtml",
+                },
+                {
+                    "region": "AU",
+                    "providers": ["Stan Sport"],
+                    "official_source": "https://www.stan.com.au/watch/sport/rugby/autumn-nations-series",
+                },
+            ],
+            "analysis_providers": [],
+        },
     },
     {
         "id": "world-rugby-internationals",
@@ -278,12 +417,21 @@ def build_competitions():
                 "end": dates_sorted[-1].isoformat(),
             }
 
+        coverage = base.get("coverage") or {
+            "broadcast_regions": [],
+            "analysis_providers": [],
+        }
+        if not coverage.get("analysis_providers"):
+            coverage = {
+                **coverage,
+                "analysis_providers": [
+                    dict(provider) for provider in GLOBAL_ANALYSIS_PROVIDERS
+                ],
+            }
+
         competition = {
             **base,
-            "coverage": {
-                "broadcast_regions": [],
-                "analysis_providers": [],
-            },
+            "coverage": coverage,
             "teams": sorted(teams),
             "data_summary": {
                 "match_count": match_count,
