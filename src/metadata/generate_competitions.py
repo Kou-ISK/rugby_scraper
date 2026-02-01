@@ -67,6 +67,7 @@ BASE_COMPETITIONS = [
                 },
             ],
             "analysis_providers": [],
+            "notes": "Regional availability varies. Some streaming services require geo-location within their service area or VPN for international access.",
         },
     },
     {
@@ -87,6 +88,17 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://www.sixnationsrugby.com/en/w6n/fixtures/{season}/{slug}",
         "data_paths": ["data/matches/six-nations-women.json"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "UK",
+                    "providers": ["BBC"],
+                    "official_source": "https://www.sixnationsrugby.com/en/w6n/where-to-watch",
+                },
+            ],
+            "analysis_providers": [],
+            "notes": "Coverage may be available via Six Nations official channels and regional broadcasters.",
+        },
     },
     {
         "id": "six-nations-u20",
@@ -106,6 +118,17 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/{season}/{slug}",
         "data_paths": ["data/matches/six-nations-u20.json"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "UK/IE",
+                    "providers": ["Six Nations YouTube"],
+                    "official_source": "https://www.sixnationsrugby.com",
+                },
+            ],
+            "analysis_providers": [],
+            "notes": "Many matches available via Six Nations official streaming channels.",
+        },
     },
     {
         "id": "epcr-champions",
@@ -125,6 +148,22 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://www.epcrugby.com/champions-cup/matches/{matchId}",
         "data_paths": ["data/matches/epcr-champions.json"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "UK/IE",
+                    "providers": ["Premier Sports", "TNT Sports"],
+                    "official_source": "https://www.epcrugby.com",
+                },
+                {
+                    "region": "FR",
+                    "providers": ["beIN Sports"],
+                    "official_source": "https://www.epcrugby.com",
+                },
+            ],
+            "analysis_providers": [],
+            "notes": "Broadcasting rights vary by region. Check EPCR official site for regional availability.",
+        },
     },
     {
         "id": "epcr-challenge",
@@ -144,6 +183,22 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://www.epcrugby.com/challenge-cup/matches/{matchId}",
         "data_paths": ["data/matches/epcr-challenge.json"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "UK/IE",
+                    "providers": ["Premier Sports"],
+                    "official_source": "https://www.epcrugby.com",
+                },
+                {
+                    "region": "FR",
+                    "providers": ["beIN Sports"],
+                    "official_source": "https://www.epcrugby.com",
+                },
+            ],
+            "analysis_providers": [],
+            "notes": "Broadcasting rights vary by region. Check EPCR official site for regional availability.",
+        },
     },
     {
         "id": "top14",
@@ -163,6 +218,22 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://top14.lnr.fr/feuille-de-match/{matchId}",
         "data_paths": ["data/matches/top14.json"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "FR",
+                    "providers": ["Canal+"],
+                    "official_source": "https://top14.lnr.fr",
+                },
+                {
+                    "region": "International",
+                    "providers": ["RugbyPass TV"],
+                    "official_source": "https://info.rugbypass.tv",
+                },
+            ],
+            "analysis_providers": [],
+            "notes": "Canal+ holds exclusive French broadcasting rights. International viewers may require RugbyPass TV subscription.",
+        },
     },
     {
         "id": "league-one",
@@ -191,6 +262,7 @@ BASE_COMPETITIONS = [
                 }
             ],
             "analysis_providers": [],
+            "notes": "J SPORTS provides comprehensive coverage in Japan. International access is limited.",
         },
     },
     {
@@ -220,6 +292,7 @@ BASE_COMPETITIONS = [
                 }
             ],
             "analysis_providers": [],
+            "notes": "TNT Sports and discovery+ hold exclusive UK/IE broadcasting rights. International access may require VPN.",
         },
     },
     {
@@ -240,6 +313,27 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://www.unitedrugby.com/match/{matchId}",
         "data_paths": ["data/matches/urc.json"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "UK/IE",
+                    "providers": ["Premier Sports", "BBC (selected matches)"],
+                    "official_source": "https://www.unitedrugby.com",
+                },
+                {
+                    "region": "ZA",
+                    "providers": ["SuperSport"],
+                    "official_source": "https://www.unitedrugby.com",
+                },
+                {
+                    "region": "International",
+                    "providers": ["URC TV"],
+                    "official_source": "https://www.unitedrugby.com/urc-tv",
+                },
+            ],
+            "analysis_providers": [],
+            "notes": "URC TV offers global streaming (geo-restrictions apply). Regional broadcasters vary by team location.",
+        },
     },
     {
         "id": "super-rugby-pacific",
@@ -259,6 +353,27 @@ BASE_COMPETITIONS = [
         "season_pattern": "annual",
         "match_url_template": "https://www.super.rugby/superrugby/match-centre/{matchId}",
         "data_paths": ["data/matches/super-rugby-pacific.json"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "NZ",
+                    "providers": ["Sky Sport NZ"],
+                    "official_source": "https://www.super.rugby",
+                },
+                {
+                    "region": "AU",
+                    "providers": ["Stan Sport"],
+                    "official_source": "https://www.super.rugby",
+                },
+                {
+                    "region": "JP",
+                    "providers": ["J SPORTS"],
+                    "official_source": "https://www.super.rugby",
+                },
+            ],
+            "analysis_providers": [],
+            "notes": "Broadcasting rights are region-specific. International access may require regional subscriptions or VPN.",
+        },
     },
     {
         "id": "rugby-championship",
@@ -277,7 +392,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "UTC",
         "season_pattern": "variable",
         "match_url_template": "",
-        "data_paths": [],
+        "data_paths": ["data/matches/rugby-championship.json"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -292,6 +407,7 @@ BASE_COMPETITIONS = [
                 },
             ],
             "analysis_providers": [],
+            "notes": "NZR+ available in select markets without local broadcasters. Check regional broadcaster availability before subscribing to OTT services.",
         },
     },
     {
@@ -311,7 +427,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Europe/London",
         "season_pattern": "annual",
         "match_url_template": "",
-        "data_paths": [],
+        "data_paths": ["data/matches/autumn-nations-series.json"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -331,6 +447,7 @@ BASE_COMPETITIONS = [
                 },
             ],
             "analysis_providers": [],
+            "notes": "Regional geo-restrictions apply to streaming services. VPN may be required for international access outside official broadcast regions.",
         },
     },
     {

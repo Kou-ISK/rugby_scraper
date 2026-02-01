@@ -10,6 +10,7 @@ class WorldRugbyInternationalsScraper(BaseScraper):
         self.api_base = "https://api.wr-rims-prod.pulselive.com"
         self.source_url = "https://www.world.rugby/fixtures"
         self.match_url_template = "https://www.world.rugby/match/{match_id}"
+        self.source_name = "World Rugby"
         self.page_size = 50
         self.lookback_days = 30
         self.lookahead_days = 450
@@ -107,7 +108,7 @@ class WorldRugbyInternationalsScraper(BaseScraper):
                     match_id=match.get("matchId"),
                     home_team_id=home_team.get("id") if home_team else "",
                     away_team_id=away_team.get("id") if away_team else "",
-                    source_name="World Rugby",
+                    source_name=self.source_name,
                     source_url=self.source_url,
                     source_type="official",
                 )
@@ -145,3 +146,31 @@ class WorldRugbyInternationalsScraper(BaseScraper):
             return False
 
         return any(re.search(pattern, competition, re.IGNORECASE) for pattern in self.include_patterns)
+
+
+class WorldRugbyCompetitionScraper(WorldRugbyInternationalsScraper):
+    def __init__(self, include_patterns, source_url=None, source_name=None):
+        super().__init__()
+        self.include_patterns = include_patterns
+        if source_url:
+            self.source_url = source_url
+        if source_name:
+            self.source_name = source_name
+
+
+class RugbyChampionshipScraper(WorldRugbyCompetitionScraper):
+    def __init__(self):
+        super().__init__(
+            include_patterns=[r"Rugby Championship"],
+            source_url="https://www.world.rugby/fixtures",
+            source_name="World Rugby",
+        )
+
+
+class AutumnNationsSeriesScraper(WorldRugbyCompetitionScraper):
+    def __init__(self):
+        super().__init__(
+            include_patterns=[r"Autumn Nations Series"],
+            source_url="https://www.world.rugby/fixtures",
+            source_name="World Rugby",
+        )
