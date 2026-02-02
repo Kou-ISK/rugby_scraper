@@ -88,13 +88,29 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git fetch origin data:data
-          git checkout data
-          git checkout main -- data/
-          git add data/matches/ data/competitions.json
-          if ! git diff --cached --quiet; then
+
+          # 変更があるか確認
+          if ! git diff --quiet data/ || ! git diff --cached --quiet data/; then
+            echo "Changes detected, preparing to push to data branch"
+            
+            # 変更をstash
+            git add data/
+            git stash push -m "Scraped data updates"
+            
+            # dataブランチに切り替え
+            git fetch origin data:data
+            git checkout data
+            
+            # stashから変更を適用
+            git stash pop
+            
+            # コミット＆プッシュ
+            git add data/matches/ data/competitions.json
             git commit -m "Update match data - $(date +'%Y-%m-%d %H:%M:%S')"
             git push origin data
+            
+            # mainブランチに戻る
+            git checkout main
           else
             echo "No changes to commit"
           fi
