@@ -96,6 +96,10 @@ jobs:
             # data/ディレクトリを一時ディレクトリにコピー
             cp -r data /tmp/scraped_data
             
+            # mainブランチの変更を破棄（一時コピーに保存済み）
+            git checkout -- data/
+            git clean -fd data/
+            
             # dataブランチに切り替え
             git fetch origin data:data
             git checkout data
