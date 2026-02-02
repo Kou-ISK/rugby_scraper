@@ -109,19 +109,26 @@ class SixNationsBaseScraper(BaseScraper):
             if len(teams) < 2:
                 return None
 
-            date_text = current_date
-            if time_element and time_element.text.strip():
-                date_text = f"{current_date} {time_element.text.strip()}"
             home_team = teams[0].text.strip()
             away_team = teams[1].text.strip()
             timezone_name = self._infer_timezone(home_team)
 
-            kickoff_dt = self._parse_display_datetime(date_text)
-            if kickoff_dt and timezone_name:
-                try:
-                    kickoff_dt = kickoff_dt.astimezone(ZoneInfo(timezone_name))
-                except Exception:
-                    pass
+            # URLから正確な日付と時刻を抽出（URLが最も信頼できる情報源）
+            kickoff_dt = None
+            if match_url:
+                kickoff_dt = self._extract_datetime_from_url(match_url, timezone_name)
+            
+            # URLから日付が取れない場合のフォールバック
+            if not kickoff_dt:
+                date_text = current_date
+                if time_element and time_element.text.strip():
+                    date_text = f"{current_date} {time_element.text.strip()}"
+                kickoff_dt = self._parse_display_datetime(date_text)
+                if kickoff_dt and timezone_name:
+                    try:
+                        kickoff_dt = kickoff_dt.astimezone(ZoneInfo(timezone_name))
+                    except Exception:
+                        pass
 
             return self.build_match(
                 competition=self.competition_name,
@@ -148,6 +155,35 @@ class SixNationsBaseScraper(BaseScraper):
     def _get_match_url(self, card):
         raw_match_url = self._find_one_by_prefix(card, "a", "fixturesResultsCard_cardLink")
         return raw_match_url.get("href") if raw_match_url else None
+
+    def _extract_datetime_from_url(self, url: str, timezone_name: str):
+        """
+        URLから正確な日付と時刻を抽出
+        URL例: /en/m6n/fixtures/2026/italy-v-scotland-07022026-1510/build-up
+        フォーマット: DDMMYYYY-HHMM
+        """
+        try:
+            import re
+            # URLから日付部分を抽出（DDMMYYYY-HHMM形式）
+            pattern = r'(\d{2})(\d{2})(\d{4})-(\d{2})(\d{2})'
+            match = re.search(pattern, url)
+            
+            if match:
+                day = int(match.group(1))
+                month = int(match.group(2))
+                year = int(match.group(3))
+                hour = int(match.group(4))
+                minute = int(match.group(5))
+                
+                # 指定されたタイムゾーンで日時を構築
+                dt = datetime(year, month, day, hour, minute, 0)
+                dt = dt.replace(tzinfo=ZoneInfo(timezone_name))
+                return dt
+            
+            return None
+        except Exception as e:
+            print(f"URLからの日付抽出エラー: {str(e)}")
+            return None
 
     def _parse_display_datetime(self, date_string):
         if not date_string:
