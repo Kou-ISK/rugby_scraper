@@ -31,35 +31,35 @@ jobs:
   scrape-matches:
     runs-on: ubuntu-latest
     steps:
+      # mainブランチをチェックアウト（コードを取得）
       - uses: actions/checkout@v4
         with:
-          ref: data
+          ref: main
           persist-credentials: true
+          fetch-depth: 0 # 全履歴を取得
+
+      # dataブランチのdataディレクトリを取得
+      - name: Fetch data from data branch
+        run: |
+          git fetch origin data:data
+          git checkout data -- data/ || mkdir -p data/matches
+          git checkout main
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Install Chrome
         run: |
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
-      - name: Debug Python environment
-        run: |
-          echo "Current working directory: $(pwd)"
-          echo "Directory contents:"
-          ls -la
-          echo "Python path:"
-          python -c "import sys; print('\n'.join(sys.path))"
-          echo "PYTHONPATH environment variable:"
-          echo $PYTHONPATH
-          echo "src directory contents:"
-          ls -la src/
-          echo "src/__init__.py exists:" $(test -f src/__init__.py && echo "Yes" || echo "No")
-          echo "src/metadata/__init__.py exists:" $(test -f src/metadata/__init__.py && echo "Yes" || echo "No")
+
       - name: Run scrapers
         env:
           PYTHONPATH: .
@@ -80,16 +80,21 @@ jobs:
             python -m src.main world-rugby-internationals
           fi
       - name: Generate competitions metadata
-        env:
-          PYTHONPATH: .
         run: |
-          cd ${{ github.workspace }}
-          python -m src.metadata.generate_competitions || python src/metadata/generate_competitions.py
-      - name: Commit and push if changes
+          python -m src.metadata.generate_competitions
+
+      # dataブランチに変更をプッシュ
+      - name: Commit and push changes to data branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git fetch origin data:data
+          git checkout data
+          git checkout main -- data/
           git add data/matches/ data/competitions.json
-          git diff --cached --quiet || git commit -m "Update match data"
-          git pull --rebase origin data
-          git push origin data
+          if ! git diff --cached --quiet; then
+            git commit -m "Update match data - $(date +'%Y-%m-%d %H:%M:%S')"
+            git push origin data
+          else
+            echo "No changes to commit"
+          fi
