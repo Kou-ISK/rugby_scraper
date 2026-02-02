@@ -90,27 +90,26 @@ jobs:
           git config --local user.name "GitHub Action"
 
           # 変更があるか確認
-          if ! git diff --quiet data/ || ! git diff --cached --quiet data/; then
+          if [ -n "$(git status --porcelain data/)" ]; then
             echo "Changes detected, preparing to push to data branch"
             
-            # 変更をstash
-            git add data/
-            git stash push -m "Scraped data updates"
+            # data/ディレクトリを一時ディレクトリにコピー
+            cp -r data /tmp/scraped_data
             
             # dataブランチに切り替え
             git fetch origin data:data
             git checkout data
             
-            # stashから変更を適用
-            git stash pop
+            # dataブランチのdata/ディレクトリを完全上書き（既存JSONは削除）
+            rm -rf data
+            mv /tmp/scraped_data data
             
             # コミット＆プッシュ
-            git add data/matches/ data/competitions.json
+            git add data/
             git commit -m "Update match data - $(date +'%Y-%m-%d %H:%M:%S')"
             git push origin data
             
-            # mainブランチに戻る
-            git checkout main
+            echo "Successfully pushed to data branch"
           else
             echo "No changes to commit"
           fi
