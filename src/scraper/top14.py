@@ -76,6 +76,34 @@ class Top14Scraper(BaseScraper):
                 if home_team and away_team:
                     home_team_name = home_team.text.strip()
                     away_team_name = away_team.text.strip()
+                else:
+                    continue  # チーム名が取得できない場合はスキップ
+                
+                # match_idとvenueを取得
+                match_id = ""
+                venue = ""
+                match_link = element.select_one('.match-links__link[href*="/feuille-de-match/"]')
+                if match_link:
+                    href = match_link['href']
+                    # URLからmatch_idを抽出 (例: /feuille-de-match/2025-2026/j1/11307-clermont-toulouse)
+                    match_parts = href.split('/')[-1].split('-')
+                    if len(match_parts) > 0 and match_parts[0].isdigit():
+                        match_id = match_parts[0]
+                
+                # 会場情報を取得
+                venue_element = element.select_one('.match-line__venue')
+                if venue_element:
+                    venue = venue_element.text.strip()
+                
+                # ラウンド情報を取得（現在の日付から推測）
+                round_name = ""
+                try:
+                    if current_date and time_text:
+                        # 日付から年を取得してシーズンを判定
+                        current_year = datetime.now().year
+                        round_name = f"Journée {current_year}"
+                except:
+                    pass
                 
                 # 放送局を取得
                 broadcasters = []
@@ -90,29 +118,37 @@ class Top14Scraper(BaseScraper):
                 
                 # URLを取得
                 match_link = element.select_one('.match-links__link[href*="/feuille-de-match/"]')
-                match_url = f"{self.base_url}{match_link['href']}" if match_link else ""
+                if match_link:
+                    href = match_link['href']
+                    # 既にフルURLの場合はそのまま使用、相対パスの場合はbase_urlを結合
+                    if href.startswith('http'):
+                        match_url = href
+                    else:
+                        match_url = f"{self.base_url}{href}"
+                else:
+                    match_url = ""
 
                 match_info = self.build_match(
                     competition="Top 14",
-                    competition_id="",
-                    season=str(datetime.now().year),
-                    round_name="",
-                    status="",
+                    competition_id="top14",
+                    season=f"{datetime.now().year}-{datetime.now().year + 1}",
+                    round_name=round_name,
+                    status="scheduled",
                     kickoff=kickoff,
                     timezone_name="Europe/Paris",
                     timezone_source="competition_default",
-                    venue="",
-                    home_team=home_team_name if home_team else "",
-                    away_team=away_team_name if away_team else "",
+                    venue=venue,
+                    home_team=home_team_name,
+                    away_team=away_team_name,
                     match_url=match_url,
                     broadcasters=match_broadcasters,
+                    match_id=match_id,
                     source_name="LNR Top 14",
                     source_url=self.calendar_url,
                     source_type="official",
                 )
 
                 matches.append(match_info)
-                print(match_info)
         
         return matches
 

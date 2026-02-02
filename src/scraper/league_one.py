@@ -56,20 +56,27 @@ class LeagueOneScraper(BaseScraper):
                 teams = container.find_all('li', class_=['home', 'away'])
                 broadcasters = container.find("dl", class_="broadcast")
                 
-                if not all([date_element, venue_element, teams]):
+                if not all([date_element, teams]) or len(teams) < 2:
                     continue
+                
+                # venue情報を安全に取得
+                venue_text = ""
+                if venue_element:
+                    venue_text = venue_element.text.strip()
+                else:
+                    venue_text = self._get_venue(container) or ""
                 
                 kickoff = self.format_date_string(self._format_date(date_element))
                 match_info = self.build_match(
                     competition="Japan Rugby League One",
-                    competition_id="",
+                    competition_id="league-one",
                     season=str(datetime.now().year),
                     round_name="",
-                    status="",
+                    status="scheduled",
                     kickoff=kickoff,
                     timezone_name="Asia/Tokyo",
                     timezone_source="competition_default",
-                    venue=venue_element.text.strip(),
+                    venue=venue_text,
                     home_team=self._get_team_name(teams[0]) or "",
                     away_team=self._get_team_name(teams[1]) or "",
                     match_url=self._get_match_url(container) or "",
@@ -113,8 +120,11 @@ class LeagueOneScraper(BaseScraper):
 
     def _get_venue(self, container):
         try:
-            venue_element = container.find('p', href='place').find('a')
-            return venue_element.text.strip() if venue_element else None
+            venue_element = container.find('p', class_='place')
+            if venue_element:
+                link = venue_element.find('a')
+                return link.text.strip() if link else venue_element.text.strip()
+            return None
         except Exception as e:
             print(f"会場の取得に失敗: {str(e)}")
             return None

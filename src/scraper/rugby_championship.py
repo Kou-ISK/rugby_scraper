@@ -31,13 +31,18 @@ class RugbyChampionshipScraper(BaseScraper):
         try:
             print(f"{self.competition_name} のスクレイピングを開始...")
             
-            # 現在は公式サイトの構造が不明なため、プレースホルダーデータを返す
-            # 実際の実装時には公式サイトの HTML 構造を解析して実装する必要がある
+            # まずはプレースホルダーだが、将来の実装のためのフレームワークを設定
             matches = self._get_placeholder_matches()
+            
+            # 実際のスクレイピング実装をここに追加
+            # TODO: 公式サイトの構造を解析してから実装
             
             # データを保存
             self.save_to_json(matches, "rugby-championship")
-            print(f"{len(matches)} 件の試合データを保存しました")
+            if len(matches) > 0:
+                print(f"{len(matches)} 件の試合データを保存しました")
+            else:
+                print("現在はプレースホルダーのため、データなしで保存しました")
             
             return matches
             

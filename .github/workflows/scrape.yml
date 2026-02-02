@@ -2,7 +2,7 @@ name: Scrape Rugby Matches
 
 on:
   schedule:
-    - cron: '0 0 * * 0' # 毎週UTC 00:00に実行（日曜）
+    - cron: "0 0 * * 0" # 毎週UTC 00:00に実行（日曜）
   workflow_dispatch: # 手動実行用
     inputs:
       scraper:
@@ -38,7 +38,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -47,7 +47,22 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
+      - name: Debug Python environment
+        run: |
+          echo "Current working directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+          echo "Python path:"
+          python -c "import sys; print('\n'.join(sys.path))"
+          echo "PYTHONPATH environment variable:"
+          echo $PYTHONPATH
+          echo "src directory contents:"
+          ls -la src/
+          echo "src/__init__.py exists:" $(test -f src/__init__.py && echo "Yes" || echo "No")
+          echo "src/metadata/__init__.py exists:" $(test -f src/metadata/__init__.py && echo "Yes" || echo "No")
       - name: Run scrapers
+        env:
+          PYTHONPATH: .
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.scraper }}" != "all" ]; then
             python -m src.main "${{ inputs.scraper }}"
@@ -65,8 +80,11 @@ jobs:
             python -m src.main world-rugby-internationals
           fi
       - name: Generate competitions metadata
+        env:
+          PYTHONPATH: .
         run: |
-          python -m src.metadata.generate_competitions
+          cd ${{ github.workspace }}
+          python -m src.metadata.generate_competitions || python src/metadata/generate_competitions.py
       - name: Commit and push if changes
         run: |
           git config --local user.email "action@github.com"
