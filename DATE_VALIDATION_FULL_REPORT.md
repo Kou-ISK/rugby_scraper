@@ -1,12 +1,52 @@
 # 全スクレイパーの日付処理検証レポート
 
-## 検証日時
+## 最終更新
 
-2026年2月3日
+2026年2月3日 - Selenium待機条件修正を追加
 
 ## 調査対象
 
-rugby_scraperプロジェクトの全スクレイパーについて、日付抽出の正確性を検証
+rugby_scraperプロジェクトの全スクレイパーについて、日付抽出の正確性とスクレイピング動作を検証
+
+---
+
+## ⚠️ 重要な発見: Six Nations (Men's) スクレイピング失敗の原因
+
+### 問題
+
+dataブランチでSix Nations (Men's)のデータが空配列`[]`になっていた
+
+### 原因
+
+Seleniumの待機条件が誤っていた:
+
+```python
+# ❌ 間違い: CSS Modulesのハッシュ付きクラス名に対応していない
+By.CLASS_NAME, "fixturesResultsCard"
+```
+
+実際のクラス名: `fixturesResultsCard_fixturesResults__xxxxx` (CSS Modulesでハッシュ化)
+
+### 修正
+
+```python
+# ✅ 正しい: CSS Selectorでプレフィックスマッチング
+By.CSS_SELECTOR, "[class*='fixturesResultsCard_fixturesResults']"
+```
+
+追加の改善:
+
+- 待機時間を20秒 → 30秒に延長
+- JavaScript実行完了のための追加5秒待機
+
+### 影響範囲
+
+- ❌ Six Nations (Men's): スクレイピング失敗 → **修正済み**
+- ✅ Six Nations (Women's): 正常動作 (15試合取得)
+- ✅ Six Nations (U20): 正常動作 (15試合取得)
+
+→ 3つのスクレイパーは同じコードベースだが、Women'sとU20は正常に動作していた理由は不明。
+おそらくMen'sページのJavaScript実行タイミングが異なる可能性。
 
 ---
 
@@ -16,15 +56,16 @@ rugby_scraperプロジェクトの全スクレイパーについて、日付抽�
 
 #### 1. Six Nations (six_nations.py)
 
-- **状態**: ✅ **修正完了**
+- **状態**: ✅ **修正完了** (2026-02-03更新)
 - **処理方式**:
   - **優先**: URLから日付抽出 (DDMMYYYY形式)
   - **フォールバック**: HTML日付グループから取得
 - **修正内容**:
-  - roundContainer内の複数の日付グループを個別に処理
-  - 各試合カードに対して正しい日付グループから日付を取得
+  1. **日付処理**: roundContainer内の複数の日付グループを個別に処理
+  2. **Selenium待機**: CSS Modulesクラス名に対応した待機条件に修正
 - **検証結果**: 全15試合で日付が正確 (URLと一致)
 - **datefirst**: ✅ dayfirst=True 使用
+- **スクレイピング状態**: ✅ 修正後は正常動作予定
 
 #### 2. Six Nations Women's (six_nations.py)
 
