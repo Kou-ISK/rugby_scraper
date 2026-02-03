@@ -57,26 +57,50 @@ class SixNationsBaseScraper(BaseScraper):
         )
         print("ページ読み込み完了")
         
-        # さらにJavaScript実行を待つ
-        time.sleep(15)
+        # ネットワークアイドルを待つ（JavaScriptの実行完了を確実にする）
+        time.sleep(20)
+        
+        # Next.jsのハイドレーション完了を待つ
+        try:
+            self.driver.execute_script("""
+                return new Promise((resolve) => {
+                    if (window.next && window.next.router) {
+                        resolve(true);
+                    } else {
+                        setTimeout(() => resolve(false), 100);
+                    }
+                });
+            """)
+        except:
+            pass
+        
+        # さらに待機
+        time.sleep(10)
         
         # roundContainerの存在を確認（より確実な待機）
-        try:
-            WebDriverWait(self.driver, 45).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "[class*='fixturesResultsListing_roundContainer']"))
-            )
-            print("ラウンドコンテナの読み込み完了")
-        except Exception as e:
-            print(f"警告: ラウンドコンテナが見つかりませんでした: {e}")
-            # デバッグ用に試合カードも確認
+        max_attempts = 3
+        for attempt in range(max_attempts):
             try:
-                cards = self.driver.find_elements(By.CSS_SELECTOR, "[class*='fixturesResultsCard']")
-                print(f"試合カード数: {len(cards)}")
-            except:
-                pass
-        
-        # さらに少し待機してJavaScriptの実行を確実にする
-        time.sleep(5)
+                WebDriverWait(self.driver, 20).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "[class*='fixturesResultsListing_roundContainer']"))
+                )
+                print("ラウンドコンテナの読み込み完了")
+                break
+            except Exception as e:
+                if attempt < max_attempts - 1:
+                    print(f"試行 {attempt + 1}/{max_attempts}: ラウンドコンテナ待機中...")
+                    time.sleep(10)
+                else:
+                    print(f"警告: ラウンドコンテナが見つかりませんでした: {e}")
+                    # デバッグ用に試合カードも確認
+                    try:
+                        cards = self.driver.find_elements(By.CSS_SELECTOR, "[class*='fixturesResultsCard']")
+                        print(f"試合カード数: {len(cards)}")
+                        # HTMLの一部を出力してデバッグ
+                        body_text = self.driver.find_element(By.TAG_NAME, "body").text[:500]
+                        print(f"Body text preview: {body_text}")
+                    except Exception as debug_e:
+                        print(f"デバッグ情報取得失敗: {debug_e}")
         
         # デバッグ
         print(f"HTMLサイズ: {len(self.driver.page_source)} bytes")
@@ -270,6 +294,9 @@ class SixNationsBaseScraper(BaseScraper):
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--disable-software-rasterizer")
         chrome_options.add_argument("--window-size=1920,1080")
+        chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+        chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        chrome_options.add_experimental_option('useAutomationExtension', False)
         chrome_options.add_argument("--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
         # JavaScriptを確実に有効化
         chrome_options.add_experimental_option("prefs", {
@@ -280,7 +307,11 @@ class SixNationsBaseScraper(BaseScraper):
             driver_manager = ChromeDriverManager()
             service = Service(driver_manager.install())
             driver = webdriver.Chrome(service=service, options=chrome_options)
-            driver.set_page_load_timeout(30)
+            
+            # WebDriver検出を回避
+            driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+            
+            driver.set_page_load_timeout(60)
             driver.implicitly_wait(10)
             return driver
         except Exception as e:
