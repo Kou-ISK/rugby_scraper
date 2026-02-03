@@ -57,7 +57,8 @@ class BaseScraper(ABC):
             dt = value
         else:
             try:
-                dt = date_parser.parse(str(value), fuzzy=True)
+                # dayfirst=True: 日付の曖昧性を解決 (例: "05/02/2026" → 2月5日)
+                dt = date_parser.parse(str(value), fuzzy=True, dayfirst=True)
             except (ValueError, TypeError):
                 return None, None, timezone_name
 
