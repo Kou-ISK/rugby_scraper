@@ -50,16 +50,19 @@ class SixNationsBaseScraper(BaseScraper):
 
         # JavaScript実行を待つ
         import time
-        time.sleep(15)
+        time.sleep(10)
         
-        # fixturesResultsCardクラスが存在するまで待機
+        # CSS Modulesのプレフィックスマッチングで試合カードを待機
         try:
-            WebDriverWait(self.driver, 20).until(
-                EC.presence_of_element_located((By.CLASS_NAME, "fixturesResultsCard"))
+            WebDriverWait(self.driver, 30).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "[class*='fixturesResultsCard_fixturesResults']"))
             )
             print("試合カードの読み込み完了")
         except Exception as e:
-            print(f"警告: fixturesResultsCard要素が見つかりませんでした: {e}")
+            print(f"警告: 試合カード要素が見つかりませんでした: {e}")
+        
+        # さらに少し待機してJavaScriptの実行を確実にする
+        time.sleep(5)
         
         # デバッグ
         print(f"HTMLサイズ: {len(self.driver.page_source)} bytes")
