@@ -2652,29 +2652,9 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j18/11426-clermont-bayonne",
-    "broadcasters": [],
-    "source_name": "LNR Top 14",
-    "source_url": "https://top14.lnr.fr/calendrier-et-resultats",
-    "source_type": "official"
-  },
-  {
-    "match_id": "11427",
-    "competition": "Top 14",
-    "competition_id": "top14",
-    "season": "2026-2027",
-    "round": "Journée 2026",
-    "status": "scheduled",
-    "kickoff": "",
-    "kickoff_utc": "",
-    "timezone": "Europe/Paris",
-    "timezone_source": "competition_default",
-    "venue": "",
-    "home_team": "Castres Olympique",
-    "away_team": "Stade Rochelais",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j18/11427-castres-la-rochelle",
-    "broadcasters": [],
+    "broadcasters": [
+      "Canal + Sport"
+    ],
     "source_name": "LNR Top 14",
     "source_url": "https://top14.lnr.fr/calendrier-et-resultats",
     "source_type": "official"
@@ -2696,7 +2676,10 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j18/11428-lyon-toulon",
-    "broadcasters": [],
+    "broadcasters": [
+      "Canal +",
+      "Canal + Sport"
+    ],
     "source_name": "LNR Top 14",
     "source_url": "https://top14.lnr.fr/calendrier-et-resultats",
     "source_type": "official"
@@ -2718,29 +2701,10 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j18/11429-montpellier-racing-92",
-    "broadcasters": [],
-    "source_name": "LNR Top 14",
-    "source_url": "https://top14.lnr.fr/calendrier-et-resultats",
-    "source_type": "official"
-  },
-  {
-    "match_id": "11430",
-    "competition": "Top 14",
-    "competition_id": "top14",
-    "season": "2026-2027",
-    "round": "Journée 2026",
-    "status": "scheduled",
-    "kickoff": "",
-    "kickoff_utc": "",
-    "timezone": "Europe/Paris",
-    "timezone_source": "competition_default",
-    "venue": "",
-    "home_team": "Section Paloise",
-    "away_team": "Union Bordeaux-Bègles",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j18/11430-pau-bordeaux-begles",
-    "broadcasters": [],
+    "broadcasters": [
+      "Canal +",
+      "Canal + Live"
+    ],
     "source_name": "LNR Top 14",
     "source_url": "https://top14.lnr.fr/calendrier-et-resultats",
     "source_type": "official"
@@ -2762,7 +2726,10 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j18/11431-paris-perpignan",
-    "broadcasters": [],
+    "broadcasters": [
+      "Canal +",
+      "Canal + Live"
+    ],
     "source_name": "LNR Top 14",
     "source_url": "https://top14.lnr.fr/calendrier-et-resultats",
     "source_type": "official"
@@ -2784,7 +2751,58 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j18/11432-toulouse-montauban",
-    "broadcasters": [],
+    "broadcasters": [
+      "Canal + Live",
+      "Canal +"
+    ],
+    "source_name": "LNR Top 14",
+    "source_url": "https://top14.lnr.fr/calendrier-et-resultats",
+    "source_type": "official"
+  },
+  {
+    "match_id": "11427",
+    "competition": "Top 14",
+    "competition_id": "top14",
+    "season": "2026-2027",
+    "round": "Journée 2026",
+    "status": "scheduled",
+    "kickoff": "",
+    "kickoff_utc": "",
+    "timezone": "Europe/Paris",
+    "timezone_source": "competition_default",
+    "venue": "",
+    "home_team": "Castres Olympique",
+    "away_team": "Stade Rochelais",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j18/11427-castres-la-rochelle",
+    "broadcasters": [
+      "Canal +"
+    ],
+    "source_name": "LNR Top 14",
+    "source_url": "https://top14.lnr.fr/calendrier-et-resultats",
+    "source_type": "official"
+  },
+  {
+    "match_id": "11430",
+    "competition": "Top 14",
+    "competition_id": "top14",
+    "season": "2026-2027",
+    "round": "Journée 2026",
+    "status": "scheduled",
+    "kickoff": "",
+    "kickoff_utc": "",
+    "timezone": "Europe/Paris",
+    "timezone_source": "competition_default",
+    "venue": "",
+    "home_team": "Section Paloise",
+    "away_team": "Union Bordeaux-Bègles",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j18/11430-pau-bordeaux-begles",
+    "broadcasters": [
+      "Canal +"
+    ],
     "source_name": "LNR Top 14",
     "source_url": "https://top14.lnr.fr/calendrier-et-resultats",
     "source_type": "official"
