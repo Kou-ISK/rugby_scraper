@@ -28,13 +28,18 @@ class SixNationsBaseScraper(BaseScraper):
             matches = self._extract_matches(BeautifulSoup(self.driver.page_source, 'html.parser'))
             return matches
         except Exception as e:
+            import traceback
             print(f"スクレイピングエラー: {str(e)}")
+            traceback.print_exc()
             return None
         finally:
             if self.driver:
                 self.driver.quit()
 
     def _initialize_driver_and_load_page(self):
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.support import expected_conditions as EC
+        
         self.driver = self._setup_driver()
         self.apply_timezone_override(self.driver, self.display_timezone)
         year = str(datetime.now().year)
@@ -43,9 +48,21 @@ class SixNationsBaseScraper(BaseScraper):
         self.driver.get(url)
         print(f"ページにアクセス: {url}")
 
-        WebDriverWait(self.driver, 30).until(
-            lambda d: d.find_element(By.TAG_NAME, "body").text.strip() != ""
-        )
+        # JavaScript実行を待つ
+        import time
+        time.sleep(15)
+        
+        # fixturesResultsCardクラスが存在するまで待機
+        try:
+            WebDriverWait(self.driver, 20).until(
+                EC.presence_of_element_located((By.CLASS_NAME, "fixturesResultsCard"))
+            )
+            print("試合カードの読み込み完了")
+        except Exception as e:
+            print(f"警告: fixturesResultsCard要素が見つかりませんでした: {e}")
+        
+        # デバッグ
+        print(f"HTMLサイズ: {len(self.driver.page_source)} bytes")
 
     def _class_has_prefix(self, classes, prefix: str) -> bool:
         if not classes:
@@ -76,26 +93,45 @@ class SixNationsBaseScraper(BaseScraper):
         return matches
 
     def _process_round_container(self, container):
+        """
+        roundContainerは複数の日付グループを含む親コンテナ。
+        各日付グループ（子div）ごとに処理する。
+        """
         matches = []
         try:
-            current_date = self._get_date_from_container(container)
-            match_cards = self._find_all_by_prefix(
-                container, "div", "fixturesResultsCard_padding"
-            )
+            # 日付グループ（直接の子div）を取得
+            date_groups = [
+                child for child in container.children
+                if hasattr(child, 'name') and child.name == 'div'
+            ]
+            
+            for date_group in date_groups:
+                # この日付グループの日付ヘッダーを取得
+                current_date = self._get_date_from_date_group(date_group)
+                if not current_date:
+                    continue
+                    
+                print(f"日付ヘッダー: {current_date}")
+                
+                # この日付グループの試合カードを取得
+                match_cards = self._find_all_by_prefix(
+                    date_group, "article", "fixturesResultsCard_fixturesResults"
+                )
 
-            for card in match_cards:
-                match_info = self._extract_match_info(card, current_date)
-                if match_info:
-                    matches.append(match_info)
+                for card in match_cards:
+                    match_info = self._extract_match_info(card, current_date)
+                    if match_info:
+                        matches.append(match_info)
 
         except Exception as e:
             print(f"ラウンドの処理に失敗: {str(e)}")
 
         return matches
 
-    def _get_date_from_container(self, container):
+    def _get_date_from_date_group(self, date_group):
+        """日付グループから日付ヘッダーを取得"""
         date_element = self._find_one_by_prefix(
-            container, "h2", "fixturesResultsListing_dateTitle"
+            date_group, "h2", "fixturesResultsListing_dateTitle"
         )
         return date_element.text.strip() if date_element else None
 
@@ -113,22 +149,27 @@ class SixNationsBaseScraper(BaseScraper):
             away_team = teams[1].text.strip()
             timezone_name = self._infer_timezone(home_team)
 
-            # URLから正確な日付と時刻を抽出（URLが最も信頼できる情報源）
+            # 日付と時刻を抽出: URLを優先（HTMLの表示日付が不正確なため）
             kickoff_dt = None
+            
+            # Method 1 (優先): URLから抽出
             if match_url:
                 kickoff_dt = self._extract_datetime_from_url(match_url, timezone_name)
+                if kickoff_dt:
+                    print(f"  URLから日付取得: {kickoff_dt.date()}")
             
-            # URLから日付が取れない場合のフォールバック
-            if not kickoff_dt:
-                date_text = current_date
-                if time_element and time_element.text.strip():
-                    date_text = f"{current_date} {time_element.text.strip()}"
+            # Method 2 (フォールバック): HTML表示テキストから抽出
+            if not kickoff_dt and current_date and time_element and time_element.text.strip():
+                date_text = f"{current_date} {time_element.text.strip()}"
+                print(f"  日付テキスト: '{date_text}'")
                 kickoff_dt = self._parse_display_datetime(date_text)
-                if kickoff_dt and timezone_name:
-                    try:
-                        kickoff_dt = kickoff_dt.astimezone(ZoneInfo(timezone_name))
-                    except Exception:
-                        pass
+                if kickoff_dt:
+                    print(f"  パース結果: {kickoff_dt}")
+                    kickoff_dt = kickoff_dt.replace(tzinfo=ZoneInfo(timezone_name))
+            
+            # どちらも取れない場合は警告
+            if not kickoff_dt:
+                print(f"⚠️ 警告: {home_team} vs {away_team} の日付を取得できませんでした")
 
             return self.build_match(
                 competition=self.competition_name,
@@ -190,7 +231,8 @@ class SixNationsBaseScraper(BaseScraper):
             return None
         try:
             default_dt = datetime(datetime.now().year, 1, 1, 0, 0, 0)
-            parsed = date_parser.parse(date_string, fuzzy=True, default=default_dt)
+            # dayfirst=True を指定して、日付を正しく解釈する (例: "7 Feb" -> 2月7日)
+            parsed = date_parser.parse(date_string, fuzzy=True, dayfirst=True, default=default_dt)
             return parsed.replace(tzinfo=ZoneInfo(self.display_timezone))
         except (ValueError, TypeError):
             return None
