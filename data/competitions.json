@@ -79,15 +79,24 @@
       ],
       "notes": "Regional availability varies. Some streaming services require geo-location within their service area or VPN for international access."
     },
-    "teams": [],
+    "teams": [
+      "ENG",
+      "FRA",
+      "IRE",
+      "ITA",
+      "SCO",
+      "WAL"
+    ],
     "data_summary": {
-      "match_count": 0,
-      "seasons": [],
+      "match_count": 15,
+      "seasons": [
+        "2026"
+      ],
       "date_range": {
-        "start": "",
-        "end": ""
+        "start": "2026-02-05T21:10:00+01:00",
+        "end": "2026-03-14T21:10:00+01:00"
       },
-      "last_updated": "2026-02-03T15:06:04.657600"
+      "last_updated": "2026-02-04T12:49:49.599443"
     }
   },
   {
@@ -138,15 +147,24 @@
       ],
       "notes": "Coverage may be available via Six Nations official channels and regional broadcasters."
     },
-    "teams": [],
+    "teams": [
+      "ENG",
+      "FRA",
+      "IRE",
+      "ITA",
+      "SCO",
+      "WAL"
+    ],
     "data_summary": {
-      "match_count": 0,
-      "seasons": [],
+      "match_count": 15,
+      "seasons": [
+        "2026"
+      ],
       "date_range": {
-        "start": "",
-        "end": ""
+        "start": "2026-04-11T11:25:00+02:00",
+        "end": "2026-05-17T15:45:00+02:00"
       },
-      "last_updated": "2026-02-03T15:07:32.668676"
+      "last_updated": "2026-02-04T12:50:03.034507"
     }
   },
   {
@@ -197,15 +215,24 @@
       ],
       "notes": "Many matches available via Six Nations official streaming channels."
     },
-    "teams": [],
+    "teams": [
+      "ENG",
+      "FRA",
+      "IRE",
+      "ITA",
+      "SCO",
+      "WAL"
+    ],
     "data_summary": {
-      "match_count": 0,
-      "seasons": [],
+      "match_count": 15,
+      "seasons": [
+        "2026"
+      ],
       "date_range": {
-        "start": "",
-        "end": ""
+        "start": "2026-02-06T20:15:00+01:00",
+        "end": "2026-03-15T18:45:00+01:00"
       },
-      "last_updated": "2026-02-03T15:08:59.198739"
+      "last_updated": "2026-02-04T12:50:16.096567"
     }
   },
   {
@@ -299,7 +326,7 @@
         "start": "2025-05-12T21:00:00+02:00",
         "end": "2026-11-01T18:30:00+01:00"
       },
-      "last_updated": "2026-02-03T15:09:14.516755"
+      "last_updated": "2026-02-04T12:50:31.290636"
     }
   },
   {
@@ -390,7 +417,7 @@
         "start": "2025-05-12T21:00:00+02:00",
         "end": "2026-11-01T14:00:00+01:00"
       },
-      "last_updated": "2026-02-03T15:09:07.599743"
+      "last_updated": "2026-02-04T12:50:24.359605"
     }
   },
   {
@@ -474,7 +501,7 @@
         "start": "",
         "end": ""
       },
-      "last_updated": "2026-02-03T15:10:51.425841"
+      "last_updated": "2026-02-04T12:52:08.952034"
     }
   },
   {
@@ -576,7 +603,7 @@
         "start": "2025-12-13T12:00:00+09:00",
         "end": "2026-12-04T13:00:00+09:00"
       },
-      "last_updated": "2026-02-03T15:10:53.841843"
+      "last_updated": "2026-02-04T12:52:12.517045"
     }
   },
   {
@@ -652,7 +679,7 @@
         "start": "2025-03-10T18:45:00+00:00",
         "end": "2026-10-05T14:00:00+00:00"
       },
-      "last_updated": "2026-02-03T15:10:57.596847"
+      "last_updated": "2026-02-04T12:52:15.879053"
     }
   },
   {
@@ -748,7 +775,7 @@
         "start": "2025-03-10T17:00:00+00:00",
         "end": "2026-09-05T18:45:00+00:00"
       },
-      "last_updated": "2026-02-03T15:10:59.226848"
+      "last_updated": "2026-02-04T12:52:17.058056"
     }
   },
   {
@@ -862,7 +889,7 @@
         "start": "2026-02-13T19:05:00+13:00",
         "end": "2026-05-30T17:35:00+08:00"
       },
-      "last_updated": "2026-02-03T15:11:01.523850"
+      "last_updated": "2026-02-04T12:52:19.815065"
     }
   },
   {
@@ -928,7 +955,7 @@
         "start": "",
         "end": ""
       },
-      "last_updated": "2026-02-03T15:04:11.993425"
+      "last_updated": "2026-02-04T12:49:12.117157"
     }
   },
   {
@@ -1002,7 +1029,7 @@
         "start": "",
         "end": ""
       },
-      "last_updated": "2026-02-03T15:04:11.992425"
+      "last_updated": "2026-02-04T12:49:12.116157"
     }
   },
   {
@@ -1077,7 +1104,7 @@
         "start": "2026-02-06T00:00:00+01:00",
         "end": "2026-10-31T00:00:00+13:00"
       },
-      "last_updated": "2026-02-03T15:11:15.249863"
+      "last_updated": "2026-02-04T12:52:32.208105"
     }
   }
 ]
