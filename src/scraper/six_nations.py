@@ -39,6 +39,7 @@ class SixNationsBaseScraper(BaseScraper):
     def _initialize_driver_and_load_page(self):
         from selenium.webdriver.common.by import By
         from selenium.webdriver.support import expected_conditions as EC
+        import time
         
         self.driver = self._setup_driver()
         self.apply_timezone_override(self.driver, self.display_timezone)
@@ -48,8 +49,35 @@ class SixNationsBaseScraper(BaseScraper):
         self.driver.get(url)
         print(f"ページにアクセス: {url}")
 
-        # JavaScript実行を待つ
-        import time
+        # より賢い待機戦略: レンダリング完了を検出
+        def wait_for_complete_render(driver, timeout=60):
+            """ページの完全なレンダリングを待つ"""
+            start = time.time()
+            last_height = 0
+            stable_count = 0
+            
+            while time.time() - start < timeout:
+                # ページの高さをチェック
+                try:
+                    current_height = driver.execute_script("return document.body.scrollHeight")
+                    
+                    if current_height == last_height:
+                        stable_count += 1
+                        if stable_count >= 3:  # 3回連続で変化なし = 安定
+                            print(f"レンダリング安定を検出 (高さ: {current_height}px)")
+                            return True
+                    else:
+                        stable_count = 0
+                        print(f"レンダリング中... (高さ: {current_height}px)")
+                    
+                    last_height = current_height
+                    time.sleep(2)
+                except Exception as e:
+                    print(f"高さチェック中のエラー: {e}")
+                    time.sleep(2)
+            
+            print(f"タイムアウト (最終高さ: {last_height}px)")
+            return False
         
         # ページ読み込み完了を待つ
         WebDriverWait(self.driver, 30).until(
@@ -57,53 +85,54 @@ class SixNationsBaseScraper(BaseScraper):
         )
         print("ページ読み込み完了")
         
-        # ネットワークアイドルを待つ（JavaScriptの実行完了を確実にする）
-        time.sleep(20)
+        # 完全なレンダリングを待つ
+        if wait_for_complete_render(self.driver, timeout=60):
+            print("ページレンダリング完了")
+        else:
+            print("警告: レンダリングタイムアウト、処理を続行")
         
-        # Next.jsのハイドレーション完了を待つ
+        # Next.jsのハイドレーション確認
         try:
-            self.driver.execute_script("""
-                return new Promise((resolve) => {
-                    if (window.next && window.next.router) {
-                        resolve(true);
-                    } else {
-                        setTimeout(() => resolve(false), 100);
-                    }
-                });
+            has_next = self.driver.execute_script("""
+                return !!(window.next && window.next.router);
             """)
+            if has_next:
+                print("Next.js検出: ハイドレーション待機中...")
+                time.sleep(5)
         except:
             pass
         
-        # さらに待機
-        time.sleep(10)
-        
-        # roundContainerの存在を確認（より確実な待機）
+        # roundContainerの存在を確認
         max_attempts = 3
         for attempt in range(max_attempts):
             try:
                 WebDriverWait(self.driver, 20).until(
                     EC.presence_of_element_located((By.CSS_SELECTOR, "[class*='fixturesResultsListing_roundContainer']"))
                 )
-                print("ラウンドコンテナの読み込み完了")
+                print("✅ ラウンドコンテナの読み込み完了")
                 break
             except Exception as e:
                 if attempt < max_attempts - 1:
                     print(f"試行 {attempt + 1}/{max_attempts}: ラウンドコンテナ待機中...")
                     time.sleep(10)
                 else:
-                    print(f"警告: ラウンドコンテナが見つかりませんでした: {e}")
-                    # デバッグ用に試合カードも確認
+                    print(f"⚠️ 警告: ラウンドコンテナが見つかりませんでした")
+                    # デバッグ情報
                     try:
                         cards = self.driver.find_elements(By.CSS_SELECTOR, "[class*='fixturesResultsCard']")
                         print(f"試合カード数: {len(cards)}")
-                        # HTMLの一部を出力してデバッグ
-                        body_text = self.driver.find_element(By.TAG_NAME, "body").text[:500]
-                        print(f"Body text preview: {body_text}")
+                        body_text = self.driver.find_element(By.TAG_NAME, "body").text[:300]
+                        print(f"Body preview: {body_text}...")
                     except Exception as debug_e:
                         print(f"デバッグ情報取得失敗: {debug_e}")
         
         # デバッグ
-        print(f"HTMLサイズ: {len(self.driver.page_source)} bytes")
+        html_size = len(self.driver.page_source)
+        print(f"HTMLサイズ: {html_size:,} bytes")
+        if html_size > 500000:
+            print("✅ HTMLサイズ正常（JavaScript実行済み）")
+        else:
+            print(f"⚠️ HTMLサイズが小さい（期待値: 700KB以上）")
 
     def _class_has_prefix(self, classes, prefix: str) -> bool:
         if not classes:
@@ -287,29 +316,29 @@ class SixNationsBaseScraper(BaseScraper):
         return "Europe/London"
 
     def _setup_driver(self):
+        from selenium_stealth import stealth
+        
         chrome_options = Options()
         chrome_options.add_argument("--headless=new")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--disable-software-rasterizer")
         chrome_options.add_argument("--window-size=1920,1080")
-        chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-        chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        chrome_options.add_experimental_option('useAutomationExtension', False)
-        chrome_options.add_argument("--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-        # JavaScriptを確実に有効化
-        chrome_options.add_experimental_option("prefs", {
-            "profile.managed_default_content_settings.javascript": 1
-        })
+        chrome_options.add_argument("--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36")
 
         try:
             driver_manager = ChromeDriverManager()
             service = Service(driver_manager.install())
             driver = webdriver.Chrome(service=service, options=chrome_options)
             
-            # WebDriver検出を回避
-            driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+            # Selenium Stealthを適用（自動的にボット検出を回避）
+            stealth(driver,
+                languages=["en-US", "en"],
+                vendor="Google Inc.",
+                platform="Linux",
+                webgl_vendor="Intel Inc.",
+                renderer="Intel Iris OpenGL Engine",
+                fix_hairline=True,
+            )
             
             driver.set_page_load_timeout(60)
             driver.implicitly_wait(10)
