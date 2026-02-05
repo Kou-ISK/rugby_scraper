@@ -86,12 +86,11 @@ class WorldRugbyInternationalsScraper(BaseScraper):
 
             venue = match.get("venue", {}) or {}
             event = match.get("events") or []
-            competition_id = event[0].get("id") if event else ""
 
             normalized.append(
                 self.build_match(
                     competition=competition or "",
-                    competition_id=competition_id,
+                    competition_id="world-rugby-internationals",
                     season=str(datetime.utcnow().year),
                     round_name=match.get("eventPhase") or "",
                     status=match.get("status") or "",

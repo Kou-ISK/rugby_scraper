@@ -5,10 +5,41 @@ itsuneru 向けに世界のラグビー試合日程を取得するスクレイ�
 ## 📋 ドキュメント
 
 - **[JSON インターフェイス仕様](docs/JSON_SCHEMA.md)** - itsuneru が参照する JSON の詳細仕様
-  - 試合データスキーマ（`data/matches/*.json`）
+  - 試合データスキーマ（`data/matches/{comp_id}/{season}.json`）
   - 大会メタデータスキーマ（`data/competitions.json`）
+  - チームマスタ（`data/teams.json`）
   - TypeScript 型定義
   - 使用例
+- **[マイグレーションレポート](MIGRATION_REPORT.md)** - 新ID体系とディレクトリ構造への移行記録
+
+## 🆕 新データ構造 (2026-02-06更新)
+
+### ディレクトリ構造
+
+```
+data/
+├── teams.json                    # 統合チームマスタ
+├── competitions.json             # 大会マスタ
+└── matches/
+    ├── {comp_id}/               # 大会ID別ディレクトリ
+    │   └── {season}.json        # シーズン別試合データ
+    └── ...
+```
+
+### ID体系
+
+**大会ID**: 略称コード（性別を明示）
+- `m6n`: Men's Six Nations
+- `w6n`: Women's Six Nations  
+- `jrlo`: Japan Rugby League One
+- `gp`: Gallagher Premiership
+
+**チームID**: `{comp_id}-{number}` 形式
+- `m6n-1`: England (Men's Six Nations)
+- `w6n-2`: France (Women's Six Nations)
+- `jrlo-1`: Saitama Wild Knights
+
+詳細は [MIGRATION_REPORT.md](MIGRATION_REPORT.md) を参照。
 
 ## 取得対象リーグと公式ソース
 

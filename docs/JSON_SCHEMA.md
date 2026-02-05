@@ -4,7 +4,7 @@
 
 ## 1. 試合データ（`data/matches/*.json`）
 
-各大会の試合データを含む配列。
+各大会の試合データを含む配列。大会・チームのIDはマスタ（`data/competitions.json` / `data/teams.json`）を基に付与します。
 
 ### エンドポイント
 
@@ -16,23 +16,61 @@ https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/<compe
 
 ```typescript
 interface Match {
-  // 試合日時（現地時間、形式: "YYYY-MM-DD HH:MM:SS"）
-  date: string;
+  // 安定した一意ID（competition_id + kickoff_utc + home/awayで生成）
+  match_id: string;
 
-  // 会場名
+  // 大会名
+  competition: string;
+
+  // 大会ID（マスタの id と一致）
+  competition_id: string;
+
+  // シーズン（存在すれば）
+  season: string;
+
+  // ラウンド/節（存在すれば）
+  round: string;
+
+  // 試合ステータス（例: "scheduled", "finished"）
+  status: string;
+
+  // キックオフ日時（ローカル）
+  kickoff: string; // ISO8601
+
+  // キックオフ日時（UTC）
+  kickoff_utc: string; // ISO8601
+
+  // タイムゾーン
+  timezone: string;
+
+  // タイムゾーンの決定根拠（例: "home_team_default"）
+  timezone_source: string;
+
+  // 会場
   venue: string;
 
-  // ホームチーム名
+  // ホームチーム表示名
   home_team: string;
 
-  // アウェイチーム名
+  // アウェイチーム表示名
   away_team: string;
 
-  // 放送局リスト（空配列または文字列配列）
-  broadcasters: string[] | string;
+  // ホームチームID（マスタと一致）
+  home_team_id: string;
+
+  // アウェイチームID（マスタと一致）
+  away_team_id: string;
 
   // 試合詳細ページURL
-  url: string;
+  match_url: string;
+
+  // 放送局リスト
+  broadcasters: string[];
+
+  // 取得元情報
+  source_name: string;
+  source_url: string;
+  source_type: string;
 }
 
 type Matches = Match[];
@@ -43,31 +81,54 @@ type Matches = Match[];
 ```json
 [
   {
-    "date": "2024-12-21 12:10:00",
-    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
-    "home_team": "三重ホンダヒート",
-    "away_team": "ブラックラムズ東京",
-    "broadcasters": [
-      "J SPORTS 3",
-      "三重テレビ",
-      "イッツコムチャンネル",
-      "J SPORTSオンデマンド"
-    ],
-    "url": "https://league-one.jp/match/27447"
+    "match_id": "six-nations-2026-02-05t20:10:00z-fra-ire",
+    "competition": "Six Nations",
+    "competition_id": "six-nations",
+    "season": "2026",
+    "round": "Round 1",
+    "status": "scheduled",
+    "kickoff": "2026-02-05T21:10:00+01:00",
+    "kickoff_utc": "2026-02-05T20:10:00Z",
+    "timezone": "Europe/Paris",
+    "timezone_source": "home_team_default",
+    "venue": "Stade de France",
+    "home_team": "FRA",
+    "away_team": "IRE",
+    "home_team_id": "fra",
+    "away_team_id": "ire",
+    "match_url": "https://www.sixnationsrugby.com/en/m6n/fixtures/202600/france-v-ireland-05022026-2110/build-up",
+    "broadcasters": [],
+    "source_name": "Six Nations Rugby",
+    "source_url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2026",
+    "source_type": "official"
   }
 ]
 ```
 
 ### フィールド詳細
 
-| フィールド     | 型                     | 必須 | 説明                                              |
-| -------------- | ---------------------- | ---- | ------------------------------------------------- |
-| `date`         | `string`               | ✓    | 試合日時（現地時間）。形式: `YYYY-MM-DD HH:MM:SS` |
-| `venue`        | `string`               | ✓    | 会場名。地域情報を含む場合あり                    |
-| `home_team`    | `string`               | ✓    | ホームチーム名                                    |
-| `away_team`    | `string`               | ✓    | アウェイチーム名                                  |
-| `broadcasters` | `string[]` or `string` | ✓    | 放送局。配列または空文字列                        |
-| `url`          | `string`               | ✓    | 試合詳細ページのURL                               |
+| フィールド        | 型         | 必須 | 説明                                                                     |
+| ----------------- | ---------- | ---- | ------------------------------------------------------------------------ |
+| `match_id`        | `string`   | ✓    | 安定ID（`competition_id`/`kickoff_utc`/`home_team`/`away_team`から生成） |
+| `competition`     | `string`   | ✓    | 大会名                                                                   |
+| `competition_id`  | `string`   | ✓    | 大会ID（マスタと一致）                                                   |
+| `season`          | `string`   | -    | シーズン                                                                 |
+| `round`           | `string`   | -    | ラウンド/節                                                              |
+| `status`          | `string`   | -    | 試合ステータス                                                           |
+| `kickoff`         | `string`   | ✓    | キックオフ日時（ローカル、ISO8601）                                      |
+| `kickoff_utc`     | `string`   | ✓    | キックオフ日時（UTC、ISO8601）                                           |
+| `timezone`        | `string`   | ✓    | タイムゾーン                                                             |
+| `timezone_source` | `string`   | -    | タイムゾーン決定根拠                                                     |
+| `venue`           | `string`   | ✓    | 会場                                                                     |
+| `home_team`       | `string`   | ✓    | ホームチーム表示名                                                       |
+| `away_team`       | `string`   | ✓    | アウェイチーム表示名                                                     |
+| `home_team_id`    | `string`   | -    | ホームチームID（マスタと一致）                                           |
+| `away_team_id`    | `string`   | -    | アウェイチームID（マスタと一致）                                         |
+| `match_url`       | `string`   | ✓    | 試合詳細URL                                                              |
+| `broadcasters`    | `string[]` | ✓    | 放送局配列（空配列可）                                                   |
+| `source_name`     | `string`   | ✓    | 取得元名                                                                 |
+| `source_url`      | `string`   | ✓    | 取得元URL                                                                |
+| `source_type`     | `string`   | ✓    | 取得元種別（official/third-partyなど）                                   |
 
 ### 注意事項
 
@@ -129,6 +190,15 @@ interface Competition {
 
   // 公式データフィードURL配列
   official_feeds: string[];
+
+  // 大会ロゴの外部URL（可能な限りオリジナルの出典を利用）
+  logo_url?: string;
+
+  // リポジトリ内に保存した大会ロゴのパス（外部URLが使えない場合のみ）
+  logo_repo_path?: string;
+
+  // ロゴのライセンス情報を参照するキー（data/logo_licenses.json）
+  license_key?: string;
 
   // デフォルトタイムゾーン
   timezone_default: string;
@@ -258,28 +328,31 @@ type Competitions = Competition[];
 
 #### Competition オブジェクト
 
-| フィールド           | 型            | 必須 | 説明                                                           |
-| -------------------- | ------------- | ---- | -------------------------------------------------------------- |
-| `id`                 | `string`      | ✓    | 大会ID（ケバブケース）。試合データファイル名と対応             |
-| `name`               | `string`      | ✓    | 大会正式名称                                                   |
-| `short_name`         | `string`      | ✓    | 大会略称                                                       |
-| `sport`              | `string`      | ✓    | スポーツ種目（現在は `"rugby union"` のみ）                    |
-| `category`           | `string`      | ✓    | カテゴリー: `"international"` または `"club"`                  |
-| `gender`             | `string`      | ✓    | 性別: `"men"`, `"women"`, `"mixed"`                            |
-| `age_grade`          | `string`      | ✓    | 年齢区分: `"senior"`, `"u20"`                                  |
-| `tier`               | `string`      | ✓    | ティア: `"tier-1"`, `"tier-2"`, `"tier-3"`                     |
-| `region`             | `string`      | ✓    | 地域（例: `"Europe"`, `"Japan"`, `"Oceania/Americas/Africa"`） |
-| `governing_body`     | `string`      | ✓    | 統括団体名                                                     |
-| `organizer`          | `string`      | ✓    | 主催者名                                                       |
-| `official_sites`     | `string[]`    | ✓    | 公式サイトURL配列                                              |
-| `official_feeds`     | `string[]`    | ✓    | 公式データフィードURL配列（空配列の場合あり）                  |
-| `timezone_default`   | `string`      | ✓    | デフォルトタイムゾーン（IANA形式）                             |
-| `season_pattern`     | `string`      | ✓    | シーズンパターン: `"annual"` または `"variable"`               |
-| `match_url_template` | `string`      | ✓    | 試合URLテンプレート（空文字列の場合あり）                      |
-| `data_paths`         | `string[]`    | ✓    | 試合データファイルの相対パス配列                               |
-| `coverage`           | `Coverage`    | ✓    | 視聴情報オブジェクト                                           |
-| `teams`              | `string[]`    | ✓    | 参加チーム名配列（空配列の場合あり）                           |
-| `data_summary`       | `DataSummary` | ✓    | データサマリーオブジェクト                                     |
+| フィールド           | 型            | 必須 | 説明                                                            |
+| -------------------- | ------------- | ---- | --------------------------------------------------------------- |
+| `id`                 | `string`      | ✓    | 大会ID（ケバブケース）。試合データファイル名と対応              |
+| `name`               | `string`      | ✓    | 大会正式名称                                                    |
+| `short_name`         | `string`      | ✓    | 大会略称                                                        |
+| `sport`              | `string`      | ✓    | スポーツ種目（現在は `"rugby union"` のみ）                     |
+| `category`           | `string`      | ✓    | カテゴリー: `"international"` または `"club"`                   |
+| `gender`             | `string`      | ✓    | 性別: `"men"`, `"women"`, `"mixed"`                             |
+| `age_grade`          | `string`      | ✓    | 年齢区分: `"senior"`, `"u20"`                                   |
+| `tier`               | `string`      | ✓    | ティア: `"tier-1"`, `"tier-2"`, `"tier-3"`                      |
+| `region`             | `string`      | ✓    | 地域（例: `"Europe"`, `"Japan"`, `"Oceania/Americas/Africa"`）  |
+| `governing_body`     | `string`      | ✓    | 統括団体名                                                      |
+| `organizer`          | `string`      | ✓    | 主催者名                                                        |
+| `official_sites`     | `string[]`    | ✓    | 公式サイトURL配列                                               |
+| `official_feeds`     | `string[]`    | ✓    | 公式データフィードURL配列（空配列の場合あり）                   |
+| `logo_url`           | `string`      | -    | 大会ロゴの外部URL（Wikimedia/TheSportsDBなどオリジナル出典）    |
+| `logo_repo_path`     | `string`      | -    | リポジトリ内に保存した大会ロゴパス（外部URLが使えない場合のみ） |
+| `license_key`        | `string`      | -    | ロゴのライセンス情報キー（`data/logo_licenses.json` を参照）    |
+| `timezone_default`   | `string`      | ✓    | デフォルトタイムゾーン（IANA形式）                              |
+| `season_pattern`     | `string`      | ✓    | シーズンパターン: `"annual"` または `"variable"`                |
+| `match_url_template` | `string`      | ✓    | 試合URLテンプレート（空文字列の場合あり）                       |
+| `data_paths`         | `string[]`    | ✓    | 試合データファイルの相対パス配列                                |
+| `coverage`           | `Coverage`    | ✓    | 視聴情報オブジェクト                                            |
+| `teams`              | `string[]`    | ✓    | 参加チーム名配列（空配列の場合あり）                            |
+| `data_summary`       | `DataSummary` | ✓    | データサマリーオブジェクト                                      |
 
 #### Coverage オブジェクト
 
@@ -310,7 +383,89 @@ type Competitions = Competition[];
 
 ---
 
-## 3. 大会ID一覧
+### ロゴとライセンス
+
+ブランド情報は以下の方針で追加します。
+
+- `logo_url` / `badge_url` には極力オリジナルの配信元（TheSportsDB, Wikimedia など）のURLを保存し、再配布を避けます。
+- オリジナルURLが不安定または再配布が許可されている場合のみ、`logo_repo_path` にリポジトリ内パスを保存します。
+- このプロジェクトではS3など外部ストレージは使用せず、オリジナルURL参照またはGitHubリポジトリ内保存の二択とします。
+- ライセンス情報は `data/logo_licenses.json` に集約し、各オブジェクトからは `license_key` で参照します。
+
+#### Team Branding オブジェクト（オプショナル）
+
+大会ごとのチームロゴを管理する場合、以下のような Team Branding を別JSON（例: `data/team_logos.json`）で扱います。大会スキーマ自体は保持したまま、ロゴ関連のみ別ファイルに分離します。
+
+| フィールド       | 型       | 必須 | 説明                                                 |
+| ---------------- | -------- | ---- | ---------------------------------------------------- |
+| `team`           | `string` | ✓    | チーム名またはスラッグ                               |
+| `badge_url`      | `string` | -    | チームバッジの外部URL（TheSportsDB `strBadge` など） |
+| `logo_url`       | `string` | -    | チームロゴの外部URL（必要に応じて使用）              |
+| `logo_repo_path` | `string` | -    | リポジトリ内に保存したロゴパス                       |
+| `license_key`    | `string` | -    | ロゴのライセンス情報キー                             |
+
+#### ライセンス情報ファイル（`data/logo_licenses.json`）
+
+ロゴやバッジのライセンス・出典情報を集約します。`license_key` で参照します。
+
+```json
+{
+  "challenge_cup_logo": {
+    "license": "CC BY-SA 4.0",
+    "source": "Wikimedia Commons",
+    "notes": "再配布時は著作者表示と同一ライセンスを要求"
+  },
+  "top14_logo": {
+    "license": "public_domain",
+    "source": "Wikimedia Commons",
+    "notes": "簡素な幾何学的形状で著作権対象外"
+  },
+  "premiership_logo": {
+    "license": "public_domain",
+    "source": "Wikimedia Commons",
+    "notes": "著作権対象外だが商標権に注意"
+  }
+}
+```
+
+---
+
+## 3. マスタデータ
+
+### 3.1 大会マスタ（`data/competitions.json`）
+
+既存の大会メタデータにロゴ関連フィールドをオプショナルで追加済み。試合保存時は `competition_id` にこの `id` をセットする。
+
+### 3.2 チームマスタ（`data/teams.json`）
+
+大会横断で利用するチームID・正式名・ロゴ参照を定義します。例：
+
+```json
+{
+  "fra": {
+    "id": "fra",
+    "name": "France",
+    "short_name": "FRA",
+    "country": "France"
+  },
+  "ire": {
+    "id": "ire",
+    "name": "Ireland",
+    "short_name": "IRE",
+    "country": "Ireland"
+  }
+}
+```
+
+`home_team_id` / `away_team_id` はこのマスタのキーを参照します。
+
+### 3.3 チームロゴ（大会別）（`data/team_logos.json`）
+
+大会ごとのチームロゴを配列で管理する場合に利用。`TeamBranding` 型で表現し、キーは `competition_id`。
+
+---
+
+## 4. 大会ID一覧
 
 itsuneru が参照可能な大会IDとそのデータパス：
 
@@ -332,12 +487,12 @@ itsuneru が参照可能な大会IDとそのデータパス：
 
 ---
 
-## 4. バージョニングと互換性
+## 5. バージョニングと互換性
 
 ### 現在のバージョン
 
-- **Schema Version**: 1.0
-- **Last Updated**: 2026-02-01
+- **Schema Version**: 1.1
+- **Last Updated**: 2026-02-05
 
 ### 互換性ポリシー
 
@@ -364,7 +519,7 @@ itsuneru が参照可能な大会IDとそのデータパス：
 
 ---
 
-## 5. 使用例（itsuneru側）
+## 6. 使用例（itsuneru側）
 
 ### TypeScript型定義ファイル
 
@@ -396,6 +551,9 @@ export interface Competition {
   organizer: string;
   official_sites: string[];
   official_feeds: string[];
+  logo_url?: string;
+  logo_repo_path?: string;
+  license_key?: string;
   timezone_default: string;
   season_pattern: 'annual' | 'variable';
   match_url_template: string;
@@ -433,6 +591,17 @@ export interface DataSummary {
 }
 
 export type Competitions = Competition[];
+
+export interface TeamBranding {
+  team: string;
+  badge_url?: string;
+  logo_url?: string;
+  logo_repo_path?: string;
+  license_key?: string;
+}
+
+// 大会IDをキーにしたチームブランド情報のレコード
+export type TeamBrandings = Record<string, TeamBranding[]>;
 ```
 
 ### フェッチ例

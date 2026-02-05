@@ -1,7 +1,7 @@
 /**
  * rugby_scraper JSON インターフェイス型定義
  *
- * @version 1.0
+ * @version 1.1
  * @description itsuneru プロジェクトが rugby_scraper から取得する JSON の型定義
  * @see https://github.com/Kou-ISK/rugby_scraper/blob/main/docs/JSON_SCHEMA.md
  */
@@ -132,6 +132,24 @@ export interface Competition {
    * @description 空配列の場合あり
    */
   official_feeds: string[];
+
+  /**
+   * 大会ロゴの外部URL
+   * @description 可能な限りオリジナル出典（TheSportsDB / Wikimedia 等）のURLを保持
+   */
+  logo_url?: string;
+
+  /**
+   * リポジトリ内に保存したロゴパス
+   * @description 外部URLが使えない場合のみ設定
+   */
+  logo_repo_path?: string;
+
+  /**
+   * ロゴのライセンス情報キー
+   * @description data/logo_licenses.json のキーを参照
+   */
+  license_key?: string;
 
   /**
    * デフォルトタイムゾーン
@@ -287,6 +305,41 @@ export interface DataSummary {
  * 大会メタデータ配列
  */
 export type Competitions = Competition[];
+
+/**
+ * チームのブランド情報（ロゴ・バッジ）
+ */
+export interface TeamBranding {
+  /**
+   * チーム名またはスラッグ
+   */
+  team: string;
+
+  /**
+   * チームバッジの外部URL（TheSportsDB strBadge 等）
+   */
+  badge_url?: string;
+
+  /**
+   * チームロゴの外部URL
+   */
+  logo_url?: string;
+
+  /**
+   * リポジトリ内に保存したロゴパス
+   */
+  logo_repo_path?: string;
+
+  /**
+   * ライセンス情報キー（data/logo_licenses.json）
+   */
+  license_key?: string;
+}
+
+/**
+ * 大会IDをキーにしたチームブランド情報レコード
+ */
+export type TeamBrandings = Record<string, TeamBranding[]>;
 
 /**
  * 大会ID一覧

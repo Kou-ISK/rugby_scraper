@@ -14,13 +14,18 @@ except ImportError:  # Python < 3.9
     from backports.zoneinfo import ZoneInfo
 
 class SixNationsBaseScraper(BaseScraper):
-    def __init__(self, competition_path: str, competition_name: str):
+    def __init__(self, competition_path: str, competition_name: str, competition_id: str):
         super().__init__()
         self.base_url = "https://www.sixnationsrugby.com"
         self.calendar_url = f"{self.base_url}/en/{competition_path}/fixtures/"
         self.competition_name = competition_name
+        self._competition_id = competition_id  # BaseScraperの_competition_idを設定
         self.display_timezone = "Europe/London"
         self.driver = None
+    
+    def _get_competition_id(self) -> str:
+        """Return competition ID for this scraper."""
+        return self._competition_id
 
     def scrape(self):
         try:
@@ -243,7 +248,8 @@ class SixNationsBaseScraper(BaseScraper):
 
             return self.build_match(
                 competition=self.competition_name,
-                competition_id="",
+                competition_id=self._competition_id,
+                competition_id=self._get_competition_id(),
                 season=str(datetime.now().year),
                 round_name="",
                 status="",
@@ -349,12 +355,12 @@ class SixNationsBaseScraper(BaseScraper):
 
 class SixNationsScraper(SixNationsBaseScraper):
     def __init__(self):
-        super().__init__("m6n", "Six Nations")
+        super().__init__("m6n", "Six Nations", "m6n")
 
 class SixNationsWomensScraper(SixNationsBaseScraper):
     def __init__(self):
-        super().__init__("w6n", "Women's Six Nations")
+        super().__init__("w6n", "Women's Six Nations", "w6n")
 
 class SixNationsU20Scraper(SixNationsBaseScraper):
     def __init__(self):
-        super().__init__("u6n/u20-mens", "Six Nations U20")
+        super().__init__("u6n/u20-mens", "Six Nations U20", "u6n")

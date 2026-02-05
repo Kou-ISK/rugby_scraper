@@ -1,4 +1,219 @@
-# 日付取得検証レポート
+# Six Nations 日付取得問題 - 調査レポート & 実装Plan
+
+## 📊 実際のデータ分析結果
+
+### 検出された不整合（origin/dataブランチ）
+
+| 試合       | kickoff日付 | URL日付    | 差分 | 状態      |
+| ---------- | ----------- | ---------- | ---- | --------- |
+| ITA vs SCO | 2026-02-05  | 2026-02-07 | +2日 | ⚠️ 不一致 |
+| ENG vs WAL | 2026-02-05  | 2026-02-07 | +2日 | ⚠️ 不一致 |
+| FRA vs IRE | 2026-02-05  | 2026-02-05 | 0日  | ✅ 一致   |
+
+**パターン**: URLの日付が正しく、kickoffが2日早くなっている試合が複数存在
+
+## 🔍 HTML構造の推測
+
+Six Nations公式サイト (https://www.sixnationsrugby.com/en/m6n/fixtures/2026) の構造：
+
+### 想定されるHTML構造
+
+```html
+<div class="fixturesResultsListing_roundContainer...">
+  <!-- 日付タイトル（おそらく"Saturday 07 February"形式） -->
+  <h2 class="fixturesResultsListing_dateTitle...">Saturday 07 February</h2>
+
+  <!-- 試合カード -->
+  <div class="fixturesResultsCard_padding...">
+    <!-- 時刻表示（おそらく"15:10"形式） -->
+    <div class="fixturesResultsCard_status...">15:10</div>
+
+    <!-- チーム名 -->
+    <span class="fixturesResultsCard_teamName...">ITA</span>
+    <span class="fixturesResultsCard_teamName...">SCO</span>
+
+    <!-- リンク -->
+    <a href="/en/m6n/fixtures/2026/italy-v-scotland-07022026-1510/build-up"
+      >...</a
+    >
+  </div>
+</div>
+```
+
+### 推測されるページ表示
+
+- **日付タイトル**: `"Saturday 07 February"` （曜日 + 日 + 月）
+- **時刻**: `"15:10"` （HH:MM形式）
+- **結合**: `"Saturday 07 February 15:10"`
+
+## ⚠️ 現在の実装の問題点
+
+### `_parse_display_datetime` メソッドの問題
+
+```python
+def _parse_display_datetime(self, date_string):
+    default_dt = datetime(datetime.now().year, 1, 1, 0, 0, 0)
+    parsed = date_parser.parse(date_string, fuzzy=True, default=default_dt)
+    return parsed.replace(tzinfo=ZoneInfo(self.display_timezone))
+```
+
+**問題1: `fuzzy=True` のみ**
+
+- "07 February"を「7月2日」と誤認識する可能性
+- `dayfirst` パラメータ未指定のため、デフォルト動作（月優先）になる
+
+**問題2: `default` の誤用**
+
+- `datetime(year, 1, 1, 0, 0, 0)` で1月1日をデフォルトに設定
+- 年の推測が不正確
+
+**問題3: タイムゾーン**
+
+- `self.display_timezone` (Europe/London) を使用
+- ホームチームに基づくタイムゾーンを無視
+
+## ✅ 正しい実装Plan
+
+### Phase 1: `_parse_display_datetime` の修正
+
+```python
+def _parse_display_datetime(self, date_string, timezone_name):
+    """
+    Six Nations公式サイトの表示から正確に日付を解析
+    例: "Saturday 07 February 15:10" → 2026-02-07 15:10
+    """
+    if not date_string:
+        return None
+
+    try:
+        # 【重要】dayfirst=True で日を優先的にパース
+        # "07 February" → 2月7日 (×7月2日)
+        parsed = date_parser.parse(
+            date_string,
+            fuzzy=True,
+            dayfirst=True  # これが鍵！
+        )
+
+        # 年の推測ロジック
+        current_year = datetime.now().year
+        current_month = datetime.now().month
+
+        if current_month >= 10 and parsed.month <= 3:
+            # 現在10月以降で試合が1-3月 → 翌年のSix Nations
+            parsed = parsed.replace(year=current_year + 1)
+        else:
+            parsed = parsed.replace(year=current_year)
+
+        # 指定されたタイムゾーンを設定
+        parsed = parsed.replace(tzinfo=ZoneInfo(timezone_name))
+        return parsed
+
+    except (ValueError, TypeError) as e:
+        print(f"日付パースエラー: '{date_string}' - {e}")
+        return None
+```
+
+### Phase 2: `_extract_match_info` の修正
+
+```python
+def _extract_match_info(self, card, current_date):
+    # ... 既存のコード ...
+
+    home_team = teams[0].text.strip()
+    away_team = teams[1].text.strip()
+    timezone_name = self._infer_timezone(home_team)  # ホームチームのTZ
+
+    # ページ表示から日付を構築
+    date_text = current_date
+    if time_element and time_element.text.strip():
+        date_text = f"{current_date} {time_element.text.strip()}"
+
+    # タイムゾーンを渡す（重要！）
+    kickoff_dt = self._parse_display_datetime(date_text, timezone_name)
+
+    # ... 残りのコード ...
+```
+
+## 🧪 検証テストケース
+
+### 入力例（想定）
+
+| current_date           | time    | 結合後                       |
+| ---------------------- | ------- | ---------------------------- |
+| "Saturday 07 February" | "15:10" | "Saturday 07 February 15:10" |
+| "Sunday 08 February"   | "14:10" | "Sunday 08 February 14:10"   |
+| "Friday 05 February"   | "21:10" | "Friday 05 February 21:10"   |
+
+### 期待される出力（`dayfirst=True` 使用時）
+
+| 入力                         | 期待される日付   | 現在の誤り  |
+| ---------------------------- | ---------------- | ----------- |
+| "Saturday 07 February 15:10" | 2026-02-07 15:10 | 2026-02-05? |
+| "Sunday 08 February 14:10"   | 2026-02-08 14:10 | 2026-02-06? |
+
+## 📝 実装手順
+
+### Step 1: シグネチャ変更
+
+- [x] `_parse_display_datetime(self, date_string)`
+- [ ] → `_parse_display_datetime(self, date_string, timezone_name)`
+
+### Step 2: パーサー修正
+
+- [ ] `dayfirst=True` を追加
+- [ ] `default` パラメータを削除
+- [ ] 年推測ロジックを実装
+
+### Step 3: 呼び出し側修正
+
+- [ ] `_extract_match_info` で `timezone_name` を渡す
+- [ ] タイムゾーン変換ロジックを削除（パーサー内で処理）
+
+### Step 4: テスト
+
+- [ ] ローカルでスクレイピング実行
+- [ ] URLとkickoffの整合性確認
+- [ ] タイムゾーンの正確性確認
+
+## 🚫 採用しないアプローチ
+
+### ❌ URLから日付を抽出
+
+**理由**:
+
+1. URLは変更されない可能性（延期・時間変更時）
+2. URLはSEO目的で実際の日付と異なる場合がある
+3. ページ表示が公式の情報源
+
+**結論**: **ページ表示テキストが真実**
+
+## 📊 実装後の期待値
+
+### 修正前（現在）
+
+```json
+{
+  "kickoff": "2026-02-05T15:10:00+01:00",
+  "match_url": "...italy-v-scotland-07022026-1510..."
+}
+```
+
+→ **2日のズレ** ⚠️
+
+### 修正後（期待値）
+
+```json
+{
+  "kickoff": "2026-02-07T15:10:00+01:00",
+  "match_url": "...italy-v-scotland-07022026-1510..."
+}
+```
+
+→ **完全一致** ✅
+
+---
+
+**次のアクション**: 上記Planに基づき、`src/scraper/six_nations.py` を修正
 
 ## 実施日
 

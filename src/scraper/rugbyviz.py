@@ -8,6 +8,7 @@ class RugbyVizScraper(BaseScraper):
         self,
         *,
         competition_id: int,
+        competition_slug: str,
         competition_name: str,
         source_url: str,
         config_url: str,
@@ -16,6 +17,7 @@ class RugbyVizScraper(BaseScraper):
         super().__init__()
         self.api_base = "https://rugby-union-feeds.incrowdsports.com"
         self.competition_id = competition_id
+        self.competition_slug = competition_slug
         self.competition_name = competition_name
         self.source_url = source_url
         self.config_url = config_url
@@ -112,7 +114,7 @@ class RugbyVizScraper(BaseScraper):
 
         return self.build_match(
             competition=self.competition_name,
-            competition_id=self.competition_id,
+            competition_id=self.competition_slug,
             season=match.get("season") or config.get("season") or str(datetime.now().year),
             round_name=round_name,
             status=match.get("status", ""),
@@ -136,6 +138,7 @@ class GallagherPremiershipScraper(RugbyVizScraper):
     def __init__(self):
         super().__init__(
             competition_id=1011,
+            competition_slug="gallagher-premiership",
             competition_name="Gallagher Premiership",
             source_url="https://www.premiershiprugby.com/fixtures-results/",
             config_url="https://www.premiershiprugby.com/fixtures-results/",
@@ -146,6 +149,7 @@ class UnitedRugbyChampionshipScraper(RugbyVizScraper):
     def __init__(self):
         super().__init__(
             competition_id=1068,
+            competition_slug="urc",
             competition_name="United Rugby Championship",
             source_url="https://www.unitedrugby.com",
             config_url="https://www.premiershiprugby.com/fixtures-results/",

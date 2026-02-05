@@ -77,7 +77,7 @@ class SuperRugbyPacificScraper(BaseScraper):
 
                     match_data = self.build_match(
                         competition="Super Rugby Pacific",
-                        competition_id="205",
+                        competition_id="super-rugby-pacific",
                         season=str(year) if year else "",
                         round_name=f"Round {current_round}" if current_round else "",
                         status="",

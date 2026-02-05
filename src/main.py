@@ -43,8 +43,32 @@ def main():
         sys.exit(1)
     
     scraper = scrapers[scraper_type]
+    print(f"Starting scraper for: {scraper_type}")
     matches = scraper.scrape()
-    scraper.save_to_json(matches, scraper_type)
+    
+    if matches:
+        print(f"✓ Scraped {len(matches)} matches")
+        if len(matches) > 0:
+            sample = matches[0]
+            print(f"✓ Sample match structure:")
+            print(f"  - match_id: {sample.get('match_id', 'MISSING')}")
+            print(f"  - competition_id: {sample.get('competition_id', 'MISSING')}")
+            print(f"  - home_team_id: {sample.get('home_team_id', 'MISSING')}")
+            print(f"  - away_team_id: {sample.get('away_team_id', 'MISSING')}")
+            
+            # 新ディレクトリ構造: {comp_id}/{season}
+            comp_id = sample.get('competition_id', scraper_type)
+            season = sample.get('season', 'unknown')
+            save_path = f"{comp_id}/{season}"
+        else:
+            # フォールバック: 旧形式
+            save_path = scraper_type
+        
+        scraper.save_to_json(matches, save_path)
+        print(f"✓ Saved to data/matches/{save_path}.json")
+    else:
+        print(f"✗ No matches found or scraping failed")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main() 

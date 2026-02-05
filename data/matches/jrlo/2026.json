@@ -1,8 +1,8 @@
 [
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-13t04:00:00z-ブラックラムズ東京-東京サンゴリアス-a72ef5f230",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -13,8 +13,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "東京サンゴリアス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "black-rams-tokyo",
+    "away_team_id": "tokyo-sungoliath",
     "match_url": "https://league-one.jp/match/29260",
     "broadcasters": [
       "J SPORTS 4",
@@ -27,9 +27,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-13t05:05:00z-浦安d-rocks-三菱重工相模原ダイナボアーズ-d6d44e4bf3",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -55,9 +55,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-13t05:30:00z-トヨタヴェルブリッツ-三重ホンダヒート-834c3d1cb6",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -69,7 +69,7 @@
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "三重ホンダヒート",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "mie-honda-heat",
     "match_url": "https://league-one.jp/match/29257",
     "broadcasters": [
       "J SPORTS 1",
@@ -81,9 +81,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-13t08:00:00z-コベルコ神戸スティーラーズ-クボタスピアーズ船橋・東京ベイ-cb0f2da370",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -94,8 +94,8 @@
     "venue": "ノエビアスタジアム神戸 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kobelco-kobe-steelers",
+    "away_team_id": "kubota-spears",
     "match_url": "https://league-one.jp/match/29256",
     "broadcasters": [
       "J SPORTS 1",
@@ -107,9 +107,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-14t05:30:00z-横浜キヤノンイーグルス-静岡ブルーレヴズ-47af2bb16e",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -120,8 +120,8 @@
     "venue": "日産スタジアム (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "静岡ブルーレヴズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "yokohama-canon-eagles",
+    "away_team_id": "shizuoka-blue-revs",
     "match_url": "https://league-one.jp/match/29259",
     "broadcasters": [
       "J SPORTS 4",
@@ -134,9 +134,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-14t06:00:00z-東芝ブレイブルーパス東京-埼玉ワイルドナイツ-d66c8c179b",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -147,8 +147,8 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "埼玉ワイルドナイツ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "toshiba-brave-lupus",
+    "away_team_id": "saitama-wild-knights",
     "match_url": "https://league-one.jp/match/29258",
     "broadcasters": [
       "J SPORTS 1",
@@ -162,9 +162,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-20t05:30:00z-クボタスピアーズ船橋・東京ベイ-ブラックラムズ東京-9af402d280",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -175,8 +175,8 @@
     "venue": "フクダ電子アリーナ (千葉県)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "ブラックラムズ東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kubota-spears",
+    "away_team_id": "black-rams-tokyo",
     "match_url": "https://league-one.jp/match/29261",
     "broadcasters": [
       "J SPORTS 1",
@@ -188,9 +188,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-20t05:30:00z-東京サンゴリアス-トヨタヴェルブリッツ-4abe64fd2c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -201,7 +201,7 @@
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "トヨタヴェルブリッツ",
-    "home_team_id": "",
+    "home_team_id": "tokyo-sungoliath",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29262",
     "broadcasters": [
@@ -214,9 +214,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-21t03:25:00z-三重ホンダヒート-コベルコ神戸スティーラーズ-a70cc52075",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -227,8 +227,8 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "コベルコ神戸スティーラーズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "mie-honda-heat",
+    "away_team_id": "kobelco-kobe-steelers",
     "match_url": "https://league-one.jp/match/29266",
     "broadcasters": [
       "J SPORTS 4",
@@ -241,9 +241,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-21t04:40:00z-三菱重工相模原ダイナボアーズ-横浜キヤノンイーグルス-197c5eb2cc",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -255,7 +255,7 @@
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "横浜キヤノンイーグルス",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "yokohama-canon-eagles",
     "match_url": "https://league-one.jp/match/29265",
     "broadcasters": [
       "J SPORTS 3",
@@ -268,9 +268,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-21t05:30:00z-埼玉ワイルドナイツ-浦安d-rocks-bca734f089",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -281,7 +281,7 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "浦安D-Rocks",
-    "home_team_id": "",
+    "home_team_id": "saitama-wild-knights",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29263",
     "broadcasters": [
@@ -296,9 +296,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-21t05:30:00z-静岡ブルーレヴズ-東芝ブレイブルーパス東京-73c7ba9434",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -309,8 +309,8 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "東芝ブレイブルーパス東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "shizuoka-blue-revs",
+    "away_team_id": "toshiba-brave-lupus",
     "match_url": "https://league-one.jp/match/29264",
     "broadcasters": [
       "J SPORTS 2",
@@ -322,9 +322,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-27t04:05:00z-ブラックラムズ東京-三重ホンダヒート-8353d79e29",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -335,8 +335,8 @@
     "venue": "駅前不動産スタジアム (佐賀県)",
     "home_team": "ブラックラムズ東京",
     "away_team": "三重ホンダヒート",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "black-rams-tokyo",
+    "away_team_id": "mie-honda-heat",
     "match_url": "https://league-one.jp/match/29271",
     "broadcasters": [
       "J SPORTS 1（録画）",
@@ -349,9 +349,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-27t05:30:00z-クボタスピアーズ船橋・東京ベイ-東京サンゴリアス-4c7e8b1b9c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -362,8 +362,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "東京サンゴリアス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kubota-spears",
+    "away_team_id": "tokyo-sungoliath",
     "match_url": "https://league-one.jp/match/29267",
     "broadcasters": [
       "J SPORTS 1（録画）",
@@ -375,9 +375,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-27t05:30:00z-コベルコ神戸スティーラーズ-トヨタヴェルブリッツ-5f61271c25",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -388,7 +388,7 @@
     "venue": "ノエビアスタジアム神戸 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "トヨタヴェルブリッツ",
-    "home_team_id": "",
+    "home_team_id": "kobelco-kobe-steelers",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29272",
     "broadcasters": [
@@ -401,9 +401,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-28t05:00:00z-静岡ブルーレヴズ-浦安d-rocks-b3a49da201",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -414,7 +414,7 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "浦安D-Rocks",
-    "home_team_id": "",
+    "home_team_id": "shizuoka-blue-revs",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29269",
     "broadcasters": [
@@ -428,9 +428,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-28t05:30:00z-横浜キヤノンイーグルス-東芝ブレイブルーパス東京-fc3ed48629",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -441,8 +441,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "東芝ブレイブルーパス東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "yokohama-canon-eagles",
+    "away_team_id": "toshiba-brave-lupus",
     "match_url": "https://league-one.jp/match/29268",
     "broadcasters": [
       "J SPORTS 2（録画）",
@@ -454,9 +454,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-28t05:30:00z-三菱重工相模原ダイナボアーズ-埼玉ワイルドナイツ-0bf9b98968",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -468,7 +468,7 @@
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "埼玉ワイルドナイツ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "saitama-wild-knights",
     "match_url": "https://league-one.jp/match/29270",
     "broadcasters": [
       "J SPORTS 3（録画）",
@@ -480,21 +480,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-01t03:00:00z-浦安d-rocks-横浜キヤノンイーグルス-90e081c272",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-10T12:00:00+09:00",
-    "kickoff_utc": "2026-01-10T03:00:00Z",
+    "kickoff": "2026-10-01T12:00:00+09:00",
+    "kickoff_utc": "2026-10-01T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "浦安D-Rocks",
     "away_team": "横浜キヤノンイーグルス",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "yokohama-canon-eagles",
     "match_url": "https://league-one.jp/match/29275",
     "broadcasters": [
       "J SPORTS 1",
@@ -507,20 +507,20 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-01t05:30:00z-東芝ブレイブルーパス東京-三菱重工相模原ダイナボアーズ-c90b2333b6",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-10T14:30:00+09:00",
-    "kickoff_utc": "2026-01-10T05:30:00Z",
+    "kickoff": "2026-10-01T14:30:00+09:00",
+    "kickoff_utc": "2026-10-01T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "Uvanceとどろきスタジアム by Fujitsu (神奈川県)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "home_team_id": "",
+    "home_team_id": "toshiba-brave-lupus",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29273",
     "broadcasters": [
@@ -534,21 +534,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-01t05:30:00z-埼玉ワイルドナイツ-静岡ブルーレヴズ-25b772b55f",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-10T14:30:00+09:00",
-    "kickoff_utc": "2026-01-10T05:30:00Z",
+    "kickoff": "2026-10-01T14:30:00+09:00",
+    "kickoff_utc": "2026-10-01T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "静岡ブルーレヴズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "saitama-wild-knights",
+    "away_team_id": "shizuoka-blue-revs",
     "match_url": "https://league-one.jp/match/29274",
     "broadcasters": [
       "J SPORTS 2",
@@ -560,21 +560,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-01t05:30:00z-東京サンゴリアス-コベルコ神戸スティーラーズ-4ecfd40de6",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-10T14:30:00+09:00",
-    "kickoff_utc": "2026-01-10T05:30:00Z",
+    "kickoff": "2026-10-01T14:30:00+09:00",
+    "kickoff_utc": "2026-10-01T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "味の素スタジアム (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "コベルコ神戸スティーラーズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "tokyo-sungoliath",
+    "away_team_id": "kobelco-kobe-steelers",
     "match_url": "https://league-one.jp/match/29276",
     "broadcasters": [
       "J SPORTS 1",
@@ -586,21 +586,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-01t05:30:00z-トヨタヴェルブリッツ-ブラックラムズ東京-58466136c3",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-10T14:30:00+09:00",
-    "kickoff_utc": "2026-01-10T05:30:00Z",
+    "kickoff": "2026-10-01T14:30:00+09:00",
+    "kickoff_utc": "2026-10-01T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "ミクニワールドスタジアム北九州 (福岡県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "ブラックラムズ東京",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "black-rams-tokyo",
     "match_url": "https://league-one.jp/match/29277",
     "broadcasters": [
       "J SPORTS 4",
@@ -612,21 +612,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-11-01t03:00:00z-三重ホンダヒート-クボタスピアーズ船橋・東京ベイ-9287d204dd",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-11T12:00:00+09:00",
-    "kickoff_utc": "2026-01-11T03:00:00Z",
+    "kickoff": "2026-11-01T12:00:00+09:00",
+    "kickoff_utc": "2026-11-01T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "mie-honda-heat",
+    "away_team_id": "kubota-spears",
     "match_url": "https://league-one.jp/match/29278",
     "broadcasters": [
       "J SPORTS 1",
@@ -638,9 +638,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-17t03:00:00z-横浜キヤノンイーグルス-埼玉ワイルドナイツ-72c668e50a",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -651,8 +651,8 @@
     "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "埼玉ワイルドナイツ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "yokohama-canon-eagles",
+    "away_team_id": "saitama-wild-knights",
     "match_url": "https://league-one.jp/match/29280",
     "broadcasters": [
       "J SPORTS 1",
@@ -665,9 +665,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-17t03:05:00z-コベルコ神戸スティーラーズ-ブラックラムズ東京-1b73f754c1",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -678,8 +678,8 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "ブラックラムズ東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kobelco-kobe-steelers",
+    "away_team_id": "black-rams-tokyo",
     "match_url": "https://league-one.jp/match/29283",
     "broadcasters": [
       "J SPORTS 3",
@@ -692,9 +692,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-17t04:00:00z-静岡ブルーレヴズ-三菱重工相模原ダイナボアーズ-481faccda7",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -705,7 +705,7 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "home_team_id": "",
+    "home_team_id": "shizuoka-blue-revs",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29279",
     "broadcasters": [
@@ -719,9 +719,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-17t05:05:00z-浦安d-rocks-東芝ブレイブルーパス東京-25fb7f0640",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -733,7 +733,7 @@
     "home_team": "浦安D-Rocks",
     "away_team": "東芝ブレイブルーパス東京",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "toshiba-brave-lupus",
     "match_url": "https://league-one.jp/match/29281",
     "broadcasters": [
       "J SPORTS 2",
@@ -747,9 +747,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-17t05:05:00z-東京サンゴリアス-三重ホンダヒート-b81197bdbb",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -760,8 +760,8 @@
     "venue": "ＪＩＴ リサイクルインク スタジアム (山梨県)",
     "home_team": "東京サンゴリアス",
     "away_team": "三重ホンダヒート",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "tokyo-sungoliath",
+    "away_team_id": "mie-honda-heat",
     "match_url": "https://league-one.jp/match/29284",
     "broadcasters": [
       "J SPORTS 4",
@@ -774,9 +774,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-17t05:30:00z-クボタスピアーズ船橋・東京ベイ-トヨタヴェルブリッツ-ad5be11c91",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -787,7 +787,7 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "トヨタヴェルブリッツ",
-    "home_team_id": "",
+    "home_team_id": "kubota-spears",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29282",
     "broadcasters": [
@@ -800,9 +800,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-24t03:00:00z-東芝ブレイブルーパス東京-クボタスピアーズ船橋・東京ベイ-7aff92dfb0",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -813,8 +813,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "toshiba-brave-lupus",
+    "away_team_id": "kubota-spears",
     "match_url": "https://league-one.jp/match/29289",
     "broadcasters": [
       "J SPORTS 1",
@@ -826,9 +826,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-24t04:00:00z-三重ホンダヒート-浦安d-rocks-715bf864f7",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -839,7 +839,7 @@
     "venue": "ホンダヒート・グリーンスタジアム (栃木県)",
     "home_team": "三重ホンダヒート",
     "away_team": "浦安D-Rocks",
-    "home_team_id": "",
+    "home_team_id": "mie-honda-heat",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29286",
     "broadcasters": [
@@ -854,9 +854,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-24t05:30:00z-埼玉ワイルドナイツ-東京サンゴリアス-8a9ea46265",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -867,8 +867,8 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "東京サンゴリアス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "saitama-wild-knights",
+    "away_team_id": "tokyo-sungoliath",
     "match_url": "https://league-one.jp/match/29285",
     "broadcasters": [
       "J SPORTS 1",
@@ -880,9 +880,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-24t05:30:00z-三菱重工相模原ダイナボアーズ-ブラックラムズ東京-d355cefce1",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -894,7 +894,7 @@
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "ブラックラムズ東京",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "black-rams-tokyo",
     "match_url": "https://league-one.jp/match/29287",
     "broadcasters": [
       "J SPORTS 3",
@@ -907,9 +907,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-24t05:30:00z-横浜キヤノンイーグルス-コベルコ神戸スティーラーズ-4afe24123f",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -920,8 +920,8 @@
     "venue": "ニッパツ三ツ沢球技場 (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "コベルコ神戸スティーラーズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "yokohama-canon-eagles",
+    "away_team_id": "kobelco-kobe-steelers",
     "match_url": "https://league-one.jp/match/29288",
     "broadcasters": [
       "J SPORTS 2",
@@ -933,9 +933,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-25t05:00:00z-静岡ブルーレヴズ-トヨタヴェルブリッツ-ba071f7b3b",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -946,7 +946,7 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "トヨタヴェルブリッツ",
-    "home_team_id": "",
+    "home_team_id": "shizuoka-blue-revs",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29290",
     "broadcasters": [
@@ -959,21 +959,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-02t03:00:00z-コベルコ神戸スティーラーズ-静岡ブルーレヴズ-54627b335f",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-07T12:00:00+09:00",
-    "kickoff_utc": "2026-02-07T03:00:00Z",
+    "kickoff": "2026-07-02T12:00:00+09:00",
+    "kickoff_utc": "2026-07-02T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "静岡ブルーレヴズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kobelco-kobe-steelers",
+    "away_team_id": "shizuoka-blue-revs",
     "match_url": "https://league-one.jp/match/29293",
     "broadcasters": [
       "J SPORTS 4",
@@ -985,21 +985,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-02t04:00:00z-ブラックラムズ東京-埼玉ワイルドナイツ-05ad423073",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-07T13:00:00+09:00",
-    "kickoff_utc": "2026-02-07T04:00:00Z",
+    "kickoff": "2026-07-02T13:00:00+09:00",
+    "kickoff_utc": "2026-07-02T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "埼玉ワイルドナイツ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "black-rams-tokyo",
+    "away_team_id": "saitama-wild-knights",
     "match_url": "https://league-one.jp/match/29291",
     "broadcasters": [
       "J SPORTS 3",
@@ -1011,21 +1011,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-02t04:00:00z-三重ホンダヒート-東芝ブレイブルーパス東京-51445c95c0",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-07T13:00:00+09:00",
-    "kickoff_utc": "2026-02-07T04:00:00Z",
+    "kickoff": "2026-07-02T13:00:00+09:00",
+    "kickoff_utc": "2026-07-02T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "ホンダヒート・グリーンスタジアム (栃木県)",
     "home_team": "三重ホンダヒート",
     "away_team": "東芝ブレイブルーパス東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "mie-honda-heat",
+    "away_team_id": "toshiba-brave-lupus",
     "match_url": "https://league-one.jp/match/29295",
     "broadcasters": [
       "J SPORTS 2",
@@ -1038,21 +1038,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-02t05:30:00z-トヨタヴェルブリッツ-横浜キヤノンイーグルス-ebd2217eca",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-07T14:30:00+09:00",
-    "kickoff_utc": "2026-02-07T05:30:00Z",
+    "kickoff": "2026-07-02T14:30:00+09:00",
+    "kickoff_utc": "2026-07-02T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "パロマ瑞穂ラグビー場 (愛知県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "横浜キヤノンイーグルス",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "yokohama-canon-eagles",
     "match_url": "https://league-one.jp/match/29292",
     "broadcasters": [
       "J SPORTS 1",
@@ -1064,20 +1064,20 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-02t05:30:00z-クボタスピアーズ船橋・東京ベイ-浦安d-rocks-ec63a69f37",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-07T14:30:00+09:00",
-    "kickoff_utc": "2026-02-07T05:30:00Z",
+    "kickoff": "2026-07-02T14:30:00+09:00",
+    "kickoff_utc": "2026-07-02T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "浦安D-Rocks",
-    "home_team_id": "",
+    "home_team_id": "kubota-spears",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29294",
     "broadcasters": [
@@ -1091,20 +1091,20 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-08-02t05:30:00z-東京サンゴリアス-三菱重工相模原ダイナボアーズ-edaaab2a1c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-08T14:30:00+09:00",
-    "kickoff_utc": "2026-02-08T05:30:00Z",
+    "kickoff": "2026-08-02T14:30:00+09:00",
+    "kickoff_utc": "2026-08-02T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "home_team_id": "",
+    "home_team_id": "tokyo-sungoliath",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29296",
     "broadcasters": [
@@ -1118,9 +1118,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-14t03:00:00z-横浜キヤノンイーグルス-ブラックラムズ東京-bd58ca1133",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1131,8 +1131,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "ブラックラムズ東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "yokohama-canon-eagles",
+    "away_team_id": "black-rams-tokyo",
     "match_url": "https://league-one.jp/match/29299",
     "broadcasters": [
       "J SPORTS 3",
@@ -1144,9 +1144,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-14t05:30:00z-埼玉ワイルドナイツ-トヨタヴェルブリッツ-74a5cf7d37",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1157,7 +1157,7 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "トヨタヴェルブリッツ",
-    "home_team_id": "",
+    "home_team_id": "saitama-wild-knights",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29297",
     "broadcasters": [
@@ -1170,9 +1170,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-14t05:30:00z-静岡ブルーレヴズ-クボタスピアーズ船橋・東京ベイ-28e1048c51",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1183,8 +1183,8 @@
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "shizuoka-blue-revs",
+    "away_team_id": "kubota-spears",
     "match_url": "https://league-one.jp/match/29298",
     "broadcasters": [
       "J SPORTS 2",
@@ -1196,9 +1196,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-14t05:30:00z-三菱重工相模原ダイナボアーズ-三重ホンダヒート-666e2ed102",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1210,7 +1210,7 @@
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "三重ホンダヒート",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "mie-honda-heat",
     "match_url": "https://league-one.jp/match/29300",
     "broadcasters": [
       "J SPORTS 4",
@@ -1222,9 +1222,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-14t05:35:00z-浦安d-rocks-東京サンゴリアス-77c4f2c926",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1236,7 +1236,7 @@
     "home_team": "浦安D-Rocks",
     "away_team": "東京サンゴリアス",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "tokyo-sungoliath",
     "match_url": "https://league-one.jp/match/29302",
     "broadcasters": [
       "J SPORTS 3",
@@ -1250,9 +1250,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-15t05:30:00z-東芝ブレイブルーパス東京-コベルコ神戸スティーラーズ-060bb128ee",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1263,8 +1263,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "コベルコ神戸スティーラーズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "toshiba-brave-lupus",
+    "away_team_id": "kobelco-kobe-steelers",
     "match_url": "https://league-one.jp/match/29301",
     "broadcasters": [
       "J SPORTS 1",
@@ -1276,9 +1276,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-21t04:00:00z-クボタスピアーズ船橋・東京ベイ-三菱重工相模原ダイナボアーズ-2d78a3f280",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1289,7 +1289,7 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "home_team_id": "",
+    "home_team_id": "kubota-spears",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29303",
     "broadcasters": [
@@ -1302,9 +1302,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-21t04:00:00z-ブラックラムズ東京-浦安d-rocks-626c887e3b",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1315,7 +1315,7 @@
     "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "浦安D-Rocks",
-    "home_team_id": "",
+    "home_team_id": "black-rams-tokyo",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29304",
     "broadcasters": [
@@ -1330,9 +1330,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-21t05:30:00z-トヨタヴェルブリッツ-東芝ブレイブルーパス東京-de5cf0933e",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1344,7 +1344,7 @@
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "東芝ブレイブルーパス東京",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "toshiba-brave-lupus",
     "match_url": "https://league-one.jp/match/29305",
     "broadcasters": [
       "J SPORTS 4",
@@ -1356,9 +1356,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-21t05:30:00z-コベルコ神戸スティーラーズ-埼玉ワイルドナイツ-1f35caf9fc",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1369,8 +1369,8 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "埼玉ワイルドナイツ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kobelco-kobe-steelers",
+    "away_team_id": "saitama-wild-knights",
     "match_url": "https://league-one.jp/match/29306",
     "broadcasters": [
       "J SPORTS 1",
@@ -1382,9 +1382,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-22t03:00:00z-三重ホンダヒート-静岡ブルーレヴズ-f5578a3de6",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1395,8 +1395,8 @@
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "静岡ブルーレヴズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "mie-honda-heat",
+    "away_team_id": "shizuoka-blue-revs",
     "match_url": "https://league-one.jp/match/29307",
     "broadcasters": [
       "J SPORTS 4",
@@ -1408,9 +1408,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-22t05:30:00z-東京サンゴリアス-横浜キヤノンイーグルス-842a8ecde2",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1421,8 +1421,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "横浜キヤノンイーグルス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "tokyo-sungoliath",
+    "away_team_id": "yokohama-canon-eagles",
     "match_url": "https://league-one.jp/match/29308",
     "broadcasters": [
       "J SPORTS 1",
@@ -1434,9 +1434,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-28t03:00:00z-東芝ブレイブルーパス東京-ブラックラムズ東京-c086d4d65b",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1447,8 +1447,8 @@
     "venue": "白波スタジアム (鹿児島県)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "ブラックラムズ東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "toshiba-brave-lupus",
+    "away_team_id": "black-rams-tokyo",
     "match_url": "https://league-one.jp/match/29309",
     "broadcasters": [
       "J SPORTS 1",
@@ -1460,9 +1460,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-28t04:00:00z-浦安d-rocks-コベルコ神戸スティーラーズ-537eac4af5",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1474,7 +1474,7 @@
     "home_team": "浦安D-Rocks",
     "away_team": "コベルコ神戸スティーラーズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "kobelco-kobe-steelers",
     "match_url": "https://league-one.jp/match/29314",
     "broadcasters": [
       "J SPORTS 4",
@@ -1487,9 +1487,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-28t05:30:00z-埼玉ワイルドナイツ-三重ホンダヒート-b2f17e7b84",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1500,8 +1500,8 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "三重ホンダヒート",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "saitama-wild-knights",
+    "away_team_id": "mie-honda-heat",
     "match_url": "https://league-one.jp/match/29310",
     "broadcasters": [
       "J SPORTS 1",
@@ -1514,21 +1514,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-03t03:10:00z-横浜キヤノンイーグルス-クボタスピアーズ船橋・東京ベイ-d6f9050c8f",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-03-01T12:10:00+09:00",
-    "kickoff_utc": "2026-03-01T03:10:00Z",
+    "kickoff": "2026-01-03T12:10:00+09:00",
+    "kickoff_utc": "2026-01-03T03:10:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "クラサスドーム大分（旧レゾナックドーム） (大分県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "yokohama-canon-eagles",
+    "away_team_id": "kubota-spears",
     "match_url": "https://league-one.jp/match/29312",
     "broadcasters": [
       "J SPORTS",
@@ -1541,14 +1541,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-03t04:30:00z-三菱重工相模原ダイナボアーズ-トヨタヴェルブリッツ-0d01c76b6c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-03-01T13:30:00+09:00",
-    "kickoff_utc": "2026-03-01T04:30:00Z",
+    "kickoff": "2026-01-03T13:30:00+09:00",
+    "kickoff_utc": "2026-01-03T04:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "たけびしスタジアム京都 (京都府)",
@@ -1568,21 +1568,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-03t05:30:00z-静岡ブルーレヴズ-東京サンゴリアス-30d759b329",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-03-01T14:30:00+09:00",
-    "kickoff_utc": "2026-03-01T05:30:00Z",
+    "kickoff": "2026-01-03T14:30:00+09:00",
+    "kickoff_utc": "2026-01-03T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "東京サンゴリアス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "shizuoka-blue-revs",
+    "away_team_id": "tokyo-sungoliath",
     "match_url": "https://league-one.jp/match/29311",
     "broadcasters": [
       "J SPORTS",
@@ -1594,9 +1594,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-14t03:00:00z-クボタスピアーズ船橋・東京ベイ-埼玉ワイルドナイツ-4d5c715954",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1607,8 +1607,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "埼玉ワイルドナイツ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kubota-spears",
+    "away_team_id": "saitama-wild-knights",
     "match_url": "https://league-one.jp/match/29317",
     "broadcasters": [
       "J SPORTS",
@@ -1620,9 +1620,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-14t04:00:00z-三重ホンダヒート-横浜キヤノンイーグルス-7a5b461174",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1633,8 +1633,8 @@
     "venue": "ホンダヒート・グリーンスタジアム (栃木県)",
     "home_team": "三重ホンダヒート",
     "away_team": "横浜キヤノンイーグルス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "mie-honda-heat",
+    "away_team_id": "yokohama-canon-eagles",
     "match_url": "https://league-one.jp/match/29315",
     "broadcasters": [
       "J SPORTS",
@@ -1646,9 +1646,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-14t04:00:00z-ブラックラムズ東京-静岡ブルーレヴズ-db38714ea0",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1659,8 +1659,8 @@
     "venue": "駒沢オリンピック公園総合運動場陸上競技場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "静岡ブルーレヴズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "black-rams-tokyo",
+    "away_team_id": "shizuoka-blue-revs",
     "match_url": "https://league-one.jp/match/29316",
     "broadcasters": [
       "J SPORTS",
@@ -1672,9 +1672,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-14t05:30:00z-コベルコ神戸スティーラーズ-三菱重工相模原ダイナボアーズ-7b89113133",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1685,7 +1685,7 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "home_team_id": "",
+    "home_team_id": "kobelco-kobe-steelers",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29318",
     "broadcasters": [
@@ -1698,9 +1698,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-15t05:05:00z-トヨタヴェルブリッツ-浦安d-rocks-d685ce13c3",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1725,9 +1725,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-15t05:30:00z-東京サンゴリアス-東芝ブレイブルーパス東京-442e0b87a7",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1738,8 +1738,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "東芝ブレイブルーパス東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "tokyo-sungoliath",
+    "away_team_id": "toshiba-brave-lupus",
     "match_url": "https://league-one.jp/match/29320",
     "broadcasters": [
       "J SPORTS",
@@ -1751,9 +1751,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-20t05:30:00z-コベルコ神戸スティーラーズ-横浜キヤノンイーグルス-2f2674e736",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1764,8 +1764,8 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "横浜キヤノンイーグルス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kobelco-kobe-steelers",
+    "away_team_id": "yokohama-canon-eagles",
     "match_url": "https://league-one.jp/match/29321",
     "broadcasters": [
       "J SPORTS",
@@ -1777,9 +1777,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-21t03:00:00z-三菱重工相模原ダイナボアーズ-東京サンゴリアス-d59664c99a",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1791,7 +1791,7 @@
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "東京サンゴリアス",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "tokyo-sungoliath",
     "match_url": "https://league-one.jp/match/29322",
     "broadcasters": [
       "J SPORTS",
@@ -1803,9 +1803,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-21t05:30:00z-埼玉ワイルドナイツ-ブラックラムズ東京-b995978000",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1816,8 +1816,8 @@
     "venue": "熊谷スポーツ文化公園ラグビー場 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "ブラックラムズ東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "saitama-wild-knights",
+    "away_team_id": "black-rams-tokyo",
     "match_url": "https://league-one.jp/match/29323",
     "broadcasters": [
       "J SPORTS",
@@ -1829,9 +1829,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-21t05:30:00z-浦安d-rocks-クボタスピアーズ船橋・東京ベイ-d9a744c6f8",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1843,7 +1843,7 @@
     "home_team": "浦安D-Rocks",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "kubota-spears",
     "match_url": "https://league-one.jp/match/29326",
     "broadcasters": [
       "J SPORTS",
@@ -1856,9 +1856,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-22t05:30:00z-東芝ブレイブルーパス東京-三重ホンダヒート-440285774f",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1869,8 +1869,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "三重ホンダヒート",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "toshiba-brave-lupus",
+    "away_team_id": "mie-honda-heat",
     "match_url": "https://league-one.jp/match/29324",
     "broadcasters": [
       "J SPORTS",
@@ -1882,9 +1882,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-22t05:30:00z-トヨタヴェルブリッツ-静岡ブルーレヴズ-4930b8ab2c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1896,7 +1896,7 @@
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "静岡ブルーレヴズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "shizuoka-blue-revs",
     "match_url": "https://league-one.jp/match/29325",
     "broadcasters": [
       "J SPORTS",
@@ -1908,9 +1908,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-28t03:10:00z-クボタスピアーズ船橋・東京ベイ-東芝ブレイブルーパス東京-d46cebc965",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1921,8 +1921,8 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "東芝ブレイブルーパス東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kubota-spears",
+    "away_team_id": "toshiba-brave-lupus",
     "match_url": "https://league-one.jp/match/29329",
     "broadcasters": [
       "J SPORTS",
@@ -1934,9 +1934,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-28t05:30:00z-静岡ブルーレヴズ-コベルコ神戸スティーラーズ-7b5a975edc",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1947,8 +1947,8 @@
     "venue": "IAIスタジアム日本平 (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "shizuoka-blue-revs",
+    "away_team_id": "kobelco-kobe-steelers",
     "match_url": "https://league-one.jp/match/29327",
     "broadcasters": [
       "J SPORTS",
@@ -1960,9 +1960,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-28t05:30:00z-東京サンゴリアス-埼玉ワイルドナイツ-60a8955c6a",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1973,8 +1973,8 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "東京サンゴリアス",
     "away_team": "埼玉ワイルドナイツ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "tokyo-sungoliath",
+    "away_team_id": "saitama-wild-knights",
     "match_url": "https://league-one.jp/match/29328",
     "broadcasters": [
       "J SPORTS",
@@ -1986,9 +1986,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-28t05:30:00z-横浜キヤノンイーグルス-トヨタヴェルブリッツ-a7356135ac",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -1999,7 +1999,7 @@
     "venue": "日産スタジアム (神奈川県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "トヨタヴェルブリッツ",
-    "home_team_id": "",
+    "home_team_id": "yokohama-canon-eagles",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29330",
     "broadcasters": [
@@ -2012,9 +2012,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-29t05:30:00z-ブラックラムズ東京-三菱重工相模原ダイナボアーズ-1ca94d41f9",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2025,7 +2025,7 @@
     "venue": "秩父宮ラグビー場 (東京都)",
     "home_team": "ブラックラムズ東京",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "home_team_id": "",
+    "home_team_id": "black-rams-tokyo",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29331",
     "broadcasters": [
@@ -2038,9 +2038,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-29t05:30:00z-浦安d-rocks-三重ホンダヒート-6d33fee66f",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2048,11 +2048,11 @@
     "kickoff_utc": "2026-03-29T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
-    "venue": "宮城県内 (宮城県)",
+    "venue": "ユアテックスタジアム仙台 (宮城県)",
     "home_team": "浦安D-Rocks",
     "away_team": "三重ホンダヒート",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "mie-honda-heat",
     "match_url": "https://league-one.jp/match/29332",
     "broadcasters": [
       "J SPORTS",
@@ -2065,9 +2065,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-04t04:05:00z-三重ホンダヒート-東京サンゴリアス-307656d7b0",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2078,8 +2078,8 @@
     "venue": "ホンダヒート・グリーンスタジアム (栃木県)",
     "home_team": "三重ホンダヒート",
     "away_team": "東京サンゴリアス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "mie-honda-heat",
+    "away_team_id": "tokyo-sungoliath",
     "match_url": "https://league-one.jp/match/29336",
     "broadcasters": [
       "J SPORTS",
@@ -2091,9 +2091,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-04t04:40:00z-三菱重工相模原ダイナボアーズ-静岡ブルーレヴズ-38a4ef3eff",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2105,7 +2105,7 @@
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "静岡ブルーレヴズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "shizuoka-blue-revs",
     "match_url": "https://league-one.jp/match/29333",
     "broadcasters": [
       "J SPORTS",
@@ -2117,9 +2117,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-04t05:30:00z-埼玉ワイルドナイツ-横浜キヤノンイーグルス-f4dba8acd6",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2130,8 +2130,8 @@
     "venue": "埼玉県内 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "横浜キヤノンイーグルス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "saitama-wild-knights",
+    "away_team_id": "yokohama-canon-eagles",
     "match_url": "https://league-one.jp/match/29334",
     "broadcasters": [
       "J SPORTS",
@@ -2143,9 +2143,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-04t05:40:00z-トヨタヴェルブリッツ-クボタスピアーズ船橋・東京ベイ-9d360e9be8",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2157,7 +2157,7 @@
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "kubota-spears",
     "match_url": "https://league-one.jp/match/29335",
     "broadcasters": [
       "J SPORTS",
@@ -2169,20 +2169,20 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-05-04t04:00:00z-東芝ブレイブルーパス東京-浦安d-rocks-1d9b773967",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-04-05T13:00:00+09:00",
-    "kickoff_utc": "2026-04-05T04:00:00Z",
+    "kickoff": "2026-05-04T13:00:00+09:00",
+    "kickoff_utc": "2026-05-04T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "大和ハウス プレミストドーム (北海道)",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "浦安D-Rocks",
-    "home_team_id": "",
+    "home_team_id": "toshiba-brave-lupus",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29337",
     "broadcasters": [
@@ -2196,21 +2196,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-05-04t04:00:00z-ブラックラムズ東京-コベルコ神戸スティーラーズ-ac138ea218",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-04-05T13:00:00+09:00",
-    "kickoff_utc": "2026-04-05T04:00:00Z",
+    "kickoff": "2026-05-04T13:00:00+09:00",
+    "kickoff_utc": "2026-05-04T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "未定",
     "home_team": "ブラックラムズ東京",
     "away_team": "コベルコ神戸スティーラーズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "black-rams-tokyo",
+    "away_team_id": "kobelco-kobe-steelers",
     "match_url": "https://league-one.jp/match/29338",
     "broadcasters": [
       "J SPORTS",
@@ -2222,9 +2222,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-17t10:00:00z-三重ホンダヒート-ブラックラムズ東京-a9159319e6",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2235,8 +2235,8 @@
     "venue": "東京都内 (東京都)",
     "home_team": "三重ホンダヒート",
     "away_team": "ブラックラムズ東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "mie-honda-heat",
+    "away_team_id": "black-rams-tokyo",
     "match_url": "https://league-one.jp/match/29339",
     "broadcasters": [
       "J SPORTS",
@@ -2250,7 +2250,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2262,7 +2262,7 @@
     "home_team": "三菱重工相模原ダイナボアーズ",
     "away_team": "東芝ブレイブルーパス東京",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "toshiba-brave-lupus",
     "match_url": "https://league-one.jp/match/29344",
     "broadcasters": [
       "J SPORTS",
@@ -2274,9 +2274,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-18t04:05:00z-横浜キヤノンイーグルス-浦安d-rocks-774e1529a9",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2287,7 +2287,7 @@
     "venue": "クラサスドーム大分（旧レゾナックドーム） (大分県)",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "浦安D-Rocks",
-    "home_team_id": "",
+    "home_team_id": "yokohama-canon-eagles",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29341",
     "broadcasters": [
@@ -2301,9 +2301,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-18t05:05:00z-東京サンゴリアス-クボタスピアーズ船橋・東京ベイ-04837ab5e7",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2314,8 +2314,8 @@
     "venue": "えがお健康スタジアム (熊本県)",
     "home_team": "東京サンゴリアス",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "tokyo-sungoliath",
+    "away_team_id": "kubota-spears",
     "match_url": "https://league-one.jp/match/29343",
     "broadcasters": [
       "J SPORTS",
@@ -2327,9 +2327,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-18t05:30:00z-静岡ブルーレヴズ-埼玉ワイルドナイツ-69faea7e5f",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2340,8 +2340,8 @@
     "venue": "エコパスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "埼玉ワイルドナイツ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "shizuoka-blue-revs",
+    "away_team_id": "saitama-wild-knights",
     "match_url": "https://league-one.jp/match/29340",
     "broadcasters": [
       "J SPORTS",
@@ -2353,9 +2353,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-18t05:30:00z-トヨタヴェルブリッツ-コベルコ神戸スティーラーズ-9aef3b5957",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2367,7 +2367,7 @@
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "コベルコ神戸スティーラーズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "kobelco-kobe-steelers",
     "match_url": "https://league-one.jp/match/29342",
     "broadcasters": [
       "J SPORTS",
@@ -2379,9 +2379,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-24t10:00:00z-浦安d-rocks-静岡ブルーレヴズ-855fccfe03",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2393,7 +2393,7 @@
     "home_team": "浦安D-Rocks",
     "away_team": "静岡ブルーレヴズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "shizuoka-blue-revs",
     "match_url": "https://league-one.jp/match/29345",
     "broadcasters": [
       "J SPORTS",
@@ -2408,7 +2408,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2419,8 +2419,8 @@
     "venue": "未定",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "横浜キヤノンイーグルス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "toshiba-brave-lupus",
+    "away_team_id": "yokohama-canon-eagles",
     "match_url": "https://league-one.jp/match/29347",
     "broadcasters": [
       "J SPORTS",
@@ -2434,7 +2434,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2445,7 +2445,7 @@
     "venue": "未定",
     "home_team": "ブラックラムズ東京",
     "away_team": "トヨタヴェルブリッツ",
-    "home_team_id": "",
+    "home_team_id": "black-rams-tokyo",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29348",
     "broadcasters": [
@@ -2458,9 +2458,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-25t05:30:00z-埼玉ワイルドナイツ-三菱重工相模原ダイナボアーズ-b310c8bcf5",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2471,7 +2471,7 @@
     "venue": "埼玉県内 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "home_team_id": "",
+    "home_team_id": "saitama-wild-knights",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29346",
     "broadcasters": [
@@ -2484,9 +2484,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-25t05:30:00z-コベルコ神戸スティーラーズ-東京サンゴリアス-0bbd3d0793",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2497,8 +2497,8 @@
     "venue": "神戸総合運動公園ユニバー記念競技場 (兵庫県)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "東京サンゴリアス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kobelco-kobe-steelers",
+    "away_team_id": "tokyo-sungoliath",
     "match_url": "https://league-one.jp/match/29349",
     "broadcasters": [
       "J SPORTS",
@@ -2510,9 +2510,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-25t05:30:00z-クボタスピアーズ船橋・東京ベイ-三重ホンダヒート-b00331241e",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2523,8 +2523,8 @@
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "三重ホンダヒート",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kubota-spears",
+    "away_team_id": "mie-honda-heat",
     "match_url": "https://league-one.jp/match/29350",
     "broadcasters": [
       "J SPORTS",
@@ -2536,21 +2536,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-05t10:00:00z-浦安d-rocks-埼玉ワイルドナイツ-fa46fb83da",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-01T19:00:00+09:00",
-    "kickoff_utc": "2026-05-01T10:00:00Z",
+    "kickoff": "2026-01-05T19:00:00+09:00",
+    "kickoff_utc": "2026-01-05T10:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "東京都内 (東京都)",
     "home_team": "浦安D-Rocks",
     "away_team": "埼玉ワイルドナイツ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "saitama-wild-knights",
     "match_url": "https://league-one.jp/match/29351",
     "broadcasters": [
       "J SPORTS",
@@ -2565,7 +2565,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2576,8 +2576,8 @@
     "venue": "未定",
     "home_team": "東芝ブレイブルーパス東京",
     "away_team": "静岡ブルーレヴズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "toshiba-brave-lupus",
+    "away_team_id": "shizuoka-blue-revs",
     "match_url": "https://league-one.jp/match/29353",
     "broadcasters": [
       "J SPORTS",
@@ -2591,7 +2591,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2602,7 +2602,7 @@
     "venue": "未定",
     "home_team": "横浜キヤノンイーグルス",
     "away_team": "三菱重工相模原ダイナボアーズ",
-    "home_team_id": "",
+    "home_team_id": "yokohama-canon-eagles",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29354",
     "broadcasters": [
@@ -2617,7 +2617,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2628,8 +2628,8 @@
     "venue": "未定",
     "home_team": "ブラックラムズ東京",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "black-rams-tokyo",
+    "away_team_id": "kubota-spears",
     "match_url": "https://league-one.jp/match/29356",
     "broadcasters": [
       "J SPORTS",
@@ -2641,21 +2641,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-05t05:30:00z-トヨタヴェルブリッツ-東京サンゴリアス-cfc1bb71e4",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-02T14:30:00+09:00",
-    "kickoff_utc": "2026-05-02T05:30:00Z",
+    "kickoff": "2026-02-05T14:30:00+09:00",
+    "kickoff_utc": "2026-02-05T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "パロマ瑞穂ラグビー場 (愛知県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "東京サンゴリアス",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "tokyo-sungoliath",
     "match_url": "https://league-one.jp/match/29352",
     "broadcasters": [
       "J SPORTS",
@@ -2667,21 +2667,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-05t05:30:00z-コベルコ神戸スティーラーズ-三重ホンダヒート-e0a634a914",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-02T14:30:00+09:00",
-    "kickoff_utc": "2026-05-02T05:30:00Z",
+    "kickoff": "2026-02-05T14:30:00+09:00",
+    "kickoff_utc": "2026-02-05T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "コベルコ神戸スティーラーズ",
     "away_team": "三重ホンダヒート",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kobelco-kobe-steelers",
+    "away_team_id": "mie-honda-heat",
     "match_url": "https://league-one.jp/match/29355",
     "broadcasters": [
       "J SPORTS",
@@ -2693,21 +2693,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-09-05t05:30:00z-埼玉ワイルドナイツ-東芝ブレイブルーパス東京-852f901c8a",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-09T14:30:00+09:00",
-    "kickoff_utc": "2026-05-09T05:30:00Z",
+    "kickoff": "2026-09-05T14:30:00+09:00",
+    "kickoff_utc": "2026-09-05T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "埼玉県内 (埼玉県)",
     "home_team": "埼玉ワイルドナイツ",
     "away_team": "東芝ブレイブルーパス東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "saitama-wild-knights",
+    "away_team_id": "toshiba-brave-lupus",
     "match_url": "https://league-one.jp/match/29357",
     "broadcasters": [
       "J SPORTS",
@@ -2719,21 +2719,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-09-05t05:30:00z-静岡ブルーレヴズ-横浜キヤノンイーグルス-78ce0ab08c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-09T14:30:00+09:00",
-    "kickoff_utc": "2026-05-09T05:30:00Z",
+    "kickoff": "2026-09-05T14:30:00+09:00",
+    "kickoff_utc": "2026-09-05T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "ヤマハスタジアム (静岡県)",
     "home_team": "静岡ブルーレヴズ",
     "away_team": "横浜キヤノンイーグルス",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "shizuoka-blue-revs",
+    "away_team_id": "yokohama-canon-eagles",
     "match_url": "https://league-one.jp/match/29358",
     "broadcasters": [
       "J SPORTS",
@@ -2745,20 +2745,20 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-09-05t08:10:00z-三重ホンダヒート-トヨタヴェルブリッツ-1bddb62c7e",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-09T17:10:00+09:00",
-    "kickoff_utc": "2026-05-09T08:10:00Z",
+    "kickoff": "2026-09-05T17:10:00+09:00",
+    "kickoff_utc": "2026-09-05T08:10:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
     "home_team": "三重ホンダヒート",
     "away_team": "トヨタヴェルブリッツ",
-    "home_team_id": "",
+    "home_team_id": "mie-honda-heat",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29359",
     "broadcasters": [
@@ -2773,7 +2773,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2798,21 +2798,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-05t05:30:00z-クボタスピアーズ船橋・東京ベイ-コベルコ神戸スティーラーズ-9b028f7f5d",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-10T14:30:00+09:00",
-    "kickoff_utc": "2026-05-10T05:30:00Z",
+    "kickoff": "2026-10-05T14:30:00+09:00",
+    "kickoff_utc": "2026-10-05T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "スピアーズえどりくフィールド（江戸川区陸上競技場） (東京都)",
     "home_team": "クボタスピアーズ船橋・東京ベイ",
     "away_team": "コベルコ神戸スティーラーズ",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "kubota-spears",
+    "away_team_id": "kobelco-kobe-steelers",
     "match_url": "https://league-one.jp/match/29360",
     "broadcasters": [
       "J SPORTS",
@@ -2824,21 +2824,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-05t05:30:00z-東京サンゴリアス-ブラックラムズ東京-420a129397",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-10T14:30:00+09:00",
-    "kickoff_utc": "2026-05-10T05:30:00Z",
+    "kickoff": "2026-10-05T14:30:00+09:00",
+    "kickoff_utc": "2026-10-05T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "未定",
     "home_team": "東京サンゴリアス",
     "away_team": "ブラックラムズ東京",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team_id": "tokyo-sungoliath",
+    "away_team_id": "black-rams-tokyo",
     "match_url": "https://league-one.jp/match/29361",
     "broadcasters": [
       "J SPORTS",
@@ -2852,7 +2852,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2874,7 +2874,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2894,9 +2894,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-05-29t15:00:00z-d1リーグ戦1位-準々決勝(1)勝者-5b812b6b85",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2916,9 +2916,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-05-30t15:00:00z-d1リーグ戦2位-準々決勝(2)勝者-947555a31a",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2938,9 +2938,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-06-05t15:00:00z-準決勝(1)敗者-準決勝(2)敗者-daefec085c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2960,14 +2960,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-05t15:00:00z-準決勝(1)勝者-準決勝(2)勝者-3c3d7b6bdb",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-06-07T00:00:00+09:00",
-    "kickoff_utc": "2026-06-06T15:00:00Z",
+    "kickoff": "2026-07-06T00:00:00+09:00",
+    "kickoff_utc": "2026-07-05T15:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "未定",
@@ -2982,9 +2982,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-13t03:00:00z-豊田自動織機シャトルズ愛知-花園近鉄ライナーズ-b5c1d81dda",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -2996,7 +2996,7 @@
     "home_team": "豊田自動織機シャトルズ愛知",
     "away_team": "花園近鉄ライナーズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "hanazono-kintetsu-liners",
     "match_url": "https://league-one.jp/match/29363",
     "broadcasters": [
       "J SPORTS 1",
@@ -3008,9 +3008,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-13t05:30:00z-グリーンロケッツ東葛-レッドハリケーンズ大阪-460d470d61",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3034,9 +3034,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-13t05:30:00z-清水建設江東ブルーシャークス-日本製鉄釜石シーウェイブス-a02bc0ea62",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3060,9 +3060,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-14t03:00:00z-日野レッドドルフィンズ-九州電力キューデンヴォルテクス-242eea13de",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3086,9 +3086,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-20t05:30:00z-花園近鉄ライナーズ-グリーンロケッツ東葛-f3edf93cea",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3099,7 +3099,7 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "グリーンロケッツ東葛",
-    "home_team_id": "",
+    "home_team_id": "hanazono-kintetsu-liners",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29367",
     "broadcasters": [
@@ -3113,9 +3113,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-20t05:30:00z-九州電力キューデンヴォルテクス-清水建設江東ブルーシャークス-8022180bae",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3139,9 +3139,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-21t04:05:00z-日本製鉄釜石シーウェイブス-日野レッドドルフィンズ-771c8d997b",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3166,9 +3166,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-21t05:30:00z-レッドハリケーンズ大阪-豊田自動織機シャトルズ愛知-190fd610ea",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3192,9 +3192,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-27t03:00:00z-日本製鉄釜石シーウェイブス-九州電力キューデンヴォルテクス-402d426966",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3218,20 +3218,20 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-01t03:00:00z-花園近鉄ライナーズ-日野レッドドルフィンズ-f72b11d025",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-10T12:00:00+09:00",
-    "kickoff_utc": "2026-01-10T03:00:00Z",
+    "kickoff": "2026-10-01T12:00:00+09:00",
+    "kickoff_utc": "2026-10-01T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "日野レッドドルフィンズ",
-    "home_team_id": "",
+    "home_team_id": "hanazono-kintetsu-liners",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29372",
     "broadcasters": [
@@ -3242,14 +3242,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-01t05:30:00z-清水建設江東ブルーシャークス-レッドハリケーンズ大阪-888b44f05b",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-10T14:30:00+09:00",
-    "kickoff_utc": "2026-01-10T05:30:00Z",
+    "kickoff": "2026-10-01T14:30:00+09:00",
+    "kickoff_utc": "2026-10-01T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "江東区夢の島競技場 (東京都)",
@@ -3266,14 +3266,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-01t05:30:00z-グリーンロケッツ東葛-豊田自動織機シャトルズ愛知-b6aa5494c7",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-10T14:30:00+09:00",
-    "kickoff_utc": "2026-01-10T05:30:00Z",
+    "kickoff": "2026-10-01T14:30:00+09:00",
+    "kickoff_utc": "2026-10-01T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "柏の葉公園総合競技場 (千葉県)",
@@ -3290,9 +3290,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-17t03:00:00z-豊田自動織機シャトルズ愛知-日本製鉄釜石シーウェイブス-b629e5c10e",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3316,9 +3316,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-17t05:30:00z-レッドハリケーンズ大阪-花園近鉄ライナーズ-3d69c058a5",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3330,7 +3330,7 @@
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "花園近鉄ライナーズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "hanazono-kintetsu-liners",
     "match_url": "https://league-one.jp/match/29375",
     "broadcasters": [
       "J SPORTS 3",
@@ -3342,9 +3342,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-18t04:00:00z-日野レッドドルフィンズ-清水建設江東ブルーシャークス-0c98a303c3",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3368,9 +3368,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-24t03:00:00z-九州電力キューデンヴォルテクス-グリーンロケッツ東葛-856cf048bb",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3394,9 +3394,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-31t03:00:00z-日野レッドドルフィンズ-豊田自動織機シャトルズ愛知-eb4e32265c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3420,21 +3420,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-02t05:30:00z-清水建設江東ブルーシャークス-花園近鉄ライナーズ-80907fb757",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-07T14:30:00+09:00",
-    "kickoff_utc": "2026-02-07T05:30:00Z",
+    "kickoff": "2026-07-02T14:30:00+09:00",
+    "kickoff_utc": "2026-07-02T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "江東区夢の島競技場 (東京都)",
     "home_team": "清水建設江東ブルーシャークス",
     "away_team": "花園近鉄ライナーズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "hanazono-kintetsu-liners",
     "match_url": "https://league-one.jp/match/29380",
     "broadcasters": [
       "J SPORTS 1（録画）",
@@ -3446,14 +3446,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-08-02t03:00:00z-グリーンロケッツ東葛-日本製鉄釜石シーウェイブス-3a79c20ad6",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-08T12:00:00+09:00",
-    "kickoff_utc": "2026-02-08T03:00:00Z",
+    "kickoff": "2026-08-02T12:00:00+09:00",
+    "kickoff_utc": "2026-08-02T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "柏の葉公園総合競技場 (千葉県)",
@@ -3472,14 +3472,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-08-02t05:30:00z-九州電力キューデンヴォルテクス-レッドハリケーンズ大阪-2ebecf7651",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-08T14:30:00+09:00",
-    "kickoff_utc": "2026-02-08T05:30:00Z",
+    "kickoff": "2026-08-02T14:30:00+09:00",
+    "kickoff_utc": "2026-08-02T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "東平尾公園博多の森陸上競技場 (福岡県)",
@@ -3498,9 +3498,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-14t03:00:00z-花園近鉄ライナーズ-九州電力キューデンヴォルテクス-8d5ec9c07a",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3511,7 +3511,7 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "九州電力キューデンヴォルテクス",
-    "home_team_id": "",
+    "home_team_id": "hanazono-kintetsu-liners",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29384",
     "broadcasters": [
@@ -3524,9 +3524,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-14t05:30:00z-豊田自動織機シャトルズ愛知-清水建設江東ブルーシャークス-668e4adbf1",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3550,9 +3550,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-21t03:00:00z-レッドハリケーンズ大阪-日本製鉄釜石シーウェイブス-972db979f8",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3576,9 +3576,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-22t05:30:00z-グリーンロケッツ東葛-日野レッドドルフィンズ-4009bfa250",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3602,9 +3602,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-28t04:00:00z-日野レッドドルフィンズ-レッドハリケーンズ大阪-9793e19eb4",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3628,9 +3628,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-28t05:30:00z-豊田自動織機シャトルズ愛知-九州電力キューデンヴォルテクス-ee4ecbafad",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3654,9 +3654,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-28t05:30:00z-清水建設江東ブルーシャークス-グリーンロケッツ東葛-69a12d9149",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3680,21 +3680,21 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-03t04:00:00z-日本製鉄釜石シーウェイブス-花園近鉄ライナーズ-ad38439792",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-03-07T13:00:00+09:00",
-    "kickoff_utc": "2026-03-07T04:00:00Z",
+    "kickoff": "2026-07-03T13:00:00+09:00",
+    "kickoff_utc": "2026-07-03T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "釜石鵜住居復興スタジアム (岩手県)",
     "home_team": "日本製鉄釜石シーウェイブス",
     "away_team": "花園近鉄ライナーズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "hanazono-kintetsu-liners",
     "match_url": "https://league-one.jp/match/29475",
     "broadcasters": [
       "J SPORTS",
@@ -3706,14 +3706,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-03t04:00:00z-日野レッドドルフィンズ-グリーンロケッツ東葛-fa8bd9008d",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-03-07T13:00:00+09:00",
-    "kickoff_utc": "2026-03-07T04:00:00Z",
+    "kickoff": "2026-07-03T13:00:00+09:00",
+    "kickoff_utc": "2026-07-03T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "AGFフィールド (東京都)",
@@ -3732,9 +3732,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-14t05:30:00z-九州電力キューデンヴォルテクス-花園近鉄ライナーズ-2050103c55",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3746,7 +3746,7 @@
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "花園近鉄ライナーズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "hanazono-kintetsu-liners",
     "match_url": "https://league-one.jp/match/29392",
     "broadcasters": [
       "J SPORTS",
@@ -3758,9 +3758,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-14t05:30:00z-清水建設江東ブルーシャークス-豊田自動織機シャトルズ愛知-a3465242ac",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3784,9 +3784,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-15t04:00:00z-日本製鉄釜石シーウェイブス-レッドハリケーンズ大阪-f4500fc412",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3810,9 +3810,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-27t10:00:00z-レッドハリケーンズ大阪-九州電力キューデンヴォルテクス-61abdf4177",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3836,9 +3836,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-28t03:00:00z-花園近鉄ライナーズ-日本製鉄釜石シーウェイブス-25563f52dc",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3849,7 +3849,7 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "日本製鉄釜石シーウェイブス",
-    "home_team_id": "",
+    "home_team_id": "hanazono-kintetsu-liners",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29398",
     "broadcasters": [
@@ -3862,9 +3862,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-28t05:30:00z-豊田自動織機シャトルズ愛知-日野レッドドルフィンズ-4a70e0c3a4",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3888,9 +3888,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-28t05:30:00z-グリーンロケッツ東葛-清水建設江東ブルーシャークス-d0f1895d31",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3916,7 +3916,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3940,9 +3940,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-04t03:00:00z-日本製鉄釜石シーウェイブス-豊田自動織機シャトルズ愛知-3aa22c0e6d",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3966,9 +3966,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-04t05:30:00z-花園近鉄ライナーズ-レッドハリケーンズ大阪-0cc2757f92",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -3979,7 +3979,7 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "レッドハリケーンズ大阪",
-    "home_team_id": "",
+    "home_team_id": "hanazono-kintetsu-liners",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29399",
     "broadcasters": [
@@ -3992,9 +3992,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-04t05:30:00z-清水建設江東ブルーシャークス-日野レッドドルフィンズ-9068fdaf67",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4020,7 +4020,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4046,7 +4046,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4058,7 +4058,7 @@
     "home_team": "日野レッドドルフィンズ",
     "away_team": "花園近鉄ライナーズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "hanazono-kintetsu-liners",
     "match_url": "https://league-one.jp/match/29405",
     "broadcasters": [
       "J SPORTS",
@@ -4070,14 +4070,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-11-04t03:00:00z-豊田自動織機シャトルズ愛知-グリーンロケッツ東葛-002e5328be",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-04-11T12:00:00+09:00",
-    "kickoff_utc": "2026-04-11T03:00:00Z",
+    "kickoff": "2026-11-04T12:00:00+09:00",
+    "kickoff_utc": "2026-11-04T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
@@ -4096,14 +4096,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-11-04t05:30:00z-レッドハリケーンズ大阪-清水建設江東ブルーシャークス-a87159e409",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-04-11T14:30:00+09:00",
-    "kickoff_utc": "2026-04-11T05:30:00Z",
+    "kickoff": "2026-11-04T14:30:00+09:00",
+    "kickoff_utc": "2026-11-04T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "ヤンマースタジアム長居 (大阪府)",
@@ -4124,7 +4124,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4148,9 +4148,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-25t03:00:00z-レッドハリケーンズ大阪-日野レッドドルフィンズ-fe163da017",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4174,9 +4174,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-25t04:00:00z-日本製鉄釜石シーウェイブス-グリーンロケッツ東葛-2314e9c74c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4200,9 +4200,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-25t05:30:00z-花園近鉄ライナーズ-清水建設江東ブルーシャークス-4ff01dfca8",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4213,7 +4213,7 @@
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "清水建設江東ブルーシャークス",
-    "home_team_id": "",
+    "home_team_id": "hanazono-kintetsu-liners",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29408",
     "broadcasters": [
@@ -4228,7 +4228,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4240,7 +4240,7 @@
     "home_team": "グリーンロケッツ東葛",
     "away_team": "花園近鉄ライナーズ",
     "home_team_id": "",
-    "away_team_id": "",
+    "away_team_id": "hanazono-kintetsu-liners",
     "match_url": "https://league-one.jp/match/29412",
     "broadcasters": [
       "J SPORTS",
@@ -4254,7 +4254,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4278,14 +4278,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-05t03:00:00z-豊田自動織機シャトルズ愛知-レッドハリケーンズ大阪-7ea08b45c1",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-02T12:00:00+09:00",
-    "kickoff_utc": "2026-05-02T03:00:00Z",
+    "kickoff": "2026-02-05T12:00:00+09:00",
+    "kickoff_utc": "2026-02-05T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "ウェーブスタジアム刈谷 (愛知県)",
@@ -4304,14 +4304,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-05t03:00:00z-清水建設江東ブルーシャークス-九州電力キューデンヴォルテクス-bfbc2d6f71",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-02T12:00:00+09:00",
-    "kickoff_utc": "2026-05-02T03:00:00Z",
+    "kickoff": "2026-02-05T12:00:00+09:00",
+    "kickoff_utc": "2026-02-05T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "江東区夢の島競技場 (東京都)",
@@ -4330,14 +4330,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-09-05t04:00:00z-九州電力キューデンヴォルテクス-日野レッドドルフィンズ-a38d10a2f7",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-09T13:00:00+09:00",
-    "kickoff_utc": "2026-05-09T04:00:00Z",
+    "kickoff": "2026-09-05T13:00:00+09:00",
+    "kickoff_utc": "2026-09-05T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "KUROKIRI STADIUM (宮崎県)",
@@ -4356,14 +4356,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-09-05t04:00:00z-日本製鉄釜石シーウェイブス-清水建設江東ブルーシャークス-608e60d829",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-09T13:00:00+09:00",
-    "kickoff_utc": "2026-05-09T04:00:00Z",
+    "kickoff": "2026-09-05T13:00:00+09:00",
+    "kickoff_utc": "2026-09-05T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "釜石鵜住居復興スタジアム (岩手県)",
@@ -4384,7 +4384,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4408,20 +4408,20 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-05t03:00:00z-花園近鉄ライナーズ-豊田自動織機シャトルズ愛知-c81f02d4f0",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-10T12:00:00+09:00",
-    "kickoff_utc": "2026-05-10T03:00:00Z",
+    "kickoff": "2026-10-05T12:00:00+09:00",
+    "kickoff_utc": "2026-10-05T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "東大阪市花園ラグビー場 (大阪府)",
     "home_team": "花園近鉄ライナーズ",
     "away_team": "豊田自動織機シャトルズ愛知",
-    "home_team_id": "",
+    "home_team_id": "hanazono-kintetsu-liners",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/29415",
     "broadcasters": [
@@ -4434,9 +4434,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-13t03:00:00z-クリタウォーターガッシュ昭島-中国電力レッドレグリオンズ-6a221c2a56",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4459,9 +4459,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-13t04:00:00z-狭山セコムラガッツ-スカイアクティブズ広島-28f1e33cfb",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4484,9 +4484,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-14t03:00:00z-ヤクルトレビンズ戸田-ルリーロ福岡-d88e0bdbc5",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4509,9 +4509,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-21t03:00:00z-スカイアクティブズ広島-クリタウォーターガッシュ昭島-05ad9f3ce7",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4534,9 +4534,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-21t03:00:00z-中国電力レッドレグリオンズ-ヤクルトレビンズ戸田-88d8f49dc9",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4559,9 +4559,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2025-12-21t04:00:00z-ルリーロ福岡-狭山セコムラガッツ-ea2ce5b87e",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4584,14 +4584,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-01t03:00:00z-狭山セコムラガッツ-ヤクルトレビンズ戸田-6e85ad953a",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-10T12:00:00+09:00",
-    "kickoff_utc": "2026-01-10T03:00:00Z",
+    "kickoff": "2026-10-01T12:00:00+09:00",
+    "kickoff_utc": "2026-10-01T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "足利ガスグラウンド（足利市総合運動場陸上競技場） (栃木県)",
@@ -4609,14 +4609,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-01t05:30:00z-スカイアクティブズ広島-中国電力レッドレグリオンズ-7c20513b4c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-10T14:30:00+09:00",
-    "kickoff_utc": "2026-01-10T05:30:00Z",
+    "kickoff": "2026-10-01T14:30:00+09:00",
+    "kickoff_utc": "2026-10-01T05:30:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "福山通運ローズスタジアム (広島県)",
@@ -4634,14 +4634,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-11-01t04:00:00z-ルリーロ福岡-クリタウォーターガッシュ昭島-f562f3178c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-01-11T13:00:00+09:00",
-    "kickoff_utc": "2026-01-11T04:00:00Z",
+    "kickoff": "2026-11-01T13:00:00+09:00",
+    "kickoff_utc": "2026-11-01T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
@@ -4659,9 +4659,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-17t04:00:00z-クリタウォーターガッシュ昭島-狭山セコムラガッツ-a073696618",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4684,9 +4684,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-18t04:00:00z-中国電力レッドレグリオンズ-ルリーロ福岡-769d146a36",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4709,9 +4709,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-25t03:00:00z-ヤクルトレビンズ戸田-スカイアクティブズ広島-2b95759c72",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4734,9 +4734,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-31t03:00:00z-ヤクルトレビンズ戸田-クリタウォーターガッシュ昭島-467e49a523",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4759,9 +4759,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-31t04:00:00z-ルリーロ福岡-スカイアクティブズ広島-ac5aef7b34",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4784,9 +4784,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-31t04:00:00z-中国電力レッドレグリオンズ-狭山セコムラガッツ-82f9974643",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4809,14 +4809,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-02t04:00:00z-スカイアクティブズ広島-ヤクルトレビンズ戸田-9c63c16cd5",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-07T13:00:00+09:00",
-    "kickoff_utc": "2026-02-07T04:00:00Z",
+    "kickoff": "2026-07-02T13:00:00+09:00",
+    "kickoff_utc": "2026-07-02T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "Balcom BMW Stadium (広島県)",
@@ -4834,14 +4834,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-08-02t04:00:00z-ルリーロ福岡-中国電力レッドレグリオンズ-95719328c6",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-02-08T13:00:00+09:00",
-    "kickoff_utc": "2026-02-08T04:00:00Z",
+    "kickoff": "2026-08-02T13:00:00+09:00",
+    "kickoff_utc": "2026-08-02T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
@@ -4859,9 +4859,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-15t05:30:00z-狭山セコムラガッツ-クリタウォーターガッシュ昭島-d4217c633d",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4884,9 +4884,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-21t04:00:00z-狭山セコムラガッツ-ルリーロ福岡-f5d96cf6ea",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4909,9 +4909,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-21t04:00:00z-クリタウォーターガッシュ昭島-スカイアクティブズ広島-85942563b7",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4934,9 +4934,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-22t03:00:00z-ヤクルトレビンズ戸田-中国電力レッドレグリオンズ-fb9fdabc23",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4959,9 +4959,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-28t03:00:00z-ヤクルトレビンズ戸田-狭山セコムラガッツ-4787c667af",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -4984,9 +4984,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-28t04:00:00z-中国電力レッドレグリオンズ-スカイアクティブズ広島-abd416bce8",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5009,14 +5009,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-01-03t03:00:00z-クリタウォーターガッシュ昭島-ルリーロ福岡-96f5924a2f",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-03-01T12:00:00+09:00",
-    "kickoff_utc": "2026-03-01T03:00:00Z",
+    "kickoff": "2026-01-03T12:00:00+09:00",
+    "kickoff_utc": "2026-01-03T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "AGFフィールド (東京都)",
@@ -5034,14 +5034,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-03t04:00:00z-ルリーロ福岡-ヤクルトレビンズ戸田-ed71ee5a4c",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-03-07T13:00:00+09:00",
-    "kickoff_utc": "2026-03-07T04:00:00Z",
+    "kickoff": "2026-07-03T13:00:00+09:00",
+    "kickoff_utc": "2026-07-03T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
@@ -5059,14 +5059,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-07-03t04:00:00z-スカイアクティブズ広島-狭山セコムラガッツ-8884c32ea1",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-03-07T13:00:00+09:00",
-    "kickoff_utc": "2026-03-07T04:00:00Z",
+    "kickoff": "2026-07-03T13:00:00+09:00",
+    "kickoff_utc": "2026-07-03T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "Balcom BMW Stadium (広島県)",
@@ -5084,9 +5084,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-15t04:00:00z-中国電力レッドレグリオンズ-クリタウォーターガッシュ昭島-8d9e7425f5",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5109,9 +5109,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-21t03:00:00z-クリタウォーターガッシュ昭島-ヤクルトレビンズ戸田-373bb60211",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5134,9 +5134,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-28t04:00:00z-スカイアクティブズ広島-ルリーロ福岡-16c67f62a3",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5159,9 +5159,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-03-29t05:30:00z-狭山セコムラガッツ-中国電力レッドレグリオンズ-3635137a09",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5184,9 +5184,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-04t05:30:00z-スカイアクティブズ広島-中国電力レッドレグリオンズ-e80fe9ee4d",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5209,14 +5209,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-05-04t04:00:00z-狭山セコムラガッツ-ヤクルトレビンズ戸田-422e6435db",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-04-05T13:00:00+09:00",
-    "kickoff_utc": "2026-04-05T04:00:00Z",
+    "kickoff": "2026-05-04T13:00:00+09:00",
+    "kickoff_utc": "2026-05-04T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "東大阪市花園ラグビー場 (大阪府)",
@@ -5234,14 +5234,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-05-04t04:00:00z-ルリーロ福岡-クリタウォーターガッシュ昭島-0117aaf9d9",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-04-05T13:00:00+09:00",
-    "kickoff_utc": "2026-04-05T04:00:00Z",
+    "kickoff": "2026-05-04T13:00:00+09:00",
+    "kickoff_utc": "2026-05-04T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "久留米総合スポーツセンター陸上競技場 (福岡県)",
@@ -5261,7 +5261,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5284,14 +5284,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-11-04t04:00:00z-中国電力レッドレグリオンズ-ルリーロ福岡-5ee0b0ca78",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-04-11T13:00:00+09:00",
-    "kickoff_utc": "2026-04-11T04:00:00Z",
+    "kickoff": "2026-11-04T13:00:00+09:00",
+    "kickoff_utc": "2026-11-04T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "未定",
@@ -5309,17 +5309,17 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-12-04t04:00:00z-クリタウォーターガッシュ昭島-狭山セコムラガッツ-6b9fe9c256",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-04-12T13:00:00+09:00",
-    "kickoff_utc": "2026-04-12T04:00:00Z",
+    "kickoff": "2026-12-04T13:00:00+09:00",
+    "kickoff_utc": "2026-12-04T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
-    "venue": "未定",
+    "venue": "AGFフィールド (東京都)",
     "home_team": "クリタウォーターガッシュ昭島",
     "away_team": "狭山セコムラガッツ",
     "home_team_id": "",
@@ -5334,34 +5334,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-25t03:00:00z-中国電力レッドレグリオンズ-狭山セコムラガッツ-2b95c30029",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
-    "season": "2026",
-    "round": "",
-    "status": "scheduled",
-    "kickoff": "",
-    "kickoff_utc": "",
-    "timezone": "Asia/Tokyo",
-    "timezone_source": "competition_default",
-    "venue": "未定",
-    "home_team": "ルリーロ福岡",
-    "away_team": "スカイアクティブズ広島",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://league-one.jp/match/29457",
-    "broadcasters": [
-      "J SPORTSオンデマンド",
-      "DAZN"
-    ],
-    "source_name": "Japan Rugby League One",
-    "source_url": "https://league-one.jp/schedule/?year=2025",
-    "source_type": "official"
-  },
-  {
-    "match_id": "",
-    "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5384,9 +5359,9 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-04-26t03:00:00z-ヤクルトレビンズ戸田-クリタウォーターガッシュ昭島-cc1f0844e3",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5394,7 +5369,7 @@
     "kickoff_utc": "2026-04-26T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
-    "venue": "未定",
+    "venue": "AGFフィールド (東京都)",
     "home_team": "ヤクルトレビンズ戸田",
     "away_team": "クリタウォーターガッシュ昭島",
     "home_team_id": "",
@@ -5409,9 +5384,34 @@
     "source_type": "official"
   },
   {
+    "match_id": "league-one-2026-04-26t04:00:00z-ルリーロ福岡-スカイアクティブズ広島-e65f1d159b",
+    "competition": "Japan Rugby League One",
+    "competition_id": "jrlo",
+    "season": "2026",
+    "round": "",
+    "status": "scheduled",
+    "kickoff": "2026-04-26T13:00:00+09:00",
+    "kickoff_utc": "2026-04-26T04:00:00Z",
+    "timezone": "Asia/Tokyo",
+    "timezone_source": "competition_default",
+    "venue": "小郡市陸上競技場 (福岡県)",
+    "home_team": "ルリーロ福岡",
+    "away_team": "スカイアクティブズ広島",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://league-one.jp/match/29457",
+    "broadcasters": [
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
+    "source_name": "Japan Rugby League One",
+    "source_url": "https://league-one.jp/schedule/?year=2025",
+    "source_type": "official"
+  },
+  {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5434,17 +5434,17 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-05t03:00:00z-クリタウォーターガッシュ昭島-スカイアクティブズ広島-f818eb8083",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-02T12:00:00+09:00",
-    "kickoff_utc": "2026-05-02T03:00:00Z",
+    "kickoff": "2026-02-05T12:00:00+09:00",
+    "kickoff_utc": "2026-02-05T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
-    "venue": "未定",
+    "venue": "荻野運動公園 (神奈川県)",
     "home_team": "クリタウォーターガッシュ昭島",
     "away_team": "スカイアクティブズ広島",
     "home_team_id": "",
@@ -5459,14 +5459,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-02-05t04:00:00z-狭山セコムラガッツ-ルリーロ福岡-5fe5e5b700",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-02T13:00:00+09:00",
-    "kickoff_utc": "2026-05-02T04:00:00Z",
+    "kickoff": "2026-02-05T13:00:00+09:00",
+    "kickoff_utc": "2026-02-05T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "海老名運動公園 陸上競技場 (神奈川県)",
@@ -5484,14 +5484,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-09-05t03:00:00z-スカイアクティブズ広島-狭山セコムラガッツ-86f4a72b93",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-09T12:00:00+09:00",
-    "kickoff_utc": "2026-05-09T03:00:00Z",
+    "kickoff": "2026-09-05T12:00:00+09:00",
+    "kickoff_utc": "2026-09-05T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "未定",
@@ -5511,7 +5511,7 @@
   {
     "match_id": "",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
@@ -5534,14 +5534,14 @@
     "source_type": "official"
   },
   {
-    "match_id": "",
+    "match_id": "league-one-2026-10-05t04:00:00z-中国電力レッドレグリオンズ-クリタウォーターガッシュ昭島-3161d3f62f",
     "competition": "Japan Rugby League One",
-    "competition_id": "league-one",
+    "competition_id": "jrlo",
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-10T13:00:00+09:00",
-    "kickoff_utc": "2026-05-10T04:00:00Z",
+    "kickoff": "2026-10-05T13:00:00+09:00",
+    "kickoff_utc": "2026-10-05T04:00:00Z",
     "timezone": "Asia/Tokyo",
     "timezone_source": "competition_default",
     "venue": "未定",

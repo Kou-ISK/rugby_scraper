@@ -1,0 +1,17 @@
+{
+  "challenge_cup_logo": {
+    "license": "CC BY-SA 4.0",
+    "source": "Wikimedia Commons",
+    "notes": "再配布時は著作者表示と同一ライセンスを要求"
+  },
+  "top14_logo": {
+    "license": "public_domain",
+    "source": "Wikimedia Commons",
+    "notes": "簡素な幾何学的形状で著作権対象外"
+  },
+  "premiership_logo": {
+    "license": "public_domain",
+    "source": "Wikimedia Commons",
+    "notes": "著作権対象外だが商標権に注意"
+  }
+}

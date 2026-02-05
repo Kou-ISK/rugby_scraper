@@ -6,3 +6,4 @@ selenium-stealth
 webdriver-manager
 pdfplumber
 backports.zoneinfo; python_version < "3.9"
+pillow

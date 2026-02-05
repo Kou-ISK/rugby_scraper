@@ -141,7 +141,7 @@ class EPCRChampionsCupScraper(EPCRBaseScraper):
         return [
             self.build_match(
                 competition="EPCR Champions Cup",
-                competition_id="",
+                competition_id="epcr-champions",
                 season=str(datetime.now().year),
                 round_name="",
                 status="",
@@ -171,7 +171,7 @@ class EPCRChallengeCupScraper(EPCRBaseScraper):
         return [
             self.build_match(
                 competition="EPCR Challenge Cup",
-                competition_id="",
+                competition_id="epcr-challenge",
                 season=str(datetime.now().year),
                 round_name="",
                 status="",
