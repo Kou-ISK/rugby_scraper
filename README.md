@@ -10,36 +10,83 @@ itsuneru 向けに世界のラグビー試合日程を取得するスクレイ�
   - チームマスタ（`data/teams.json`）
   - TypeScript 型定義
   - 使用例
-- **[マイグレーションレポート](MIGRATION_REPORT.md)** - 新ID体系とディレクトリ構造への移行記録
+- **[プロジェクト構造](docs/ARCHITECTURE.md)** - スクレイパー設計とディレクトリ構成
+- **[使用例](docs/USAGE_EXAMPLES.md)** - itsuneru での実装サンプル
 
-## 🆕 新データ構造 (2026-02-06更新)
+## 📂 プロジェクト構造
 
-### ディレクトリ構造
+### データディレクトリ
 
 ```
 data/
 ├── teams.json                    # 統合チームマスタ
 ├── competitions.json             # 大会マスタ
-└── matches/
-    ├── {comp_id}/               # 大会ID別ディレクトリ
-    │   └── {season}.json        # シーズン別試合データ
-    └── ...
+└── matches/                      # 試合データ（大会ID別・シーズン別）
+    ├── m6n/2025.json
+    ├── w6n/2025.json
+    ├── gp/2025.json
+    ├── urc/2025.json
+    ├── jrlo_div1/2026.json
+    ├── jrlo_div2/2026.json
+    ├── jrlo_div3/2026.json
+    └── wri/2026.json
+```
+
+### ソースコード構造
+
+```
+src/
+├── collectors/                   # データ収集層
+│   ├── base.py                   # BaseScraper
+│   ├── international/            # 国際大会
+│   │   ├── six_nations.py
+│   │   ├── rugby_championship.py
+│   │   ├── autumn_nations.py
+│   │   └── world_rugby.py
+│   ├── european/                 # 欧州大会
+│   │   ├── epcr.py
+│   │   ├── top14.py
+│   │   └── rugbyviz.py
+│   └── domestic/                 # 国内リーグ
+│       ├── league_one_divisions.py
+│       └── super_rugby.py
+├── services/                     # ビジネスロジック層
+│   └── team_service.py           # チーム抽出・統合
+├── validators/                   # バリデーション層
+│   └── team_validator.py         # 重複チェック
+├── repositories/                 # データ永続化層
+│   └── competition_repository.py # メタデータ生成
+├── core/                         # コア機能
+└── main.py                       # CLIエントリーポイント
+
+scripts/
+├── automation/                   # 自動化
+│   ├── scrape_all.py
+│   ├── scrape_all.sh
+│   └── scrape_remaining.sh
+├── data/                         # データ処理（アーカイブ）
+└── maintenance/                  # メンテナンス（アーカイブ）
 ```
 
 ### ID体系
 
-**大会ID**: 略称コード（性別を明示）
-- `m6n`: Men's Six Nations
-- `w6n`: Women's Six Nations  
-- `jrlo`: Japan Rugby League One
+**大会ID**: 短縮コード形式
+
+- `m6n`, `w6n`, `u6n`: Six Nations (Men/Women/U20)
+- `ecc`, `ech`: EPCR (Champions/Challenge)
+- `t14`: Top 14
+- `jrlo_div1`, `jrlo_div2`, `jrlo_div3`: Japan Rugby League One
 - `gp`: Gallagher Premiership
+- `urc`: United Rugby Championship
+- `srp`: Super Rugby Pacific
+- `rc`: Rugby Championship
+- `ans`: Autumn Nations Series
+- `wri`: World Rugby Internationals
 
-**チームID**: `{comp_id}-{number}` 形式
-- `m6n-1`: England (Men's Six Nations)
-- `w6n-2`: France (Women's Six Nations)
-- `jrlo-1`: Saitama Wild Knights
+**チームID**: 形式
 
-詳細は [MIGRATION_REPORT.md](MIGRATION_REPORT.md) を参照。
+- 国代表: `NT_{GENDER}_{COUNTRY}` (例: `NT_M_ENG`, `NT_W_FRA`)
+- クラブ: `{comp_id}_{number}` (例: `gp_1`, `jrlo-div1_1`)
 
 ## 取得対象リーグと公式ソース
 
@@ -153,53 +200,74 @@ data/
 - 外部サイト/公式フィードに依存するため、仕様変更に強くする設計を優先しています。
   (チーム名などの固定定数に極力依存しない方針)
 
-## 使い方
+## 🚀 使い方
+
+### スクレイピング実行
 
 ```bash
-python src/main.py <scraper-type>
+python -m src.main <competition-id>
 ```
 
-例:
+**利用可能な大会ID:**
 
 ```bash
-python src/main.py six-nations
-python src/main.py league-one
-python src/main.py gallagher-premiership
-python src/main.py urc
-python src/main.py super-rugby-pacific
-python src/main.py rugby-championship
-python src/main.py autumn-nations-series
-python src/main.py world-rugby-internationals
+# 国際大会
+python -m src.main m6n    # Men's Six Nations
+python -m src.main w6n    # Women's Six Nations
+python -m src.main u6n    # Six Nations U20
+python -m src.main rc     # Rugby Championship
+python -m src.main ans    # Autumn Nations Series
+python -m src.main wri    # World Rugby Internationals
+
+# 欧州大会
+python -m src.main ecc    # EPCR Champions Cup
+python -m src.main ech    # EPCR Challenge Cup
+python -m src.main t14    # Top 14
+python -m src.main gp     # Gallagher Premiership
+python -m src.main urc    # United Rugby Championship
+
+# 国内リーグ
+python -m src.main jrlo   # Japan Rugby League One (全Division)
+python -m src.main srp    # Super Rugby Pacific
 ```
 
-## 取得パス一覧 (itsuneru向け)
+### サービス実行
+
+```bash
+# チーム抽出・統合
+python -m src.main extract-teams
+
+# 重複チェック
+python -m src.main validate-duplicates
+
+# 大会メタデータ生成
+python -m src.main generate-metadata
+
+# 全大会を一括スクレイピング
+python scripts/automation/scrape_all.py
+```
+
+## 📡 取得パス一覧 (itsuneru向け)
 
 **📖 詳細仕様**: [JSON_SCHEMA.md](docs/JSON_SCHEMA.md) | **💡 使用例**: [USAGE_EXAMPLES.md](docs/USAGE_EXAMPLES.md)
-
-itsuneru 側から取得する場合は、以下の JSON パスを参照してください。
 
 ### GitHub Raw URL形式
 
 ```
-https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/<competition-id>.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/{comp_id}/{season}.json
 https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/competitions.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/teams.json
 ```
 
-### 大会別データパス
+### 大会別データパス例
 
-- Six Nations: `data/matches/six-nations.json`
-- Women's Six Nations: `data/matches/six-nations-women.json`
-- Six Nations U20: `data/matches/six-nations-u20.json`
-- EPCR Champions Cup: `data/matches/epcr-champions.json`
-- EPCR Challenge Cup: `data/matches/epcr-challenge.json`
-- Top 14: `data/matches/top14.json`
-- Japan Rugby League One: `data/matches/league-one.json`
-- Gallagher Premiership: `data/matches/gallagher-premiership.json`
-- United Rugby Championship: `data/matches/urc.json`
-- Super Rugby Pacific: `data/matches/super-rugby-pacific.json`
-- The Rugby Championship: `data/matches/rugby-championship.json`
-- Autumn Nations Series: `data/matches/autumn-nations-series.json`
-- World Rugby Internationals: `data/matches/world-rugby-internationals.json`
+- Men's Six Nations: `data/matches/m6n/2025.json`
+- Women's Six Nations: `data/matches/w6n/2025.json`
+- Gallagher Premiership: `data/matches/gp/2025.json`
+- Japan Rugby League One D1: `data/matches/jrlo_div1/2026.json`
+- World Rugby Internationals: `data/matches/wri/2026.json`
+
+**注**: 各大会の正確な `data_paths` は `data/competitions.json` の各エントリを参照してください。
 
 ### TypeScript 型定義
 

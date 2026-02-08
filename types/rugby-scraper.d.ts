@@ -1,52 +1,139 @@
 /**
  * rugby_scraper JSON インターフェイス型定義
  *
- * @version 1.1
+ * @version 1.2
  * @description itsuneru プロジェクトが rugby_scraper から取得する JSON の型定義
  * @see https://github.com/Kou-ISK/rugby_scraper/blob/main/docs/JSON_SCHEMA.md
+ * @updated 2026-02-06 - 新ID体系とRESTfulディレクトリ構造に対応
  */
 
 /**
- * 試合データ（data/matches/*.json）
+ * 試合データ（data/matches/{comp_id}/{season}.json）
  */
 export interface Match {
   /**
-   * 試合日時（現地時間）
-   * @format "YYYY-MM-DD HH:MM:SS"
-   * @example "2024-12-21 12:10:00"
+   * 試合ID（ユニークID）
+   * @description {competition_id}-{kickoff_utc}-{home_team}-{away_team}-{hash} 形式
+   * @example "w6n-2026-03-14t15:00:00z-eng-fra-cf4bd079cf"
    */
-  date: string;
+  match_id: string;
+
+  /**
+   * 大会名
+   * @example "Women's Six Nations"
+   */
+  competition: string;
+
+  /**
+   * 大会ID（新形式）
+   * @description 性別を明示した略称コード
+   * @example "w6n", "m6n", "jrlo"
+   */
+  competition_id: string;
+
+  /**
+   * シーズン
+   * @example "2026", "2026-2027"
+   */
+  season: string;
+
+  /**
+   * ラウンド
+   * @example "Round 1", "Pool A"
+   */
+  round: string;
+
+  /**
+   * 試合ステータス
+   * @example "scheduled", "live", "completed"
+   */
+  status: string;
+
+  /**
+   * キックオフ日時（現地時間、ISO8601形式）
+   * @example "2026-03-14T15:00:00+00:00"
+   */
+  kickoff: string;
+
+  /**
+   * キックオフ日時（UTC、ISO8601形式）
+   * @example "2026-03-14T15:00:00Z"
+   */
+  kickoff_utc: string;
+
+  /**
+   * タイムゾーン（IANA形式）
+   * @example "Europe/London", "Asia/Tokyo"
+   */
+  timezone: string;
+
+  /**
+   * タイムゾーン情報のソース
+   * @example "home_team_default", "venue_detected", "manual"
+   */
+  timezone_source: string;
 
   /**
    * 会場名
-   * @example "三重交通G スポーツの杜 鈴鹿 (三重県)"
+   * @example "Twickenham Stadium"
    */
   venue: string;
 
   /**
-   * ホームチーム名
-   * @example "三重ホンダヒート"
+   * ホームチーム名（表示名）
+   * @example "ENG", "England"
    */
   home_team: string;
 
   /**
-   * アウェイチーム名
-   * @example "ブラックラムズ東京"
+   * アウェイチーム名（表示名）
+   * @example "FRA", "France"
    */
   away_team: string;
 
   /**
-   * 放送局リスト
-   * @description 配列または空文字列。スクレイパーによって異なる
-   * @example ["J SPORTS 3", "三重テレビ"]
+   * ホームチームID（新形式）
+   * @description {comp_id}-{number} 形式
+   * @example "w6n-1", "jrlo-1"
    */
-  broadcasters: string[] | string;
+  home_team_id: string;
+
+  /**
+   * アウェイチームID（新形式）
+   * @description {comp_id}-{number} 形式
+   * @example "w6n-2", "jrlo-2"
+   */
+  away_team_id: string;
 
   /**
    * 試合詳細ページURL
-   * @example "https://league-one.jp/match/27447"
+   * @example "https://www.sixnationsrugby.com/en/w6n/fixtures/2026/..."
    */
-  url: string;
+  match_url: string;
+
+  /**
+   * 放送局リスト
+   * @example ["J SPORTS 3", "三重テレビ"]
+   */
+  broadcasters: string[];
+
+  /**
+   * データソース名
+   * @example "Six Nations Rugby"
+   */
+  source_name: string;
+
+  /**
+   * データソースURL
+   * @example "https://www.sixnationsrugby.com/en/w6n/fixtures/2026"
+   */
+  source_url: string;
+
+  /**
+   * データソース種別
+   * @example "official", "third-party"
+   */
+  source_type: string;
 }
 
 /**
@@ -55,13 +142,79 @@ export interface Match {
 export type Matches = Match[];
 
 /**
+ * チームマスタデータ（data/teams.json）
+ */
+export interface Team {
+  /**
+   * チームID（新形式）
+   * @description {comp_id}-{number} 形式
+   * @example "w6n-1", "m6n-2", "jrlo-1"
+   */
+  id: string;
+
+  /**
+   * 所属大会ID
+   * @example "w6n", "m6n", "jrlo"
+   */
+  competition_id: string;
+
+  /**
+   * チーム名（英語）
+   * @example "England", "Saitama Wild Knights"
+   */
+  name: string;
+
+  /**
+   * チーム名（日本語）
+   * @example "イングランド", "埼玉ワイルドナイツ"
+   */
+  name_ja: string;
+
+  /**
+   * チーム略称
+   * @example "ENG", "Wild Knights"
+   */
+  short_name: string;
+
+  /**
+   * 国名
+   * @example "England", "Japan"
+   */
+  country: string;
+
+  /**
+   * ディビジョン（クラブチームの場合）
+   * @example "Division 1"
+   */
+  division: string;
+
+  /**
+   * チームロゴURL
+   * @description 外部URL（TheSportsDB等）
+   */
+  logo_url: string;
+
+  /**
+   * チームバッジURL
+   * @description 外部URL（TheSportsDB等）
+   */
+  badge_url: string;
+}
+
+/**
+ * チームマスタ
+ * @description チームIDをキーとするレコード型
+ */
+export type Teams = Record<string, Team>;
+
+/**
  * 大会メタデータ（data/competitions.json）
  */
 export interface Competition {
   /**
-   * 大会ID（ケバブケース）
-   * @description 試合データファイル名と対応
-   * @example "league-one"
+   * 大会ID（新形式）
+   * @description 性別を明示した略称コード
+   * @example "m6n", "w6n", "jrlo"
    */
   id: string;
 
@@ -172,9 +325,17 @@ export interface Competition {
 
   /**
    * 試合データファイルの相対パス配列
-   * @example ["data/matches/league-one.json"]
+   * @description 新ディレクトリ構造に対応
+   * @example ["data/matches/w6n/2026.json", "data/matches/w6n/2025.json"]
    */
   data_paths: string[];
+
+  /**
+   * 参加チームID配列（新形式）
+   * @description {comp_id}-{number} 形式のチームID配列
+   * @example ["w6n-1", "w6n-2", "w6n-3", "w6n-4", "w6n-5", "w6n-6"]
+   */
+  team_ids: string[];
 
   /**
    * 視聴情報
@@ -182,11 +343,12 @@ export interface Competition {
   coverage: Coverage;
 
   /**
-   * 参加チーム名配列
+   * 参加チーム名配列（旧形式、非推奨）
+   * @deprecated team_ids を使用してください
    * @description 空配列の場合あり
    * @example ["三重ホンダヒート", "ブラックラムズ東京"]
    */
-  teams: string[];
+  teams?: string[];
 
   /**
    * データサマリー
@@ -342,10 +504,29 @@ export interface TeamBranding {
 export type TeamBrandings = Record<string, TeamBranding[]>;
 
 /**
- * 大会ID一覧
- * @description itsuneru が参照可能な大会ID
+ * 大会ID一覧（新形式）
+ * @description itsuneru が参照可能な大会ID - 性別を明示した略称コード
  */
 export type CompetitionId =
+  | 'm6n' // Men's Six Nations
+  | 'w6n' // Women's Six Nations
+  | 'u6n' // U20 Six Nations
+  | 'ecc' // EPCR Champions Cup
+  | 'ech' // EPCR Challenge Cup
+  | 't14' // Top 14
+  | 'jrlo' // Japan Rugby League One
+  | 'gp' // Gallagher Premiership
+  | 'urc' // United Rugby Championship
+  | 'srp' // Super Rugby Pacific
+  | 'trc' // The Rugby Championship
+  | 'ans' // Autumn Nations Series
+  | 'wri'; // World Rugby Internationals
+
+/**
+ * 旧大会ID（非推奨）
+ * @deprecated 新しい CompetitionId を使用してください
+ */
+export type LegacyCompetitionId =
   | 'six-nations'
   | 'six-nations-women'
   | 'six-nations-u20'
@@ -361,13 +542,22 @@ export type CompetitionId =
   | 'world-rugby-internationals';
 
 /**
- * GitHub Raw URL を生成するヘルパー型
+ * GitHub Raw URL を生成するヘルパー型（新構造対応）
+ * @description 新ディレクトリ構造: data/matches/{comp_id}/{season}.json
  */
-export type MatchesUrl<T extends CompetitionId> =
-  `https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/${T}.json`;
+export type MatchesUrl<
+  T extends CompetitionId,
+  S extends string = string,
+> = `https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/main/data/matches/${T}/${S}.json`;
+
+/**
+ * チームマスタURL
+ */
+export type TeamsUrl =
+  'https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/main/data/teams.json';
 
 /**
  * 大会メタデータURL
  */
 export type CompetitionsUrl =
-  'https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/competitions.json';
+  'https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/main/data/competitions.json';

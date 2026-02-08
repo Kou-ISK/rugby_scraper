@@ -9,7 +9,15 @@
 ### エンドポイント
 
 ```
-https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/<competition-id>.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/{comp_id}/{season}.json
+```
+
+例:
+
+```
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/m6n/2025.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/gp/2025.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/jrlo_div1/2026.json
 ```
 
 ### スキーマ
