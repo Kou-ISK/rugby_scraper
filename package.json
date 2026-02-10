@@ -1,0 +1,15 @@
+{
+  "name": "@kou-isk/rugby-scraper",
+  "version": "1.3.0",
+  "description": "Type definitions and data interfaces for rugby_scraper JSON outputs",
+  "private": true,
+  "files": [
+    "types"
+  ],
+  "types": "types/rugby-scraper.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/rugby-scraper.d.ts"
+    }
+  }
+}
