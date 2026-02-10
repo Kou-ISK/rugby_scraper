@@ -2,7 +2,7 @@
 
 このドキュメントは、itsuneru プロジェクトが rugby_scraper から取得する JSON のインターフェイス定義です。
 
-## 1. 試合データ（`data/matches/*.json`）
+## 1. 試合データ（`data/matches/{comp_id}/{season}.json`）
 
 各大会の試合データを含む配列。大会・チームのIDはマスタ（`data/competitions.json` / `data/teams.json`）を基に付与します。
 
@@ -24,11 +24,8 @@ https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/jrlo-d
 
 ```typescript
 interface Match {
-  // 安定した一意ID（competition_id + kickoff_utc + home/awayで生成）
+  // 安定した一意ID（スクレイパーが生成）
   match_id: string;
-
-  // 大会名
-  competition: string;
 
   // 大会ID（マスタの id と一致）
   competition_id: string;
@@ -51,9 +48,6 @@ interface Match {
   // タイムゾーン
   timezone: string;
 
-  // タイムゾーンの決定根拠（例: "home_team_default"）
-  timezone_source: string;
-
   // 会場
   venue: string;
 
@@ -75,10 +69,8 @@ interface Match {
   // 放送局リスト
   broadcasters: string[];
 
-  // 取得元情報
-  source_name: string;
-  source_url: string;
-  source_type: string;
+  // ディビジョン（JRLOなど）
+  division?: string;
 }
 
 type Matches = Match[];
@@ -89,26 +81,21 @@ type Matches = Match[];
 ```json
 [
   {
-    "match_id": "m6n-2026-rd1-1",
-    "competition": "Six Nations",
-    "competition_id": "m6n",
+    "match_id": "w6n-2026-1",
+    "competition_id": "w6n",
     "season": "2026",
-    "round": "Round 1",
-    "status": "scheduled",
-    "kickoff": "2026-02-05T21:10:00+01:00",
-    "kickoff_utc": "2026-02-05T20:10:00Z",
+    "round": "",
+    "status": "",
+    "kickoff": "2026-04-11T11:25:00+02:00",
+    "kickoff_utc": "2026-04-11T09:25:00Z",
     "timezone": "Europe/Paris",
-    "timezone_source": "home_team_default",
-    "venue": "Stade de France",
+    "venue": "Stade des Alpes",
     "home_team": "FRA",
-    "away_team": "IRE",
-    "home_team_id": "fra",
-    "away_team_id": "ire",
-    "match_url": "https://www.sixnationsrugby.com/en/m6n/fixtures/202600/france-v-ireland-05022026-2110/build-up",
-    "broadcasters": [],
-    "source_name": "Six Nations Rugby",
-    "source_url": "https://www.sixnationsrugby.com/en/m6n/fixtures/2026",
-    "source_type": "official"
+    "away_team": "ITA",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/france-women-v-italy-women-11042026-1125/build-up",
+    "broadcasters": []
   }
 ]
 ```
@@ -117,8 +104,7 @@ type Matches = Match[];
 
 | フィールド        | 型         | 必須 | 説明                                                                     |
 | ----------------- | ---------- | ---- | ------------------------------------------------------------------------ |
-| `match_id`        | `string`   | ✓    | 安定ID（`competition_id`/`kickoff_utc`/`home_team`/`away_team`から生成） |
-| `competition`     | `string`   | ✓    | 大会名                                                                   |
+| `match_id`        | `string`   | ✓    | 安定ID（スクレイパーが生成）                                           |
 | `competition_id`  | `string`   | ✓    | 大会ID（マスタと一致）                                                   |
 | `season`          | `string`   | -    | シーズン                                                                 |
 | `round`           | `string`   | -    | ラウンド/節                                                              |
@@ -126,7 +112,6 @@ type Matches = Match[];
 | `kickoff`         | `string`   | ✓    | キックオフ日時（ローカル、ISO8601）                                      |
 | `kickoff_utc`     | `string`   | ✓    | キックオフ日時（UTC、ISO8601）                                           |
 | `timezone`        | `string`   | ✓    | タイムゾーン                                                             |
-| `timezone_source` | `string`   | -    | タイムゾーン決定根拠                                                     |
 | `venue`           | `string`   | ✓    | 会場                                                                     |
 | `home_team`       | `string`   | ✓    | ホームチーム表示名                                                       |
 | `away_team`       | `string`   | ✓    | アウェイチーム表示名                                                     |
@@ -134,15 +119,14 @@ type Matches = Match[];
 | `away_team_id`    | `string`   | -    | アウェイチームID（マスタと一致）                                         |
 | `match_url`       | `string`   | ✓    | 試合詳細URL                                                              |
 | `broadcasters`    | `string[]` | ✓    | 放送局配列（空配列可）                                                   |
-| `source_name`     | `string`   | ✓    | 取得元名                                                                 |
-| `source_url`      | `string`   | ✓    | 取得元URL                                                                |
-| `source_type`     | `string`   | ✓    | 取得元種別（official/third-partyなど）                                   |
+| `division`        | `string`   | -    | ディビジョン（JRLOなど）                                                 |
 
 ### 注意事項
 
-1. **日時形式**: タイムゾーン情報は含まれない。`competitions.json` の `timezone_default` を参照
-2. **broadcasters**: スクレイパーによって `string[]` または `""` (空文字列) の場合あり
-3. **チーム名**: 大会によって略称（例: `ENG`, `FRA`）またはフル名（例: `三重ホンダヒート`）
+1. **日時形式**: `kickoff` はオフセット付きISO8601、`timezone` は IANA 形式
+2. **broadcasters**: 常に配列（空配列を含む）
+3. **home_team_id/away_team_id**: 未確定の場合は空文字列
+4. **チーム名**: 大会によって略称（例: `ENG`, `FRA`）またはフル名（例: `三重ホンダヒート`）
 
 ---
 
@@ -217,7 +201,7 @@ interface Competition {
   // 試合URLテンプレート
   match_url_template: string;
 
-  // 試合データファイルパス配列
+  // 試合データファイル/ディレクトリの相対パス配列
   data_paths: string[];
 
   // 視聴情報
@@ -450,22 +434,32 @@ type Competitions = Competition[];
 
 ```json
 {
-  "fra": {
-    "id": "fra",
-    "name": "France",
-    "short_name": "FRA",
-    "country": "France"
+  "premier_1": {
+    "id": "premier_1",
+    "competition_id": "premier",
+    "name": "Leicester Tigers",
+    "name_ja": "",
+    "short_name": "Leicester",
+    "country": "England",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/...",
+    "badge_url": "https://media-cdn.incrowdsports.com/..."
   },
-  "ire": {
-    "id": "ire",
-    "name": "Ireland",
-    "short_name": "IRE",
-    "country": "Ireland"
+  "NT-M-ENG": {
+    "id": "NT-M-ENG",
+    "competition_id": "m6n",
+    "name": "England",
+    "name_ja": "イングランド",
+    "short_name": "ENG",
+    "country": "England",
+    "division": "",
+    "logo_url": "",
+    "badge_url": ""
   }
 }
 ```
 
-`home_team_id` / `away_team_id` はこのマスタのキーを参照します。
+`home_team_id` / `away_team_id` はこのマスタのキーを参照します（未確定の場合は空文字列）。
 
 ### 3.3 チームロゴ（大会別）（`data/team_logos.json`）
 
@@ -479,21 +473,21 @@ itsuneru が参照可能な大会IDとそのデータパス：
 
 | 大会ID            | データパス                        | 大会名                        |
 | ----------------- | --------------------------------- | ----------------------------- |
-| `m6n`             | `data/matches/m6n/2026.json`      | Six Nations                   |
-| `w6n`             | `data/matches/w6n/2026.json`      | Women's Six Nations           |
-| `u6n`             | `data/matches/u6n/2026.json`      | Six Nations U20               |
-| `epcr-champions`  | `data/matches/epcr-champions/...` | EPCR Champions Cup            |
-| `epcr-challenge`  | `data/matches/epcr-challenge/...` | EPCR Challenge Cup            |
-| `t14`             | `data/matches/t14/...`            | Top 14                        |
-| `jrlo-div1`       | `data/matches/jrlo-div1/...`      | Japan Rugby League One (D1)   |
-| `jrlo-div2`       | `data/matches/jrlo-div2/...`      | Japan Rugby League One (D2)   |
-| `jrlo-div3`       | `data/matches/jrlo-div3/...`      | Japan Rugby League One (D3)   |
-| `premier`         | `data/matches/premier/...`        | Gallagher Premiership         |
-| `urc`             | `data/matches/urc/...`            | United Rugby Championship     |
-| `srp`             | `data/matches/srp/...`            | Super Rugby Pacific           |
-| `trc`             | `data/matches/trc/...`            | The Rugby Championship        |
-| `ans`             | `data/matches/ans/...`            | Autumn Nations Series         |
-| `wr`              | `data/matches/wr/...`             | World Rugby Internationals    |
+| `m6n`             | `data/matches/m6n`                | Six Nations                   |
+| `w6n`             | `data/matches/w6n`                | Women's Six Nations           |
+| `u6n`             | `data/matches/u6n`                | Six Nations U20               |
+| `epcr-champions`  | `data/matches/epcr-champions`     | EPCR Champions Cup            |
+| `epcr-challenge`  | `data/matches/epcr-challenge`     | EPCR Challenge Cup            |
+| `t14`             | `data/matches/t14`                | Top 14                        |
+| `jrlo-div1`       | `data/matches/jrlo-div1`          | Japan Rugby League One (D1)   |
+| `jrlo-div2`       | `data/matches/jrlo-div2`          | Japan Rugby League One (D2)   |
+| `jrlo-div3`       | `data/matches/jrlo-div3`          | Japan Rugby League One (D3)   |
+| `premier`         | `data/matches/premier`            | Gallagher Premiership         |
+| `urc`             | `data/matches/urc`                | United Rugby Championship     |
+| `srp`             | `data/matches/srp`                | Super Rugby Pacific           |
+| `trc`             | `data/matches/trc`                | The Rugby Championship        |
+| `ans`             | `data/matches/ans`                | Autumn Nations Series         |
+| `wr`              | `data/matches/wr`                 | World Rugby Internationals    |
 
 ---
 
@@ -501,8 +495,8 @@ itsuneru が参照可能な大会IDとそのデータパス：
 
 ### 現在のバージョン
 
-- **Schema Version**: 1.1
-- **Last Updated**: 2026-02-05
+- **Schema Version**: 1.2
+- **Last Updated**: 2026-02-10
 
 ### 互換性ポリシー
 
@@ -533,86 +527,8 @@ itsuneru が参照可能な大会IDとそのデータパス：
 
 ### TypeScript型定義ファイル
 
-```typescript
-// types/rugby-scraper.d.ts
-
-export interface Match {
-  date: string;
-  venue: string;
-  home_team: string;
-  away_team: string;
-  broadcasters: string[] | string;
-  url: string;
-}
-
-export type Matches = Match[];
-
-export interface Competition {
-  id: string;
-  name: string;
-  short_name: string;
-  sport: 'rugby union';
-  category: 'international' | 'club';
-  gender: 'men' | 'women' | 'mixed';
-  age_grade: 'senior' | 'u20';
-  tier: 'tier-1' | 'tier-2' | 'tier-3';
-  region: string;
-  governing_body: string;
-  organizer: string;
-  official_sites: string[];
-  official_feeds: string[];
-  logo_url?: string;
-  logo_repo_path?: string;
-  license_key?: string;
-  timezone_default: string;
-  season_pattern: 'annual' | 'variable';
-  match_url_template: string;
-  data_paths: string[];
-  coverage: Coverage;
-  teams: string[];
-  data_summary: DataSummary;
-}
-
-export interface Coverage {
-  broadcast_regions: BroadcastRegion[];
-  analysis_providers: AnalysisProvider[];
-  notes?: string;
-}
-
-export interface BroadcastRegion {
-  region: string;
-  providers: string[];
-  official_source: string;
-}
-
-export interface AnalysisProvider {
-  name: string;
-  official_source: string;
-}
-
-export interface DataSummary {
-  match_count: number;
-  seasons: string[];
-  date_range: {
-    start: string;
-    end: string;
-  };
-  last_updated: string;
-}
-
-export type Competitions = Competition[];
-
-export interface TeamBranding {
-  team: string;
-  badge_url?: string;
-  logo_url?: string;
-  logo_repo_path?: string;
-  license_key?: string;
-}
-
-// 大会IDをキーにしたチームブランド情報のレコード
-export type TeamBrandings = Record<string, TeamBranding[]>;
-```
+- 型定義は `types/rugby-scraper.d.ts` に集約
+- 使い方は `docs/TYPESCRIPT_TYPES.md` を参照
 
 ### フェッチ例
 

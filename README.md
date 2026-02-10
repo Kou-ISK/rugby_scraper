@@ -12,6 +12,7 @@ itsuneru 向けに世界のラグビー試合日程を取得するスクレイ�
   - 使用例
 - **[プロジェクト構造](docs/ARCHITECTURE.md)** - スクレイパー設計とディレクトリ構成
 - **[使用例](docs/USAGE_EXAMPLES.md)** - itsuneru での実装サンプル
+- **[TypeScript 型定義ガイド](docs/TYPESCRIPT_TYPES.md)** - 型定義の取り込み方法と利用例
 
 ## 📂 プロジェクト構造
 
@@ -87,7 +88,7 @@ scripts/
 
 **チームID**: 形式
 
-- 国代表: `NT_{GENDER}_{COUNTRY}` (例: `NT_M_ENG`, `NT_W_FRA`)
+- 国代表: `NT-{M|W|U20}-{COUNTRY}[-{VARIANT}]` (例: `NT-M-ENG`, `NT-W-FRA`)
 - クラブ: `{comp_id}_{number}` (例: `premier_1`, `jrlo-div1_1`)
 
 ## 取得対象リーグと公式ソース
@@ -140,12 +141,21 @@ scripts/
 ```json
 [
   {
-    "date": "2024-12-21 12:10:00",
-    "venue": "三重交通G スポーツの杜 鈴鹿 (三重県)",
-    "home_team": "三重ホンダヒート",
-    "away_team": "ブラックラムズ東京",
-    "broadcasters": ["J SPORTS 3", "三重テレビ"],
-    "url": "https://league-one.jp/match/27447"
+    "match_id": "w6n-2026-1",
+    "competition_id": "w6n",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2026-04-11T11:25:00+02:00",
+    "kickoff_utc": "2026-04-11T09:25:00Z",
+    "timezone": "Europe/Paris",
+    "venue": "Stade des Alpes",
+    "home_team": "FRA",
+    "away_team": "ITA",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/france-women-v-italy-women-11042026-1125/build-up",
+    "broadcasters": []
   }
 ]
 ```
@@ -170,29 +180,25 @@ scripts/
 ]
 ```
 
-## 出力JSONの共通スキーマ（非推奨）
-
-> **注意**: このセクションは古い記述です。最新の仕様は [JSON_SCHEMA.md](docs/JSON_SCHEMA.md) を参照してください。
+## 出力JSONの共通スキーマ（参考）
 
 各スクレイパーは以下の統一フォーマットで出力します。
 
-- match_id: 公式ID（あれば）
-- competition: 大会名
-- competition_id: 公式ID（あれば）
+- match_id: スクレイパーが生成する安定ID
+- competition_id: 大会ID（`competitions.json` と一致）
 - season: シーズン
 - round: ラウンド名
 - status: 試合ステータス
 - kickoff: 現地時間のISO8601 (TZ付き)
 - kickoff_utc: UTCのISO8601
-- timezone: タイムゾーン名またはUTCオフセット
-- timezone_source: タイムゾーン推定の根拠
+- timezone: タイムゾーン名（IANA形式）
 - venue: 会場名
 - home_team: ホームチーム
 - away_team: アウェイチーム
-- home_team_id / away_team_id: 公式ID（あれば）
+- home_team_id / away_team_id: チームID（未確定の場合は空文字列）
 - match_url: 公式試合詳細URL（あれば）
-- broadcasters: 放送局
-- source_name / source_url / source_type: 出典メタ情報
+- broadcasters: 放送局（常に配列）
+- division: ディビジョン（JRLOなど、必要な場合のみ）
 
 ## 注意事項
 
@@ -221,6 +227,19 @@ scripts/
 4. 大会マスタ更新
 
 **どちらでも `team_id` を保証できるよう Backfill コマンドを用意しています。**
+
+## 🤖 GitHub Actions
+
+`data` ブランチに結果を保存するワークフローを用意しています。
+
+- **試合取得** (`.github/workflows/match_scrape.yml`)
+  - 手動実行: `mode=single/all`、`competition` を指定
+  - 定期実行: 週次（UTC 日曜 0:00 / JST 日曜 9:00）
+  - 実行後に `generate-metadata` を実行
+- **チームマスタ更新** (`.github/workflows/team_master_update.yml`)
+  - 手動実行のみ
+- **大会マスタ更新** (`.github/workflows/competition_master_update.yml`)
+  - 手動実行のみ
 
 ### 1) 試合データ取得
 
@@ -414,6 +433,8 @@ import type {
 ```
 
 👉 型定義ファイル: [types/rugby-scraper.d.ts](types/rugby-scraper.d.ts)
+
+👉 使い方ガイド: [docs/TYPESCRIPT_TYPES.md](docs/TYPESCRIPT_TYPES.md)
 
 ## 大会メタデータ
 

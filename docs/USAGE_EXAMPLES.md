@@ -54,8 +54,11 @@ async function fetchCompetition(
 /**
  * 特定大会の試合データを取得
  */
-async function fetchMatches(competitionId: CompetitionId): Promise<Matches> {
-  const url = `https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/${competitionId}.json`;
+async function fetchMatches(
+  competitionId: CompetitionId,
+  season: string,
+): Promise<Matches> {
+  const url = `https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/${competitionId}/${season}.json`;
 
   const response = await fetch(url);
   if (!response.ok) {
@@ -72,11 +75,12 @@ async function fetchMatches(competitionId: CompetitionId): Promise<Matches> {
  */
 async function fetchMultipleMatches(
   competitionIds: CompetitionId[],
+  season: string,
 ): Promise<Record<CompetitionId, Matches>> {
   const results = await Promise.allSettled(
     competitionIds.map(async (id) => ({
       id,
-      matches: await fetchMatches(id),
+      matches: await fetchMatches(id, season),
     })),
   );
 
@@ -119,8 +123,8 @@ function getUpcomingMatches(
   fromDate: Date = new Date(),
 ): Matches {
   return matches.filter((match) => {
-    const matchDate = new Date(match.date);
-    return matchDate >= fromDate;
+    const kickoffUtc = new Date(match.kickoff_utc);
+    return kickoffUtc >= fromDate;
   });
 }
 
@@ -135,7 +139,12 @@ async function getAllUpcomingMatches(): Promise<Map<string, Matches>> {
     if (competition.data_paths.length === 0) continue;
 
     try {
-      const matches = await fetchMatches(competition.id as CompetitionId);
+      // data_paths はディレクトリの場合が多いので、シーズンを明示する
+      const season = '2026';
+      const matches = await fetchMatches(
+        competition.id as CompetitionId,
+        season,
+      );
       const upcoming = getUpcomingMatches(matches);
 
       if (upcoming.length > 0) {
@@ -153,7 +162,7 @@ async function getAllUpcomingMatches(): Promise<Map<string, Matches>> {
 ### 3.3 タイムゾーン変換
 
 ```typescript
-import { zonedTimeToUtc, utcToZonedTime, format } from 'date-fns-tz';
+import { utcToZonedTime, format } from 'date-fns-tz';
 
 /**
  * 試合時刻をユーザーのタイムゾーンに変換
@@ -163,17 +172,11 @@ function convertMatchTime(
   competition: Competition,
   userTimezone: string = 'Asia/Tokyo',
 ): string {
-  // 試合時刻を大会のタイムゾーンでパース
-  const matchDateInCompetitionTz = zonedTimeToUtc(
-    match.date,
-    competition.timezone_default,
-  );
+  // kickoff はオフセット付きISO8601なので Date でパース可能
+  const matchDateUtc = new Date(match.kickoff);
 
   // ユーザーのタイムゾーンに変換
-  const matchDateInUserTz = utcToZonedTime(
-    matchDateInCompetitionTz,
-    userTimezone,
-  );
+  const matchDateInUserTz = utcToZonedTime(matchDateUtc, userTimezone);
 
   return format(matchDateInUserTz, 'yyyy-MM-dd HH:mm:ss zzz', {
     timeZone: userTimezone,
@@ -181,20 +184,14 @@ function convertMatchTime(
 }
 ```
 
-### 3.4 broadcasters の正規化
+### 3.4 broadcasters の扱い
 
 ```typescript
 /**
- * broadcasters を配列形式に正規化
+ * broadcasters は常に配列（空配列含む）
  */
-function normalizeBroadcasters(broadcasters: string[] | string): string[] {
-  if (Array.isArray(broadcasters)) {
-    return broadcasters;
-  }
-  if (broadcasters === '' || broadcasters === null) {
-    return [];
-  }
-  return [broadcasters];
+function normalizeBroadcasters(broadcasters: string[]): string[] {
+  return broadcasters;
 }
 
 /**
@@ -278,9 +275,13 @@ const MatchSchedule: React.FC<MatchScheduleProps> = ({ competitionId }) => {
   const [matches, setMatches] = useState<Matches>([]);
   const [competition, setCompetition] = useState<Competition | null>(null);
   const [loading, setLoading] = useState(true);
+  const season = '2026';
 
   useEffect(() => {
-    Promise.all([fetchMatches(competitionId), fetchCompetition(competitionId)])
+    Promise.all([
+      fetchMatches(competitionId, season),
+      fetchCompetition(competitionId),
+    ])
       .then(([matchesData, competitionData]) => {
         setMatches(matchesData);
         setCompetition(competitionData);
@@ -310,15 +311,15 @@ const MatchSchedule: React.FC<MatchScheduleProps> = ({ competitionId }) => {
         <tbody>
           {upcomingMatches.map((match, idx) => (
             <tr key={idx}>
-              <td>{match.date}</td>
+              <td>{match.kickoff}</td>
               <td>{match.venue}</td>
               <td>
                 {match.home_team} vs {match.away_team}
               </td>
               <td>
-                {Array.isArray(match.broadcasters)
+                {match.broadcasters.length > 0
                   ? match.broadcasters.join(', ')
-                  : match.broadcasters || 'なし'}
+                  : 'なし'}
               </td>
             </tr>
           ))}
@@ -392,7 +393,7 @@ async function safelyFetchMatches(
   competitionId: CompetitionId,
 ): Promise<Matches | null> {
   try {
-    return await fetchMatches(competitionId);
+    return await fetchMatches(competitionId, '2026');
   } catch (error) {
     console.error(
       new RugbyScraperError(
@@ -425,13 +426,13 @@ describe('Rugby Scraper API', () => {
   });
 
   it('should fetch League One matches', async () => {
-    const matches = await fetchMatches('jrlo-div1');
+    const matches = await fetchMatches('jrlo-div1', '2026');
 
     expect(matches).toBeInstanceOf(Array);
 
     if (matches.length > 0) {
       const firstMatch = matches[0];
-      expect(firstMatch).toHaveProperty('date');
+      expect(firstMatch).toHaveProperty('kickoff');
       expect(firstMatch).toHaveProperty('venue');
       expect(firstMatch).toHaveProperty('home_team');
       expect(firstMatch).toHaveProperty('away_team');
@@ -439,7 +440,9 @@ describe('Rugby Scraper API', () => {
   });
 
   it('should handle invalid competition ID', async () => {
-    await expect(fetchMatches('invalid-id' as CompetitionId)).rejects.toThrow();
+    await expect(
+      fetchMatches('invalid-id' as CompetitionId, '2026'),
+    ).rejects.toThrow();
   });
 });
 ```
@@ -462,7 +465,7 @@ async function preloadAllData(): Promise<{
     .map((c) => c.id as CompetitionId);
 
   // 全試合データを並列取得
-  const matches = await fetchMultipleMatches(competitionIds);
+  const matches = await fetchMultipleMatches(competitionIds, '2026');
 
   return { competitions, matches };
 }
@@ -479,7 +482,7 @@ const useMatches = (competitionId: CompetitionId | null) => {
     if (!competitionId) return;
 
     setLoading(true);
-    fetchMatches(competitionId)
+    fetchMatches(competitionId, '2026')
       .then(setMatches)
       .finally(() => setLoading(false));
   }, [competitionId]);
@@ -490,8 +493,8 @@ const useMatches = (competitionId: CompetitionId | null) => {
 
 ## 9. 注意事項
 
-1. **タイムゾーン処理**: 試合時刻は大会の `timezone_default` で解釈する必要があります
-2. **broadcasters の型**: `string[]` または `string` の両方に対応してください
+1. **タイムゾーン処理**: `kickoff` はオフセット付きISO8601、`timezone` は IANA 形式です
+2. **broadcasters の型**: 常に `string[]`（空配列の場合あり）
 3. **空データ**: `teams`, `seasons`, `data_paths` が空配列の場合があります
 4. **キャッシング**: 頻繁なアクセスを避けるため、適切にキャッシュしてください
 5. **エラー処理**: ネットワークエラーに備えて適切なエラーハンドリングを実装してください

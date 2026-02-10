@@ -232,6 +232,17 @@ python scripts/automation/scrape_all.py
 bash scripts/automation/scrape_remaining.sh
 ```
 
+### GitHub Actions
+
+`data` ブランチに結果を保存するワークフローを用意しています。
+
+- **試合取得**: `.github/workflows/match_scrape.yml`
+  - 手動: `mode=single/all`、`competition` 指定
+  - 定期: 週次（UTC 日曜 0:00 / JST 日曜 9:00）
+  - 実行後に `generate-metadata`
+- **チームマスタ更新**: `.github/workflows/team_master_update.yml`
+- **大会マスタ更新**: `.github/workflows/competition_master_update.yml`
+
 ## 🔧 スクレイパーの実装
 
 ### BaseScraper クラス
@@ -321,7 +332,7 @@ class MyCompetitionScraper(BaseScraper):
             self.build_match(
                 home_team=item["home"],
                 away_team=item["away"],
-                date=item["date"],
+                kickoff=item["kickoff"],
                 venue=item["venue"],
                 # ... 他のフィールド
             )
@@ -445,9 +456,9 @@ python -m src.main generate-metadata
 
 ### データ形式
 
-1. **日時**: ISO8601形式（`date`, `date_utc`）
+1. **日時**: ISO8601形式（`kickoff`, `kickoff_utc`）
 2. **ID**: BaseScraper自動生成（`match_id`, `team_id`）
-3. **出典**: `source_name`, `source_url` を必ず記録
+3. **チームID**: `home_team_id` / `away_team_id` は未確定の場合は空文字列
 
 ### コード品質
 
