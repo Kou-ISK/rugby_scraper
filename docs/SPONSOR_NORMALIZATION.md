@@ -25,8 +25,8 @@
 **同名チームの統一**
 
 - Six Nations, Rugby Championship, World Rugby Internationals等の国際大会では、同名チームを同一視
-- 例: w6n の "England" と wri の "England" は同じチーム名に正規化される
-- チームIDは各大会で独立（w6n-1, wri-6 など）
+- 例: w6n の "England" と wr の "England" は同じチーム名に正規化される
+- チームIDはカテゴリ別に共通（例: `NT-W-ENG`, `NT-M-ENG`）
 
 **代表チームバリエーションの保持**
 
@@ -72,8 +72,8 @@ scraper = SixNationsScraper()
 
 # 【国際試合の同名チーム統一】
 # w6n: "England" → "England"
-# wri: "England" → "England"  # 同じチーム名に統一
-# チームIDは別: w6n-1, wri-6
+# wr: "England" → "England"  # 同じチーム名に統一
+# チームIDはカテゴリ別に共通: NT-W-ENG / NT-M-ENG
 
 # 【代表チームバリエーション保持】
 # "England A" → "England A"  # A代表は別チーム扱い
@@ -109,7 +109,7 @@ python3 scripts/test_dynamic_sponsor_detection.py
 - `u6n`: Six Nations U20
 - `trc`: The Rugby Championship
 - `ans`: Autumn Nations Series
-- `wri`: World Rugby Internationals
+- `wr`: World Rugby Internationals
 
 ### 同名チームの扱い
 
@@ -117,7 +117,7 @@ python3 scripts/test_dynamic_sponsor_detection.py
 
 - "England", "France", "Japan" など
 - 全ての国際大会で同じチーム名に正規化される
-- 各大会で独立したチームIDを持つ（例: w6n-1, wri-6）
+- カテゴリ別に共通のチームIDを持つ（例: NT-W-ENG, NT-M-ENG）
 
 **派生チーム（別チーム扱い）:**
 

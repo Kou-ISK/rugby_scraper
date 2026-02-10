@@ -2,11 +2,9 @@ from datetime import datetime
 from dateutil import parser as date_parser
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 from ..base import BaseScraper
 try:
     from zoneinfo import ZoneInfo
@@ -22,6 +20,7 @@ class SixNationsBaseScraper(BaseScraper):
         self._competition_id = competition_id  # BaseScraperの_competition_idを設定
         self.display_timezone = "Europe/London"
         self.driver = None
+        self._team_logos_cache = {}  # 公式サイトから取得したロゴURL
     
     def _get_competition_id(self) -> str:
         """Return competition ID for this scraper."""
@@ -30,7 +29,9 @@ class SixNationsBaseScraper(BaseScraper):
     def scrape(self):
         try:
             self._initialize_driver_and_load_page()
-            matches = self._extract_matches(BeautifulSoup(self.driver.page_source, 'html.parser'))
+            soup = BeautifulSoup(self.driver.page_source, 'html.parser')
+            self._extract_team_logos(soup)
+            matches = self._extract_matches(soup)
             
             # Assign match IDs
             if matches:
@@ -177,6 +178,26 @@ class SixNationsBaseScraper(BaseScraper):
             matches.extend(self._process_round_container(container))
 
         return matches
+
+    def _extract_team_logos(self, soup):
+        """公式サイトからチームロゴURLを取得してキャッシュ"""
+        try:
+            team_logos = {}
+            for img in soup.find_all('img', src=lambda s: s and 'contentfulproxy.stadion.io' in s):
+                team_name = (img.get('alt') or '').strip()
+                logo_url = (img.get('src') or '').strip()
+                if team_name and logo_url:
+                    team_logos[team_name] = {
+                        "logo_url": logo_url,
+                    }
+            if team_logos:
+                self._team_logos_cache = team_logos
+                print(f"✅ 公式サイトから{len(team_logos)}チームのロゴURLを取得")
+                self._apply_official_team_logos(team_logos, self._competition_id)
+            else:
+                print("⚠️  公式サイトからロゴURLを取得できませんでした")
+        except Exception as e:
+            print(f"⚠️  公式サイトからのロゴURL取得エラー: {e}")
 
     def _process_round_container(self, container):
         """
@@ -328,6 +349,7 @@ class SixNationsBaseScraper(BaseScraper):
 
     def _setup_driver(self):
         from selenium_stealth import stealth
+        self._prefer_selenium_manager()
         
         chrome_options = Options()
         chrome_options.add_argument("--headless=new")
@@ -337,9 +359,7 @@ class SixNationsBaseScraper(BaseScraper):
         chrome_options.add_argument("--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36")
 
         try:
-            driver_manager = ChromeDriverManager()
-            service = Service(driver_manager.install())
-            driver = webdriver.Chrome(service=service, options=chrome_options)
+            driver = webdriver.Chrome(options=chrome_options)
             
             # Selenium Stealthを適用（自動的にボット検出を回避）
             stealth(driver,
@@ -351,7 +371,8 @@ class SixNationsBaseScraper(BaseScraper):
                 fix_hairline=True,
             )
             
-            driver.set_page_load_timeout(60)
+            driver.set_page_load_timeout(120)
+            driver.set_script_timeout(120)
             driver.implicitly_wait(10)
             return driver
         except Exception as e:

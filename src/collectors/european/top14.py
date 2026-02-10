@@ -1,47 +1,27 @@
 import re
-import time
 import unicodedata
 from datetime import datetime
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
+import requests
 from bs4 import BeautifulSoup
 from ..base import BaseScraper
-from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import StaleElementReferenceException
 
 class Top14Scraper(BaseScraper):
     def __init__(self):
         super().__init__()
         self.base_url = "https://top14.lnr.fr"
         self.calendar_url = f"{self.base_url}/calendrier-et-resultats"
-        self.driver = None
-
-    def _setup_driver(self):
-        chrome_options = Options()
-        chrome_options.add_argument('--headless=new')
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_argument('--disable-dev-shm-usage')
-        chrome_options.add_argument('--window-size=1920,1080')
-        chrome_options.add_argument('--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-        
-        try:
-            driver_manager = ChromeDriverManager()
-            service = Service(driver_manager.install())
-            driver = webdriver.Chrome(service=service, options=chrome_options)
-            driver.set_page_load_timeout(30)
-            driver.implicitly_wait(10)
-            self.apply_timezone_override(driver, "Europe/Paris")
-            return driver
-        except Exception as e:
-            print(f"ドライバーの初期化エラー: {str(e)}")
-            raise
 
     def _extract_matches(self, soup):
         matches = []
+        # 公式ロゴを先に取得
+        team_logos = {}
+        for img in soup.select('img[src*="cdn.lnr.fr/club"]'):
+            team_name = (img.get('alt') or '').strip()
+            logo_url = (img.get('src') or '').strip()
+            if team_name and logo_url:
+                team_logos[team_name] = {"logo_url": logo_url}
+        if team_logos:
+            self._apply_official_team_logos(team_logos, "t14")
         
         # 日付を取得
         calendar_inner = soup.find('div', class_='calendar-results__inner')
@@ -149,49 +129,20 @@ class Top14Scraper(BaseScraper):
 
     def scrape(self):
         try:
-            self.driver = self._setup_driver()
-            self.driver.get(self.calendar_url)
-            print(f"ページにアクセス: {self.calendar_url}")
-            
-            # まずページの読み込みを待つ
-            WebDriverWait(self.driver, 30).until(
-                lambda d: d.execute_script('return document.readyState') == 'complete'
-            )
-            
-            # プルダウンの要素を探す
-            round_select = Select(self.driver.find_element(By.ID, 'Journée'))
-            round_options = [option.text for option in round_select.options]
-            
-            all_matches = []
-            
-            for round_option in round_options:
-                try:
-                    # 節を選択
-                    round_select = Select(self.driver.find_element(By.ID, 'Journée'))
-                    round_select.select_by_visible_text(round_option)
-                    time.sleep(3)
-                    
-                    # ページソースを取得してBeautifulSoupで解析
-                    html_content = self.driver.page_source
-                    soup = BeautifulSoup(html_content, 'html.parser')
-                    
-                    # 試合情報を直接取得
-                    matches = self._extract_matches(soup)
-                    all_matches.extend(matches)
-                    
-                except StaleElementReferenceException:
-                    time.sleep(2)
-                    continue
-            
-            print(f"処理した試合数: {len(all_matches)}")
-            return all_matches
-            
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+            response = requests.get(self.calendar_url, headers=headers, timeout=30)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, 'html.parser')
+
+            matches = self._extract_matches(soup)
+            print(f"処理した試合数: {len(matches)}")
+            return matches
+
         except Exception as e:
             print(f"スクレイピングエラー: {str(e)}")
             return None
-        finally:
-            if self.driver:
-                self.driver.quit()
 
     def _format_date_time(self, date_text, time_text):
         if not date_text:

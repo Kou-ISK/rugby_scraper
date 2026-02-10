@@ -21,7 +21,7 @@ GLOBAL_ANALYSIS_PROVIDERS = [
 
 BASE_COMPETITIONS = [
     {
-        "id": "six-nations",
+        "id": "m6n",
         "name": "Six Nations",
         "short_name": "6N",
         "sport": "rugby union",
@@ -37,7 +37,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Europe/London",
         "season_pattern": "annual",
         "match_url_template": "https://www.sixnationsrugby.com/en/m6n/fixtures/{season}/{slug}",
-        "data_paths": ["data/matches/six-nations.json"],
+        "data_paths": ["data/matches/m6n"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -71,7 +71,7 @@ BASE_COMPETITIONS = [
         },
     },
     {
-        "id": "six-nations-women",
+        "id": "w6n",
         "name": "Women's Six Nations",
         "short_name": "W6N",
         "sport": "rugby union",
@@ -87,7 +87,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Europe/London",
         "season_pattern": "annual",
         "match_url_template": "https://www.sixnationsrugby.com/en/w6n/fixtures/{season}/{slug}",
-        "data_paths": ["data/matches/six-nations-women.json"],
+        "data_paths": ["data/matches/w6n"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -101,7 +101,7 @@ BASE_COMPETITIONS = [
         },
     },
     {
-        "id": "six-nations-u20",
+        "id": "u6n",
         "name": "Six Nations U20",
         "short_name": "U20 6N",
         "sport": "rugby union",
@@ -117,7 +117,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Europe/London",
         "season_pattern": "annual",
         "match_url_template": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/{season}/{slug}",
-        "data_paths": ["data/matches/six-nations-u20.json"],
+        "data_paths": ["data/matches/u6n"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -147,7 +147,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Europe/Paris",
         "season_pattern": "annual",
         "match_url_template": "https://www.epcrugby.com/champions-cup/matches/{matchId}",
-        "data_paths": ["data/matches/epcr-champions.json"],
+        "data_paths": ["data/matches/epcr-champions"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -182,7 +182,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Europe/Paris",
         "season_pattern": "annual",
         "match_url_template": "https://www.epcrugby.com/challenge-cup/matches/{matchId}",
-        "data_paths": ["data/matches/epcr-challenge.json"],
+        "data_paths": ["data/matches/epcr-challenge"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -201,7 +201,7 @@ BASE_COMPETITIONS = [
         },
     },
     {
-        "id": "top14",
+        "id": "t14",
         "name": "Top 14",
         "short_name": "Top 14",
         "sport": "rugby union",
@@ -217,7 +217,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Europe/Paris",
         "season_pattern": "annual",
         "match_url_template": "https://top14.lnr.fr/feuille-de-match/{matchId}",
-        "data_paths": ["data/matches/top14.json"],
+        "data_paths": ["data/matches/t14"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -236,9 +236,9 @@ BASE_COMPETITIONS = [
         },
     },
     {
-        "id": "league-one",
-        "name": "Japan Rugby League One",
-        "short_name": "League One",
+        "id": "jrlo-div1",
+        "name": "Japan Rugby League One Division 1",
+        "short_name": "JRLO D1",
         "sport": "rugby union",
         "category": "club",
         "gender": "men",
@@ -252,7 +252,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Asia/Tokyo",
         "season_pattern": "annual",
         "match_url_template": "https://league-one.jp/match/{matchId}",
-        "data_paths": ["data/matches/league-one.json"],
+        "data_paths": ["data/matches/jrlo-div1"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -266,7 +266,67 @@ BASE_COMPETITIONS = [
         },
     },
     {
-        "id": "gallagher-premiership",
+        "id": "jrlo-div2",
+        "name": "Japan Rugby League One Division 2",
+        "short_name": "JRLO D2",
+        "sport": "rugby union",
+        "category": "club",
+        "gender": "men",
+        "age_grade": "senior",
+        "tier": "tier-2",
+        "region": "Japan",
+        "governing_body": "Japan Rugby League One",
+        "organizer": "Japan Rugby League One",
+        "official_sites": ["https://league-one.jp"],
+        "official_feeds": [],
+        "timezone_default": "Asia/Tokyo",
+        "season_pattern": "annual",
+        "match_url_template": "https://league-one.jp/match/{matchId}",
+        "data_paths": ["data/matches/jrlo-div2"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "JP",
+                    "providers": ["J SPORTS", "J SPORTSオンデマンド", "Lemino (selected matches)"],
+                    "official_source": "https://league-one.jp/news/3842",
+                }
+            ],
+            "analysis_providers": [],
+            "notes": "J SPORTS provides comprehensive coverage in Japan. International access is limited.",
+        },
+    },
+    {
+        "id": "jrlo-div3",
+        "name": "Japan Rugby League One Division 3",
+        "short_name": "JRLO D3",
+        "sport": "rugby union",
+        "category": "club",
+        "gender": "men",
+        "age_grade": "senior",
+        "tier": "tier-3",
+        "region": "Japan",
+        "governing_body": "Japan Rugby League One",
+        "organizer": "Japan Rugby League One",
+        "official_sites": ["https://league-one.jp"],
+        "official_feeds": [],
+        "timezone_default": "Asia/Tokyo",
+        "season_pattern": "annual",
+        "match_url_template": "https://league-one.jp/match/{matchId}",
+        "data_paths": ["data/matches/jrlo-div3"],
+        "coverage": {
+            "broadcast_regions": [
+                {
+                    "region": "JP",
+                    "providers": ["J SPORTS", "J SPORTSオンデマンド", "Lemino (selected matches)"],
+                    "official_source": "https://league-one.jp/news/3842",
+                }
+            ],
+            "analysis_providers": [],
+            "notes": "J SPORTS provides comprehensive coverage in Japan. International access is limited.",
+        },
+    },
+    {
+        "id": "premier",
         "name": "Gallagher Premiership",
         "short_name": "Premiership",
         "sport": "rugby union",
@@ -282,7 +342,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Europe/London",
         "season_pattern": "annual",
         "match_url_template": "https://www.premiershiprugby.com/fixture/{matchId}",
-        "data_paths": ["data/matches/gallagher-premiership.json"],
+        "data_paths": ["data/matches/premier"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -312,7 +372,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Europe/London",
         "season_pattern": "annual",
         "match_url_template": "https://www.unitedrugby.com/match/{matchId}",
-        "data_paths": ["data/matches/urc.json"],
+        "data_paths": ["data/matches/urc"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -336,7 +396,7 @@ BASE_COMPETITIONS = [
         },
     },
     {
-        "id": "super-rugby-pacific",
+        "id": "srp",
         "name": "Super Rugby Pacific",
         "short_name": "SRP",
         "sport": "rugby union",
@@ -352,7 +412,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Pacific/Auckland",
         "season_pattern": "annual",
         "match_url_template": "https://www.super.rugby/superrugby/match-centre/{matchId}",
-        "data_paths": ["data/matches/super-rugby-pacific.json"],
+        "data_paths": ["data/matches/srp"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -376,7 +436,7 @@ BASE_COMPETITIONS = [
         },
     },
     {
-        "id": "rugby-championship",
+        "id": "trc",
         "name": "The Rugby Championship",
         "short_name": "TRC",
         "sport": "rugby union",
@@ -392,7 +452,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "UTC",
         "season_pattern": "variable",
         "match_url_template": "",
-        "data_paths": ["data/matches/rugby-championship.json"],
+        "data_paths": ["data/matches/trc"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -411,7 +471,7 @@ BASE_COMPETITIONS = [
         },
     },
     {
-        "id": "autumn-nations-series",
+        "id": "ans",
         "name": "Autumn Nations Series",
         "short_name": "ANS",
         "sport": "rugby union",
@@ -427,7 +487,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "Europe/London",
         "season_pattern": "annual",
         "match_url_template": "",
-        "data_paths": ["data/matches/autumn-nations-series.json"],
+        "data_paths": ["data/matches/ans"],
         "coverage": {
             "broadcast_regions": [
                 {
@@ -451,7 +511,7 @@ BASE_COMPETITIONS = [
         },
     },
     {
-        "id": "world-rugby-internationals",
+        "id": "wr",
         "name": "World Rugby Internationals",
         "short_name": "WR Internationals",
         "sport": "rugby union",
@@ -467,7 +527,7 @@ BASE_COMPETITIONS = [
         "timezone_default": "UTC",
         "season_pattern": "annual",
         "match_url_template": "https://www.world.rugby/match/{matchId}",
-        "data_paths": ["data/matches/world-rugby-internationals.json"],
+        "data_paths": ["data/matches/wr"],
     },
 ]
 
@@ -501,30 +561,36 @@ def build_competitions():
         last_updated = None
 
         for rel_path in base.get("data_paths", []):
-            path = Path(rel_path)
-            matches = load_matches(path)
-            if not isinstance(matches, list):
-                continue
+            base_path = Path(rel_path)
+            if base_path.is_dir():
+                match_paths = sorted(base_path.glob("*.json"))
+            else:
+                match_paths = [base_path]
 
-            match_count += len(matches)
-            for match in matches:
-                if not isinstance(match, dict):
+            for path in match_paths:
+                matches = load_matches(path)
+                if not isinstance(matches, list):
                     continue
-                if match.get("home_team"):
-                    teams.add(match.get("home_team"))
-                if match.get("away_team"):
-                    teams.add(match.get("away_team"))
-                if match.get("season"):
-                    seasons.add(str(match.get("season")))
 
-                kickoff = match.get("kickoff") or match.get("kickoff_utc")
-                dt = parse_datetime(kickoff)
-                if dt:
-                    dates.append(dt)
+                match_count += len(matches)
+                for match in matches:
+                    if not isinstance(match, dict):
+                        continue
+                    if match.get("home_team"):
+                        teams.add(match.get("home_team"))
+                    if match.get("away_team"):
+                        teams.add(match.get("away_team"))
+                    if match.get("season"):
+                        seasons.add(str(match.get("season")))
 
-            if path.exists():
-                mtime = datetime.utcfromtimestamp(path.stat().st_mtime)
-                last_updated = max(last_updated, mtime) if last_updated else mtime
+                    kickoff = match.get("kickoff") or match.get("kickoff_utc")
+                    dt = parse_datetime(kickoff)
+                    if dt:
+                        dates.append(dt)
+
+                if path.exists():
+                    mtime = datetime.utcfromtimestamp(path.stat().st_mtime)
+                    last_updated = max(last_updated, mtime) if last_updated else mtime
 
         date_range = None
         if dates:
@@ -563,7 +629,7 @@ def build_competitions():
 
 
 def main():
-    output_path = Path("data/competitions.json")
+    output_path = Path("data/competitions_summary.json")
     competitions = build_competitions()
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(competitions, f, ensure_ascii=False, indent=2)

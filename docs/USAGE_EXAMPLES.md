@@ -425,7 +425,7 @@ describe('Rugby Scraper API', () => {
   });
 
   it('should fetch League One matches', async () => {
-    const matches = await fetchMatches('league-one');
+    const matches = await fetchMatches('jrlo-div1');
 
     expect(matches).toBeInstanceOf(Array);
 

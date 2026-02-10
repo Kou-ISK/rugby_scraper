@@ -1,7 +1,7 @@
 [
   {
-    "match_id": "gp-2025-rd2-1",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd2-1",
+    "competition_id": "premier",
     "season": "2025",
     "round": "2",
     "status": "result",
@@ -11,16 +11,16 @@
     "venue": "The Rec",
     "home_team": "Bath Rugby",
     "away_team": "Sale Sharks",
-    "home_team_id": "gp_6",
-    "away_team_id": "gp_1",
+    "home_team_id": "premier_1",
+    "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd2-2",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd2-2",
+    "competition_id": "premier",
     "season": "2025",
     "round": "2",
     "status": "result",
@@ -30,16 +30,16 @@
     "venue": "Sandy Park",
     "home_team": "Exeter Chiefs",
     "away_team": "Newcastle Red Bulls",
-    "home_team_id": "gp_8",
-    "away_team_id": "gp_3",
+    "home_team_id": "premier_3",
+    "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd2-3",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd2-3",
+    "competition_id": "premier",
     "season": "2025",
     "round": "2",
     "status": "result",
@@ -49,16 +49,16 @@
     "venue": "Mattioli Woods Welford Road",
     "home_team": "Leicester Tigers",
     "away_team": "Harlequins",
-    "home_team_id": "gp_10",
-    "away_team_id": "gp_5",
+    "home_team_id": "premier_6",
+    "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd2-4",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd2-4",
+    "competition_id": "premier",
     "season": "2025",
     "round": "2",
     "status": "result",
@@ -68,16 +68,16 @@
     "venue": "StoneX Stadium",
     "home_team": "Saracens",
     "away_team": "Bristol Bears",
-    "home_team_id": "gp_4",
-    "away_team_id": "gp_9",
+    "home_team_id": "premier_10",
+    "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd2-5",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd2-5",
+    "competition_id": "premier",
     "season": "2025",
     "round": "2",
     "status": "result",
@@ -87,16 +87,16 @@
     "venue": "Kingsholm",
     "home_team": "Gloucester Rugby",
     "away_team": "Northampton Saints",
-    "home_team_id": "gp_2",
-    "away_team_id": "gp_7",
+    "home_team_id": "premier_4",
+    "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd1-1",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd1-1",
+    "competition_id": "premier",
     "season": "2025",
     "round": "1",
     "status": "result",
@@ -106,16 +106,16 @@
     "venue": "CorpAcq Stadium",
     "home_team": "Sale Sharks",
     "away_team": "Gloucester Rugby",
-    "home_team_id": "gp_1",
-    "away_team_id": "gp_2",
+    "home_team_id": "premier_9",
+    "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd1-2",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd1-2",
+    "competition_id": "premier",
     "season": "2025",
     "round": "1",
     "status": "result",
@@ -125,16 +125,16 @@
     "venue": "Kingston Park",
     "home_team": "Newcastle Red Bulls",
     "away_team": "Saracens",
-    "home_team_id": "gp_3",
-    "away_team_id": "gp_4",
+    "home_team_id": "premier_7",
+    "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd1-3",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd1-3",
+    "competition_id": "premier",
     "season": "2025",
     "round": "1",
     "status": "result",
@@ -144,16 +144,16 @@
     "venue": "Twickenham Stoop",
     "home_team": "Harlequins",
     "away_team": "Bath Rugby",
-    "home_team_id": "gp_5",
-    "away_team_id": "gp_6",
+    "home_team_id": "premier_5",
+    "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd1-4",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd1-4",
+    "competition_id": "premier",
     "season": "2025",
     "round": "1",
     "status": "result",
@@ -163,16 +163,16 @@
     "venue": "cinch Stadium @ Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Exeter Chiefs",
-    "home_team_id": "gp_7",
-    "away_team_id": "gp_8",
+    "home_team_id": "premier_8",
+    "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd1-5",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd1-5",
+    "competition_id": "premier",
     "season": "2025",
     "round": "1",
     "status": "result",
@@ -182,16 +182,16 @@
     "venue": "Ashton Gate",
     "home_team": "Bristol Bears",
     "away_team": "Leicester Tigers",
-    "home_team_id": "gp_9",
-    "away_team_id": "gp_10",
+    "home_team_id": "premier_2",
+    "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd3-1",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd3-1",
+    "competition_id": "premier",
     "season": "2025",
     "round": "3",
     "status": "result",
@@ -201,16 +201,16 @@
     "venue": "CorpAcq Stadium",
     "home_team": "Sale Sharks",
     "away_team": "Newcastle Red Bulls",
-    "home_team_id": "gp_1",
-    "away_team_id": "gp_3",
+    "home_team_id": "premier_9",
+    "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd4-1",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd4-1",
+    "competition_id": "premier",
     "season": "2025",
     "round": "4",
     "status": "result",
@@ -220,16 +220,16 @@
     "venue": "Kingsholm",
     "home_team": "Gloucester Rugby",
     "away_team": "Bristol Bears",
-    "home_team_id": "gp_2",
-    "away_team_id": "gp_9",
+    "home_team_id": "premier_4",
+    "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd4-2",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd4-2",
+    "competition_id": "premier",
     "season": "2025",
     "round": "4",
     "status": "result",
@@ -239,16 +239,16 @@
     "venue": "Kingston Park",
     "home_team": "Newcastle Red Bulls",
     "away_team": "Northampton Saints",
-    "home_team_id": "gp_3",
-    "away_team_id": "gp_7",
+    "home_team_id": "premier_7",
+    "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd4-3",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd4-3",
+    "competition_id": "premier",
     "season": "2025",
     "round": "4",
     "status": "result",
@@ -258,8 +258,8 @@
     "venue": "Mattioli Woods Welford Road",
     "home_team": "Leicester Tigers",
     "away_team": "Bath Rugby",
-    "home_team_id": "gp_10",
-    "away_team_id": "gp_6",
+    "home_team_id": "premier_6",
+    "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
       "TNT",
@@ -267,8 +267,8 @@
     ]
   },
   {
-    "match_id": "gp-2025-rd4-4",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd4-4",
+    "competition_id": "premier",
     "season": "2025",
     "round": "4",
     "status": "result",
@@ -278,16 +278,16 @@
     "venue": "StoneX Stadium",
     "home_team": "Saracens",
     "away_team": "Sale Sharks",
-    "home_team_id": "gp_4",
-    "away_team_id": "gp_1",
+    "home_team_id": "premier_10",
+    "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd4-5",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd4-5",
+    "competition_id": "premier",
     "season": "2025",
     "round": "4",
     "status": "result",
@@ -297,16 +297,16 @@
     "venue": "Sandy Park",
     "home_team": "Exeter Chiefs",
     "away_team": "Harlequins",
-    "home_team_id": "gp_8",
-    "away_team_id": "gp_5",
+    "home_team_id": "premier_3",
+    "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd5-1",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd5-1",
+    "competition_id": "premier",
     "season": "2025",
     "round": "5",
     "status": "result",
@@ -316,16 +316,16 @@
     "venue": "cinch Stadium @ Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Saracens",
-    "home_team_id": "gp_7",
-    "away_team_id": "gp_4",
+    "home_team_id": "premier_8",
+    "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd5-2",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd5-2",
+    "competition_id": "premier",
     "season": "2025",
     "round": "5",
     "status": "result",
@@ -335,16 +335,16 @@
     "venue": "Sandy Park",
     "home_team": "Exeter Chiefs",
     "away_team": "Gloucester Rugby",
-    "home_team_id": "gp_8",
-    "away_team_id": "gp_2",
+    "home_team_id": "premier_3",
+    "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd5-3",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd5-3",
+    "competition_id": "premier",
     "season": "2025",
     "round": "5",
     "status": "result",
@@ -354,16 +354,16 @@
     "venue": "Twickenham Stoop",
     "home_team": "Harlequins",
     "away_team": "Newcastle Red Bulls",
-    "home_team_id": "gp_5",
-    "away_team_id": "gp_3",
+    "home_team_id": "premier_5",
+    "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd5-4",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd5-4",
+    "competition_id": "premier",
     "season": "2025",
     "round": "5",
     "status": "result",
@@ -373,16 +373,16 @@
     "venue": "The Rec",
     "home_team": "Bath Rugby",
     "away_team": "Bristol Bears",
-    "home_team_id": "gp_6",
-    "away_team_id": "gp_9",
+    "home_team_id": "premier_1",
+    "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd5-5",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd5-5",
+    "competition_id": "premier",
     "season": "2025",
     "round": "5",
     "status": "result",
@@ -392,16 +392,16 @@
     "venue": "Mattioli Woods Welford Road",
     "home_team": "Leicester Tigers",
     "away_team": "Sale Sharks",
-    "home_team_id": "gp_10",
-    "away_team_id": "gp_1",
+    "home_team_id": "premier_6",
+    "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd3-2",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd3-2",
+    "competition_id": "premier",
     "season": "2025",
     "round": "3",
     "status": "result",
@@ -411,16 +411,16 @@
     "venue": "Ashton Gate",
     "home_team": "Bristol Bears",
     "away_team": "Exeter Chiefs",
-    "home_team_id": "gp_9",
-    "away_team_id": "gp_8",
+    "home_team_id": "premier_2",
+    "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd3-3",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd3-3",
+    "competition_id": "premier",
     "season": "2025",
     "round": "3",
     "status": "result",
@@ -430,16 +430,16 @@
     "venue": "cinch Stadium @ Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Leicester Tigers",
-    "home_team_id": "gp_7",
-    "away_team_id": "gp_10",
+    "home_team_id": "premier_8",
+    "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd3-4",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd3-4",
+    "competition_id": "premier",
     "season": "2025",
     "round": "3",
     "status": "result",
@@ -449,16 +449,16 @@
     "venue": "The Rec",
     "home_team": "Bath Rugby",
     "away_team": "Gloucester Rugby",
-    "home_team_id": "gp_6",
-    "away_team_id": "gp_2",
+    "home_team_id": "premier_1",
+    "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd6-1",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd6-1",
+    "competition_id": "premier",
     "season": "2025",
     "round": "6",
     "status": "result",
@@ -468,16 +468,16 @@
     "venue": "CorpAcq Stadium",
     "home_team": "Sale Sharks",
     "away_team": "Exeter Chiefs",
-    "home_team_id": "gp_1",
-    "away_team_id": "gp_8",
+    "home_team_id": "premier_9",
+    "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd6-2",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd6-2",
+    "competition_id": "premier",
     "season": "2025",
     "round": "6",
     "status": "result",
@@ -487,16 +487,16 @@
     "venue": "Kingston Park",
     "home_team": "Newcastle Red Bulls",
     "away_team": "Leicester Tigers",
-    "home_team_id": "gp_3",
-    "away_team_id": "gp_10",
+    "home_team_id": "premier_7",
+    "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd6-3",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd6-3",
+    "competition_id": "premier",
     "season": "2025",
     "round": "6",
     "status": "result",
@@ -506,16 +506,16 @@
     "venue": "Kingsholm",
     "home_team": "Gloucester Rugby",
     "away_team": "Harlequins",
-    "home_team_id": "gp_2",
-    "away_team_id": "gp_5",
+    "home_team_id": "premier_4",
+    "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd6-4",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd6-4",
+    "competition_id": "premier",
     "season": "2025",
     "round": "6",
     "status": "result",
@@ -525,16 +525,16 @@
     "venue": "Ashton Gate",
     "home_team": "Bristol Bears",
     "away_team": "Northampton Saints",
-    "home_team_id": "gp_9",
-    "away_team_id": "gp_7",
+    "home_team_id": "premier_2",
+    "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd6-5",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd6-5",
+    "competition_id": "premier",
     "season": "2025",
     "round": "6",
     "status": "result",
@@ -544,8 +544,8 @@
     "venue": "StoneX Stadium",
     "home_team": "Saracens",
     "away_team": "Bath Rugby",
-    "home_team_id": "gp_4",
-    "away_team_id": "gp_6",
+    "home_team_id": "premier_10",
+    "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
       "TNT",
@@ -553,8 +553,8 @@
     ]
   },
   {
-    "match_id": "gp-2025-rd3-5",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd3-5",
+    "competition_id": "premier",
     "season": "2025",
     "round": "3",
     "status": "result",
@@ -564,16 +564,16 @@
     "venue": "Twickenham Stoop",
     "home_team": "Harlequins",
     "away_team": "Saracens",
-    "home_team_id": "gp_5",
-    "away_team_id": "gp_4",
+    "home_team_id": "premier_5",
+    "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd7-1",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd7-1",
+    "competition_id": "premier",
     "season": "2025",
     "round": "7",
     "status": "result",
@@ -583,16 +583,16 @@
     "venue": "Mattioli Woods Welford Road",
     "home_team": "Leicester Tigers",
     "away_team": "Gloucester Rugby",
-    "home_team_id": "gp_10",
-    "away_team_id": "gp_2",
+    "home_team_id": "premier_6",
+    "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd7-2",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd7-2",
+    "competition_id": "premier",
     "season": "2025",
     "round": "7",
     "status": "result",
@@ -602,16 +602,16 @@
     "venue": "StoneX Stadium",
     "home_team": "Saracens",
     "away_team": "Exeter Chiefs",
-    "home_team_id": "gp_4",
-    "away_team_id": "gp_8",
+    "home_team_id": "premier_10",
+    "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd7-3",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd7-3",
+    "competition_id": "premier",
     "season": "2025",
     "round": "7",
     "status": "result",
@@ -621,16 +621,16 @@
     "venue": "cinch Stadium @ Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Sale Sharks",
-    "home_team_id": "gp_7",
-    "away_team_id": "gp_1",
+    "home_team_id": "premier_8",
+    "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd7-4",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd7-4",
+    "competition_id": "premier",
     "season": "2025",
     "round": "7",
     "status": "result",
@@ -640,8 +640,8 @@
     "venue": "Allianz Stadium",
     "home_team": "Harlequins",
     "away_team": "Bristol Bears",
-    "home_team_id": "gp_5",
-    "away_team_id": "gp_9",
+    "home_team_id": "premier_5",
+    "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": [
       "TNT",
@@ -649,8 +649,8 @@
     ]
   },
   {
-    "match_id": "gp-2025-rd7-5",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd7-5",
+    "competition_id": "premier",
     "season": "2025",
     "round": "7",
     "status": "result",
@@ -660,16 +660,16 @@
     "venue": "Kingston Park",
     "home_team": "Newcastle Red Bulls",
     "away_team": "Bath Rugby",
-    "home_team_id": "gp_3",
-    "away_team_id": "gp_6",
+    "home_team_id": "premier_7",
+    "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd8-1",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd8-1",
+    "competition_id": "premier",
     "season": "2025",
     "round": "8",
     "status": "result",
@@ -679,16 +679,16 @@
     "venue": "CorpAcq Stadium",
     "home_team": "Sale Sharks",
     "away_team": "Harlequins",
-    "home_team_id": "gp_1",
-    "away_team_id": "gp_5",
+    "home_team_id": "premier_9",
+    "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd8-2",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd8-2",
+    "competition_id": "premier",
     "season": "2025",
     "round": "8",
     "status": "result",
@@ -698,16 +698,16 @@
     "venue": "Ashton Gate",
     "home_team": "Bristol Bears",
     "away_team": "Newcastle Red Bulls",
-    "home_team_id": "gp_9",
-    "away_team_id": "gp_3",
+    "home_team_id": "premier_2",
+    "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2025-rd8-3",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd8-3",
+    "competition_id": "premier",
     "season": "2025",
     "round": "8",
     "status": "result",
@@ -717,16 +717,16 @@
     "venue": "Kingsholm",
     "home_team": "Gloucester Rugby",
     "away_team": "Saracens",
-    "home_team_id": "gp_2",
-    "away_team_id": "gp_4",
+    "home_team_id": "premier_4",
+    "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd8-4",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd8-4",
+    "competition_id": "premier",
     "season": "2025",
     "round": "8",
     "status": "result",
@@ -736,16 +736,16 @@
     "venue": "The Rec",
     "home_team": "Bath Rugby",
     "away_team": "Northampton Saints",
-    "home_team_id": "gp_6",
-    "away_team_id": "gp_7",
+    "home_team_id": "premier_1",
+    "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2025-rd8-5",
-    "competition_id": "gp",
+    "match_id": "premier-2025-rd8-5",
+    "competition_id": "premier",
     "season": "2025",
     "round": "8",
     "status": "result",
@@ -755,16 +755,16 @@
     "venue": "Sandy Park",
     "home_team": "Exeter Chiefs",
     "away_team": "Leicester Tigers",
-    "home_team_id": "gp_8",
-    "away_team_id": "gp_10",
+    "home_team_id": "premier_3",
+    "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd10-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd10-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "10",
     "status": "result",
@@ -774,16 +774,16 @@
     "venue": "Kingsholm",
     "home_team": "Gloucester Rugby",
     "away_team": "Bath Rugby",
-    "home_team_id": "gp_2",
-    "away_team_id": "gp_6",
+    "home_team_id": "premier_4",
+    "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd10-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd10-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "10",
     "status": "result",
@@ -793,16 +793,16 @@
     "venue": "Sandy Park",
     "home_team": "Exeter Chiefs",
     "away_team": "Bristol Bears",
-    "home_team_id": "gp_8",
-    "away_team_id": "gp_9",
+    "home_team_id": "premier_3",
+    "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2026-rd10-3",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd10-3",
+    "competition_id": "premier",
     "season": "2026",
     "round": "10",
     "status": "result",
@@ -812,16 +812,16 @@
     "venue": "StoneX Stadium",
     "home_team": "Saracens",
     "away_team": "Newcastle Red Bulls",
-    "home_team_id": "gp_4",
-    "away_team_id": "gp_3",
+    "home_team_id": "premier_10",
+    "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2026-rd10-4",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd10-4",
+    "competition_id": "premier",
     "season": "2026",
     "round": "10",
     "status": "result",
@@ -831,16 +831,16 @@
     "venue": "Twickenham Stoop",
     "home_team": "Harlequins",
     "away_team": "Leicester Tigers",
-    "home_team_id": "gp_5",
-    "away_team_id": "gp_10",
+    "home_team_id": "premier_5",
+    "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd10-5",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd10-5",
+    "competition_id": "premier",
     "season": "2026",
     "round": "10",
     "status": "result",
@@ -850,16 +850,16 @@
     "venue": "CorpAcq Stadium",
     "home_team": "Sale Sharks",
     "away_team": "Northampton Saints",
-    "home_team_id": "gp_1",
-    "away_team_id": "gp_7",
+    "home_team_id": "premier_9",
+    "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd9-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd9-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "9",
     "status": "result",
@@ -869,16 +869,16 @@
     "venue": "Kingston Park",
     "home_team": "Newcastle Red Bulls",
     "away_team": "Gloucester Rugby",
-    "home_team_id": "gp_3",
-    "away_team_id": "gp_2",
+    "home_team_id": "premier_7",
+    "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2026-rd9-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd9-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "9",
     "status": "result",
@@ -888,16 +888,16 @@
     "venue": "Ashton Gate",
     "home_team": "Bristol Bears",
     "away_team": "Sale Sharks",
-    "home_team_id": "gp_9",
-    "away_team_id": "gp_1",
+    "home_team_id": "premier_2",
+    "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd9-3",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd9-3",
+    "competition_id": "premier",
     "season": "2026",
     "round": "9",
     "status": "result",
@@ -907,16 +907,16 @@
     "venue": "The Rec",
     "home_team": "Bath Rugby",
     "away_team": "Exeter Chiefs",
-    "home_team_id": "gp_6",
-    "away_team_id": "gp_8",
+    "home_team_id": "premier_1",
+    "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd9-4",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd9-4",
+    "competition_id": "premier",
     "season": "2026",
     "round": "9",
     "status": "result",
@@ -926,16 +926,16 @@
     "venue": "cinch Stadium @ Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Harlequins",
-    "home_team_id": "gp_7",
-    "away_team_id": "gp_5",
+    "home_team_id": "premier_8",
+    "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd11-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd11-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "11",
     "status": "fixture",
@@ -945,16 +945,16 @@
     "venue": "The Rec",
     "home_team": "Bath Rugby",
     "away_team": "Saracens",
-    "home_team_id": "gp_6",
-    "away_team_id": "gp_4",
+    "home_team_id": "premier_1",
+    "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd11-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd11-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "11",
     "status": "fixture",
@@ -964,16 +964,16 @@
     "venue": "Twickenham Stoop",
     "home_team": "Harlequins",
     "away_team": "Gloucester Rugby",
-    "home_team_id": "gp_5",
-    "away_team_id": "gp_2",
+    "home_team_id": "premier_5",
+    "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2026-rd11-3",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd11-3",
+    "competition_id": "premier",
     "season": "2026",
     "round": "11",
     "status": "fixture",
@@ -983,16 +983,16 @@
     "venue": "cinch Stadium @ Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Newcastle Red Bulls",
-    "home_team_id": "gp_7",
-    "away_team_id": "gp_3",
+    "home_team_id": "premier_8",
+    "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2026-rd11-4",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd11-4",
+    "competition_id": "premier",
     "season": "2026",
     "round": "11",
     "status": "fixture",
@@ -1002,16 +1002,16 @@
     "venue": "Sandy Park",
     "home_team": "Exeter Chiefs",
     "away_team": "Sale Sharks",
-    "home_team_id": "gp_8",
-    "away_team_id": "gp_1",
+    "home_team_id": "premier_3",
+    "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd11-5",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd11-5",
+    "competition_id": "premier",
     "season": "2026",
     "round": "11",
     "status": "fixture",
@@ -1021,16 +1021,16 @@
     "venue": "Mattioli Woods Welford Road",
     "home_team": "Leicester Tigers",
     "away_team": "Bristol Bears",
-    "home_team_id": "gp_10",
-    "away_team_id": "gp_9",
+    "home_team_id": "premier_6",
+    "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd12-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd12-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "12",
     "status": "fixture",
@@ -1040,16 +1040,16 @@
     "venue": "Kingston Park",
     "home_team": "Newcastle Red Bulls",
     "away_team": "Exeter Chiefs",
-    "home_team_id": "gp_3",
-    "away_team_id": "gp_8",
+    "home_team_id": "premier_7",
+    "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd12-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd12-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "12",
     "status": "fixture",
@@ -1059,16 +1059,16 @@
     "venue": "Villa Park",
     "home_team": "Gloucester Rugby",
     "away_team": "Leicester Tigers",
-    "home_team_id": "gp_2",
-    "away_team_id": "gp_10",
+    "home_team_id": "premier_4",
+    "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd12-3",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd12-3",
+    "competition_id": "premier",
     "season": "2026",
     "round": "12",
     "status": "fixture",
@@ -1078,16 +1078,16 @@
     "venue": "Principality Stadium",
     "home_team": "Bristol Bears",
     "away_team": "Harlequins",
-    "home_team_id": "gp_9",
-    "away_team_id": "gp_5",
+    "home_team_id": "premier_2",
+    "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd12-4",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd12-4",
+    "competition_id": "premier",
     "season": "2026",
     "round": "12",
     "status": "fixture",
@@ -1097,16 +1097,16 @@
     "venue": "Tottenham Hotspur Stadium",
     "home_team": "Saracens",
     "away_team": "Northampton Saints",
-    "home_team_id": "gp_4",
-    "away_team_id": "gp_7",
+    "home_team_id": "premier_10",
+    "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd12-5",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd12-5",
+    "competition_id": "premier",
     "season": "2026",
     "round": "12",
     "status": "fixture",
@@ -1116,16 +1116,16 @@
     "venue": "CorpAcq Stadium",
     "home_team": "Sale Sharks",
     "away_team": "Bath Rugby",
-    "home_team_id": "gp_1",
-    "away_team_id": "gp_6",
+    "home_team_id": "premier_9",
+    "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd9-5",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd9-5",
+    "competition_id": "premier",
     "season": "2026",
     "round": "9",
     "status": "result",
@@ -1135,16 +1135,16 @@
     "venue": "Mattioli Woods Welford Road",
     "home_team": "Leicester Tigers",
     "away_team": "Saracens",
-    "home_team_id": "gp_10",
-    "away_team_id": "gp_4",
+    "home_team_id": "premier_6",
+    "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd13-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd13-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "13",
     "status": "fixture",
@@ -1154,16 +1154,16 @@
     "venue": "Ashton Gate",
     "home_team": "Bristol Bears",
     "away_team": "Gloucester Rugby",
-    "home_team_id": "gp_9",
-    "away_team_id": "gp_2",
+    "home_team_id": "premier_2",
+    "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd13-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd13-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "13",
     "status": "fixture",
@@ -1173,16 +1173,16 @@
     "venue": "Mattioli Woods Welford Road",
     "home_team": "Leicester Tigers",
     "away_team": "Newcastle Red Bulls",
-    "home_team_id": "gp_10",
-    "away_team_id": "gp_3",
+    "home_team_id": "premier_6",
+    "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2026-rd13-3",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd13-3",
+    "competition_id": "premier",
     "season": "2026",
     "round": "13",
     "status": "fixture",
@@ -1192,16 +1192,16 @@
     "venue": "Sandy Park",
     "home_team": "Exeter Chiefs",
     "away_team": "Northampton Saints",
-    "home_team_id": "gp_8",
-    "away_team_id": "gp_7",
+    "home_team_id": "premier_3",
+    "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd13-4",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd13-4",
+    "competition_id": "premier",
     "season": "2026",
     "round": "13",
     "status": "fixture",
@@ -1211,16 +1211,16 @@
     "venue": "The Rec",
     "home_team": "Bath Rugby",
     "away_team": "Harlequins",
-    "home_team_id": "gp_6",
-    "away_team_id": "gp_5",
+    "home_team_id": "premier_1",
+    "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd13-5",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd13-5",
+    "competition_id": "premier",
     "season": "2026",
     "round": "13",
     "status": "fixture",
@@ -1230,16 +1230,16 @@
     "venue": "CorpAcq Stadium",
     "home_team": "Sale Sharks",
     "away_team": "Saracens",
-    "home_team_id": "gp_1",
-    "away_team_id": "gp_4",
+    "home_team_id": "premier_9",
+    "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd14-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd14-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "14",
     "status": "fixture",
@@ -1249,16 +1249,16 @@
     "venue": "Kingston Park",
     "home_team": "Newcastle Red Bulls",
     "away_team": "Bristol Bears",
-    "home_team_id": "gp_3",
-    "away_team_id": "gp_9",
+    "home_team_id": "premier_7",
+    "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd14-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd14-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "14",
     "status": "fixture",
@@ -1268,16 +1268,16 @@
     "venue": "Twickenham Stoop",
     "home_team": "Harlequins",
     "away_team": "Sale Sharks",
-    "home_team_id": "gp_5",
-    "away_team_id": "gp_1",
+    "home_team_id": "premier_5",
+    "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2026-rd14-3",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd14-3",
+    "competition_id": "premier",
     "season": "2026",
     "round": "14",
     "status": "fixture",
@@ -1287,16 +1287,16 @@
     "venue": "StoneX Stadium",
     "home_team": "Saracens",
     "away_team": "Leicester Tigers",
-    "home_team_id": "gp_4",
-    "away_team_id": "gp_10",
+    "home_team_id": "premier_10",
+    "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd14-4",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd14-4",
+    "competition_id": "premier",
     "season": "2026",
     "round": "14",
     "status": "fixture",
@@ -1306,16 +1306,16 @@
     "venue": "cinch Stadium @ Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Bath Rugby",
-    "home_team_id": "gp_7",
-    "away_team_id": "gp_6",
+    "home_team_id": "premier_8",
+    "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd14-5",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd14-5",
+    "competition_id": "premier",
     "season": "2026",
     "round": "14",
     "status": "fixture",
@@ -1325,16 +1325,16 @@
     "venue": "Kingsholm",
     "home_team": "Gloucester Rugby",
     "away_team": "Exeter Chiefs",
-    "home_team_id": "gp_2",
-    "away_team_id": "gp_8",
+    "home_team_id": "premier_4",
+    "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd16-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd16-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "16",
     "status": "fixture",
@@ -1344,16 +1344,16 @@
     "venue": "cinch Stadium @ Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Bristol Bears",
-    "home_team_id": "gp_7",
-    "away_team_id": "gp_9",
+    "home_team_id": "premier_8",
+    "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd16-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd16-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "16",
     "status": "fixture",
@@ -1363,16 +1363,16 @@
     "venue": "The Rec",
     "home_team": "Bath Rugby",
     "away_team": "Newcastle Red Bulls",
-    "home_team_id": "gp_6",
-    "away_team_id": "gp_3",
+    "home_team_id": "premier_1",
+    "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2026-rd16-3",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd16-3",
+    "competition_id": "premier",
     "season": "2026",
     "round": "16",
     "status": "fixture",
@@ -1382,16 +1382,16 @@
     "venue": "Allianz Stadium",
     "home_team": "Harlequins",
     "away_team": "Exeter Chiefs",
-    "home_team_id": "gp_5",
-    "away_team_id": "gp_8",
+    "home_team_id": "premier_5",
+    "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd16-4",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd16-4",
+    "competition_id": "premier",
     "season": "2026",
     "round": "16",
     "status": "fixture",
@@ -1401,16 +1401,16 @@
     "venue": "StoneX Stadium",
     "home_team": "Saracens",
     "away_team": "Gloucester Rugby",
-    "home_team_id": "gp_4",
-    "away_team_id": "gp_2",
+    "home_team_id": "premier_10",
+    "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd16-5",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd16-5",
+    "competition_id": "premier",
     "season": "2026",
     "round": "16",
     "status": "fixture",
@@ -1420,16 +1420,16 @@
     "venue": "CorpAcq Stadium",
     "home_team": "Sale Sharks",
     "away_team": "Leicester Tigers",
-    "home_team_id": "gp_1",
-    "away_team_id": "gp_10",
+    "home_team_id": "premier_9",
+    "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd17-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd17-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "17",
     "status": "fixture",
@@ -1439,16 +1439,16 @@
     "venue": "Ashton Gate",
     "home_team": "Bristol Bears",
     "away_team": "Bath Rugby",
-    "home_team_id": "gp_9",
-    "away_team_id": "gp_6",
+    "home_team_id": "premier_2",
+    "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd17-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd17-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "17",
     "status": "fixture",
@@ -1458,16 +1458,16 @@
     "venue": "StoneX Stadium",
     "home_team": "Saracens",
     "away_team": "Harlequins",
-    "home_team_id": "gp_4",
-    "away_team_id": "gp_5",
+    "home_team_id": "premier_10",
+    "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd17-3",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd17-3",
+    "competition_id": "premier",
     "season": "2026",
     "round": "17",
     "status": "fixture",
@@ -1477,16 +1477,16 @@
     "venue": "cinch Stadium @ Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Gloucester Rugby",
-    "home_team_id": "gp_7",
-    "away_team_id": "gp_2",
+    "home_team_id": "premier_8",
+    "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
       "DISC"
     ]
   },
   {
-    "match_id": "gp-2026-rd17-4",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd17-4",
+    "competition_id": "premier",
     "season": "2026",
     "round": "17",
     "status": "fixture",
@@ -1496,16 +1496,16 @@
     "venue": "Kingston Park",
     "home_team": "Newcastle Red Bulls",
     "away_team": "Sale Sharks",
-    "home_team_id": "gp_3",
-    "away_team_id": "gp_1",
+    "home_team_id": "premier_7",
+    "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd17-5",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd17-5",
+    "competition_id": "premier",
     "season": "2026",
     "round": "17",
     "status": "fixture",
@@ -1515,16 +1515,16 @@
     "venue": "Mattioli Woods Welford Road",
     "home_team": "Leicester Tigers",
     "away_team": "Exeter Chiefs",
-    "home_team_id": "gp_10",
-    "away_team_id": "gp_8",
+    "home_team_id": "premier_6",
+    "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd18-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd18-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "18",
     "status": "fixture",
@@ -1534,14 +1534,14 @@
     "venue": "The Rec",
     "home_team": "Bath Rugby",
     "away_team": "Leicester Tigers",
-    "home_team_id": "gp_6",
-    "away_team_id": "gp_10",
+    "home_team_id": "premier_1",
+    "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": []
   },
   {
-    "match_id": "gp-2026-rd18-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd18-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "18",
     "status": "fixture",
@@ -1551,14 +1551,14 @@
     "venue": "CorpAcq Stadium",
     "home_team": "Sale Sharks",
     "away_team": "Bristol Bears",
-    "home_team_id": "gp_1",
-    "away_team_id": "gp_9",
+    "home_team_id": "premier_9",
+    "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": []
   },
   {
-    "match_id": "gp-2026-rd18-3",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd18-3",
+    "competition_id": "premier",
     "season": "2026",
     "round": "18",
     "status": "fixture",
@@ -1568,14 +1568,14 @@
     "venue": "Twickenham Stoop",
     "home_team": "Harlequins",
     "away_team": "Northampton Saints",
-    "home_team_id": "gp_5",
-    "away_team_id": "gp_7",
+    "home_team_id": "premier_5",
+    "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": []
   },
   {
-    "match_id": "gp-2026-rd18-4",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd18-4",
+    "competition_id": "premier",
     "season": "2026",
     "round": "18",
     "status": "fixture",
@@ -1585,14 +1585,14 @@
     "venue": "Kingsholm",
     "home_team": "Gloucester Rugby",
     "away_team": "Newcastle Red Bulls",
-    "home_team_id": "gp_2",
-    "away_team_id": "gp_3",
+    "home_team_id": "premier_4",
+    "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": []
   },
   {
-    "match_id": "gp-2026-rd18-5",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd18-5",
+    "competition_id": "premier",
     "season": "2026",
     "round": "18",
     "status": "fixture",
@@ -1602,14 +1602,14 @@
     "venue": "Sandy Park",
     "home_team": "Exeter Chiefs",
     "away_team": "Saracens",
-    "home_team_id": "gp_8",
-    "away_team_id": "gp_4",
+    "home_team_id": "premier_3",
+    "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": []
   },
   {
-    "match_id": "gp-2026-rd19-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd19-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "19",
     "status": "fixture",
@@ -1619,16 +1619,16 @@
     "venue": "TBD",
     "home_team": "TBC",
     "away_team": "TBC",
-    "home_team_id": "gp_11",
-    "away_team_id": "gp_11",
+    "home_team_id": "",
+    "away_team_id": "",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd19-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd19-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "19",
     "status": "fixture",
@@ -1638,16 +1638,16 @@
     "venue": "TBD",
     "home_team": "TBC",
     "away_team": "TBC",
-    "home_team_id": "gp_11",
-    "away_team_id": "gp_11",
+    "home_team_id": "",
+    "away_team_id": "",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd20-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd20-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "20",
     "status": "fixture",
@@ -1657,8 +1657,8 @@
     "venue": "Allianz Stadium",
     "home_team": "TBC",
     "away_team": "TBC",
-    "home_team_id": "gp_11",
-    "away_team_id": "gp_11",
+    "home_team_id": "",
+    "away_team_id": "",
     "match_url": "",
     "broadcasters": [
       "TNT",
@@ -1666,8 +1666,8 @@
     ]
   },
   {
-    "match_id": "gp-2026-rd15-1",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd15-1",
+    "competition_id": "premier",
     "season": "2026",
     "round": "15",
     "status": "fixture",
@@ -1677,16 +1677,16 @@
     "venue": "Kingsholm",
     "home_team": "Gloucester Rugby",
     "away_team": "Sale Sharks",
-    "home_team_id": "gp_2",
-    "away_team_id": "gp_1",
+    "home_team_id": "premier_4",
+    "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd15-2",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd15-2",
+    "competition_id": "premier",
     "season": "2026",
     "round": "15",
     "status": "fixture",
@@ -1696,16 +1696,16 @@
     "venue": "Mattioli Woods Welford Road",
     "home_team": "Leicester Tigers",
     "away_team": "Northampton Saints",
-    "home_team_id": "gp_10",
-    "away_team_id": "gp_7",
+    "home_team_id": "premier_6",
+    "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd15-3",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd15-3",
+    "competition_id": "premier",
     "season": "2026",
     "round": "15",
     "status": "fixture",
@@ -1715,16 +1715,16 @@
     "venue": "Ashton Gate",
     "home_team": "Bristol Bears",
     "away_team": "Saracens",
-    "home_team_id": "gp_9",
-    "away_team_id": "gp_4",
+    "home_team_id": "premier_2",
+    "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd15-4",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd15-4",
+    "competition_id": "premier",
     "season": "2026",
     "round": "15",
     "status": "fixture",
@@ -1734,16 +1734,16 @@
     "venue": "Sandy Park",
     "home_team": "Exeter Chiefs",
     "away_team": "Bath Rugby",
-    "home_team_id": "gp_8",
-    "away_team_id": "gp_6",
+    "home_team_id": "premier_3",
+    "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
       "TNT"
     ]
   },
   {
-    "match_id": "gp-2026-rd15-5",
-    "competition_id": "gp",
+    "match_id": "premier-2026-rd15-5",
+    "competition_id": "premier",
     "season": "2026",
     "round": "15",
     "status": "fixture",
@@ -1753,8 +1753,8 @@
     "venue": "Kingston Park",
     "home_team": "Newcastle Red Bulls",
     "away_team": "Harlequins",
-    "home_team_id": "gp_3",
-    "away_team_id": "gp_5",
+    "home_team_id": "premier_7",
+    "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
       "DISC"

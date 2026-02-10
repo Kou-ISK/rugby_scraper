@@ -39,8 +39,8 @@ src/
 data/matches/{comp_id}/{season}.json, teams.json
     ↓ 2. ビジネスロジック（Services）
 チーム統合・エンリッチメント
-    ↓ TheSportsDB API連携
-teams.json (enriched)
+    ↓ 公式サイトのロゴURL反映
+teams.json (official logos)
     ↓ 3. データ検証（Validators）
 重複チェック・整合性確認
     ↓ バリデーションレポート
@@ -98,13 +98,16 @@ src/collectors/
 
 ```
 src/services/
-└── team_service.py           # チーム抽出・統合サービス
+├── team_service.py           # チーム抽出・統合サービス（legacy含む）
+├── team_master_service.py    # 公式チーム一覧 + 公式ロゴURL取得
+├── competition_master_service.py # 大会マスタ更新
+└── team_id_backfill.py       # team_id再解決
 ```
 
 **主要機能**:
 
-- 全試合データからチーム抽出
-- TheSportsDB APIでロゴURL取得
+- 公式サイトからチーム一覧とロゴURL取得
+- 全試合データからのチーム抽出（legacy）
 - スポンサー名除去による正規化
 - ID安定性保証（既存ID変更なし）
 - 重複検出レポート生成
@@ -169,19 +172,19 @@ python -m src.main <comp_id>
 
 **対応大会ID**:
 
-- `six-nations`: Six Nations Championship
-- `gp`: Gallagher Premiership
+- `m6n`: Six Nations (Men)
+- `w6n`: Six Nations (Women)
+- `u6n`: Six Nations U20
+- `premier`: Gallagher Premiership
 - `urc`: United Rugby Championship
-- `top14`: Top 14
+- `t14`: Top 14
 - `epcr-champions`: Champions Cup
 - `epcr-challenge`: Challenge Cup
-- `rc`: Rugby Championship
+- `jrlo`: Japan Rugby League One（`jrlo-div1/2/3` で保存）
+- `srp`: Super Rugby Pacific
+- `trc`: The Rugby Championship
 - `ans`: Autumn Nations Series
-- `super-rugby`: Super Rugby Pacific
-- `league-one`: England League One
-- `six-nations-u20`: Six Nations U20
-- `six-nations-women`: Six Nations Women
-- `world-rugby`: World Rugby Internationals
+- `wr`: World Rugby Internationals
 
 ### サービス実行
 
@@ -189,12 +192,35 @@ python -m src.main <comp_id>
 # チーム抽出・統合（Services層）
 python -m src.main extract-teams
 
+# チームマスタ更新（公式チーム一覧）
+python -m src.main update-team-master
+
 # 重複検証（Validators層）
 python -m src.main validate-duplicates
 
 # メタデータ生成（Repositories層）
-python -m src.main generate-metadata
+python -m src.main generate-metadata  # -> data/competitions_summary.json
+
+# 大会マスタ更新（公式情報 + テンプレ補完）
+python -m src.main update-competition-master
+
+# team_id 後埋め
+python -m src.main backfill-team-ids
 ```
+
+## ✅ 運用ガイド（簡易）
+
+**基本の流れ**:
+1. **チームマスタ更新**: `python -m src.main update-team-master`
+2. **大会マスタ更新**: `python -m src.main update-competition-master`
+3. **試合データ取得**: `python -m src.main <comp_id>`
+4. **team_id Backfill**: `python -m src.main backfill-team-ids`（必要な場合のみ）
+5. **公式ロゴ検証**: `python scripts/validate_official_logos.py`（任意）
+
+**ポイント**:
+- スクレイピングでは `teams.json` / `competitions.json` は自動更新しません。
+- チームや大会のマスタは **自分のタイミングで更新** する運用です。
+- `extract-teams` は **旧方式（試合データ依存）** であり非推奨です。
 
 ### 自動化スクリプト
 
@@ -336,7 +362,7 @@ scrapers = {
 ### 6. メタデータ生成
 
 ```bash
-# competitions.json に自動追加
+# competitions_summary.json を生成
 python -m src.main generate-metadata
 ```
 
@@ -346,8 +372,8 @@ python -m src.main generate-metadata
 # スクレイピング実行
 python -m src.main my-comp
 
-# チーム抽出
-python -m src.main extract-teams
+# チームマスタ更新
+python -m src.main update-team-master
 
 # 検証
 python -m src.main validate-duplicates
@@ -382,16 +408,16 @@ from src.repositories.competition_repository import main as generate_metadata
 ### 1. スクレイピング（Collectors層）
 
 ```bash
-python -m src.main six-nations
-# → data/matches/six-nations/{season}.json
-# → teams.json（自動更新）
+python -m src.main m6n
+# → data/matches/m6n/{season}.json
+# → teams.json（自動更新なし）
 ```
 
 ### 2. チーム統合（Services層）
 
 ```bash
-python -m src.main extract-teams
-# → teams.json（TheSportsDB連携、ロゴURL付与）
+python -m src.main update-team-master
+# → teams.json（公式チーム一覧から再生成）
 ```
 
 ### 3. データ検証（Validators層）
@@ -405,7 +431,7 @@ python -m src.main validate-duplicates
 
 ```bash
 python -m src.main generate-metadata
-# → data/competitions.json
+# → data/competitions_summary.json
 ```
 
 ## 🎯 ベストプラクティス
@@ -448,8 +474,8 @@ from src.collectors.international import SixNationsScraper
 
 ### team_id未解決
 
-`BaseScraper._resolve_team_id()` が自動解決します。
-新規チームの場合、teams.jsonに自動登録されます。
+`BaseScraper._resolve_team_id()` がチームマスタを参照して解決します。
+新規チームの自動登録は `update_team_master=True` のときのみ実行されます。
 
 ### スクレイピング失敗
 
@@ -463,11 +489,15 @@ from src.collectors.international import SixNationsScraper
 
 ```json
 {
-  "england-bath": {
+  "premier_1": {
+    "id": "premier_1",
+    "competition_id": "premier",
     "name": "Bath Rugby",
-    "country": "England",
+    "short_name": "Bath Rugby",
+    "country": "",
+    "division": "",
     "logo_url": "https://...",
-    "competitions": ["gp", "epcr-champions"]
+    "badge_url": "https://..."
   }
 }
 ```
@@ -477,20 +507,16 @@ from src.collectors.international import SixNationsScraper
 ```json
 [
   {
-    "match_id": "six-nations-2024-abc123",
-    "date": "2024-02-03T15:00:00Z",
-    "home_team": {
-      "id": "england-england",
-      "name": "England",
-      "score": 27
-    },
-    "away_team": {
-      "id": "wales-wales",
-      "name": "Wales",
-      "score": 24
-    },
-    "venue": "Twickenham Stadium",
-    "round": "Round 1"
+    "match_id": "m6n-2026-rd1-1",
+    "competition_id": "m6n",
+    "season": "2026",
+    "round": "Round 1",
+    "kickoff_utc": "2026-02-05T20:10:00Z",
+    "home_team": "England",
+    "away_team": "Ireland",
+    "home_team_id": "NT-M-ENG",
+    "away_team_id": "NT-M-IRE",
+    "venue": "Twickenham Stadium"
   }
 ]
 ```

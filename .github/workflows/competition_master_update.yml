@@ -1,0 +1,71 @@
+name: "大会マスタ更新"
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-branch-write
+  cancel-in-progress: false
+
+jobs:
+  update-competition-master:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Fetch data from data branch
+        run: |
+          git fetch origin data:data
+          git checkout data -- data/ || mkdir -p data/matches
+          git checkout main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Update competition master
+        env:
+          PYTHONPATH: .
+        run: |
+          python -m src.main update-competition-master
+
+      - name: Commit and push changes to data branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          if [ -n "$(git status --porcelain data/)" ]; then
+            echo "Changes detected, preparing to push to data branch"
+
+            cp -r data /tmp/scraped_data
+
+            git checkout -- data/
+            git clean -fd data/
+
+            git fetch origin data:data
+            git checkout data
+
+            rm -rf data
+            mv /tmp/scraped_data data
+
+            git add data/
+            git commit -m "Update competition master - $(date +'%Y-%m-%d %H:%M:%S')"
+            git push origin data
+
+            echo "Successfully pushed to data branch"
+          else
+            echo "No changes to commit"
+          fi

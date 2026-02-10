@@ -20,16 +20,18 @@ itsuneru 向けに世界のラグビー試合日程を取得するスクレイ�
 ```
 data/
 ├── teams.json                    # 統合チームマスタ
+├── teams_sources.json            # チームマスタ取得ソース定義（公式）
 ├── competitions.json             # 大会マスタ
+├── competitions_base.json        # 大会マスタの固定テンプレ
 └── matches/                      # 試合データ（大会ID別・シーズン別）
     ├── m6n/2025.json
     ├── w6n/2025.json
-    ├── gp/2025.json
+    ├── premier/2025.json
     ├── urc/2025.json
-    ├── jrlo_div1/2026.json
-    ├── jrlo_div2/2026.json
-    ├── jrlo_div3/2026.json
-    └── wri/2026.json
+    ├── jrlo-div1/2026.json
+    ├── jrlo-div2/2026.json
+    ├── jrlo-div3/2026.json
+    └── wr/2026.json
 ```
 
 ### ソースコード構造
@@ -73,20 +75,20 @@ scripts/
 **大会ID**: 短縮コード形式
 
 - `m6n`, `w6n`, `u6n`: Six Nations (Men/Women/U20)
-- `ecc`, `ech`: EPCR (Champions/Challenge)
+- `epcr-champions`, `epcr-challenge`: EPCR (Champions/Challenge)
 - `t14`: Top 14
-- `jrlo_div1`, `jrlo_div2`, `jrlo_div3`: Japan Rugby League One
-- `gp`: Gallagher Premiership
+- `jrlo-div1`, `jrlo-div2`, `jrlo-div3`: Japan Rugby League One
+- `premier`: Gallagher Premiership
 - `urc`: United Rugby Championship
 - `srp`: Super Rugby Pacific
-- `rc`: Rugby Championship
+- `trc`: The Rugby Championship
 - `ans`: Autumn Nations Series
-- `wri`: World Rugby Internationals
+- `wr`: World Rugby Internationals
 
 **チームID**: 形式
 
 - 国代表: `NT_{GENDER}_{COUNTRY}` (例: `NT_M_ENG`, `NT_W_FRA`)
-- クラブ: `{comp_id}_{number}` (例: `gp_1`, `jrlo-div1_1`)
+- クラブ: `{comp_id}_{number}` (例: `premier_1`, `jrlo-div1_1`)
 
 ## 取得対象リーグと公式ソース
 
@@ -153,10 +155,10 @@ scripts/
 ```json
 [
   {
-    "id": "league-one",
+    "id": "jrlo-div1",
     "name": "Japan Rugby League One",
     "timezone_default": "Asia/Tokyo",
-    "data_paths": ["data/matches/league-one.json"],
+    "data_paths": ["data/matches/jrlo-div1/2026.json"],
     "coverage": {
       "broadcast_regions": [...],
       "analysis_providers": [...],
@@ -202,7 +204,25 @@ scripts/
 
 ## 🚀 使い方
 
-### スクレイピング実行
+## ✅ 運用フロー（最重要）
+
+**マスタは試合データと独立して更新します。**
+
+### A. マスタ独立運用（推奨）
+1. **チームマスタ更新**（公式チーム一覧から）
+2. **大会マスタ更新**（公式情報 + テンプレ補完）
+3. **試合取得**
+4. **team_id Backfill**（必要な場合のみ）
+
+### B. 試合先行運用（簡単）
+1. 試合取得  
+2. チームマスタ更新  
+3. team_id Backfill  
+4. 大会マスタ更新
+
+**どちらでも `team_id` を保証できるよう Backfill コマンドを用意しています。**
+
+### 1) 試合データ取得
 
 ```bash
 python -m src.main <competition-id>
@@ -215,15 +235,15 @@ python -m src.main <competition-id>
 python -m src.main m6n    # Men's Six Nations
 python -m src.main w6n    # Women's Six Nations
 python -m src.main u6n    # Six Nations U20
-python -m src.main rc     # Rugby Championship
+python -m src.main trc    # The Rugby Championship
 python -m src.main ans    # Autumn Nations Series
-python -m src.main wri    # World Rugby Internationals
+python -m src.main wr     # World Rugby Internationals
 
 # 欧州大会
-python -m src.main ecc    # EPCR Champions Cup
-python -m src.main ech    # EPCR Challenge Cup
+python -m src.main epcr-champions # EPCR Champions Cup
+python -m src.main epcr-challenge # EPCR Challenge Cup
 python -m src.main t14    # Top 14
-python -m src.main gp     # Gallagher Premiership
+python -m src.main premier # Gallagher Premiership
 python -m src.main urc    # United Rugby Championship
 
 # 国内リーグ
@@ -231,20 +251,132 @@ python -m src.main jrlo   # Japan Rugby League One (全Division)
 python -m src.main srp    # Super Rugby Pacific
 ```
 
+**補足**:
+- このコマンドは **試合データのみ** 更新します。
+- `teams.json` / `competitions.json` は **自動更新されません**。
+
+### 2) チームマスタ更新（公式チーム一覧から）
+
+```bash
+python -m src.main update-team-master
+```
+
+**いつ実行する？**
+- 新しい大会を追加したとき
+- チームが増減したとき
+- チームIDやチーム名の整合性を取り直したいとき
+
+**注意**:
+- JRLOのプレースホルダー（例: `準決勝(1)勝者`）は自動除外されます。
+- ロゴURLは公式サイトから同時に取得します（TheSportsDBは使用しません）。
+- 公式チーム一覧の取得元は `data/teams_sources.json` で管理します。
+
+**legacy**:
+- `extract-teams` は **試合データ依存の旧方式** です（非推奨）
+
+### 3) 大会マスタ更新（公式情報 + テンプレ補完）
+
+```bash
+python -m src.main update-competition-master
+```
+
+**いつ実行する？**
+- `data/matches` を更新したあと、`competitions.json` を最新化したいとき
+  - 公式サイトから取得できる情報（logo_url など）を自動反映
+  - テンプレは `data/competitions_base.json` で管理
+
+### 4) team_id Backfill（必要な場合のみ）
+
+```bash
+python -m src.main backfill-team-ids
+```
+
+**用途**:
+- 試合取得を先に行った場合に `home_team_id/away_team_id` を埋め直す
+- `--force` で既存のIDも上書き可能
+
+### 5) 大会メタデータサマリー（任意）
+
+```bash
+python -m src.main generate-metadata
+```
+
+**出力**: `data/competitions_summary.json`
+  
+試合データから集計したサマリーを出力します（マスタ更新とは独立）。
 ### サービス実行
 
 ```bash
-# チーム抽出・統合
-python -m src.main extract-teams
+# チームマスタ更新（公式チーム一覧）
+python -m src.main update-team-master
+
+# 大会マスタ更新（公式情報 + テンプレ補完）
+python -m src.main update-competition-master
+
+# team_id 後埋め
+python -m src.main backfill-team-ids
 
 # 重複チェック
 python -m src.main validate-duplicates
 
-# 大会メタデータ生成
+# 大会メタデータ生成（サマリー）
 python -m src.main generate-metadata
+
+# legacy: 試合データ依存のチーム抽出
+python -m src.main extract-teams
 
 # 全大会を一括スクレイピング
 python scripts/automation/scrape_all.py
+```
+
+### 推奨ワークフロー: マスタ独立運用
+
+```bash
+# 1) チームマスタ更新（公式チーム一覧）
+python -m src.main update-team-master
+
+# 2) 大会マスタ更新（公式情報 + テンプレ補完）
+python -m src.main update-competition-master
+
+# 3) 試合取得（必要な大会だけ）
+python -m src.main premier
+python -m src.main urc
+python -m src.main epcr-champions
+
+# 4) team_id を後から埋め直す（必要な場合のみ）
+python -m src.main backfill-team-ids
+
+# 5) 公式ロゴ検証（任意）
+python scripts/validate_official_logos.py
+```
+
+**手順**:
+
+```bash
+# 1. 大会データをスクレイピング
+python -m src.main premier
+
+# 2. チームマスタを再生成（試合データから抽出）
+python -m src.main extract-teams
+
+```
+
+**検証**:
+
+```bash
+# 公式ロゴURLの妥当性チェック
+python scripts/validate_official_logos.py
+```
+
+**複数大会の場合**:
+
+```bash
+# 全大会スクレイピング → 必要に応じてロゴ取得
+python -m src.main premier
+python -m src.main urc
+python -m src.main epcr-champions
+python -m src.main extract-teams
+python scripts/validate_official_logos.py  # 公式ロゴURLの妥当性チェック
 ```
 
 ## 📡 取得パス一覧 (itsuneru向け)
@@ -263,9 +395,9 @@ https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/teams.json
 
 - Men's Six Nations: `data/matches/m6n/2025.json`
 - Women's Six Nations: `data/matches/w6n/2025.json`
-- Gallagher Premiership: `data/matches/gp/2025.json`
-- Japan Rugby League One D1: `data/matches/jrlo_div1/2026.json`
-- World Rugby Internationals: `data/matches/wri/2026.json`
+- Gallagher Premiership: `data/matches/premier/2025.json`
+- Japan Rugby League One D1: `data/matches/jrlo-div1/2026.json`
+- World Rugby Internationals: `data/matches/wr/2026.json`
 
 **注**: 各大会の正確な `data_paths` は `data/competitions.json` の各エントリを参照してください。
 
@@ -312,11 +444,15 @@ import type {
 
 ### データ生成
 
-`data/competitions.json` は取得済みの試合データから自動生成されます。
-一部の大会は `data_paths` が空のままなので、今後の取得拡充対象として扱えます。
+`data/competitions.json` は **テンプレ + 公式サイト情報** を統合して生成します。
+試合データ由来の集計サマリーは `data/competitions_summary.json` に出力します。
 
 ```bash
-python -m src.metadata.generate_competitions
+# competitions.json を更新（公式情報 + テンプレ補完）
+python -m src.main update-competition-master
+
+# 集計サマリーを更新（試合データから）
+python -m src.main generate-metadata
 ```
 
 ## GitHub Raw での取得URL例
@@ -324,11 +460,11 @@ python -m src.metadata.generate_competitions
 `data` ブランチに更新されるため、以下の形式で最新データを取得できます。
 
 ```
-https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/<file>.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/{comp_id}/{season}.json
 ```
 
 例:
 
 ```
-https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/six-nations.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/m6n/2026.json
 ```

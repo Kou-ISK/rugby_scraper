@@ -207,6 +207,22 @@ class SuperRugbyPacificScraper(BaseScraper):
             tzinfo=timezone(offset),
         )
 
+        srp_aliases = {
+            "BLUES": "Blues",
+            "BRUMBIES": "Brumbies",
+            "CHIEFS": "Chiefs",
+            "CRUSADERS": "Crusaders",
+            "FIJIAN DRUA": "Fijian Drua",
+            "FORCE": "Western Force",
+            "HIGHLANDERS": "Highlanders",
+            "HURRICANES": "Hurricanes",
+            "MOANA PASIFIKA": "Moana Pasifika",
+            "REDS": "Queensland Reds",
+            "WARATAHS": "NSW Waratahs",
+        }
+        home_team = srp_aliases.get(home_team.upper(), home_team)
+        away_team = srp_aliases.get(away_team.upper(), away_team)
+
         return {
             "home_team": home_team,
             "away_team": away_team,

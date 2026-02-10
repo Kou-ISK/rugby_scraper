@@ -511,16 +511,18 @@ export type CompetitionId =
   | 'm6n' // Men's Six Nations
   | 'w6n' // Women's Six Nations
   | 'u6n' // U20 Six Nations
-  | 'ecc' // EPCR Champions Cup
-  | 'ech' // EPCR Challenge Cup
+  | 'epcr-champions' // EPCR Champions Cup
+  | 'epcr-challenge' // EPCR Challenge Cup
   | 't14' // Top 14
-  | 'jrlo' // Japan Rugby League One
-  | 'gp' // Gallagher Premiership
+  | 'jrlo-div1' // Japan Rugby League One Division 1
+  | 'jrlo-div2' // Japan Rugby League One Division 2
+  | 'jrlo-div3' // Japan Rugby League One Division 3
+  | 'premier' // Gallagher Premiership
   | 'urc' // United Rugby Championship
   | 'srp' // Super Rugby Pacific
   | 'trc' // The Rugby Championship
   | 'ans' // Autumn Nations Series
-  | 'wri'; // World Rugby Internationals
+  | 'wr'; // World Rugby Internationals
 
 /**
  * 旧大会ID（非推奨）
@@ -530,8 +532,6 @@ export type LegacyCompetitionId =
   | 'six-nations'
   | 'six-nations-women'
   | 'six-nations-u20'
-  | 'epcr-champions'
-  | 'epcr-challenge'
   | 'top14'
   | 'league-one'
   | 'gallagher-premiership'
@@ -539,7 +539,14 @@ export type LegacyCompetitionId =
   | 'super-rugby-pacific'
   | 'rugby-championship'
   | 'autumn-nations-series'
-  | 'world-rugby-internationals';
+  | 'world-rugby-internationals'
+  | 'gp'
+  | 'ecc'
+  | 'ech'
+  | 'wri'
+  | 'jrlo_div1'
+  | 'jrlo_div2'
+  | 'jrlo_div3';
 
 /**
  * GitHub Raw URL を生成するヘルパー型（新構造対応）

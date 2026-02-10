@@ -6,23 +6,23 @@ echo ""
 
 # 成功した大会
 SUCCESSFUL_COMPETITIONS=(
-    "six-nations"
-    "six-nations-women"
-    "six-nations-u20"
-    "gallagher-premiership"
+    "m6n"
+    "w6n"
+    "u6n"
+    "premier"
     "urc"
-    "world-rugby-internationals"
-    "league-one"
+    "wr"
+    "jrlo"
 )
 
 # 未実装/失敗する大会
 PENDING_COMPETITIONS=(
     "epcr-challenge"
     "epcr-champions"
-    "top14"
-    "super-rugby-pacific"
-    "rugby-championship"
-    "autumn-nations-series"
+    "t14"
+    "srp"
+    "trc"
+    "ans"
 )
 
 # 成功した大会をスキップして確認のみ

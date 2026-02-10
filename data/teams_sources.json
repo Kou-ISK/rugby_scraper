@@ -1,0 +1,53 @@
+{
+  "m6n": {
+    "type": "six-nations-fixtures",
+    "competition_path": "m6n"
+  },
+  "w6n": {
+    "type": "six-nations-fixtures",
+    "competition_path": "w6n"
+  },
+  "u6n": {
+    "type": "six-nations-fixtures",
+    "competition_path": "u6n/u20-mens"
+  },
+  "premier": {
+    "type": "premiership-clubs",
+    "url": "https://www.premiershiprugby.com/clubs"
+  },
+  "urc": {
+    "type": "urc-clubs",
+    "url": "https://www.unitedrugby.com/clubs"
+  },
+  "epcr-champions": {
+    "type": "epcr-clubs",
+    "url": "https://www.epcrugby.com/champions-cup/clubs"
+  },
+  "epcr-challenge": {
+    "type": "epcr-clubs",
+    "url": "https://www.epcrugby.com/challenge-cup/clubs"
+  },
+  "t14": {
+    "type": "top14-clubs",
+    "url": "https://top14.lnr.fr/clubs"
+  },
+  "jrlo-div1": {
+    "type": "jrlo-teams",
+    "url": "https://league-one.jp/team/",
+    "short_names_url": "https://league-one.jp/content/about/"
+  },
+  "jrlo-div2": {
+    "type": "jrlo-teams",
+    "url": "https://league-one.jp/team/",
+    "short_names_url": "https://league-one.jp/content/about/"
+  },
+  "jrlo-div3": {
+    "type": "jrlo-teams",
+    "url": "https://league-one.jp/team/",
+    "short_names_url": "https://league-one.jp/content/about/"
+  },
+  "srp": {
+    "type": "srp-teams",
+    "url": "https://www.super.rugby/superrugby/teams/"
+  }
+}

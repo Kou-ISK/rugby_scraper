@@ -9,9 +9,9 @@ class LeagueOneDivisionsScraper(BaseScraper):
     """Japan Rugby League One scraper with Division support.
     
     Division 1, 2, 3を別ファイルとして出力:
-    - jrlo_div1/2026.json
-    - jrlo_div2/2026.json
-    - jrlo_div3/2026.json
+    - jrlo-div1/2026.json
+    - jrlo-div2/2026.json
+    - jrlo-div3/2026.json
     """
     
     # Division 1のチーム（2025-2026シーズン）
@@ -20,12 +20,13 @@ class LeagueOneDivisionsScraper(BaseScraper):
         "東芝ブレイブルーパス東京", "トヨタヴェルブリッツ", "ブラックラムズ東京",
         "コベルコ神戸スティーラーズ", "横浜キヤノンイーグルス", "静岡ブルーレヴズ",
         "花園近鉄ライナーズ", "三重ホンダヒート", "レッドハリケーンズ大阪",
+        "三菱重工相模原ダイナボアーズ", "浦安D-Rocks",
     }
     
     # Division 2のチーム
     DIVISION_2_TEAMS = {
         "グリーンロケッツ東葛", "ルリーロ福岡", "クリタウォーターガッシュ昭島",
-        "浦安D-Rocks", "三菱重工相模原ダイナボアーズ", "ヤクルトレビンズ戸田",
+        "ヤクルトレビンズ戸田",
         "スカイアクティブズ広島", "九州電力キューデンヴォルテクス",
         # 2025-2026シーズン追加チーム
         "日本製鉄釜石シーウェイブス", "日野レッドドルフィンズ",
@@ -43,6 +44,7 @@ class LeagueOneDivisionsScraper(BaseScraper):
         super().__init__()
         self.base_url = "https://league-one.jp"
         self.calendar_url = self.base_url + "/schedule/"
+        self._team_logos_cache_by_comp = {}
         
     def _get_division(self, team_name: str) -> str:
         """チーム名からDivisionを判定
@@ -61,6 +63,56 @@ class LeagueOneDivisionsScraper(BaseScraper):
             return "div3"
         else:
             return ""
+
+    def _infer_division_from_text(self, text: str) -> str:
+        if not text:
+            return ""
+        if "ディビジョン1" in text or "D1" in text:
+            return "div1"
+        if "ディビジョン2" in text or "D2" in text:
+            return "div2"
+        if "ディビジョン3" in text or "D3" in text:
+            return "div3"
+        return ""
+
+    def _find_division_near_container(self, container) -> str:
+        if not container:
+            return ""
+        # 祖先コンテナ内の「ディビジョン」表記を優先
+        ancestor = container
+        for _ in range(6):
+            if not ancestor:
+                break
+            text = ancestor.get_text(" ", strip=True)
+            div = self._infer_division_from_text(text)
+            if div:
+                return div
+            ancestor = ancestor.parent
+
+        # 直近の「ディビジョン」表記を持つ要素を探索
+        node = container
+        for _ in range(12):
+            node = node.find_previous(["div", "p", "h2", "h3", "h4", "span"])
+            if not node:
+                break
+            text = node.get_text(strip=True)
+            div = self._infer_division_from_text(text)
+            if div:
+                return div
+        return ""
+
+    def _is_placeholder_team(self, team_name: str) -> bool:
+        if not team_name:
+            return False
+        placeholders = [
+            "リーグ戦",
+            "準々決勝",
+            "準決勝",
+            "決勝",
+        ]
+        if any(p in team_name for p in placeholders):
+            return True
+        return False
         
     def scrape(self):
         try:
@@ -82,35 +134,63 @@ class LeagueOneDivisionsScraper(BaseScraper):
             soup = BeautifulSoup(response.content, 'html.parser')
             matches = self._extract_matches(soup)
             all_matches.extend(matches)
+
+            # 公式ロゴの反映
+            for comp_id, team_logos in self._team_logos_cache_by_comp.items():
+                self._apply_official_team_logos(team_logos, comp_id)
             
             # Divisionごとに分類（両チームが同じDivisionの試合のみ）
             div1_matches = []
             div2_matches = []
             div3_matches = []
             unknown_matches = []
-            cross_division_matches = []  # Division間の試合
+            cross_division_matches = []  # Division間の試合（期待しないがログ用）
             
             for match in all_matches:
                 home_team = match.get("home_team", "")
                 away_team = match.get("away_team", "")
                 
+                # matchレベルで判定済みのdivisionがあれば優先
+                match_div = match.get("division", "")
                 home_div = self._get_division(home_team)
                 away_div = self._get_division(away_team)
+                # プレースホルダー名はDivision1扱い（ヘッダー不明時のフォールバック）
+                if not home_div and self._is_placeholder_team(home_team):
+                    home_div = "div1"
+                if not away_div and self._is_placeholder_team(away_team):
+                    away_div = "div1"
+
+                if match_div:
+                    home_div = match_div
+                    away_div = match_div
+                else:
+                    # 片方だけ判定できた場合はそのdivisionで統一（交流戦は無い前提）
+                    if home_div and not away_div:
+                        away_div = home_div
+                    if away_div and not home_div:
+                        home_div = away_div
                 
                 # 両チームが同じDivisionの試合のみを抽出
                 if home_div and away_div and home_div == away_div:
                     if home_div == "div1":
-                        match["competition_id"] = "jrlo_div1"
+                        match["competition_id"] = "jrlo-div1"
                         div1_matches.append(match)
                     elif home_div == "div2":
-                        match["competition_id"] = "jrlo_div2"
+                        match["competition_id"] = "jrlo-div2"
                         div2_matches.append(match)
                     elif home_div == "div3":
-                        match["competition_id"] = "jrlo_div3"
+                        match["competition_id"] = "jrlo-div3"
                         div3_matches.append(match)
                 elif home_div and away_div and home_div != away_div:
-                    # Division間の交流戦
+                    # Division間の交流戦（想定外）→ home_divで扱う
                     cross_division_matches.append(match)
+                    match["competition_id"] = f"jrlo-{home_div}"
+                    if home_div == "div1":
+                        div1_matches.append(match)
+                    elif home_div == "div2":
+                        div2_matches.append(match)
+                    elif home_div == "div3":
+                        div3_matches.append(match)
                 else:
                     # どちらかのチームが未定義
                     unknown_matches.append(match)
@@ -120,18 +200,26 @@ class LeagueOneDivisionsScraper(BaseScraper):
                 comp_id = match.get("competition_id", "jrlo")
                 home_team = match.get("home_team", "")
                 away_team = match.get("away_team", "")
+
+                # プレースホルダー名はteam_idを空にする
+                if self._is_placeholder_team(home_team):
+                    match["home_team_id"] = ""
+                else:
+                    match["home_team_id"] = self._resolve_team_id(home_team, comp_id)
+                if self._is_placeholder_team(away_team):
+                    match["away_team_id"] = ""
+                else:
+                    match["away_team_id"] = self._resolve_team_id(away_team, comp_id)
                 
-                # BaseScraperの_resolve_team_id（自動連番採番）
-                match["home_team_id"] = self._resolve_team_id(home_team, comp_id)
-                match["away_team_id"] = self._resolve_team_id(away_team, comp_id)
-            
+                # placeholderを含む場合は名寄せしない
+
             # ログ出力
             print(f"\n=== JRLO Division分類結果 ===")
             print(f"Division 1: {len(div1_matches)}試合")
             print(f"Division 2: {len(div2_matches)}試合")
             print(f"Division 3: {len(div3_matches)}試合")
             if cross_division_matches:
-                print(f"⚠️  Division間交流戦: {len(cross_division_matches)}試合（スキップ）")
+                print(f"⚠️  Division間交流戦: {len(cross_division_matches)}試合（確認要）")
                 for m in cross_division_matches[:5]:  # 最初の5試合のみ表示
                     home_div = self._get_division(m.get("home_team", ""))
                     away_div = self._get_division(m.get("away_team", ""))
@@ -166,11 +254,11 @@ class LeagueOneDivisionsScraper(BaseScraper):
             # ファイル保存
             season = str(int(year) + 1)  # 2025年開始 → 2026シーズン
             if div1_matches:
-                self.save_to_json(div1_matches, f"jrlo_div1/{season}")
+                self.save_to_json(div1_matches, f"jrlo-div1/{season}")
             if div2_matches:
-                self.save_to_json(div2_matches, f"jrlo_div2/{season}")
+                self.save_to_json(div2_matches, f"jrlo-div2/{season}")
             if div3_matches:
-                self.save_to_json(div3_matches, f"jrlo_div3/{season}")
+                self.save_to_json(div3_matches, f"jrlo-div3/{season}")
             
             return {
                 "div1": div1_matches,
@@ -211,13 +299,29 @@ class LeagueOneDivisionsScraper(BaseScraper):
                 
                 home_team = self._get_team_name(teams[0]) or ""
                 away_team = self._get_team_name(teams[1]) or ""
+
+                # 公式ロゴURL取得（チーム要素内のimg）
+                home_logo = self._get_team_logo_url(teams[0])
+                away_logo = self._get_team_logo_url(teams[1])
+                home_div = self._get_division(home_team)
+                away_div = self._get_division(away_team)
+                if home_logo and home_div:
+                    comp_id = f"jrlo-{home_div}"
+                    self._team_logos_cache_by_comp.setdefault(comp_id, {})[home_team] = {"logo_url": home_logo}
+                if away_logo and away_div:
+                    comp_id = f"jrlo-{away_div}"
+                    self._team_logos_cache_by_comp.setdefault(comp_id, {})[away_team] = {"logo_url": away_logo}
                 
                 kickoff = self.format_date_string(self._format_date(date_element))
                 
+                # divisionを事前に推定
+                inferred_div = self._find_division_near_container(container)
+                comp_id = f"jrlo-{inferred_div}" if inferred_div else "jrlo"
+
                 # competition_idは後でdivisionに応じて変更
                 # team_idは後で設定（Division分類後に登録）
                 match_info = self.build_match(
-                    competition_id="jrlo",  # 仮ID
+                    competition_id=comp_id,  # 仮ID
                     season=str(datetime.now().year),
                     round_name="",
                     status="scheduled",
@@ -231,6 +335,7 @@ class LeagueOneDivisionsScraper(BaseScraper):
                     home_team_id="",  # 後で設定
                     away_team_id="",  # 後で設定
                 )
+                match_info["division"] = inferred_div
                 matches.append(match_info)
                 
             except Exception as e:
@@ -238,6 +343,21 @@ class LeagueOneDivisionsScraper(BaseScraper):
                 continue
         
         return matches
+
+    def _get_team_logo_url(self, team_element) -> str:
+        if not team_element:
+            return ""
+        img = team_element.find("img")
+        if not img:
+            return ""
+        src = img.get("src") or img.get("data-src") or ""
+        if not src:
+            return ""
+        if src.startswith("//"):
+            return f"https:{src}"
+        if src.startswith("/"):
+            return f"{self.base_url}{src}"
+        return src
 
     def _format_date(self, date_element):
         try:

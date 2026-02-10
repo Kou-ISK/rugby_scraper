@@ -16,8 +16,8 @@ https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/{comp_
 
 ```
 https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/m6n/2025.json
-https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/gp/2025.json
-https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/jrlo_div1/2026.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/premier/2025.json
+https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/jrlo-div1/2026.json
 ```
 
 ### スキーマ
@@ -89,9 +89,9 @@ type Matches = Match[];
 ```json
 [
   {
-    "match_id": "six-nations-2026-02-05t20:10:00z-fra-ire",
+    "match_id": "m6n-2026-rd1-1",
     "competition": "Six Nations",
-    "competition_id": "six-nations",
+    "competition_id": "m6n",
     "season": "2026",
     "round": "Round 1",
     "status": "scheduled",
@@ -285,7 +285,7 @@ type Competitions = Competition[];
 ```json
 [
   {
-    "id": "six-nations",
+    "id": "m6n",
     "name": "Six Nations",
     "short_name": "6N",
     "sport": "rugby union",
@@ -301,7 +301,7 @@ type Competitions = Competition[];
     "timezone_default": "Europe/London",
     "season_pattern": "annual",
     "match_url_template": "https://www.sixnationsrugby.com/en/m6n/fixtures/{season}/{slug}",
-    "data_paths": ["data/matches/six-nations.json"],
+    "data_paths": ["data/matches/m6n"],
     "coverage": {
       "broadcast_regions": [
         {
@@ -351,13 +351,13 @@ type Competitions = Competition[];
 | `organizer`          | `string`      | ✓    | 主催者名                                                        |
 | `official_sites`     | `string[]`    | ✓    | 公式サイトURL配列                                               |
 | `official_feeds`     | `string[]`    | ✓    | 公式データフィードURL配列（空配列の場合あり）                   |
-| `logo_url`           | `string`      | -    | 大会ロゴの外部URL（Wikimedia/TheSportsDBなどオリジナル出典）    |
+| `logo_url`           | `string`      | -    | 大会ロゴの外部URL（公式サイト/公式CDNのオリジナル出典）    |
 | `logo_repo_path`     | `string`      | -    | リポジトリ内に保存した大会ロゴパス（外部URLが使えない場合のみ） |
 | `license_key`        | `string`      | -    | ロゴのライセンス情報キー（`data/logo_licenses.json` を参照）    |
 | `timezone_default`   | `string`      | ✓    | デフォルトタイムゾーン（IANA形式）                              |
 | `season_pattern`     | `string`      | ✓    | シーズンパターン: `"annual"` または `"variable"`                |
 | `match_url_template` | `string`      | ✓    | 試合URLテンプレート（空文字列の場合あり）                       |
-| `data_paths`         | `string[]`    | ✓    | 試合データファイルの相対パス配列                                |
+| `data_paths`         | `string[]`    | ✓    | 試合データファイル/ディレクトリの相対パス配列                    |
 | `coverage`           | `Coverage`    | ✓    | 視聴情報オブジェクト                                            |
 | `teams`              | `string[]`    | ✓    | 参加チーム名配列（空配列の場合あり）                            |
 | `data_summary`       | `DataSummary` | ✓    | データサマリーオブジェクト                                      |
@@ -395,7 +395,7 @@ type Competitions = Competition[];
 
 ブランド情報は以下の方針で追加します。
 
-- `logo_url` / `badge_url` には極力オリジナルの配信元（TheSportsDB, Wikimedia など）のURLを保存し、再配布を避けます。
+- `logo_url` / `badge_url` には公式サイト/公式CDNのURLを保存し、再配布を避けます。
 - オリジナルURLが不安定または再配布が許可されている場合のみ、`logo_repo_path` にリポジトリ内パスを保存します。
 - このプロジェクトではS3など外部ストレージは使用せず、オリジナルURL参照またはGitHubリポジトリ内保存の二択とします。
 - ライセンス情報は `data/logo_licenses.json` に集約し、各オブジェクトからは `license_key` で参照します。
@@ -407,7 +407,7 @@ type Competitions = Competition[];
 | フィールド       | 型       | 必須 | 説明                                                 |
 | ---------------- | -------- | ---- | ---------------------------------------------------- |
 | `team`           | `string` | ✓    | チーム名またはスラッグ                               |
-| `badge_url`      | `string` | -    | チームバッジの外部URL（TheSportsDB `strBadge` など） |
+| `badge_url`      | `string` | -    | チームバッジの外部URL（公式サイト/公式CDN） |
 | `logo_url`       | `string` | -    | チームロゴの外部URL（必要に応じて使用）              |
 | `logo_repo_path` | `string` | -    | リポジトリ内に保存したロゴパス                       |
 | `license_key`    | `string` | -    | ロゴのライセンス情報キー                             |
@@ -477,21 +477,23 @@ type Competitions = Competition[];
 
 itsuneru が参照可能な大会IDとそのデータパス：
 
-| 大会ID                       | データパス                                     | 大会名                     |
-| ---------------------------- | ---------------------------------------------- | -------------------------- |
-| `six-nations`                | `data/matches/six-nations.json`                | Six Nations                |
-| `six-nations-women`          | `data/matches/six-nations-women.json`          | Women's Six Nations        |
-| `six-nations-u20`            | `data/matches/six-nations-u20.json`            | Six Nations U20            |
-| `epcr-champions`             | `data/matches/epcr-champions.json`             | EPCR Champions Cup         |
-| `epcr-challenge`             | `data/matches/epcr-challenge.json`             | EPCR Challenge Cup         |
-| `top14`                      | `data/matches/top14.json`                      | Top 14                     |
-| `league-one`                 | `data/matches/league-one.json`                 | Japan Rugby League One     |
-| `gallagher-premiership`      | `data/matches/gallagher-premiership.json`      | Gallagher Premiership      |
-| `urc`                        | `data/matches/urc.json`                        | United Rugby Championship  |
-| `super-rugby-pacific`        | `data/matches/super-rugby-pacific.json`        | Super Rugby Pacific        |
-| `rugby-championship`         | `data/matches/rugby-championship.json`         | The Rugby Championship     |
-| `autumn-nations-series`      | `data/matches/autumn-nations-series.json`      | Autumn Nations Series      |
-| `world-rugby-internationals` | `data/matches/world-rugby-internationals.json` | World Rugby Internationals |
+| 大会ID            | データパス                        | 大会名                        |
+| ----------------- | --------------------------------- | ----------------------------- |
+| `m6n`             | `data/matches/m6n/2026.json`      | Six Nations                   |
+| `w6n`             | `data/matches/w6n/2026.json`      | Women's Six Nations           |
+| `u6n`             | `data/matches/u6n/2026.json`      | Six Nations U20               |
+| `epcr-champions`  | `data/matches/epcr-champions/...` | EPCR Champions Cup            |
+| `epcr-challenge`  | `data/matches/epcr-challenge/...` | EPCR Challenge Cup            |
+| `t14`             | `data/matches/t14/...`            | Top 14                        |
+| `jrlo-div1`       | `data/matches/jrlo-div1/...`      | Japan Rugby League One (D1)   |
+| `jrlo-div2`       | `data/matches/jrlo-div2/...`      | Japan Rugby League One (D2)   |
+| `jrlo-div3`       | `data/matches/jrlo-div3/...`      | Japan Rugby League One (D3)   |
+| `premier`         | `data/matches/premier/...`        | Gallagher Premiership         |
+| `urc`             | `data/matches/urc/...`            | United Rugby Championship     |
+| `srp`             | `data/matches/srp/...`            | Super Rugby Pacific           |
+| `trc`             | `data/matches/trc/...`            | The Rugby Championship        |
+| `ans`             | `data/matches/ans/...`            | Autumn Nations Series         |
+| `wr`              | `data/matches/wr/...`             | World Rugby Internationals    |
 
 ---
 
@@ -622,7 +624,7 @@ const competitions: Competitions = await fetch(
 
 // 特定大会の試合データ取得
 const sixNationsMatches: Matches = await fetch(
-  'https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/six-nations.json',
+  'https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/m6n/2026.json',
 ).then((r) => r.json());
 ```
 

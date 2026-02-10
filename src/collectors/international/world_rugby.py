@@ -7,6 +7,7 @@ from ..base import BaseScraper
 class WorldRugbyInternationalsScraper(BaseScraper):
     def __init__(self):
         super().__init__()
+        self._competition_id = "wr"
         self.api_base = "https://api.wr-rims-prod.pulselive.com"
         self.source_url = "https://www.world.rugby/fixtures"
         self.match_url_template = "https://www.world.rugby/match/{match_id}"
@@ -42,7 +43,7 @@ class WorldRugbyInternationalsScraper(BaseScraper):
                 matches = self.assign_match_ids(matches)
                 
                 season = str(datetime.utcnow().year)
-                filename = f"wri/{season}"
+                filename = f"{self._competition_id}/{season}"
                 self.save_to_json(matches, filename)
                 print(f"✅ {len(matches)}試合を保存: {filename}.json")
             
@@ -99,12 +100,12 @@ class WorldRugbyInternationalsScraper(BaseScraper):
             # team_idを自動解決（teams.jsonに自動登録）
             home_team_name = home_team.get("name", "") if home_team else ""
             away_team_name = away_team.get("name", "") if away_team else ""
-            home_team_id = self._resolve_team_id(home_team_name, "wri") if home_team_name else None
-            away_team_id = self._resolve_team_id(away_team_name, "wri") if away_team_name else None
+            home_team_id = self._resolve_team_id(home_team_name, self._competition_id) if home_team_name else None
+            away_team_id = self._resolve_team_id(away_team_name, self._competition_id) if away_team_name else None
 
             normalized.append(
                 self.build_match(
-                    competition_id="wri",
+                    competition_id=self._competition_id,
                     season=str(datetime.utcnow().year),
                     round_name=match.get("eventPhase") or "",
                     status=match.get("status") or "",
@@ -158,8 +159,9 @@ class WorldRugbyInternationalsScraper(BaseScraper):
 
 
 class WorldRugbyCompetitionScraper(WorldRugbyInternationalsScraper):
-    def __init__(self, include_patterns, source_url=None, source_name=None):
+    def __init__(self, include_patterns, competition_id: str, source_url=None, source_name=None):
         super().__init__()
+        self._competition_id = competition_id
         self.include_patterns = include_patterns
         if source_url:
             self.source_url = source_url
@@ -171,6 +173,7 @@ class RugbyChampionshipScraper(WorldRugbyCompetitionScraper):
     def __init__(self):
         super().__init__(
             include_patterns=[r"Rugby Championship"],
+            competition_id="trc",
             source_url="https://www.world.rugby/fixtures",
             source_name="World Rugby",
         )
@@ -180,6 +183,7 @@ class AutumnNationsSeriesScraper(WorldRugbyCompetitionScraper):
     def __init__(self):
         super().__init__(
             include_patterns=[r"Autumn Nations Series"],
+            competition_id="ans",
             source_url="https://www.world.rugby/fixtures",
             source_name="World Rugby",
         )

@@ -1,1355 +1,1509 @@
 {
-  "gp_1": {
-    "id": "gp_1",
-    "competition_id": "gp",
-    "name": "Sale Sharks",
+  "epcr-challenge_1": {
+    "id": "epcr-challenge_1",
+    "competition_id": "epcr-challenge",
+    "name": "Benetton Rugby",
     "name_ja": "",
-    "short_name": "Sale Sharks",
+    "short_name": "Benetton Rugby",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://media-cdn.incrowdsports.com/4747375d-38be-471b-a933-a26e5e4f6617.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/4747375d-38be-471b-a933-a26e5e4f6617.png?format=webp&width=125"
   },
-  "gp_2": {
-    "id": "gp_2",
-    "competition_id": "gp",
-    "name": "Gloucester Rugby",
+  "epcr-challenge_2": {
+    "id": "epcr-challenge_2",
+    "competition_id": "epcr-challenge",
+    "name": "Black Lion",
     "name_ja": "",
-    "short_name": "Gloucester Rugby",
+    "short_name": "Black Lion",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://media-cdn.incrowdsports.com/055a9acc-7cb1-4dbe-aef8-4913ac865bff.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/055a9acc-7cb1-4dbe-aef8-4913ac865bff.png?format=webp&width=125"
   },
-  "gp_3": {
-    "id": "gp_3",
-    "competition_id": "gp",
-    "name": "Newcastle Red Bulls",
+  "epcr-challenge_3": {
+    "id": "epcr-challenge_3",
+    "competition_id": "epcr-challenge",
+    "name": "Cardiff Rugby",
     "name_ja": "",
-    "short_name": "Newcastle Red Bulls",
+    "short_name": "Cardiff Rugby",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://media-cdn.incrowdsports.com/80dc5505-4ad9-4237-8f79-305a7e1a5965.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/80dc5505-4ad9-4237-8f79-305a7e1a5965.png?format=webp&width=125"
   },
-  "gp_4": {
-    "id": "gp_4",
-    "competition_id": "gp",
-    "name": "Saracens",
-    "name_ja": "",
-    "short_name": "Saracens",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "gp_5": {
-    "id": "gp_5",
-    "competition_id": "gp",
-    "name": "Harlequins",
-    "name_ja": "",
-    "short_name": "Harlequins",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "gp_6": {
-    "id": "gp_6",
-    "competition_id": "gp",
-    "name": "Bath Rugby",
-    "name_ja": "",
-    "short_name": "Bath Rugby",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "gp_7": {
-    "id": "gp_7",
-    "competition_id": "gp",
-    "name": "Northampton Saints",
-    "name_ja": "",
-    "short_name": "Northampton Saints",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "gp_8": {
-    "id": "gp_8",
-    "competition_id": "gp",
-    "name": "Exeter Chiefs",
-    "name_ja": "",
-    "short_name": "Exeter Chiefs",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "gp_9": {
-    "id": "gp_9",
-    "competition_id": "gp",
-    "name": "Bristol Bears",
-    "name_ja": "",
-    "short_name": "Bristol Bears",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "gp_10": {
-    "id": "gp_10",
-    "competition_id": "gp",
-    "name": "Leicester Tigers",
-    "name_ja": "",
-    "short_name": "Leicester Tigers",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "gp_11": {
-    "id": "gp_11",
-    "competition_id": "gp",
-    "name": "TBC",
-    "name_ja": "",
-    "short_name": "TBC",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_1": {
-    "id": "jrlo-div1_1",
-    "competition_id": "jrlo_div1",
-    "name": "ブラックラムズ東京",
-    "name_ja": "",
-    "short_name": "ブラックラムズ東京",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_2": {
-    "id": "jrlo-div1_2",
-    "competition_id": "jrlo_div1",
-    "name": "東京サンゴリアス",
-    "name_ja": "",
-    "short_name": "東京サンゴリアス",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_3": {
-    "id": "jrlo-div1_3",
-    "competition_id": "jrlo_div1",
-    "name": "トヨタヴェルブリッツ",
-    "name_ja": "",
-    "short_name": "トヨタヴェルブリッツ",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_4": {
-    "id": "jrlo-div1_4",
-    "competition_id": "jrlo_div1",
-    "name": "三重ホンダヒート",
-    "name_ja": "",
-    "short_name": "三重ホンダヒート",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_5": {
-    "id": "jrlo-div1_5",
-    "competition_id": "jrlo_div1",
-    "name": "コベルコ神戸スティーラーズ",
-    "name_ja": "",
-    "short_name": "コベルコ神戸スティーラーズ",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_6": {
-    "id": "jrlo-div1_6",
-    "competition_id": "jrlo_div1",
-    "name": "クボタスピアーズ船橋・東京ベイ",
-    "name_ja": "",
-    "short_name": "クボタスピアーズ船橋・東京ベイ",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_7": {
-    "id": "jrlo-div1_7",
-    "competition_id": "jrlo_div1",
-    "name": "横浜キヤノンイーグルス",
-    "name_ja": "",
-    "short_name": "横浜キヤノンイーグルス",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_8": {
-    "id": "jrlo-div1_8",
-    "competition_id": "jrlo_div1",
-    "name": "静岡ブルーレヴズ",
-    "name_ja": "",
-    "short_name": "静岡ブルーレヴズ",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_9": {
-    "id": "jrlo-div1_9",
-    "competition_id": "jrlo_div1",
-    "name": "東芝ブレイブルーパス東京",
-    "name_ja": "",
-    "short_name": "東芝ブレイブルーパス東京",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_10": {
-    "id": "jrlo-div1_10",
-    "competition_id": "jrlo_div1",
-    "name": "埼玉ワイルドナイツ",
-    "name_ja": "",
-    "short_name": "埼玉ワイルドナイツ",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_11": {
-    "id": "jrlo-div1_11",
-    "competition_id": "jrlo_div1",
-    "name": "レッドハリケーンズ大阪",
-    "name_ja": "",
-    "short_name": "レッドハリケーンズ大阪",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div1_12": {
-    "id": "jrlo-div1_12",
-    "competition_id": "jrlo_div1",
-    "name": "花園近鉄ライナーズ",
-    "name_ja": "",
-    "short_name": "花園近鉄ライナーズ",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_1": {
-    "id": "jrlo-div2_1",
-    "competition_id": "jrlo_div2",
-    "name": "浦安D-Rocks",
-    "name_ja": "",
-    "short_name": "浦安D-Rocks",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_2": {
-    "id": "jrlo-div2_2",
-    "competition_id": "jrlo_div2",
-    "name": "三菱重工相模原ダイナボアーズ",
-    "name_ja": "",
-    "short_name": "三菱重工相模原ダイナボアーズ",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_3": {
-    "id": "jrlo-div2_3",
-    "competition_id": "jrlo_div2",
-    "name": "清水建設江東ブルーシャークス",
-    "name_ja": "",
-    "short_name": "清水建設江東ブルーシャークス",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_4": {
-    "id": "jrlo-div2_4",
-    "competition_id": "jrlo_div2",
-    "name": "日本製鉄釜石シーウェイブス",
-    "name_ja": "",
-    "short_name": "日本製鉄釜石シーウェイブス",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_5": {
-    "id": "jrlo-div2_5",
-    "competition_id": "jrlo_div2",
-    "name": "日野レッドドルフィンズ",
-    "name_ja": "",
-    "short_name": "日野レッドドルフィンズ",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_6": {
-    "id": "jrlo-div2_6",
-    "competition_id": "jrlo_div2",
-    "name": "九州電力キューデンヴォルテクス",
-    "name_ja": "",
-    "short_name": "九州電力キューデンヴォルテクス",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_7": {
-    "id": "jrlo-div2_7",
-    "competition_id": "jrlo_div2",
-    "name": "グリーンロケッツ東葛",
-    "name_ja": "",
-    "short_name": "グリーンロケッツ東葛",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_8": {
-    "id": "jrlo-div2_8",
-    "competition_id": "jrlo_div2",
-    "name": "豊田自動織機シャトルズ愛知",
-    "name_ja": "",
-    "short_name": "豊田自動織機シャトルズ愛知",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_9": {
-    "id": "jrlo-div2_9",
-    "competition_id": "jrlo_div2",
-    "name": "ヤクルトレビンズ戸田",
-    "name_ja": "",
-    "short_name": "ヤクルトレビンズ戸田",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_10": {
-    "id": "jrlo-div2_10",
-    "competition_id": "jrlo_div2",
-    "name": "ルリーロ福岡",
-    "name_ja": "",
-    "short_name": "ルリーロ福岡",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_11": {
-    "id": "jrlo-div2_11",
-    "competition_id": "jrlo_div2",
-    "name": "スカイアクティブズ広島",
-    "name_ja": "",
-    "short_name": "スカイアクティブズ広島",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div2_12": {
-    "id": "jrlo-div2_12",
-    "competition_id": "jrlo_div2",
-    "name": "クリタウォーターガッシュ昭島",
-    "name_ja": "",
-    "short_name": "クリタウォーターガッシュ昭島",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div3_1": {
-    "id": "jrlo-div3_1",
-    "competition_id": "jrlo_div3",
-    "name": "中国電力レッドレグリオンズ",
-    "name_ja": "",
-    "short_name": "中国電力レッドレグリオンズ",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "jrlo-div3_2": {
-    "id": "jrlo-div3_2",
-    "competition_id": "jrlo_div3",
-    "name": "狭山セコムラガッツ",
-    "name_ja": "",
-    "short_name": "狭山セコムラガッツ",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_1": {
-    "id": "urc_1",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
-    "name_ja": "",
-    "short_name": "DHL Stormers",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_2": {
-    "id": "urc_2",
-    "competition_id": "urc",
-    "name": "Leinster Rugby",
-    "name_ja": "",
-    "short_name": "Leinster Rugby",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_3": {
-    "id": "urc_3",
-    "competition_id": "urc",
-    "name": "Glasgow Warriors",
-    "name_ja": "",
-    "short_name": "Glasgow Warriors",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_4": {
-    "id": "urc_4",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
-    "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_5": {
-    "id": "urc_5",
-    "competition_id": "urc",
-    "name": "Ulster Rugby",
-    "name_ja": "",
-    "short_name": "Ulster Rugby",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_6": {
-    "id": "urc_6",
-    "competition_id": "urc",
-    "name": "Dragons RFC",
-    "name_ja": "",
-    "short_name": "Dragons RFC",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_7": {
-    "id": "urc_7",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
-    "name_ja": "",
-    "short_name": "Vodacom Bulls",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_8": {
-    "id": "urc_8",
-    "competition_id": "urc",
-    "name": "Ospreys",
-    "name_ja": "",
-    "short_name": "Ospreys",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_9": {
-    "id": "urc_9",
-    "competition_id": "urc",
-    "name": "Zebre Parma",
-    "name_ja": "",
-    "short_name": "Zebre Parma",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_10": {
-    "id": "urc_10",
-    "competition_id": "urc",
-    "name": "Edinburgh Rugby",
-    "name_ja": "",
-    "short_name": "Edinburgh Rugby",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_11": {
-    "id": "urc_11",
-    "competition_id": "urc",
-    "name": "Scarlets",
-    "name_ja": "",
-    "short_name": "Scarlets",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_12": {
-    "id": "urc_12",
-    "competition_id": "urc",
-    "name": "Munster Rugby",
-    "name_ja": "",
-    "short_name": "Munster Rugby",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "urc_13": {
-    "id": "urc_13",
-    "competition_id": "urc",
+  "epcr-challenge_4": {
+    "id": "epcr-challenge_4",
+    "competition_id": "epcr-challenge",
     "name": "Connacht Rugby",
     "name_ja": "",
     "short_name": "Connacht Rugby",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://media-cdn.incrowdsports.com/8d5ccc42-cbbc-45ef-b184-223ed8798ca9.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/8d5ccc42-cbbc-45ef-b184-223ed8798ca9.png?format=webp&width=125"
   },
-  "urc_14": {
-    "id": "urc_14",
+  "epcr-challenge_5": {
+    "id": "epcr-challenge_5",
+    "competition_id": "epcr-challenge",
+    "name": "Dragons RFC",
+    "name_ja": "",
+    "short_name": "Dragons RFC",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/93e79117-17bf-4cd0-83be-66ab2db787c0.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/93e79117-17bf-4cd0-83be-66ab2db787c0.png?format=webp&width=125"
+  },
+  "epcr-challenge_6": {
+    "id": "epcr-challenge_6",
+    "competition_id": "epcr-challenge",
+    "name": "Exeter Chiefs",
+    "name_ja": "",
+    "short_name": "Exeter Chiefs",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/794f9439-1dd5-47e1-bd74-655d63c1b505.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/794f9439-1dd5-47e1-bd74-655d63c1b505.png?format=webp&width=125"
+  },
+  "epcr-challenge_7": {
+    "id": "epcr-challenge_7",
+    "competition_id": "epcr-challenge",
+    "name": "Lions",
+    "name_ja": "",
+    "short_name": "Lions",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/2bc02b77-e112-46d3-9664-d247d36a7753.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.cortextech.io/2bc02b77-e112-46d3-9664-d247d36a7753.png?format=webp&width=125"
+  },
+  "epcr-challenge_8": {
+    "id": "epcr-challenge_8",
+    "competition_id": "epcr-challenge",
+    "name": "Lyon Olympique Universitaire",
+    "name_ja": "",
+    "short_name": "Lyon Olympique Universitaire",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/d75d294b-70bd-4716-abf6-c701dd77e5a6.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/d75d294b-70bd-4716-abf6-c701dd77e5a6.png?format=webp&width=125"
+  },
+  "epcr-challenge_9": {
+    "id": "epcr-challenge_9",
+    "competition_id": "epcr-challenge",
+    "name": "Montpellier Hérault Rugby",
+    "name_ja": "",
+    "short_name": "Montpellier Hérault Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/4c93a14f-8cd4-4653-8463-e7be7a49d626.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/4c93a14f-8cd4-4653-8463-e7be7a49d626.png?format=webp&width=125"
+  },
+  "epcr-challenge_10": {
+    "id": "epcr-challenge_10",
+    "competition_id": "epcr-challenge",
+    "name": "Newcastle Red Bulls",
+    "name_ja": "",
+    "short_name": "Newcastle Red Bulls",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/7fc9ef97-88f9-4353-8dff-ec260bac23ad.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.cortextech.io/7fc9ef97-88f9-4353-8dff-ec260bac23ad.png?format=webp&width=125"
+  },
+  "epcr-challenge_11": {
+    "id": "epcr-challenge_11",
+    "competition_id": "epcr-challenge",
+    "name": "Ospreys",
+    "name_ja": "",
+    "short_name": "Ospreys",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/b0fb5733-df68-44a1-b060-44ffb352af79.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/b0fb5733-df68-44a1-b060-44ffb352af79.png?format=webp&width=125"
+  },
+  "epcr-challenge_12": {
+    "id": "epcr-challenge_12",
+    "competition_id": "epcr-challenge",
+    "name": "Racing 92",
+    "name_ja": "",
+    "short_name": "Racing 92",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/3cc066e0-e7e0-4116-ae7f-1c6c45618165.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/3cc066e0-e7e0-4116-ae7f-1c6c45618165.png?format=webp&width=125"
+  },
+  "epcr-challenge_13": {
+    "id": "epcr-challenge_13",
+    "competition_id": "epcr-challenge",
+    "name": "Stade Français Paris",
+    "name_ja": "",
+    "short_name": "Stade Français Paris",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/ad3caafb-37a8-4938-9771-171fd18b8b48.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/ad3caafb-37a8-4938-9771-171fd18b8b48.png?format=webp&width=125"
+  },
+  "epcr-challenge_14": {
+    "id": "epcr-challenge_14",
+    "competition_id": "epcr-challenge",
+    "name": "Toyota Cheetahs",
+    "name_ja": "",
+    "short_name": "Toyota Cheetahs",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/e18819b9-3a9d-4e52-b46b-1f8f8806da5f.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/e18819b9-3a9d-4e52-b46b-1f8f8806da5f.png?format=webp&width=125"
+  },
+  "epcr-challenge_15": {
+    "id": "epcr-challenge_15",
+    "competition_id": "epcr-challenge",
+    "name": "US Montauban",
+    "name_ja": "",
+    "short_name": "US Montauban",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/3bfb0cb9-4998-4520-91fb-52a3fd7095eb.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.cortextech.io/3bfb0cb9-4998-4520-91fb-52a3fd7095eb.png?format=webp&width=125"
+  },
+  "epcr-challenge_16": {
+    "id": "epcr-challenge_16",
+    "competition_id": "epcr-challenge",
+    "name": "USAP",
+    "name_ja": "",
+    "short_name": "USAP",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/b41121d6-ede2-451b-a33b-07125128356d.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/b41121d6-ede2-451b-a33b-07125128356d.png?format=webp&width=125"
+  },
+  "epcr-challenge_17": {
+    "id": "epcr-challenge_17",
+    "competition_id": "epcr-challenge",
+    "name": "Ulster Rugby",
+    "name_ja": "",
+    "short_name": "Ulster Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/b4b5fe34-cf19-46a6-a0d9-326bb6c7a4a7.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/b4b5fe34-cf19-46a6-a0d9-326bb6c7a4a7.png?format=webp&width=125"
+  },
+  "epcr-challenge_18": {
+    "id": "epcr-challenge_18",
+    "competition_id": "epcr-challenge",
+    "name": "Zebre Parma",
+    "name_ja": "",
+    "short_name": "Zebre Parma",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/33156f52-4069-4bf3-9205-9ca18e8b9a7b.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/33156f52-4069-4bf3-9205-9ca18e8b9a7b.png?format=webp&width=125"
+  },
+  "epcr-champions_1": {
+    "id": "epcr-champions_1",
+    "competition_id": "epcr-champions",
+    "name": "ASM Clermont Auvergne",
+    "name_ja": "",
+    "short_name": "ASM Clermont Auvergne",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/95849879-7088-4036-940b-50f597d3d0cb.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/95849879-7088-4036-940b-50f597d3d0cb.png?format=webp&width=125"
+  },
+  "epcr-champions_2": {
+    "id": "epcr-champions_2",
+    "competition_id": "epcr-champions",
+    "name": "Aviron Bayonnais",
+    "name_ja": "",
+    "short_name": "Aviron Bayonnais",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/90ba8743-d118-416e-9b4a-fda68eff85cd.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/90ba8743-d118-416e-9b4a-fda68eff85cd.png?format=webp&width=125"
+  },
+  "epcr-champions_3": {
+    "id": "epcr-champions_3",
+    "competition_id": "epcr-champions",
+    "name": "Bath Rugby",
+    "name_ja": "",
+    "short_name": "Bath Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/f4d9a293-9086-41bf-aa1b-c98d1c62fe3b.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/f4d9a293-9086-41bf-aa1b-c98d1c62fe3b.png?format=webp&width=125"
+  },
+  "epcr-champions_4": {
+    "id": "epcr-champions_4",
+    "competition_id": "epcr-champions",
+    "name": "Bristol Bears",
+    "name_ja": "",
+    "short_name": "Bristol Bears",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/714ab764-0396-4c96-80df-4013a723d172.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/714ab764-0396-4c96-80df-4013a723d172.png?format=webp&width=125"
+  },
+  "epcr-champions_5": {
+    "id": "epcr-champions_5",
+    "competition_id": "epcr-champions",
+    "name": "Castres Olympique",
+    "name_ja": "",
+    "short_name": "Castres Olympique",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/837b1281-13e7-4ea9-9e2f-1fac75e17379.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.cortextech.io/837b1281-13e7-4ea9-9e2f-1fac75e17379.png?format=webp&width=125"
+  },
+  "epcr-champions_6": {
+    "id": "epcr-champions_6",
+    "competition_id": "epcr-champions",
+    "name": "DHL Stormers",
+    "name_ja": "",
+    "short_name": "DHL Stormers",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/36f0df7c-f238-4c78-8337-f17f13624259.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.cortextech.io/36f0df7c-f238-4c78-8337-f17f13624259.png?format=webp&width=125"
+  },
+  "epcr-champions_7": {
+    "id": "epcr-champions_7",
+    "competition_id": "epcr-champions",
+    "name": "Edinburgh Rugby",
+    "name_ja": "",
+    "short_name": "Edinburgh Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/6df4e3d2-dc9a-469e-898a-ed2f4bdfd541.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/6df4e3d2-dc9a-469e-898a-ed2f4bdfd541.png?format=webp&width=125"
+  },
+  "epcr-champions_8": {
+    "id": "epcr-champions_8",
+    "competition_id": "epcr-champions",
+    "name": "Glasgow Warriors",
+    "name_ja": "",
+    "short_name": "Glasgow Warriors",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/f0e4ca1a-3001-42d4-a134-befe8348540c.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/f0e4ca1a-3001-42d4-a134-befe8348540c.png?format=webp&width=125"
+  },
+  "epcr-champions_9": {
+    "id": "epcr-champions_9",
+    "competition_id": "epcr-champions",
+    "name": "Gloucester Rugby",
+    "name_ja": "",
+    "short_name": "Gloucester Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/57109498-ebce-4d81-949a-c0bd84420813.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/57109498-ebce-4d81-949a-c0bd84420813.png?format=webp&width=125"
+  },
+  "epcr-champions_10": {
+    "id": "epcr-champions_10",
+    "competition_id": "epcr-champions",
+    "name": "Harlequins",
+    "name_ja": "",
+    "short_name": "Harlequins",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/ff7fb9b3-4a02-4407-b075-1d125962ce21.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/ff7fb9b3-4a02-4407-b075-1d125962ce21.png?format=webp&width=125"
+  },
+  "epcr-champions_11": {
+    "id": "epcr-champions_11",
+    "competition_id": "epcr-champions",
+    "name": "Hollywoodbets Sharks",
+    "name_ja": "",
+    "short_name": "Hollywoodbets Sharks",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/3fd8048b-5ebd-4d7d-83a2-6556854bbf8f.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/3fd8048b-5ebd-4d7d-83a2-6556854bbf8f.png?format=webp&width=125"
+  },
+  "epcr-champions_12": {
+    "id": "epcr-champions_12",
+    "competition_id": "epcr-champions",
+    "name": "Leicester Tigers",
+    "name_ja": "",
+    "short_name": "Leicester Tigers",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/438e7cd5-fe7c-4002-897c-e702a579fbf1.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.cortextech.io/438e7cd5-fe7c-4002-897c-e702a579fbf1.png?format=webp&width=125"
+  },
+  "epcr-champions_13": {
+    "id": "epcr-champions_13",
+    "competition_id": "epcr-champions",
+    "name": "Leinster Rugby",
+    "name_ja": "",
+    "short_name": "Leinster Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/02ec4396-a5c2-49b2-bd5d-4056277b1278.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/02ec4396-a5c2-49b2-bd5d-4056277b1278.png?format=webp&width=125"
+  },
+  "epcr-champions_14": {
+    "id": "epcr-champions_14",
+    "competition_id": "epcr-champions",
+    "name": "Munster Rugby",
+    "name_ja": "",
+    "short_name": "Munster Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/887de6c7-e90a-4b89-8260-14ac3b54ffd0.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/887de6c7-e90a-4b89-8260-14ac3b54ffd0.png?format=webp&width=125"
+  },
+  "epcr-champions_15": {
+    "id": "epcr-champions_15",
+    "competition_id": "epcr-champions",
+    "name": "Northampton Saints",
+    "name_ja": "",
+    "short_name": "Northampton Saints",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/45fedf62-349b-46af-a6c9-2504dd82ee8c.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/45fedf62-349b-46af-a6c9-2504dd82ee8c.png?format=webp&width=125"
+  },
+  "epcr-champions_16": {
+    "id": "epcr-champions_16",
+    "competition_id": "epcr-champions",
+    "name": "RC Toulon",
+    "name_ja": "",
+    "short_name": "RC Toulon",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/c460bc92-ecd2-48d5-9f8e-ae8e12a2ebf4.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/c460bc92-ecd2-48d5-9f8e-ae8e12a2ebf4.png?format=webp&width=125"
+  },
+  "epcr-champions_17": {
+    "id": "epcr-champions_17",
+    "competition_id": "epcr-champions",
+    "name": "Sale Sharks",
+    "name_ja": "",
+    "short_name": "Sale Sharks",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/4af4e614-7ee6-4ca8-ba6b-6631e7cf0c40.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/4af4e614-7ee6-4ca8-ba6b-6631e7cf0c40.png?format=webp&width=125"
+  },
+  "epcr-champions_18": {
+    "id": "epcr-champions_18",
+    "competition_id": "epcr-champions",
+    "name": "Saracens",
+    "name_ja": "",
+    "short_name": "Saracens",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/17733469-fa47-4bee-bb7e-2e8c36a26e8b.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.cortextech.io/17733469-fa47-4bee-bb7e-2e8c36a26e8b.png?format=webp&width=125"
+  },
+  "epcr-champions_19": {
+    "id": "epcr-champions_19",
+    "competition_id": "epcr-champions",
+    "name": "Scarlets",
+    "name_ja": "",
+    "short_name": "Scarlets",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/5a9f2c1d-c140-499b-ab25-28e4fd80d921.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/5a9f2c1d-c140-499b-ab25-28e4fd80d921.png?format=webp&width=125"
+  },
+  "epcr-champions_20": {
+    "id": "epcr-champions_20",
+    "competition_id": "epcr-champions",
+    "name": "Section Paloise",
+    "name_ja": "",
+    "short_name": "Section Paloise",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/a7cf9530-88c9-43d5-b84f-414cfc5e8731.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/a7cf9530-88c9-43d5-b84f-414cfc5e8731.png?format=webp&width=125"
+  },
+  "epcr-champions_21": {
+    "id": "epcr-champions_21",
+    "competition_id": "epcr-champions",
+    "name": "Stade Rochelais",
+    "name_ja": "",
+    "short_name": "Stade Rochelais",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/19efa570-22bf-40d1-b8ad-2abb7818c31f.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/19efa570-22bf-40d1-b8ad-2abb7818c31f.png?format=webp&width=125"
+  },
+  "epcr-champions_22": {
+    "id": "epcr-champions_22",
+    "competition_id": "epcr-champions",
+    "name": "Stade Toulousain",
+    "name_ja": "",
+    "short_name": "Stade Toulousain",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/9b827a29-a5b1-4752-b312-477492f2819a.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/9b827a29-a5b1-4752-b312-477492f2819a.png?format=webp&width=125"
+  },
+  "epcr-champions_23": {
+    "id": "epcr-champions_23",
+    "competition_id": "epcr-champions",
+    "name": "Union Bordeaux Bègles",
+    "name_ja": "",
+    "short_name": "Union Bordeaux Bègles",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/3a3f88b1-d089-4b5a-aece-26469a437790.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.cortextech.io/3a3f88b1-d089-4b5a-aece-26469a437790.png?format=webp&width=125"
+  },
+  "epcr-champions_24": {
+    "id": "epcr-champions_24",
+    "competition_id": "epcr-champions",
+    "name": "Vodacom Bulls",
+    "name_ja": "",
+    "short_name": "Vodacom Bulls",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/12894959-14f3-4a3e-b06c-65834ae5cc07.png?format=webp&width=125",
+    "badge_url": "https://media-cdn.incrowdsports.com/12894959-14f3-4a3e-b06c-65834ae5cc07.png?format=webp&width=125"
+  },
+  "premier_1": {
+    "id": "premier_1",
+    "competition_id": "premier",
+    "name": "Bath Rugby",
+    "name_ja": "",
+    "short_name": "Bath Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/f4d9a293-9086-41bf-aa1b-c98d1c62fe3b.png?format=webp&width=240",
+    "badge_url": "https://media-cdn.incrowdsports.com/f4d9a293-9086-41bf-aa1b-c98d1c62fe3b.png?format=webp&width=240"
+  },
+  "premier_2": {
+    "id": "premier_2",
+    "competition_id": "premier",
+    "name": "Bristol Bears",
+    "name_ja": "",
+    "short_name": "Bristol Bears",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/7952282c-a8b0-4e70-af53-906f215035c2.png?format=webp&width=240",
+    "badge_url": "https://media-cdn.incrowdsports.com/7952282c-a8b0-4e70-af53-906f215035c2.png?format=webp&width=240"
+  },
+  "premier_3": {
+    "id": "premier_3",
+    "competition_id": "premier",
+    "name": "Exeter Chiefs",
+    "name_ja": "",
+    "short_name": "Exeter Chiefs",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/434b059d-21e6-49ba-8d26-9af27fb98f19.png?format=webp&width=240",
+    "badge_url": "https://media-cdn.incrowdsports.com/434b059d-21e6-49ba-8d26-9af27fb98f19.png?format=webp&width=240"
+  },
+  "premier_4": {
+    "id": "premier_4",
+    "competition_id": "premier",
+    "name": "Gloucester Rugby",
+    "name_ja": "",
+    "short_name": "Gloucester Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/57109498-ebce-4d81-949a-c0bd84420813.png?format=webp&width=240",
+    "badge_url": "https://media-cdn.incrowdsports.com/57109498-ebce-4d81-949a-c0bd84420813.png?format=webp&width=240"
+  },
+  "premier_5": {
+    "id": "premier_5",
+    "competition_id": "premier",
+    "name": "Harlequins",
+    "name_ja": "",
+    "short_name": "Harlequins",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/af0358f8-9fb4-415b-a13e-03f955d1bcc8.png?format=webp&width=240",
+    "badge_url": "https://media-cdn.incrowdsports.com/af0358f8-9fb4-415b-a13e-03f955d1bcc8.png?format=webp&width=240"
+  },
+  "premier_6": {
+    "id": "premier_6",
+    "competition_id": "premier",
+    "name": "Leicester Tigers",
+    "name_ja": "",
+    "short_name": "Leicester Tigers",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/438e7cd5-fe7c-4002-897c-e702a579fbf1.png?format=webp&width=240",
+    "badge_url": "https://media-cdn.cortextech.io/438e7cd5-fe7c-4002-897c-e702a579fbf1.png?format=webp&width=240"
+  },
+  "premier_7": {
+    "id": "premier_7",
+    "competition_id": "premier",
+    "name": "Newcastle Red Bulls",
+    "name_ja": "",
+    "short_name": "Newcastle Red Bulls",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/16fafbdc-a308-43b3-80bd-c4b1e8077290.png?format=webp&width=240",
+    "badge_url": "https://media-cdn.cortextech.io/16fafbdc-a308-43b3-80bd-c4b1e8077290.png?format=webp&width=240"
+  },
+  "premier_8": {
+    "id": "premier_8",
+    "competition_id": "premier",
+    "name": "Northampton Saints",
+    "name_ja": "",
+    "short_name": "Northampton Saints",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/f8cf95ed-e223-43ab-bae1-1b708d811c58.png?format=webp&width=240",
+    "badge_url": "https://media-cdn.incrowdsports.com/f8cf95ed-e223-43ab-bae1-1b708d811c58.png?format=webp&width=240"
+  },
+  "premier_9": {
+    "id": "premier_9",
+    "competition_id": "premier",
+    "name": "Sale Sharks",
+    "name_ja": "",
+    "short_name": "Sale Sharks",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.incrowdsports.com/ebb6895c-51ae-4403-9a82-470bb8eed534.png?format=webp&width=240",
+    "badge_url": "https://media-cdn.incrowdsports.com/ebb6895c-51ae-4403-9a82-470bb8eed534.png?format=webp&width=240"
+  },
+  "premier_10": {
+    "id": "premier_10",
+    "competition_id": "premier",
+    "name": "Saracens",
+    "name_ja": "",
+    "short_name": "Saracens",
+    "country": "",
+    "division": "",
+    "logo_url": "https://media-cdn.cortextech.io/00ac0c8c-7562-4d0c-9d4e-dba7b72672b0.png?format=webp&width=240",
+    "badge_url": "https://media-cdn.cortextech.io/00ac0c8c-7562-4d0c-9d4e-dba7b72672b0.png?format=webp&width=240"
+  },
+  "t14_1": {
+    "id": "t14_1",
+    "competition_id": "t14",
+    "name": "ASM Clermont",
+    "name_ja": "",
+    "short_name": "ASM Clermont",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/clermont/photo/logo.12bf8ddff745794b336f415d68ab7acc4068f487",
+    "badge_url": "https://cdn.lnr.fr/club/clermont/photo/logo.12bf8ddff745794b336f415d68ab7acc4068f487"
+  },
+  "t14_2": {
+    "id": "t14_2",
+    "competition_id": "t14",
+    "name": "Aviron Bayonnais",
+    "name_ja": "",
+    "short_name": "Aviron Bayonnais",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/bayonne/photo/logo.94e992cff3ff5c79e47e68c6241e3a90fb26625c",
+    "badge_url": "https://cdn.lnr.fr/club/bayonne/photo/logo.94e992cff3ff5c79e47e68c6241e3a90fb26625c"
+  },
+  "t14_3": {
+    "id": "t14_3",
+    "competition_id": "t14",
+    "name": "Castres Olympique",
+    "name_ja": "",
+    "short_name": "Castres Olympique",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/castres/photo/logo.d24420c0b30f98de688978b9fb55879e565e9c76",
+    "badge_url": "https://cdn.lnr.fr/club/castres/photo/logo.d24420c0b30f98de688978b9fb55879e565e9c76"
+  },
+  "t14_4": {
+    "id": "t14_4",
+    "competition_id": "t14",
+    "name": "LOU Rugby",
+    "name_ja": "",
+    "short_name": "LOU Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/lyon/photo/logo.1119131f26c9666e2b4d7f689bb7ad6cc953a0fa",
+    "badge_url": "https://cdn.lnr.fr/club/lyon/photo/logo.1119131f26c9666e2b4d7f689bb7ad6cc953a0fa"
+  },
+  "t14_5": {
+    "id": "t14_5",
+    "competition_id": "t14",
+    "name": "Montpellier Hérault Rugby",
+    "name_ja": "",
+    "short_name": "Montpellier Hérault Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/montpellier/photo/logo.4b818d1143f1d4e71a17e01d53bdf61605af9295",
+    "badge_url": "https://cdn.lnr.fr/club/montpellier/photo/logo.4b818d1143f1d4e71a17e01d53bdf61605af9295"
+  },
+  "t14_6": {
+    "id": "t14_6",
+    "competition_id": "t14",
+    "name": "RC Toulon",
+    "name_ja": "",
+    "short_name": "RC Toulon",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/toulon/photo/logo.298fed39edc534ffe2e0e8267bf5b1063dd72d6b",
+    "badge_url": "https://cdn.lnr.fr/club/toulon/photo/logo.298fed39edc534ffe2e0e8267bf5b1063dd72d6b"
+  },
+  "t14_7": {
+    "id": "t14_7",
+    "competition_id": "t14",
+    "name": "Racing 92",
+    "name_ja": "",
+    "short_name": "Racing 92",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/racing-92/photo/logo.cb34c8347acf59a373eb2223ad68ccc2983db2d5",
+    "badge_url": "https://cdn.lnr.fr/club/racing-92/photo/logo.cb34c8347acf59a373eb2223ad68ccc2983db2d5"
+  },
+  "t14_8": {
+    "id": "t14_8",
+    "competition_id": "t14",
+    "name": "Section Paloise",
+    "name_ja": "",
+    "short_name": "Section Paloise",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/pau/photo/logo.226251441457bc7cd9aadaddbb59fa89bcdf2a75",
+    "badge_url": "https://cdn.lnr.fr/club/pau/photo/logo.226251441457bc7cd9aadaddbb59fa89bcdf2a75"
+  },
+  "t14_9": {
+    "id": "t14_9",
+    "competition_id": "t14",
+    "name": "Stade Français Paris",
+    "name_ja": "",
+    "short_name": "Stade Français Paris",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/paris/photo/logo.54551b4b39df499f19d6ad7f830940a1393ae800",
+    "badge_url": "https://cdn.lnr.fr/club/paris/photo/logo.54551b4b39df499f19d6ad7f830940a1393ae800"
+  },
+  "t14_10": {
+    "id": "t14_10",
+    "competition_id": "t14",
+    "name": "Stade Rochelais",
+    "name_ja": "",
+    "short_name": "Stade Rochelais",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/la-rochelle/photo/logo.dfc3d6c7d8d6e9f2734444d9f155d78e5526e18f",
+    "badge_url": "https://cdn.lnr.fr/club/la-rochelle/photo/logo.dfc3d6c7d8d6e9f2734444d9f155d78e5526e18f"
+  },
+  "t14_11": {
+    "id": "t14_11",
+    "competition_id": "t14",
+    "name": "Stade Toulousain",
+    "name_ja": "",
+    "short_name": "Stade Toulousain",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/toulouse/photo/logo.6c363160c1c8b9d2563f8786981cff133be05ffb",
+    "badge_url": "https://cdn.lnr.fr/club/toulouse/photo/logo.6c363160c1c8b9d2563f8786981cff133be05ffb"
+  },
+  "t14_12": {
+    "id": "t14_12",
+    "competition_id": "t14",
+    "name": "US Montauban",
+    "name_ja": "",
+    "short_name": "US Montauban",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/montauban/photo/logo.ace761be52bb267eabd874b77441542b6f960e86",
+    "badge_url": "https://cdn.lnr.fr/club/montauban/photo/logo.ace761be52bb267eabd874b77441542b6f960e86"
+  },
+  "t14_13": {
+    "id": "t14_13",
+    "competition_id": "t14",
+    "name": "USA Perpignan",
+    "name_ja": "",
+    "short_name": "USA Perpignan",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/perpignan/photo/logo.997749b1aebe7217de38d5779f0c6d218c487300",
+    "badge_url": "https://cdn.lnr.fr/club/perpignan/photo/logo.997749b1aebe7217de38d5779f0c6d218c487300"
+  },
+  "t14_14": {
+    "id": "t14_14",
+    "competition_id": "t14",
+    "name": "Union Bordeaux-Bègles",
+    "name_ja": "",
+    "short_name": "Union Bordeaux-Bègles",
+    "country": "",
+    "division": "",
+    "logo_url": "https://cdn.lnr.fr/club/bordeaux-begles/photo/logo.ba05d30daef23f1e45983fa78883fff39ba4cb1e",
+    "badge_url": "https://cdn.lnr.fr/club/bordeaux-begles/photo/logo.ba05d30daef23f1e45983fa78883fff39ba4cb1e"
+  },
+  "urc_1": {
+    "id": "urc_1",
     "competition_id": "urc",
     "name": "Benetton Rugby",
     "name_ja": "",
     "short_name": "Benetton Rugby",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Benetton-Rugby-1.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Benetton-Rugby-1.svg"
   },
-  "urc_15": {
-    "id": "urc_15",
+  "urc_2": {
+    "id": "urc_2",
     "competition_id": "urc",
     "name": "Cardiff Rugby",
     "name_ja": "",
     "short_name": "Cardiff Rugby",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Cardiff-Rugby-1.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Cardiff-Rugby-1.svg"
   },
-  "urc_16": {
-    "id": "urc_16",
+  "urc_3": {
+    "id": "urc_3",
+    "competition_id": "urc",
+    "name": "Connacht Rugby",
+    "name_ja": "",
+    "short_name": "Connacht Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Connacht-1.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Connacht-1.svg"
+  },
+  "urc_4": {
+    "id": "urc_4",
+    "competition_id": "urc",
+    "name": "DHL Stormers",
+    "name_ja": "",
+    "short_name": "DHL Stormers",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/08/Stormers.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/08/Stormers.svg"
+  },
+  "urc_5": {
+    "id": "urc_5",
+    "competition_id": "urc",
+    "name": "Dragons RFC",
+    "name_ja": "",
+    "short_name": "Dragons RFC",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Dragons.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Dragons.svg"
+  },
+  "urc_6": {
+    "id": "urc_6",
+    "competition_id": "urc",
+    "name": "Edinburgh Rugby",
+    "name_ja": "",
+    "short_name": "Edinburgh Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Edinburgh.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Edinburgh.svg"
+  },
+  "urc_7": {
+    "id": "urc_7",
+    "competition_id": "urc",
+    "name": "Glasgow Warriors",
+    "name_ja": "",
+    "short_name": "Glasgow Warriors",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Glasgow-Warriors.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Glasgow-Warriors.svg"
+  },
+  "urc_8": {
+    "id": "urc_8",
+    "competition_id": "urc",
+    "name": "Hollywoodbets Sharks",
+    "name_ja": "",
+    "short_name": "Hollywoodbets Sharks",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Hollywoodbets-Sharks.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Hollywoodbets-Sharks.svg"
+  },
+  "urc_9": {
+    "id": "urc_9",
+    "competition_id": "urc",
+    "name": "Leinster Rugby",
+    "name_ja": "",
+    "short_name": "Leinster Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Leinster.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Leinster.svg"
+  },
+  "urc_10": {
+    "id": "urc_10",
     "competition_id": "urc",
     "name": "Lions",
     "name_ja": "",
     "short_name": "Lions",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/09/Lions-White-Logo.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/09/Lions-White-Logo.svg"
+  },
+  "urc_11": {
+    "id": "urc_11",
+    "competition_id": "urc",
+    "name": "Munster Rugby",
+    "name_ja": "",
+    "short_name": "Munster Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Munster-Rugby.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Munster-Rugby.svg"
+  },
+  "urc_12": {
+    "id": "urc_12",
+    "competition_id": "urc",
+    "name": "Ospreys",
+    "name_ja": "",
+    "short_name": "Ospreys",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Ospreys.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Ospreys.svg"
+  },
+  "urc_13": {
+    "id": "urc_13",
+    "competition_id": "urc",
+    "name": "Scarlets",
+    "name_ja": "",
+    "short_name": "Scarlets",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Scarlets-1.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Scarlets-1.svg"
+  },
+  "urc_15": {
+    "id": "urc_15",
+    "competition_id": "urc",
+    "name": "Ulster Rugby",
+    "name_ja": "",
+    "short_name": "Ulster Rugby",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Ulster-1.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Ulster-1.svg"
+  },
+  "urc_16": {
+    "id": "urc_16",
+    "competition_id": "urc",
+    "name": "Vodacom Bulls",
+    "name_ja": "",
+    "short_name": "Vodacom Bulls",
+    "country": "",
+    "division": "",
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Vodacom.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Vodacom.svg"
   },
   "urc_17": {
     "id": "urc_17",
     "competition_id": "urc",
-    "name": "DHL Stormers",
+    "name": "Zebre Parma",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "Zebre Parma",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Zebre-Parma-1.svg",
+    "badge_url": "https://www.unitedrugby.com/wp-content/uploads/2025/05/Zebre-Parma-1.svg"
   },
-  "urc_18": {
-    "id": "urc_18",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "NT-M-ENG": {
+    "id": "NT-M-ENG",
+    "competition_id": "m6n",
+    "name": "ENG",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "ENG",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/4etLl8n9qTU6ANndtkdKzK/34be66d8edd37e28bff9ca59e177a6d3/England.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/4etLl8n9qTU6ANndtkdKzK/34be66d8edd37e28bff9ca59e177a6d3/England.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_19": {
-    "id": "urc_19",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "NT-M-FRA": {
+    "id": "NT-M-FRA",
+    "competition_id": "m6n",
+    "name": "FRA",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "FRA",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/1WsL0VK10CEmbAGIswsO83/c25b9d4055d149be15a2149085ed4767/France.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/1WsL0VK10CEmbAGIswsO83/c25b9d4055d149be15a2149085ed4767/France.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_20": {
-    "id": "urc_20",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "NT-M-IRE": {
+    "id": "NT-M-IRE",
+    "competition_id": "m6n",
+    "name": "IRE",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "IRE",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/4CehwFgG4EaTucC1mpUMJf/9e5ca4684da6d74df8fd0dc353170965/Ireland.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/4CehwFgG4EaTucC1mpUMJf/9e5ca4684da6d74df8fd0dc353170965/Ireland.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_21": {
-    "id": "urc_21",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "NT-M-ITA": {
+    "id": "NT-M-ITA",
+    "competition_id": "m6n",
+    "name": "ITA",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "ITA",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/4H5riEnkPSH1bfTtuUPlm6/2e4f7f6426b4fff1403c3574412f9906/Italy.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/4H5riEnkPSH1bfTtuUPlm6/2e4f7f6426b4fff1403c3574412f9906/Italy.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_22": {
-    "id": "urc_22",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "NT-M-SCO": {
+    "id": "NT-M-SCO",
+    "competition_id": "m6n",
+    "name": "SCO",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "SCO",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/5dFjvz9hlMLZuErj8WaedF/77358159a12301fede9e140f394c31d5/Scotland.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/5dFjvz9hlMLZuErj8WaedF/77358159a12301fede9e140f394c31d5/Scotland.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_23": {
-    "id": "urc_23",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "NT-M-WAL": {
+    "id": "NT-M-WAL",
+    "competition_id": "m6n",
+    "name": "WAL",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "WAL",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/k15AFgATkLWZSUSfTdiFj/fb934604e70f18954c30ff957948e206/Wales.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/k15AFgATkLWZSUSfTdiFj/fb934604e70f18954c30ff957948e206/Wales.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_24": {
-    "id": "urc_24",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "NT-U20-ENG": {
+    "id": "NT-U20-ENG",
+    "competition_id": "u6n",
+    "name": "ENG",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "ENG",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/6lpMMtoVBSw1ddahQIjG6w/c2a456798042e5a7fdaac25428473069/England_Team.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/6lpMMtoVBSw1ddahQIjG6w/c2a456798042e5a7fdaac25428473069/England_Team.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_25": {
-    "id": "urc_25",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "NT-U20-FRA": {
+    "id": "NT-U20-FRA",
+    "competition_id": "u6n",
+    "name": "FRA",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "FRA",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/5zthozEfgvxNlJaZhxDbjI/154d5c8fe95bdd92950dd7e2e231eb82/France_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/5zthozEfgvxNlJaZhxDbjI/154d5c8fe95bdd92950dd7e2e231eb82/France_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_26": {
-    "id": "urc_26",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "NT-U20-IRE": {
+    "id": "NT-U20-IRE",
+    "competition_id": "u6n",
+    "name": "IRE",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "IRE",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/01CMsl8dr8yE4AweXlsgMN/d3c6e0051a4a6e993782a5c1109058fd/Ireland_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/01CMsl8dr8yE4AweXlsgMN/d3c6e0051a4a6e993782a5c1109058fd/Ireland_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_27": {
-    "id": "urc_27",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "NT-U20-ITA": {
+    "id": "NT-U20-ITA",
+    "competition_id": "u6n",
+    "name": "ITA",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "ITA",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/B6WTWDUlq79MzFQbMi694/5d6a0ad22f6440a33c7e9a1ea86a5b26/Italy_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/B6WTWDUlq79MzFQbMi694/5d6a0ad22f6440a33c7e9a1ea86a5b26/Italy_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_28": {
-    "id": "urc_28",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "NT-U20-SCO": {
+    "id": "NT-U20-SCO",
+    "competition_id": "u6n",
+    "name": "SCO",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "SCO",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/3EKZ6UGbiRXYLt7y51LAPk/119c7b36d606a74c2cabdc8e37b5d46f/Scotland_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/3EKZ6UGbiRXYLt7y51LAPk/119c7b36d606a74c2cabdc8e37b5d46f/Scotland_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_29": {
-    "id": "urc_29",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "NT-U20-WAL": {
+    "id": "NT-U20-WAL",
+    "competition_id": "u6n",
+    "name": "WAL",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "WAL",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/1qf7IcztL16NQJSrcQ25EX/226b311c0c5ca6b308618ca48c235213/Wales_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/1qf7IcztL16NQJSrcQ25EX/226b311c0c5ca6b308618ca48c235213/Wales_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_30": {
-    "id": "urc_30",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "NT-W-ENG": {
+    "id": "NT-W-ENG",
+    "competition_id": "w6n",
+    "name": "ENG",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "ENG",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/6lpMMtoVBSw1ddahQIjG6w/c2a456798042e5a7fdaac25428473069/England_Team.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/6lpMMtoVBSw1ddahQIjG6w/c2a456798042e5a7fdaac25428473069/England_Team.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_31": {
-    "id": "urc_31",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "NT-W-FRA": {
+    "id": "NT-W-FRA",
+    "competition_id": "w6n",
+    "name": "FRA",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "FRA",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/5zthozEfgvxNlJaZhxDbjI/154d5c8fe95bdd92950dd7e2e231eb82/France_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/5zthozEfgvxNlJaZhxDbjI/154d5c8fe95bdd92950dd7e2e231eb82/France_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_32": {
-    "id": "urc_32",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "NT-W-IRE": {
+    "id": "NT-W-IRE",
+    "competition_id": "w6n",
+    "name": "IRE",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "IRE",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/01CMsl8dr8yE4AweXlsgMN/d3c6e0051a4a6e993782a5c1109058fd/Ireland_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/01CMsl8dr8yE4AweXlsgMN/d3c6e0051a4a6e993782a5c1109058fd/Ireland_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_33": {
-    "id": "urc_33",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "NT-W-ITA": {
+    "id": "NT-W-ITA",
+    "competition_id": "w6n",
+    "name": "ITA",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "ITA",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/B6WTWDUlq79MzFQbMi694/5d6a0ad22f6440a33c7e9a1ea86a5b26/Italy_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/B6WTWDUlq79MzFQbMi694/5d6a0ad22f6440a33c7e9a1ea86a5b26/Italy_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_34": {
-    "id": "urc_34",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "NT-W-SCO": {
+    "id": "NT-W-SCO",
+    "competition_id": "w6n",
+    "name": "SCO",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "SCO",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/3EKZ6UGbiRXYLt7y51LAPk/119c7b36d606a74c2cabdc8e37b5d46f/Scotland_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/3EKZ6UGbiRXYLt7y51LAPk/119c7b36d606a74c2cabdc8e37b5d46f/Scotland_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_35": {
-    "id": "urc_35",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "NT-W-WAL": {
+    "id": "NT-W-WAL",
+    "competition_id": "w6n",
+    "name": "WAL",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "WAL",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/1qf7IcztL16NQJSrcQ25EX/226b311c0c5ca6b308618ca48c235213/Wales_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160",
+    "badge_url": "https://contentfulproxy.stadion.io/uiu4umqyl5b5/1qf7IcztL16NQJSrcQ25EX/226b311c0c5ca6b308618ca48c235213/Wales_-_Colour.png?fm=webp&fit=pad&f=center&w=160&h=160"
   },
-  "urc_36": {
-    "id": "urc_36",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "jrlo-div1_1": {
+    "id": "jrlo-div1_1",
+    "competition_id": "jrlo-div1",
+    "name": "クボタスピアーズ船橋・東京ベイ",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "S東京ベイ",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11182_200x200_670e7046b8c3a.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11182_200x200_670e7046b8c3a.png"
   },
-  "urc_37": {
-    "id": "urc_37",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "jrlo-div1_2": {
+    "id": "jrlo-div1_2",
+    "competition_id": "jrlo-div1",
+    "name": "コベルコ神戸スティーラーズ",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "神戸S",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11185_200x200_670e71b093142.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11185_200x200_670e71b093142.png"
   },
-  "urc_38": {
-    "id": "urc_38",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "jrlo-div1_3": {
+    "id": "jrlo-div1_3",
+    "competition_id": "jrlo-div1",
+    "name": "トヨタヴェルブリッツ",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "トヨタV",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11190_200x200_670e74a74f0b5.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11190_200x200_670e74a74f0b5.png"
   },
-  "urc_39": {
-    "id": "urc_39",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "jrlo-div1_4": {
+    "id": "jrlo-div1_4",
+    "competition_id": "jrlo-div1",
+    "name": "ブラックラムズ東京",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "ブラックラムズ東京",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11194_200x200_670e765eedceb.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11194_200x200_670e765eedceb.png"
   },
-  "urc_40": {
-    "id": "urc_40",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "jrlo-div1_5": {
+    "id": "jrlo-div1_5",
+    "competition_id": "jrlo-div1",
+    "name": "三菱重工相模原ダイナボアーズ",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "相模原DB",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11192_200x200_670e75a955eea.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11192_200x200_670e75a955eea.png"
   },
-  "urc_41": {
-    "id": "urc_41",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "jrlo-div1_6": {
+    "id": "jrlo-div1_6",
+    "competition_id": "jrlo-div1",
+    "name": "三重ホンダヒート",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "三重H",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11191_200x200_670e756fdc7f9.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11191_200x200_670e756fdc7f9.png"
   },
-  "urc_42": {
-    "id": "urc_42",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "jrlo-div1_7": {
+    "id": "jrlo-div1_7",
+    "competition_id": "jrlo-div1",
+    "name": "埼玉パナソニックワイルドナイツ",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "埼玉WK",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11186_200x200_670e724c02c54.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11186_200x200_670e724c02c54.png"
   },
-  "urc_43": {
-    "id": "urc_43",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "jrlo-div1_8": {
+    "id": "jrlo-div1_8",
+    "competition_id": "jrlo-div1",
+    "name": "東京サントリーサンゴリアス",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "東京SG",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11188_200x200_670e738b02420.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11188_200x200_670e738b02420.png"
   },
-  "urc_44": {
-    "id": "urc_44",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "jrlo-div1_9": {
+    "id": "jrlo-div1_9",
+    "competition_id": "jrlo-div1",
+    "name": "東芝ブレイブルーパス東京",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "BL東京",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11189_200x200_670e7448a796a.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11189_200x200_670e7448a796a.png"
   },
-  "urc_45": {
-    "id": "urc_45",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "jrlo-div1_10": {
+    "id": "jrlo-div1_10",
+    "competition_id": "jrlo-div1",
+    "name": "横浜キヤノンイーグルス",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "横浜E",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11193_200x200_670e75f78a9bc.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11193_200x200_670e75f78a9bc.png"
   },
-  "urc_46": {
-    "id": "urc_46",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "jrlo-div1_11": {
+    "id": "jrlo-div1_11",
+    "competition_id": "jrlo-div1",
+    "name": "浦安D-Rocks",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "公式チーム名称",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11184_200x200_670e70ccbfbc7.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11184_200x200_670e70ccbfbc7.png"
   },
-  "urc_47": {
-    "id": "urc_47",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "jrlo-div1_12": {
+    "id": "jrlo-div1_12",
+    "competition_id": "jrlo-div1",
+    "name": "静岡ブルーレヴズ",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "静岡BR",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11187_200x200_670e72d6dee20.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11187_200x200_670e72d6dee20.png"
   },
-  "urc_48": {
-    "id": "urc_48",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "jrlo-div2_1": {
+    "id": "jrlo-div2_1",
+    "competition_id": "jrlo-div2",
+    "name": "グリーンロケッツ東葛",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "グリーンロケッツ東葛",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11195_200x200_670e774d30018.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11195_200x200_670e774d30018.png"
   },
-  "urc_49": {
-    "id": "urc_49",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "jrlo-div2_2": {
+    "id": "jrlo-div2_2",
+    "competition_id": "jrlo-div2",
+    "name": "レッドハリケーンズ大阪",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "RH大阪",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11202_200x200_670e83826588d.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11202_200x200_670e83826588d.png"
   },
-  "urc_50": {
-    "id": "urc_50",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "jrlo-div2_3": {
+    "id": "jrlo-div2_3",
+    "competition_id": "jrlo-div2",
+    "name": "九州電力キューデンヴォルテクス",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "九州KV",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11196_200x200_670e778dd09b0.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11196_200x200_670e778dd09b0.png"
   },
-  "urc_51": {
-    "id": "urc_51",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "jrlo-div2_4": {
+    "id": "jrlo-div2_4",
+    "competition_id": "jrlo-div2",
+    "name": "日本製鉄釜石シーウェイブス",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "釜石SW",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11199_200x200_670e81f2650a2.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11199_200x200_670e81f2650a2.png"
   },
-  "urc_52": {
-    "id": "urc_52",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "jrlo-div2_5": {
+    "id": "jrlo-div2_5",
+    "competition_id": "jrlo-div2",
+    "name": "日野レッドドルフィンズ",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "日野RD",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11201_200x200_670e833fb71b0.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11201_200x200_670e833fb71b0.png"
   },
-  "urc_53": {
-    "id": "urc_53",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "jrlo-div2_6": {
+    "id": "jrlo-div2_6",
+    "competition_id": "jrlo-div2",
+    "name": "清水建設江東ブルーシャークス",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "江東BS",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11197_200x200_670e7d35c4bf2.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11197_200x200_670e7d35c4bf2.png"
   },
-  "urc_54": {
-    "id": "urc_54",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "jrlo-div2_7": {
+    "id": "jrlo-div2_7",
+    "competition_id": "jrlo-div2",
+    "name": "花園近鉄ライナーズ",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "花園L",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11200_200x200_670e82f619a5a.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11200_200x200_670e82f619a5a.png"
   },
-  "urc_55": {
-    "id": "urc_55",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "jrlo-div2_8": {
+    "id": "jrlo-div2_8",
+    "competition_id": "jrlo-div2",
+    "name": "豊田自動織機シャトルズ愛知",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "S愛知",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11198_200x200_670e81afe2f86.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11198_200x200_670e81afe2f86.png"
   },
-  "urc_56": {
-    "id": "urc_56",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "jrlo-div3_1": {
+    "id": "jrlo-div3_1",
+    "competition_id": "jrlo-div3",
+    "name": "クリタウォーターガッシュ昭島",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "公式チーム名称",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11203_200x200_670ee62fcbfa3.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11203_200x200_670ee62fcbfa3.png"
   },
-  "urc_57": {
-    "id": "urc_57",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "jrlo-div3_2": {
+    "id": "jrlo-div3_2",
+    "competition_id": "jrlo-div3",
+    "name": "マツダスカイアクティブズ広島",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "SA広島",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11206_200x200_670ee7f8c6f2c.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11206_200x200_670ee7f8c6f2c.png"
   },
-  "urc_58": {
-    "id": "urc_58",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "jrlo-div3_3": {
+    "id": "jrlo-div3_3",
+    "competition_id": "jrlo-div3",
+    "name": "ヤクルトレビンズ戸田",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "L戸田",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11207_200x200_670ee89d22206.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11207_200x200_670ee89d22206.png"
   },
-  "urc_59": {
-    "id": "urc_59",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "jrlo-div3_4": {
+    "id": "jrlo-div3_4",
+    "competition_id": "jrlo-div3",
+    "name": "ルリーロ福岡",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "LR福岡",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11208_200x200_670ee8ea484d4.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11208_200x200_670ee8ea484d4.png"
   },
-  "urc_60": {
-    "id": "urc_60",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "jrlo-div3_5": {
+    "id": "jrlo-div3_5",
+    "competition_id": "jrlo-div3",
+    "name": "中国電力レッドレグリオンズ",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "中国RR",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11205_200x200_670ee73fae8ba.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11205_200x200_670ee73fae8ba.png"
   },
-  "urc_61": {
-    "id": "urc_61",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "jrlo-div3_6": {
+    "id": "jrlo-div3_6",
+    "competition_id": "jrlo-div3",
+    "name": "狭山セコムラガッツ",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "狭山RG",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11204_200x200_670ee7072a21b.png",
+    "badge_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/team_info/11204_200x200_670ee7072a21b.png"
   },
-  "urc_62": {
-    "id": "urc_62",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "srp_1": {
+    "id": "srp_1",
+    "competition_id": "srp",
+    "name": "Blues",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "Blues",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Blues.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Blues.png"
   },
-  "urc_63": {
-    "id": "urc_63",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "srp_2": {
+    "id": "srp_2",
+    "competition_id": "srp",
+    "name": "Brumbies",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "Brumbies",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_ACT_Brumbies.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_ACT_Brumbies.png"
   },
-  "urc_64": {
-    "id": "urc_64",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "srp_3": {
+    "id": "srp_3",
+    "competition_id": "srp",
+    "name": "Chiefs",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "Chiefs",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Chiefs.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Chiefs.png"
   },
-  "urc_65": {
-    "id": "urc_65",
-    "competition_id": "urc",
-    "name": "DHL Stormers",
+  "srp_4": {
+    "id": "srp_4",
+    "competition_id": "srp",
+    "name": "Crusaders",
     "name_ja": "",
-    "short_name": "DHL Stormers",
+    "short_name": "Crusaders",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Crusaders.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Crusaders.png"
   },
-  "urc_66": {
-    "id": "urc_66",
-    "competition_id": "urc",
-    "name": "Hollywoodbets Sharks",
+  "srp_5": {
+    "id": "srp_5",
+    "competition_id": "srp",
+    "name": "Fijian Drua",
     "name_ja": "",
-    "short_name": "Hollywoodbets Sharks",
+    "short_name": "Fijian Drua",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Fijian_Drua_1.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Fijian_Drua_1.png"
   },
-  "urc_67": {
-    "id": "urc_67",
-    "competition_id": "urc",
-    "name": "Vodacom Bulls",
+  "srp_7": {
+    "id": "srp_7",
+    "competition_id": "srp",
+    "name": "Highlanders",
     "name_ja": "",
-    "short_name": "Vodacom Bulls",
+    "short_name": "Highlanders",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Highlanders.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Highlanders.png"
   },
-  "urc_68": {
-    "id": "urc_68",
-    "competition_id": "urc",
-    "name": "TBC",
+  "srp_8": {
+    "id": "srp_8",
+    "competition_id": "srp",
+    "name": "Hurricanes",
     "name_ja": "",
-    "short_name": "TBC",
+    "short_name": "Hurricanes",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Hurricanes.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Hurricanes.png"
   },
-  "NT_M_ITA_XV": {
-    "id": "NT_M_ITA_XV",
-    "competition_id": "wri",
-    "name": "Italy XV",
+  "srp_9": {
+    "id": "srp_9",
+    "competition_id": "srp",
+    "name": "Moana Pasifika",
     "name_ja": "",
-    "short_name": "Italy XV",
+    "short_name": "Moana Pasifika",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Moana_Pasifika.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Moana_Pasifika.png"
   },
-  "NT_M_SCO_A": {
-    "id": "NT_M_SCO_A",
-    "competition_id": "wri",
-    "name": "Scotland A",
+  "srp_11": {
+    "id": "srp_11",
+    "competition_id": "srp",
+    "name": "NSW Waratahs",
     "name_ja": "",
-    "short_name": "Scotland A",
+    "short_name": "NSW Waratahs",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_NSW_Waratahs.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_NSW_Waratahs.png"
   },
-  "NT_M_IRE_XV": {
-    "id": "NT_M_IRE_XV",
-    "competition_id": "wri",
-    "name": "Ireland XV",
+  "srp_10": {
+    "id": "srp_10",
+    "competition_id": "srp",
+    "name": "Queensland Reds",
     "name_ja": "",
-    "short_name": "Ireland XV",
+    "short_name": "Queensland Reds",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Reds.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Reds.png"
   },
-  "NT_M_ENG_A": {
-    "id": "NT_M_ENG_A",
-    "competition_id": "wri",
-    "name": "England A",
+  "srp_6": {
+    "id": "srp_6",
+    "competition_id": "srp",
+    "name": "Western Force",
     "name_ja": "",
-    "short_name": "England A",
+    "short_name": "Western Force",
     "country": "",
     "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_CHI": {
-    "id": "NT_M_CHI",
-    "competition_id": "wri",
-    "name": "Chile",
-    "name_ja": "",
-    "short_name": "Chile",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_AUS": {
-    "id": "NT_M_AUS",
-    "competition_id": "wri",
-    "name": "Australia",
-    "name_ja": "",
-    "short_name": "Australia",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_FIJ": {
-    "id": "NT_M_FIJ",
-    "competition_id": "wri",
-    "name": "Fiji",
-    "name_ja": "",
-    "short_name": "Fiji",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_WAL": {
-    "id": "NT_M_WAL",
-    "competition_id": "wri",
-    "name": "Wales",
-    "name_ja": "",
-    "short_name": "Wales",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_RSA": {
-    "id": "NT_M_RSA",
-    "competition_id": "wri",
-    "name": "South Africa",
-    "name_ja": "",
-    "short_name": "South Africa",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_USA": {
-    "id": "NT_M_USA",
-    "competition_id": "wri",
-    "name": "USA",
-    "name_ja": "",
-    "short_name": "USA",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_ENG": {
-    "id": "NT_M_ENG",
-    "competition_id": "wri",
-    "name": "England",
-    "name_ja": "",
-    "short_name": "England",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_IRE": {
-    "id": "NT_M_IRE",
-    "competition_id": "wri",
-    "name": "Ireland",
-    "name_ja": "",
-    "short_name": "Ireland",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_JPN": {
-    "id": "NT_M_JPN",
-    "competition_id": "wri",
-    "name": "Japan",
-    "name_ja": "",
-    "short_name": "Japan",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_ITA": {
-    "id": "NT_M_ITA",
-    "competition_id": "wri",
-    "name": "Italy",
-    "name_ja": "",
-    "short_name": "Italy",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_ARG": {
-    "id": "NT_M_ARG",
-    "competition_id": "wri",
-    "name": "Argentina",
-    "name_ja": "",
-    "short_name": "Argentina",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_SCO": {
-    "id": "NT_M_SCO",
-    "competition_id": "wri",
-    "name": "Scotland",
-    "name_ja": "",
-    "short_name": "Scotland",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_NZL": {
-    "id": "NT_M_NZL",
-    "competition_id": "wri",
-    "name": "New Zealand",
-    "name_ja": "",
-    "short_name": "New Zealand",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
-  },
-  "NT_M_FRA": {
-    "id": "NT_M_FRA",
-    "competition_id": "wri",
-    "name": "France",
-    "name_ja": "",
-    "short_name": "France",
-    "country": "",
-    "division": "",
-    "logo_url": "",
-    "badge_url": ""
+    "logo_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Western_Force.png",
+    "badge_url": "https://super.rugby/sites/sanzar/assets/teamlogos/SRP_Western_Force.png"
   }
 }

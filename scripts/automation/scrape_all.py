@@ -8,19 +8,19 @@ from pathlib import Path
 
 # スクレイピング対象大会（高速→低速の順）
 COMPETITIONS = [
-    ("world-rugby-internationals", "World Rugby Internationals"),
-    ("gallagher-premiership", "Gallagher Premiership"),
+    ("wr", "World Rugby Internationals"),
+    ("premier", "Gallagher Premiership"),
     ("urc", "United Rugby Championship"),
-    ("rugby-championship", "The Rugby Championship"),
-    ("autumn-nations-series", "Autumn Nations Series"),
-    ("super-rugby-pacific", "Super Rugby Pacific"),
+    ("trc", "The Rugby Championship"),
+    ("ans", "Autumn Nations Series"),
+    ("srp", "Super Rugby Pacific"),
     ("epcr-champions", "EPCR Champions Cup"),
     ("epcr-challenge", "EPCR Challenge Cup"),
-    ("top14", "Top 14"),
-    ("league-one", "Japan Rugby League One"),
-    ("six-nations", "Six Nations"),
-    ("six-nations-women", "Women's Six Nations"),
-    ("six-nations-u20", "U20 Six Nations"),
+    ("t14", "Top 14"),
+    ("jrlo", "Japan Rugby League One"),
+    ("m6n", "Six Nations"),
+    ("w6n", "Women's Six Nations"),
+    ("u6n", "U20 Six Nations"),
 ]
 
 def main():

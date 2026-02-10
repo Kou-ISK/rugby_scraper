@@ -16,15 +16,15 @@ def scrape_command(scraper_type):
         "m6n": SixNationsScraper(),
         "w6n": SixNationsWomensScraper(),
         "u6n": SixNationsU20Scraper(),
-        "ecc": EPCRChallengeCupScraper(),
-        "ech": EPCRChallengeCupScraper(),
+        "epcr-champions": EPCRChampionsCupScraper(),
+        "epcr-challenge": EPCRChallengeCupScraper(),
         "t14": Top14Scraper(),
         "jrlo": LeagueOneDivisionsScraper(),
-        "gp": GallagherPremiershipScraper(),
+        "premier": GallagherPremiershipScraper(),
         "urc": UnitedRugbyChampionshipScraper(),
         "srp": SuperRugbyPacificScraper(),
-        "wri": WorldRugbyInternationalsScraper(),
-        "rc": RugbyChampionshipScraper(),
+        "wr": WorldRugbyInternationalsScraper(),
+        "trc": RugbyChampionshipScraper(),
         "ans": AutumnNationsSeriesScraper(),
     }
     
@@ -37,6 +37,10 @@ def scrape_command(scraper_type):
     print(f"Starting scraper for: {scraper_type}")
     matches = scraper.scrape()
     
+    if matches is None:
+        print(f"✗ No matches found or scraping failed")
+        sys.exit(1)
+
     if matches:
         # League Oneは辞書形式で返す（Division別）
         if isinstance(matches, dict):
@@ -44,7 +48,7 @@ def scrape_command(scraper_type):
             print(f"✓ Scraped {total_matches} matches")
             print("✓ Files saved by scraper (division-specific)")
         # EPCRは内部でsave済み
-        elif scraper_type in ["ecc", "ech"]:
+        elif scraper_type in ["epcr-champions", "epcr-challenge"]:
             print(f"✓ Scraped {len(matches)} matches")
             print("✓ Saved by scraper internally")
         else:
@@ -69,14 +73,28 @@ def scrape_command(scraper_type):
             scraper.save_to_json(matches, save_path)
             print(f"✓ Saved to data/matches/{save_path}.json")
     else:
-        print(f"✗ No matches found or scraping failed")
-        sys.exit(1)
+        print("⚠️ No matches found (possibly off-season or no fixtures published yet)")
 
 def extract_teams_command():
     """Extract and consolidate teams from all match data."""
     from src.services.team_service import main as extract_teams
     print("Extracting teams from all match data...")
     extract_teams()
+
+def update_team_master_command(argv=None):
+    """Update teams.json from official team list sources."""
+    from src.services.team_master_service import main as update_team_master
+    update_team_master(argv)
+
+def update_competition_master_command(argv=None):
+    """Update competitions.json from base template + official metadata."""
+    from src.services.competition_master_service import main as update_comp_master
+    update_comp_master(argv)
+
+def backfill_team_ids_command(argv=None):
+    """Backfill team_id values in match data."""
+    from src.services.team_id_backfill import main as backfill_team_ids
+    backfill_team_ids(argv)
 
 def validate_duplicates_command():
     """Validate and detect duplicate teams."""
@@ -85,7 +103,7 @@ def validate_duplicates_command():
     validate_duplicates()
 
 def generate_metadata_command():
-    """Generate competition metadata."""
+    """Generate competition metadata summary."""
     from src.repositories.competition_repository import main as generate_metadata
     print("Generating competition metadata...")
     generate_metadata()
@@ -99,11 +117,14 @@ def main():
     if len(sys.argv) < 2:
         print("Usage: python -m src.main <command> [args]")
         print("\nCommands:")
-        print("  <comp_id>           Scrape specific competition (m6n, gp, etc.)")
+        print("  <comp_id>           Scrape specific competition (m6n, premier, etc.)")
         print("  extract-teams       Extract teams from match data")
+        print("  update-team-master  Update teams.json from official team lists")
+        print("  update-competition-master  Update competitions.json from base + official metadata")
+        print("  backfill-team-ids   Backfill team_id values in match data")
         print("  validate-duplicates Check for duplicate teams")
-        print("  generate-metadata   Generate competitions.json")
-        print("  update-logos        Update team logos from TheSportsDB API")
+        print("  generate-metadata   Generate competitions_summary.json")
+        print("  update-logos        Deprecated (use update-team-master for official logos)")
         sys.exit(1)
     
     command = sys.argv[1]
@@ -111,6 +132,12 @@ def main():
     # Service commands
     if command == "extract-teams":
         extract_teams_command()
+    elif command == "update-team-master":
+        update_team_master_command(sys.argv[2:])
+    elif command == "update-competition-master":
+        update_competition_master_command(sys.argv[2:])
+    elif command == "backfill-team-ids":
+        backfill_team_ids_command(sys.argv[2:])
     elif command == "validate-duplicates":
         validate_duplicates_command()
     elif command == "generate-metadata":

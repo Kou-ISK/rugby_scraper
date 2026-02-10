@@ -1,5 +1,5 @@
 """
-全試合データからチーム名を抽出してteams.jsonマスタを生成
+【legacy】全試合データからチーム名を抽出してteams.jsonマスタを生成
 
 【重要】ID安定性保証:
 - 既存チームのIDは絶対に変更しない
@@ -7,8 +7,8 @@
 - チーム名での照合（大文字小文字無視、空白正規化）
 
 【ロゴ取得】:
-- TheSportsDB API統合
-- チーム名→ロゴURL自動取得
+- 非推奨（TheSportsDB API）
+- 公式ロゴは team_master_service で取得
 
 【重複検出】:
 - スポンサー名違いの同一チーム検出
@@ -36,16 +36,16 @@ COMPETITION_IDS = {
     "six-nations": "m6n",
     "six-nations-women": "w6n",
     "six-nations-u20": "u6n",
-    "league-one": "jrlo_div1",  # Division 1がデフォルト
+    "league-one": "jrlo-div1",  # Division 1がデフォルト
     "top14": "t14",
-    "gallagher-premiership": "gp",
+    "premier": "premier",
     "urc": "urc",
-    "epcr-champions": "ecc",
-    "epcr-challenge": "ech",
+    "epcr-champions": "epcr-champions",
+    "epcr-challenge": "epcr-challenge",
     "super-rugby-pacific": "srp",
     "rugby-championship": "trc",
     "autumn-nations-series": "ans",
-    "world-rugby-internationals": "wri",
+    "wr": "wr",
 }
 
 # 国際大会の定義（BaseScraper.INTERNATIONAL_COMPETITIONSと同期）
@@ -55,7 +55,7 @@ INTERNATIONAL_COMPETITIONS = {
     "u6n": "U20",    # Six Nations U20
     "trc": "M",      # The Rugby Championship
     "ans": "M",      # Autumn Nations Series
-    "wri": "M",      # World Rugby Internationals
+    "wr": "M",       # World Rugby Internationals
 }
 
 # 国コードマッピング（BaseScraper.COUNTRY_CODESと同期）
@@ -174,36 +174,79 @@ def get_base_team_name(name):
     return base_name.strip()
 
 
+def is_placeholder_team(team_name: str) -> bool:
+    if not team_name:
+        return False
+    placeholders = [
+        "リーグ戦",
+        "準々決勝",
+        "準決勝",
+        "決勝",
+    ]
+    return any(p in team_name for p in placeholders)
+
+
 def fetch_team_logo(team_name, comp_id):
     """TheSportsDB APIからチームロゴを取得"""
     try:
         # ベースチーム名を使用
         search_name = get_base_team_name(team_name)
-        
-        url = f"{THESPORTSDB_BASE_URL}/{THESPORTSDB_API_KEY}/searchteams.php"
-        params = {"t": search_name}
-        
-        response = requests.get(url, params=params, timeout=10)
-        response.raise_for_status()
-        
-        data = response.json()
+
+        data = _fetch_logo_payload(search_name)
+        if data:
+            teams = data.get("teams")
+            if teams and len(teams) > 0:
+                team = teams[0]
+                logo_url = team.get("strTeamBadge") or team.get("strTeamLogo") or ""
+                badge_url = team.get("strTeamBanner") or ""
+                return logo_url, badge_url
+
+        return "", ""
+
+    except Exception as e:
+        print(f"    ⚠️ ロゴ取得エラー ({team_name}): {e}")
+        return "", ""
+
+
+def _fetch_logo_payload(search_name: str):
+    url = f"{THESPORTSDB_BASE_URL}/{THESPORTSDB_API_KEY}/searchteams.php"
+    params = {"t": search_name}
+    backoffs = [1.0, 2.0, 4.0]
+    last_error = None
+    for idx, backoff in enumerate(backoffs, 1):
+        try:
+            response = requests.get(url, params=params, timeout=10)
+            if response.status_code == 429:
+                time.sleep(backoff)
+                last_error = f"429 Too Many Requests (attempt {idx})"
+                continue
+            response.raise_for_status()
+            time.sleep(0.5)  # APIレート制限対策（基本待機）
+            return response.json()
+        except Exception as e:  # noqa: BLE001
+            last_error = e
+            time.sleep(backoff)
+            continue
+    raise last_error
+
+
+def fetch_logo_from_thesportsdb(team_name: str):
+    """update_team_logos用: TheSportsDB APIからロゴ取得"""
+    try:
+        search_name = get_base_team_name(team_name)
+        data = _fetch_logo_payload(search_name)
+        if not data:
+            return {"logo_url": "", "badge_url": ""}
         teams = data.get("teams")
-        
         if teams and len(teams) > 0:
             team = teams[0]
             logo_url = team.get("strTeamBadge") or team.get("strTeamLogo") or ""
             badge_url = team.get("strTeamBanner") or ""
-            
-            # APIレート制限対策
-            time.sleep(0.5)
-            
-            return logo_url, badge_url
-        
-        return "", ""
-    
+            return {"logo_url": logo_url, "badge_url": badge_url}
+        return {"logo_url": "", "badge_url": ""}
     except Exception as e:
-        print(f"    ⚠️ ロゴ取得エラー ({team_name}): {e}")
-        return "", ""
+        print(f"  ⚠️ ロゴ取得エラー ({team_name}): {e}")
+        return {"logo_url": "", "badge_url": ""}
 
 
 def load_existing_teams():
@@ -212,7 +255,11 @@ def load_existing_teams():
         return {}
     
     with open(TEAMS_JSON, 'r', encoding='utf-8') as f:
-        return json.load(f)
+        try:
+            return json.load(f)
+        except json.JSONDecodeError:
+            print("⚠️ teams.json が空/壊れています。空のマスタとして再生成します。")
+            return {}
 
 
 def extract_teams_from_matches():
@@ -234,6 +281,11 @@ def extract_teams_from_matches():
                 for match in matches:
                     home_team = match.get("home_team", "").strip()
                     away_team = match.get("away_team", "").strip()
+
+                    if comp_id.startswith("jrlo") and is_placeholder_team(home_team):
+                        home_team = ""
+                    if comp_id.startswith("jrlo") and is_placeholder_team(away_team):
+                        away_team = ""
                     
                     if home_team:
                         teams_by_comp[comp_id].add(home_team)
@@ -277,7 +329,7 @@ def detect_duplicates(teams_by_comp):
     return duplicates
 
 
-def generate_team_master(teams_by_comp, existing_teams, fetch_logos=True):
+def generate_team_master(teams_by_comp, existing_teams, fetch_logos=False, official_logos_by_comp=None):
     """チームマスタを生成（ID安定性保証）"""
     
     # 既存チームをチーム名で索引化（正規化名でマッピング）
@@ -296,8 +348,8 @@ def generate_team_master(teams_by_comp, existing_teams, fetch_logos=True):
     # 大会別の最大ID番号を取得
     max_id_by_comp = defaultdict(int)
     for team_id in existing_teams.keys():
-        if '-' in team_id:
-            comp_prefix, num_str = team_id.rsplit('-', 1)
+        if "_" in team_id:
+            comp_prefix, num_str = team_id.rsplit("_", 1)
             try:
                 num = int(num_str)
                 max_id_by_comp[comp_prefix] = max(max_id_by_comp[comp_prefix], num)
@@ -311,6 +363,7 @@ def generate_team_master(teams_by_comp, existing_teams, fetch_logos=True):
     
     for comp_id, team_names in sorted(teams_by_comp.items()):
         print(f"\n大会: {comp_id}")
+        official_logos = (official_logos_by_comp or {}).get(comp_id, {})
         
         for team_name in team_names:
             # 国際大会の場合、NT-*形式のIDを生成
@@ -325,22 +378,24 @@ def generate_team_master(teams_by_comp, existing_teams, fetch_logos=True):
                 # 既存チーム確認
                 if team_id in existing_by_id:
                     # 既存チーム: IDを保持
-                    new_teams[team_id] = existing_by_id[team_id]
+                    team_data = existing_by_id[team_id]
+                    official = official_logos.get(team_name)
+                    if official and official.get("logo_url"):
+                        team_data = {
+                            **team_data,
+                            "logo_url": official.get("logo_url", ""),
+                            "badge_url": official.get("badge_url", official.get("logo_url", "")),
+                        }
+                    new_teams[team_id] = team_data
                     preserved_count += 1
-                    print(f"  ✓ {team_id}: {team_name} (既存ID保持)")
+                    if not fetch_logos:
+                        print(f"  ✓ {team_id}: {team_name} (既存ID保持)")
                 else:
                     # 新規国代表チーム
-                    logo_url = ""
-                    badge_url = ""
-                    if fetch_logos:
-                        print(f"  🔍 {team_id}: {team_name} (ロゴ取得中...)")
-                        logo_url, badge_url = fetch_team_logo(team_name, comp_id)
-                        if logo_url:
-                            print(f"    ✅ ロゴ取得成功")
-                        else:
-                            print(f"    ⚠️ ロゴ未取得")
-                    else:
-                        print(f"  ➕ {team_id}: {team_name} (新規追加)")
+                    official = official_logos.get(team_name, {})
+                    logo_url = official.get("logo_url", "")
+                    badge_url = official.get("badge_url", official.get("logo_url", ""))
+                    print(f"  ➕ {team_id}: {team_name} (新規追加)")
                     
                     new_teams[team_id] = {
                         "id": team_id,
@@ -356,34 +411,36 @@ def generate_team_master(teams_by_comp, existing_teams, fetch_logos=True):
                     added_count += 1
             
             else:
-                # クラブチーム: 既存ロジック（{comp_id}-{num}形式）
+                # クラブチーム: 既存ロジック（{comp_id}_{num}形式）
                 # 既存チーム確認
                 key = (comp_id, normalize_team_name(team_name))
                 
                 if key in existing_by_name:
                     # 既存チーム: IDを保持
                     team_id = existing_by_name[key]
-                    new_teams[team_id] = existing_by_id[team_id]
+                    team_data = existing_by_id[team_id]
+                    official = official_logos.get(team_name)
+                    if official and official.get("logo_url"):
+                        team_data = {
+                            **team_data,
+                            "logo_url": official.get("logo_url", ""),
+                            "badge_url": official.get("badge_url", official.get("logo_url", "")),
+                        }
+                    new_teams[team_id] = team_data
                     preserved_count += 1
-                    print(f"  ✓ {team_id}: {team_name} (既存ID保持)")
+                    if not fetch_logos:
+                        print(f"  ✓ {team_id}: {team_name} (既存ID保持)")
                 
                 else:
                     # 新チーム: 新ID採番
                     max_id_by_comp[comp_id] += 1
-                    team_id = f"{comp_id}-{max_id_by_comp[comp_id]}"
+                    team_id = f"{comp_id}_{max_id_by_comp[comp_id]}"
                     
                     # ロゴ取得
-                    logo_url = ""
-                    badge_url = ""
-                    if fetch_logos:
-                        print(f"  🔍 {team_id}: {team_name} (ロゴ取得中...)")
-                        logo_url, badge_url = fetch_team_logo(team_name, comp_id)
-                        if logo_url:
-                            print(f"    ✅ ロゴ取得成功")
-                        else:
-                            print(f"    ⚠️ ロゴ未取得")
-                    else:
-                        print(f"  ➕ {team_id}: {team_name} (新規追加)")
+                    official = official_logos.get(team_name, {})
+                    logo_url = official.get("logo_url", "")
+                    badge_url = official.get("badge_url", official.get("logo_url", ""))
+                    print(f"  ➕ {team_id}: {team_name} (新規追加)")
                     
                     new_teams[team_id] = {
                         "id": team_id,
@@ -403,56 +460,12 @@ def generate_team_master(teams_by_comp, existing_teams, fetch_logos=True):
 
 
 def update_team_logos():
-    """既存チームのロゴURLをTheSportsDB APIから更新"""
+    """Deprecated: logos are now sourced from official sites during master update."""
     print("=" * 60)
-    print("既存チームのロゴURL更新")
+    print("update-logos は非推奨です")
+    print("ロゴは update-team-master 内で公式サイトから取得してください。")
     print("=" * 60)
-    
-    # 既存teams.json読み込み
-    existing_teams = load_existing_teams()
-    print(f"\n既存teams.json: {len(existing_teams)}チーム")
-    
-    updated_count = 0
-    skipped_count = 0
-    failed_count = 0
-    
-    for team_id, team_data in existing_teams.items():
-        team_name = team_data.get("name", "")
-        existing_logo = team_data.get("logo_url", "")
-        
-        # 既にロゴURLがある場合はスキップ
-        if existing_logo:
-            skipped_count += 1
-            continue
-        
-        print(f"⏳ {team_name}のロゴを取得中...")
-        
-        # TheSportsDB APIから取得
-        logo_info = fetch_logo_from_thesportsdb(team_name)
-        
-        if logo_info.get("logo_url"):
-            team_data["logo_url"] = logo_info["logo_url"]
-            team_data["badge_url"] = logo_info.get("badge_url", "")
-            updated_count += 1
-            print(f"  ✓ ロゴURL取得成功")
-        else:
-            failed_count += 1
-            print(f"  ✗ ロゴURL取得失敗")
-        
-        # API制限対策（1秒待機）
-        time.sleep(1)
-    
-    # 保存
-    with open(TEAMS_JSON, 'w', encoding='utf-8') as f:
-        json.dump(existing_teams, f, ensure_ascii=False, indent=2)
-        f.write("\n")
-    
-    print("\n" + "=" * 60)
-    print("✅ ロゴURL更新完了")
-    print("=" * 60)
-    print(f"更新: {updated_count}チーム")
-    print(f"スキップ（既存あり）: {skipped_count}チーム")
-    print(f"失敗: {failed_count}チーム")
+    return
 
 
 def main():
@@ -486,14 +499,13 @@ def main():
             f.write("\n")
         print(f"\n詳細レポート: {DUPLICATES_REPORT}")
     
-    # チームマスタ生成（ロゴ取得有効）
-    print("\nチームマスタ生成中（ロゴ取得有効）...")
-    print("⏳ TheSportsDB API問い合わせ中... （時間がかかります）")
+    # チームマスタ生成（ロゴ取得は別コマンドで実施）
+    print("\nチームマスタ生成中（ロゴ取得は別コマンドで実施）...")
     
     new_teams, added_count, preserved_count = generate_team_master(
         teams_by_comp, 
         existing_teams,
-        fetch_logos=True  # ロゴ取得ON
+        fetch_logos=False  # ロゴ取得は別コマンドで実施
     )
     
     # 保存

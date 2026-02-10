@@ -27,7 +27,7 @@ class BaseScraper(ABC):
         "u6n": "U20",    # Six Nations U20 → U20
         "trc": "M",      # The Rugby Championship → M
         "ans": "M",      # Autumn Nations Series → M
-        "wri": "M",      # World Rugby Internationals → M (混合の場合は個別判定)
+        "wr": "M",       # World Rugby Internationals → M (混合の場合は個別判定)
     }
     
     # 国略称マッピング（チーム名 → 3文字コード）
@@ -76,15 +76,61 @@ class BaseScraper(ABC):
         r'\s+HIF$',
         r'\s+HFC\s+BANK$',
     ]
+
+    # Competition-specific alias mappings (short/alt names -> official names)
+    # Keys are normalized via _normalize_alias_key.
+    COMPETITION_TEAM_ALIASES = {
+        "epcr-champions": {
+            "Bayonne": "Aviron Bayonnais",
+            "Bordeaux-Begles": "Union Bordeaux Bègles",
+            "Clermont Auvergne": "ASM Clermont Auvergne",
+            "La Rochelle": "Stade Rochelais",
+            "Pau": "Section Paloise",
+            "Toulon": "RC Toulon",
+            "Toulouse": "Stade Toulousain",
+            "Stade Francais Paris": "Stade Français Paris",
+        },
+        "epcr-challenge": {
+            "Lyon O.U.": "Lyon Olympique Universitaire",
+            "Montauban": "US Montauban",
+            "Montpellier": "Montpellier Hérault Rugby",
+            "Perpignan": "USAP",
+            "Stade Francais Paris": "Stade Français Paris",
+        },
+        "jrlo-div1": {
+            "埼玉ワイルドナイツ": "埼玉パナソニックワイルドナイツ",
+            "東京サンゴリアス": "東京サントリーサンゴリアス",
+        },
+        "jrlo-div3": {
+            "スカイアクティブズ広島": "マツダスカイアクティブズ広島",
+        },
+    }
     
-    def __init__(self):
+    def __init__(self, *, update_team_master: bool = False):
         self.output_dir = Path("data/matches")
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self._team_master = self._load_team_master()
         self._competition_id = None  # サブクラスで設定
         self._base_team_names = self._build_base_team_names_cache()  # 動的スポンサー検知用
         self._thesportsdb_api_key = os.environ.get("THESPORTSDB_API_KEY", "3")  # Free tier
-        self._logo_cache = {}  # ロゴURL取得のキャッシュ
+        self._logo_cache = {}  # ロゴURL取得のキャッシュ（メモリ内）
+        self._logo_cache_file = Path("data/team_logos_cache.json")  # 永続キャッシュファイル
+        self._load_logo_cache()  # ファイルからキャッシュ読み込み
+        self._update_team_master = update_team_master
+
+    @staticmethod
+    def _prefer_selenium_manager() -> None:
+        """Prefer Selenium Manager by removing any PATH entries that contain chromedriver."""
+        path = os.environ.get("PATH", "")
+        if not path:
+            return
+        parts = []
+        for p in path.split(os.pathsep):
+            candidate = Path(p) / "chromedriver"
+            if candidate.exists():
+                continue
+            parts.append(p)
+        os.environ["PATH"] = os.pathsep.join(parts)
     
     def _load_team_master(self) -> Dict[str, Any]:
         """Load team master data from data/teams.json."""
@@ -105,6 +151,75 @@ class BaseScraper(ABC):
         except Exception as e:
             print(f"Warning: Failed to load teams.json: {e}")
             return {}
+
+    def _save_team_master(self) -> bool:
+        """Persist team master data to data/teams.json."""
+        if not self._update_team_master:
+            return False
+        teams_file = self.output_dir.parent / "teams.json"
+        try:
+            with open(teams_file, "w", encoding="utf-8") as f:
+                json.dump(self._team_master, f, ensure_ascii=False, indent=2)
+                f.write("\n")
+            return True
+        except Exception as e:
+            print(f"⚠️ チームマスタ保存エラー: {e}")
+            return False
+
+    def _should_replace_logo(self, existing_url: str) -> bool:
+        """Determine if an official logo should overwrite existing value."""
+        if not existing_url:
+            return True
+        lower = existing_url.lower()
+        if "thesportsdb.com" in lower or "r2.thesportsdb.com" in lower:
+            return True
+        return False
+
+    def _apply_official_team_logos(self, team_logos: Dict[str, Dict[str, str]], competition_id: str) -> None:
+        """Apply official logo URLs to team master (fill or replace TheSportsDB)."""
+        if not self._update_team_master:
+            return
+        if not team_logos:
+            return
+
+        updated = False
+        for team_name, logo_info in team_logos.items():
+            if not team_name or not logo_info:
+                continue
+            logo_url = logo_info.get("logo_url", "")
+            badge_url = logo_info.get("badge_url", "") or ""
+            if logo_url and not badge_url:
+                badge_url = logo_url
+
+            # 1) competition_id に紐づくチームを更新
+            team_id = self._resolve_team_id(team_name, competition_id)
+            if team_id:
+                team_data = self._team_master.get(team_id)
+                if team_data:
+                    if logo_url and self._should_replace_logo(team_data.get("logo_url", "")):
+                        team_data["logo_url"] = logo_url
+                        updated = True
+                    if badge_url and self._should_replace_logo(team_data.get("badge_url", "")):
+                        team_data["badge_url"] = badge_url
+                        updated = True
+
+            # 2) 同名チーム（他大会）も公式ロゴで更新
+            normalized_name = team_name.strip().lower()
+            for other_id, other_data in self._team_master.items():
+                if other_id == team_id:
+                    continue
+                if normalized_name == (other_data.get("name", "").strip().lower()) or normalized_name == (
+                    other_data.get("short_name", "").strip().lower()
+                ):
+                    if logo_url and self._should_replace_logo(other_data.get("logo_url", "")):
+                        other_data["logo_url"] = logo_url
+                        updated = True
+                    if badge_url and self._should_replace_logo(other_data.get("badge_url", "")):
+                        other_data["badge_url"] = badge_url
+                        updated = True
+
+        if updated:
+            self._save_team_master()
     
     def _build_base_team_names_cache(self) -> Dict[str, set]:
         """既存チーム名のキャッシュを構築（動的スポンサー検知用）
@@ -255,6 +370,39 @@ class BaseScraper(ABC):
             return ""
         
         team_name = team_name.strip()
+
+        # Competition-specific alias mapping
+        if competition_id:
+            aliases = self.COMPETITION_TEAM_ALIASES.get(competition_id, {})
+            if aliases:
+                alias_key = self._normalize_alias_key(team_name)
+                mapped = aliases.get(alias_key)
+                if not mapped:
+                    for raw_name, official_name in aliases.items():
+                        if self._normalize_alias_key(raw_name) == alias_key:
+                            mapped = official_name
+                            break
+                if mapped:
+                    return mapped
+
+        # SRP公式表記の補正（スポンサー除去ではない別名）
+        if competition_id == "srp":
+            srp_aliases = {
+                "BLUES": "Blues",
+                "BRUMBIES": "Brumbies",
+                "CHIEFS": "Chiefs",
+                "CRUSADERS": "Crusaders",
+                "FIJIAN DRUA": "Fijian Drua",
+                "FORCE": "Western Force",
+                "HIGHLANDERS": "Highlanders",
+                "HURRICANES": "Hurricanes",
+                "MOANA PASIFIKA": "Moana Pasifika",
+                "REDS": "Queensland Reds",
+                "WARATAHS": "NSW Waratahs",
+            }
+            mapped = srp_aliases.get(team_name.upper())
+            if mapped:
+                return mapped
         
         # 国際試合の場合、代表チームバリエーションはそのまま保持
         if competition_id and competition_id in self.INTERNATIONAL_COMPETITIONS:
@@ -302,9 +450,26 @@ class BaseScraper(ABC):
         # 静的パターンでのフォールバック
         normalized = team_name
         for pattern in self.SPONSOR_PATTERNS:
-            normalized = re.sub(pattern, '', normalized, flags=re.IGNORECASE)
-        
+            candidate = re.sub(pattern, '', normalized, flags=re.IGNORECASE).strip()
+            if candidate and candidate != normalized:
+                if any(
+                    candidate.upper() == base.upper()
+                    for base in self._base_team_names.get(competition_id, set())
+                ):
+                    normalized = candidate
         return normalized.strip()
+
+    @staticmethod
+    def _normalize_alias_key(value: str) -> str:
+        import unicodedata
+
+        normalized = unicodedata.normalize("NFKC", value or "")
+        normalized = normalized.strip()
+        normalized = re.sub(r"\s+", " ", normalized)
+        normalized = normalized.casefold()
+        normalized = re.sub(r"[^\w\s]", "", normalized, flags=re.UNICODE)
+        normalized = re.sub(r"\s+", " ", normalized).strip()
+        return normalized
     
     def _register_national_team(self, team_id: str, team_name: str, competition_id: str) -> bool:
         """Register new national team to teams.json.
@@ -317,6 +482,8 @@ class BaseScraper(ABC):
         Returns:
             True if registered, False if already exists or error.
         """
+        if not self._update_team_master:
+            return False
         if not team_id or team_id in self._team_master:
             return False
         
@@ -349,7 +516,7 @@ class BaseScraper(ABC):
         """クラブチーム用のteam_idを生成（連番形式）
         
         形式: {大会略称}_{連番}
-        例: gp_1, urc_1, jrlo-div1_1
+        例: premier_1, urc_1, jrlo-div1_1
         
         Args:
             team_name: チーム名
@@ -360,12 +527,14 @@ class BaseScraper(ABC):
         """
         # 大会ID→略称マッピング
         comp_abbr_map = {
-            'gp': 'gp',
+            'premier': 'premier',
             'urc': 'urc',
-            'wri': 'wri',
-            'jrlo_div1': 'jrlo-div1',
-            'jrlo_div2': 'jrlo-div2',
-            'jrlo_div3': 'jrlo-div3',
+            'wr': 'wr',
+            'jrlo-div1': 'jrlo-div1',
+            'jrlo-div2': 'jrlo-div2',
+            'jrlo-div3': 'jrlo-div3',
+            'epcr-champions': 'epcr-champions',
+            'epcr-challenge': 'epcr-challenge',
         }
         
         comp_abbr = comp_abbr_map.get(competition_id, competition_id)
@@ -381,6 +550,42 @@ class BaseScraper(ABC):
         
         return f"{comp_abbr}_{next_num}"
     
+    def _load_logo_cache(self) -> None:
+        """永続キャッシュファイルからロゴ情報を読み込み"""
+        if not self._logo_cache_file.exists():
+            return
+        
+        try:
+            with open(self._logo_cache_file, 'r', encoding='utf-8') as f:
+                file_cache = json.load(f)
+                # ファイルキャッシュをメモリキャッシュにロード
+                for team_name, cache_data in file_cache.items():
+                    self._logo_cache[team_name] = {
+                        "logo_url": cache_data.get("logo_url", ""),
+                        "badge_url": cache_data.get("badge_url", ""),
+                    }
+        except Exception as e:
+            print(f"⚠️ ロゴキャッシュ読み込みエラー: {e}")
+    
+    def _save_logo_cache(self) -> None:
+        """ロゴキャッシュをファイルに保存"""
+        try:
+            cache_data = {}
+            for team_name, logo_info in self._logo_cache.items():
+                if logo_info:  # 空辞書は保存しない
+                    cache_data[team_name] = {
+                        "logo_url": logo_info.get("logo_url", ""),
+                        "badge_url": logo_info.get("badge_url", ""),
+                        "fetched_at": datetime.now(timezone.utc).isoformat(),
+                    }
+            
+            self._logo_cache_file.parent.mkdir(parents=True, exist_ok=True)
+            with open(self._logo_cache_file, 'w', encoding='utf-8') as f:
+                json.dump(cache_data, f, ensure_ascii=False, indent=2)
+                f.write("\n")
+        except Exception as e:
+            print(f"⚠️ ロゴキャッシュ保存エラー: {e}")
+    
     def _fetch_team_logo_from_thesportsdb(self, team_name: str) -> Dict[str, str]:
         """TheSportsDB APIからチームのロゴURLを取得
         
@@ -393,11 +598,15 @@ class BaseScraper(ABC):
         if not REQUESTS_AVAILABLE:
             return {}
         
-        # キャッシュチェック
+        # キャッシュチェック（メモリ内＋ファイル）
         if team_name in self._logo_cache:
             return self._logo_cache[team_name]
         
         try:
+            # API Rate Limit対策: 1秒待機
+            import time
+            time.sleep(1.0)
+            
             # チーム検索API
             api_base = "https://www.thesportsdb.com/api/v1/json"
             url = f"{api_base}/{self._thesportsdb_api_key}/searchteams.php?t={quote_plus(team_name)}"
@@ -418,7 +627,12 @@ class BaseScraper(ABC):
                 "badge_url": team.get("strBadge") or "",
             }
             
+            # メモリキャッシュに保存
             self._logo_cache[team_name] = result
+            
+            # ファイルキャッシュにも保存
+            self._save_logo_cache()
+            
             return result
             
         except Exception as e:
@@ -426,22 +640,50 @@ class BaseScraper(ABC):
             self._logo_cache[team_name] = {}
             return {}
 
-    def _register_club_team(self, team_id: str, team_name: str, competition_id: str) -> bool:
-        """クラブチームをteams.jsonに登録
+    def _register_club_team_with_logo_provider(self, team_id: str, team_name: str, competition_id: str, logo_provider_func=None) -> bool:
+        """クラブチームを登録（ロゴ取得関数を使用）
         
         Args:
-            team_id: 生成されたteam_id (例: gp_1)
+            team_id: 生成されたteam_id
             team_name: チーム表示名
             competition_id: 大会ID
+            logo_provider_func: ロゴURL取得関数（team_name を引数に取り、dict を返す）
             
         Returns:
             True if registered, False if already exists or error.
         """
+        logo_info = {}
+        if logo_provider_func and callable(logo_provider_func):
+            try:
+                logo_info = logo_provider_func(team_name) or {}
+            except Exception as e:
+                print(f"⚠️  ロゴ取得エラー ({team_name}): {e}")
+        
+        return self._register_club_team(team_id, team_name, competition_id, logo_info)
+    
+    def _register_club_team(self, team_id: str, team_name: str, competition_id: str, logo_info: dict = None) -> bool:
+        """クラブチームをteams.jsonに登録
+        
+        Args:
+            team_id: 生成されたteam_id (例: premier_1)
+            team_name: チーム表示名
+            competition_id: 大会ID
+            logo_info: ロゴ情報辞書 {"logo_url": "...", "badge_url": "..."} (オプション)
+            
+        Returns:
+            True if registered, False if already exists or error.
+        """
+        if not self._update_team_master:
+            return False
         if not team_id or team_id in self._team_master:
             return False
         
-        # TheSportsDB APIからロゴURL取得を試行
-        logo_info = self._fetch_team_logo_from_thesportsdb(team_name)
+        # ロゴ情報の取得（渡されていない場合は空）
+        if logo_info is None:
+            logo_info = {}
+        
+        logo_url = logo_info.get("logo_url", "")
+        badge_url = logo_info.get("badge_url", "")
         
         # 新規クラブチーム登録
         self._team_master[team_id] = {
@@ -452,8 +694,8 @@ class BaseScraper(ABC):
             "short_name": team_name[:20],
             "country": "",
             "division": "",
-            "logo_url": logo_info.get("logo_url", ""),
-            "badge_url": logo_info.get("badge_url", ""),
+            "logo_url": logo_url,
+            "badge_url": badge_url,
         }
         
         # teams.jsonに保存
@@ -462,8 +704,11 @@ class BaseScraper(ABC):
             with open(teams_file, "w", encoding="utf-8") as f:
                 json.dump(self._team_master, f, ensure_ascii=False, indent=2)
                 f.write("\n")
-            logo_status = "✓ロゴ取得" if logo_info.get("logo_url") else ""
-            print(f"✅ 新規クラブチーム登録: {team_id} ({team_name}) {logo_status}")
+            
+            logo_status = ""
+            if logo_url:
+                logo_status = f" 🖼️ ロゴ取得済み"
+            print(f"✅ 新規クラブチーム登録: {team_id} ({team_name}){logo_status}")
             return True
         except Exception as e:
             print(f"⚠️ チーム登録エラー ({team_id}): {e}")
@@ -475,9 +720,9 @@ class BaseScraper(ABC):
         新ID形式対応 + 動的スポンサー検知 + 国代表チーム自動登録:
         - team_nameから自動的にスポンサー名を除去
         - 国際大会の場合、NT-{カテゴリ}-{国コード}形式のIDを生成
-        - 新規国代表チームは自動的にteams.jsonに登録
+        - 新規国代表チームは update_team_master=True の場合のみ自動登録
         - 例: competition_id="w6n", team_name="Ireland" → "NT-W-IRE" (自動登録)
-        - 例: competition_id="wri", team_name="England A" → "NT-M-ENG-A" (自動登録)
+        - 例: competition_id="wr", team_name="England A" → "NT-M-ENG-A" (自動登録)
         
         Args:
             team_name: Team display name (スポンサー名含む可能性あり)
@@ -501,8 +746,10 @@ class BaseScraper(ABC):
                     return national_team_id
                 
                 # 新規国代表チーム → 自動登録
-                self._register_national_team(national_team_id, base_team_name, competition_id)
-                return national_team_id
+                if self._update_team_master:
+                    self._register_national_team(national_team_id, base_team_name, competition_id)
+                    return national_team_id
+                return ""
         
         # 大会IDが指定されている場合、その大会のチームのみを検索
         if competition_id:
@@ -516,9 +763,11 @@ class BaseScraper(ABC):
             
             # マスタに存在しない → 新規クラブチームとして登録
             if competition_id not in self.INTERNATIONAL_COMPETITIONS:
-                club_team_id = self._generate_club_team_id(base_team_name, competition_id)
-                self._register_club_team(club_team_id, team_name, competition_id)
-                return club_team_id
+                if self._update_team_master:
+                    club_team_id = self._generate_club_team_id(base_team_name, competition_id)
+                    self._register_club_team(club_team_id, team_name, competition_id)
+                    return club_team_id
+                return ""
         
         # 全体から検索（後方互換性）
         key = base_team_name.lower()
@@ -555,10 +804,10 @@ class BaseScraper(ABC):
         """Generate stable match ID.
         
         新形式: {comp_id}-{season}[-rd{round_num}]-{seq}
-        例: m6n-2026-rd1-1, jrlo_div1-2026-15, gp-202501-rd5-3
+        例: m6n-2026-rd1-1, jrlo-div1-2026-15, premier-202501-rd5-3
         
         Args:
-            competition_id: Competition identifier (e.g., "m6n", "jrlo_div1")
+            competition_id: Competition identifier (e.g., "m6n", "jrlo-div1")
             season: Season identifier (e.g., "2026", "202501")
             round_num: Round number (numeric string, e.g., "1", "5", or "" if no round)
             sequence: Sequence number within the competition/season/round

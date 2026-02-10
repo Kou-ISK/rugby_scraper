@@ -1,4 +1,4 @@
-"""TheSportsDB から大会・チームのロゴURLを取得し、JSONに反映するスクリプト。
+"""[DEPRECATED] TheSportsDB から大会・チームのロゴURLを取得し、JSONに反映するスクリプト。
 
 使い方:
   python scripts/fetch_logos.py --config scripts/logo_sources.json --save-local
@@ -7,7 +7,7 @@
 {
   "competitions": [
     {
-      "id": "six-nations",
+      "id": "m6n",
       "league_id": "1234",
       "league_name": "Six Nations",
       "license_key": "six_nations_logo",
@@ -216,6 +216,8 @@ def merge_license_entries(config: Dict[str, Any], license_book: Dict[str, Any]) 
 
 
 def main() -> None:
+    print("This script is deprecated. Use `python -m src.main update-team-master` to fetch official logos.")
+    return
     parser = argparse.ArgumentParser(description="Fetch logos from TheSportsDB and update JSON metadata.")
     parser.add_argument("--config", default="scripts/logo_sources.json", help="Path to config JSON")
     parser.add_argument("--only", nargs="*", help="Process only these competition ids")

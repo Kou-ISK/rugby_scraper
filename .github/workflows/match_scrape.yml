@@ -1,0 +1,114 @@
+name: "試合取得"
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "実行モード"
+        required: true
+        default: "single"
+        type: choice
+        options:
+          - single
+          - all
+      competition:
+        description: "大会ID (single時のみ使用)"
+        required: true
+        default: "m6n"
+        type: choice
+        options:
+          - m6n
+          - w6n
+          - u6n
+          - epcr-champions
+          - epcr-challenge
+          - t14
+          - jrlo
+          - premier
+          - urc
+          - srp
+          - wr
+          - trc
+          - ans
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-branch-write
+  cancel-in-progress: false
+
+jobs:
+  scrape-matches:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Fetch data from data branch
+        run: |
+          git fetch origin data:data
+          git checkout data -- data/ || mkdir -p data/matches
+          git checkout main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Run scrapers
+        env:
+          PYTHONPATH: .
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.mode }}" = "all" ]; then
+            python scripts/automation/scrape_all.py
+          else
+            python -m src.main "${{ inputs.competition }}"
+          fi
+
+      - name: Generate competitions summary
+        run: |
+          python -m src.main generate-metadata
+
+      - name: Commit and push changes to data branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          if [ -n "$(git status --porcelain data/)" ]; then
+            echo "Changes detected, preparing to push to data branch"
+
+            cp -r data /tmp/scraped_data
+
+            git checkout -- data/
+            git clean -fd data/
+
+            git fetch origin data:data
+            git checkout data
+
+            rm -rf data
+            mv /tmp/scraped_data data
+
+            git add data/
+            git commit -m "Update match data - $(date +'%Y-%m-%d %H:%M:%S')"
+            git push origin data
+
+            echo "Successfully pushed to data branch"
+          else
+            echo "No changes to commit"
+          fi
