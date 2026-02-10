@@ -1,6 +1,6 @@
 [
   {
-    "id": "six-nations",
+    "id": "m6n",
     "name": "Six Nations",
     "short_name": "6N",
     "sport": "rugby union",
@@ -19,7 +19,7 @@
     "season_pattern": "annual",
     "match_url_template": "https://www.sixnationsrugby.com/en/m6n/fixtures/{season}/{slug}",
     "data_paths": [
-      "data/matches/six-nations.json"
+      "data/matches/m6n"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -79,28 +79,20 @@
       ],
       "notes": "Regional availability varies. Some streaming services require geo-location within their service area or VPN for international access."
     },
-    "teams": [
-      "ENG",
-      "FRA",
-      "IRE",
-      "ITA",
-      "SCO",
-      "WAL"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 15,
-      "seasons": [
-        "2026"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
-        "start": "2026-02-05T21:10:00+01:00",
-        "end": "2026-03-14T21:10:00+01:00"
+        "start": "",
+        "end": ""
       },
-      "last_updated": "2026-02-04T12:49:49.599443"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://images.ctfassets.net/uiu4umqyl5b5/lQyv6REYr8AWSXkDsVkR5/47e3860cd429ccfc0866afd287b1ee52/h_00154981.jpg?w=1200&h=630&fit=crop&f=face"
   },
   {
-    "id": "six-nations-women",
+    "id": "w6n",
     "name": "Women's Six Nations",
     "short_name": "W6N",
     "sport": "rugby union",
@@ -119,7 +111,7 @@
     "season_pattern": "annual",
     "match_url_template": "https://www.sixnationsrugby.com/en/w6n/fixtures/{season}/{slug}",
     "data_paths": [
-      "data/matches/six-nations-women.json"
+      "data/matches/w6n"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -147,28 +139,20 @@
       ],
       "notes": "Coverage may be available via Six Nations official channels and regional broadcasters."
     },
-    "teams": [
-      "ENG",
-      "FRA",
-      "IRE",
-      "ITA",
-      "SCO",
-      "WAL"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 15,
-      "seasons": [
-        "2026"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
-        "start": "2026-04-11T11:25:00+02:00",
-        "end": "2026-05-17T15:45:00+02:00"
+        "start": "",
+        "end": ""
       },
-      "last_updated": "2026-02-04T12:50:03.034507"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://images.ctfassets.net/uiu4umqyl5b5/lQyv6REYr8AWSXkDsVkR5/47e3860cd429ccfc0866afd287b1ee52/h_00154981.jpg?w=1200&h=630&fit=crop&f=face"
   },
   {
-    "id": "six-nations-u20",
+    "id": "u6n",
     "name": "Six Nations U20",
     "short_name": "U20 6N",
     "sport": "rugby union",
@@ -187,7 +171,7 @@
     "season_pattern": "annual",
     "match_url_template": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/{season}/{slug}",
     "data_paths": [
-      "data/matches/six-nations-u20.json"
+      "data/matches/u6n"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -215,25 +199,17 @@
       ],
       "notes": "Many matches available via Six Nations official streaming channels."
     },
-    "teams": [
-      "ENG",
-      "FRA",
-      "IRE",
-      "ITA",
-      "SCO",
-      "WAL"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 15,
-      "seasons": [
-        "2026"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
-        "start": "2026-02-06T20:15:00+01:00",
-        "end": "2026-03-15T18:45:00+01:00"
+        "start": "",
+        "end": ""
       },
-      "last_updated": "2026-02-04T12:50:16.096567"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://images.ctfassets.net/uiu4umqyl5b5/lQyv6REYr8AWSXkDsVkR5/47e3860cd429ccfc0866afd287b1ee52/h_00154981.jpg?w=1200&h=630&fit=crop&f=face"
   },
   {
     "id": "epcr-champions",
@@ -255,7 +231,7 @@
     "season_pattern": "annual",
     "match_url_template": "https://www.epcrugby.com/champions-cup/matches/{matchId}",
     "data_paths": [
-      "data/matches/epcr-champions.json"
+      "data/matches/epcr-champions"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -291,43 +267,17 @@
       ],
       "notes": "Broadcasting rights vary by region. Check EPCR official site for regional availability."
     },
-    "teams": [
-      "ASM Clermont Auvergne",
-      "Aviron Bayonnais",
-      "Bath Rugby",
-      "Bristol Bears",
-      "Castres Olympique",
-      "DHL Stormers",
-      "Edinburgh Rugby",
-      "Glasgow Warriors",
-      "Gloucester Rugby",
-      "Harlequins",
-      "Hollywoodbets Sharks",
-      "Leicester Tigers",
-      "Leinster Rugby",
-      "Munster Rugby",
-      "Northampton Saints",
-      "RC Toulon",
-      "Sale Sharks",
-      "Saracens",
-      "Scarlets",
-      "Section Paloise",
-      "Stade Rochelais",
-      "Stade Toulousain",
-      "Union Bordeaux Bègles",
-      "Vodacom Bulls"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 63,
-      "seasons": [
-        "2026"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
-        "start": "2025-05-12T21:00:00+02:00",
-        "end": "2026-11-01T18:30:00+01:00"
+        "start": "",
+        "end": ""
       },
-      "last_updated": "2026-02-04T12:50:31.290636"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://media-cdn.incrowdsports.com/55268088-0eba-4edc-a564-f7c60aab4362.png"
   },
   {
     "id": "epcr-challenge",
@@ -349,7 +299,7 @@
     "season_pattern": "annual",
     "match_url_template": "https://www.epcrugby.com/challenge-cup/matches/{matchId}",
     "data_paths": [
-      "data/matches/epcr-challenge.json"
+      "data/matches/epcr-challenge"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -384,44 +334,20 @@
       ],
       "notes": "Broadcasting rights vary by region. Check EPCR official site for regional availability."
     },
-    "teams": [
-      "Benetton Rugby",
-      "Black Lion",
-      "Cardiff Rugby",
-      "Connacht Rugby",
-      "Dragons RFC",
-      "Exeter Chiefs",
-      "Hollywoodbets",
-      "Lions",
-      "Lyon Olympique Universitaire",
-      "Montpellier Hérault Rugby",
-      "Munster",
-      "Newcastle Red Bulls",
-      "Ospreys",
-      "Racing 92",
-      "Section",
-      "Stade",
-      "Stade Français Paris",
-      "Toyota Cheetahs",
-      "US Montauban",
-      "USAP",
-      "Ulster Rugby",
-      "Zebre Parma"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 51,
-      "seasons": [
-        "2026"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
-        "start": "2025-05-12T21:00:00+02:00",
-        "end": "2026-11-01T14:00:00+01:00"
+        "start": "",
+        "end": ""
       },
-      "last_updated": "2026-02-04T12:50:24.359605"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://media-cdn.incrowdsports.com/55268088-0eba-4edc-a564-f7c60aab4362.png"
   },
   {
-    "id": "top14",
+    "id": "t14",
     "name": "Top 14",
     "short_name": "Top 14",
     "sport": "rugby union",
@@ -440,7 +366,7 @@
     "season_pattern": "annual",
     "match_url_template": "https://top14.lnr.fr/feuille-de-match/{matchId}",
     "data_paths": [
-      "data/matches/top14.json"
+      "data/matches/t14"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -475,39 +401,22 @@
       ],
       "notes": "Canal+ holds exclusive French broadcasting rights. International viewers may require RugbyPass TV subscription."
     },
-    "teams": [
-      "-",
-      "ASM Clermont",
-      "Aviron Bayonnais",
-      "Castres Olympique",
-      "LOU Rugby",
-      "Montpellier Hérault Rugby",
-      "RC Toulon",
-      "Racing 92",
-      "Section Paloise",
-      "Stade Français Paris",
-      "Stade Rochelais",
-      "Stade Toulousain",
-      "US Montauban",
-      "USA Perpignan",
-      "Union Bordeaux-Bègles"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 188,
-      "seasons": [
-        "2026-2027"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
         "start": "",
         "end": ""
       },
-      "last_updated": "2026-02-04T12:52:08.952034"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://assets.lnr.fr/2/2/9/4/8/4/conversions/ab2-5897-1200x630.webp"
   },
   {
-    "id": "league-one",
-    "name": "Japan Rugby League One",
-    "short_name": "League One",
+    "id": "jrlo-div1",
+    "name": "Japan Rugby League One Division 1",
+    "short_name": "JRLO D1",
     "sport": "rugby union",
     "category": "club",
     "gender": "men",
@@ -517,14 +426,15 @@
     "governing_body": "Japan Rugby League One",
     "organizer": "Japan Rugby League One",
     "official_sites": [
-      "https://league-one.jp"
+      "https://league-one.jp",
+      "https://league-one.jp/"
     ],
     "official_feeds": [],
     "timezone_default": "Asia/Tokyo",
     "season_pattern": "annual",
     "match_url_template": "https://league-one.jp/match/{matchId}",
     "data_paths": [
-      "data/matches/league-one.json"
+      "data/matches/jrlo-div1"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -554,60 +464,146 @@
       ],
       "notes": "J SPORTS provides comprehensive coverage in Japan. International access is limited."
     },
-    "teams": [
-      "D1リーグ戦1位",
-      "D1リーグ戦2位",
-      "D1リーグ戦3位",
-      "D1リーグ戦4位",
-      "D1リーグ戦5位",
-      "D1リーグ戦6位",
-      "クボタスピアーズ船橋・東京ベイ",
-      "クリタウォーターガッシュ昭島",
-      "グリーンロケッツ東葛",
-      "コベルコ神戸スティーラーズ",
-      "スカイアクティブズ広島",
-      "トヨタヴェルブリッツ",
-      "ブラックラムズ東京",
-      "ヤクルトレビンズ戸田",
-      "ルリーロ福岡",
-      "レッドハリケーンズ大阪",
-      "三菱重工相模原ダイナボアーズ",
-      "三重ホンダヒート",
-      "中国電力レッドレグリオンズ",
-      "九州電力キューデンヴォルテクス",
-      "埼玉ワイルドナイツ",
-      "日本製鉄釜石シーウェイブス",
-      "日野レッドドルフィンズ",
-      "東京サンゴリアス",
-      "東芝ブレイブルーパス東京",
-      "横浜キヤノンイーグルス",
-      "浦安D-Rocks",
-      "清水建設江東ブルーシャークス",
-      "準々決勝(1)勝者",
-      "準々決勝(2)勝者",
-      "準決勝(1)勝者",
-      "準決勝(1)敗者",
-      "準決勝(2)勝者",
-      "準決勝(2)敗者",
-      "狭山セコムラガッツ",
-      "花園近鉄ライナーズ",
-      "豊田自動織機シャトルズ愛知",
-      "静岡ブルーレヴズ"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 215,
-      "seasons": [
-        "2026"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
-        "start": "2025-12-13T12:00:00+09:00",
-        "end": "2026-12-04T13:00:00+09:00"
+        "start": "",
+        "end": ""
       },
-      "last_updated": "2026-02-04T12:52:12.517045"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/site_info/16991_1200x630_68636b5fa7b86.png"
   },
   {
-    "id": "gallagher-premiership",
+    "id": "jrlo-div2",
+    "name": "Japan Rugby League One Division 2",
+    "short_name": "JRLO D2",
+    "sport": "rugby union",
+    "category": "club",
+    "gender": "men",
+    "age_grade": "senior",
+    "tier": "tier-2",
+    "region": "Japan",
+    "governing_body": "Japan Rugby League One",
+    "organizer": "Japan Rugby League One",
+    "official_sites": [
+      "https://league-one.jp",
+      "https://league-one.jp/"
+    ],
+    "official_feeds": [],
+    "timezone_default": "Asia/Tokyo",
+    "season_pattern": "annual",
+    "match_url_template": "https://league-one.jp/match/{matchId}",
+    "data_paths": [
+      "data/matches/jrlo-div2"
+    ],
+    "coverage": {
+      "broadcast_regions": [
+        {
+          "region": "JP",
+          "providers": [
+            "J SPORTS",
+            "J SPORTSオンデマンド",
+            "Lemino (selected matches)"
+          ],
+          "official_source": "https://league-one.jp/news/3842"
+        }
+      ],
+      "analysis_providers": [
+        {
+          "name": "ESPN Rugby",
+          "official_source": "https://www.espn.com/rugby/"
+        },
+        {
+          "name": "RugbyPass",
+          "official_source": "https://www.rugbypass.com/"
+        },
+        {
+          "name": "RugbyPass TV",
+          "official_source": "https://info.rugbypass.tv/"
+        }
+      ],
+      "notes": "J SPORTS provides comprehensive coverage in Japan. International access is limited."
+    },
+    "teams": [],
+    "data_summary": {
+      "match_count": 0,
+      "seasons": [],
+      "date_range": {
+        "start": "",
+        "end": ""
+      },
+      "last_updated": ""
+    },
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/site_info/16991_1200x630_68636b5fa7b86.png"
+  },
+  {
+    "id": "jrlo-div3",
+    "name": "Japan Rugby League One Division 3",
+    "short_name": "JRLO D3",
+    "sport": "rugby union",
+    "category": "club",
+    "gender": "men",
+    "age_grade": "senior",
+    "tier": "tier-3",
+    "region": "Japan",
+    "governing_body": "Japan Rugby League One",
+    "organizer": "Japan Rugby League One",
+    "official_sites": [
+      "https://league-one.jp",
+      "https://league-one.jp/"
+    ],
+    "official_feeds": [],
+    "timezone_default": "Asia/Tokyo",
+    "season_pattern": "annual",
+    "match_url_template": "https://league-one.jp/match/{matchId}",
+    "data_paths": [
+      "data/matches/jrlo-div3"
+    ],
+    "coverage": {
+      "broadcast_regions": [
+        {
+          "region": "JP",
+          "providers": [
+            "J SPORTS",
+            "J SPORTSオンデマンド",
+            "Lemino (selected matches)"
+          ],
+          "official_source": "https://league-one.jp/news/3842"
+        }
+      ],
+      "analysis_providers": [
+        {
+          "name": "ESPN Rugby",
+          "official_source": "https://www.espn.com/rugby/"
+        },
+        {
+          "name": "RugbyPass",
+          "official_source": "https://www.rugbypass.com/"
+        },
+        {
+          "name": "RugbyPass TV",
+          "official_source": "https://info.rugbypass.tv/"
+        }
+      ],
+      "notes": "J SPORTS provides comprehensive coverage in Japan. International access is limited."
+    },
+    "teams": [],
+    "data_summary": {
+      "match_count": 0,
+      "seasons": [],
+      "date_range": {
+        "start": "",
+        "end": ""
+      },
+      "last_updated": ""
+    },
+    "logo_url": "https://league-one.s3.ap-northeast-1.amazonaws.com/image/site_info/16991_1200x630_68636b5fa7b86.png"
+  },
+  {
+    "id": "premier",
     "name": "Gallagher Premiership",
     "short_name": "Premiership",
     "sport": "rugby union",
@@ -619,7 +615,8 @@
     "governing_body": "Premiership Rugby",
     "organizer": "Premiership Rugby",
     "official_sites": [
-      "https://www.premiershiprugby.com"
+      "https://www.premiershiprugby.com",
+      "https://premiershiprugby.com"
     ],
     "official_feeds": [
       "https://rugby-union-feeds.incrowdsports.com"
@@ -628,7 +625,7 @@
     "season_pattern": "annual",
     "match_url_template": "https://www.premiershiprugby.com/fixture/{matchId}",
     "data_paths": [
-      "data/matches/gallagher-premiership.json"
+      "data/matches/premier"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -657,30 +654,17 @@
       ],
       "notes": "TNT Sports and discovery+ hold exclusive UK/IE broadcasting rights. International access may require VPN."
     },
-    "teams": [
-      "Bath Rugby",
-      "Bristol Bears",
-      "Exeter Chiefs",
-      "Gloucester Rugby",
-      "Harlequins",
-      "Leicester Tigers",
-      "Newcastle Red Bulls",
-      "Northampton Saints",
-      "Sale Sharks",
-      "Saracens",
-      "TBC"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 93,
-      "seasons": [
-        "202501"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
-        "start": "2025-03-10T18:45:00+00:00",
-        "end": "2026-10-05T14:00:00+00:00"
+        "start": "",
+        "end": ""
       },
-      "last_updated": "2026-02-04T12:52:15.879053"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://media-cdn.cortextech.io/0a0ec7da-2501-4db5-9f0c-b27ec10adcd5.png"
   },
   {
     "id": "urc",
@@ -695,7 +679,8 @@
     "governing_body": "United Rugby Championship",
     "organizer": "URC",
     "official_sites": [
-      "https://www.unitedrugby.com"
+      "https://www.unitedrugby.com",
+      "https://www.unitedrugby.com/"
     ],
     "official_feeds": [
       "https://rugby-union-feeds.incrowdsports.com"
@@ -704,7 +689,7 @@
     "season_pattern": "annual",
     "match_url_template": "https://www.unitedrugby.com/match/{matchId}",
     "data_paths": [
-      "data/matches/urc.json"
+      "data/matches/urc"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -747,39 +732,20 @@
       ],
       "notes": "URC TV offers global streaming (geo-restrictions apply). Regional broadcasters vary by team location."
     },
-    "teams": [
-      "Benetton Rugby",
-      "Cardiff Rugby",
-      "Connacht Rugby",
-      "DHL Stormers",
-      "Dragons RFC",
-      "Edinburgh Rugby",
-      "Glasgow Warriors",
-      "Hollywoodbets Sharks",
-      "Leinster Rugby",
-      "Lions",
-      "Munster Rugby",
-      "Ospreys",
-      "Scarlets",
-      "TBC",
-      "Ulster Rugby",
-      "Vodacom Bulls",
-      "Zebre Parma"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 151,
-      "seasons": [
-        "202501"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
-        "start": "2025-03-10T17:00:00+00:00",
-        "end": "2026-09-05T18:45:00+00:00"
+        "start": "",
+        "end": ""
       },
-      "last_updated": "2026-02-04T12:52:17.058056"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://www.unitedrugby.com/wp-content/uploads/2025/06/c3a11af1-6eb9-436f-914b-41e62f42daac-25.png"
   },
   {
-    "id": "super-rugby-pacific",
+    "id": "srp",
     "name": "Super Rugby Pacific",
     "short_name": "SRP",
     "sport": "rugby union",
@@ -791,7 +757,8 @@
     "governing_body": "SANZAAR",
     "organizer": "Super Rugby",
     "official_sites": [
-      "https://www.super.rugby"
+      "https://www.super.rugby",
+      "https://super.rugby/superrugby/"
     ],
     "official_feeds": [
       "https://super.rugby/superrugby/documents/media-files/"
@@ -800,7 +767,7 @@
     "season_pattern": "annual",
     "match_url_template": "https://www.super.rugby/superrugby/match-centre/{matchId}",
     "data_paths": [
-      "data/matches/super-rugby-pacific.json"
+      "data/matches/srp"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -842,58 +809,20 @@
       ],
       "notes": "Broadcasting rights are region-specific. International access may require regional subscriptions or VPN."
     },
-    "teams": [
-      "BLUES",
-      "BLUES FMG",
-      "BLUES GIO",
-      "BLUES HIF",
-      "BRUMBIES",
-      "BRUMBIES 4R",
-      "BRUMBIES HBF",
-      "CHIEFS",
-      "CHIEFS GIO",
-      "CHIEFS HBF",
-      "CRUSADERS",
-      "CRUSADERS FMG",
-      "CRUSADERS HBF",
-      "FIJIAN DRUA",
-      "FIJIAN DRUA GIO",
-      "FIJIAN DRUA HBF",
-      "FORCE",
-      "FORCE CHURCHILL",
-      "FORCE GIO",
-      "FORCE MCLEAN",
-      "HIGHLANDERS",
-      "HIGHLANDERS FMG",
-      "HIGHLANDERS FOUR R",
-      "HURRICANES",
-      "HURRICANES FMG",
-      "MOANA PASIFIKA",
-      "MOANA PASIFIKA FMG",
-      "MOANA PASIFIKA GIO",
-      "REDS",
-      "REDS GIO",
-      "REDS HBF",
-      "WARATAHS",
-      "WARATAHS FMG",
-      "WARATAHS GIO",
-      "WARATAHS HBF",
-      "WARATAHS HFC BANK"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 77,
-      "seasons": [
-        "2026"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
-        "start": "2026-02-13T19:05:00+13:00",
-        "end": "2026-05-30T17:35:00+08:00"
+        "start": "",
+        "end": ""
       },
-      "last_updated": "2026-02-04T12:52:19.815065"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://super.rugby/sites/sanzar/cache/file/DD76E7E0-34EC-491F-AAABB042CED4C4D3_ogimage.jpg"
   },
   {
-    "id": "rugby-championship",
+    "id": "trc",
     "name": "The Rugby Championship",
     "short_name": "TRC",
     "sport": "rugby union",
@@ -905,14 +834,14 @@
     "governing_body": "SANZAAR",
     "organizer": "SANZAAR",
     "official_sites": [
-      "https://www.therugbychampionship.com"
+      "https://super.rugby/therugbychampionship/"
     ],
     "official_feeds": [],
     "timezone_default": "UTC",
     "season_pattern": "variable",
     "match_url_template": "",
     "data_paths": [
-      "data/matches/rugby-championship.json"
+      "data/matches/trc"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -955,11 +884,12 @@
         "start": "",
         "end": ""
       },
-      "last_updated": "2026-02-04T12:49:12.117157"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://super.rugby/sites/sanzar/cache/file/80967B35-17A5-4447-B2DA1D605ECE2EA9_ogimage.png"
   },
   {
-    "id": "autumn-nations-series",
+    "id": "ans",
     "name": "Autumn Nations Series",
     "short_name": "ANS",
     "sport": "rugby union",
@@ -978,7 +908,7 @@
     "season_pattern": "annual",
     "match_url_template": "",
     "data_paths": [
-      "data/matches/autumn-nations-series.json"
+      "data/matches/ans"
     ],
     "coverage": {
       "broadcast_regions": [
@@ -1029,11 +959,12 @@
         "start": "",
         "end": ""
       },
-      "last_updated": "2026-02-04T12:49:12.116157"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://images.ctfassets.net/uiu4umqyl5b5/4tzkfuK4gF0i7VG73ldOzS/345847fd40ce281f1a311cfd024912d4/QNS_Digital_RGB_Logo_DarkBackground_Quilter.png?w=1200&h=630&fit=crop&f=face"
   },
   {
-    "id": "world-rugby-internationals",
+    "id": "wr",
     "name": "World Rugby Internationals",
     "short_name": "WR Internationals",
     "sport": "rugby union",
@@ -1054,7 +985,7 @@
     "season_pattern": "annual",
     "match_url_template": "https://www.world.rugby/match/{matchId}",
     "data_paths": [
-      "data/matches/world-rugby-internationals.json"
+      "data/matches/wr"
     ],
     "coverage": {
       "broadcast_regions": [],
@@ -1073,38 +1004,16 @@
         }
       ]
     },
-    "teams": [
-      "Argentina",
-      "Australia",
-      "Barbarians",
-      "Barbarians Women",
-      "Chile",
-      "England",
-      "England A",
-      "Fiji",
-      "France",
-      "Ireland",
-      "Ireland XV",
-      "Italy",
-      "Italy XV",
-      "Japan",
-      "New Zealand",
-      "Scotland",
-      "Scotland A",
-      "South Africa",
-      "USA",
-      "Wales"
-    ],
+    "teams": [],
     "data_summary": {
-      "match_count": 31,
-      "seasons": [
-        "2026"
-      ],
+      "match_count": 0,
+      "seasons": [],
       "date_range": {
-        "start": "2026-02-06T00:00:00+01:00",
-        "end": "2026-10-31T00:00:00+13:00"
+        "start": "",
+        "end": ""
       },
-      "last_updated": "2026-02-04T12:52:32.208105"
-    }
+      "last_updated": ""
+    },
+    "logo_url": "https://resources.world.rugby/worldrugby/photo/2020/05/05/721c7185-6499-4733-97e6-4839045722dd/WorldRugby_SEO_metaimage_branded-1-.png"
   }
 ]
