@@ -406,7 +406,8 @@ def update_team_master(only: List[str] | None = None, fetch_logos: bool = True) 
         mapped = srp_aliases.get(name.upper())
         if mapped:
             team_data["name"] = mapped
-            team_data["short_name"] = mapped
+            if not (team_data.get("short_name") or "").strip():
+                team_data["short_name"] = mapped
 
     for comp_id, cfg in sources.items():
         if not comp_id.startswith("jrlo"):
@@ -475,7 +476,7 @@ def update_team_master(only: List[str] | None = None, fetch_logos: bool = True) 
                 continue
             official_name = team_data.get("name", "").strip()
             short_name = jrlo_short_names.get(official_name)
-            if short_name:
+            if short_name and not (team_data.get("short_name") or "").strip():
                 team_data["short_name"] = _normalize_short_name_width(short_name)
 
     with TEAMS_JSON.open("w", encoding="utf-8") as f:
