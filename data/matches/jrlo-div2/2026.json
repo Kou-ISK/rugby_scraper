@@ -52,28 +52,6 @@
     "kickoff": "",
     "kickoff_utc": "",
     "timezone": "Asia/Tokyo",
-    "venue": "未定",
-    "home_team": "日野レッドドルフィンズ",
-    "away_team": "花園近鉄ライナーズ",
-    "home_team_id": "jrlo-div2_5",
-    "away_team_id": "jrlo-div2_7",
-    "match_url": "https://league-one.jp/match/29405",
-    "broadcasters": [
-      "J SPORTS",
-      "J SPORTSオンデマンド",
-      "DAZN"
-    ],
-    "division": "div2"
-  },
-  {
-    "match_id": "jrlo-div2-2026-4",
-    "competition_id": "jrlo-div2",
-    "season": "2026",
-    "round": "",
-    "status": "scheduled",
-    "kickoff": "",
-    "kickoff_utc": "",
-    "timezone": "Asia/Tokyo",
     "venue": "九州圏内",
     "home_team": "九州電力キューデンヴォルテクス",
     "away_team": "豊田自動織機シャトルズ愛知",
@@ -88,7 +66,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-5",
+    "match_id": "jrlo-div2-2026-4",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -110,7 +88,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-6",
+    "match_id": "jrlo-div2-2026-5",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -132,7 +110,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-7",
+    "match_id": "jrlo-div2-2026-6",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -154,7 +132,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-8",
+    "match_id": "jrlo-div2-2026-7",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -176,7 +154,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-9",
+    "match_id": "jrlo-div2-2026-8",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -198,7 +176,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-10",
+    "match_id": "jrlo-div2-2026-9",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -220,7 +198,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-11",
+    "match_id": "jrlo-div2-2026-10",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -242,7 +220,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-12",
+    "match_id": "jrlo-div2-2026-11",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -265,7 +243,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-13",
+    "match_id": "jrlo-div2-2026-12",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -287,7 +265,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-14",
+    "match_id": "jrlo-div2-2026-13",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -310,7 +288,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-15",
+    "match_id": "jrlo-div2-2026-14",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -332,7 +310,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-16",
+    "match_id": "jrlo-div2-2026-15",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -354,7 +332,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-17",
+    "match_id": "jrlo-div2-2026-16",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -376,7 +354,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-18",
+    "match_id": "jrlo-div2-2026-17",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -398,7 +376,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-19",
+    "match_id": "jrlo-div2-2026-18",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -420,7 +398,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-20",
+    "match_id": "jrlo-div2-2026-19",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -442,7 +420,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-21",
+    "match_id": "jrlo-div2-2026-20",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -464,7 +442,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-22",
+    "match_id": "jrlo-div2-2026-21",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -486,7 +464,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-23",
+    "match_id": "jrlo-div2-2026-22",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -508,7 +486,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-24",
+    "match_id": "jrlo-div2-2026-23",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -530,7 +508,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-25",
+    "match_id": "jrlo-div2-2026-24",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -552,7 +530,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-26",
+    "match_id": "jrlo-div2-2026-25",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -574,7 +552,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-27",
+    "match_id": "jrlo-div2-2026-26",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -596,7 +574,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-28",
+    "match_id": "jrlo-div2-2026-27",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -618,7 +596,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-29",
+    "match_id": "jrlo-div2-2026-28",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -640,7 +618,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-30",
+    "match_id": "jrlo-div2-2026-29",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -662,7 +640,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-31",
+    "match_id": "jrlo-div2-2026-30",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -684,7 +662,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-32",
+    "match_id": "jrlo-div2-2026-31",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -706,7 +684,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-33",
+    "match_id": "jrlo-div2-2026-32",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -728,7 +706,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-34",
+    "match_id": "jrlo-div2-2026-33",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -750,7 +728,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-35",
+    "match_id": "jrlo-div2-2026-34",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -772,7 +750,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-36",
+    "match_id": "jrlo-div2-2026-35",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -794,7 +772,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-37",
+    "match_id": "jrlo-div2-2026-36",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -816,7 +794,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-38",
+    "match_id": "jrlo-div2-2026-37",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -838,7 +816,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-39",
+    "match_id": "jrlo-div2-2026-38",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -860,7 +838,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-40",
+    "match_id": "jrlo-div2-2026-39",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -882,7 +860,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-41",
+    "match_id": "jrlo-div2-2026-40",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -904,7 +882,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-42",
+    "match_id": "jrlo-div2-2026-41",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -926,7 +904,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-43",
+    "match_id": "jrlo-div2-2026-42",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -948,7 +926,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-44",
+    "match_id": "jrlo-div2-2026-43",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -970,7 +948,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-45",
+    "match_id": "jrlo-div2-2026-44",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -992,7 +970,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-46",
+    "match_id": "jrlo-div2-2026-45",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -1014,7 +992,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-47",
+    "match_id": "jrlo-div2-2026-46",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -1036,7 +1014,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-48",
+    "match_id": "jrlo-div2-2026-47",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -1058,7 +1036,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-49",
+    "match_id": "jrlo-div2-2026-48",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -1080,7 +1058,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-50",
+    "match_id": "jrlo-div2-2026-49",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -1102,7 +1080,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-51",
+    "match_id": "jrlo-div2-2026-50",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -1122,7 +1100,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-52",
+    "match_id": "jrlo-div2-2026-51",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -1142,7 +1120,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-53",
+    "match_id": "jrlo-div2-2026-52",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -1162,7 +1140,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-54",
+    "match_id": "jrlo-div2-2026-53",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -1184,7 +1162,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-55",
+    "match_id": "jrlo-div2-2026-54",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -1198,6 +1176,28 @@
     "home_team_id": "jrlo-div2_8",
     "away_team_id": "jrlo-div2_1",
     "match_url": "https://league-one.jp/match/29403",
+    "broadcasters": [
+      "J SPORTS",
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
+    "division": "div2"
+  },
+  {
+    "match_id": "jrlo-div2-2026-55",
+    "competition_id": "jrlo-div2",
+    "season": "2026",
+    "round": "",
+    "status": "scheduled",
+    "kickoff": "2026-11-04T13:00:00+09:00",
+    "kickoff_utc": "2026-11-04T04:00:00Z",
+    "timezone": "Asia/Tokyo",
+    "venue": "AGFフィールド (東京都)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "花園近鉄ライナーズ",
+    "home_team_id": "jrlo-div2_5",
+    "away_team_id": "jrlo-div2_7",
+    "match_url": "https://league-one.jp/match/29405",
     "broadcasters": [
       "J SPORTS",
       "J SPORTSオンデマンド",
