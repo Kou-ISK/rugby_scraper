@@ -338,12 +338,21 @@ def generate_team_master(teams_by_comp, existing_teams, fetch_logos=False, offic
     
     for team_id, team_data in existing_teams.items():
         name = team_data.get("name", "")
+        short_name = team_data.get("short_name", "")
         comp_id = team_data.get("competition_id", "")
         
         if name and comp_id:
             key = (comp_id, normalize_team_name(name))
-            existing_by_name[key] = team_id
+            # Prefer the first mapping to avoid overwriting in case of duplicates
+            if key not in existing_by_name:
+                existing_by_name[key] = team_id
             existing_by_id[team_id] = team_data
+        
+        # Also allow lookup by short_name to preserve manually curated abbreviations
+        if short_name and comp_id and short_name != name:
+            short_key = (comp_id, normalize_team_name(short_name))
+            if short_key not in existing_by_name:
+                existing_by_name[short_key] = team_id
     
     # 大会別の最大ID番号を取得
     max_id_by_comp = defaultdict(int)

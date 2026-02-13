@@ -16,11 +16,6 @@ if ! git config --local user.name >/dev/null; then
   git config --local user.name "GitHub Action"
 fi
 
-if [ -z "$(git status --porcelain data/)" ]; then
-  echo "No changes to commit"
-  exit 0
-fi
-
 tmp_dir="$(mktemp -d)"
 trap 'rm -rf "$tmp_dir"' EXIT
 
