@@ -44,28 +44,4 @@ jobs:
 
       - name: Commit and push changes to data branch
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-
-          if [ -n "$(git status --porcelain data/)" ]; then
-            echo "Changes detected, preparing to push to data branch"
-
-            cp -r data /tmp/scraped_data
-
-            git checkout -- data/
-            git clean -fd data/
-
-            git fetch origin data:data
-            git checkout data
-
-            rm -rf data
-            mv /tmp/scraped_data data
-
-            git add data/
-            git commit -m "Update competition master - $(date +'%Y-%m-%d %H:%M:%S')"
-            git push origin data
-
-            echo "Successfully pushed to data branch"
-          else
-            echo "No changes to commit"
-          fi
+          scripts/automation/push_data_branch.sh "Update competition master - $(date +'%Y-%m-%d %H:%M:%S')"
