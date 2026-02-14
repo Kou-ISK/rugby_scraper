@@ -385,6 +385,11 @@ def update_team_master(only: List[str] | None = None, fetch_logos: bool = True) 
     teams_by_comp: Dict[str, List[str]] = {}
     logos_by_comp: Dict[str, Dict[str, dict]] = {}
     existing_teams = load_existing_teams()
+    canonical_short_names = {
+        team_id: (team_data.get("short_name") or "").strip()
+        for team_id, team_data in existing_teams.items()
+        if (team_data.get("short_name") or "").strip()
+    }
     jrlo_short_names: Dict[str, str] = {}
     srp_aliases = {
         "BLUES": "Blues",
@@ -478,6 +483,13 @@ def update_team_master(only: List[str] | None = None, fetch_logos: bool = True) 
             short_name = jrlo_short_names.get(official_name)
             if short_name and not (team_data.get("short_name") or "").strip():
                 team_data["short_name"] = _normalize_short_name_width(short_name)
+
+    # Preserve canonical short_name from the pre-update master.
+    if canonical_short_names:
+        for team_id, team_data in merged_teams.items():
+            canonical = canonical_short_names.get(team_id)
+            if canonical and team_data.get("short_name") != canonical:
+                team_data["short_name"] = canonical
 
     with TEAMS_JSON.open("w", encoding="utf-8") as f:
         json.dump(merged_teams, f, ensure_ascii=False, indent=2)
