@@ -3,7 +3,7 @@
     "match_id": "11424",
     "competition_id": "t14",
     "season": "2026-2027",
-    "round": "2026",
+    "round": "",
     "status": "scheduled",
     "kickoff": "",
     "kickoff_utc": "",
@@ -14,15 +14,13 @@
     "home_team_id": "t14_14",
     "away_team_id": "t14_3",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j17/11424-bordeaux-begles-castres",
-    "broadcasters": [
-      "Canal +"
-    ]
+    "broadcasters": []
   },
   {
     "match_id": "11419",
     "competition_id": "t14",
     "season": "2026-2027",
-    "round": "2026",
+    "round": "",
     "status": "scheduled",
     "kickoff": "",
     "kickoff_utc": "",
@@ -33,16 +31,13 @@
     "home_team_id": "t14_2",
     "away_team_id": "t14_7",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j17/11419-bayonne-racing-92",
-    "broadcasters": [
-      "Canal + Live",
-      "Canal +"
-    ]
+    "broadcasters": []
   },
   {
     "match_id": "11420",
     "competition_id": "t14",
     "season": "2026-2027",
-    "round": "2026",
+    "round": "",
     "status": "scheduled",
     "kickoff": "",
     "kickoff_utc": "",
@@ -53,16 +48,13 @@
     "home_team_id": "t14_4",
     "away_team_id": "t14_12",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j17/11420-lyon-montauban",
-    "broadcasters": [
-      "Canal +",
-      "Canal + Live"
-    ]
+    "broadcasters": []
   },
   {
     "match_id": "11423",
     "competition_id": "t14",
     "season": "2026-2027",
-    "round": "2026",
+    "round": "",
     "status": "scheduled",
     "kickoff": "",
     "kickoff_utc": "",
@@ -73,9 +65,42 @@
     "home_team_id": "t14_10",
     "away_team_id": "t14_5",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j17/11423-la-rochelle-montpellier",
+    "broadcasters": []
+  },
+  {
+    "match_id": "11421",
+    "competition_id": "t14",
+    "season": "2026-2027",
+    "round": "",
+    "status": "scheduled",
+    "kickoff": "",
+    "kickoff_utc": "",
+    "timezone": "Europe/Paris",
+    "venue": "",
+    "home_team": "RC Toulon",
+    "away_team": "ASM Clermont",
+    "home_team_id": "t14_6",
+    "away_team_id": "t14_1",
+    "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j17/11421-toulon-clermont",
+    "broadcasters": []
+  },
+  {
+    "match_id": "11422",
+    "competition_id": "t14",
+    "season": "2026-2027",
+    "round": "2026",
+    "status": "scheduled",
+    "kickoff": "",
+    "kickoff_utc": "",
+    "timezone": "Europe/Paris",
+    "venue": "",
+    "home_team": "Stade Français Paris",
+    "away_team": "Stade Toulousain",
+    "home_team_id": "t14_9",
+    "away_team_id": "t14_11",
+    "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j17/11422-paris-toulouse",
     "broadcasters": [
-      "Canal +",
-      "Canal + Live"
+      "Canal +"
     ]
   },
   {
@@ -96,44 +121,6 @@
     "broadcasters": [
       "Canal +",
       "Canal + Sport"
-    ]
-  },
-  {
-    "match_id": "11421",
-    "competition_id": "t14",
-    "season": "2026-2027",
-    "round": "2026",
-    "status": "scheduled",
-    "kickoff": "",
-    "kickoff_utc": "",
-    "timezone": "Europe/Paris",
-    "venue": "",
-    "home_team": "RC Toulon",
-    "away_team": "ASM Clermont",
-    "home_team_id": "t14_6",
-    "away_team_id": "t14_1",
-    "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j17/11421-toulon-clermont",
-    "broadcasters": [
-      "Canal +"
-    ]
-  },
-  {
-    "match_id": "11422",
-    "competition_id": "t14",
-    "season": "2026-2027",
-    "round": "2026",
-    "status": "scheduled",
-    "kickoff": "",
-    "kickoff_utc": "",
-    "timezone": "Europe/Paris",
-    "venue": "",
-    "home_team": "Stade Français Paris",
-    "away_team": "Stade Toulousain",
-    "home_team_id": "t14_9",
-    "away_team_id": "t14_11",
-    "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j17/11422-paris-toulouse",
-    "broadcasters": [
-      "Canal +"
     ]
   }
 ]
