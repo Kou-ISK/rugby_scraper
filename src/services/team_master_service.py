@@ -315,27 +315,44 @@ def _extract_srp_teams(url: str) -> Tuple[List[str], Dict[str, dict]]:
 
 
 def _extract_jrlo_short_names(url: str) -> Dict[str, str]:
-    """Extract JRLO short names from official about page (略称 / 公式チーム名称)."""
+    """Extract JRLO short names from official about page."""
     soup = _fetch_html(url)
-    lines = [line.strip() for line in soup.get_text("\n", strip=True).splitlines() if line.strip()]
     mapping: Dict[str, str] = {}
+    invalid_values = {"略称", "公式チーム名称", "呼称", "エンブレム"}
 
-    i = 0
-    while i < len(lines):
-        if lines[i] == "略称":
-            short_name = lines[i + 1] if i + 1 < len(lines) else ""
-            j = i + 2
-            official_name = ""
-            while j < len(lines):
-                if lines[j] == "公式チーム名称":
-                    official_name = lines[j + 1] if j + 1 < len(lines) else ""
-                    break
-                j += 1
-            if short_name and official_name:
-                mapping[official_name] = short_name
-            i = j + 1 if j > i else i + 1
+    def _clean(value: str) -> str:
+        return _normalize_short_name_width((value or "").strip())
+
+    def _is_invalid(value: str) -> bool:
+        return not value or value in invalid_values
+
+    # Parse structured rows first (stable against header text noise).
+    for row in soup.select("div.about-teams ul li"):
+        row_values: Dict[str, str] = {}
+        for dl in row.select("dl"):
+            key_el = dl.find("dt")
+            value_el = dl.find("dd")
+            if not key_el or not value_el:
+                continue
+            key = (key_el.get_text(" ", strip=True) or "").strip()
+            value = _clean(value_el.get_text(" ", strip=True))
+            row_values[key] = value
+
+        short_name = row_values.get("略称", "")
+        official_name = row_values.get("公式チーム名称", "")
+        call_name = row_values.get("呼称", "")
+        img_alt = ""
+        img = row.select_one("img[alt]")
+        if img:
+            img_alt = _clean(img.get("alt", ""))
+
+        if _is_invalid(short_name):
             continue
-        i += 1
+
+        for candidate in (official_name, call_name, img_alt):
+            if _is_invalid(candidate):
+                continue
+            mapping[candidate] = short_name
 
     return mapping
 
@@ -347,6 +364,11 @@ def _normalize_short_name_width(value: str) -> str:
     if not value:
         return value
     return unicodedata.normalize("NFKC", value)
+
+
+def _is_short_name_placeholder(value: str) -> bool:
+    normalized = _normalize_short_name_width((value or "").strip())
+    return normalized in {"", "略称", "公式チーム名称", "呼称", "エンブレム"}
 
 
 
@@ -481,14 +503,35 @@ def update_team_master(only: List[str] | None = None, fetch_logos: bool = True) 
                 continue
             official_name = team_data.get("name", "").strip()
             short_name = jrlo_short_names.get(official_name)
-            if short_name and not (team_data.get("short_name") or "").strip():
-                team_data["short_name"] = _normalize_short_name_width(short_name)
+            current_short_name = (team_data.get("short_name") or "").strip()
+            if not short_name:
+                continue
+            normalized_short_name = _normalize_short_name_width(short_name)
+            if (
+                not current_short_name
+                or _is_short_name_placeholder(current_short_name)
+                or current_short_name == official_name
+            ):
+                team_data["short_name"] = normalized_short_name
 
     # Preserve canonical short_name from the pre-update master.
     if canonical_short_names:
         for team_id, team_data in merged_teams.items():
             canonical = canonical_short_names.get(team_id)
-            if canonical and team_data.get("short_name") != canonical:
+            if not canonical or _is_short_name_placeholder(canonical):
+                continue
+
+            comp_id = team_data.get("competition_id", "")
+            team_name = (team_data.get("name") or "").strip()
+            if comp_id.startswith("jrlo") and jrlo_short_names:
+                target = jrlo_short_names.get(team_name)
+                if target:
+                    normalized_target = _normalize_short_name_width(target)
+                    normalized_canonical = _normalize_short_name_width(canonical)
+                    if normalized_target != normalized_canonical:
+                        continue
+
+            if team_data.get("short_name") != canonical:
                 team_data["short_name"] = canonical
 
     with TEAMS_JSON.open("w", encoding="utf-8") as f:
