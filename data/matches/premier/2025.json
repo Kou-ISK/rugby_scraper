@@ -1319,8 +1319,8 @@
     "season": "2026",
     "round": "14",
     "status": "fixture",
-    "kickoff": "2026-04-26T14:00:00+00:00",
-    "kickoff_utc": "2026-04-26T14:00:00Z",
+    "kickoff": "2026-04-26T14:30:00+00:00",
+    "kickoff_utc": "2026-04-26T14:30:00Z",
     "timezone": "UTC",
     "venue": "Kingsholm",
     "home_team": "Gloucester Rugby",
@@ -1731,25 +1731,6 @@
     "kickoff": "2026-10-05T14:00:00+00:00",
     "kickoff_utc": "2026-10-05T14:00:00Z",
     "timezone": "UTC",
-    "venue": "Sandy Park",
-    "home_team": "Exeter Chiefs",
-    "away_team": "Bath Rugby",
-    "home_team_id": "premier_3",
-    "away_team_id": "premier_1",
-    "match_url": "",
-    "broadcasters": [
-      "TNT"
-    ]
-  },
-  {
-    "match_id": "premier-2026-rd15-5",
-    "competition_id": "premier",
-    "season": "2026",
-    "round": "15",
-    "status": "fixture",
-    "kickoff": "2026-10-05T14:00:00+00:00",
-    "kickoff_utc": "2026-10-05T14:00:00Z",
-    "timezone": "UTC",
     "venue": "Kingston Park",
     "home_team": "Newcastle Red Bulls",
     "away_team": "Harlequins",
@@ -1758,6 +1739,25 @@
     "match_url": "",
     "broadcasters": [
       "DISC"
+    ]
+  },
+  {
+    "match_id": "premier-2026-rd15-5",
+    "competition_id": "premier",
+    "season": "2026",
+    "round": "15",
+    "status": "fixture",
+    "kickoff": "2026-10-05T14:30:00+00:00",
+    "kickoff_utc": "2026-10-05T14:30:00Z",
+    "timezone": "UTC",
+    "venue": "Sandy Park",
+    "home_team": "Exeter Chiefs",
+    "away_team": "Bath Rugby",
+    "home_team_id": "premier_3",
+    "away_team_id": "premier_1",
+    "match_url": "",
+    "broadcasters": [
+      "TNT"
     ]
   }
 ]

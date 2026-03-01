@@ -8,72 +8,6 @@
     "kickoff": "",
     "kickoff_utc": "",
     "timezone": "Asia/Tokyo",
-    "venue": "未定",
-    "home_team": "グリーンロケッツ東葛",
-    "away_team": "九州電力キューデンヴォルテクス",
-    "home_team_id": "jrlo-div2_1",
-    "away_team_id": "jrlo-div2_3",
-    "match_url": "https://league-one.jp/match/29400",
-    "broadcasters": [
-      "J SPORTS",
-      "J SPORTSオンデマンド",
-      "DAZN"
-    ],
-    "division": "div2"
-  },
-  {
-    "match_id": "jrlo-div2-2026-2",
-    "competition_id": "jrlo-div2",
-    "season": "2026",
-    "round": "",
-    "status": "scheduled",
-    "kickoff": "",
-    "kickoff_utc": "",
-    "timezone": "Asia/Tokyo",
-    "venue": "未定",
-    "home_team": "グリーンロケッツ東葛",
-    "away_team": "花園近鉄ライナーズ",
-    "home_team_id": "jrlo-div2_1",
-    "away_team_id": "jrlo-div2_7",
-    "match_url": "https://league-one.jp/match/29412",
-    "broadcasters": [
-      "J SPORTS",
-      "J SPORTSオンデマンド",
-      "DAZN"
-    ],
-    "division": "div2"
-  },
-  {
-    "match_id": "jrlo-div2-2026-3",
-    "competition_id": "jrlo-div2",
-    "season": "2026",
-    "round": "",
-    "status": "scheduled",
-    "kickoff": "",
-    "kickoff_utc": "",
-    "timezone": "Asia/Tokyo",
-    "venue": "未定",
-    "home_team": "日野レッドドルフィンズ",
-    "away_team": "日本製鉄釜石シーウェイブス",
-    "home_team_id": "jrlo-div2_5",
-    "away_team_id": "jrlo-div2_4",
-    "match_url": "https://league-one.jp/match/29414",
-    "broadcasters": [
-      "J SPORTS",
-      "J SPORTSオンデマンド",
-      "DAZN"
-    ],
-    "division": "div2"
-  },
-  {
-    "match_id": "jrlo-div2-2026-4",
-    "competition_id": "jrlo-div2",
-    "season": "2026",
-    "round": "",
-    "status": "scheduled",
-    "kickoff": "",
-    "kickoff_utc": "",
-    "timezone": "Asia/Tokyo",
     "venue": "大阪府内 (大阪府)",
     "home_team": "レッドハリケーンズ大阪",
     "away_team": "グリーンロケッツ東葛",
@@ -88,7 +22,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-5",
+    "match_id": "jrlo-div2-2026-2",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -110,7 +44,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-6",
+    "match_id": "jrlo-div2-2026-3",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -132,7 +66,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-7",
+    "match_id": "jrlo-div2-2026-4",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -154,7 +88,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-8",
+    "match_id": "jrlo-div2-2026-5",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -176,7 +110,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-9",
+    "match_id": "jrlo-div2-2026-6",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -199,7 +133,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-10",
+    "match_id": "jrlo-div2-2026-7",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -221,7 +155,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-11",
+    "match_id": "jrlo-div2-2026-8",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -244,7 +178,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-12",
+    "match_id": "jrlo-div2-2026-9",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -266,7 +200,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-13",
+    "match_id": "jrlo-div2-2026-10",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -288,7 +222,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-14",
+    "match_id": "jrlo-div2-2026-11",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -310,7 +244,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-15",
+    "match_id": "jrlo-div2-2026-12",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -332,7 +266,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-16",
+    "match_id": "jrlo-div2-2026-13",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -354,7 +288,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-17",
+    "match_id": "jrlo-div2-2026-14",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -376,7 +310,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-18",
+    "match_id": "jrlo-div2-2026-15",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -398,7 +332,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-19",
+    "match_id": "jrlo-div2-2026-16",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -420,7 +354,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-20",
+    "match_id": "jrlo-div2-2026-17",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -442,7 +376,29 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-21",
+    "match_id": "jrlo-div2-2026-18",
+    "competition_id": "jrlo-div2",
+    "season": "2026",
+    "round": "",
+    "status": "scheduled",
+    "kickoff": "2026-02-05T14:30:00+09:00",
+    "kickoff_utc": "2026-02-05T05:30:00Z",
+    "timezone": "Asia/Tokyo",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "花園近鉄ライナーズ",
+    "home_team_id": "jrlo-div2_1",
+    "away_team_id": "jrlo-div2_7",
+    "match_url": "https://league-one.jp/match/29412",
+    "broadcasters": [
+      "J SPORTS",
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
+    "division": "div2"
+  },
+  {
+    "match_id": "jrlo-div2-2026-19",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -464,7 +420,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-22",
+    "match_id": "jrlo-div2-2026-20",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -486,7 +442,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-23",
+    "match_id": "jrlo-div2-2026-21",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -508,7 +464,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-24",
+    "match_id": "jrlo-div2-2026-22",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -530,7 +486,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-25",
+    "match_id": "jrlo-div2-2026-23",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -552,7 +508,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-26",
+    "match_id": "jrlo-div2-2026-24",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -574,7 +530,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-27",
+    "match_id": "jrlo-div2-2026-25",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -596,7 +552,29 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-28",
+    "match_id": "jrlo-div2-2026-26",
+    "competition_id": "jrlo-div2",
+    "season": "2026",
+    "round": "",
+    "status": "scheduled",
+    "kickoff": "2026-03-05T00:00:00+09:00",
+    "kickoff_utc": "2026-03-04T15:00:00Z",
+    "timezone": "Asia/Tokyo",
+    "venue": "太田市運動公園陸上競技場 (群馬県)",
+    "home_team": "日野レッドドルフィンズ",
+    "away_team": "日本製鉄釜石シーウェイブス",
+    "home_team_id": "jrlo-div2_5",
+    "away_team_id": "jrlo-div2_4",
+    "match_url": "https://league-one.jp/match/29414",
+    "broadcasters": [
+      "J SPORTS",
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
+    "division": "div2"
+  },
+  {
+    "match_id": "jrlo-div2-2026-27",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -618,7 +596,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-29",
+    "match_id": "jrlo-div2-2026-28",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -640,7 +618,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-30",
+    "match_id": "jrlo-div2-2026-29",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -662,7 +640,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-31",
+    "match_id": "jrlo-div2-2026-30",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -684,7 +662,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-32",
+    "match_id": "jrlo-div2-2026-31",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -706,7 +684,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-33",
+    "match_id": "jrlo-div2-2026-32",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -728,7 +706,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-34",
+    "match_id": "jrlo-div2-2026-33",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -750,7 +728,7 @@
     "division": "div2"
   },
   {
-    "match_id": "jrlo-div2-2026-35",
+    "match_id": "jrlo-div2-2026-34",
     "competition_id": "jrlo-div2",
     "season": "2026",
     "round": "",
@@ -764,6 +742,28 @@
     "home_team_id": "jrlo-div2_1",
     "away_team_id": "jrlo-div2_6",
     "match_url": "https://league-one.jp/match/29397",
+    "broadcasters": [
+      "J SPORTS",
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
+    "division": "div2"
+  },
+  {
+    "match_id": "jrlo-div2-2026-35",
+    "competition_id": "jrlo-div2",
+    "season": "2026",
+    "round": "",
+    "status": "scheduled",
+    "kickoff": "2026-04-04T12:00:00+09:00",
+    "kickoff_utc": "2026-04-04T03:00:00Z",
+    "timezone": "Asia/Tokyo",
+    "venue": "柏の葉公園総合競技場 (千葉県)",
+    "home_team": "グリーンロケッツ東葛",
+    "away_team": "九州電力キューデンヴォルテクス",
+    "home_team_id": "jrlo-div2_1",
+    "away_team_id": "jrlo-div2_3",
+    "match_url": "https://league-one.jp/match/29400",
     "broadcasters": [
       "J SPORTS",
       "J SPORTSオンデマンド",
