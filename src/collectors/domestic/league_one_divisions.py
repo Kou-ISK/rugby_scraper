@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import time
 from typing import List, Dict, Any
+from zoneinfo import ZoneInfo
 from ..base import BaseScraper
 
 class LeagueOneDivisionsScraper(BaseScraper):
@@ -45,6 +46,7 @@ class LeagueOneDivisionsScraper(BaseScraper):
         self.base_url = "https://league-one.jp"
         self.calendar_url = self.base_url + "/schedule/"
         self._team_logos_cache_by_comp = {}
+        self.jst = ZoneInfo("Asia/Tokyo")
         
     def _get_division(self, team_name: str) -> str:
         """チーム名からDivisionを判定
@@ -312,7 +314,9 @@ class LeagueOneDivisionsScraper(BaseScraper):
                     comp_id = f"jrlo-{away_div}"
                     self._team_logos_cache_by_comp.setdefault(comp_id, {})[away_team] = {"logo_url": away_logo}
                 
-                kickoff = self.format_date_string(self._format_date(date_element))
+                raw_date = self._format_date(date_element)
+                match_url = self._get_match_url(container) or ""
+                kickoff = self.parse_kickoff_datetime(raw_date, match_url)
                 
                 # divisionを事前に推定
                 inferred_div = self._find_division_near_container(container)
@@ -330,7 +334,7 @@ class LeagueOneDivisionsScraper(BaseScraper):
                     venue=venue_text,
                     home_team=home_team,
                     away_team=away_team,
-                    match_url=self._get_match_url(container) or "",
+                    match_url=match_url,
                     broadcasters=self._get_broadcasters(broadcasters),
                     home_team_id="",  # 後で設定
                     away_team_id="",  # 後で設定
@@ -415,26 +419,44 @@ class LeagueOneDivisionsScraper(BaseScraper):
             print(f"放送局の取得に失敗: {str(e)}")
             return []
         
-    def format_date_string(self, date_string):
+    def _now(self):
+        return datetime.now(self.jst)
+
+    def _season_year_for_month(self, month: int) -> int:
+        current_date = self._now()
+        current_year = current_date.year
+        season_start_month = 12
+        return current_year - 1 if month >= season_start_month else current_year
+
+    def parse_kickoff_datetime(self, date_string: str, match_url: str = ""):
         try:
+            if not date_string:
+                raise ValueError("empty date string")
+
             parts = date_string.split()
+            if len(parts) < 3:
+                raise ValueError(f"unexpected date format: {date_string}")
+
             date_part = parts[0].split(".")
-            time_part = parts[2]
+            if len(date_part) != 2:
+                raise ValueError(f"unexpected date token: {parts[0]}")
 
             month = int(date_part[0])
             day = int(date_part[1])
+            hour, minute = [int(v) for v in parts[2].split(":")]
 
-            # 現在の日付を取得
-            current_date = datetime.now()
-            current_year = current_date.year
+            year = self._season_year_for_month(month)
+            kickoff = datetime(year, month, day, hour, minute, tzinfo=self.jst)
 
-            # シーズン開始月
-            season_start_month = 12
+            # MM.DD と最終値の月日が一致しない場合は異常として扱う
+            if kickoff.month != month or kickoff.day != day:
+                raise ValueError(
+                    f"parsed date mismatch: src={month:02}.{day:02} parsed={kickoff.month:02}.{kickoff.day:02}"
+                )
 
-            # シーズン開始月より前の場合は今年、それ以降は去年
-            year = current_year - 1 if month >= season_start_month else current_year
-
-            formatted_string = f"{year}-{month:02}-{day} {time_part}:00"
-            return formatted_string
-        except (ValueError, IndexError):
+            return kickoff
+        except (ValueError, IndexError) as e:
+            print(
+                f"キックオフ日時の解析に失敗: date='{date_string}' url='{match_url}' error='{e}'"
+            )
             return None
