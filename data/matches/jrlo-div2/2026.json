@@ -825,7 +825,7 @@
     "away_team_id": "jrlo-div2_3",
     "match_url": "https://league-one.jp/match/29400",
     "broadcasters": [
-      "J SPORTS（録画）",
+      "J SPORTS 1（録画）",
       "J SPORTSオンデマンド",
       "DAZN"
     ],
@@ -847,7 +847,7 @@
     "away_team_id": "jrlo-div2_8",
     "match_url": "https://league-one.jp/match/29402",
     "broadcasters": [
-      "J SPORTS",
+      "J SPORTS 2",
       "J SPORTSオンデマンド",
       "DAZN"
     ],
@@ -869,7 +869,7 @@
     "away_team_id": "jrlo-div2_2",
     "match_url": "https://league-one.jp/match/29399",
     "broadcasters": [
-      "J SPORTS（録画）",
+      "J SPORTS 1（録画）",
       "J SPORTSオンデマンド",
       "DAZN"
     ],
@@ -891,7 +891,7 @@
     "away_team_id": "jrlo-div2_5",
     "match_url": "https://league-one.jp/match/29401",
     "broadcasters": [
-      "J SPORTS（録画）",
+      "J SPORTS 2（録画）",
       "J SPORTSオンデマンド",
       "DAZN"
     ],
@@ -1145,8 +1145,8 @@
     "season": "2026",
     "round": "",
     "status": "scheduled",
-    "kickoff": "2026-05-03T13:00:00+09:00",
-    "kickoff_utc": "2026-05-03T04:00:00Z",
+    "kickoff": "2026-05-03T12:00:00+09:00",
+    "kickoff_utc": "2026-05-03T03:00:00Z",
     "timezone": "Asia/Tokyo",
     "venue": "太田市運動公園陸上競技場 (群馬県)",
     "home_team": "日野レッドドルフィンズ",

@@ -1,0 +1,53 @@
+[
+  {
+    "match_id": "trc-2026-1",
+    "competition_id": "trc",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-04-17T16:30:00+12:00",
+    "kickoff_utc": "2026-04-17T04:30:00Z",
+    "timezone": "UTC+12:00",
+    "venue": "Churchill Park",
+    "home_team": "Tonga",
+    "away_team": "Fiji",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/b1dbdfe4-e2f4-4093-95bc-42ab5f5341bf",
+    "broadcasters": []
+  },
+  {
+    "match_id": "trc-2026-2",
+    "competition_id": "trc",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-04-21T16:30:00+12:00",
+    "kickoff_utc": "2026-04-21T04:30:00Z",
+    "timezone": "UTC+12:00",
+    "venue": "Churchill Park",
+    "home_team": "Tonga",
+    "away_team": "Samoa",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/2d709060-d735-428c-8e44-942dfe185cbb",
+    "broadcasters": []
+  },
+  {
+    "match_id": "trc-2026-3",
+    "competition_id": "trc",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-04-25T15:30:00+12:00",
+    "kickoff_utc": "2026-04-25T03:30:00Z",
+    "timezone": "UTC+12:00",
+    "venue": "Govind Park",
+    "home_team": "Samoa",
+    "away_team": "Fiji",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/7aa3ff56-97fe-48ce-bf6b-5d4efae4b13e",
+    "broadcasters": []
+  }
+]
