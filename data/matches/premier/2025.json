@@ -1014,7 +1014,7 @@
     "competition_id": "premier",
     "season": "2026",
     "round": "11",
-    "status": "fixture",
+    "status": "result",
     "kickoff": "2026-03-22T15:00:00+00:00",
     "kickoff_utc": "2026-03-22T15:00:00Z",
     "timezone": "UTC",
@@ -1033,7 +1033,7 @@
     "competition_id": "premier",
     "season": "2026",
     "round": "12",
-    "status": "fixture",
+    "status": "result",
     "kickoff": "2026-03-27T19:45:00+00:00",
     "kickoff_utc": "2026-03-27T19:45:00Z",
     "timezone": "UTC",
@@ -1044,7 +1044,7 @@
     "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1052,7 +1052,7 @@
     "competition_id": "premier",
     "season": "2026",
     "round": "12",
-    "status": "fixture",
+    "status": "result",
     "kickoff": "2026-03-28T13:00:00+00:00",
     "kickoff_utc": "2026-03-28T13:00:00Z",
     "timezone": "UTC",
@@ -1063,7 +1063,7 @@
     "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1071,7 +1071,7 @@
     "competition_id": "premier",
     "season": "2026",
     "round": "12",
-    "status": "fixture",
+    "status": "result",
     "kickoff": "2026-03-28T15:30:00+00:00",
     "kickoff_utc": "2026-03-28T15:30:00Z",
     "timezone": "UTC",
@@ -1082,7 +1082,7 @@
     "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1090,7 +1090,7 @@
     "competition_id": "premier",
     "season": "2026",
     "round": "12",
-    "status": "fixture",
+    "status": "result",
     "kickoff": "2026-03-28T18:00:00+00:00",
     "kickoff_utc": "2026-03-28T18:00:00Z",
     "timezone": "UTC",
@@ -1101,7 +1101,8 @@
     "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO",
+      "ITV"
     ]
   },
   {
@@ -1120,7 +1121,7 @@
     "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1158,7 +1159,7 @@
     "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1177,7 +1178,7 @@
     "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": [
-      "DISC"
+      "TNT-HBO"
     ]
   },
   {
@@ -1196,7 +1197,7 @@
     "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1215,7 +1216,7 @@
     "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1234,7 +1235,7 @@
     "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1253,7 +1254,7 @@
     "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1272,7 +1273,7 @@
     "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
-      "DISC"
+      "TNT-HBO"
     ]
   },
   {
@@ -1291,7 +1292,7 @@
     "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1310,7 +1311,7 @@
     "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1329,7 +1330,7 @@
     "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1348,7 +1349,7 @@
     "away_team_id": "premier_2",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1367,7 +1368,7 @@
     "away_team_id": "premier_7",
     "match_url": "",
     "broadcasters": [
-      "DISC"
+      "TNT-HBO"
     ]
   },
   {
@@ -1386,7 +1387,7 @@
     "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1405,7 +1406,7 @@
     "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1424,7 +1425,7 @@
     "away_team_id": "premier_6",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1443,7 +1444,7 @@
     "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1462,7 +1463,7 @@
     "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1481,7 +1482,7 @@
     "away_team_id": "premier_4",
     "match_url": "",
     "broadcasters": [
-      "DISC"
+      "TNT-HBO"
     ]
   },
   {
@@ -1500,7 +1501,7 @@
     "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1519,7 +1520,7 @@
     "away_team_id": "premier_3",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1528,8 +1529,8 @@
     "season": "2026",
     "round": "18",
     "status": "fixture",
-    "kickoff": "2026-06-06T14:00:00+00:00",
-    "kickoff_utc": "2026-06-06T14:00:00Z",
+    "kickoff": "2026-06-06T14:15:00+00:00",
+    "kickoff_utc": "2026-06-06T14:15:00Z",
     "timezone": "UTC",
     "venue": "The Rec",
     "home_team": "Bath Rugby",
@@ -1537,7 +1538,9 @@
     "home_team_id": "premier_1",
     "away_team_id": "premier_6",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [
+      "TNT-HBO"
+    ]
   },
   {
     "match_id": "premier-2026-rd18-2",
@@ -1545,8 +1548,8 @@
     "season": "2026",
     "round": "18",
     "status": "fixture",
-    "kickoff": "2026-06-06T14:00:00+00:00",
-    "kickoff_utc": "2026-06-06T14:00:00Z",
+    "kickoff": "2026-06-06T14:15:00+00:00",
+    "kickoff_utc": "2026-06-06T14:15:00Z",
     "timezone": "UTC",
     "venue": "CorpAcq Stadium",
     "home_team": "Sale Sharks",
@@ -1554,7 +1557,9 @@
     "home_team_id": "premier_9",
     "away_team_id": "premier_2",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [
+      "TNT-HBO"
+    ]
   },
   {
     "match_id": "premier-2026-rd18-3",
@@ -1562,8 +1567,8 @@
     "season": "2026",
     "round": "18",
     "status": "fixture",
-    "kickoff": "2026-06-06T14:00:00+00:00",
-    "kickoff_utc": "2026-06-06T14:00:00Z",
+    "kickoff": "2026-06-06T14:15:00+00:00",
+    "kickoff_utc": "2026-06-06T14:15:00Z",
     "timezone": "UTC",
     "venue": "Twickenham Stoop",
     "home_team": "Harlequins",
@@ -1571,7 +1576,9 @@
     "home_team_id": "premier_5",
     "away_team_id": "premier_8",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [
+      "TNT-HBO"
+    ]
   },
   {
     "match_id": "premier-2026-rd18-4",
@@ -1579,8 +1586,8 @@
     "season": "2026",
     "round": "18",
     "status": "fixture",
-    "kickoff": "2026-06-06T14:00:00+00:00",
-    "kickoff_utc": "2026-06-06T14:00:00Z",
+    "kickoff": "2026-06-06T14:15:00+00:00",
+    "kickoff_utc": "2026-06-06T14:15:00Z",
     "timezone": "UTC",
     "venue": "Kingsholm",
     "home_team": "Gloucester Rugby",
@@ -1588,7 +1595,9 @@
     "home_team_id": "premier_4",
     "away_team_id": "premier_7",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [
+      "TNT-HBO"
+    ]
   },
   {
     "match_id": "premier-2026-rd18-5",
@@ -1596,8 +1605,8 @@
     "season": "2026",
     "round": "18",
     "status": "fixture",
-    "kickoff": "2026-06-06T14:00:00+00:00",
-    "kickoff_utc": "2026-06-06T14:00:00Z",
+    "kickoff": "2026-06-06T14:15:00+00:00",
+    "kickoff_utc": "2026-06-06T14:15:00Z",
     "timezone": "UTC",
     "venue": "Sandy Park",
     "home_team": "Exeter Chiefs",
@@ -1605,7 +1614,9 @@
     "home_team_id": "premier_3",
     "away_team_id": "premier_10",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [
+      "TNT-HBO"
+    ]
   },
   {
     "match_id": "premier-2026-rd19-1",
@@ -1623,7 +1634,7 @@
     "away_team_id": "",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1642,7 +1653,7 @@
     "away_team_id": "",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1661,7 +1672,7 @@
     "away_team_id": "",
     "match_url": "",
     "broadcasters": [
-      "TNT",
+      "TNT-HBO",
       "ITV"
     ]
   },
@@ -1681,7 +1692,7 @@
     "away_team_id": "premier_9",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1700,7 +1711,8 @@
     "away_team_id": "premier_8",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO",
+      "ITV"
     ]
   },
   {
@@ -1719,7 +1731,7 @@
     "away_team_id": "premier_10",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   },
   {
@@ -1738,7 +1750,7 @@
     "away_team_id": "premier_5",
     "match_url": "",
     "broadcasters": [
-      "DISC"
+      "TNT-HBO"
     ]
   },
   {
@@ -1757,7 +1769,7 @@
     "away_team_id": "premier_1",
     "match_url": "",
     "broadcasters": [
-      "TNT"
+      "TNT-HBO"
     ]
   }
 ]
