@@ -1944,7 +1944,7 @@
     "kickoff": "2026-04-04T14:40:00+09:00",
     "kickoff_utc": "2026-04-04T05:40:00Z",
     "timezone": "Asia/Tokyo",
-    "venue": "岐阜メモリアルセンター 長良川競技場 (岐阜県)",
+    "venue": "ヒマラヤスタジアム岐阜 (岐阜県)",
     "home_team": "トヨタヴェルブリッツ",
     "away_team": "クボタスピアーズ船橋・東京ベイ",
     "home_team_id": "jrlo-div1_3",
@@ -2069,6 +2069,7 @@
     "broadcasters": [
       "J SPORTS 3",
       "BS日テレ",
+      "Hulu",
       "TOKYO MX（録画）",
       "J SPORTSオンデマンド",
       "DAZN"

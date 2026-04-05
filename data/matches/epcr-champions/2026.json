@@ -1243,7 +1243,7 @@
     "away_team": "TBC",
     "home_team_id": "",
     "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/288418",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/288417",
     "broadcasters": []
   },
   {
@@ -1252,36 +1252,19 @@
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2026-10-04T14:00:00+00:00",
-    "kickoff_utc": "2026-10-04T14:00:00Z",
+    "kickoff": "2026-10-04T19:00:00+00:00",
+    "kickoff_utc": "2026-10-04T19:00:00Z",
     "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/288417",
-    "broadcasters": []
-  },
-  {
-    "match_id": "epcr-champions-2026-59",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2026-10-04T14:00:00+00:00",
-    "kickoff_utc": "2026-10-04T14:00:00Z",
-    "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
+    "venue": "The Rec",
+    "home_team": "Bath Rugby",
+    "away_team": "Northampton Saints",
+    "home_team_id": "epcr-champions_3",
+    "away_team_id": "epcr-champions_15",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/288420",
     "broadcasters": []
   },
   {
-    "match_id": "epcr-champions-2026-60",
+    "match_id": "epcr-champions-2026-59",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -1303,7 +1286,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-61",
+    "match_id": "epcr-champions-2026-60",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -1325,7 +1308,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-62",
+    "match_id": "epcr-champions-2026-61",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -1348,7 +1331,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-63",
+    "match_id": "epcr-champions-2026-62",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -1368,5 +1351,22 @@
       "SS",
       "FloRugby"
     ]
+  },
+  {
+    "match_id": "epcr-champions-2026-63",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2026-11-04T14:00:00+00:00",
+    "kickoff_utc": "2026-11-04T14:00:00Z",
+    "timezone": "UTC",
+    "venue": "Scotstoun Stadium",
+    "home_team": "Glasgow Warriors",
+    "away_team": "RC Toulon",
+    "home_team_id": "epcr-champions_8",
+    "away_team_id": "epcr-champions_16",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/288418",
+    "broadcasters": []
   }
 ]
