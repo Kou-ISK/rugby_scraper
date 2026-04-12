@@ -5,23 +5,6 @@
     "season": "2026",
     "round": "",
     "status": "C",
-    "kickoff": "2026-03-06T17:00:00+01:00",
-    "kickoff_utc": "2026-03-06T16:00:00Z",
-    "timezone": "UTC+01:00",
-    "venue": "Stadio Tommaso Fattori",
-    "home_team": "Italy XV",
-    "away_team": "Chile",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/b31a9f9b-03af-43ce-b348-7be22d1c1f75",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-2",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "C",
     "kickoff": "2026-03-21T19:00:00+02:00",
     "kickoff_utc": "2026-03-21T17:00:00Z",
     "timezone": "UTC+02:00",
@@ -34,7 +17,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-3",
+    "match_id": "wr-2026-2",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -51,7 +34,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-4",
+    "match_id": "wr-2026-3",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -65,6 +48,23 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.world.rugby/match/de160e9f-717c-4571-828b-d72111f78d84",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-4",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-04-10T19:00:00+02:00",
+    "kickoff_utc": "2026-04-10T17:00:00Z",
+    "timezone": "UTC+02:00",
+    "venue": "Park Mladezi",
+    "home_team": "Croatia",
+    "away_team": "Mexico",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/739823ae-c042-42ee-b666-8296e47e6014",
     "broadcasters": []
   },
   {

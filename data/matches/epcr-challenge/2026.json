@@ -415,11 +415,11 @@
     "kickoff": "2026-01-05T14:00:00+00:00",
     "kickoff_utc": "2026-01-05T14:00:00Z",
     "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
+    "venue": "Septeo Stadium",
+    "home_team": "Montpellier Hérault Rugby",
+    "away_team": "Dragons RFC",
+    "home_team_id": "epcr-challenge_9",
+    "away_team_id": "epcr-challenge_5",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/288472",
     "broadcasters": []
   },
@@ -946,23 +946,6 @@
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2026-10-04T14:00:00+00:00",
-    "kickoff_utc": "2026-10-04T14:00:00Z",
-    "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/288471",
-    "broadcasters": []
-  },
-  {
-    "match_id": "epcr-challenge-2026-46",
-    "competition_id": "epcr-challenge",
-    "season": "2026",
-    "round": "",
-    "status": "",
     "kickoff": "2026-10-04T19:00:00+00:00",
     "kickoff_utc": "2026-10-04T19:00:00Z",
     "timezone": "UTC",
@@ -972,10 +955,17 @@
     "home_team_id": "epcr-challenge_17",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/288470",
-    "broadcasters": []
+    "broadcasters": [
+      "premier",
+      "FTV",
+      "beIN",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ]
   },
   {
-    "match_id": "epcr-challenge-2026-47",
+    "match_id": "epcr-challenge-2026-46",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -998,7 +988,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-48",
+    "match_id": "epcr-challenge-2026-47",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -1018,7 +1008,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-49",
+    "match_id": "epcr-challenge-2026-48",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -1040,7 +1030,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-50",
+    "match_id": "epcr-challenge-2026-49",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -1054,7 +1044,37 @@
     "home_team_id": "epcr-challenge_9",
     "away_team_id": "epcr-challenge_4",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/288468",
-    "broadcasters": []
+    "broadcasters": [
+      "beIN",
+      "premier",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ]
+  },
+  {
+    "match_id": "epcr-challenge-2026-50",
+    "competition_id": "epcr-challenge",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2026-11-04T19:00:00+00:00",
+    "kickoff_utc": "2026-11-04T19:00:00Z",
+    "timezone": "UTC",
+    "venue": "Stadio Sergio Lanfranchi",
+    "home_team": "Zebre Parma",
+    "away_team": "Dragons RFC",
+    "home_team_id": "epcr-challenge_18",
+    "away_team_id": "epcr-challenge_5",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/288471",
+    "broadcasters": [
+      "epcrtv",
+      "beIN",
+      "premier",
+      "SS",
+      "FloRugby",
+      "S4C"
+    ]
   },
   {
     "match_id": "epcr-challenge-2026-51",
@@ -1071,6 +1091,12 @@
     "home_team_id": "epcr-challenge_1",
     "away_team_id": "epcr-challenge_6",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/288469",
-    "broadcasters": []
+    "broadcasters": [
+      "epcrtv",
+      "premier",
+      "beIN",
+      "SS",
+      "FloRugby"
+    ]
   }
 ]
