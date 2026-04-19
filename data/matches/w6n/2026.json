@@ -64,7 +64,7 @@
     "away_team": "ENG",
     "home_team_id": "",
     "away_team_id": "",
-    "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/scotland-women-v-england-women-18042026-1230/build-up",
+    "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/scotland-women-v-england-women-18042026-1230/report",
     "broadcasters": []
   },
   {
@@ -81,7 +81,7 @@
     "away_team": "FRA",
     "home_team_id": "",
     "away_team_id": "",
-    "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/wales-women-v-france-women-18042026-1435/build-up",
+    "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/wales-women-v-france-women-18042026-1435/report",
     "broadcasters": []
   },
   {
@@ -98,7 +98,7 @@
     "away_team": "ITA",
     "home_team_id": "",
     "away_team_id": "",
-    "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/ireland-women-v-italy-women-18042026-1640/build-up",
+    "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/ireland-women-v-italy-women-18042026-1640/report",
     "broadcasters": []
   },
   {
@@ -246,7 +246,7 @@
     "kickoff": "2026-05-17T15:45:00+02:00",
     "kickoff_utc": "2026-05-17T13:45:00Z",
     "timezone": "Europe/Paris",
-    "venue": "Matmut Atlantique",
+    "venue": "Stade Atlantique Bordeaux Métropole",
     "home_team": "FRA",
     "away_team": "ENG",
     "home_team_id": "",

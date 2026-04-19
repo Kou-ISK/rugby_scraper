@@ -395,40 +395,6 @@
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2026-01-05T14:00:00+00:00",
-    "kickoff_utc": "2026-01-05T14:00:00Z",
-    "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/288473",
-    "broadcasters": []
-  },
-  {
-    "match_id": "epcr-challenge-2026-20",
-    "competition_id": "epcr-challenge",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2026-01-05T14:00:00+00:00",
-    "kickoff_utc": "2026-01-05T14:00:00Z",
-    "timezone": "UTC",
-    "venue": "Septeo Stadium",
-    "home_team": "Montpellier Hérault Rugby",
-    "away_team": "Dragons RFC",
-    "home_team_id": "epcr-challenge_9",
-    "away_team_id": "epcr-challenge_5",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/288472",
-    "broadcasters": []
-  },
-  {
-    "match_id": "epcr-challenge-2026-21",
-    "competition_id": "epcr-challenge",
-    "season": "2026",
-    "round": "",
-    "status": "",
     "kickoff": "2026-01-16T20:00:00+00:00",
     "kickoff_utc": "2026-01-16T20:00:00Z",
     "timezone": "UTC",
@@ -445,7 +411,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-22",
+    "match_id": "epcr-challenge-2026-20",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -467,7 +433,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-23",
+    "match_id": "epcr-challenge-2026-21",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -489,7 +455,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-24",
+    "match_id": "epcr-challenge-2026-22",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -510,7 +476,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-25",
+    "match_id": "epcr-challenge-2026-23",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -532,7 +498,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-26",
+    "match_id": "epcr-challenge-2026-24",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -554,7 +520,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-27",
+    "match_id": "epcr-challenge-2026-25",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -576,7 +542,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-28",
+    "match_id": "epcr-challenge-2026-26",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -598,7 +564,7 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-29",
+    "match_id": "epcr-challenge-2026-27",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -620,7 +586,30 @@
     ]
   },
   {
-    "match_id": "epcr-challenge-2026-30",
+    "match_id": "epcr-challenge-2026-28",
+    "competition_id": "epcr-challenge",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2026-02-05T16:30:00+00:00",
+    "kickoff_utc": "2026-02-05T16:30:00Z",
+    "timezone": "UTC",
+    "venue": "Affidea Stadium",
+    "home_team": "Ulster Rugby",
+    "away_team": "Exeter Chiefs",
+    "home_team_id": "epcr-challenge_17",
+    "away_team_id": "epcr-challenge_6",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/288473",
+    "broadcasters": [
+      "premier",
+      "beIN",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ]
+  },
+  {
+    "match_id": "epcr-challenge-2026-29",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -637,6 +626,31 @@
     "broadcasters": [
       "premier",
       "beIN",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ]
+  },
+  {
+    "match_id": "epcr-challenge-2026-30",
+    "competition_id": "epcr-challenge",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2026-03-05T11:30:00+00:00",
+    "kickoff_utc": "2026-03-05T11:30:00Z",
+    "timezone": "UTC",
+    "venue": "Septeo Stadium",
+    "home_team": "Montpellier Hérault Rugby",
+    "away_team": "Dragons RFC",
+    "home_team_id": "epcr-challenge_9",
+    "away_team_id": "epcr-challenge_5",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/288472",
+    "broadcasters": [
+      "FTV",
+      "premier",
+      "beIN",
+      "S4C",
       "SS",
       "FloRugby",
       "epcrtv"

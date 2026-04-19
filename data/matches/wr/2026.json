@@ -55,7 +55,7 @@
     "competition_id": "wr",
     "season": "2026",
     "round": "",
-    "status": "U",
+    "status": "C",
     "kickoff": "2026-04-10T19:00:00+02:00",
     "kickoff_utc": "2026-04-10T17:00:00Z",
     "timezone": "UTC+02:00",
@@ -226,8 +226,25 @@
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-06-20T00:00:00+02:00",
-    "kickoff_utc": "2026-06-19T22:00:00Z",
+    "kickoff": "2026-06-20T12:00:00+02:00",
+    "kickoff_utc": "2026-06-20T10:00:00Z",
+    "timezone": "UTC+02:00",
+    "venue": "Nelson Mandela Bay Stadium",
+    "home_team": "South Africa A",
+    "away_team": "Zimbabwe",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/4de42332-e0af-4d3a-94a3-54e45e80068f",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-15",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-06-20T15:00:00+02:00",
+    "kickoff_utc": "2026-06-20T13:00:00Z",
     "timezone": "UTC+02:00",
     "venue": "Nelson Mandela Bay Stadium",
     "home_team": "South Africa",
@@ -238,7 +255,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-15",
+    "match_id": "wr-2026-16",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -255,7 +272,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-16",
+    "match_id": "wr-2026-17",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -272,7 +289,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-17",
+    "match_id": "wr-2026-18",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -289,7 +306,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-18",
+    "match_id": "wr-2026-19",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -306,7 +323,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-19",
+    "match_id": "wr-2026-20",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -323,7 +340,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-20",
+    "match_id": "wr-2026-21",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -340,7 +357,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-21",
+    "match_id": "wr-2026-22",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -357,7 +374,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-22",
+    "match_id": "wr-2026-23",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -374,7 +391,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-23",
+    "match_id": "wr-2026-24",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -391,7 +408,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-24",
+    "match_id": "wr-2026-25",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -408,7 +425,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-25",
+    "match_id": "wr-2026-26",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -425,7 +442,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-26",
+    "match_id": "wr-2026-27",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -442,7 +459,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-27",
+    "match_id": "wr-2026-28",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -459,7 +476,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-28",
+    "match_id": "wr-2026-29",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -476,7 +493,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-29",
+    "match_id": "wr-2026-30",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -493,7 +510,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-30",
+    "match_id": "wr-2026-31",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -510,7 +527,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-31",
+    "match_id": "wr-2026-32",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -527,7 +544,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-32",
+    "match_id": "wr-2026-33",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -544,7 +561,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-33",
+    "match_id": "wr-2026-34",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -561,7 +578,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-34",
+    "match_id": "wr-2026-35",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -578,7 +595,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-35",
+    "match_id": "wr-2026-36",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -595,7 +612,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-36",
+    "match_id": "wr-2026-37",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -612,7 +629,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-37",
+    "match_id": "wr-2026-38",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -629,7 +646,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-38",
+    "match_id": "wr-2026-39",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -646,7 +663,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-39",
+    "match_id": "wr-2026-40",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -663,7 +680,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-40",
+    "match_id": "wr-2026-41",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -680,7 +697,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-41",
+    "match_id": "wr-2026-42",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -697,7 +714,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-42",
+    "match_id": "wr-2026-43",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -714,7 +731,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-43",
+    "match_id": "wr-2026-44",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -731,7 +748,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-44",
+    "match_id": "wr-2026-45",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -748,7 +765,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-45",
+    "match_id": "wr-2026-46",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -765,7 +782,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-46",
+    "match_id": "wr-2026-47",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -782,7 +799,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-47",
+    "match_id": "wr-2026-48",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -799,7 +816,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-48",
+    "match_id": "wr-2026-49",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -816,7 +833,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-49",
+    "match_id": "wr-2026-50",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -833,7 +850,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-50",
+    "match_id": "wr-2026-51",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -850,7 +867,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-51",
+    "match_id": "wr-2026-52",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -867,7 +884,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-52",
+    "match_id": "wr-2026-53",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -884,7 +901,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-53",
+    "match_id": "wr-2026-54",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -901,7 +918,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-54",
+    "match_id": "wr-2026-55",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -918,7 +935,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-55",
+    "match_id": "wr-2026-56",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -935,7 +952,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-56",
+    "match_id": "wr-2026-57",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -952,7 +969,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-57",
+    "match_id": "wr-2026-58",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -969,7 +986,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-58",
+    "match_id": "wr-2026-59",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -986,7 +1003,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-59",
+    "match_id": "wr-2026-60",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1003,7 +1020,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-60",
+    "match_id": "wr-2026-61",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1020,7 +1037,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-61",
+    "match_id": "wr-2026-62",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1037,7 +1054,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-62",
+    "match_id": "wr-2026-63",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1054,7 +1071,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-63",
+    "match_id": "wr-2026-64",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1071,7 +1088,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-64",
+    "match_id": "wr-2026-65",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1088,7 +1105,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-65",
+    "match_id": "wr-2026-66",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1105,7 +1122,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-66",
+    "match_id": "wr-2026-67",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1122,7 +1139,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-67",
+    "match_id": "wr-2026-68",
     "competition_id": "wr",
     "season": "2026",
     "round": "",

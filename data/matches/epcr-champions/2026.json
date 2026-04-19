@@ -538,40 +538,6 @@
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2026-01-05T14:00:00+00:00",
-    "kickoff_utc": "2026-01-05T14:00:00Z",
-    "timezone": "UTC",
-    "venue": "Aviva Stadium",
-    "home_team": "Leinster Rugby",
-    "away_team": "RC Toulon",
-    "home_team_id": "epcr-champions_13",
-    "away_team_id": "epcr-champions_16",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/288422",
-    "broadcasters": []
-  },
-  {
-    "match_id": "epcr-champions-2026-26",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2026-01-05T14:00:00+00:00",
-    "kickoff_utc": "2026-01-05T14:00:00Z",
-    "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/288421",
-    "broadcasters": []
-  },
-  {
-    "match_id": "epcr-champions-2026-27",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
     "kickoff": "2026-01-16T20:00:00+00:00",
     "kickoff_utc": "2026-01-16T20:00:00Z",
     "timezone": "UTC",
@@ -589,7 +555,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-28",
+    "match_id": "epcr-champions-2026-26",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -611,7 +577,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-29",
+    "match_id": "epcr-champions-2026-27",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -633,7 +599,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-30",
+    "match_id": "epcr-champions-2026-28",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -656,7 +622,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-31",
+    "match_id": "epcr-champions-2026-29",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -678,7 +644,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-32",
+    "match_id": "epcr-champions-2026-30",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -700,7 +666,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-33",
+    "match_id": "epcr-champions-2026-31",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -722,7 +688,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-34",
+    "match_id": "epcr-champions-2026-32",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -744,7 +710,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-35",
+    "match_id": "epcr-champions-2026-33",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -766,7 +732,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-36",
+    "match_id": "epcr-champions-2026-34",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -788,7 +754,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-37",
+    "match_id": "epcr-champions-2026-35",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -811,7 +777,7 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-38",
+    "match_id": "epcr-champions-2026-36",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -833,7 +799,31 @@
     ]
   },
   {
-    "match_id": "epcr-champions-2026-39",
+    "match_id": "epcr-champions-2026-37",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2026-02-05T14:00:00+00:00",
+    "kickoff_utc": "2026-02-05T14:00:00Z",
+    "timezone": "UTC",
+    "venue": "Aviva Stadium",
+    "home_team": "Leinster Rugby",
+    "away_team": "RC Toulon",
+    "home_team_id": "epcr-champions_13",
+    "away_team_id": "epcr-champions_16",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/288422",
+    "broadcasters": [
+      "premier",
+      "FTV",
+      "beIN",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ]
+  },
+  {
+    "match_id": "epcr-champions-2026-38",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -848,6 +838,30 @@
     "away_team_id": "epcr-champions_5",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/288413",
     "broadcasters": [
+      "premier",
+      "beIN",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ]
+  },
+  {
+    "match_id": "epcr-champions-2026-39",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2026-03-05T14:00:00+00:00",
+    "kickoff_utc": "2026-03-05T14:00:00Z",
+    "timezone": "UTC",
+    "venue": "Stade Atlantique Bordeaux Métropole",
+    "home_team": "Union Bordeaux Bègles",
+    "away_team": "Bath Rugby",
+    "home_team_id": "epcr-champions_23",
+    "away_team_id": "epcr-champions_3",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/288421",
+    "broadcasters": [
+      "FTV",
       "premier",
       "beIN",
       "SS",
