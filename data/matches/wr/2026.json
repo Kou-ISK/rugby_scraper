@@ -5,23 +5,6 @@
     "season": "2026",
     "round": "",
     "status": "C",
-    "kickoff": "2026-03-21T19:00:00+02:00",
-    "kickoff_utc": "2026-03-21T17:00:00Z",
-    "timezone": "UTC+02:00",
-    "venue": "Kevop Haidari Municipal Sports Center",
-    "home_team": "Greece",
-    "away_team": "Kosovo",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/7bf1e8de-bb63-4809-98a7-64e23e29a092",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-2",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "C",
     "kickoff": "2026-03-27T17:05:00+11:00",
     "kickoff_utc": "2026-03-27T06:05:00Z",
     "timezone": "UTC+11:00",
@@ -34,7 +17,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-3",
+    "match_id": "wr-2026-2",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -51,7 +34,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-4",
+    "match_id": "wr-2026-3",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -68,11 +51,11 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-5",
+    "match_id": "wr-2026-4",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
-    "status": "U",
+    "status": "C",
     "kickoff": "2026-04-17T16:30:00+12:00",
     "kickoff_utc": "2026-04-17T04:30:00Z",
     "timezone": "UTC+12:00",
@@ -85,11 +68,11 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-6",
+    "match_id": "wr-2026-5",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
-    "status": "U",
+    "status": "C",
     "kickoff": "2026-04-21T16:30:00+12:00",
     "kickoff_utc": "2026-04-21T04:30:00Z",
     "timezone": "UTC+12:00",
@@ -102,7 +85,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-7",
+    "match_id": "wr-2026-6",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -119,7 +102,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-8",
+    "match_id": "wr-2026-7",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -136,7 +119,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-9",
+    "match_id": "wr-2026-8",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -153,7 +136,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-10",
+    "match_id": "wr-2026-9",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -170,7 +153,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-11",
+    "match_id": "wr-2026-10",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -187,7 +170,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-12",
+    "match_id": "wr-2026-11",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -204,7 +187,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-13",
+    "match_id": "wr-2026-12",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -221,7 +204,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-14",
+    "match_id": "wr-2026-13",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -238,7 +221,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-15",
+    "match_id": "wr-2026-14",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -255,7 +238,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-16",
+    "match_id": "wr-2026-15",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -272,7 +255,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-17",
+    "match_id": "wr-2026-16",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -289,7 +272,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-18",
+    "match_id": "wr-2026-17",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -306,7 +289,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-19",
+    "match_id": "wr-2026-18",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -323,7 +306,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-20",
+    "match_id": "wr-2026-19",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -340,20 +323,37 @@
     "broadcasters": []
   },
   {
+    "match_id": "wr-2026-20",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-04T19:10:00+12:00",
+    "kickoff_utc": "2026-07-04T07:10:00Z",
+    "timezone": "UTC+12:00",
+    "venue": "One New Zealand Stadium",
+    "home_team": "New Zealand",
+    "away_team": "France",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/f2841b7f-1e16-45bd-97b0-85c179bb28ca",
+    "broadcasters": []
+  },
+  {
     "match_id": "wr-2026-21",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-07-04T00:00:00+02:00",
-    "kickoff_utc": "2026-07-03T22:00:00Z",
-    "timezone": "UTC+02:00",
-    "venue": "Emirates Airline Park",
-    "home_team": "South Africa",
-    "away_team": "England",
+    "kickoff": "2026-07-04T20:00:00+10:00",
+    "kickoff_utc": "2026-07-04T10:00:00Z",
+    "timezone": "UTC+10:00",
+    "venue": "Sydney Football Stadium",
+    "home_team": "Australia",
+    "away_team": "Ireland",
     "home_team_id": "",
     "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/572577b5-5e95-4ad5-8fce-25da14ed11e4",
+    "match_url": "https://www.world.rugby/match/bb26ee04-38a6-41ae-9247-eca420a8dda1",
     "broadcasters": []
   },
   {
@@ -362,9 +362,9 @@
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-07-04T00:00:00+00:00",
-    "kickoff_utc": "2026-07-04T00:00:00Z",
-    "timezone": "UTC+00:00",
+    "kickoff": "2026-07-04T14:10:00+01:00",
+    "kickoff_utc": "2026-07-04T13:10:00Z",
+    "timezone": "UTC+01:00",
     "venue": "Cardiff City Stadium",
     "home_team": "Fiji",
     "away_team": "Wales",
@@ -379,9 +379,26 @@
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-07-04T00:00:00+00:00",
-    "kickoff_utc": "2026-07-04T00:00:00Z",
-    "timezone": "UTC+00:00",
+    "kickoff": "2026-07-04T17:40:00+02:00",
+    "kickoff_utc": "2026-07-04T15:40:00Z",
+    "timezone": "UTC+02:00",
+    "venue": "Emirates Airline Park",
+    "home_team": "South Africa",
+    "away_team": "England",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/572577b5-5e95-4ad5-8fce-25da14ed11e4",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-24",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-04T16:00:00-03:00",
+    "kickoff_utc": "2026-07-04T19:00:00Z",
+    "timezone": "UTC-03:00",
     "venue": "Estadio Mario Alberto Kempes",
     "home_team": "Argentina",
     "away_team": "Scotland",
@@ -391,41 +408,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-24",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-04T00:00:00+00:00",
-    "kickoff_utc": "2026-07-04T00:00:00Z",
-    "timezone": "UTC+00:00",
-    "venue": "Sydney Football Stadium",
-    "home_team": "Australia",
-    "away_team": "Ireland",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/bb26ee04-38a6-41ae-9247-eca420a8dda1",
-    "broadcasters": []
-  },
-  {
     "match_id": "wr-2026-25",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-04T19:10:00+13:00",
-    "kickoff_utc": "2026-07-04T06:10:00Z",
-    "timezone": "UTC+13:00",
-    "venue": "One New Zealand Stadium",
-    "home_team": "New Zealand",
-    "away_team": "France",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/f2841b7f-1e16-45bd-97b0-85c179bb28ca",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-26",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -442,58 +425,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-27",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-11T00:00:00+02:00",
-    "kickoff_utc": "2026-07-10T22:00:00Z",
-    "timezone": "UTC+02:00",
-    "venue": "Loftus Versfeld",
-    "home_team": "South Africa",
-    "away_team": "Scotland",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/8d7befd5-96a5-4e4d-88b6-804e54d1a76c",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-28",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-11T00:00:00+00:00",
-    "kickoff_utc": "2026-07-11T00:00:00Z",
-    "timezone": "UTC+00:00",
-    "venue": "Brisbane Stadium",
-    "home_team": "Australia",
-    "away_team": "France",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/9a049f13-d461-4b58-9d4a-deb5cf9d2dd0",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-29",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-11T00:00:00+00:00",
-    "kickoff_utc": "2026-07-11T00:00:00Z",
-    "timezone": "UTC+00:00",
-    "venue": "",
-    "home_team": "Japan",
-    "away_team": "Ireland",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/5a03f594-7c72-4134-a199-3fea4980e686",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-30",
+    "match_id": "wr-2026-26",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -510,14 +442,82 @@
     "broadcasters": []
   },
   {
+    "match_id": "wr-2026-27",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-11T17:10:00+12:00",
+    "kickoff_utc": "2026-07-11T05:10:00Z",
+    "timezone": "UTC+12:00",
+    "venue": "Sky Stadium",
+    "home_team": "New Zealand",
+    "away_team": "Italy",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/988c93b4-cd83-4438-a0c9-9ebfcf8c7c92",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-28",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-11T17:30:00+10:00",
+    "kickoff_utc": "2026-07-11T07:30:00Z",
+    "timezone": "UTC+10:00",
+    "venue": "Brisbane Stadium",
+    "home_team": "Australia",
+    "away_team": "France",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/9a049f13-d461-4b58-9d4a-deb5cf9d2dd0",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-29",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-11T20:00:00+10:00",
+    "kickoff_utc": "2026-07-11T10:00:00Z",
+    "timezone": "UTC+10:00",
+    "venue": "Newcastle Stadium",
+    "home_team": "Japan",
+    "away_team": "Ireland",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/5a03f594-7c72-4134-a199-3fea4980e686",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-30",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-11T17:40:00+02:00",
+    "kickoff_utc": "2026-07-11T15:40:00Z",
+    "timezone": "UTC+02:00",
+    "venue": "Loftus Versfeld",
+    "home_team": "South Africa",
+    "away_team": "Scotland",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/8d7befd5-96a5-4e4d-88b6-804e54d1a76c",
+    "broadcasters": []
+  },
+  {
     "match_id": "wr-2026-31",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-07-11T00:00:00+00:00",
-    "kickoff_utc": "2026-07-11T00:00:00Z",
-    "timezone": "UTC+00:00",
+    "kickoff": "2026-07-11T16:00:00-03:00",
+    "kickoff_utc": "2026-07-11T19:00:00Z",
+    "timezone": "UTC-03:00",
     "venue": "Estadio del Bicentenario",
     "home_team": "Argentina",
     "away_team": "Wales",
@@ -528,40 +528,6 @@
   },
   {
     "match_id": "wr-2026-32",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-11T17:10:00+13:00",
-    "kickoff_utc": "2026-07-11T04:10:00Z",
-    "timezone": "UTC+13:00",
-    "venue": "Sky Stadium",
-    "home_team": "New Zealand",
-    "away_team": "Italy",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/988c93b4-cd83-4438-a0c9-9ebfcf8c7c92",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-33",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-18T00:00:00+12:00",
-    "kickoff_utc": "2026-07-17T12:00:00Z",
-    "timezone": "UTC+12:00",
-    "venue": "Eden Park",
-    "home_team": "New Zealand",
-    "away_team": "Ireland",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/fadabdf7-e221-4120-93b0-afbd2fe42a69",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-34",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -578,41 +544,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-35",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-18T00:00:00+02:00",
-    "kickoff_utc": "2026-07-17T22:00:00Z",
-    "timezone": "UTC+02:00",
-    "venue": "Hollywoodbets Kings Park",
-    "home_team": "South Africa",
-    "away_team": "Wales",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/21090174-8fd4-4e2f-ae32-f43ad912b0f8",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-36",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-18T00:00:00+00:00",
-    "kickoff_utc": "2026-07-18T00:00:00Z",
-    "timezone": "UTC+00:00",
-    "venue": "HBF Park",
-    "home_team": "Australia",
-    "away_team": "Italy",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/5a688ab0-0ca5-4c4e-9335-9259b5c7fd99",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-37",
+    "match_id": "wr-2026-33",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -629,14 +561,65 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-38",
+    "match_id": "wr-2026-34",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-07-18T00:00:00+00:00",
-    "kickoff_utc": "2026-07-18T00:00:00Z",
-    "timezone": "UTC+00:00",
+    "kickoff": "2026-07-18T19:10:00+12:00",
+    "kickoff_utc": "2026-07-18T07:10:00Z",
+    "timezone": "UTC+12:00",
+    "venue": "Eden Park",
+    "home_team": "New Zealand",
+    "away_team": "Ireland",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/fadabdf7-e221-4120-93b0-afbd2fe42a69",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-35",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-18T18:00:00+08:00",
+    "kickoff_utc": "2026-07-18T10:00:00Z",
+    "timezone": "UTC+08:00",
+    "venue": "HBF Park",
+    "home_team": "Australia",
+    "away_team": "Italy",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/5a688ab0-0ca5-4c4e-9335-9259b5c7fd99",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-36",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-18T17:40:00+02:00",
+    "kickoff_utc": "2026-07-18T15:40:00Z",
+    "timezone": "UTC+02:00",
+    "venue": "Hollywoodbets Kings Park",
+    "home_team": "South Africa",
+    "away_team": "Wales",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/21090174-8fd4-4e2f-ae32-f43ad912b0f8",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-37",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-18T16:00:00-03:00",
+    "kickoff_utc": "2026-07-18T19:00:00Z",
+    "timezone": "UTC-03:00",
     "venue": "Estadio Único Madre de Ciudades",
     "home_team": "Argentina",
     "away_team": "England",
@@ -646,7 +629,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-39",
+    "match_id": "wr-2026-38",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -663,14 +646,14 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-40",
+    "match_id": "wr-2026-39",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-08-15T00:00:00+00:00",
-    "kickoff_utc": "2026-08-15T00:00:00Z",
-    "timezone": "UTC+00:00",
+    "kickoff": "2026-08-15T15:00:00+10:00",
+    "kickoff_utc": "2026-08-15T05:00:00Z",
+    "timezone": "UTC+10:00",
     "venue": "North Queensland Stadium",
     "home_team": "Australia",
     "away_team": "Japan",
@@ -680,15 +663,15 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-41",
+    "match_id": "wr-2026-40",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-08-29T00:00:00-03:00",
-    "kickoff_utc": "2026-08-29T03:00:00Z",
+    "kickoff": "2026-08-29T16:00:00-03:00",
+    "kickoff_utc": "2026-08-29T19:00:00Z",
     "timezone": "UTC-03:00",
-    "venue": "",
+    "venue": "Estadio 23 de Agosto",
     "home_team": "Argentina",
     "away_team": "Australia",
     "home_team_id": "",
@@ -697,7 +680,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-42",
+    "match_id": "wr-2026-41",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -714,15 +697,15 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-43",
+    "match_id": "wr-2026-42",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-09-05T00:00:00-03:00",
-    "kickoff_utc": "2026-09-05T03:00:00Z",
+    "kickoff": "2026-09-05T18:00:00-03:00",
+    "kickoff_utc": "2026-09-05T21:00:00Z",
     "timezone": "UTC-03:00",
-    "venue": "",
+    "venue": "Estadio Malvinas Argentinas",
     "home_team": "Argentina",
     "away_team": "Australia",
     "home_team_id": "",
@@ -731,14 +714,14 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-44",
+    "match_id": "wr-2026-43",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-09-27T00:00:00+00:00",
-    "kickoff_utc": "2026-09-27T00:00:00Z",
-    "timezone": "UTC+00:00",
+    "kickoff": "2026-09-27T17:30:00+08:00",
+    "kickoff_utc": "2026-09-27T09:30:00Z",
+    "timezone": "UTC+08:00",
     "venue": "Perth Stadium",
     "home_team": "Australia",
     "away_team": "South Africa",
@@ -748,7 +731,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-45",
+    "match_id": "wr-2026-44",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -765,7 +748,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-46",
+    "match_id": "wr-2026-45",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -782,7 +765,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-47",
+    "match_id": "wr-2026-46",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -799,7 +782,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-48",
+    "match_id": "wr-2026-47",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -816,7 +799,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-49",
+    "match_id": "wr-2026-48",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -833,7 +816,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-50",
+    "match_id": "wr-2026-49",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -850,7 +833,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-51",
+    "match_id": "wr-2026-50",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -867,7 +850,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-52",
+    "match_id": "wr-2026-51",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -884,7 +867,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-53",
+    "match_id": "wr-2026-52",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -901,7 +884,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-54",
+    "match_id": "wr-2026-53",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -918,7 +901,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-55",
+    "match_id": "wr-2026-54",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -935,13 +918,13 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-56",
+    "match_id": "wr-2026-55",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-11-08T00:00:00+00:00",
-    "kickoff_utc": "2026-11-08T00:00:00Z",
+    "kickoff": "2026-11-08T15:10:00+00:00",
+    "kickoff_utc": "2026-11-08T15:10:00Z",
     "timezone": "UTC+00:00",
     "venue": "Allianz Stadium",
     "home_team": "England",
@@ -952,7 +935,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-57",
+    "match_id": "wr-2026-56",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -969,7 +952,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-58",
+    "match_id": "wr-2026-57",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -986,7 +969,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-59",
+    "match_id": "wr-2026-58",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1003,7 +986,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-60",
+    "match_id": "wr-2026-59",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1020,7 +1003,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-61",
+    "match_id": "wr-2026-60",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1037,13 +1020,13 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-62",
+    "match_id": "wr-2026-61",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-11-15T00:00:00+00:00",
-    "kickoff_utc": "2026-11-15T00:00:00Z",
+    "kickoff": "2026-11-15T15:10:00+00:00",
+    "kickoff_utc": "2026-11-15T15:10:00Z",
     "timezone": "UTC+00:00",
     "venue": "Murrayfield",
     "home_team": "Scotland",
@@ -1054,7 +1037,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-63",
+    "match_id": "wr-2026-62",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1071,24 +1054,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-64",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-11-21T00:00:00+00:00",
-    "kickoff_utc": "2026-11-21T00:00:00Z",
-    "timezone": "UTC+00:00",
-    "venue": "Principality Stadium",
-    "home_team": "Wales",
-    "away_team": "Australia",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/e7552a9b-439f-4141-8a47-14bb57279e46",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-65",
+    "match_id": "wr-2026-63",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1105,7 +1071,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-66",
+    "match_id": "wr-2026-64",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1122,7 +1088,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-67",
+    "match_id": "wr-2026-65",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1139,7 +1105,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-68",
+    "match_id": "wr-2026-66",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1153,6 +1119,23 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.world.rugby/match/02df3cf8-3d55-418f-a141-29fec4e3d5c8",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-67",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-11-21T20:10:00+00:00",
+    "kickoff_utc": "2026-11-21T20:10:00Z",
+    "timezone": "UTC+00:00",
+    "venue": "Principality Stadium",
+    "home_team": "Wales",
+    "away_team": "Australia",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/e7552a9b-439f-4141-8a47-14bb57279e46",
     "broadcasters": []
   }
 ]
