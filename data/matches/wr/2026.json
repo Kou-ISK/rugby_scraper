@@ -5,23 +5,6 @@
     "season": "2026",
     "round": "",
     "status": "C",
-    "kickoff": "2026-03-27T17:05:00+11:00",
-    "kickoff_utc": "2026-03-27T06:05:00Z",
-    "timezone": "UTC+11:00",
-    "venue": "GIO Stadium",
-    "home_team": "Australia",
-    "away_team": "Fiji",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/17f734f5-cb68-4f82-9f84-e92f8ca94cf6",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-2",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "C",
     "kickoff": "2026-04-03T14:00:00+02:00",
     "kickoff_utc": "2026-04-03T12:00:00Z",
     "timezone": "UTC+02:00",
@@ -34,7 +17,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-3",
+    "match_id": "wr-2026-2",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -51,7 +34,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-4",
+    "match_id": "wr-2026-3",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -68,7 +51,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-5",
+    "match_id": "wr-2026-4",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -85,11 +68,11 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-6",
+    "match_id": "wr-2026-5",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
-    "status": "U",
+    "status": "C",
     "kickoff": "2026-04-25T15:30:00+12:00",
     "kickoff_utc": "2026-04-25T03:30:00Z",
     "timezone": "UTC+12:00",
@@ -102,7 +85,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-7",
+    "match_id": "wr-2026-6",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -119,7 +102,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-8",
+    "match_id": "wr-2026-7",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -136,7 +119,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-9",
+    "match_id": "wr-2026-8",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -153,7 +136,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-10",
+    "match_id": "wr-2026-9",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -170,7 +153,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-11",
+    "match_id": "wr-2026-10",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -187,7 +170,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-12",
+    "match_id": "wr-2026-11",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -204,7 +187,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-13",
+    "match_id": "wr-2026-12",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -221,7 +204,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-14",
+    "match_id": "wr-2026-13",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -238,7 +221,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-15",
+    "match_id": "wr-2026-14",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -255,7 +238,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-16",
+    "match_id": "wr-2026-15",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -272,7 +255,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-17",
+    "match_id": "wr-2026-16",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -289,24 +272,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-18",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-04T00:00:00+09:00",
-    "kickoff_utc": "2026-07-03T15:00:00Z",
-    "timezone": "UTC+09:00",
-    "venue": "Prince Chichibu Memorial Stadium",
-    "home_team": "Japan",
-    "away_team": "Italy",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/1a9101ea-fbd4-4846-ac1c-fd2c9c208f41",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-19",
+    "match_id": "wr-2026-17",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -323,7 +289,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-20",
+    "match_id": "wr-2026-18",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -340,7 +306,24 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-21",
+    "match_id": "wr-2026-19",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-04T17:40:00+09:00",
+    "kickoff_utc": "2026-07-04T08:40:00Z",
+    "timezone": "UTC+09:00",
+    "venue": "Prince Chichibu Memorial Stadium",
+    "home_team": "Japan",
+    "away_team": "Italy",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/1a9101ea-fbd4-4846-ac1c-fd2c9c208f41",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-20",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -357,7 +340,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-22",
+    "match_id": "wr-2026-21",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -374,7 +357,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-23",
+    "match_id": "wr-2026-22",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -391,7 +374,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-24",
+    "match_id": "wr-2026-23",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -408,7 +391,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-25",
+    "match_id": "wr-2026-24",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -425,7 +408,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-26",
+    "match_id": "wr-2026-25",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -442,7 +425,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-27",
+    "match_id": "wr-2026-26",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -459,7 +442,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-28",
+    "match_id": "wr-2026-27",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -476,7 +459,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-29",
+    "match_id": "wr-2026-28",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -493,7 +476,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-30",
+    "match_id": "wr-2026-29",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -510,7 +493,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-31",
+    "match_id": "wr-2026-30",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -527,24 +510,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-32",
-    "competition_id": "wr",
-    "season": "2026",
-    "round": "",
-    "status": "U",
-    "kickoff": "2026-07-18T00:00:00+09:00",
-    "kickoff_utc": "2026-07-17T15:00:00Z",
-    "timezone": "UTC+09:00",
-    "venue": "National Olympic Stadium",
-    "home_team": "Japan",
-    "away_team": "France",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.world.rugby/match/aeec861e-3369-4278-bc7e-147a2555b7a6",
-    "broadcasters": []
-  },
-  {
-    "match_id": "wr-2026-33",
+    "match_id": "wr-2026-31",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -561,7 +527,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-34",
+    "match_id": "wr-2026-32",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -578,7 +544,24 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-35",
+    "match_id": "wr-2026-33",
+    "competition_id": "wr",
+    "season": "2026",
+    "round": "",
+    "status": "U",
+    "kickoff": "2026-07-18T17:40:00+09:00",
+    "kickoff_utc": "2026-07-18T08:40:00Z",
+    "timezone": "UTC+09:00",
+    "venue": "National Olympic Stadium",
+    "home_team": "Japan",
+    "away_team": "France",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.world.rugby/match/aeec861e-3369-4278-bc7e-147a2555b7a6",
+    "broadcasters": []
+  },
+  {
+    "match_id": "wr-2026-34",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -595,7 +578,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-36",
+    "match_id": "wr-2026-35",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -612,7 +595,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-37",
+    "match_id": "wr-2026-36",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -629,14 +612,14 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-38",
+    "match_id": "wr-2026-37",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-08-08T00:00:00+00:00",
-    "kickoff_utc": "2026-08-08T00:00:00Z",
-    "timezone": "UTC+00:00",
+    "kickoff": "2026-08-08T19:05:00+09:00",
+    "kickoff_utc": "2026-08-08T10:05:00Z",
+    "timezone": "UTC+09:00",
     "venue": "Hanazono Rugby Stadium",
     "home_team": "Japan",
     "away_team": "Australia",
@@ -646,7 +629,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-39",
+    "match_id": "wr-2026-38",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -663,7 +646,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-40",
+    "match_id": "wr-2026-39",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -680,13 +663,13 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-41",
+    "match_id": "wr-2026-40",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
     "status": "U",
-    "kickoff": "2026-09-05T00:00:00+09:00",
-    "kickoff_utc": "2026-09-04T15:00:00Z",
+    "kickoff": "2026-09-05T14:50:00+09:00",
+    "kickoff_utc": "2026-09-05T05:50:00Z",
     "timezone": "UTC+09:00",
     "venue": "Big Swan Stadium",
     "home_team": "Japan",
@@ -697,7 +680,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-42",
+    "match_id": "wr-2026-41",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -714,7 +697,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-43",
+    "match_id": "wr-2026-42",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -731,7 +714,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-44",
+    "match_id": "wr-2026-43",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -748,7 +731,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-45",
+    "match_id": "wr-2026-44",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -765,7 +748,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-46",
+    "match_id": "wr-2026-45",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -782,7 +765,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-47",
+    "match_id": "wr-2026-46",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -799,7 +782,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-48",
+    "match_id": "wr-2026-47",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -816,7 +799,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-49",
+    "match_id": "wr-2026-48",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -833,7 +816,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-50",
+    "match_id": "wr-2026-49",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -850,7 +833,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-51",
+    "match_id": "wr-2026-50",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -867,7 +850,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-52",
+    "match_id": "wr-2026-51",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -884,7 +867,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-53",
+    "match_id": "wr-2026-52",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -901,7 +884,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-54",
+    "match_id": "wr-2026-53",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -918,7 +901,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-55",
+    "match_id": "wr-2026-54",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -935,7 +918,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-56",
+    "match_id": "wr-2026-55",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -952,7 +935,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-57",
+    "match_id": "wr-2026-56",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -969,7 +952,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-58",
+    "match_id": "wr-2026-57",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -986,7 +969,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-59",
+    "match_id": "wr-2026-58",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1003,7 +986,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-60",
+    "match_id": "wr-2026-59",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1020,7 +1003,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-61",
+    "match_id": "wr-2026-60",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1037,7 +1020,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-62",
+    "match_id": "wr-2026-61",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1054,7 +1037,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-63",
+    "match_id": "wr-2026-62",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1071,7 +1054,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-64",
+    "match_id": "wr-2026-63",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1088,7 +1071,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-65",
+    "match_id": "wr-2026-64",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1105,7 +1088,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-66",
+    "match_id": "wr-2026-65",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
@@ -1122,7 +1105,7 @@
     "broadcasters": []
   },
   {
-    "match_id": "wr-2026-67",
+    "match_id": "wr-2026-66",
     "competition_id": "wr",
     "season": "2026",
     "round": "",
