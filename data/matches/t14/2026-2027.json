@@ -3,7 +3,7 @@
     "match_id": "11466",
     "competition_id": "t14",
     "season": "2026-2027",
-    "round": "2026",
+    "round": "",
     "status": "scheduled",
     "kickoff": "",
     "kickoff_utc": "",
@@ -14,15 +14,13 @@
     "home_team_id": "t14_8",
     "away_team_id": "t14_3",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j23/11466-pau-castres",
-    "broadcasters": [
-      "Canal + Sport"
-    ]
+    "broadcasters": []
   },
   {
     "match_id": "11461",
     "competition_id": "t14",
     "season": "2026-2027",
-    "round": "2026",
+    "round": "",
     "status": "scheduled",
     "kickoff": "",
     "kickoff_utc": "",
@@ -33,16 +31,13 @@
     "home_team_id": "t14_1",
     "away_team_id": "t14_13",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j23/11461-clermont-perpignan",
-    "broadcasters": [
-      "Canal + Sport",
-      "Canal +"
-    ]
+    "broadcasters": []
   },
   {
     "match_id": "11462",
     "competition_id": "t14",
     "season": "2026-2027",
-    "round": "2026",
+    "round": "",
     "status": "scheduled",
     "kickoff": "",
     "kickoff_utc": "",
@@ -53,16 +48,13 @@
     "home_team_id": "t14_2",
     "away_team_id": "t14_14",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j23/11462-bayonne-bordeaux-begles",
-    "broadcasters": [
-      "Canal +",
-      "Canal + Live"
-    ]
+    "broadcasters": []
   },
   {
     "match_id": "11463",
     "competition_id": "t14",
     "season": "2026-2027",
-    "round": "2026",
+    "round": "",
     "status": "scheduled",
     "kickoff": "",
     "kickoff_utc": "",
@@ -73,16 +65,13 @@
     "home_team_id": "t14_5",
     "away_team_id": "t14_12",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j23/11463-montpellier-montauban",
-    "broadcasters": [
-      "Canal + Live",
-      "Canal +"
-    ]
+    "broadcasters": []
   },
   {
     "match_id": "11467",
     "competition_id": "t14",
     "season": "2026-2027",
-    "round": "2026",
+    "round": "",
     "status": "scheduled",
     "kickoff": "",
     "kickoff_utc": "",
@@ -93,16 +82,13 @@
     "home_team_id": "t14_9",
     "away_team_id": "t14_4",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j23/11467-paris-lyon",
-    "broadcasters": [
-      "Canal +",
-      "Canal + Live"
-    ]
+    "broadcasters": []
   },
   {
     "match_id": "11465",
     "competition_id": "t14",
     "season": "2026-2027",
-    "round": "2026",
+    "round": "",
     "status": "scheduled",
     "kickoff": "",
     "kickoff_utc": "",
@@ -113,9 +99,7 @@
     "home_team_id": "t14_6",
     "away_team_id": "t14_11",
     "match_url": "https://top14.lnr.fr/feuille-de-match/2025-2026/j23/11465-toulon-toulouse",
-    "broadcasters": [
-      "Canal +"
-    ]
+    "broadcasters": []
   },
   {
     "match_id": "11464",

@@ -1042,12 +1042,20 @@
     "kickoff_utc": "2026-05-23T13:45:00Z",
     "timezone": "UTC",
     "venue": "San Mames Stadium, Bilbao",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team": "Leinster Rugby",
+    "away_team": "Union Bordeaux Bègles",
+    "home_team_id": "epcr-champions_13",
+    "away_team_id": "epcr-champions_23",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/288423",
-    "broadcasters": []
+    "broadcasters": [
+      "premier",
+      "ITV",
+      "FTV",
+      "beIN",
+      "epcrtv",
+      "FloRugby",
+      "Movistar+"
+    ]
   },
   {
     "match_id": "epcr-champions-2026-48",

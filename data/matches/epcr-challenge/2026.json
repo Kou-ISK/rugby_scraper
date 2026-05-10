@@ -818,12 +818,20 @@
     "kickoff_utc": "2026-05-22T19:00:00Z",
     "timezone": "UTC",
     "venue": "San Mames Stadium, Bilbao",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
+    "home_team": "Montpellier Hérault Rugby",
+    "away_team": "Ulster Rugby",
+    "home_team_id": "epcr-challenge_9",
+    "away_team_id": "epcr-challenge_17",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/288474",
-    "broadcasters": []
+    "broadcasters": [
+      "premier",
+      "ITV",
+      "FTV",
+      "beIN",
+      "epcrtv",
+      "FloRugby",
+      "Movistar+"
+    ]
   },
   {
     "match_id": "epcr-challenge-2026-39",
