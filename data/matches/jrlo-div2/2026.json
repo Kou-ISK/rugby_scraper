@@ -1243,7 +1243,11 @@
     "home_team_id": "jrlo-div2_4",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/30047",
-    "broadcasters": [],
+    "broadcasters": [
+      "J SPORTS 3",
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
     "division": "div2"
   },
   {
@@ -1261,7 +1265,11 @@
     "home_team_id": "jrlo-div2_5",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/30045",
-    "broadcasters": [],
+    "broadcasters": [
+      "J SPORTS 4（録画）",
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
     "division": "div2"
   },
   {
@@ -1279,7 +1287,11 @@
     "home_team_id": "",
     "away_team_id": "jrlo-div2_5",
     "match_url": "https://league-one.jp/match/30046",
-    "broadcasters": [],
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
     "division": "div2"
   },
   {
@@ -1297,7 +1309,11 @@
     "home_team_id": "",
     "away_team_id": "jrlo-div2_4",
     "match_url": "https://league-one.jp/match/30048",
-    "broadcasters": [],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
     "division": "div2"
   }
 ]

@@ -2475,7 +2475,11 @@
     "home_team_id": "",
     "away_team_id": "jrlo-div1_5",
     "match_url": "https://league-one.jp/match/30085",
-    "broadcasters": [],
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
     "division": "div1"
   },
   {
@@ -2493,7 +2497,12 @@
     "home_team_id": "",
     "away_team_id": "jrlo-div1_11",
     "match_url": "https://league-one.jp/match/30086",
-    "broadcasters": [],
+    "broadcasters": [
+      "J SPORTS 1（録画）",
+      "J SPORTSオンデマンド",
+      "DAZN",
+      "Lemino"
+    ],
     "division": "div1"
   },
   {
@@ -2557,7 +2566,11 @@
     "home_team_id": "jrlo-div1_5",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/30096",
-    "broadcasters": [],
+    "broadcasters": [
+      "J SPORTS 2（録画）",
+      "J SPORTSオンデマンド",
+      "DAZN"
+    ],
     "division": "div1"
   },
   {
@@ -2575,7 +2588,12 @@
     "home_team_id": "jrlo-div1_11",
     "away_team_id": "",
     "match_url": "https://league-one.jp/match/30095",
-    "broadcasters": [],
+    "broadcasters": [
+      "J SPORTS 4",
+      "J SPORTSオンデマンド",
+      "DAZN",
+      "Lemino"
+    ],
     "division": "div1"
   },
   {
@@ -2633,7 +2651,7 @@
     "kickoff": "2026-06-07T15:05:00+09:00",
     "kickoff_utc": "2026-06-07T06:05:00Z",
     "timezone": "Asia/Tokyo",
-    "venue": "MUFGスタジアム（国立競技場） (東京都)",
+    "venue": "国立競技場 (東京都)",
     "home_team": "準決勝(1)勝者",
     "away_team": "準決勝(2)勝者",
     "home_team_id": "",

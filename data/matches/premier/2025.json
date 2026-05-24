@@ -1414,7 +1414,7 @@
     "competition_id": "premier",
     "season": "2026",
     "round": "16",
-    "status": "fixture",
+    "status": "result",
     "kickoff": "2026-05-17T14:00:00+00:00",
     "kickoff_utc": "2026-05-17T14:00:00Z",
     "timezone": "UTC",
