@@ -1,8 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+import re
 import time
 from typing import List, Dict, Any
+from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 from ..base import BaseScraper
 
@@ -47,6 +49,8 @@ class LeagueOneDivisionsScraper(BaseScraper):
         self.calendar_url = self.base_url + "/schedule/"
         self._team_logos_cache_by_comp = {}
         self.jst = ZoneInfo("Asia/Tokyo")
+        self._last_print_request_at = 0.0
+        self._print_request_interval_seconds = 1.0
         
     def _get_division(self, team_name: str) -> str:
         """チーム名からDivisionを判定
@@ -317,6 +321,7 @@ class LeagueOneDivisionsScraper(BaseScraper):
                 raw_date = self._format_date(date_element)
                 match_url = self._get_match_url(container) or ""
                 kickoff = self.parse_kickoff_datetime(raw_date, match_url)
+                schedule_details = self._extract_schedule_details(container)
                 
                 # divisionを事前に推定
                 inferred_div = self._find_division_near_container(container)
@@ -327,8 +332,8 @@ class LeagueOneDivisionsScraper(BaseScraper):
                 match_info = self.build_match(
                     competition_id=comp_id,  # 仮ID
                     season=str(datetime.now().year),
-                    round_name="",
-                    status="scheduled",
+                    round_name=schedule_details.get("round", ""),
+                    status=schedule_details.get("status", "scheduled"),
                     kickoff=kickoff,
                     timezone_name="Asia/Tokyo",
                     venue=venue_text,
@@ -340,6 +345,7 @@ class LeagueOneDivisionsScraper(BaseScraper):
                     away_team_id="",  # 後で設定
                 )
                 match_info["division"] = inferred_div
+                self._apply_optional_match_details(match_info, schedule_details)
                 matches.append(match_info)
                 
             except Exception as e:
@@ -347,6 +353,158 @@ class LeagueOneDivisionsScraper(BaseScraper):
                 continue
         
         return matches
+
+    def _extract_schedule_details(self, container) -> Dict[str, Any]:
+        details: Dict[str, Any] = {"status": "scheduled"}
+
+        title_element = container.find("h3", class_="ttl")
+        title_text = title_element.get_text(" ", strip=True) if title_element else ""
+        details.update(self._parse_title_metadata(title_text))
+
+        detail_link = container.find("a", class_="btn-match-detail")
+        detail_text = detail_link.get_text(" ", strip=True) if detail_link else ""
+        details["status"] = self._parse_status(detail_text)
+
+        scores = self._get_scores(container)
+        if scores:
+            details["home_score"], details["away_score"] = scores
+
+        if (
+            details.get("status") == "finished"
+            and details.get("round_number") is not None
+            and self._is_regular_season_match(title_text)
+        ):
+            print_details = self._fetch_print_match_details(self._get_match_url(container) or "")
+            details.update(print_details)
+
+        return details
+
+    def _apply_optional_match_details(self, match_info: Dict[str, Any], details: Dict[str, Any]) -> None:
+        optional_fields = [
+            "home_score",
+            "away_score",
+            "home_tries",
+            "away_tries",
+            "round_number",
+            "conference",
+            "official_match_code",
+        ]
+        for field in optional_fields:
+            value = details.get(field)
+            if value is not None and value != "":
+                match_info[field] = value
+
+    def _parse_title_metadata(self, title_text: str) -> Dict[str, Any]:
+        details: Dict[str, Any] = {}
+        if not title_text:
+            return details
+
+        round_match = re.search(r"第\s*(\d+)\s*節", title_text)
+        if round_match:
+            round_number = int(round_match.group(1))
+            details["round"] = str(round_number)
+            details["round_number"] = round_number
+
+        conference_match = re.search(r"カンファレンス\s*([A-ZＡ-Ｚ])", title_text)
+        if conference_match:
+            details["conference"] = self._normalize_fullwidth_ascii(conference_match.group(1))
+
+        code_matches = re.findall(r"\(([^()]+)\)", title_text)
+        if code_matches:
+            details["official_match_code"] = code_matches[-1].strip()
+
+        return details
+
+    def _normalize_fullwidth_ascii(self, value: str) -> str:
+        return value.translate(str.maketrans("ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ", "ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
+
+    def _parse_status(self, detail_text: str) -> str:
+        if "試合終了" in detail_text:
+            return "finished"
+        return "scheduled"
+
+    def _get_scores(self, container):
+        score_elements = container.select("li.home p.score, li.away p.score")
+        if len(score_elements) < 2:
+            return None
+
+        scores = []
+        for element in score_elements[:2]:
+            score_text = element.get_text(strip=True)
+            if not score_text or not score_text.isdigit():
+                return None
+            scores.append(int(score_text))
+        return tuple(scores)
+
+    def _is_regular_season_match(self, title_text: str) -> bool:
+        return "ディビジョン" in title_text and re.search(r"第\s*\d+\s*節", title_text) is not None
+
+    def _fetch_print_match_details(self, match_url: str) -> Dict[str, Any]:
+        if not match_url:
+            return {}
+
+        print_url = urljoin(match_url.rstrip("/") + "/", "print")
+        try:
+            response = None
+            for attempt in range(3):
+                self._throttle_print_request()
+                response = requests.get(
+                    print_url,
+                    headers={
+                        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                    },
+                    timeout=30,
+                )
+                self._last_print_request_at = time.monotonic()
+                if response.status_code == 200:
+                    break
+                if response.status_code != 429 or attempt == 2:
+                    return {}
+                time.sleep(10 * (attempt + 1))
+
+            if not response or response.status_code != 200:
+                return {}
+            soup = BeautifulSoup(response.content, "html.parser")
+            return self._parse_print_score_table(soup)
+        except Exception as e:
+            print(f"公式記録プリントページの取得に失敗: url='{print_url}' error='{e}'")
+            return {}
+
+    def _throttle_print_request(self) -> None:
+        elapsed = time.monotonic() - self._last_print_request_at
+        if elapsed < self._print_request_interval_seconds:
+            time.sleep(self._print_request_interval_seconds - elapsed)
+
+    def _parse_print_score_table(self, soup) -> Dict[str, Any]:
+        score_table = soup.find("table", class_="score")
+        if not score_table:
+            return {}
+
+        details: Dict[str, Any] = {}
+        for row in score_table.find_all("tr"):
+            label = row.find("th", class_="tp")
+            if not label:
+                continue
+
+            label_text = label.get_text(strip=True)
+            values = [self._parse_int(cell.get_text(strip=True)) for cell in row.find_all("td")]
+            if label_text == "T" and len(values) >= 4:
+                home_parts = values[:2]
+                away_parts = values[2:4]
+                if all(value is not None for value in home_parts):
+                    details["home_tries"] = sum(home_parts)
+                if all(value is not None for value in away_parts):
+                    details["away_tries"] = sum(away_parts)
+            elif label_text == "合計" and len(values) >= 2:
+                if values[0] is not None:
+                    details["home_score"] = values[0]
+                if values[1] is not None:
+                    details["away_score"] = values[1]
+
+        return details
+
+    def _parse_int(self, value: str):
+        return int(value) if value and value.isdigit() else None
 
     def _get_team_logo_url(self, team_element) -> str:
         if not team_element:
