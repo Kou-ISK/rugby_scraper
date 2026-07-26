@@ -184,6 +184,7 @@ python -m src.main <comp_id>
 - `srp`: Super Rugby Pacific
 - `trc`: The Rugby Championship
 - `ans`: Autumn Nations Series
+- `nc`: Nations Championship
 - `wr`: World Rugby Internationals
 
 ### サービス実行

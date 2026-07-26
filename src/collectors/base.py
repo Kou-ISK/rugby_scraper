@@ -27,6 +27,7 @@ class BaseScraper(ABC):
         "u6n": "U20",    # Six Nations U20 → U20
         "trc": "M",      # The Rugby Championship → M
         "ans": "M",      # Autumn Nations Series → M
+        "nc": "M",       # Nations Championship → M
         "wr": "M",       # World Rugby Internationals → M (混合の場合は個別判定)
     }
     

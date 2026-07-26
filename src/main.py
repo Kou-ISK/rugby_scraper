@@ -7,6 +7,7 @@ from src.collectors.international import (
     SixNationsU20Scraper,
     RugbyChampionshipScraper,
     AutumnNationsSeriesScraper,
+    NationsChampionshipScraper,
     WorldRugbyInternationalsScraper,
 )
 
@@ -26,6 +27,7 @@ def scrape_command(scraper_type):
         "wr": WorldRugbyInternationalsScraper(),
         "trc": RugbyChampionshipScraper(),
         "ans": AutumnNationsSeriesScraper(),
+        "nc": NationsChampionshipScraper(),
     }
     
     if scraper_type not in scrapers:

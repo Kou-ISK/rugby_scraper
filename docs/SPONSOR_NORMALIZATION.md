@@ -109,6 +109,7 @@ python3 scripts/test_dynamic_sponsor_detection.py
 - `u6n`: Six Nations U20
 - `trc`: The Rugby Championship
 - `ans`: Autumn Nations Series
+- `nc`: Nations Championship
 - `wr`: World Rugby Internationals
 
 ### 同名チームの扱い

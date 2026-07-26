@@ -490,6 +490,7 @@ export type CompetitionId =
   | 'srp' // Super Rugby Pacific
   | 'trc' // The Rugby Championship
   | 'ans' // Autumn Nations Series
+  | 'nc' // Nations Championship
   | 'wr'; // World Rugby Internationals
 
 /**
@@ -507,6 +508,7 @@ export type LegacyCompetitionId =
   | 'super-rugby-pacific'
   | 'rugby-championship'
   | 'autumn-nations-series'
+  | 'nations-championship'
   | 'world-rugby-internationals'
   | 'gp'
   | 'ecc'

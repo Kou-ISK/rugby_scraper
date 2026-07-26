@@ -11,6 +11,7 @@ COMPETITIONS=(
     "urc:United Rugby Championship"
     "trc:The Rugby Championship"  
     "ans:Autumn Nations Series"
+    "nc:Nations Championship"
     "srp:Super Rugby Pacific"
     "epcr-champions:EPCR Champions Cup"
     "epcr-challenge:EPCR Challenge Cup"

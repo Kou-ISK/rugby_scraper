@@ -84,6 +84,7 @@ scripts/
 - `srp`: Super Rugby Pacific
 - `trc`: The Rugby Championship
 - `ans`: Autumn Nations Series
+- `nc`: Nations Championship
 - `wr`: World Rugby Internationals
 
 **チームID**: 形式
@@ -256,6 +257,7 @@ python -m src.main w6n    # Women's Six Nations
 python -m src.main u6n    # Six Nations U20
 python -m src.main trc    # The Rugby Championship
 python -m src.main ans    # Autumn Nations Series
+python -m src.main nc     # Nations Championship
 python -m src.main wr     # World Rugby Internationals
 
 # 欧州大会

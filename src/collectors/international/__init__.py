@@ -3,6 +3,7 @@
 from .six_nations import SixNationsScraper, SixNationsWomensScraper, SixNationsU20Scraper
 from .rugby_championship import RugbyChampionshipScraper
 from .autumn_nations import AutumnNationsSeriesScraper
+from .nations_championship import NationsChampionshipScraper
 from .world_rugby import WorldRugbyInternationalsScraper
 
 __all__ = [
@@ -11,5 +12,6 @@ __all__ = [
     "SixNationsU20Scraper",
     "RugbyChampionshipScraper",
     "AutumnNationsSeriesScraper",
+    "NationsChampionshipScraper",
     "WorldRugbyInternationalsScraper",
 ]

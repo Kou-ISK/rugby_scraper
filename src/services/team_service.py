@@ -45,6 +45,7 @@ COMPETITION_IDS = {
     "super-rugby-pacific": "srp",
     "rugby-championship": "trc",
     "autumn-nations-series": "ans",
+    "nations-championship": "nc",
     "wr": "wr",
 }
 
@@ -55,6 +56,7 @@ INTERNATIONAL_COMPETITIONS = {
     "u6n": "U20",    # Six Nations U20
     "trc": "M",      # The Rugby Championship
     "ans": "M",      # Autumn Nations Series
+    "nc": "M",       # Nations Championship
     "wr": "M",       # World Rugby Internationals
 }
 

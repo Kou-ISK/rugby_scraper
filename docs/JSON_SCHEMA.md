@@ -487,6 +487,7 @@ itsuneru が参照可能な大会IDとそのデータパス：
 | `srp`             | `data/matches/srp`                | Super Rugby Pacific           |
 | `trc`             | `data/matches/trc`                | The Rugby Championship        |
 | `ans`             | `data/matches/ans`                | Autumn Nations Series         |
+| `nc`              | `data/matches/nc`                 | Nations Championship          |
 | `wr`              | `data/matches/wr`                 | World Rugby Internationals    |
 
 ---

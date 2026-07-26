@@ -23,6 +23,7 @@ PENDING_COMPETITIONS=(
     "srp"
     "trc"
     "ans"
+    "nc"
 )
 
 # 成功した大会をスキップして確認のみ
