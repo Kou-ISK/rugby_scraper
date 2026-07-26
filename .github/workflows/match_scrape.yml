@@ -32,6 +32,7 @@ on:
           - wr
           - trc
           - ans
+          - nc
 
 permissions:
   contents: write
