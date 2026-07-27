@@ -1,6 +1,8 @@
+import json
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timedelta
+from pathlib import Path
 import re
 import time
 from typing import List, Dict, Any
@@ -42,6 +44,16 @@ class LeagueOneDivisionsScraper(BaseScraper):
         "中国電力レッドレグリオンズ", "ながと BLUE ANGELS",
         "狭山セコムラガッツ",  # 2025-2026シーズン追加
     }
+
+    OPTIONAL_MATCH_DETAIL_FIELDS = (
+        "home_score",
+        "away_score",
+        "home_tries",
+        "away_tries",
+        "round_number",
+        "conference",
+        "official_match_code",
+    )
     
     def __init__(self):
         super().__init__()
@@ -51,6 +63,8 @@ class LeagueOneDivisionsScraper(BaseScraper):
         self.jst = ZoneInfo("Asia/Tokyo")
         self._last_print_request_at = 0.0
         self._print_request_interval_seconds = 1.0
+        self._print_detail_lookback_days = 14
+        self._existing_match_details = {}
         
     def _get_division(self, team_name: str) -> str:
         """チーム名からDivisionを判定
@@ -126,6 +140,8 @@ class LeagueOneDivisionsScraper(BaseScraper):
             all_matches = []
             current_date = datetime.now()
             year = str(current_date.year - 1) if current_date.month < 12 else str(current_date.year)
+            season = str(int(year) + 1)  # 2025年開始 → 2026シーズン
+            self._load_existing_match_details(season)
             
             url = f"{self.calendar_url}?year={year}"
             headers = {
@@ -258,7 +274,6 @@ class LeagueOneDivisionsScraper(BaseScraper):
             div3_matches = self.assign_match_ids(div3_matches)
             
             # ファイル保存
-            season = str(int(year) + 1)  # 2025年開始 → 2026シーズン
             if div1_matches:
                 self.save_to_json(div1_matches, f"jrlo-div1/{season}")
             if div2_matches:
@@ -321,7 +336,9 @@ class LeagueOneDivisionsScraper(BaseScraper):
                 raw_date = self._format_date(date_element)
                 match_url = self._get_match_url(container) or ""
                 kickoff = self.parse_kickoff_datetime(raw_date, match_url)
-                schedule_details = self._extract_schedule_details(container)
+                schedule_details = self._extract_schedule_details(
+                    container, kickoff, match_url
+                )
                 
                 # divisionを事前に推定
                 inferred_div = self._find_division_near_container(container)
@@ -354,8 +371,13 @@ class LeagueOneDivisionsScraper(BaseScraper):
         
         return matches
 
-    def _extract_schedule_details(self, container) -> Dict[str, Any]:
-        details: Dict[str, Any] = {"status": "scheduled"}
+    def _extract_schedule_details(
+        self, container, kickoff=None, match_url: str = ""
+    ) -> Dict[str, Any]:
+        details: Dict[str, Any] = dict(
+            self._existing_match_details.get(match_url, {})
+        )
+        details["status"] = "scheduled"
 
         title_element = container.find("h3", class_="ttl")
         title_text = title_element.get_text(" ", strip=True) if title_element else ""
@@ -373,26 +395,64 @@ class LeagueOneDivisionsScraper(BaseScraper):
             details.get("status") == "finished"
             and details.get("round_number") is not None
             and self._is_regular_season_match(title_text)
+            and self._should_fetch_print_match_details(kickoff)
         ):
-            print_details = self._fetch_print_match_details(self._get_match_url(container) or "")
+            print_details = self._fetch_print_match_details(match_url)
             details.update(print_details)
 
         return details
 
     def _apply_optional_match_details(self, match_info: Dict[str, Any], details: Dict[str, Any]) -> None:
-        optional_fields = [
-            "home_score",
-            "away_score",
-            "home_tries",
-            "away_tries",
-            "round_number",
-            "conference",
-            "official_match_code",
-        ]
-        for field in optional_fields:
+        for field in self.OPTIONAL_MATCH_DETAIL_FIELDS:
             value = details.get(field)
             if value is not None and value != "":
                 match_info[field] = value
+
+    def _load_existing_match_details(self, season: str) -> None:
+        """Reuse optional details so historical print pages are not fetched weekly."""
+        details_by_url = {}
+        for division in ("jrlo-div1", "jrlo-div2", "jrlo-div3"):
+            path = Path(self.output_dir) / division / f"{season}.json"
+            if not path.exists():
+                continue
+            try:
+                with path.open("r", encoding="utf-8") as file:
+                    matches = json.load(file)
+            except (OSError, json.JSONDecodeError) as error:
+                print(f"既存JRLOデータの読み込みに失敗: path='{path}' error='{error}'")
+                continue
+
+            if not isinstance(matches, list):
+                continue
+            for match in matches:
+                if not isinstance(match, dict):
+                    continue
+                match_url = match.get("match_url", "")
+                if not match_url:
+                    continue
+                cached = {
+                    field: match[field]
+                    for field in self.OPTIONAL_MATCH_DETAIL_FIELDS
+                    if match.get(field) is not None and match.get(field) != ""
+                }
+                if cached:
+                    details_by_url[match_url] = cached
+
+        self._existing_match_details = details_by_url
+        if details_by_url:
+            print(f"既存JRLO詳細データを{len(details_by_url)}試合分再利用")
+
+    def _should_fetch_print_match_details(self, kickoff) -> bool:
+        """Fetch secondary detail pages only for recently completed matches."""
+        if not isinstance(kickoff, datetime):
+            return False
+        now = self._now()
+        if kickoff.tzinfo is None:
+            kickoff = kickoff.replace(tzinfo=self.jst)
+        age = now - kickoff.astimezone(self.jst)
+        return timedelta(0) <= age <= timedelta(
+            days=self._print_detail_lookback_days
+        )
 
     def _parse_title_metadata(self, title_text: str) -> Dict[str, Any]:
         details: Dict[str, Any] = {}

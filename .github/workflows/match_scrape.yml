@@ -47,7 +47,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref }}
           persist-credentials: true
           fetch-depth: 0
 
@@ -55,7 +55,6 @@ jobs:
         run: |
           git fetch origin data:data
           git checkout data -- data/ || mkdir -p data/matches
-          git checkout main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -73,6 +72,8 @@ jobs:
           sudo apt-get install -y google-chrome-stable
 
       - name: Run scrapers
+        id: scrape
+        continue-on-error: true
         env:
           PYTHONPATH: .
         run: |
@@ -83,9 +84,17 @@ jobs:
           fi
 
       - name: Generate competitions summary
+        if: always()
         run: |
           python -m src.main generate-metadata
 
       - name: Commit and push changes to data branch
+        if: always()
         run: |
           scripts/automation/push_data_branch.sh "Update match data - $(date +'%Y-%m-%d %H:%M:%S')"
+
+      - name: Report scraper failures
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "One or more scrapers failed. Successful results were still published."
+          exit 1

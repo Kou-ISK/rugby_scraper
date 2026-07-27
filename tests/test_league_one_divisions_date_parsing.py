@@ -37,6 +37,15 @@ class LeagueOneDivisionsDateParsingTests(unittest.TestCase):
         )
         self.assertIsNone(kickoff)
 
+    def test_fetches_print_details_only_within_lookback_window(self):
+        recent = datetime(2026, 2, 20, 9, 0, tzinfo=self.scraper.jst)
+        old = datetime(2026, 2, 14, 8, 59, tzinfo=self.scraper.jst)
+        future = datetime(2026, 3, 2, 9, 0, tzinfo=self.scraper.jst)
+
+        self.assertTrue(self.scraper._should_fetch_print_match_details(recent))
+        self.assertFalse(self.scraper._should_fetch_print_match_details(old))
+        self.assertFalse(self.scraper._should_fetch_print_match_details(future))
+
 
 if __name__ == "__main__":
     unittest.main()
