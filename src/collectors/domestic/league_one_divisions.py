@@ -148,8 +148,8 @@ class LeagueOneDivisionsScraper(BaseScraper):
                 "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
             }
             self.current_url = url
-            response = requests.get(url, headers=headers, timeout=30)
-            if response.status_code != 200:
+            response = self._fetch_schedule_page(url, headers)
+            if response is None:
                 print(f"ページの取得に失敗: {url}")
                 return None
             
@@ -293,6 +293,33 @@ class LeagueOneDivisionsScraper(BaseScraper):
             import traceback
             print(traceback.format_exc())
             return None
+
+    def _fetch_schedule_page(self, url: str, headers: Dict[str, str]):
+        """Retry transient connection failures without consuming the 5-minute budget."""
+        max_attempts = 3
+        for attempt in range(1, max_attempts + 1):
+            try:
+                response = requests.get(
+                    url,
+                    headers=headers,
+                    timeout=(10, 30),
+                )
+                if response.status_code == 200:
+                    return response
+                print(
+                    f"JRLO日程ページ取得失敗: status={response.status_code} "
+                    f"attempt={attempt}/{max_attempts}"
+                )
+            except requests.RequestException as error:
+                print(
+                    f"JRLO日程ページ接続失敗: attempt={attempt}/{max_attempts} "
+                    f"error='{error}'"
+                )
+
+            if attempt < max_attempts:
+                time.sleep(2 ** (attempt - 1))
+
+        return None
 
     def _extract_matches(self, soup) -> List[Dict[str, Any]]:
         matches = []

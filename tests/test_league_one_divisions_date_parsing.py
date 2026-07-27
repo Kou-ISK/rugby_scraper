@@ -1,5 +1,8 @@
 import unittest
 from datetime import datetime
+from unittest.mock import Mock, patch
+
+import requests
 
 from src.collectors.domestic.league_one_divisions import LeagueOneDivisionsScraper
 
@@ -45,6 +48,26 @@ class LeagueOneDivisionsDateParsingTests(unittest.TestCase):
         self.assertTrue(self.scraper._should_fetch_print_match_details(recent))
         self.assertFalse(self.scraper._should_fetch_print_match_details(old))
         self.assertFalse(self.scraper._should_fetch_print_match_details(future))
+
+    @patch("src.collectors.domestic.league_one_divisions.time.sleep")
+    @patch("src.collectors.domestic.league_one_divisions.requests.get")
+    def test_schedule_page_retries_transient_connection_failure(
+        self, get_mock, sleep_mock
+    ):
+        successful_response = Mock(status_code=200)
+        get_mock.side_effect = [
+            requests.ConnectTimeout("temporary timeout"),
+            successful_response,
+        ]
+
+        response = self.scraper._fetch_schedule_page(
+            "https://league-one.jp/schedule/", {"User-Agent": "test"}
+        )
+
+        self.assertIs(successful_response, response)
+        self.assertEqual(2, get_mock.call_count)
+        sleep_mock.assert_called_once_with(1)
+        self.assertEqual((10, 30), get_mock.call_args.kwargs["timeout"])
 
 
 if __name__ == "__main__":
