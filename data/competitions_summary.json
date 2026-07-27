@@ -96,7 +96,7 @@
         "start": "2026-02-05T21:10:00+01:00",
         "end": "2026-03-14T21:10:00+01:00"
       },
-      "last_updated": "2026-07-27T01:28:42.413749"
+      "last_updated": "2026-07-27T01:34:01.688452"
     }
   },
   {
@@ -164,7 +164,7 @@
         "start": "2026-04-11T11:25:00+02:00",
         "end": "2026-05-17T15:45:00+02:00"
       },
-      "last_updated": "2026-07-27T01:28:42.417750"
+      "last_updated": "2026-07-27T01:34:15.827639"
     }
   },
   {
@@ -232,7 +232,7 @@
         "start": "2026-02-06T20:15:00+01:00",
         "end": "2026-03-15T18:45:00+01:00"
       },
-      "last_updated": "2026-07-27T01:28:42.415750"
+      "last_updated": "2026-07-27T01:34:30.019231"
     }
   },
   {
@@ -293,25 +293,25 @@
     },
     "teams": [
       "ASM Clermont Auvergne",
-      "Aviron Bayonnais",
       "Bath Rugby",
       "Bristol Bears",
-      "Castres Olympique",
+      "Cardiff Rugby",
+      "Connacht Rugby",
       "DHL Stormers",
-      "Edinburgh Rugby",
+      "Exeter Chiefs",
       "Glasgow Warriors",
       "Gloucester Rugby",
-      "Harlequins",
-      "Hollywoodbets Sharks",
       "Leicester Tigers",
       "Leinster Rugby",
+      "Lions",
+      "Montpellier",
       "Munster Rugby",
       "Northampton Saints",
-      "RC Toulon",
+      "Racing 92",
       "Sale Sharks",
       "Saracens",
-      "Scarlets",
       "Section Paloise",
+      "Stade Français Paris",
       "Stade Rochelais",
       "Stade Toulousain",
       "Union Bordeaux Bègles",
@@ -323,10 +323,10 @@
         "2026"
       ],
       "date_range": {
-        "start": "2025-05-12T20:00:00+00:00",
-        "end": "2026-12-04T14:00:00+00:00"
+        "start": "2026-10-16T19:00:00+00:00",
+        "end": "2027-10-01T17:30:00+00:00"
       },
-      "last_updated": "2026-07-27T01:28:42.410749"
+      "last_updated": "2026-07-27T01:32:37.014552"
     }
   },
   {
@@ -385,27 +385,23 @@
       "notes": "Broadcasting rights vary by region. Check EPCR official site for regional availability."
     },
     "teams": [
+      "Bayonne",
       "Benetton Rugby",
       "Black Lion",
-      "Cardiff Rugby",
-      "Connacht Rugby",
+      "Castres Olympique",
       "Dragons RFC",
-      "Exeter Chiefs",
+      "Edinburgh Rugby",
+      "Harlequins",
       "Hollywoodbets Sharks",
-      "La Rochelle",
-      "Lions",
       "Lyon Olympique Universitaire",
-      "Montpellier Hérault Rugby",
-      "Munster Rugby",
       "Newcastle Red Bulls",
       "Ospreys",
-      "Pau",
-      "Racing 92",
-      "Stade Français Paris",
+      "Scarlets",
+      "Toulon",
       "Toyota Cheetahs",
-      "US Montauban",
       "USAP",
       "Ulster Rugby",
+      "Vannes",
       "Zebre Parma"
     ],
     "data_summary": {
@@ -414,10 +410,10 @@
         "2026"
       ],
       "date_range": {
-        "start": "2025-05-12T20:00:00+00:00",
-        "end": "2026-12-04T11:30:00+00:00"
+        "start": "2026-10-16T19:00:00+00:00",
+        "end": "2027-10-01T17:30:00+00:00"
       },
-      "last_updated": "2026-07-27T01:28:42.409750"
+      "last_updated": "2026-07-27T01:32:45.085448"
     }
   },
   {
@@ -482,12 +478,12 @@
       "LOU Rugby",
       "Montpellier Hérault Rugby",
       "RC Toulon",
+      "RC Vannes",
       "Racing 92",
       "Section Paloise",
       "Stade Français Paris",
       "Stade Rochelais",
       "Stade Toulousain",
-      "US Montauban",
       "USA Perpignan",
       "Union Bordeaux-Bègles"
     ],
@@ -500,7 +496,7 @@
         "start": "",
         "end": ""
       },
-      "last_updated": "2026-07-27T01:28:42.414750"
+      "last_updated": "2026-07-27T01:32:46.792518"
     }
   },
   {
@@ -578,7 +574,7 @@
         "start": "2025-12-13T13:00:00+09:00",
         "end": "2026-06-07T15:05:00+09:00"
       },
-      "last_updated": "2026-07-27T01:29:10.788898"
+      "last_updated": "2026-07-27T01:31:42.938574"
     }
   },
   {
@@ -652,7 +648,7 @@
         "start": "2025-12-13T12:00:00+09:00",
         "end": "2026-05-31T14:30:00+09:00"
       },
-      "last_updated": "2026-07-27T01:29:10.797899"
+      "last_updated": "2026-07-27T01:31:42.939574"
     }
   },
   {
@@ -722,7 +718,7 @@
         "start": "2025-12-13T12:00:00+09:00",
         "end": "2026-05-10T13:00:00+09:00"
       },
-      "last_updated": "2026-07-27T01:29:10.807078"
+      "last_updated": "2026-07-27T01:31:42.547572"
     }
   },
   {
@@ -798,7 +794,7 @@
         "start": "2025-03-10T18:45:00+00:00",
         "end": "2026-10-05T14:30:00+00:00"
       },
-      "last_updated": "2026-07-27T01:28:42.413749"
+      "last_updated": "2026-07-27T01:31:42.941574"
     }
   },
   {
@@ -885,16 +881,17 @@
       "Zebre Parma"
     ],
     "data_summary": {
-      "match_count": 151,
+      "match_count": 302,
       "seasons": [
         "2025",
-        "2026"
+        "2026",
+        "2027"
       ],
       "date_range": {
         "start": "2025-03-10T17:00:00+00:00",
-        "end": "2026-09-05T18:45:00+00:00"
+        "end": "2027-08-05T18:45:00+00:00"
       },
-      "last_updated": "2026-07-27T01:28:42.417750"
+      "last_updated": "2026-07-27T01:32:18.445508"
     }
   },
   {
@@ -992,7 +989,7 @@
         "start": "2026-02-13T19:05:00+13:00",
         "end": "2026-05-30T17:35:00+08:00"
       },
-      "last_updated": "2026-07-27T01:28:42.413749"
+      "last_updated": "2026-07-27T01:32:24.387672"
     }
   },
   {
@@ -1066,7 +1063,7 @@
         "start": "2026-04-25T15:30:00+12:00",
         "end": "2026-06-13T15:00:00+09:00"
       },
-      "last_updated": "2026-07-27T01:28:42.415750"
+      "last_updated": "2026-07-27T01:31:42.943574"
     }
   },
   {
@@ -1186,42 +1183,53 @@
     },
     "teams": [
       "Argentina",
+      "Argentina XV",
       "Australia",
+      "Australia XV",
       "Barbarians",
       "Barbarians Women",
+      "Black Ferns XV",
       "Canada",
       "England",
       "Fiji",
       "France",
-      "Hong Kong China",
       "Ireland",
       "Italy",
       "Japan",
       "Japan XV",
-      "Korea",
+      "Loser M1",
+      "Loser M2",
       "Maori All Blacks",
+      "NTH 1st",
+      "NTH 2nd",
+      "NTH 3rd",
+      "NTH 4th",
+      "NTH 5th",
+      "NTH 6th",
       "New Zealand",
-      "Qatar",
-      "Samoa",
-      "Saudi Arabia",
+      "STH 1st",
+      "STH 2nd",
+      "STH 3rd",
+      "STH 4th",
+      "STH 5th",
+      "STH 6th",
       "Scotland",
       "South Africa",
-      "South Africa A",
-      "Sri Lanka",
       "USA",
       "Wales",
-      "Zimbabwe"
+      "Winner M1",
+      "Winner M2"
     ],
     "data_summary": {
-      "match_count": 55,
+      "match_count": 67,
       "seasons": [
         "2026"
       ],
       "date_range": {
-        "start": "2026-04-25T15:30:00+12:00",
-        "end": "2026-11-21T20:10:00+00:00"
+        "start": "2026-06-27T19:05:00+09:00",
+        "end": "2027-09-18T00:00:00+10:00"
       },
-      "last_updated": "2026-07-27T01:28:42.417750"
+      "last_updated": "2026-07-27T01:32:14.148649"
     }
   }
 ]
