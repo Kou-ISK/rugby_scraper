@@ -1,0 +1,85 @@
+[
+  {
+    "name": "fixed-offset-mismatch",
+    "valid": false,
+    "change": {
+      "timezone": "UTC+09:00"
+    }
+  },
+  {
+    "name": "fixed-offset-hour-range",
+    "valid": false,
+    "change": {
+      "timezone": "UTC+99:99"
+    }
+  },
+  {
+    "name": "fixed-offset-minute-range",
+    "valid": false,
+    "change": {
+      "timezone": "UTC+01:99"
+    }
+  },
+  {
+    "name": "unknown-malformed-date",
+    "valid": false,
+    "unknown": true,
+    "change": {
+      "kickoff_date": "not-a-date"
+    }
+  },
+  {
+    "name": "unknown-impossible-date",
+    "valid": false,
+    "unknown": true,
+    "change": {
+      "kickoff_date": "2026-02-30"
+    }
+  },
+  {
+    "name": "local-offset-minute-range",
+    "valid": false,
+    "change": {
+      "kickoff": "2026-10-02T19:45:00+01:99"
+    }
+  },
+  {
+    "name": "dst-missing-hour-contract",
+    "valid": false,
+    "change": {
+      "kickoff": "2026-03-29T01:30:00+00:00",
+      "kickoff_utc": "2026-03-29T01:30:00Z"
+    }
+  },
+  {
+    "name": "explicit-offset-contract",
+    "valid": true,
+    "change": {
+      "timezone": "UTC+01:00"
+    }
+  },
+  {
+    "name": "dst-first-hour-contract",
+    "valid": true,
+    "change": {
+      "kickoff": "2026-10-25T01:30:00+01:00",
+      "kickoff_utc": "2026-10-25T00:30:00Z"
+    }
+  },
+  {
+    "name": "dst-second-hour-contract",
+    "valid": true,
+    "change": {
+      "kickoff": "2026-10-25T01:30:00+00:00",
+      "kickoff_utc": "2026-10-25T01:30:00Z"
+    }
+  },
+  {
+    "name": "unknown-valid-date-contract",
+    "valid": true,
+    "unknown": true,
+    "change": {
+      "kickoff_date": "2026-10-03"
+    }
+  }
+]

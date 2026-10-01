@@ -300,6 +300,38 @@ class PublicationReliabilityTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     validate_match_file(self.path)
 
+    def test_shared_consumer_datetime_contract(self):
+        cases = json.loads((Path(__file__).parent / "fixtures/datetime-contract.json").read_text())
+        for case in cases:
+            with self.subTest(case=case["name"]):
+                candidate = fixture(source_id=case["name"], kickoff="2026-10-02T19:45:00+01:00")
+                candidate["match_id"] = "contract-" + case["name"]
+                candidate.update(kickoff="2026-10-02T19:45:00+01:00", kickoff_utc="2026-10-02T18:45:00Z", timezone="Europe/London")
+                if case.get("unknown"):
+                    candidate.update(kickoff="", kickoff_utc="")
+                candidate.update(case["change"])
+                write_json_atomic(self.path, [fixture(source_id="known-control"), candidate])
+                if case["valid"]:
+                    self.assertEqual(2, validate_match_file(self.path)["match_count"])
+                else:
+                    with self.assertRaises(ValueError):
+                        validate_match_file(self.path)
+
+    def test_invalid_contract_records_never_replace_verified_last_good(self):
+        collect_source("urc", self.data_dir, self.health, run=self.fake_run([fixture()]))
+        before = self.path.read_bytes()
+        verified = copy.deepcopy(self.health["files"])
+        for change in [{"timezone": "UTC+99:99"}, {"timezone": "UTC+09:00"},
+                       {"kickoff": "", "kickoff_utc": "", "kickoff_date": "not-a-date"}]:
+            with self.subTest(change=change):
+                bad = fixture(source_id="invalid-record")
+                bad["match_id"] = "invalid-record"
+                bad.update(change)
+                result = collect_source("urc", self.data_dir, self.health, run=self.fake_run([fixture(), bad]))
+                self.assertEqual("failed", result["outcome"])
+                self.assertEqual(before, self.path.read_bytes())
+                self.assertEqual(verified, self.health["files"])
+
     def test_second_invalid_file_rejects_the_whole_source_without_promoting_first(self):
         before = self.path.read_bytes()
         def run(command, *, env, **kwargs):

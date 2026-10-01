@@ -6,11 +6,12 @@ disk (and in Git history), but their plausible-looking dates are not promoted.
 
 import hashlib
 import json
-from datetime import datetime, timezone
+import re
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-VALIDATION_VERSION = 2
+VALIDATION_VERSION = 3
 
 
 def utc_now():
@@ -37,14 +38,47 @@ def write_json_atomic(path, value):
 
 
 def parse_instant(value):
-    if not value or not isinstance(value, str):
+    if not isinstance(value, str) or not re.fullmatch(
+        r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})", value
+    ):
         raise ValueError("Kickoff is missing or is not an ISO string")
+    offset = re.search(r"([+-])(\d{2}):(\d{2})$", value)
+    if offset and (int(offset[2]) > 23 or int(offset[3]) > 59):
+        raise ValueError("Kickoff offset is outside the supported range")
     dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
     if dt.tzinfo is None:
         raise ValueError("Kickoff has no timezone offset")
+    dt = dt.astimezone(timezone.utc)
     if not 2000 <= dt.year <= 2100:
         raise ValueError("Kickoff year is outside the supported range")
-    return dt.astimezone(timezone.utc)
+    return dt
+
+
+def valid_calendar_date(value):
+    if not isinstance(value, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        return False
+    try:
+        date.fromisoformat(value)
+        return True
+    except ValueError:
+        return False
+
+
+def source_timezone(value):
+    if not isinstance(value, str) or not value:
+        raise ValueError("Source timezone is missing")
+    if value in ("UTC", "GMT", "Z"):
+        return timezone.utc
+    offset = re.fullmatch(r"(?:UTC|GMT)?([+-])(\d{2}):(\d{2})", value)
+    if offset:
+        if int(offset[2]) > 23 or int(offset[3]) > 59:
+            raise ValueError("Source timezone offset is outside the supported range")
+        minutes = (int(offset[2]) * 60 + int(offset[3])) * (1 if offset[1] == "+" else -1)
+        return timezone(timedelta(minutes=minutes))
+    try:
+        return ZoneInfo(value)
+    except (ZoneInfoNotFoundError, ValueError) as exc:
+        raise ValueError("Invalid source timezone") from exc
 
 
 def validate_match_file(path, competition_id=None):
@@ -75,7 +109,10 @@ def validate_match_file(path, competition_id=None):
         if not isinstance(match.get("broadcasters"), list):
             raise ValueError(f"{prefix}: broadcasters must be an array")
         local, utc = match.get("kickoff"), match.get("kickoff_utc")
-        if bool(local) != bool(utc):
+        date_only = valid_calendar_date(local)
+        if match.get("kickoff_date") and not valid_calendar_date(match["kickoff_date"]):
+            raise ValueError(f"{prefix}: invalid unknown kickoff date")
+        if bool(local) != bool(utc) and not (date_only and not utc):
             raise ValueError(f"{prefix}: local and UTC kickoffs must both be known or unknown")
         if not utc:
             unknown += 1
@@ -85,17 +122,10 @@ def validate_match_file(path, competition_id=None):
             raise ValueError(f"{prefix}: local and UTC kickoffs disagree")
         if not str(utc).endswith("Z"):
             raise ValueError(f"{prefix}: kickoff_utc must use the UTC Z suffix")
-        tz_name = match.get("timezone") or ""
-        try:
-            tz = ZoneInfo(tz_name)
-        except (ZoneInfoNotFoundError, ValueError):
-            # Some official APIs expose only an explicit venue offset.
-            if tz_name != "UTC" and not __import__("re").fullmatch(r"(?:UTC)?[+-]\d{2}:\d{2}", tz_name):
-                raise ValueError(f"{prefix}: invalid source timezone")
-        else:
-            given = datetime.fromisoformat(local.replace("Z", "+00:00"))
-            if given.utcoffset() != local_instant.astimezone(tz).utcoffset():
-                raise ValueError(f"{prefix}: kickoff offset disagrees with IANA timezone")
+        tz = source_timezone(match.get("timezone"))
+        given = datetime.fromisoformat(local.replace("Z", "+00:00"))
+        if given.utcoffset() != local_instant.astimezone(tz).utcoffset():
+            raise ValueError(f"{prefix}: kickoff offset disagrees with source timezone")
         dates.append(utc_instant.isoformat().replace("+00:00", "Z"))
     if not dates:
         raise ValueError("No usable kickoffs were collected; preserve the last known good file")

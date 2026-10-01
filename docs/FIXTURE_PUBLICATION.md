@@ -35,6 +35,14 @@ the corrected collector and validation accepted that content. It does not mean
 the organizer cannot reschedule a match or that broadcasting rights are final.
 Unknown times remain unknown. They are excluded from calendar/timeline placement.
 
+Validation version 3 requires strict ISO kickoff strings, valid clock/calendar
+fields, offsets with hours 00-23 and minutes 00-59, identical local/UTC instants,
+and an exact match between the kickoff offset and its IANA or fixed source timezone.
+An optional unknown-kickoff date must be a real YYYY-MM-DD calendar date. The
+consumer and producer run the same `tests/fixtures/datetime-contract.json`
+negative/positive cases. Invalid records reject staged publication and preserve
+the verified last-good file; old validation versions require recollection.
+
 `coverage.date_range` contains UTC `start`/`end` or empty strings when unavailable.
 Counts obey `known_kickoffs + unknown_kickoffs = match_count`. The same verified
 paths and dynamic summary are written to `competitions.json` and
