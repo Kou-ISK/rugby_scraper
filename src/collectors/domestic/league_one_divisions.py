@@ -1,12 +1,15 @@
+import json
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timedelta
+from pathlib import Path
 import re
 import time
 from typing import List, Dict, Any
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 from ..base import BaseScraper
+from ...services.fixture_publication import write_json_atomic, valid_calendar_date
 
 class LeagueOneDivisionsScraper(BaseScraper):
     """Japan Rugby League One scraper with Division support.
@@ -16,6 +19,7 @@ class LeagueOneDivisionsScraper(BaseScraper):
     - jrlo-div2/2026.json
     - jrlo-div3/2026.json
     """
+    IDENTITY_PROVIDER = "league-one"
     
     # Division 1のチーム（2025-2026シーズン）
     DIVISION_1_TEAMS = {
@@ -42,8 +46,18 @@ class LeagueOneDivisionsScraper(BaseScraper):
         "中国電力レッドレグリオンズ", "ながと BLUE ANGELS",
         "狭山セコムラガッツ",  # 2025-2026シーズン追加
     }
+
+    OPTIONAL_MATCH_DETAIL_FIELDS = (
+        "home_score",
+        "away_score",
+        "home_tries",
+        "away_tries",
+        "round_number",
+        "conference",
+        "official_match_code",
+    )
     
-    def __init__(self):
+    def __init__(self, *, enrich_details: bool = False):
         super().__init__()
         self.base_url = "https://league-one.jp"
         self.calendar_url = self.base_url + "/schedule/"
@@ -51,6 +65,12 @@ class LeagueOneDivisionsScraper(BaseScraper):
         self.jst = ZoneInfo("Asia/Tokyo")
         self._last_print_request_at = 0.0
         self._print_request_interval_seconds = 1.0
+        self._print_detail_lookback_days = 14
+        self._existing_match_details = {}
+        self.enrich_details = enrich_details
+        self._enrichment_deadline = 0.0
+        self._print_requests_remaining = 8
+        self._schedule_start_year = None
         
     def _get_division(self, team_name: str) -> str:
         """チーム名からDivisionを判定
@@ -124,20 +144,26 @@ class LeagueOneDivisionsScraper(BaseScraper):
         try:
             # 全試合を取得
             all_matches = []
-            current_date = datetime.now()
-            year = str(current_date.year - 1) if current_date.month < 12 else str(current_date.year)
-            
-            url = f"{self.calendar_url}?year={year}"
+            # The official landing page chooses its current season. A calendar
+            # month heuristic would keep showing last season until December.
+            url = self.calendar_url
             headers = {
                 "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
             }
             self.current_url = url
-            response = requests.get(url, headers=headers, timeout=30)
-            if response.status_code != 200:
+            response = self._fetch_schedule_page(url, headers)
+            if response is None:
                 print(f"ページの取得に失敗: {url}")
                 return None
             
             soup = BeautifulSoup(response.content, 'html.parser')
+            year = self._extract_schedule_start_year(soup)
+            if year is None:
+                raise ValueError("Official JRLO schedule season could not be identified")
+            self._schedule_start_year = year
+            season = str(year + 1)
+            self._load_existing_match_details(season)
+            self._enrichment_deadline = time.monotonic() + 45
             matches = self._extract_matches(soup)
             all_matches.extend(matches)
 
@@ -256,9 +282,20 @@ class LeagueOneDivisionsScraper(BaseScraper):
             div1_matches = self.assign_match_ids(div1_matches)
             div2_matches = self.assign_match_ids(div2_matches)
             div3_matches = self.assign_match_ids(div3_matches)
+
+            # The current official schedule includes date-unannounced cards.
+            # Retain these explicitly in coverage instead of invalidating every
+            # dated fixture or pretending that a missing date is a parse success.
+            divisions = {"jrlo-div1": div1_matches, "jrlo-div2": div2_matches, "jrlo-div3": div3_matches}
+            report = {"schema_version": 1, "source_url": url, "season": season, "competitions": {}}
+            for comp_id, division_matches in divisions.items():
+                included, coverage = self._partition_schedule_matches(division_matches, season)
+                divisions[comp_id] = included
+                report["competitions"][comp_id] = coverage
+            div1_matches, div2_matches, div3_matches = (divisions[f"jrlo-div{i}"] for i in (1, 2, 3))
+            write_json_atomic(self.data_dir / "collection_reports/jrlo.json", report)
             
             # ファイル保存
-            season = str(int(year) + 1)  # 2025年開始 → 2026シーズン
             if div1_matches:
                 self.save_to_json(div1_matches, f"jrlo-div1/{season}")
             if div2_matches:
@@ -278,6 +315,62 @@ class LeagueOneDivisionsScraper(BaseScraper):
             import traceback
             print(traceback.format_exc())
             return None
+
+    @staticmethod
+    def _partition_schedule_matches(matches, season):
+        included, pending = [], []
+        for match in matches:
+            if match.pop("_schedule_date_not_announced", False):
+                pending.append({"stable_id": match["stable_id"], "source_match_id": match.get("source_match_id", ""),
+                                "home_team": match["home_team"], "away_team": match["away_team"],
+                                "venue": match.get("venue", ""), "source_url": match["source_url"],
+                                "reason": "date_not_announced"})
+            elif match.get("kickoff_unknown_reason") == "parse_failure" or (not match.get("kickoff_utc") and not valid_calendar_date(match.get("kickoff_date"))):
+                raise ValueError(f"JRLO fixture date/time could not be parsed: {match.get('match_url', '')}")
+            else:
+                included.append(match)
+        return included, {"season": season, "observed_match_count": len(matches), "included_match_count": len(included),
+                          "date_unannounced_count": len(pending), "date_unannounced": pending}
+
+    @staticmethod
+    def _extract_schedule_start_year(soup):
+        for option in soup.select('select[name="year"] option[selected], option[selected][value]'):
+            value = option.get("value", "")
+            if re.fullmatch(r"20\d{2}", value):
+                return int(value)
+        # Some versions of the official page use buttons instead of a select.
+        for heading in soup.select("title, h1, h2, h3.ttl"):
+            found = re.search(r"(20\d{2})\s*[-–/]\s*(?:20)?\d{2}", heading.get_text(" ", strip=True))
+            if found:
+                return int(found.group(1))
+        return None
+
+    def _fetch_schedule_page(self, url: str, headers: Dict[str, str]):
+        """Retry transient connection failures without consuming the 5-minute budget."""
+        max_attempts = 3
+        for attempt in range(1, max_attempts + 1):
+            try:
+                response = requests.get(
+                    url,
+                    headers=headers,
+                    timeout=(10, 30),
+                )
+                if response.status_code == 200:
+                    return response
+                print(
+                    f"JRLO日程ページ取得失敗: status={response.status_code} "
+                    f"attempt={attempt}/{max_attempts}"
+                )
+            except requests.RequestException as error:
+                print(
+                    f"JRLO日程ページ接続失敗: attempt={attempt}/{max_attempts} "
+                    f"error='{error}'"
+                )
+
+            if attempt < max_attempts:
+                time.sleep(2 ** (attempt - 1))
+
+        return None
 
     def _extract_matches(self, soup) -> List[Dict[str, Any]]:
         matches = []
@@ -321,7 +414,9 @@ class LeagueOneDivisionsScraper(BaseScraper):
                 raw_date = self._format_date(date_element)
                 match_url = self._get_match_url(container) or ""
                 kickoff = self.parse_kickoff_datetime(raw_date, match_url)
-                schedule_details = self._extract_schedule_details(container)
+                schedule_details = self._extract_schedule_details(
+                    container, kickoff, match_url
+                )
                 
                 # divisionを事前に推定
                 inferred_div = self._find_division_near_container(container)
@@ -331,7 +426,7 @@ class LeagueOneDivisionsScraper(BaseScraper):
                 # team_idは後で設定（Division分類後に登録）
                 match_info = self.build_match(
                     competition_id=comp_id,  # 仮ID
-                    season=str(datetime.now().year),
+                    season=str(self._schedule_start_year + 1) if self._schedule_start_year else str(self._now().year),
                     round_name=schedule_details.get("round", ""),
                     status=schedule_details.get("status", "scheduled"),
                     kickoff=kickoff,
@@ -345,6 +440,33 @@ class LeagueOneDivisionsScraper(BaseScraper):
                     away_team_id="",  # 後で設定
                 )
                 match_info["division"] = inferred_div
+                match_info.update(source_type="official", source_name="Japan Rugby League One",
+                                  source_url=match_url or "https://league-one.jp/schedule/")
+                if not kickoff:
+                    day_element = date_element.find('p', class_='date')
+                    raw_day = day_element.get_text(" ", strip=True) if day_element else ""
+                    day_match = re.fullmatch(r"(\d{1,2})\.(\d{1,2})(?:\s*[月火水木金土日](?:曜(?:日)?)?)?", raw_day)
+                    if day_match:
+                        month, day = map(int, day_match.groups())
+                        try:
+                            match_info["kickoff_date"] = datetime(self._season_year_for_month(month), month, day).date().isoformat()
+                            clock_element = date_element.find('p', class_='time')
+                            raw_clock = clock_element.get_text(" ", strip=True) if clock_element else ""
+                            not_announced = not raw_clock or bool(re.fullmatch(r"TBC|TBD|TBA|未定|[-–—]+", raw_clock, re.I))
+                            match_info["kickoff_unknown_reason"] = "not_announced" if not_announced else "parse_failure"
+                            match_info["source_type"] = "official"
+                            match_info["source_name"] = "Japan Rugby League One"
+                            match_info["source_url"] = match_url or "https://league-one.jp/schedule/"
+                        except ValueError:
+                            match_info["kickoff_unknown_reason"] = "parse_failure"
+                    else:
+                        clock_element = date_element.find('p', class_='time')
+                        raw_clock = clock_element.get_text(" ", strip=True) if clock_element else ""
+                        clock_unannounced = not raw_clock or bool(re.fullmatch(r"TBC|TBD|TBA|未定|[-–—]+", raw_clock, re.I))
+                        if re.fullmatch(r"(?:日付|開催日|日時)?未定|TBC|TBD|TBA|[-–—]+", raw_day, re.I) and clock_unannounced:
+                            match_info["_schedule_date_not_announced"] = True
+                        else:
+                            match_info["kickoff_unknown_reason"] = "parse_failure"
                 self._apply_optional_match_details(match_info, schedule_details)
                 matches.append(match_info)
                 
@@ -354,8 +476,13 @@ class LeagueOneDivisionsScraper(BaseScraper):
         
         return matches
 
-    def _extract_schedule_details(self, container) -> Dict[str, Any]:
-        details: Dict[str, Any] = {"status": "scheduled"}
+    def _extract_schedule_details(
+        self, container, kickoff=None, match_url: str = ""
+    ) -> Dict[str, Any]:
+        details: Dict[str, Any] = dict(
+            self._existing_match_details.get(match_url, {})
+        )
+        details["status"] = "scheduled"
 
         title_element = container.find("h3", class_="ttl")
         title_text = title_element.get_text(" ", strip=True) if title_element else ""
@@ -370,29 +497,70 @@ class LeagueOneDivisionsScraper(BaseScraper):
             details["home_score"], details["away_score"] = scores
 
         if (
-            details.get("status") == "finished"
+            self.enrich_details
+            and details.get("status") == "finished"
             and details.get("round_number") is not None
             and self._is_regular_season_match(title_text)
+            and self._should_fetch_print_match_details(kickoff)
+            and self._print_requests_remaining > 0
+            and time.monotonic() < self._enrichment_deadline
         ):
-            print_details = self._fetch_print_match_details(self._get_match_url(container) or "")
+            print_details = self._fetch_print_match_details(match_url)
             details.update(print_details)
 
         return details
 
     def _apply_optional_match_details(self, match_info: Dict[str, Any], details: Dict[str, Any]) -> None:
-        optional_fields = [
-            "home_score",
-            "away_score",
-            "home_tries",
-            "away_tries",
-            "round_number",
-            "conference",
-            "official_match_code",
-        ]
-        for field in optional_fields:
+        for field in self.OPTIONAL_MATCH_DETAIL_FIELDS:
             value = details.get(field)
             if value is not None and value != "":
                 match_info[field] = value
+
+    def _load_existing_match_details(self, season: str) -> None:
+        """Reuse optional details so historical print pages are not fetched weekly."""
+        details_by_url = {}
+        for division in ("jrlo-div1", "jrlo-div2", "jrlo-div3"):
+            path = Path(self.output_dir) / division / f"{season}.json"
+            if not path.exists():
+                continue
+            try:
+                with path.open("r", encoding="utf-8") as file:
+                    matches = json.load(file)
+            except (OSError, json.JSONDecodeError) as error:
+                print(f"既存JRLOデータの読み込みに失敗: path='{path}' error='{error}'")
+                continue
+
+            if not isinstance(matches, list):
+                continue
+            for match in matches:
+                if not isinstance(match, dict):
+                    continue
+                match_url = match.get("match_url", "")
+                if not match_url:
+                    continue
+                cached = {
+                    field: match[field]
+                    for field in self.OPTIONAL_MATCH_DETAIL_FIELDS
+                    if match.get(field) is not None and match.get(field) != ""
+                }
+                if cached:
+                    details_by_url[match_url] = cached
+
+        self._existing_match_details = details_by_url
+        if details_by_url:
+            print(f"既存JRLO詳細データを{len(details_by_url)}試合分再利用")
+
+    def _should_fetch_print_match_details(self, kickoff) -> bool:
+        """Fetch secondary detail pages only for recently completed matches."""
+        if not isinstance(kickoff, datetime):
+            return False
+        now = self._now()
+        if kickoff.tzinfo is None:
+            kickoff = kickoff.replace(tzinfo=self.jst)
+        age = now - kickoff.astimezone(self.jst)
+        return timedelta(0) <= age <= timedelta(
+            days=self._print_detail_lookback_days
+        )
 
     def _parse_title_metadata(self, title_text: str) -> Dict[str, Any]:
         details: Dict[str, Any] = {}
@@ -446,21 +614,26 @@ class LeagueOneDivisionsScraper(BaseScraper):
         print_url = urljoin(match_url.rstrip("/") + "/", "print")
         try:
             response = None
-            for attempt in range(3):
+            for attempt in range(2):
+                remaining = self._enrichment_deadline - time.monotonic()
+                if remaining <= 1 or self._print_requests_remaining <= 0:
+                    return {}
                 self._throttle_print_request()
+                self._print_requests_remaining -= 1
                 response = requests.get(
                     print_url,
                     headers={
                         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
                     },
-                    timeout=30,
+                    timeout=(min(3, remaining / 2), min(8, remaining / 2)),
                 )
                 self._last_print_request_at = time.monotonic()
                 if response.status_code == 200:
                     break
-                if response.status_code != 429 or attempt == 2:
+                if response.status_code != 429 or attempt == 1:
                     return {}
-                time.sleep(10 * (attempt + 1))
+                # Respect rate limits without holding essential schedule work.
+                return {}
 
             if not response or response.status_code != 200:
                 return {}
@@ -523,9 +696,11 @@ class LeagueOneDivisionsScraper(BaseScraper):
 
     def _format_date(self, date_element):
         try:
-            date = date_element.find('p', class_='date').text.strip()
-            time = date_element.find('p', class_='time').text.strip()
-            return f"{date} {time}"
+            day_element = date_element.find('p', class_='date')
+            clock_element = date_element.find('p', class_='time')
+            date = day_element.get_text(" ", strip=True) if day_element else ""
+            clock = clock_element.get_text(" ", strip=True) if clock_element else ""
+            return f"{date} {clock}".strip() or None
         except:
             return None
 
@@ -581,27 +756,23 @@ class LeagueOneDivisionsScraper(BaseScraper):
         return datetime.now(self.jst)
 
     def _season_year_for_month(self, month: int) -> int:
+        if self._schedule_start_year is not None:
+            return self._schedule_start_year if month >= 12 else self._schedule_start_year + 1
         current_date = self._now()
         current_year = current_date.year
         season_start_month = 12
-        return current_year - 1 if month >= season_start_month else current_year
+        start_year = current_year if current_date.month >= season_start_month else current_year - 1
+        return start_year if month >= season_start_month else start_year + 1
 
     def parse_kickoff_datetime(self, date_string: str, match_url: str = ""):
         try:
             if not date_string:
                 raise ValueError("empty date string")
 
-            parts = date_string.split()
-            if len(parts) < 3:
+            parts = re.fullmatch(r"(\d{1,2})\.(\d{1,2})(?:\s*[月火水木金土日](?:曜(?:日)?)?)?\s+(\d{1,2}):(\d{2})", date_string.strip())
+            if not parts:
                 raise ValueError(f"unexpected date format: {date_string}")
-
-            date_part = parts[0].split(".")
-            if len(date_part) != 2:
-                raise ValueError(f"unexpected date token: {parts[0]}")
-
-            month = int(date_part[0])
-            day = int(date_part[1])
-            hour, minute = [int(v) for v in parts[2].split(":")]
+            month, day, hour, minute = map(int, parts.groups())
 
             year = self._season_year_for_month(month)
             kickoff = datetime(year, month, day, hour, minute, tzinfo=self.jst)

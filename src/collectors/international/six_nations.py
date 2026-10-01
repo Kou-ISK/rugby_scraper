@@ -12,6 +12,7 @@ except ImportError:  # Python < 3.9
     from backports.zoneinfo import ZoneInfo
 
 class SixNationsBaseScraper(BaseScraper):
+    IDENTITY_PROVIDER = "six-nations"
     def __init__(self, competition_path: str, competition_name: str, competition_id: str):
         super().__init__()
         self.base_url = "https://www.sixnationsrugby.com"

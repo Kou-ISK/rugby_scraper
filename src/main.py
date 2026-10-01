@@ -7,10 +7,11 @@ from src.collectors.international import (
     SixNationsU20Scraper,
     RugbyChampionshipScraper,
     AutumnNationsSeriesScraper,
+    NationsChampionshipScraper,
     WorldRugbyInternationalsScraper,
 )
 
-def scrape_command(scraper_type):
+def scrape_command(scraper_type, argv=None):
     """Execute scraping for a specific competition."""
     scrapers = {
         "m6n": SixNationsScraper(),
@@ -19,13 +20,14 @@ def scrape_command(scraper_type):
         "epcr-champions": EPCRChampionsCupScraper(),
         "epcr-challenge": EPCRChallengeCupScraper(),
         "t14": Top14Scraper(),
-        "jrlo": LeagueOneDivisionsScraper(),
+        "jrlo": LeagueOneDivisionsScraper(enrich_details="--enrich-details" in (argv or [])),
         "premier": GallagherPremiershipScraper(),
         "urc": UnitedRugbyChampionshipScraper(),
         "srp": SuperRugbyPacificScraper(),
         "wr": WorldRugbyInternationalsScraper(),
         "trc": RugbyChampionshipScraper(),
         "ans": AutumnNationsSeriesScraper(),
+        "nc": NationsChampionshipScraper(),
     }
     
     if scraper_type not in scrapers:
@@ -48,30 +50,20 @@ def scrape_command(scraper_type):
             print(f"✓ Scraped {total_matches} matches")
             print("✓ Files saved by scraper (division-specific)")
         # EPCRは内部でsave済み
-        elif scraper_type in ["epcr-champions", "epcr-challenge"]:
+        elif scraper_type != "t14":
             print(f"✓ Scraped {len(matches)} matches")
             print("✓ Saved by scraper internally")
         else:
             # 通常のリスト形式
             print(f"✓ Scraped {len(matches)} matches")
-            if len(matches) > 0:
-                sample = matches[0]
-                print(f"✓ Sample match structure:")
-                print(f"  - match_id: {sample.get('match_id', 'MISSING')}")
-                print(f"  - competition_id: {sample.get('competition_id', 'MISSING')}")
-                print(f"  - home_team_id: {sample.get('home_team_id', 'MISSING')}")
-                print(f"  - away_team_id: {sample.get('away_team_id', 'MISSING')}")
-                
-                # 新ディレクトリ構造: {comp_id}/{season}
-                comp_id = sample.get('competition_id', scraper_type)
-                season = sample.get('season', 'unknown')
-                save_path = f"{comp_id}/{season}"
-            else:
-                # フォールバック: 旧形式
-                save_path = scraper_type
-            
-            scraper.save_to_json(matches, save_path)
-            print(f"✓ Saved to data/matches/{save_path}.json")
+            from collections import defaultdict
+            groups = defaultdict(list)
+            for match in matches:
+                groups[(match["competition_id"], match["season"])].append(match)
+            for (comp_id, season), season_matches in groups.items():
+                if not season:
+                    raise ValueError("Refusing to save fixtures without an official season")
+                scraper.save_to_json(scraper.assign_match_ids(season_matches), f"{comp_id}/{season}")
     else:
         print("⚠️ No matches found (possibly off-season or no fixtures published yet)")
 
@@ -146,7 +138,7 @@ def main():
         update_team_logos_command()
     else:
         # Assume it's a scraper type
-        scrape_command(command)
+        scrape_command(command, sys.argv[2:])
 
 if __name__ == "__main__":
     main() 

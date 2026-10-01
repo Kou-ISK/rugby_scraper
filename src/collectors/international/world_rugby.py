@@ -1,10 +1,12 @@
 import re
 from datetime import datetime, timedelta, timezone
 import requests
+from collections import defaultdict
 from ..base import BaseScraper
 
 
 class WorldRugbyInternationalsScraper(BaseScraper):
+    IDENTITY_PROVIDER = "world-rugby"
     def __init__(self):
         super().__init__()
         self._competition_id = "wr"
@@ -42,10 +44,14 @@ class WorldRugbyInternationalsScraper(BaseScraper):
             if matches:
                 matches = self.assign_match_ids(matches)
                 
-                season = str(datetime.utcnow().year)
-                filename = f"{self._competition_id}/{season}"
-                self.save_to_json(matches, filename)
-                print(f"✅ {len(matches)}試合を保存: {filename}.json")
+                by_season = defaultdict(list)
+                for match in matches:
+                    by_season[match["season"]].append(match)
+                for season, season_matches in by_season.items():
+                    filename = f"{self._competition_id}/{season}"
+                    season_matches = self.assign_match_ids(season_matches)
+                    self.save_to_json(season_matches, filename)
+                    print(f"✅ {len(season_matches)}試合を保存: {filename}.json")
             
             return matches
         except Exception as e:
@@ -54,7 +60,9 @@ class WorldRugbyInternationalsScraper(BaseScraper):
 
     def _date_range(self):
         now = datetime.utcnow().date()
-        start_date = now - timedelta(days=self.lookback_days)
+        # Re-fetch the entire current calendar season. Retaining old records
+        # would carry forward the former ISO day/month bug into verified output.
+        start_date = min(now - timedelta(days=self.lookback_days), now.replace(month=1, day=1))
         end_date = now + timedelta(days=self.lookahead_days)
         return start_date.strftime("%Y-%m-%d"), end_date.strftime("%Y-%m-%d")
 
@@ -65,18 +73,26 @@ class WorldRugbyInternationalsScraper(BaseScraper):
             "startDate": start_date,
             "endDate": end_date,
         }
-        first_page = requests.get(
+        response = requests.get(
             f"{self.api_base}/rugby/v3/match", params=params, timeout=30
-        ).json()
+        )
+        response.raise_for_status()
+        first_page = response.json()
+        if not isinstance(first_page.get("content"), list) or not isinstance(first_page.get("pageInfo"), dict):
+            raise ValueError("World Rugby response is missing content/pageInfo")
         page_info = first_page.get("pageInfo", {})
         total_pages = page_info.get("numPages", 0)
         matches = self._normalize_matches(first_page.get("content", []))
 
         for page in range(1, total_pages):
             params["page"] = page
-            data = requests.get(
+            response = requests.get(
                 f"{self.api_base}/rugby/v3/match", params=params, timeout=30
-            ).json()
+            )
+            response.raise_for_status()
+            data = response.json()
+            if not isinstance(data.get("content"), list):
+                raise ValueError("World Rugby page is missing content")
             matches.extend(self._normalize_matches(data.get("content", [])))
 
         return matches
@@ -106,7 +122,7 @@ class WorldRugbyInternationalsScraper(BaseScraper):
             normalized.append(
                 self.build_match(
                     competition_id=self._competition_id,
-                    season=str(datetime.utcnow().year),
+                    season=str(kickoff_utc.year) if kickoff_utc else str(datetime.now(timezone.utc).year),
                     round_name=match.get("eventPhase") or "",
                     status=match.get("status") or "",
                     kickoff=kickoff_utc,
@@ -172,7 +188,7 @@ class WorldRugbyCompetitionScraper(WorldRugbyInternationalsScraper):
 class RugbyChampionshipScraper(WorldRugbyCompetitionScraper):
     def __init__(self):
         super().__init__(
-            include_patterns=[r"Rugby Championship"],
+            include_patterns=[r"^(?:The )?Rugby Championship(?:\s+\d{4})?$"],
             competition_id="trc",
             source_url="https://www.world.rugby/fixtures",
             source_name="World Rugby",
@@ -182,7 +198,7 @@ class RugbyChampionshipScraper(WorldRugbyCompetitionScraper):
 class AutumnNationsSeriesScraper(WorldRugbyCompetitionScraper):
     def __init__(self):
         super().__init__(
-            include_patterns=[r"Autumn Nations Series"],
+            include_patterns=[r"^Autumn Nations Series(?:\s+\d{4})?$"],
             competition_id="ans",
             source_url="https://www.world.rugby/fixtures",
             source_name="World Rugby",

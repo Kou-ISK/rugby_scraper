@@ -6,7 +6,7 @@ import os
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple, Union
-from urllib.parse import quote_plus
+from urllib.parse import quote_plus, urlsplit, urlunsplit
 from dateutil import parser as date_parser
 try:
     from zoneinfo import ZoneInfo
@@ -20,6 +20,8 @@ except ImportError:
     REQUESTS_AVAILABLE = False
 
 class BaseScraper(ABC):
+    IDENTITY_PROVIDER = "unknown"
+    IDENTITY_VERSION = 2
     # 国際試合の大会ID（同名チームを同一視）
     INTERNATIONAL_COMPETITIONS = {
         "m6n": "M",      # Six Nations (Men) → M
@@ -27,6 +29,7 @@ class BaseScraper(ABC):
         "u6n": "U20",    # Six Nations U20 → U20
         "trc": "M",      # The Rugby Championship → M
         "ans": "M",      # Autumn Nations Series → M
+        "nc": "M",       # Nations Championship → M
         "wr": "M",       # World Rugby Internationals → M (混合の場合は個別判定)
     }
     
@@ -107,14 +110,15 @@ class BaseScraper(ABC):
     }
     
     def __init__(self, *, update_team_master: bool = False):
-        self.output_dir = Path("data/matches")
+        self.data_dir = Path(os.environ.get("RUGBY_DATA_DIR", "data"))
+        self.output_dir = self.data_dir / "matches"
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self._team_master = self._load_team_master()
         self._competition_id = None  # サブクラスで設定
         self._base_team_names = self._build_base_team_names_cache()  # 動的スポンサー検知用
         self._thesportsdb_api_key = os.environ.get("THESPORTSDB_API_KEY", "3")  # Free tier
         self._logo_cache = {}  # ロゴURL取得のキャッシュ（メモリ内）
-        self._logo_cache_file = Path("data/team_logos_cache.json")  # 永続キャッシュファイル
+        self._logo_cache_file = self.data_dir / "team_logos_cache.json"
         self._load_logo_cache()  # ファイルからキャッシュ読み込み
         self._update_team_master = update_team_master
 
@@ -135,7 +139,7 @@ class BaseScraper(ABC):
     def _load_team_master(self) -> Dict[str, Any]:
         """Load team master data from data/teams.json."""
         # Try relative to current working directory first
-        teams_path = Path("data/teams.json")
+        teams_path = self.data_dir / "teams.json"
         if not teams_path.exists():
             # Try relative to this file
             base_path = Path(__file__).resolve().parents[2]
@@ -828,7 +832,7 @@ class BaseScraper(ABC):
         return "-".join(parts)
     
     def assign_match_ids(self, matches: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Assign sequential match IDs after sorting matches.
+        """Keep legacy IDs and add an identity independent of ordering/kickoff.
         
         試合リストをkickoff_utc順にソートし、シーケンス番号を付与してmatch_idを生成。
         
@@ -859,6 +863,7 @@ class BaseScraper(ABC):
         result = []
         for (comp_id, season, round_num), group_matches in groups.items():
             for seq, match in enumerate(group_matches, start=1):
+                self._add_stable_identity(match)
                 # Ensure season and round_num are strings
                 match["match_id"] = self._generate_match_id(
                     comp_id, 
@@ -870,6 +875,79 @@ class BaseScraper(ABC):
         
         # Return in original sorted order
         return sorted(result, key=lambda m: m.get("kickoff_utc", ""))
+
+    @staticmethod
+    def _add_stable_identity(match: Dict[str, Any]) -> None:
+        """Official IDs survive a rescheduled kickoff or insertion into a round.
+
+        match_id remains the legacy consumer field. stable_id must be used when
+        reconciling a saved plan. A pair/round fallback is explicitly weak and
+        must not be used to silently resolve an ambiguous saved match.
+        """
+        if match.get("stable_id") and match.get("identity_version") == BaseScraper.IDENTITY_VERSION:
+            return
+        previous_id = str(match.get("stable_id") or "")
+        comp = str(match.get("competition_id") or "")
+        season = str(match.get("season") or "")
+        provider = str(match.get("source_provider") or "unknown")
+        source_id = str(match.get("source_match_id") or "")
+        original_id = str(match.get("match_id") or "")
+        if not source_id and original_id and not original_id.startswith(comp + "-"):
+            source_id = original_id
+        url = str(match.get("match_url") or "")
+        canonical_url, url_id = BaseScraper._canonical_match_identity_url(url)
+        if not source_id and url_id:
+            source_id = url_id
+        if source_id:
+            match["source_match_id"] = source_id
+            key = "id:" + source_id
+            strength = "official"
+        elif canonical_url:
+            key = "url:" + canonical_url
+            strength = "url"
+        else:
+            key = "pair:" + "|".join(str(match.get(k) or "").casefold().strip()
+                                        for k in ("season", "round", "home_team", "away_team", "venue", "kickoff_utc"))
+            strength = "weak"
+        identity = json.dumps(["v2", provider, comp, season, key], ensure_ascii=False, separators=(",", ":"))
+        match["stable_id"] = comp + ":v2:" + hashlib.sha256(identity.encode("utf-8")).hexdigest()[:24]
+        match["identity_version"] = BaseScraper.IDENTITY_VERSION
+        match["source_provider"] = provider
+        match["identity_strength"] = strength
+        if previous_id and previous_id != match["stable_id"]:
+            aliases = match.setdefault("previous_stable_ids", [])
+            if previous_id not in aliases:
+                aliases.append(previous_id)
+
+    @staticmethod
+    def _canonical_match_identity_url(url: str) -> Tuple[str, str]:
+        """Accept match-specific resources, never fixture/competition landings.
+
+        This intentionally fails closed for unknown official URL shapes: such a
+        record still gets a weak snapshot identity and can be reviewed by a user.
+        """
+        if not url:
+            return "", ""
+        try:
+            parsed = urlsplit(url)
+        except ValueError:
+            return "", ""
+        if parsed.scheme.lower() not in ("http", "https") or not parsed.hostname or parsed.username or parsed.password:
+            return "", ""
+        path = re.sub(r"/(?:build-up|report|live|lineups|print|preview)/?$", "", parsed.path).rstrip("/")
+        numeric = re.search(r"/(?:match|matches|match-centre)/(\d+)$", path)
+        source_id = numeric.group(1) if numeric else ""
+        # /matches/2026 is commonly an annual archive rather than a match.
+        if source_id and len(source_id) == 4 and 2000 <= int(source_id) <= 2100:
+            source_id = ""
+            return "", ""
+        specific = bool(source_id) or bool(re.search(
+            r"/fixtures/\d{4,6}/[^/]+-v-[^/]+-\d{8}-\d{4}$|"
+            r"/feuille-de-match/\d{4}-\d{4}/j\d+/\d+-[^/]+$|"
+            r"/(?:match|matches)/[0-9a-f]{8}-[0-9a-f-]{27,}$", path, re.IGNORECASE))
+        if not specific:
+            return "", ""
+        return urlunsplit((parsed.scheme.lower(), parsed.netloc.lower(), path, "", "")), source_id
     
     @abstractmethod
     def scrape(self):
@@ -903,8 +981,11 @@ class BaseScraper(ABC):
         # 親ディレクトリを作成（新構造対応）
         output_path.parent.mkdir(parents=True, exist_ok=True)
         
-        with open(output_path, "w", encoding="utf-8") as f:
+        temp_path = output_path.with_suffix(".json.tmp")
+        with open(temp_path, "w", encoding="utf-8") as f:
             json.dump(data, ensure_ascii=False, indent=2, fp=f)
+            f.write("\n")
+        temp_path.replace(output_path)
 
     def _parse_timezone_offset(self, timezone_value: Optional[str]) -> Optional[timezone]:
         if not timezone_value:
@@ -931,6 +1012,8 @@ class BaseScraper(ABC):
         self,
         value: Optional[Union[str, datetime]],
         timezone_name: Optional[str],
+        *,
+        dayfirst: Optional[bool] = None,
     ) -> Tuple[Optional[str], Optional[str], Optional[str]]:
         if not value:
             return None, None, timezone_name
@@ -939,8 +1022,20 @@ class BaseScraper(ABC):
             dt = value
         else:
             try:
-                # dayfirst=True: 日付の曖昧性を解決 (例: "05/02/2026" → 2月5日)
-                dt = date_parser.parse(str(value), fuzzy=True, dayfirst=True)
+                text = str(value).strip()
+                # ISO dates are year/month/day, including naive source strings.
+                # Never feed ISO into dayfirst parsing (2026-10-02 became Feb 10).
+                if re.match(r"^\d{4}-\d{2}-\d{2}(?:[Tt ]|$)", text):
+                    if not re.search(r"[Tt ]\d{2}:\d{2}", text):
+                        return None, None, timezone_name
+                    dt = date_parser.isoparse(text)
+                elif dayfirst is not None:
+                    if not re.search(r"\b(?:19|20)\d{2}\b", text) or not re.search(r"\b\d{1,2}:\d{2}\b", text):
+                        return None, None, timezone_name
+                    dt = date_parser.parse(text, fuzzy=False, dayfirst=dayfirst)
+                else:
+                    # Display text must be parsed explicitly by its collector.
+                    return None, None, timezone_name
             except (ValueError, TypeError):
                 return None, None, timezone_name
 
@@ -952,11 +1047,26 @@ class BaseScraper(ABC):
                 except Exception:
                     tzinfo = self._parse_timezone_offset(timezone_name)
             if tzinfo is None:
-                tzinfo = timezone.utc
-                timezone_name = "UTC"
+                # A local clock without a known timezone is not a UTC kickoff.
+                return None, None, timezone_name
+            if isinstance(tzinfo, ZoneInfo):
+                # Reject nonexistent and ambiguous local clocks at DST switches.
+                a = dt.replace(tzinfo=tzinfo, fold=0)
+                b = dt.replace(tzinfo=tzinfo, fold=1)
+                if a.utcoffset() != b.utcoffset():
+                    return None, None, timezone_name
             dt = dt.replace(tzinfo=tzinfo)
         else:
-            timezone_name = timezone_name or str(dt.tzinfo)
+            if timezone_name:
+                try:
+                    target_tz = ZoneInfo(timezone_name)
+                except Exception:
+                    target_tz = self._parse_timezone_offset(timezone_name)
+                if target_tz is None:
+                    return None, None, timezone_name
+                dt = dt.astimezone(target_tz)
+            else:
+                timezone_name = str(dt.tzinfo)
 
         kickoff_local = dt.isoformat()
         kickoff_utc = dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
@@ -1019,8 +1129,9 @@ class BaseScraper(ABC):
         if match_id is None:
             match_id = ""
 
-        return {
+        result = {
             "match_id": str(match_id) if match_id else "",
+            "source_provider": self.IDENTITY_PROVIDER,
             "competition_id": competition_id,
             "season": season,
             "round": round_num,
@@ -1036,6 +1147,19 @@ class BaseScraper(ABC):
             "match_url": match_url or "",
             "broadcasters": broadcasters or [],
         }
+        if match_id is not None and str(match_id):
+            result["source_match_id"] = str(match_id)
+        if not kickoff_utc:
+            result["kickoff_unknown_reason"] = "not_available" if not kickoff else "parse_failure"
+        if isinstance(kickoff, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", kickoff.strip()):
+            try:
+                datetime.strptime(kickoff.strip(), "%Y-%m-%d")
+            except ValueError:
+                pass
+            else:
+                result["kickoff_date"] = kickoff.strip()
+                result["kickoff_unknown_reason"] = "not_announced"
+        return result
 
     def apply_timezone_override(self, driver, timezone_id: str):
         try:

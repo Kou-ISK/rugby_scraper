@@ -6,10 +6,12 @@ from bs4 import BeautifulSoup
 from ..base import BaseScraper
 
 class Top14Scraper(BaseScraper):
+    IDENTITY_PROVIDER = "lnr-top14"
     def __init__(self):
         super().__init__()
         self.base_url = "https://top14.lnr.fr"
         self.calendar_url = f"{self.base_url}/calendrier-et-resultats"
+        self._competition_id = "t14"
 
     def _extract_matches(self, soup):
         matches = []
@@ -47,7 +49,14 @@ class Top14Scraper(BaseScraper):
                 # 時刻を取得
                 time_element = element.select_one('.match-line__time')
                 time_text = time_element.text.strip() if time_element else None
-                kickoff = self._format_date_time(current_date, time_text)
+                match_link = element.select_one('.match-links__link[href*="/feuille-de-match/"]')
+                href = match_link.get("href", "") if match_link else ""
+                season_match = re.search(r"/feuille-de-match/(\d{4}-\d{4})/j(\d+)/", href)
+                season = season_match.group(1) if season_match else ""
+                kickoff = self._format_date_time(current_date, time_text, season=season)
+                if not season:
+                    start_year = self._infer_season_year(9)
+                    season = f"{start_year}-{start_year + 1}"
                 
                 # チーム名を取得
                 home_team = element.select_one('.club-line--reversed .club-line__name')
@@ -75,15 +84,7 @@ class Top14Scraper(BaseScraper):
                 if venue_element:
                     venue = venue_element.text.strip()
                 
-                # ラウンド情報を取得（現在の日付から推測）
-                round_name = ""
-                try:
-                    if current_date and time_text:
-                        # 日付から年を取得してシーズンを判定
-                        current_year = datetime.now().year
-                        round_name = f"Journée {current_year}"
-                except:
-                    pass
+                round_name = season_match.group(2) if season_match else ""
                 
                 # 放送局を取得
                 broadcasters = []
@@ -110,7 +111,7 @@ class Top14Scraper(BaseScraper):
 
                 match_info = self.build_match(
                     competition_id="t14",
-                    season=f"{datetime.now().year}-{datetime.now().year + 1}",
+                    season=season,
                     round_name=round_name,
                     status="scheduled",
                     kickoff=kickoff,
@@ -122,6 +123,10 @@ class Top14Scraper(BaseScraper):
                     broadcasters=match_broadcasters,
                     match_id=match_id,
                 )
+                if not kickoff:
+                    date_only = self._format_date_time(current_date, None, season=season, date_only=True)
+                    if date_only:
+                        match_info["kickoff_date"] = date_only
 
                 matches.append(match_info)
         
@@ -144,12 +149,12 @@ class Top14Scraper(BaseScraper):
             print(f"スクレイピングエラー: {str(e)}")
             return None
 
-    def _format_date_time(self, date_text, time_text):
+    def _format_date_time(self, date_text, time_text, *, season=None, date_only=False):
         if not date_text:
             return None
-        normalized = unicodedata.normalize("NFKD", date_text).encode("ascii", "ignore").decode("ascii")
-        day_match = re.search(r"\\b(\\d{1,2})\\b", normalized)
-        month_match = re.search(r"\\b(janvier|fevrier|mars|avril|mai|juin|juillet|aout|septembre|octobre|novembre|decembre)\\b", normalized)
+        normalized = unicodedata.normalize("NFKD", date_text.lower()).encode("ascii", "ignore").decode("ascii")
+        day_match = re.search(r"\b(\d{1,2})\b", normalized)
+        month_match = re.search(r"\b(janvier|fevrier|mars|avril|mai|juin|juillet|aout|septembre|octobre|novembre|decembre)\b", normalized)
         if not day_match or not month_match:
             return None
 
@@ -173,19 +178,37 @@ class Top14Scraper(BaseScraper):
         if not month:
             return None
 
-        year = self._infer_season_year(month)
-        time_value = self._normalize_time(time_text) or "00:00"
+        explicit_year = re.search(r"\b(20\d{2})\b", normalized)
+        if explicit_year:
+            year = int(explicit_year.group(1))
+        elif season and re.fullmatch(r"\d{4}-\d{4}", season):
+            year = int(season[:4]) if month >= 8 else int(season[-4:])
+        else:
+            year = self._infer_season_year(month)
+        if date_only:
+            try:
+                return datetime(year, month, day).date().isoformat()
+            except ValueError:
+                return None
+        time_value = self._normalize_time(time_text)
+        if not time_value:
+            return None
+        try:
+            hour, minute = map(int, time_value.split(":"))
+            datetime(year, month, day, hour, minute)
+        except ValueError:
+            return None
         return f"{year}-{month:02}-{day:02} {time_value}:00"
 
     def _normalize_time(self, time_text):
         if not time_text:
             return None
         normalized = time_text.strip().lower().replace("h", ":")
-        if re.match(r"^\\d{1,2}:\\d{2}$", normalized):
+        if re.match(r"^\d{1,2}:\d{2}$", normalized):
             return normalized
-        if re.match(r"^\\d{1,2}:$", normalized):
+        if re.match(r"^\d{1,2}:$", normalized):
             return normalized + "00"
-        if re.match(r"^\\d{1,2}$", normalized):
+        if re.match(r"^\d{1,2}$", normalized):
             return normalized + ":00"
         return None
 

@@ -2,9 +2,16 @@
 
 itsuneru 向けに世界のラグビー試合日程を取得するスクレイパーです。
 
+公開日程の正本は `data` ブランチの `data/manifest.json` です。実在する検証済み
+ファイルのパス、SHA-256、更新状態、時刻未定件数を含みます。公開用取得には
+`python scripts/automation/scrape_all.py`（単一大会は `--competition urc`）を使います。
+失敗したソースは直前の検証済みデータを保持し、正常なソースだけ更新します。
+詳細: [公開契約と失敗時の動作](docs/FIXTURE_PUBLICATION.md)
+
 ## 📋 ドキュメント
 
 - **[JSON インターフェイス仕様](docs/JSON_SCHEMA.md)** - itsuneru が参照する JSON の詳細仕様
+  - 最新の公開契約: [FIXTURE_PUBLICATION.md](docs/FIXTURE_PUBLICATION.md)
   - 試合データスキーマ（`data/matches/{comp_id}/{season}.json`）
   - 大会メタデータスキーマ（`data/competitions.json`）
   - チームマスタ（`data/teams.json`）
@@ -84,6 +91,7 @@ scripts/
 - `srp`: Super Rugby Pacific
 - `trc`: The Rugby Championship
 - `ans`: Autumn Nations Series
+- `nc`: Nations Championship
 - `wr`: World Rugby Internationals
 
 **チームID**: 形式
@@ -184,7 +192,8 @@ scripts/
 
 各スクレイパーは以下の統一フォーマットで出力します。
 
-- match_id: スクレイパーが生成する安定ID
+- match_id: 互換用の並び順ID（保存プランには stable_id を使用）
+- stable_id / source_match_id / identity_strength: 公式試合情報を基にした照合ID
 - competition_id: 大会ID（`competitions.json` と一致）
 - season: シーズン
 - round: ラウンド名

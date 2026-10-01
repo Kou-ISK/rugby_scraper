@@ -6,6 +6,7 @@ import pdfplumber
 from ..base import BaseScraper
 
 class SuperRugbyPacificScraper(BaseScraper):
+    IDENTITY_PROVIDER = "super-rugby"
     def __init__(self):
         super().__init__()
         self.source_url = "https://www.super.rugby/superrugby/fixtures/"

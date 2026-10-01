@@ -29,8 +29,8 @@ fi
 git clean -fd data/
 
 if git show-ref --verify --quiet refs/remotes/origin/data; then
-  git fetch origin data:data
-  git checkout data
+  git fetch origin data
+  git checkout -B data origin/data
 else
   echo "Remote data branch not found, creating from main"
   git checkout -b data
@@ -47,6 +47,7 @@ if git diff --cached --quiet; then
 fi
 
 git commit -m "$commit_message"
-git push --force origin data
+# Reject a concurrent writer instead of overwriting newer data history.
+git push origin data
 
 echo "Successfully pushed to data branch"

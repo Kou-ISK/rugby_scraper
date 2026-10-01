@@ -12,7 +12,7 @@ class RugbyChampionshipScraper(WorldRugbyCompetitionScraper):
 
     def __init__(self):
         super().__init__(
-            include_patterns=[r"Rugby Championship"],
+            include_patterns=[r"^(?:The )?Rugby Championship(?:\s+\d{4})?$"],
             competition_id="trc",
             source_url="https://www.world.rugby/fixtures",
             source_name="World Rugby",
