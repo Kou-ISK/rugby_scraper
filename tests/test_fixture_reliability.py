@@ -258,7 +258,7 @@ class SourceAndIdentityTests(unittest.TestCase):
             with self.subTest(day=day):
                 actual = scraper._extract_matches(BeautifulSoup(card("31135", day, clock), "html.parser"))[0]
                 self.assertEqual(expected, actual["kickoff_utc"])
-        for day, clock in [('02.30<span class="youbi">火</span>', "未定"), ("12.12", "broken"), ("unknown", "未定"), ("12.12garbage", "未定")]:
+        for day, clock in [('02.30<span class="youbi">火</span>', "未定"), ("12.12", "broken"), ("unknown", "未定"), ("12.12garbage", "未定"), ("日付未定", "broken"), ("日付未定", "13:00")]:
             with self.subTest(day=day, clock=clock):
                 bad = scraper.assign_match_ids(scraper._extract_matches(BeautifulSoup(card("31135", day, clock), "html.parser")))
                 self.assertEqual("parse_failure", bad[0]["kickoff_unknown_reason"])

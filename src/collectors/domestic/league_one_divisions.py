@@ -460,7 +460,10 @@ class LeagueOneDivisionsScraper(BaseScraper):
                         except ValueError:
                             match_info["kickoff_unknown_reason"] = "parse_failure"
                     else:
-                        if re.fullmatch(r"(?:日付|開催日|日時)?未定|TBC|TBD|TBA|[-–—]+", raw_day, re.I):
+                        clock_element = date_element.find('p', class_='time')
+                        raw_clock = clock_element.get_text(" ", strip=True) if clock_element else ""
+                        clock_unannounced = not raw_clock or bool(re.fullmatch(r"TBC|TBD|TBA|未定|[-–—]+", raw_clock, re.I))
+                        if re.fullmatch(r"(?:日付|開催日|日時)?未定|TBC|TBD|TBA|[-–—]+", raw_day, re.I) and clock_unannounced:
                             match_info["_schedule_date_not_announced"] = True
                         else:
                             match_info["kickoff_unknown_reason"] = "parse_failure"
