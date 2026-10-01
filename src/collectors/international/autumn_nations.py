@@ -12,7 +12,7 @@ class AutumnNationsSeriesScraper(WorldRugbyCompetitionScraper):
 
     def __init__(self):
         super().__init__(
-            include_patterns=[r"Autumn Nations Series"],
+            include_patterns=[r"^Autumn Nations Series(?:\s+\d{4})?$"],
             competition_id="ans",
             source_url="https://www.world.rugby/fixtures",
             source_name="World Rugby",

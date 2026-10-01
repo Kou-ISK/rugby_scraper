@@ -32,6 +32,7 @@ on:
           - wr
           - trc
           - ans
+          - nc
 
 permissions:
   contents: write
@@ -46,7 +47,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref }}
           persist-credentials: true
           fetch-depth: 0
 
@@ -54,7 +55,7 @@ jobs:
         run: |
           git fetch origin data:data
           git checkout data -- data/ || mkdir -p data/matches
-          git checkout main
+          git restore --source=HEAD -- data/competitions_base.json
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -71,6 +72,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
+      - name: Regression tests
+        run: python -m unittest discover -s tests -v
+
       - name: Run scrapers
         env:
           PYTHONPATH: .
@@ -78,7 +82,7 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.mode }}" = "all" ]; then
             python scripts/automation/scrape_all.py
           else
-            python -m src.main "${{ inputs.competition }}"
+            python scripts/automation/scrape_all.py --competition "${{ inputs.competition }}"
           fi
 
       - name: Generate competitions summary
@@ -86,5 +90,20 @@ jobs:
           python -m src.main generate-metadata
 
       - name: Commit and push changes to data branch
+        if: github.ref == 'refs/heads/main'
         run: |
           scripts/automation/push_data_branch.sh "Update match data - $(date +'%Y-%m-%d %H:%M:%S')"
+
+      - name: Upload collection evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fixture-collection-${{ github.run_id }}
+          path: |
+            data/manifest.json
+            data/source_health.json
+            data/scrape_report.json
+            data/matches/
+
+      - name: Report source failures after healthy data is published
+        run: python -c 'import json, sys; report = json.load(open("data/scrape_report.json")); sys.exit(1 if report["failed_sources"] else 0)'

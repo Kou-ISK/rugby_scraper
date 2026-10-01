@@ -1127,6 +1127,59 @@
     }
   },
   {
+    "id": "nc",
+    "name": "Nations Championship",
+    "short_name": "NC",
+    "sport": "rugby union",
+    "category": "international",
+    "gender": "men",
+    "age_grade": "senior",
+    "tier": "tier-1",
+    "region": "global",
+    "governing_body": "Six Nations Rugby / SANZAAR",
+    "organizer": "Six Nations Rugby / SANZAAR",
+    "official_sites": [
+      "https://www.world.rugby/beta/en/tournaments/nations-championship/2026"
+    ],
+    "official_feeds": [
+      "https://api.wr-rims-prod.pulselive.com"
+    ],
+    "timezone_default": "UTC",
+    "season_pattern": "biennial",
+    "match_url_template": "https://www.world.rugby/match/{matchId}",
+    "data_paths": [
+      "data/matches/nc"
+    ],
+    "coverage": {
+      "broadcast_regions": [],
+      "analysis_providers": [
+        {
+          "name": "ESPN Rugby",
+          "official_source": "https://www.espn.com/rugby/"
+        },
+        {
+          "name": "RugbyPass",
+          "official_source": "https://www.rugbypass.com/"
+        },
+        {
+          "name": "RugbyPass TV",
+          "official_source": "https://info.rugbypass.tv/"
+        }
+      ],
+      "notes": "Broadcasting rights are region-specific. Check official regional availability."
+    },
+    "teams": [],
+    "data_summary": {
+      "match_count": 0,
+      "seasons": [],
+      "date_range": {
+        "start": "",
+        "end": ""
+      },
+      "last_updated": ""
+    }
+  },
+  {
     "id": "wr",
     "name": "World Rugby Internationals",
     "short_name": "WR Internationals",

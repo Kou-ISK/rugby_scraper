@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from ..base import BaseScraper
 
 class RugbyVizScraper(BaseScraper):
+    IDENTITY_PROVIDER = "rugbyviz"
     def __init__(
         self,
         *,
@@ -22,6 +23,7 @@ class RugbyVizScraper(BaseScraper):
         self.api_base = "https://rugby-union-feeds.incrowdsports.com"
         self.competition_id = competition_id
         self.competition_slug = competition_slug
+        self._competition_id = competition_slug
         self.competition_name = competition_name
         self.source_url = source_url
         self.config_url = config_url
@@ -37,7 +39,9 @@ class RugbyVizScraper(BaseScraper):
         headers = {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         }
-        html = requests.get(self.config_url, headers=headers, timeout=30).text
+        response = requests.get(self.config_url, headers=headers, timeout=(10, 30))
+        response.raise_for_status()
+        html = response.text
         api_key = self._extract_config_value(html, "apiKey")
         app_id = self._extract_config_value(html, "appId")
         realm_id = self._extract_config_value(html, "realmId")
@@ -45,14 +49,9 @@ class RugbyVizScraper(BaseScraper):
         season_raw = self._extract_config_value(html, "season", numeric=True)
         provider = self._extract_config_value(html, "dataProvider")
 
-        # デバッグ: season_rawの値を確認
-        print(f"🔍 DEBUG: season_raw = {season_raw} (type: {type(season_raw)})")
-
         # seasonが202501形式の場合、先頭4桁（年）のみを抽出
         season = season_raw[:4] if season_raw and len(season_raw) >= 4 else season_raw
         
-        print(f"🔍 DEBUG: season = {season} (extracted from season_raw)")
-
         self._config_cache = {
             "api_key": api_key,
             "app_id": app_id,
@@ -66,9 +65,9 @@ class RugbyVizScraper(BaseScraper):
 
     def _extract_config_value(self, html: str, key: str, numeric: bool = False):
         if numeric:
-            match = re.search(rf"{key}:(\\d+)", html)
+            match = re.search(rf'["\']?{re.escape(key)}["\']?\s*:\s*["\']?(\d+)', html)
         else:
-            match = re.search(rf'{key}:"([^"]+)"', html)
+            match = re.search(rf'["\']?{re.escape(key)}["\']?\s*:\s*["\']([^"\']+)["\']', html)
         return match.group(1) if match else None
     
     def _fetch_team_logos_from_official_site(self):
@@ -158,7 +157,7 @@ class RugbyVizScraper(BaseScraper):
                 self._fetch_team_logos_from_official_site()
             
             config = self._fetch_config()
-            if not config.get("api_key"):
+            if not all(config.get(key) for key in ("api_key", "app_id", "realm_id", "client_id", "season_id")):
                 print("API設定の取得に失敗しました")
                 return None
 
@@ -177,17 +176,25 @@ class RugbyVizScraper(BaseScraper):
             }
 
             all_matches = []
-            first_page = requests.get(
+            first_response = requests.get(
                 f"{self.api_base}/v1/matches", headers=headers, params=params, timeout=30
-            ).json()
+            )
+            first_response.raise_for_status()
+            first_page = first_response.json()
+            if not isinstance(first_page.get("data"), list):
+                raise ValueError("RugbyViz response has no data array")
             all_matches.extend(first_page.get("data", []))
 
             total_pages = first_page.get("metadata", {}).get("totalPages", 1)
             for page in range(1, total_pages):
                 params["pageNumber"] = page
-                page_data = requests.get(
+                page_response = requests.get(
                     f"{self.api_base}/v1/matches", headers=headers, params=params, timeout=30
-                ).json()
+                )
+                page_response.raise_for_status()
+                page_data = page_response.json()
+                if not isinstance(page_data.get("data"), list):
+                    raise ValueError("RugbyViz page has no data array")
                 all_matches.extend(page_data.get("data", []))
 
             normalized = [self._normalize_match(m, config) for m in all_matches]
@@ -246,16 +253,11 @@ class RugbyVizScraper(BaseScraper):
         elif match.get("title"):
             round_name = str(match.get("title"))
 
-        # season決定: 試合データから年を抽出（kickoffから判定）
-        season = None
-        kickoff_date = match.get("date")
-        if kickoff_date:
-            # "2025-09-26T..." -> "2025"
-            season = kickoff_date[:4]
-        
-        # フォールバック: configから取得
+        # A season spans two calendar years. The official configured season is
+        # the partition key, never an individual match's kickoff year.
+        season = config.get("season")
         if not season:
-            season = config.get("season") or str(datetime.now().year)
+            raise ValueError("Official RugbyViz season is missing")
 
         home_team_name = home_team.get("name", "")
         away_team_name = away_team.get("name", "")
@@ -274,7 +276,7 @@ class RugbyVizScraper(BaseScraper):
             venue=venue.get("name", ""),
             home_team=home_team_name,
             away_team=away_team_name,
-            match_url="",
+            match_url=match.get("matchUrl") or match.get("url") or "",
             broadcasters=broadcasters,
             match_id=match.get("id"),
             home_team_id=home_team_id,

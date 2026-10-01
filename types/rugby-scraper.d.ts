@@ -1,7 +1,7 @@
 /**
  * rugby_scraper JSON インターフェイス型定義
  *
- * @version 1.3
+ * @version 1.4
  * @description itsuneru プロジェクトが rugby_scraper から取得する JSON の型定義
  * @see https://github.com/Kou-ISK/rugby_scraper/blob/main/docs/JSON_SCHEMA.md
  * @updated 2026-02-10 - 現行JSON出力に合わせてフィールドを整理
@@ -13,10 +13,22 @@
 export interface Match {
   /**
    * 試合ID（ユニークID）
-   * @description スクレイパーが生成する安定ID
+   * @description 互換用の並び順ID。保存プランの照合には stable_id を使う
    * @example "w6n-2026-1"
    */
   match_id: string;
+
+  /** 公式識別子／URLから生成した、並び順に依存しないID */
+  stable_id: string;
+  source_match_id?: string;
+  source_provider: string;
+  identity_version: 2;
+  /** 移行候補。大会/season/provider/元snapshotも照合してから使う */
+  previous_stable_ids?: string[];
+  /** weak の場合は日付・対戦カードの変更を自動照合しない */
+  identity_strength: 'official' | 'url' | 'weak';
+  /** 時刻未定で日付のみ判明している場合。深夜0時として扱わない */
+  kickoff_date?: string;
 
   /**
    * 大会ID（新形式）
@@ -116,6 +128,42 @@ export interface Match {
  * 試合データ配列
  */
 export type Matches = Match[];
+
+export interface FixtureCoverage {
+  match_count: number;
+  known_kickoffs: number;
+  unknown_kickoffs: number;
+  date_range: { start: string; end: string };
+}
+
+export interface FixtureFile {
+  path: string;
+  season: string;
+  sha256: string;
+  match_count: number;
+  known_kickoffs: number;
+  unknown_kickoffs: number;
+  trust: 'verified' | 'unverified' | 'invalid';
+  validated_at: string;
+  error: string;
+}
+
+export interface FixtureManifest {
+  schema_version: 1;
+  generated_at: string;
+  competitions: Array<{
+    id: string;
+    name: string;
+    data_paths: string[];
+    seasons: string[];
+    status: 'healthy' | 'partial' | 'stale' | 'unavailable';
+    last_success_at: string;
+    last_attempt_at: string;
+    error: string;
+    coverage: FixtureCoverage;
+    files: FixtureFile[];
+  }>;
+}
 
 /**
  * チームマスタデータ（data/teams.json）

@@ -2,6 +2,10 @@
 
 このドキュメントは、itsuneru プロジェクトが rugby_scraper から取得する JSON のインターフェイス定義です。
 
+最新の公開ファイル一覧・検証状態・SHA-256・失敗時の保持動作は
+[FIXTURE_PUBLICATION.md](FIXTURE_PUBLICATION.md) を参照してください。
+`data_paths` は manifest の検証済み実在パスが正本です。
+
 ## 1. 試合データ（`data/matches/{comp_id}/{season}.json`）
 
 各大会の試合データを含む配列。大会・チームのIDはマスタ（`data/competitions.json` / `data/teams.json`）を基に付与します。
@@ -24,8 +28,17 @@ https://raw.githubusercontent.com/Kou-ISK/rugby_scraper/data/data/matches/jrlo-d
 
 ```typescript
 interface Match {
-  // 安定した一意ID（スクレイパーが生成）
+  // 互換用の並び順ID（更新時の安定性は保証しない）
   match_id: string;
+
+  // 保存プラン照合用。official/url は公式識別子に基づく。
+  stable_id: string;
+  source_match_id?: string;
+  source_provider: string;
+  identity_version: 2;
+  previous_stable_ids?: string[]; // 移行候補。season等の照合なしに自動適用しない。
+  identity_strength: 'official' | 'url' | 'weak';
+  kickoff_date?: string; // 時刻未定の場合の日付のみ。midnightとして扱わない。
 
   // 大会ID（マスタの id と一致）
   competition_id: string;

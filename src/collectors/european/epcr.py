@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 class EPCRBaseScraper(BaseScraper):
+    IDENTITY_PROVIDER = "epcr"
     def __init__(self, competition_type):
         super().__init__()
         self.base_url = "https://www.epcrugby.com"
@@ -68,6 +69,8 @@ class EPCRBaseScraper(BaseScraper):
                     "home_team": home_team,
                     "away_team": away_team,
                     "date": fixture.get("date"),
+                    "timezone": "UTC",
+                    "source_match_id": match_id,
                     "venue": (fixture.get("venue") or {}).get("name", ""),
                     "broadcasters": fixture.get("broadcasters") or [],
                 }
@@ -83,7 +86,7 @@ class EPCRBaseScraper(BaseScraper):
         soup = BeautifulSoup(html_content, 'html.parser')
 
         def normalize_name(value: str) -> str:
-            return re.sub(r'\\s+', ' ', (value or '').strip().lower())
+            return re.sub(r'\s+', ' ', (value or '').strip().lower())
 
         def find_logo_for_team(container, team_name: str) -> str:
             if not team_name:
@@ -141,6 +144,7 @@ class EPCRBaseScraper(BaseScraper):
                     if date_element:
                         date_text = date_element.text.strip()
                         match_info['date'] = self.format_date_string(date_text)
+                        match_info['timezone'] = "Europe/Paris"
 
                     venue_element = info_container.select_one('.flex.items-center.lg\\:ml-4')
                     if venue_element:
@@ -175,7 +179,7 @@ class EPCRBaseScraper(BaseScraper):
             # 月の省略形を数字に変換
             month_number = datetime.strptime(month, "%b").month
 
-            formatted_string = f"{year}-{month_number:02}-{day} {time_part}:00"
+            formatted_string = f"{int(year):04}-{month_number:02}-{int(day):02} {time_part}:00"
             return formatted_string
         except (ValueError, IndexError):
             return None  # 変換できない場合
@@ -223,12 +227,13 @@ class EPCRChampionsCupScraper(EPCRBaseScraper):
                 round_name="",
                 status="",
                 kickoff=match.get("date"),
-                timezone_name="UTC",
+                timezone_name=match.get("timezone") or "UTC",
                 venue=match.get("venue", ""),
                 home_team=match.get("home_team", ""),
                 away_team=match.get("away_team", ""),
                 match_url=match.get("url", ""),
                 broadcasters=match.get("broadcasters") or [],
+                match_id=match.get("source_match_id"),
             )
             for match in raw_matches
         ]
@@ -263,12 +268,13 @@ class EPCRChallengeCupScraper(EPCRBaseScraper):
                 round_name="",
                 status="",
                 kickoff=match.get("date"),
-                timezone_name="UTC",
+                timezone_name=match.get("timezone") or "UTC",
                 venue=match.get("venue", ""),
                 home_team=match.get("home_team", ""),
                 away_team=match.get("away_team", ""),
                 match_url=match.get("url", ""),
                 broadcasters=match.get("broadcasters") or [],
+                match_id=match.get("source_match_id"),
             )
             for match in raw_matches
         ]
