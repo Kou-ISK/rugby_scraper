@@ -332,6 +332,26 @@ class PublicationReliabilityTests(unittest.TestCase):
                 self.assertEqual(before, self.path.read_bytes())
                 self.assertEqual(verified, self.health["files"])
 
+    def test_previous_validation_version_retains_only_currently_valid_last_good(self):
+        collect_source("urc", self.data_dir, self.health, run=self.fake_run([fixture()]))
+        relative = "data/matches/urc/2026.json"
+        self.health["files"][relative]["validation_version"] = 2
+        before = self.path.read_bytes()
+        collect_source("urc", self.data_dir, self.health, run=self.fake_run([], returncode=1))
+        write_json_atomic(self.data_dir / "source_health.json", self.health)
+        _, manifest = build_competitions(self.data_dir)
+        self.assertEqual([relative], manifest["competitions"][0]["data_paths"])
+        self.assertEqual("stale", manifest["competitions"][0]["status"])
+        self.assertEqual(before, self.path.read_bytes())
+        invalid = fixture()
+        invalid["timezone"] = "UTC+99:99"
+        write_json_atomic(self.path, [invalid])
+        self.health["files"][relative]["sha256"] = file_sha256(self.path)
+        write_json_atomic(self.data_dir / "source_health.json", self.health)
+        _, manifest = build_competitions(self.data_dir)
+        self.assertEqual([], manifest["competitions"][0]["data_paths"])
+        self.assertEqual("invalid", manifest["competitions"][0]["files"][0]["trust"])
+
     def test_second_invalid_file_rejects_the_whole_source_without_promoting_first(self):
         before = self.path.read_bytes()
         def run(command, *, env, **kwargs):

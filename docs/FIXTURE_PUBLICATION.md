@@ -41,7 +41,9 @@ and an exact match between the kickoff offset and its IANA or fixed source timez
 An optional unknown-kickoff date must be a real YYYY-MM-DD calendar date. The
 consumer and producer run the same `tests/fixtures/datetime-contract.json`
 negative/positive cases. Invalid records reject staged publication and preserve
-the verified last-good file; old validation versions require recollection.
+the verified last-good file. A hash-matching version2 last-good file is retained
+only if it also passes the current validator. Other old/unverified files require
+recollection; invalid old records never become verified through metadata alone.
 
 `coverage.date_range` contains UTC `start`/`end` or empty strings when unavailable.
 Counts obey `known_kickoffs + unknown_kickoffs = match_count`. The same verified

@@ -140,5 +140,14 @@ def validate_match_file(path, competition_id=None):
 def is_verified_file(path, health, data_dir):
     relative = "data/" + Path(path).relative_to(data_dir).as_posix()
     record = health.get("files", {}).get(relative, {})
-    return (record.get("validation_version") == VALIDATION_VERSION
-            and record.get("sha256") == file_sha256(path))
+    if (record.get("validation_version") not in (2, VALIDATION_VERSION)
+            or record.get("sha256") != file_sha256(path)):
+        return False
+    # A failed recollection must not hide a valid previous ledger merely because
+    # validation became stricter. Version2 receives current validation before use;
+    # unverifiable legacy data and invalid previous records remain excluded.
+    try:
+        validate_match_file(path)
+        return True
+    except (ValueError, TypeError, KeyError):
+        return False
