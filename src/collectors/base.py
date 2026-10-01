@@ -1149,6 +1149,8 @@ class BaseScraper(ABC):
         }
         if match_id is not None and str(match_id):
             result["source_match_id"] = str(match_id)
+        if not kickoff_utc:
+            result["kickoff_unknown_reason"] = "not_available" if not kickoff else "parse_failure"
         if isinstance(kickoff, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", kickoff.strip()):
             try:
                 datetime.strptime(kickoff.strip(), "%Y-%m-%d")
@@ -1156,6 +1158,7 @@ class BaseScraper(ABC):
                 pass
             else:
                 result["kickoff_date"] = kickoff.strip()
+                result["kickoff_unknown_reason"] = "not_announced"
         return result
 
     def apply_timezone_override(self, driver, timezone_id: str):

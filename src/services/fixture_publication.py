@@ -10,6 +10,7 @@ import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
+from urllib.parse import urlparse
 
 VALIDATION_VERSION = 3
 
@@ -128,12 +129,22 @@ def validate_match_file(path, competition_id=None):
             raise ValueError(f"{prefix}: kickoff offset disagrees with source timezone")
         dates.append(utc_instant.isoformat().replace("+00:00", "Z"))
     if not dates:
-        raise ValueError("No usable kickoffs were collected; preserve the last known good file")
+        masters = load_json(path.parents[2] / "competitions_base.json", [])
+        master = next((m for m in masters if m.get("id") == competition_id), {})
+        hosts = {urlparse(u).hostname for u in master.get("official_sites", []) + master.get("official_feeds", [])}
+        for match in matches:
+            evidence = urlparse(match.get("source_url") or match.get("match_url") or "")
+            if (not valid_calendar_date(match.get("kickoff_date") or match.get("kickoff"))
+                    or match.get("kickoff_unknown_reason") != "not_announced"
+                    or not isinstance(match.get("venue"), str) or not match["venue"].strip()
+                    or match.get("source_type") != "official"
+                    or evidence.scheme != "https" or not evidence.hostname or evidence.hostname not in hosts):
+                raise ValueError("All-unknown fixtures require official evidence, valid dates, venues and an explicit not-announced reason")
     return {
         "match_count": len(matches),
         "known_kickoffs": len(dates),
         "unknown_kickoffs": unknown,
-        "date_range": {"start": min(dates), "end": max(dates)},
+        "date_range": {"start": min(dates) if dates else "", "end": max(dates) if dates else ""},
     }
 
 

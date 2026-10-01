@@ -352,6 +352,28 @@ class PublicationReliabilityTests(unittest.TestCase):
         self.assertEqual([], manifest["competitions"][0]["data_paths"])
         self.assertEqual("invalid", manifest["competitions"][0]["files"][0]["trust"])
 
+    def test_official_all_unknown_dates_publish_without_midnight_and_fail_closed(self):
+        write_json_atomic(self.data_dir / "competitions_base.json", [{"id": "urc", "name": "URC", "official_sites": ["https://official.example"]}])
+        candidate = fixture(source_id="official-date-only", kickoff="2026-12-12")
+        candidate.update(source_url="https://official.example/schedule", source_type="official")
+        result = collect_source("urc", self.data_dir, self.health, run=self.fake_run([candidate]))
+        self.assertEqual("success", result["outcome"])
+        write_json_atomic(self.data_dir / "source_health.json", self.health)
+        _, manifest = build_competitions(self.data_dir)
+        c = manifest["competitions"][0]
+        self.assertEqual(["data/matches/urc/2026.json"], c["data_paths"])
+        self.assertEqual({"start": "", "end": ""}, c["coverage"]["date_range"])
+        self.assertEqual(0, c["coverage"]["known_kickoffs"])
+        self.assertEqual(1, c["coverage"]["unknown_kickoffs"])
+        before = self.path.read_bytes()
+        for change in [{"kickoff_unknown_reason": "parse_failure"}, {"source_url": "https://unrelated.example"},
+                       {"kickoff_date": "2026-02-30"}, {"venue": ""}, {"source_type": "curated"}]:
+            with self.subTest(change=change):
+                bad = {**candidate, **change}
+                outcome = collect_source("urc", self.data_dir, self.health, run=self.fake_run([bad]))
+                self.assertEqual("failed", outcome["outcome"])
+                self.assertEqual(before, self.path.read_bytes())
+
     def test_second_invalid_file_rejects_the_whole_source_without_promoting_first(self):
         before = self.path.read_bytes()
         def run(command, *, env, **kwargs):

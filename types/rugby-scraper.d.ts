@@ -29,6 +29,7 @@ export interface Match {
   identity_strength: 'official' | 'url' | 'weak';
   /** 時刻未定で日付のみ判明している場合。深夜0時として扱わない */
   kickoff_date?: string;
+  kickoff_unknown_reason?: "not_announced" | "parse_failure" | "not_available";
 
   /**
    * 大会ID（新形式）

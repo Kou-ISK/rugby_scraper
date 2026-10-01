@@ -35,6 +35,13 @@ the corrected collector and validation accepted that content. It does not mean
 the organizer cannot reschedule a match or that broadcasting rights are final.
 Unknown times remain unknown. They are excluded from calendar/timeline placement.
 
+A nonempty all-unknown file can be verified when every record has a valid
+calendar date, teams, venue, an explicit `kickoff_unknown_reason: not_announced`,
+and an HTTPS official evidence URL whose host appears in the competition's
+official sites/feeds. Unknown UTC coverage stays empty. `parse_failure` and
+`not_available` are distinct from an official unannounced kickoff and cannot
+justify all-unknown publication. Empty/invalid collection still keeps last-good.
+
 Validation version 3 requires strict ISO kickoff strings, valid clock/calendar
 fields, offsets with hours 00-23 and minutes 00-59, identical local/UTC instants,
 and an exact match between the kickoff offset and its IANA or fixed source timezone.

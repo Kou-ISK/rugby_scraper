@@ -417,6 +417,12 @@ class LeagueOneDivisionsScraper(BaseScraper):
                         month, day = map(int, day_match.groups())
                         try:
                             match_info["kickoff_date"] = datetime(self._season_year_for_month(month), month, day).date().isoformat()
+                            raw_clock = (raw_date or "").split()[2:]
+                            not_announced = not raw_clock or bool(re.search(r"TBC|TBD|未定|^[-–]+$", " ".join(raw_clock), re.I))
+                            match_info["kickoff_unknown_reason"] = "not_announced" if not_announced else "parse_failure"
+                            match_info["source_type"] = "official"
+                            match_info["source_name"] = "Japan Rugby League One"
+                            match_info["source_url"] = match_url or "https://league-one.jp/schedule/"
                         except ValueError:
                             pass
                 self._apply_optional_match_details(match_info, schedule_details)
