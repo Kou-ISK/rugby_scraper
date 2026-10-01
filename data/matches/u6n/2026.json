@@ -1,6 +1,7 @@
 [
   {
     "match_id": "u6n-2026-1",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -14,10 +15,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/italy-u20-v-scotland-u20-06022026-2015/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:1cb63abb46a8f6ac917eb64f",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-2",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -31,10 +36,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/england-u20-v-wales-u20-06022026-1945/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:1ca64656f1f286d1c7c25005",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-3",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -48,10 +57,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/france-u20-v-ireland-u20-07022026-2000/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:0dc8ade8343b7786b0cfdf65",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-4",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -65,10 +78,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/scotland-u20-v-england-u20-13022026-1915/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:ddc4178741d3dd80f0c83bb6",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-5",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -82,10 +99,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/ireland-u20-v-italy-u20-13022026-1945/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:ed75d40647f64cb3362a5299",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-6",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -99,10 +120,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/wales-u20-v-france-u20-14022026-2000/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:3e7e64be503bc4b22e8f3f68",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-7",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -116,10 +141,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/wales-u20-v-scotland-u20-20022026-1915/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:e207b0fb80ff7f5b5eacfa61",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-8",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -133,10 +162,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/england-u20-v-ireland-u20-20022026-1945/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:d2c270c687a93ba2906df237",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-9",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -150,10 +183,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/france-u20-v-italy-u20-21022026-2100/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:0ba3dbcd8b545802cb06fa5e",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-10",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -167,10 +204,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/scotland-u20-v-france-u20-06032026-1815/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:c5e81831f915d63dec8706f7",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-11",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -184,10 +225,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/italy-u20-v-england-u20-06032026-2015/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:3832e2065fa5dc3245b92d18",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-12",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -201,10 +246,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/ireland-u20-v-wales-u20-07032026-1945/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:32cfecab499d8e742c30b8e4",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-13",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -218,10 +267,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/wales-u20-v-italy-u20-15032026-1300/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:b0a84195cc32aff0c74c03de",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-14",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -235,10 +288,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/ireland-u20-v-scotland-u20-15032026-1515/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:720274ce907495673dd2cc8d",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "u6n-2026-15",
+    "source_provider": "six-nations",
     "competition_id": "u6n",
     "season": "2026",
     "round": "",
@@ -252,6 +309,9 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/u6n/u20-mens/fixtures/202600/france-u20-v-england-u20-15032026-1845/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "u6n:v2:2e948b4db86a6f0714898d8a",
+    "identity_version": 2,
+    "identity_strength": "url"
   }
 ]

@@ -1,0 +1,663 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "wr": {
+      "last_attempt_at": "2026-10-01T23:05:54.539019Z",
+      "outcome": "failed",
+      "error": "Source process exited with status 1"
+    },
+    "premier": {
+      "last_attempt_at": "2026-10-01T23:06:22.385727Z",
+      "outcome": "success",
+      "error": "",
+      "last_success_at": "2026-10-01T23:06:22.385727Z"
+    },
+    "urc": {
+      "last_attempt_at": "2026-10-01T23:06:25.318448Z",
+      "outcome": "success",
+      "error": "",
+      "last_success_at": "2026-10-01T23:06:25.318448Z"
+    },
+    "trc": {
+      "last_attempt_at": "2026-10-01T23:06:27.229769Z",
+      "outcome": "failed",
+      "error": "Source process exited with status 1"
+    },
+    "ans": {
+      "last_attempt_at": "2026-10-01T23:06:27.927054Z",
+      "outcome": "failed",
+      "error": "Source process exited with status 1"
+    },
+    "nc": {
+      "last_attempt_at": "2026-10-01T23:06:28.611276Z",
+      "outcome": "failed",
+      "error": "Source process exited with status 1"
+    },
+    "srp": {
+      "last_attempt_at": "2026-10-01T23:06:29.062690Z",
+      "outcome": "success",
+      "error": "",
+      "last_success_at": "2026-10-01T23:06:29.062690Z"
+    },
+    "epcr-champions": {
+      "last_attempt_at": "2026-10-01T23:06:33.132868Z",
+      "outcome": "success",
+      "error": "",
+      "last_success_at": "2026-10-01T23:06:33.132868Z"
+    },
+    "epcr-challenge": {
+      "last_attempt_at": "2026-10-01T23:06:41.668849Z",
+      "outcome": "success",
+      "error": "",
+      "last_success_at": "2026-10-01T23:06:41.668849Z"
+    },
+    "t14": {
+      "last_attempt_at": "2026-10-01T23:06:49.366722Z",
+      "outcome": "success",
+      "error": "",
+      "last_success_at": "2026-10-01T23:06:49.366722Z"
+    },
+    "jrlo-div1": {
+      "last_attempt_at": "2026-10-01T23:32:06.821809Z",
+      "outcome": "success",
+      "error": "",
+      "collection_coverage": {
+        "season": "2027",
+        "observed_match_count": 108,
+        "included_match_count": 97,
+        "date_unannounced_count": 11,
+        "date_unannounced": [
+          {
+            "stable_id": "jrlo-div1:v2:4e34b50c70dca959f168d902",
+            "source_match_id": "31146",
+            "home_team": "ブラックラムズ東京",
+            "away_team": "コベルコ神戸スティーラーズ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31146",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div1:v2:47e946f2f6b0ae316551b94f",
+            "source_match_id": "31194",
+            "home_team": "東京サンゴリアス",
+            "away_team": "クボタスピアーズ船橋・東京ベイ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31194",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div1:v2:2257770ce2fa8f8638d8156b",
+            "source_match_id": "31206",
+            "home_team": "ブラックラムズ東京",
+            "away_team": "静岡ブルーレヴズ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31206",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div1:v2:fb2b36820421b4f28eeee340",
+            "source_match_id": "31217",
+            "home_team": "静岡ブルーレヴズ",
+            "away_team": "東京サンゴリアス",
+            "venue": "ヤマハスタジアム (静岡県)",
+            "source_url": "https://league-one.jp/match/31217",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div1:v2:5c2aae746effb302397f1872",
+            "source_match_id": "31218",
+            "home_team": "東芝ブレイブルーパス武蔵",
+            "away_team": "浦安D-Rocks",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31218",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div1:v2:698a8396465642f5ea8bc958",
+            "source_match_id": "31224",
+            "home_team": "クボタスピアーズ船橋・東京ベイ",
+            "away_team": "コベルコ神戸スティーラーズ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31224",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div1:v2:be88dccfad635127138d901a",
+            "source_match_id": "31223",
+            "home_team": "ブラックラムズ東京",
+            "away_team": "浦安D-Rocks",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31223",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div1:v2:3c6a9bd5b8160e6263daf89c",
+            "source_match_id": "31230",
+            "home_team": "浦安D-Rocks",
+            "away_team": "クボタスピアーズ船橋・東京ベイ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31230",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div1:v2:093f349fb5cee8e592621c6b",
+            "source_match_id": "31229",
+            "home_team": "コベルコ神戸スティーラーズ",
+            "away_team": "三菱重工相模原ダイナボアーズ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31229",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div1:v2:35e68269ea80a5f01fbbecb2",
+            "source_match_id": "31231",
+            "home_team": "栃木ホンダヒート",
+            "away_team": "浦安D-Rocks",
+            "venue": "ホンダヒート・グリーンスタジアム (栃木県)",
+            "source_url": "https://league-one.jp/match/31231",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div1:v2:35cfc802e0de389d9badfcdb",
+            "source_match_id": "31236",
+            "home_team": "コベルコ神戸スティーラーズ",
+            "away_team": "ブラックラムズ東京",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31236",
+            "reason": "date_not_announced"
+          }
+        ]
+      },
+      "last_success_at": "2026-10-01T23:32:06.821809Z"
+    },
+    "jrlo-div2": {
+      "last_attempt_at": "2026-10-01T23:32:06.821809Z",
+      "outcome": "success",
+      "error": "",
+      "collection_coverage": {
+        "season": "2027",
+        "observed_match_count": 56,
+        "included_match_count": 43,
+        "date_unannounced_count": 13,
+        "date_unannounced": [
+          {
+            "stable_id": "jrlo-div2:v2:c5af745de796eb45db334857",
+            "source_match_id": "31107",
+            "home_team": "スカイアクティブズ広島",
+            "away_team": "花園近鉄ライナーズ",
+            "venue": "福山通運ローズスタジアム (広島県)",
+            "source_url": "https://league-one.jp/match/31107",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:1e919bd857bc08c9370d0907",
+            "source_match_id": "31121",
+            "home_team": "スカイアクティブズ広島",
+            "away_team": "九州電力キューデンヴォルテクス",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31121",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:b8774b2910e07f1bd123075e",
+            "source_match_id": "31122",
+            "home_team": "グリーンウォリアーズ東葛",
+            "away_team": "清水建設江東ブルーシャークス",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31122",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:787289adc5928664138e555a",
+            "source_match_id": "31124",
+            "home_team": "清水建設江東ブルーシャークス",
+            "away_team": "スカイアクティブズ広島",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31124",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:43711ddc204b2951a22dbc9a",
+            "source_match_id": "31125",
+            "home_team": "レッドハリケーンズ大阪",
+            "away_team": "花園近鉄ライナーズ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31125",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:d21f4f56f68980fb4957adc3",
+            "source_match_id": "31126",
+            "home_team": "九州電力キューデンヴォルテクス",
+            "away_team": "川越狭山セコムラガッツ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31126",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:ab0541688bb248793984aa32",
+            "source_match_id": "31127",
+            "home_team": "スカイアクティブズ広島",
+            "away_team": "豊田自動織機シャトルズ愛知",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31127",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:a5c5d06bb4d02442abd25c48",
+            "source_match_id": "31128",
+            "home_team": "清水建設江東ブルーシャークス",
+            "away_team": "川越狭山セコムラガッツ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31128",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:31306745aaf073366d323656",
+            "source_match_id": "31129",
+            "home_team": "グリーンウォリアーズ東葛",
+            "away_team": "レッドハリケーンズ大阪",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31129",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:8c5945c44bd1ba3e6594f6e1",
+            "source_match_id": "31130",
+            "home_team": "花園近鉄ライナーズ",
+            "away_team": "九州電力キューデンヴォルテクス",
+            "venue": "大阪府内 (大阪府)",
+            "source_url": "https://league-one.jp/match/31130",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:6e8b4be13da29f6ef03f2828",
+            "source_match_id": "31132",
+            "home_team": "川越狭山セコムラガッツ",
+            "away_team": "花園近鉄ライナーズ",
+            "venue": "セコムラグビースタジアム (埼玉県)",
+            "source_url": "https://league-one.jp/match/31132",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:dfbe131b0d10293b9fd4166f",
+            "source_match_id": "31133",
+            "home_team": "九州電力キューデンヴォルテクス",
+            "away_team": "グリーンウォリアーズ東葛",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31133",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div2:v2:b9db93db4de48255b24a339c",
+            "source_match_id": "31134",
+            "home_team": "レッドハリケーンズ大阪",
+            "away_team": "スカイアクティブズ広島",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31134",
+            "reason": "date_not_announced"
+          }
+        ]
+      },
+      "last_success_at": "2026-10-01T23:32:06.821809Z"
+    },
+    "jrlo-div3": {
+      "last_attempt_at": "2026-10-01T23:32:06.821809Z",
+      "outcome": "success",
+      "error": "",
+      "collection_coverage": {
+        "season": "2027",
+        "observed_match_count": 42,
+        "included_match_count": 26,
+        "date_unannounced_count": 16,
+        "date_unannounced": [
+          {
+            "stable_id": "jrlo-div3:v2:8ac20ad24ea7a5853eb3f89a",
+            "source_match_id": "31051",
+            "home_team": "日野レッドドルフィンズ",
+            "away_team": "中国電力レッドレグリオンズ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31051",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:b54109ba24598d62a6364406",
+            "source_match_id": "31054",
+            "home_team": "日本製鉄釜石シーウェイブス",
+            "away_team": "日野レッドドルフィンズ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31054",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:73d289dfb4a67908c6688e29",
+            "source_match_id": "31056",
+            "home_team": "日野レッドドルフィンズ",
+            "away_team": "ルリーロ福岡",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31056",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:65634a7a0fe79302237c9918",
+            "source_match_id": "31062",
+            "home_team": "ルリーロ福岡",
+            "away_team": "クリタウォーターガッシュ昭島",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31062",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:37e62881a80e1085883a2423",
+            "source_match_id": "31063",
+            "home_team": "ヤクルトレビンズ戸田",
+            "away_team": "丸和MOMOTARO’S成田",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31063",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:6aac77b5e747a67061a8d8e5",
+            "source_match_id": "31068",
+            "home_team": "中国電力レッドレグリオンズ",
+            "away_team": "ルリーロ福岡",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31068",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:ab720dea06151b83d2d393e8",
+            "source_match_id": "31069",
+            "home_team": "丸和MOMOTARO’S成田",
+            "away_team": "日野レッドドルフィンズ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31069",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:615ecc76d3c3bee39e3f35fa",
+            "source_match_id": "31070",
+            "home_team": "中国電力レッドレグリオンズ",
+            "away_team": "日本製鉄釜石シーウェイブス",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31070",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:57cc808c35c1ead3fd5e35ac",
+            "source_match_id": "31071",
+            "home_team": "ヤクルトレビンズ戸田",
+            "away_team": "ルリーロ福岡",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31071",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:6fabc57eadb8278e6d9a4974",
+            "source_match_id": "31072",
+            "home_team": "日野レッドドルフィンズ",
+            "away_team": "クリタウォーターガッシュ昭島",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31072",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:a7aa426594ba0a24cc5e0c31",
+            "source_match_id": "31073",
+            "home_team": "日本製鉄釜石シーウェイブス",
+            "away_team": "ヤクルトレビンズ戸田",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31073",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:0bf5d2429cf4782759e37a29",
+            "source_match_id": "31074",
+            "home_team": "ルリーロ福岡",
+            "away_team": "日野レッドドルフィンズ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31074",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:ccdec18dba32cae3b670fa81",
+            "source_match_id": "31075",
+            "home_team": "クリタウォーターガッシュ昭島",
+            "away_team": "丸和MOMOTARO’S成田",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31075",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:b0235267f24c0ae349f5dd36",
+            "source_match_id": "31076",
+            "home_team": "日野レッドドルフィンズ",
+            "away_team": "日本製鉄釜石シーウェイブス",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31076",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:2a04d355575b35fa8ebeeec9",
+            "source_match_id": "31077",
+            "home_team": "ヤクルトレビンズ戸田",
+            "away_team": "中国電力レッドレグリオンズ",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31077",
+            "reason": "date_not_announced"
+          },
+          {
+            "stable_id": "jrlo-div3:v2:b8303912de8959aef4eb80c6",
+            "source_match_id": "31078",
+            "home_team": "丸和MOMOTARO’S成田",
+            "away_team": "ルリーロ福岡",
+            "venue": "未定",
+            "source_url": "https://league-one.jp/match/31078",
+            "reason": "date_not_announced"
+          }
+        ]
+      },
+      "last_success_at": "2026-10-01T23:32:06.821809Z"
+    },
+    "m6n": {
+      "last_attempt_at": "2026-10-01T23:06:52.321380Z",
+      "outcome": "success",
+      "error": "",
+      "last_success_at": "2026-10-01T23:06:52.321380Z"
+    },
+    "w6n": {
+      "last_attempt_at": "2026-10-01T23:07:06.398982Z",
+      "outcome": "success",
+      "error": "",
+      "last_success_at": "2026-10-01T23:07:06.398982Z"
+    },
+    "u6n": {
+      "last_attempt_at": "2026-10-01T23:07:20.383343Z",
+      "outcome": "success",
+      "error": "",
+      "last_success_at": "2026-10-01T23:07:20.383343Z"
+    }
+  },
+  "files": {
+    "data/matches/premier/2026.json": {
+      "sha256": "54890b31f946dd70cf51ec1d62b044fc18ce7d5a63011093ef95b7eb2599426c",
+      "validated_at": "2026-10-01T23:06:22.385727Z",
+      "validation_version": 3,
+      "source": "premier",
+      "coverage": {
+        "match_count": 93,
+        "known_kickoffs": 93,
+        "unknown_kickoffs": 0,
+        "date_range": {
+          "start": "2026-09-25T18:45:00Z",
+          "end": "2027-06-19T14:00:00Z"
+        }
+      }
+    },
+    "data/matches/urc/2026.json": {
+      "sha256": "414f9c9c52e90854d33ba3490b87063d4c9fc61c7af471b1aca34c976366f7e8",
+      "validated_at": "2026-10-01T23:06:25.318448Z",
+      "validation_version": 3,
+      "source": "urc",
+      "coverage": {
+        "match_count": 151,
+        "known_kickoffs": 151,
+        "unknown_kickoffs": 0,
+        "date_range": {
+          "start": "2026-09-25T18:45:00Z",
+          "end": "2027-06-19T14:00:00Z"
+        }
+      }
+    },
+    "data/matches/srp/2026.json": {
+      "sha256": "345d7d79f86f716dc3525668c978a5ef17d389a258ffc0194741e201c2e19782",
+      "validated_at": "2026-10-01T23:06:29.062690Z",
+      "validation_version": 3,
+      "source": "srp",
+      "coverage": {
+        "match_count": 77,
+        "known_kickoffs": 77,
+        "unknown_kickoffs": 0,
+        "date_range": {
+          "start": "2026-02-13T06:05:00Z",
+          "end": "2026-05-30T09:35:00Z"
+        }
+      }
+    },
+    "data/matches/epcr-champions/2026.json": {
+      "sha256": "8af1eed0f19594bf3df78790e9d1a69ccac39cd9b1a874d4677e360ead928912",
+      "validated_at": "2026-10-01T23:06:33.132868Z",
+      "validation_version": 3,
+      "source": "epcr-champions",
+      "coverage": {
+        "match_count": 63,
+        "known_kickoffs": 63,
+        "unknown_kickoffs": 0,
+        "date_range": {
+          "start": "2026-10-16T19:00:00Z",
+          "end": "2027-05-22T13:45:00Z"
+        }
+      }
+    },
+    "data/matches/epcr-challenge/2026.json": {
+      "sha256": "bb2c28785b8e79c3cc677d2f34979c0ecd850204a293d47149804d2846f40f15",
+      "validated_at": "2026-10-01T23:06:41.668849Z",
+      "validation_version": 3,
+      "source": "epcr-challenge",
+      "coverage": {
+        "match_count": 51,
+        "known_kickoffs": 51,
+        "unknown_kickoffs": 0,
+        "date_range": {
+          "start": "2026-10-16T19:00:00Z",
+          "end": "2027-05-21T19:00:00Z"
+        }
+      }
+    },
+    "data/matches/t14/2026-2027.json": {
+      "sha256": "47ca2ecc7e5d466f094362406f3312ee461b9598329b81d4e6e4e9234a7ef067",
+      "validated_at": "2026-10-01T23:06:49.366722Z",
+      "validation_version": 3,
+      "source": "t14",
+      "coverage": {
+        "match_count": 7,
+        "known_kickoffs": 7,
+        "unknown_kickoffs": 0,
+        "date_range": {
+          "start": "2026-10-03T12:30:00Z",
+          "end": "2026-10-04T19:05:00Z"
+        }
+      }
+    },
+    "data/matches/m6n/2026.json": {
+      "sha256": "82bf369a73c2aab07074a506a0e6453b65c2166fd0f8ea6ea6084e0547016214",
+      "validated_at": "2026-10-01T23:06:52.321380Z",
+      "validation_version": 3,
+      "source": "m6n",
+      "coverage": {
+        "match_count": 15,
+        "known_kickoffs": 15,
+        "unknown_kickoffs": 0,
+        "date_range": {
+          "start": "2026-02-05T20:10:00Z",
+          "end": "2026-03-14T20:10:00Z"
+        }
+      }
+    },
+    "data/matches/w6n/2026.json": {
+      "sha256": "5588b3988f4d4b6510d26cf9ff480f85e0d505bfaee5f8b1699e23b153f30290",
+      "validated_at": "2026-10-01T23:07:06.398982Z",
+      "validation_version": 3,
+      "source": "w6n",
+      "coverage": {
+        "match_count": 15,
+        "known_kickoffs": 15,
+        "unknown_kickoffs": 0,
+        "date_range": {
+          "start": "2026-04-11T09:25:00Z",
+          "end": "2026-05-17T13:45:00Z"
+        }
+      }
+    },
+    "data/matches/u6n/2026.json": {
+      "sha256": "7b1fbe02448bf5e68806408f1d8789ac941fc07b7b22a444efc0dc19ad701f3f",
+      "validated_at": "2026-10-01T23:07:20.383343Z",
+      "validation_version": 3,
+      "source": "u6n",
+      "coverage": {
+        "match_count": 15,
+        "known_kickoffs": 15,
+        "unknown_kickoffs": 0,
+        "date_range": {
+          "start": "2026-02-06T19:15:00Z",
+          "end": "2026-03-15T17:45:00Z"
+        }
+      }
+    },
+    "data/matches/jrlo-div1/2027.json": {
+      "sha256": "3322c0e062a11203c1b7e6c4ffc07922dbdcdce8531dc9225bfa08191a44ec7d",
+      "validated_at": "2026-10-01T23:32:06.821809Z",
+      "validation_version": 3,
+      "source": "jrlo",
+      "coverage": {
+        "match_count": 97,
+        "known_kickoffs": 0,
+        "unknown_kickoffs": 97,
+        "date_range": {
+          "start": "",
+          "end": ""
+        }
+      }
+    },
+    "data/matches/jrlo-div2/2027.json": {
+      "sha256": "9dcddb92919a3c9d9032996249ee2fd06d58c907b3635309d443c027e0ad5be9",
+      "validated_at": "2026-10-01T23:32:06.821809Z",
+      "validation_version": 3,
+      "source": "jrlo",
+      "coverage": {
+        "match_count": 43,
+        "known_kickoffs": 0,
+        "unknown_kickoffs": 43,
+        "date_range": {
+          "start": "",
+          "end": ""
+        }
+      }
+    },
+    "data/matches/jrlo-div3/2027.json": {
+      "sha256": "4081298a386ec19efdcd5d639c3c4e395e240e2bc1f7cdf785709533b3e36a16",
+      "validated_at": "2026-10-01T23:32:06.821809Z",
+      "validation_version": 3,
+      "source": "jrlo",
+      "coverage": {
+        "match_count": 26,
+        "known_kickoffs": 0,
+        "unknown_kickoffs": 26,
+        "date_range": {
+          "start": "",
+          "end": ""
+        }
+      }
+    }
+  }
+}

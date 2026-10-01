@@ -1,6 +1,7 @@
 [
   {
     "match_id": "epcr-challenge-2026-1",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -17,11 +18,17 @@
     "broadcasters": [
       "epcrtv",
       "beIN",
-      "FloRugby"
-    ]
+      "FloRugby",
+      "S4C"
+    ],
+    "source_match_id": "293380",
+    "stable_id": "epcr-challenge:v2:c86a4db07471b51d229668d4",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-2",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -40,10 +47,15 @@
       "beIN",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293381",
+    "stable_id": "epcr-challenge:v2:ae8f01fe1bc676429f2f5d5a",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-3",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -61,10 +73,15 @@
       "beIN",
       "SS",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293384",
+    "stable_id": "epcr-challenge:v2:62b54455467148f59ab54023",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-4",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -72,7 +89,7 @@
     "kickoff": "2026-10-17T12:00:00+00:00",
     "kickoff_utc": "2026-10-17T12:00:00Z",
     "timezone": "UTC",
-    "venue": "TBD",
+    "venue": "Avchala Stadium",
     "home_team": "Black Lion",
     "away_team": "Ospreys",
     "home_team_id": "epcr-challenge_2",
@@ -82,10 +99,15 @@
       "GruTV",
       "epcrtv",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293385",
+    "stable_id": "epcr-challenge:v2:326d9902eba7221d4263b283",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-5",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -103,10 +125,15 @@
       "epcrtv",
       "beIN",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293382",
+    "stable_id": "epcr-challenge:v2:e8508fbe7f9bb2946b92cd86",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-6",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -124,10 +151,15 @@
       "S4C",
       "epcrtv",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293383",
+    "stable_id": "epcr-challenge:v2:c3fcab322481d5382e5130f3",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-7",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -147,10 +179,15 @@
       "beIN",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293386",
+    "stable_id": "epcr-challenge:v2:1993e17a70909a9581d7a6e3",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-8",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -169,10 +206,15 @@
       "beIN",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293388",
+    "stable_id": "epcr-challenge:v2:731079e1a399abd6c7d05042",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-9",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -190,10 +232,15 @@
       "beIN",
       "epcrtv",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293387",
+    "stable_id": "epcr-challenge:v2:b2a0a2e77ebeaa7f66fc0c84",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-10",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -211,10 +258,15 @@
       "premier",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293394",
+    "stable_id": "epcr-challenge:v2:00a4c97267445fe462ae5a00",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-11",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -233,10 +285,15 @@
       "beIN",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293389",
+    "stable_id": "epcr-challenge:v2:1fd1e1c9cff7f05e025eca9b",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-12",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -254,10 +311,15 @@
       "epcrtv",
       "beIN",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293390",
+    "stable_id": "epcr-challenge:v2:6c20204dc8ae212fcba6310d",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-13",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -275,10 +337,15 @@
       "SS",
       "epcrtv",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293391",
+    "stable_id": "epcr-challenge:v2:5eb9acb7d578e303d0278b29",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-14",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -297,10 +364,15 @@
       "GruTV",
       "epcrtv",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293393",
+    "stable_id": "epcr-challenge:v2:9b6761102fb2e4bd9c465bab",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-15",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -318,10 +390,15 @@
       "epcrtv",
       "beIN",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293392",
+    "stable_id": "epcr-challenge:v2:19bddecad3e0df540b56bb65",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-16",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -341,10 +418,15 @@
       "beIN",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293397",
+    "stable_id": "epcr-challenge:v2:430bb55398f97b94e1fd86ee",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-17",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -362,10 +444,15 @@
       "epcrtv",
       "SS",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293395",
+    "stable_id": "epcr-challenge:v2:777c06ea28f02b73721a03ab",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-18",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -383,44 +470,254 @@
       "beIN",
       "epcrtv",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293396",
+    "stable_id": "epcr-challenge:v2:192540dbc428316831b5ccdf",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-19",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-01-05T14:00:00+00:00",
-    "kickoff_utc": "2027-01-05T14:00:00Z",
+    "kickoff": "2027-01-08T20:00:00+00:00",
+    "kickoff_utc": "2027-01-08T20:00:00Z",
     "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
+    "venue": "Rodney Parade",
+    "home_team": "Dragons RFC",
+    "away_team": "Bayonne",
+    "home_team_id": "epcr-challenge_5",
     "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293428",
-    "broadcasters": []
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293398",
+    "broadcasters": [
+      "S4C",
+      "beIN",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293398",
+    "stable_id": "epcr-challenge:v2:d105a2a706a06626add6fb59",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-20",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-01-05T14:00:00+00:00",
-    "kickoff_utc": "2027-01-05T14:00:00Z",
+    "kickoff": "2027-01-08T20:00:00+00:00",
+    "kickoff_utc": "2027-01-08T20:00:00Z",
     "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293429",
-    "broadcasters": []
+    "venue": "Kingston Park",
+    "home_team": "Newcastle Red Bulls",
+    "away_team": "Benetton Rugby",
+    "home_team_id": "epcr-challenge_10",
+    "away_team_id": "epcr-challenge_1",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293399",
+    "broadcasters": [
+      "premier",
+      "epcrtv",
+      "FloRugby"
+    ],
+    "source_match_id": "293399",
+    "stable_id": "epcr-challenge:v2:0714e2eab6eb371cad3d01dc",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-21",
+    "source_provider": "epcr",
+    "competition_id": "epcr-challenge",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-09T13:00:00+00:00",
+    "kickoff_utc": "2027-01-09T13:00:00Z",
+    "timezone": "UTC",
+    "venue": "Hollywoodbets Kings Park",
+    "home_team": "Hollywoodbets Sharks",
+    "away_team": "Castres Olympique",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293401",
+    "broadcasters": [
+      "SS",
+      "beIN",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293401",
+    "stable_id": "epcr-challenge:v2:8f9b9a7a5a2ccf46f1d825ef",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-challenge-2026-22",
+    "source_provider": "epcr",
+    "competition_id": "epcr-challenge",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-09T13:00:00+00:00",
+    "kickoff_utc": "2027-01-09T13:00:00Z",
+    "timezone": "UTC",
+    "venue": "Hive Stadium",
+    "home_team": "Edinburgh Rugby",
+    "away_team": "Harlequins",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293402",
+    "broadcasters": [
+      "premier",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293402",
+    "stable_id": "epcr-challenge:v2:89e05ea3d25b8bb51bd2814d",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-challenge-2026-23",
+    "source_provider": "epcr",
+    "competition_id": "epcr-challenge",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-09T13:00:00+00:00",
+    "kickoff_utc": "2027-01-09T13:00:00Z",
+    "timezone": "UTC",
+    "venue": "Stade Felix Mayol",
+    "home_team": "Toulon",
+    "away_team": "Ospreys",
+    "home_team_id": "",
+    "away_team_id": "epcr-challenge_11",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293403",
+    "broadcasters": [
+      "beIN",
+      "epcrtv",
+      "FloRugby"
+    ],
+    "source_match_id": "293403",
+    "stable_id": "epcr-challenge:v2:ac84519a7f23fe8c2ad02c0d",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-challenge-2026-24",
+    "source_provider": "epcr",
+    "competition_id": "epcr-challenge",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-09T20:00:00+00:00",
+    "kickoff_utc": "2027-01-09T20:00:00Z",
+    "timezone": "UTC",
+    "venue": "Parc y Scarlets",
+    "home_team": "Scarlets",
+    "away_team": "Lyon Olympique Universitaire",
+    "home_team_id": "",
+    "away_team_id": "epcr-challenge_8",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293400",
+    "broadcasters": [
+      "epcrtv",
+      "beIN",
+      "FloRugby",
+      "S4C"
+    ],
+    "source_match_id": "293400",
+    "stable_id": "epcr-challenge:v2:df50b360cb1f2e6c46c02fba",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-challenge-2026-25",
+    "source_provider": "epcr",
+    "competition_id": "epcr-challenge",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-10T13:00:00+00:00",
+    "kickoff_utc": "2027-01-10T13:00:00Z",
+    "timezone": "UTC",
+    "venue": "Stade Aimé Giral",
+    "home_team": "USAP",
+    "away_team": "Ulster Rugby",
+    "home_team_id": "epcr-challenge_16",
+    "away_team_id": "epcr-challenge_17",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293405",
+    "broadcasters": [
+      "FTV",
+      "epcrtv",
+      "beIN",
+      "FloRugby"
+    ],
+    "source_match_id": "293405",
+    "stable_id": "epcr-challenge:v2:9a8d7fc8020f123e97470360",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-challenge-2026-26",
+    "source_provider": "epcr",
+    "competition_id": "epcr-challenge",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-10T13:00:00+00:00",
+    "kickoff_utc": "2027-01-10T13:00:00Z",
+    "timezone": "UTC",
+    "venue": "Stade de la Rabine",
+    "home_team": "Vannes",
+    "away_team": "Black Lion",
+    "home_team_id": "",
+    "away_team_id": "epcr-challenge_2",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293406",
+    "broadcasters": [
+      "beIN",
+      "GruTV",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293406",
+    "stable_id": "epcr-challenge:v2:5314ee4a8fcb647f9f916ec5",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-challenge-2026-27",
+    "source_provider": "epcr",
+    "competition_id": "epcr-challenge",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-10T17:30:00+00:00",
+    "kickoff_utc": "2027-01-10T17:30:00Z",
+    "timezone": "UTC",
+    "venue": "Stadio Sergio Lanfranchi",
+    "home_team": "Zebre Parma",
+    "away_team": "Toyota Cheetahs",
+    "home_team_id": "epcr-challenge_18",
+    "away_team_id": "epcr-challenge_14",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293404",
+    "broadcasters": [
+      "epcrtv",
+      "SS",
+      "FloRugby"
+    ],
+    "source_match_id": "293404",
+    "stable_id": "epcr-challenge:v2:f606462c55bc6ede71d190d8",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-challenge-2026-28",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -439,10 +736,15 @@
       "beIN",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293407",
+    "stable_id": "epcr-challenge:v2:032df849111a0a7253dd4c9a",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-22",
+    "match_id": "epcr-challenge-2026-29",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -460,10 +762,15 @@
       "beIN",
       "epcrtv",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293408",
+    "stable_id": "epcr-challenge:v2:3986ec033270983fec2f11d3",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-23",
+    "match_id": "epcr-challenge-2026-30",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -478,13 +785,18 @@
     "away_team_id": "epcr-challenge_5",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293409",
     "broadcasters": [
+      "premier",
       "epcrtv",
-      "SS",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293409",
+    "stable_id": "epcr-challenge:v2:0299a8b6d392b47c5fa8f001",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-24",
+    "match_id": "epcr-challenge-2026-31",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -502,10 +814,15 @@
       "beIN",
       "epcrtv",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293411",
+    "stable_id": "epcr-challenge:v2:4ea21f392cede0c8b89f25f4",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-25",
+    "match_id": "epcr-challenge-2026-32",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -519,10 +836,15 @@
     "home_team_id": "epcr-challenge_1",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293410",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293410",
+    "stable_id": "epcr-challenge:v2:ab5bd5f10c751b4526f3141f",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-26",
+    "match_id": "epcr-challenge-2026-33",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -540,10 +862,15 @@
       "epcrtv",
       "beIN",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293412",
+    "stable_id": "epcr-challenge:v2:060502b0ae50362459125d72",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-27",
+    "match_id": "epcr-challenge-2026-34",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -562,10 +889,15 @@
       "epcrtv",
       "beIN",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293414",
+    "stable_id": "epcr-challenge:v2:81e8fdcab354fa69681a2fba",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-28",
+    "match_id": "epcr-challenge-2026-35",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -583,10 +915,15 @@
       "GruTV",
       "epcrtv",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293415",
+    "stable_id": "epcr-challenge:v2:3fedd64abb360ac2fc51bfd5",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-29",
+    "match_id": "epcr-challenge-2026-36",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
@@ -605,16 +942,21 @@
       "SS",
       "beIN",
       "FloRugby"
-    ]
+    ],
+    "source_match_id": "293413",
+    "stable_id": "epcr-challenge:v2:e7a40b944d6f6be9968d335f",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-30",
+    "match_id": "epcr-challenge-2026-37",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -622,16 +964,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293416",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293416",
+    "stable_id": "epcr-challenge:v2:97b75f74e1bd1fca4cde0bf9",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-31",
+    "match_id": "epcr-challenge-2026-38",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -639,16 +986,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293417",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293417",
+    "stable_id": "epcr-challenge:v2:88ff95defe9763a729692c5c",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-32",
+    "match_id": "epcr-challenge-2026-39",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -656,16 +1008,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293418",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293418",
+    "stable_id": "epcr-challenge:v2:2bc86e435213afb08d74e9a3",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-33",
+    "match_id": "epcr-challenge-2026-40",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -673,16 +1030,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293419",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293419",
+    "stable_id": "epcr-challenge:v2:c875abeda9c41a8b183a1988",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-34",
+    "match_id": "epcr-challenge-2026-41",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -690,16 +1052,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293420",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293420",
+    "stable_id": "epcr-challenge:v2:5fb13d396656771d5be6359c",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-35",
+    "match_id": "epcr-challenge-2026-42",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -707,16 +1074,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293421",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293421",
+    "stable_id": "epcr-challenge:v2:35c1529659a11c07b43320de",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-36",
+    "match_id": "epcr-challenge-2026-43",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -724,16 +1096,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293422",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293422",
+    "stable_id": "epcr-challenge:v2:13b0fc6d93e3f0c93541903c",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-challenge-2026-37",
+    "match_id": "epcr-challenge-2026-44",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -741,160 +1118,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293423",
-    "broadcasters": []
-  },
-  {
-    "match_id": "epcr-challenge-2026-38",
-    "competition_id": "epcr-challenge",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-05-21T13:00:00+00:00",
-    "kickoff_utc": "2027-05-21T13:00:00Z",
-    "timezone": "UTC",
-    "venue": "OL Stadium",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293430",
-    "broadcasters": []
-  },
-  {
-    "match_id": "epcr-challenge-2026-39",
-    "competition_id": "epcr-challenge",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-08-01T20:00:00+00:00",
-    "kickoff_utc": "2027-08-01T20:00:00Z",
-    "timezone": "UTC",
-    "venue": "Rodney Parade",
-    "home_team": "Dragons RFC",
-    "away_team": "Bayonne",
-    "home_team_id": "epcr-challenge_5",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293398",
-    "broadcasters": [
-      "S4C",
-      "beIN",
-      "FloRugby"
-    ]
-  },
-  {
-    "match_id": "epcr-challenge-2026-40",
-    "competition_id": "epcr-challenge",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-08-01T20:00:00+00:00",
-    "kickoff_utc": "2027-08-01T20:00:00Z",
-    "timezone": "UTC",
-    "venue": "Kingston Park",
-    "home_team": "Newcastle Red Bulls",
-    "away_team": "Benetton Rugby",
-    "home_team_id": "epcr-challenge_10",
-    "away_team_id": "epcr-challenge_1",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293399",
-    "broadcasters": [
-      "premier",
-      "epcrtv",
-      "FloRugby"
-    ]
-  },
-  {
-    "match_id": "epcr-challenge-2026-41",
-    "competition_id": "epcr-challenge",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T13:00:00+00:00",
-    "kickoff_utc": "2027-09-01T13:00:00Z",
-    "timezone": "UTC",
-    "venue": "Hollywoodbets Kings Park",
-    "home_team": "Hollywoodbets Sharks",
-    "away_team": "Castres Olympique",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293401",
-    "broadcasters": [
-      "SS",
-      "beIN",
-      "FloRugby",
-      "epcrtv"
-    ]
-  },
-  {
-    "match_id": "epcr-challenge-2026-42",
-    "competition_id": "epcr-challenge",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T13:00:00+00:00",
-    "kickoff_utc": "2027-09-01T13:00:00Z",
-    "timezone": "UTC",
-    "venue": "Hive Stadium",
-    "home_team": "Edinburgh Rugby",
-    "away_team": "Harlequins",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293402",
-    "broadcasters": [
-      "premier",
-      "FloRugby",
-      "epcrtv"
-    ]
-  },
-  {
-    "match_id": "epcr-challenge-2026-43",
-    "competition_id": "epcr-challenge",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T13:00:00+00:00",
-    "kickoff_utc": "2027-09-01T13:00:00Z",
-    "timezone": "UTC",
-    "venue": "Stade Felix Mayol",
-    "home_team": "Toulon",
-    "away_team": "Ospreys",
-    "home_team_id": "",
-    "away_team_id": "epcr-challenge_11",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293403",
-    "broadcasters": [
-      "beIN",
-      "epcrtv",
-      "FloRugby"
-    ]
-  },
-  {
-    "match_id": "epcr-challenge-2026-44",
-    "competition_id": "epcr-challenge",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T20:00:00+00:00",
-    "kickoff_utc": "2027-09-01T20:00:00Z",
-    "timezone": "UTC",
-    "venue": "Parc y Scarlets",
-    "home_team": "Scarlets",
-    "away_team": "Lyon Olympique Universitaire",
-    "home_team_id": "",
-    "away_team_id": "epcr-challenge_8",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293400",
-    "broadcasters": [
-      "epcrtv",
-      "beIN",
-      "FloRugby"
-    ]
+    "broadcasters": [],
+    "source_match_id": "293423",
+    "stable_id": "epcr-challenge:v2:8fe5d1674f193b000e63d40b",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-45",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-09-04T14:00:00+00:00",
-    "kickoff_utc": "2027-09-04T14:00:00Z",
+    "kickoff": "2027-04-09T14:00:00+00:00",
+    "kickoff_utc": "2027-04-09T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -902,16 +1140,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293425",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293425",
+    "stable_id": "epcr-challenge:v2:f6b9f54e9ccc9de3910e5912",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-46",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-09-04T14:00:00+00:00",
-    "kickoff_utc": "2027-09-04T14:00:00Z",
+    "kickoff": "2027-04-09T14:00:00+00:00",
+    "kickoff_utc": "2027-04-09T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -919,16 +1162,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293426",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293426",
+    "stable_id": "epcr-challenge:v2:ff5a54709cfe63d9e50e256d",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-47",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-09-04T14:00:00+00:00",
-    "kickoff_utc": "2027-09-04T14:00:00Z",
+    "kickoff": "2027-04-09T14:00:00+00:00",
+    "kickoff_utc": "2027-04-09T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -936,16 +1184,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293427",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293427",
+    "stable_id": "epcr-challenge:v2:de755d23e8d451f2d5aeaf09",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-48",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-09-04T14:00:00+00:00",
-    "kickoff_utc": "2027-09-04T14:00:00Z",
+    "kickoff": "2027-04-09T14:00:00+00:00",
+    "kickoff_utc": "2027-04-09T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -953,71 +1206,76 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/challenge-cup/matches/293424",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293424",
+    "stable_id": "epcr-challenge:v2:6fa2639420418c8b639291fa",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-49",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-10-01T13:00:00+00:00",
-    "kickoff_utc": "2027-10-01T13:00:00Z",
+    "kickoff": "2027-05-01T14:00:00+00:00",
+    "kickoff_utc": "2027-05-01T14:00:00Z",
     "timezone": "UTC",
-    "venue": "Stade Aimé Giral",
-    "home_team": "USAP",
-    "away_team": "Ulster Rugby",
-    "home_team_id": "epcr-challenge_16",
-    "away_team_id": "epcr-challenge_17",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293405",
-    "broadcasters": [
-      "FTV",
-      "epcrtv",
-      "beIN",
-      "FloRugby"
-    ]
+    "venue": "TBD",
+    "home_team": "TBC",
+    "away_team": "TBC",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293428",
+    "broadcasters": [],
+    "source_match_id": "293428",
+    "stable_id": "epcr-challenge:v2:a49aeeb860eb268cb6957aa0",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-50",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-10-01T13:00:00+00:00",
-    "kickoff_utc": "2027-10-01T13:00:00Z",
+    "kickoff": "2027-05-01T14:00:00+00:00",
+    "kickoff_utc": "2027-05-01T14:00:00Z",
     "timezone": "UTC",
-    "venue": "Stade de la Rabine",
-    "home_team": "Vannes",
-    "away_team": "Black Lion",
+    "venue": "TBD",
+    "home_team": "TBC",
+    "away_team": "TBC",
     "home_team_id": "",
-    "away_team_id": "epcr-challenge_2",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293406",
-    "broadcasters": [
-      "beIN",
-      "GruTV",
-      "FloRugby",
-      "epcrtv"
-    ]
+    "away_team_id": "",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293429",
+    "broadcasters": [],
+    "source_match_id": "293429",
+    "stable_id": "epcr-challenge:v2:fd3fe0054de6bda1c3cad92d",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-challenge-2026-51",
+    "source_provider": "epcr",
     "competition_id": "epcr-challenge",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-10-01T17:30:00+00:00",
-    "kickoff_utc": "2027-10-01T17:30:00Z",
+    "kickoff": "2027-05-21T19:00:00+00:00",
+    "kickoff_utc": "2027-05-21T19:00:00Z",
     "timezone": "UTC",
-    "venue": "Stadio Sergio Lanfranchi",
-    "home_team": "Zebre Parma",
-    "away_team": "Toyota Cheetahs",
-    "home_team_id": "epcr-challenge_18",
-    "away_team_id": "epcr-challenge_14",
-    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293404",
-    "broadcasters": [
-      "epcrtv",
-      "SS",
-      "FloRugby"
-    ]
+    "venue": "OL Stadium",
+    "home_team": "TBC",
+    "away_team": "TBC",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.epcrugby.com/challenge-cup/matches/293430",
+    "broadcasters": [],
+    "source_match_id": "293430",
+    "stable_id": "epcr-challenge:v2:e792a1a89da80b19c0fe249c",
+    "identity_version": 2,
+    "identity_strength": "official"
   }
 ]

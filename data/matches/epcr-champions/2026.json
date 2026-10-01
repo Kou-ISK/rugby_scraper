@@ -1,6 +1,7 @@
 [
   {
     "match_id": "epcr-champions-2026-1",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -20,10 +21,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293317",
+    "stable_id": "epcr-champions:v2:28c44746cdc596d80d7c96f5",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-2",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -43,10 +49,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293319",
+    "stable_id": "epcr-champions:v2:26ffe53388c6a1ca351e7365",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-3",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -66,10 +77,15 @@
       "premier",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293325",
+    "stable_id": "epcr-champions:v2:a60b800e05998c5e5ae7c289",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-4",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -90,10 +106,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293318",
+    "stable_id": "epcr-champions:v2:f406e2ef21e71ebf48e3a39f",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-5",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -113,10 +134,15 @@
       "beIN",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293322",
+    "stable_id": "epcr-champions:v2:33fcf82337ca97749a3f5ca2",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-6",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -136,10 +162,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293320",
+    "stable_id": "epcr-champions:v2:128ea4f9c6829616368de937",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-7",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -149,7 +180,7 @@
     "timezone": "UTC",
     "venue": "Stade Marcel Deflandre",
     "home_team": "Stade Rochelais",
-    "away_team": "Lions",
+    "away_team": "10bet Lions",
     "home_team_id": "epcr-champions_21",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293321",
@@ -159,10 +190,15 @@
       "premier",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293321",
+    "stable_id": "epcr-champions:v2:e706db734c1dcdf7e2ba2bbc",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-8",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -182,10 +218,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293323",
+    "stable_id": "epcr-champions:v2:7ab8755ad5b5b21e58d6365d",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-9",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -205,10 +246,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293324",
+    "stable_id": "epcr-champions:v2:cba984202d461f05da7a600b",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-10",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -228,10 +274,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293326",
+    "stable_id": "epcr-champions:v2:c6e19b3c3b44b1ca32accf3b",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-11",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -252,10 +303,15 @@
       "FloRugby",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293327",
+    "stable_id": "epcr-champions:v2:70857bae746189b012bc364e",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-12",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -263,7 +319,7 @@
     "kickoff": "2026-10-18T16:30:00+00:00",
     "kickoff_utc": "2026-10-18T16:30:00Z",
     "timezone": "UTC",
-    "venue": "Franklin's Gardens",
+    "venue": "DPD Stadium at Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Cardiff Rugby",
     "home_team_id": "epcr-champions_15",
@@ -275,16 +331,21 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293328",
+    "stable_id": "epcr-champions:v2:e9fdc113e8fb6d8d5c856a63",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-13",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2026-11-12T20:00:00+00:00",
-    "kickoff_utc": "2026-11-12T20:00:00Z",
+    "kickoff": "2026-12-11T20:00:00+00:00",
+    "kickoff_utc": "2026-12-11T20:00:00Z",
     "timezone": "UTC",
     "venue": "Stade Jean Bouin",
     "home_team": "Stade Français Paris",
@@ -298,16 +359,21 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293330",
+    "stable_id": "epcr-champions:v2:f8ec47dd10015d464f5cd003",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-14",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2026-11-12T20:00:00+00:00",
-    "kickoff_utc": "2026-11-12T20:00:00Z",
+    "kickoff": "2026-12-11T20:00:00+00:00",
+    "kickoff_utc": "2026-12-11T20:00:00Z",
     "timezone": "UTC",
     "venue": "Scotstoun Stadium",
     "home_team": "Glasgow Warriors",
@@ -321,10 +387,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293329",
+    "stable_id": "epcr-champions:v2:44bf87996e2c99e4201621f6",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-15",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -333,7 +404,7 @@
     "kickoff_utc": "2026-12-12T13:00:00Z",
     "timezone": "UTC",
     "venue": "10bet Ellis Park",
-    "home_team": "Lions",
+    "home_team": "10bet Lions",
     "away_team": "Stade Toulousain",
     "home_team_id": "",
     "away_team_id": "epcr-champions_22",
@@ -344,10 +415,15 @@
       "premier",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293334",
+    "stable_id": "epcr-champions:v2:6cd4ab70d212977f370c671c",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-16",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -367,10 +443,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293331",
+    "stable_id": "epcr-champions:v2:3aa39c4c5432727c1be5aee3",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-17",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -391,10 +472,15 @@
       "premier",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293337",
+    "stable_id": "epcr-champions:v2:550f9746c52a02c670cb13c1",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-18",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -414,10 +500,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293332",
+    "stable_id": "epcr-champions:v2:4a9b651e4a794f6630143401",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-19",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -437,10 +528,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293333",
+    "stable_id": "epcr-champions:v2:b31e31f64ddab66c01a2ab91",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-20",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -460,10 +556,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293335",
+    "stable_id": "epcr-champions:v2:315de5258ed51be8c5d0ba60",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-21",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -484,10 +585,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293336",
+    "stable_id": "epcr-champions:v2:ef9ccdcbde4df7ae94f02ee7",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-22",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -507,10 +613,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293338",
+    "stable_id": "epcr-champions:v2:78c23fc5acec28f8eb9a2833",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-23",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -531,10 +642,15 @@
       "premier",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293340",
+    "stable_id": "epcr-champions:v2:a7ca9252328282eed111a793",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-24",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -542,7 +658,7 @@
     "kickoff": "2026-12-13T17:30:00+00:00",
     "kickoff_utc": "2026-12-13T17:30:00Z",
     "timezone": "UTC",
-    "venue": "Paris La Defense Arena",
+    "venue": "Plenitude Arena",
     "home_team": "Racing 92",
     "away_team": "Gloucester Rugby",
     "home_team_id": "",
@@ -554,44 +670,353 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293339",
+    "stable_id": "epcr-champions:v2:758c2e3b439a0e95a2743ba6",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-25",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-01-05T14:00:00+00:00",
-    "kickoff_utc": "2027-01-05T14:00:00Z",
+    "kickoff": "2027-01-08T20:00:00+00:00",
+    "kickoff_utc": "2027-01-08T20:00:00Z",
     "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293377",
-    "broadcasters": []
+    "venue": "Scotstoun Stadium",
+    "home_team": "Glasgow Warriors",
+    "away_team": "Leicester Tigers",
+    "home_team_id": "epcr-champions_8",
+    "away_team_id": "epcr-champions_12",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293341",
+    "broadcasters": [
+      "premier",
+      "beIN",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293341",
+    "stable_id": "epcr-champions:v2:6648bb7c907f2c9de26cfed1",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-26",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-01-05T14:00:00+00:00",
-    "kickoff_utc": "2027-01-05T14:00:00Z",
+    "kickoff": "2027-01-09T13:00:00+00:00",
+    "kickoff_utc": "2027-01-09T13:00:00Z",
     "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293378",
-    "broadcasters": []
+    "venue": "Kingsholm Stadium",
+    "home_team": "Gloucester Rugby",
+    "away_team": "DHL Stormers",
+    "home_team_id": "epcr-champions_9",
+    "away_team_id": "epcr-champions_6",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293345",
+    "broadcasters": [
+      "premier",
+      "SS",
+      "beIN",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293345",
+    "stable_id": "epcr-champions:v2:a190650943bca5585b481067",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-27",
+    "source_provider": "epcr",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-09T15:15:00+00:00",
+    "kickoff_utc": "2027-01-09T15:15:00Z",
+    "timezone": "UTC",
+    "venue": "Sandy Park",
+    "home_team": "Exeter Chiefs",
+    "away_team": "Stade Rochelais",
+    "home_team_id": "",
+    "away_team_id": "epcr-champions_21",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293344",
+    "broadcasters": [
+      "premier",
+      "beIN",
+      "FTV",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293344",
+    "stable_id": "epcr-champions:v2:46f84417c0fab1c4242369c8",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-champions-2026-28",
+    "source_provider": "epcr",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-09T15:15:00+00:00",
+    "kickoff_utc": "2027-01-09T15:15:00Z",
+    "timezone": "UTC",
+    "venue": "Loftus Versfeld",
+    "home_team": "Vodacom Bulls",
+    "away_team": "Bath Rugby",
+    "home_team_id": "epcr-champions_24",
+    "away_team_id": "epcr-champions_3",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293348",
+    "broadcasters": [
+      "SS",
+      "premier",
+      "beIN",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293348",
+    "stable_id": "epcr-champions:v2:d2d8ef0f6d0e1186e3f20d11",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-champions-2026-29",
+    "source_provider": "epcr",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-09T17:30:00+00:00",
+    "kickoff_utc": "2027-01-09T17:30:00Z",
+    "timezone": "UTC",
+    "venue": "TBD",
+    "home_team": "Leinster Rugby",
+    "away_team": "Section Paloise",
+    "home_team_id": "epcr-champions_13",
+    "away_team_id": "epcr-champions_20",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293342",
+    "broadcasters": [
+      "premier",
+      "beIN",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293342",
+    "stable_id": "epcr-champions:v2:597e9685acc9f079b6300aef",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-champions-2026-30",
+    "source_provider": "epcr",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-09T17:30:00+00:00",
+    "kickoff_utc": "2027-01-09T17:30:00Z",
+    "timezone": "UTC",
+    "venue": "Septeo Stadium",
+    "home_team": "Montpellier",
+    "away_team": "Northampton Saints",
+    "home_team_id": "",
+    "away_team_id": "epcr-champions_15",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293346",
+    "broadcasters": [
+      "beIN",
+      "premier",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293346",
+    "stable_id": "epcr-champions:v2:6ba7390c193b749c5e32655a",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-champions-2026-31",
+    "source_provider": "epcr",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-09T20:00:00+00:00",
+    "kickoff_utc": "2027-01-09T20:00:00Z",
+    "timezone": "UTC",
+    "venue": "Dexcom Stadium",
+    "home_team": "Connacht Rugby",
+    "away_team": "Stade Toulousain",
+    "home_team_id": "",
+    "away_team_id": "epcr-champions_22",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293343",
+    "broadcasters": [
+      "premier",
+      "beIN",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293343",
+    "stable_id": "epcr-champions:v2:5fee51c38675c27a5d0e37e3",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-champions-2026-32",
+    "source_provider": "epcr",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-09T20:00:00+00:00",
+    "kickoff_utc": "2027-01-09T20:00:00Z",
+    "timezone": "UTC",
+    "venue": "Stade Jean Bouin",
+    "home_team": "Stade Français Paris",
+    "away_team": "Cardiff Rugby",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293347",
+    "broadcasters": [
+      "beIN",
+      "premier",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293347",
+    "stable_id": "epcr-champions:v2:199414028ccdd274fff11f35",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-champions-2026-33",
+    "source_provider": "epcr",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-10T13:00:00+00:00",
+    "kickoff_utc": "2027-01-10T13:00:00Z",
+    "timezone": "UTC",
+    "venue": "TBD",
+    "home_team": "Racing 92",
+    "away_team": "Bristol Bears",
+    "home_team_id": "",
+    "away_team_id": "epcr-champions_4",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293351",
+    "broadcasters": [
+      "beIN",
+      "premier",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293351",
+    "stable_id": "epcr-champions:v2:56ae450595b59fe4360a8195",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-champions-2026-34",
+    "source_provider": "epcr",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-10T15:15:00+00:00",
+    "kickoff_utc": "2027-01-10T15:15:00Z",
+    "timezone": "UTC",
+    "venue": "StoneX Stadium",
+    "home_team": "Saracens",
+    "away_team": "10bet Lions",
+    "home_team_id": "epcr-champions_18",
+    "away_team_id": "",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293350",
+    "broadcasters": [
+      "premier",
+      "SS",
+      "beIN",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293350",
+    "stable_id": "epcr-champions:v2:5f71e29aea3c77f855817fa8",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-champions-2026-35",
+    "source_provider": "epcr",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-10T15:15:00+00:00",
+    "kickoff_utc": "2027-01-10T15:15:00Z",
+    "timezone": "UTC",
+    "venue": "Stade Chaban-Delmas",
+    "home_team": "Union Bordeaux Bègles",
+    "away_team": "Munster Rugby",
+    "home_team_id": "epcr-champions_23",
+    "away_team_id": "epcr-champions_14",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293352",
+    "broadcasters": [
+      "FTV",
+      "premier",
+      "beIN",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293352",
+    "stable_id": "epcr-champions:v2:f3a31b36474288ec53a16cff",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-champions-2026-36",
+    "source_provider": "epcr",
+    "competition_id": "epcr-champions",
+    "season": "2026",
+    "round": "",
+    "status": "",
+    "kickoff": "2027-01-10T17:30:00+00:00",
+    "kickoff_utc": "2027-01-10T17:30:00Z",
+    "timezone": "UTC",
+    "venue": "CorpAcq Stadium",
+    "home_team": "Sale Sharks",
+    "away_team": "ASM Clermont Auvergne",
+    "home_team_id": "epcr-champions_17",
+    "away_team_id": "epcr-champions_1",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293349",
+    "broadcasters": [
+      "premier",
+      "beIN",
+      "SS",
+      "FloRugby",
+      "epcrtv"
+    ],
+    "source_match_id": "293349",
+    "stable_id": "epcr-champions:v2:8f65366fa541842489b2faa5",
+    "identity_version": 2,
+    "identity_strength": "official"
+  },
+  {
+    "match_id": "epcr-champions-2026-37",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -599,7 +1024,7 @@
     "kickoff": "2027-01-15T20:00:00+00:00",
     "kickoff_utc": "2027-01-15T20:00:00Z",
     "timezone": "UTC",
-    "venue": "Franklin's Gardens",
+    "venue": "DPD Stadium at Franklin's Gardens",
     "home_team": "Northampton Saints",
     "away_team": "Vodacom Bulls",
     "home_team_id": "epcr-champions_15",
@@ -611,10 +1036,15 @@
       "beIN",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293353",
+    "stable_id": "epcr-champions:v2:9d269f871d2814488f04573f",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-28",
+    "match_id": "epcr-champions-2026-38",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -635,10 +1065,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293354",
+    "stable_id": "epcr-champions:v2:b90d63d5018571114fbc94c9",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-29",
+    "match_id": "epcr-champions-2026-39",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -658,10 +1093,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293357",
+    "stable_id": "epcr-champions:v2:26fa64de602f5a3d100427c6",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-30",
+    "match_id": "epcr-champions-2026-40",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -670,7 +1110,7 @@
     "kickoff_utc": "2027-01-16T13:00:00Z",
     "timezone": "UTC",
     "venue": "10bet Ellis Park",
-    "home_team": "Lions",
+    "home_team": "10bet Lions",
     "away_team": "Exeter Chiefs",
     "home_team_id": "",
     "away_team_id": "",
@@ -681,10 +1121,15 @@
       "beIN",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293359",
+    "stable_id": "epcr-champions:v2:d5a2478bbb0f8c0515f3c371",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-31",
+    "match_id": "epcr-champions-2026-41",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -704,10 +1149,15 @@
       "premier",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293362",
+    "stable_id": "epcr-champions:v2:fef10aec7c877ba42f284d54",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-32",
+    "match_id": "epcr-champions-2026-42",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -728,10 +1178,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293361",
+    "stable_id": "epcr-champions:v2:bf70799f9457876de266c5d9",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-33",
+    "match_id": "epcr-champions-2026-43",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -751,10 +1206,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293358",
+    "stable_id": "epcr-champions:v2:e340ed509df71261d48d952a",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-34",
+    "match_id": "epcr-champions-2026-44",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -774,10 +1234,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293360",
+    "stable_id": "epcr-champions:v2:c46614d7bcb1b370130d9b9d",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-35",
+    "match_id": "epcr-champions-2026-45",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -797,10 +1262,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293355",
+    "stable_id": "epcr-champions:v2:c5a4fe844448f69d949f5f6c",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-36",
+    "match_id": "epcr-champions-2026-46",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -820,10 +1290,15 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293356",
+    "stable_id": "epcr-champions:v2:0ce246833c57615221495083",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-37",
+    "match_id": "epcr-champions-2026-47",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -837,10 +1312,15 @@
     "home_team_id": "epcr-champions_22",
     "away_team_id": "epcr-champions_18",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293363",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293363",
+    "stable_id": "epcr-champions:v2:698327bee2f0902374569637",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-38",
+    "match_id": "epcr-champions-2026-48",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
@@ -860,16 +1340,21 @@
       "SS",
       "FloRugby",
       "epcrtv"
-    ]
+    ],
+    "source_match_id": "293364",
+    "stable_id": "epcr-champions:v2:2f7b7eed37bfef61da9ef86d",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-39",
+    "match_id": "epcr-champions-2026-49",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -877,16 +1362,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293365",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293365",
+    "stable_id": "epcr-champions:v2:83d1665fecb9e171a7150858",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-40",
+    "match_id": "epcr-champions-2026-50",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -894,16 +1384,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293366",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293366",
+    "stable_id": "epcr-champions:v2:0cd72083c4a51622bf4943a3",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-41",
+    "match_id": "epcr-champions-2026-51",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -911,16 +1406,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293367",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293367",
+    "stable_id": "epcr-champions:v2:779684694cd87f5c38914c4b",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-42",
+    "match_id": "epcr-champions-2026-52",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -928,16 +1428,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293368",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293368",
+    "stable_id": "epcr-champions:v2:771d853abd8a11163a543b6b",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-43",
+    "match_id": "epcr-champions-2026-53",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -945,16 +1450,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293369",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293369",
+    "stable_id": "epcr-champions:v2:32c14818f1603bca2ef3db97",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-44",
+    "match_id": "epcr-champions-2026-54",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -962,16 +1472,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293370",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293370",
+    "stable_id": "epcr-champions:v2:89940b6c45616eae2bac8c05",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-45",
+    "match_id": "epcr-champions-2026-55",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -979,16 +1494,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293371",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293371",
+    "stable_id": "epcr-champions:v2:5ce9473f3bdac7b9450bcbb5",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-46",
+    "match_id": "epcr-champions-2026-56",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-02-04T14:00:00+00:00",
-    "kickoff_utc": "2027-02-04T14:00:00Z",
+    "kickoff": "2027-04-02T14:00:00+00:00",
+    "kickoff_utc": "2027-04-02T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -996,218 +1516,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293372",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293372",
+    "stable_id": "epcr-champions:v2:cdb4bab1bafe2cde34d63022",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-47",
+    "match_id": "epcr-champions-2026-57",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-05-22T13:00:00+00:00",
-    "kickoff_utc": "2027-05-22T13:00:00Z",
-    "timezone": "UTC",
-    "venue": "OL Stadium",
-    "home_team": "TBC",
-    "away_team": "TBC",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293379",
-    "broadcasters": []
-  },
-  {
-    "match_id": "epcr-champions-2026-48",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-08-01T20:00:00+00:00",
-    "kickoff_utc": "2027-08-01T20:00:00Z",
-    "timezone": "UTC",
-    "venue": "Scotstoun Stadium",
-    "home_team": "Glasgow Warriors",
-    "away_team": "Leicester Tigers",
-    "home_team_id": "epcr-champions_8",
-    "away_team_id": "epcr-champions_12",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293341",
-    "broadcasters": [
-      "premier",
-      "beIN",
-      "SS",
-      "FloRugby",
-      "epcrtv"
-    ]
-  },
-  {
-    "match_id": "epcr-champions-2026-49",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T13:00:00+00:00",
-    "kickoff_utc": "2027-09-01T13:00:00Z",
-    "timezone": "UTC",
-    "venue": "Kingsholm Stadium",
-    "home_team": "Gloucester Rugby",
-    "away_team": "DHL Stormers",
-    "home_team_id": "epcr-champions_9",
-    "away_team_id": "epcr-champions_6",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293345",
-    "broadcasters": [
-      "premier",
-      "SS",
-      "beIN",
-      "FloRugby",
-      "epcrtv"
-    ]
-  },
-  {
-    "match_id": "epcr-champions-2026-50",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T15:15:00+00:00",
-    "kickoff_utc": "2027-09-01T15:15:00Z",
-    "timezone": "UTC",
-    "venue": "Sandy Park",
-    "home_team": "Exeter Chiefs",
-    "away_team": "Stade Rochelais",
-    "home_team_id": "",
-    "away_team_id": "epcr-champions_21",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293344",
-    "broadcasters": [
-      "premier",
-      "beIN",
-      "FTV",
-      "SS",
-      "FloRugby",
-      "epcrtv"
-    ]
-  },
-  {
-    "match_id": "epcr-champions-2026-51",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T15:15:00+00:00",
-    "kickoff_utc": "2027-09-01T15:15:00Z",
-    "timezone": "UTC",
-    "venue": "Loftus Versfeld",
-    "home_team": "Vodacom Bulls",
-    "away_team": "Bath Rugby",
-    "home_team_id": "epcr-champions_24",
-    "away_team_id": "epcr-champions_3",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293348",
-    "broadcasters": [
-      "SS",
-      "premier",
-      "beIN",
-      "FloRugby",
-      "epcrtv"
-    ]
-  },
-  {
-    "match_id": "epcr-champions-2026-52",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T17:30:00+00:00",
-    "kickoff_utc": "2027-09-01T17:30:00Z",
-    "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "Leinster Rugby",
-    "away_team": "Section Paloise",
-    "home_team_id": "epcr-champions_13",
-    "away_team_id": "epcr-champions_20",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293342",
-    "broadcasters": [
-      "premier",
-      "beIN",
-      "SS",
-      "FloRugby",
-      "epcrtv"
-    ]
-  },
-  {
-    "match_id": "epcr-champions-2026-53",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T17:30:00+00:00",
-    "kickoff_utc": "2027-09-01T17:30:00Z",
-    "timezone": "UTC",
-    "venue": "Septeo Stadium",
-    "home_team": "Montpellier",
-    "away_team": "Northampton Saints",
-    "home_team_id": "",
-    "away_team_id": "epcr-champions_15",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293346",
-    "broadcasters": [
-      "beIN",
-      "premier",
-      "SS",
-      "FloRugby",
-      "epcrtv"
-    ]
-  },
-  {
-    "match_id": "epcr-champions-2026-54",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T20:00:00+00:00",
-    "kickoff_utc": "2027-09-01T20:00:00Z",
-    "timezone": "UTC",
-    "venue": "Dexcom Stadium",
-    "home_team": "Connacht Rugby",
-    "away_team": "Stade Toulousain",
-    "home_team_id": "",
-    "away_team_id": "epcr-champions_22",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293343",
-    "broadcasters": [
-      "premier",
-      "beIN",
-      "SS",
-      "FloRugby",
-      "epcrtv"
-    ]
-  },
-  {
-    "match_id": "epcr-champions-2026-55",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-01T20:00:00+00:00",
-    "kickoff_utc": "2027-09-01T20:00:00Z",
-    "timezone": "UTC",
-    "venue": "Stade Jean Bouin",
-    "home_team": "Stade Français Paris",
-    "away_team": "Cardiff Rugby",
-    "home_team_id": "",
-    "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293347",
-    "broadcasters": [
-      "beIN",
-      "premier",
-      "SS",
-      "FloRugby",
-      "epcrtv"
-    ]
-  },
-  {
-    "match_id": "epcr-champions-2026-56",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-09-04T14:00:00+00:00",
-    "kickoff_utc": "2027-09-04T14:00:00Z",
+    "kickoff": "2027-04-09T14:00:00+00:00",
+    "kickoff_utc": "2027-04-09T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -1215,16 +1538,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293373",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293373",
+    "stable_id": "epcr-champions:v2:af1fa5a82fe340c82ba209d7",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-57",
+    "match_id": "epcr-champions-2026-58",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-09-04T14:00:00+00:00",
-    "kickoff_utc": "2027-09-04T14:00:00Z",
+    "kickoff": "2027-04-09T14:00:00+00:00",
+    "kickoff_utc": "2027-04-09T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -1232,16 +1560,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293374",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293374",
+    "stable_id": "epcr-champions:v2:44ae8dae8aaa3082432daf93",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-58",
+    "match_id": "epcr-champions-2026-59",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-09-04T14:00:00+00:00",
-    "kickoff_utc": "2027-09-04T14:00:00Z",
+    "kickoff": "2027-04-09T14:00:00+00:00",
+    "kickoff_utc": "2027-04-09T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -1249,16 +1582,21 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293375",
-    "broadcasters": []
+    "broadcasters": [],
+    "source_match_id": "293375",
+    "stable_id": "epcr-champions:v2:12329b8043ce9aec29c21dd1",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
-    "match_id": "epcr-champions-2026-59",
+    "match_id": "epcr-champions-2026-60",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-09-04T14:00:00+00:00",
-    "kickoff_utc": "2027-09-04T14:00:00Z",
+    "kickoff": "2027-04-09T14:00:00+00:00",
+    "kickoff_utc": "2027-04-09T14:00:00Z",
     "timezone": "UTC",
     "venue": "TBD",
     "home_team": "TBC",
@@ -1266,99 +1604,76 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.epcrugby.com/champions-cup/matches/293376",
-    "broadcasters": []
-  },
-  {
-    "match_id": "epcr-champions-2026-60",
-    "competition_id": "epcr-champions",
-    "season": "2026",
-    "round": "",
-    "status": "",
-    "kickoff": "2027-10-01T13:00:00+00:00",
-    "kickoff_utc": "2027-10-01T13:00:00Z",
-    "timezone": "UTC",
-    "venue": "TBD",
-    "home_team": "Racing 92",
-    "away_team": "Bristol Bears",
-    "home_team_id": "",
-    "away_team_id": "epcr-champions_4",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293351",
-    "broadcasters": [
-      "beIN",
-      "premier",
-      "SS",
-      "FloRugby",
-      "epcrtv"
-    ]
+    "broadcasters": [],
+    "source_match_id": "293376",
+    "stable_id": "epcr-champions:v2:754c17c80477ee7ba8dde79d",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-61",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-10-01T15:15:00+00:00",
-    "kickoff_utc": "2027-10-01T15:15:00Z",
+    "kickoff": "2027-05-01T14:00:00+00:00",
+    "kickoff_utc": "2027-05-01T14:00:00Z",
     "timezone": "UTC",
-    "venue": "StoneX Stadium",
-    "home_team": "Saracens",
-    "away_team": "Lions",
-    "home_team_id": "epcr-champions_18",
+    "venue": "TBD",
+    "home_team": "TBC",
+    "away_team": "TBC",
+    "home_team_id": "",
     "away_team_id": "",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293350",
-    "broadcasters": [
-      "premier",
-      "SS",
-      "beIN",
-      "FloRugby",
-      "epcrtv"
-    ]
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293377",
+    "broadcasters": [],
+    "source_match_id": "293377",
+    "stable_id": "epcr-champions:v2:75747486c6d2a355423088a9",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-62",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-10-01T15:15:00+00:00",
-    "kickoff_utc": "2027-10-01T15:15:00Z",
+    "kickoff": "2027-05-01T14:00:00+00:00",
+    "kickoff_utc": "2027-05-01T14:00:00Z",
     "timezone": "UTC",
-    "venue": "Stade Chaban-Delmas",
-    "home_team": "Union Bordeaux Bègles",
-    "away_team": "Munster Rugby",
-    "home_team_id": "epcr-champions_23",
-    "away_team_id": "epcr-champions_14",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293352",
-    "broadcasters": [
-      "FTV",
-      "premier",
-      "beIN",
-      "SS",
-      "FloRugby",
-      "epcrtv"
-    ]
+    "venue": "TBD",
+    "home_team": "TBC",
+    "away_team": "TBC",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293378",
+    "broadcasters": [],
+    "source_match_id": "293378",
+    "stable_id": "epcr-champions:v2:a711e892d4809589482af6ae",
+    "identity_version": 2,
+    "identity_strength": "official"
   },
   {
     "match_id": "epcr-champions-2026-63",
+    "source_provider": "epcr",
     "competition_id": "epcr-champions",
     "season": "2026",
     "round": "",
     "status": "",
-    "kickoff": "2027-10-01T17:30:00+00:00",
-    "kickoff_utc": "2027-10-01T17:30:00Z",
+    "kickoff": "2027-05-22T13:45:00+00:00",
+    "kickoff_utc": "2027-05-22T13:45:00Z",
     "timezone": "UTC",
-    "venue": "CorpAcq Stadium",
-    "home_team": "Sale Sharks",
-    "away_team": "ASM Clermont Auvergne",
-    "home_team_id": "epcr-champions_17",
-    "away_team_id": "epcr-champions_1",
-    "match_url": "https://www.epcrugby.com/champions-cup/matches/293349",
-    "broadcasters": [
-      "premier",
-      "beIN",
-      "SS",
-      "FloRugby",
-      "epcrtv"
-    ]
+    "venue": "OL Stadium",
+    "home_team": "TBC",
+    "away_team": "TBC",
+    "home_team_id": "",
+    "away_team_id": "",
+    "match_url": "https://www.epcrugby.com/champions-cup/matches/293379",
+    "broadcasters": [],
+    "source_match_id": "293379",
+    "stable_id": "epcr-champions:v2:0e1c88ef59af80fda42a79c4",
+    "identity_version": 2,
+    "identity_strength": "official"
   }
 ]

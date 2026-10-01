@@ -1,6 +1,7 @@
 [
   {
     "match_id": "srp-2026-rdRound 01-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "Round 01",
@@ -14,10 +15,14 @@
     "home_team_id": "srp_7",
     "away_team_id": "srp_4",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:8233bc4aae613e65faa2a936",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd01-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "01",
@@ -31,10 +36,14 @@
     "home_team_id": "srp_11",
     "away_team_id": "srp_10",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:12b80f505bd5b686bb23ce6c",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd01-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "01",
@@ -48,10 +57,14 @@
     "home_team_id": "srp_5",
     "away_team_id": "srp_9",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:1f659d480068581b1354ac0f",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd01-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "01",
@@ -65,10 +78,14 @@
     "home_team_id": "srp_1",
     "away_team_id": "srp_3",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:a368facf81164fe8c04ad191",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd01-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "01",
@@ -82,10 +99,14 @@
     "home_team_id": "srp_6",
     "away_team_id": "srp_2",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:194ef7e7e520976fc449d264",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd01-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "01",
@@ -99,10 +120,14 @@
     "home_team_id": "srp_8",
     "away_team_id": "srp_9",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:f0878327021e89c3b993c74a",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd02-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "02",
@@ -116,10 +141,14 @@
     "home_team_id": "srp_11",
     "away_team_id": "srp_5",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:13f0cfd03496209adee8f72e",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd02-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "02",
@@ -133,10 +162,14 @@
     "home_team_id": "srp_7",
     "away_team_id": "srp_3",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:e51a6f317ee82cee661c6bb8",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd02-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "02",
@@ -150,10 +183,14 @@
     "home_team_id": "srp_6",
     "away_team_id": "srp_1",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:e8651a00aca581cdfff9986e",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd02-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "02",
@@ -167,10 +204,14 @@
     "home_team_id": "srp_4",
     "away_team_id": "srp_2",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:03657bda3bdf715d30d25c97",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd02-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "02",
@@ -184,10 +225,14 @@
     "home_team_id": "srp_9",
     "away_team_id": "srp_6",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:b1c43d78ce5cc5865e33914d",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd03-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "03",
@@ -201,10 +246,14 @@
     "home_team_id": "srp_10",
     "away_team_id": "srp_7",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:4f301b3a5ed1f28c9aa26525",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd03-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "03",
@@ -218,10 +267,14 @@
     "home_team_id": "srp_5",
     "away_team_id": "srp_8",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:581ae50024e71c6745217d33",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd03-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "03",
@@ -235,10 +288,14 @@
     "home_team_id": "srp_3",
     "away_team_id": "srp_4",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:2d3b81a68134e2f62167511c",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd03-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "03",
@@ -252,10 +309,14 @@
     "home_team_id": "srp_2",
     "away_team_id": "srp_1",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:53229d1dcdd383d1c052adaa",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd03-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "03",
@@ -269,10 +330,14 @@
     "home_team_id": "srp_3",
     "away_team_id": "srp_9",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:5878c2de156f9475a210b146",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd04-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "04",
@@ -286,10 +351,14 @@
     "home_team_id": "srp_11",
     "away_team_id": "srp_8",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:108a3acd6b039ff07a8a820f",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd04-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "04",
@@ -303,10 +372,14 @@
     "home_team_id": "srp_7",
     "away_team_id": "srp_6",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:15abf5c8d7580b392c29542c",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd04-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "04",
@@ -320,10 +393,14 @@
     "home_team_id": "srp_1",
     "away_team_id": "srp_4",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:e4fa77a213b6ace025ece660",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd04-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "04",
@@ -337,10 +414,14 @@
     "home_team_id": "srp_2",
     "away_team_id": "",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:5ca53629e2e97cc913cb03ab",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd04-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "04",
@@ -354,10 +435,14 @@
     "home_team_id": "srp_8",
     "away_team_id": "",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:e065091ac3790d174a1f8090",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd05-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "05",
@@ -371,10 +456,14 @@
     "home_team_id": "srp_5",
     "away_team_id": "srp_2",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:34f41b6405ca641c4ffa19b3",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd05-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "05",
@@ -388,10 +477,14 @@
     "home_team_id": "srp_4",
     "away_team_id": "srp_7",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:a7668f0799d1d902776cfcb6",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd05-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "05",
@@ -405,10 +498,14 @@
     "home_team_id": "srp_10",
     "away_team_id": "srp_11",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:3fe69d1dfd2c88560721a466",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd05-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "05",
@@ -422,10 +519,14 @@
     "home_team_id": "srp_1",
     "away_team_id": "srp_9",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:9efe46ebf825ab14faba6ac5",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd05-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "05",
@@ -439,10 +540,14 @@
     "home_team_id": "srp_7",
     "away_team_id": "srp_8",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:3c51b1d9a4d2ada5ef6c0907",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd06-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "06",
@@ -456,10 +561,14 @@
     "home_team_id": "srp_2",
     "away_team_id": "srp_3",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:5cf95cadf5bf0d2b99919eca",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd06-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "06",
@@ -473,10 +582,14 @@
     "home_team_id": "srp_5",
     "away_team_id": "srp_10",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:306549369a6cc5044aa69fba",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd06-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "06",
@@ -490,10 +603,14 @@
     "home_team_id": "srp_9",
     "away_team_id": "srp_4",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:cbea569b1900d2b3e80ece26",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd06-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "06",
@@ -507,10 +624,14 @@
     "home_team_id": "srp_11",
     "away_team_id": "srp_1",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:14189bdc90a1bdaa2619dd49",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd06-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "06",
@@ -524,10 +645,14 @@
     "home_team_id": "srp_9",
     "away_team_id": "srp_7",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:d9090a6732d3181171989e97",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd07-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "07",
@@ -541,10 +666,14 @@
     "home_team_id": "srp_2",
     "away_team_id": "",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:1e06145410b6154c9a5bb79d",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd07-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "07",
@@ -558,10 +687,14 @@
     "home_team_id": "srp_8",
     "away_team_id": "srp_10",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:77fc40737b2928763fa5719a",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd07-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "07",
@@ -575,10 +708,14 @@
     "home_team_id": "srp_1",
     "away_team_id": "srp_5",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:c086d0ba79592bbb5a3491d5",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd07-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "07",
@@ -592,10 +729,14 @@
     "home_team_id": "srp_6",
     "away_team_id": "srp_3",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:6286480dfb164e31a9d8da08",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd07-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "07",
@@ -609,10 +750,14 @@
     "home_team_id": "srp_4",
     "away_team_id": "srp_5",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:3eda9f6b836228d4c68d9fcc",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd08-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "08",
@@ -626,10 +771,14 @@
     "home_team_id": "srp_3",
     "away_team_id": "",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:c5c097c91341796c54396de9",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd08-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "08",
@@ -643,10 +792,14 @@
     "home_team_id": "srp_10",
     "away_team_id": "srp_6",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:b4946ef01d43eab912042a86",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd08-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "08",
@@ -660,10 +813,14 @@
     "home_team_id": "srp_7",
     "away_team_id": "srp_2",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:5ae36c65b3679f904b906e7c",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd09-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "09",
@@ -677,10 +834,14 @@
     "home_team_id": "srp_9",
     "away_team_id": "srp_3",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:d3dabc17d428a4b226dd156c",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd09-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "09",
@@ -694,10 +855,14 @@
     "home_team_id": "srp_5",
     "away_team_id": "",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:abdd02e3d55a80109165b2a2",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd09-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "09",
@@ -711,10 +876,14 @@
     "home_team_id": "srp_8",
     "away_team_id": "srp_1",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:dede4a3cd58a6738fbf70f13",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd09-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "09",
@@ -728,10 +897,14 @@
     "home_team_id": "srp_10",
     "away_team_id": "srp_4",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:8f1d6abf800c2f55ecef1a36",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd09-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "09",
@@ -745,10 +918,14 @@
     "home_team_id": "srp_1",
     "away_team_id": "srp_7",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:fcd73cb9486cad4034d878c6",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd10-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "10",
@@ -762,10 +939,14 @@
     "home_team_id": "srp_11",
     "away_team_id": "srp_9",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:e977087161c50809b6d81c21",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd10-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "10",
@@ -779,10 +960,14 @@
     "home_team_id": "srp_3",
     "away_team_id": "srp_8",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:95ad1e74ac314e4f536f5232",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd10-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "10",
@@ -796,10 +981,14 @@
     "home_team_id": "srp_2",
     "away_team_id": "srp_5",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:cdb796b497ef91e690061b35",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd10-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "10",
@@ -813,10 +1002,14 @@
     "home_team_id": "srp_6",
     "away_team_id": "srp_4",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:9d50378e94661516b126631b",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd10-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "10",
@@ -830,10 +1023,14 @@
     "home_team_id": "srp_4",
     "away_team_id": "srp_11",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:39307068d3b6e98f3090abce",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd11-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "11",
@@ -847,10 +1044,14 @@
     "home_team_id": "srp_8",
     "away_team_id": "srp_2",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:843562257e86bb91b30d9168",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd11-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "11",
@@ -864,10 +1065,14 @@
     "home_team_id": "srp_1",
     "away_team_id": "srp_10",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:07b5e84ba8acca3b9ca53379",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd11-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "11",
@@ -881,10 +1086,14 @@
     "home_team_id": "srp_7",
     "away_team_id": "srp_9",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:09b4c241dad971926a148fec",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd11-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "11",
@@ -898,10 +1107,14 @@
     "home_team_id": "srp_3",
     "away_team_id": "srp_5",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:1fe7da45d7e279a069491bea",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd11-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "11",
@@ -915,10 +1128,14 @@
     "home_team_id": "srp_8",
     "away_team_id": "srp_4",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:956989dbd7e07d890b785768",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd12-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "12",
@@ -932,10 +1149,14 @@
     "home_team_id": "srp_11",
     "away_team_id": "srp_6",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:0c90145c2e875a207c7f45da",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd12-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "12",
@@ -949,10 +1170,14 @@
     "home_team_id": "srp_5",
     "away_team_id": "srp_7",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:b301c3261c48681eb86b406f",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd12-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "12",
@@ -966,10 +1191,14 @@
     "home_team_id": "srp_9",
     "away_team_id": "srp_1",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:5e941692c846bf72f3944198",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd12-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "12",
@@ -983,10 +1212,14 @@
     "home_team_id": "srp_10",
     "away_team_id": "srp_2",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:35cdff11f0906e2ada14cdeb",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd12-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "12",
@@ -1000,10 +1233,14 @@
     "home_team_id": "srp_4",
     "away_team_id": "srp_1",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:d4dfabd3638b443779bc35fc",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd13-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "13",
@@ -1017,10 +1254,14 @@
     "home_team_id": "srp_10",
     "away_team_id": "srp_3",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:cc53483cff3890592195265d",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd13-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "13",
@@ -1034,10 +1275,14 @@
     "home_team_id": "srp_7",
     "away_team_id": "srp_11",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:130ab689a5e8ab0161945528",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd13-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "13",
@@ -1051,10 +1296,14 @@
     "home_team_id": "srp_9",
     "away_team_id": "srp_8",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:51713ee8620f49ab631ed724",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd13-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "13",
@@ -1068,10 +1317,14 @@
     "home_team_id": "srp_2",
     "away_team_id": "",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:14dfb5dec7102a2913b2f6d1",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd13-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "13",
@@ -1085,10 +1338,14 @@
     "home_team_id": "srp_3",
     "away_team_id": "srp_7",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:7576d67d34ded63d873e0949",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd14-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "14",
@@ -1102,10 +1359,14 @@
     "home_team_id": "srp_5",
     "away_team_id": "",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:510d476ad85eed5a5dae945d",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd14-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "14",
@@ -1119,10 +1380,14 @@
     "home_team_id": "srp_1",
     "away_team_id": "srp_8",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:a3afe655e178bfd0af1b7687",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd14-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "14",
@@ -1136,10 +1401,14 @@
     "home_team_id": "srp_6",
     "away_team_id": "",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:86b64155cd0eac6fc3d53c9c",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd14-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "14",
@@ -1153,10 +1422,14 @@
     "home_team_id": "srp_4",
     "away_team_id": "srp_3",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:0df78cf301b4f144326e5317",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd15-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "15",
@@ -1170,10 +1443,14 @@
     "home_team_id": "srp_11",
     "away_team_id": "srp_2",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:b82db286f75fcde8fc33bef8",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd15-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "15",
@@ -1187,10 +1464,14 @@
     "home_team_id": "srp_9",
     "away_team_id": "srp_10",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:bca469b71938338f6f352e74",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd15-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "15",
@@ -1204,10 +1485,14 @@
     "home_team_id": "srp_8",
     "away_team_id": "srp_7",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:809468ef9ffa3d2e66ea491a",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd15-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "15",
@@ -1221,10 +1506,14 @@
     "home_team_id": "srp_6",
     "away_team_id": "srp_5",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:51753f177cfe8b570b01f250",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd15-5",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "15",
@@ -1238,10 +1527,14 @@
     "home_team_id": "srp_4",
     "away_team_id": "srp_8",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:e786962fa022e5b77d20d3bb",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd16-1",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "16",
@@ -1255,10 +1548,14 @@
     "home_team_id": "srp_10",
     "away_team_id": "srp_5",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:45969f772cefb6fe92d02c70",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd16-2",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "16",
@@ -1272,10 +1569,14 @@
     "home_team_id": "srp_2",
     "away_team_id": "srp_9",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:16b2c3da22e4f85207844a6d",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd16-3",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "16",
@@ -1289,10 +1590,14 @@
     "home_team_id": "srp_3",
     "away_team_id": "srp_1",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:9529ae6bd48971068bccd8a2",
+    "identity_version": 2,
+    "identity_strength": "weak"
   },
   {
     "match_id": "srp-2026-rd16-4",
+    "source_provider": "super-rugby",
     "competition_id": "srp",
     "season": "2026",
     "round": "16",
@@ -1306,6 +1611,9 @@
     "home_team_id": "srp_6",
     "away_team_id": "",
     "match_url": "",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "srp:v2:5d7d501e3a7e602bdfe9bf25",
+    "identity_version": 2,
+    "identity_strength": "weak"
   }
 ]

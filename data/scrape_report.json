@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-10-01T23:36:37.385075Z",
+  "sources": [
+    {
+      "source": "wr",
+      "outcome": "failed",
+      "error": "Source process exited with status 1",
+      "promoted_files": 0
+    },
+    {
+      "source": "premier",
+      "outcome": "success",
+      "error": "",
+      "promoted_files": 1
+    },
+    {
+      "source": "urc",
+      "outcome": "success",
+      "error": "",
+      "promoted_files": 1
+    },
+    {
+      "source": "trc",
+      "outcome": "failed",
+      "error": "Source process exited with status 1",
+      "promoted_files": 0
+    },
+    {
+      "source": "ans",
+      "outcome": "failed",
+      "error": "Source process exited with status 1",
+      "promoted_files": 0
+    },
+    {
+      "source": "nc",
+      "outcome": "failed",
+      "error": "Source process exited with status 1",
+      "promoted_files": 0
+    },
+    {
+      "source": "srp",
+      "outcome": "success",
+      "error": "",
+      "promoted_files": 1
+    },
+    {
+      "source": "epcr-champions",
+      "outcome": "success",
+      "error": "",
+      "promoted_files": 1
+    },
+    {
+      "source": "epcr-challenge",
+      "outcome": "success",
+      "error": "",
+      "promoted_files": 1
+    },
+    {
+      "source": "t14",
+      "outcome": "success",
+      "error": "",
+      "promoted_files": 1
+    },
+    {
+      "source": "jrlo",
+      "outcome": "success",
+      "error": "",
+      "promoted_files": 3
+    },
+    {
+      "source": "m6n",
+      "outcome": "success",
+      "error": "",
+      "promoted_files": 1
+    },
+    {
+      "source": "w6n",
+      "outcome": "success",
+      "error": "",
+      "promoted_files": 1
+    },
+    {
+      "source": "u6n",
+      "outcome": "success",
+      "error": "",
+      "promoted_files": 1
+    }
+  ],
+  "successful_sources": 10,
+  "failed_sources": 4,
+  "empty_sources": 0,
+  "collection_runs": [
+    36938871670,
+    36941287348
+  ]
+}

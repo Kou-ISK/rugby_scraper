@@ -1,6 +1,7 @@
 [
   {
     "match_id": "w6n-2026-1",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -14,10 +15,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/france-women-v-italy-women-11042026-1125/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:a2f037c659a823b6037bc535",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-2",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -31,10 +36,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/england-women-v-ireland-women-11042026-1325/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:65048bfb9512d0717f487d3d",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-3",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -48,10 +57,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/wales-women-v-scotland-women-11042026-1540/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:0cadaec9d573827f67cfa508",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-4",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -65,10 +78,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/scotland-women-v-england-women-18042026-1230/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:51bff4303f57b1a33295ac2c",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-5",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -82,10 +99,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/wales-women-v-france-women-18042026-1435/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:15f9e144940be3f8c1b64ca4",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-6",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -99,10 +120,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/ireland-women-v-italy-women-18042026-1640/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:9ec923a9cf9d751732c031b6",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-7",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -116,10 +141,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/england-women-v-wales-women-25042026-1315/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:9101be6b460b27407dfd3329",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-8",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -133,10 +162,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/italy-women-v-scotland-women-25042026-1530/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:70c3477753eebcf60b0e9b4e",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-9",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -150,10 +183,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/france-women-v-ireland-women-25042026-1910/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:2e39b68ef1c3508619867401",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-10",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -167,10 +204,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/italy-women-v-england-women-09052026-1300/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:7714eebf4d8c9e45eb7062a6",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-11",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -184,10 +225,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/scotland-women-v-france-women-09052026-1515/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:8271e4301346f96cc02612c9",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-12",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -201,10 +246,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/ireland-women-v-wales-women-09052026-1730/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:a00ba51d2567a8da72eaf178",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-13",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -218,10 +267,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/wales-women-v-italy-women-17052026-1115/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:f320df4b63cedfece61e7fed",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-14",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -235,10 +288,14 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/ireland-women-v-scotland-women-17052026-1330/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:2b3248cc1abf86f67e3090b4",
+    "identity_version": 2,
+    "identity_strength": "url"
   },
   {
     "match_id": "w6n-2026-15",
+    "source_provider": "six-nations",
     "competition_id": "w6n",
     "season": "2026",
     "round": "",
@@ -252,6 +309,9 @@
     "home_team_id": "",
     "away_team_id": "",
     "match_url": "https://www.sixnationsrugby.com/en/w6n/fixtures/202600/france-women-v-england-women-17052026-1545/report",
-    "broadcasters": []
+    "broadcasters": [],
+    "stable_id": "w6n:v2:154b4f6a334391df53340d33",
+    "identity_version": 2,
+    "identity_strength": "url"
   }
 ]
