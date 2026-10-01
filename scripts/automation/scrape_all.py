@@ -66,10 +66,13 @@ def collect_source(source, data_dir, health, *, timeout=300, run=run_subprocess)
     error = ""
     outcome = "failed"
     promoted = []
+    collection_coverage = {}
     try:
         with tempfile.TemporaryDirectory(prefix="rugby-source-") as temporary:
             staging = Path(temporary) / "data"
             shutil.copytree(data_dir, staging)
+            report_path = staging / "collection_reports" / f"{source}.json"
+            report_path.unlink(missing_ok=True)
             before = {p.relative_to(staging): p.stat().st_mtime_ns for p in source_files(staging, source)}
             env = {**os.environ, "RUGBY_DATA_DIR": str(staging)}
             result = run([sys.executable, "-m", "src.main", source], cwd=ROOT, env=env, timeout=timeout)
@@ -79,6 +82,7 @@ def collect_source(source, data_dir, health, *, timeout=300, run=run_subprocess)
                 if result.stderr:
                     print(result.stderr)
                 raise ValueError(f"Source process exited with status {result.returncode}")
+            collection_coverage = load_json(report_path, {}).get("competitions", {})
             touched = [p for p in source_files(staging, source)
                        if before.get(p.relative_to(staging)) != p.stat().st_mtime_ns]
             if not touched:
@@ -140,6 +144,8 @@ def collect_source(source, data_dir, health, *, timeout=300, run=run_subprocess)
         record = {**previous, "last_attempt_at": attempted,
                   "outcome": outcome if successful_file or outcome != "success" else "no_fixtures",
                   "error": error if outcome != "success" else ""}
+        if comp in collection_coverage:
+            record["collection_coverage"] = collection_coverage[comp]
         if successful_file:
             record["last_success_at"] = attempted
         elif outcome == "success":

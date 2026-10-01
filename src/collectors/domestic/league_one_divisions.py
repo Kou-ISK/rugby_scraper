@@ -9,6 +9,7 @@ from typing import List, Dict, Any
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 from ..base import BaseScraper
+from ...services.fixture_publication import write_json_atomic, valid_calendar_date
 
 class LeagueOneDivisionsScraper(BaseScraper):
     """Japan Rugby League One scraper with Division support.
@@ -281,6 +282,18 @@ class LeagueOneDivisionsScraper(BaseScraper):
             div1_matches = self.assign_match_ids(div1_matches)
             div2_matches = self.assign_match_ids(div2_matches)
             div3_matches = self.assign_match_ids(div3_matches)
+
+            # The current official schedule includes date-unannounced cards.
+            # Retain these explicitly in coverage instead of invalidating every
+            # dated fixture or pretending that a missing date is a parse success.
+            divisions = {"jrlo-div1": div1_matches, "jrlo-div2": div2_matches, "jrlo-div3": div3_matches}
+            report = {"schema_version": 1, "source_url": url, "season": season, "competitions": {}}
+            for comp_id, division_matches in divisions.items():
+                included, coverage = self._partition_schedule_matches(division_matches, season)
+                divisions[comp_id] = included
+                report["competitions"][comp_id] = coverage
+            div1_matches, div2_matches, div3_matches = (divisions[f"jrlo-div{i}"] for i in (1, 2, 3))
+            write_json_atomic(self.data_dir / "collection_reports/jrlo.json", report)
             
             # ファイル保存
             if div1_matches:
@@ -302,6 +315,22 @@ class LeagueOneDivisionsScraper(BaseScraper):
             import traceback
             print(traceback.format_exc())
             return None
+
+    @staticmethod
+    def _partition_schedule_matches(matches, season):
+        included, pending = [], []
+        for match in matches:
+            if match.pop("_schedule_date_not_announced", False):
+                pending.append({"stable_id": match["stable_id"], "source_match_id": match.get("source_match_id", ""),
+                                "home_team": match["home_team"], "away_team": match["away_team"],
+                                "venue": match.get("venue", ""), "source_url": match["source_url"],
+                                "reason": "date_not_announced"})
+            elif match.get("kickoff_unknown_reason") == "parse_failure" or (not match.get("kickoff_utc") and not valid_calendar_date(match.get("kickoff_date"))):
+                raise ValueError(f"JRLO fixture date/time could not be parsed: {match.get('match_url', '')}")
+            else:
+                included.append(match)
+        return included, {"season": season, "observed_match_count": len(matches), "included_match_count": len(included),
+                          "date_unannounced_count": len(pending), "date_unannounced": pending}
 
     @staticmethod
     def _extract_schedule_start_year(soup):
@@ -411,20 +440,30 @@ class LeagueOneDivisionsScraper(BaseScraper):
                     away_team_id="",  # 後で設定
                 )
                 match_info["division"] = inferred_div
+                match_info.update(source_type="official", source_name="Japan Rugby League One",
+                                  source_url=match_url or "https://league-one.jp/schedule/")
                 if not kickoff:
-                    day_match = re.match(r"^(\d{1,2})\.(\d{1,2})\b", raw_date or "")
+                    day_element = date_element.find('p', class_='date')
+                    raw_day = day_element.get_text(" ", strip=True) if day_element else ""
+                    day_match = re.fullmatch(r"(\d{1,2})\.(\d{1,2})(?:\s*[月火水木金土日](?:曜(?:日)?)?)?", raw_day)
                     if day_match:
                         month, day = map(int, day_match.groups())
                         try:
                             match_info["kickoff_date"] = datetime(self._season_year_for_month(month), month, day).date().isoformat()
-                            raw_clock = (raw_date or "").split()[2:]
-                            not_announced = not raw_clock or bool(re.search(r"TBC|TBD|未定|^[-–]+$", " ".join(raw_clock), re.I))
+                            clock_element = date_element.find('p', class_='time')
+                            raw_clock = clock_element.get_text(" ", strip=True) if clock_element else ""
+                            not_announced = not raw_clock or bool(re.fullmatch(r"TBC|TBD|TBA|未定|[-–—]+", raw_clock, re.I))
                             match_info["kickoff_unknown_reason"] = "not_announced" if not_announced else "parse_failure"
                             match_info["source_type"] = "official"
                             match_info["source_name"] = "Japan Rugby League One"
                             match_info["source_url"] = match_url or "https://league-one.jp/schedule/"
                         except ValueError:
-                            pass
+                            match_info["kickoff_unknown_reason"] = "parse_failure"
+                    else:
+                        if re.fullmatch(r"(?:日付|開催日|日時)?未定|TBC|TBD|TBA|[-–—]+", raw_day, re.I):
+                            match_info["_schedule_date_not_announced"] = True
+                        else:
+                            match_info["kickoff_unknown_reason"] = "parse_failure"
                 self._apply_optional_match_details(match_info, schedule_details)
                 matches.append(match_info)
                 
@@ -656,8 +695,8 @@ class LeagueOneDivisionsScraper(BaseScraper):
         try:
             day_element = date_element.find('p', class_='date')
             clock_element = date_element.find('p', class_='time')
-            date = day_element.get_text(strip=True) if day_element else ""
-            clock = clock_element.get_text(strip=True) if clock_element else ""
+            date = day_element.get_text(" ", strip=True) if day_element else ""
+            clock = clock_element.get_text(" ", strip=True) if clock_element else ""
             return f"{date} {clock}".strip() or None
         except:
             return None
@@ -727,17 +766,10 @@ class LeagueOneDivisionsScraper(BaseScraper):
             if not date_string:
                 raise ValueError("empty date string")
 
-            parts = date_string.split()
-            if len(parts) < 3:
+            parts = re.fullmatch(r"(\d{1,2})\.(\d{1,2})(?:\s*[月火水木金土日](?:曜(?:日)?)?)?\s+(\d{1,2}):(\d{2})", date_string.strip())
+            if not parts:
                 raise ValueError(f"unexpected date format: {date_string}")
-
-            date_part = parts[0].split(".")
-            if len(date_part) != 2:
-                raise ValueError(f"unexpected date token: {parts[0]}")
-
-            month = int(date_part[0])
-            day = int(date_part[1])
-            hour, minute = [int(v) for v in parts[2].split(":")]
+            month, day, hour, minute = map(int, parts.groups())
 
             year = self._season_year_for_month(month)
             kickoff = datetime(year, month, day, hour, minute, tzinfo=self.jst)

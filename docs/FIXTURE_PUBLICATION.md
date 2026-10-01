@@ -15,6 +15,18 @@ cause a hash mismatch; retry the manifest instead of accepting mismatched data.
 
 ## Schema version 1
 
+JRLO's official schedule may mix dated fixtures with cards explicitly marked
+`日付未定`. Dated fixtures remain in verified match files; date-unannounced
+cards are retained in `competitions[].collection_coverage.date_unannounced`
+with stable identity, teams, venue, source URL and `date_not_announced` reason.
+`observed_match_count`, `included_match_count` and `date_unannounced_count`
+make the exclusion visible. This is coverage for the latest collection attempt,
+separate from the verified file coverage and its last-success time.
+The source-health ledger retains the same coverage. Unknown calendar dates do
+not become midnight or a fabricated fixture date. If every card is date-unannounced,
+the attempt is `no_fixtures` and retains previous data; malformed dates or clocks
+still fail the source. Nested weekday spans are separated before strict date parsing.
+
 The root contains `schema_version: 1`, `generated_at` (UTC ISO), and a
 `competitions` array. Each competition contains:
 

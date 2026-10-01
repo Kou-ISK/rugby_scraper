@@ -216,6 +216,55 @@ class SourceAndIdentityTests(unittest.TestCase):
         self.assertEqual(2026, scraper.parse_kickoff_datetime("12.19 土 13:00").year)
         self.assertEqual(2027, scraper.parse_kickoff_datetime("01.09 土 13:00").year)
 
+    def test_jrlo_nested_weekday_dom_and_date_unannounced_coverage(self):
+        # Source DOM shape independently inspected on 2026-10-01:
+        # https://league-one.jp/schedule/ (2026–27 season).
+        # Official 31135: 2026-12-12, kickoff unannounced. 31146: date
+        # unannounced. Team/venue fields below are representative regression
+        # inputs; this is a DOM golden, not a claim of live fixture ingestion.
+        def card(code, day, clock, division="1"):
+            return f'''<div class="c-schedule"><h3 class="ttl">ディビジョン{division} 第1節</h3>
+              <div class="datetime"><p class="date">{day}</p><p class="time">{clock}</p></div>
+              <p class="place">ノエビアスタジアム神戸</p>
+              <li class="home"><p class="name only-pc">コベルコ神戸スティーラーズ</p></li>
+              <li class="away"><p class="name only-pc">トヨタヴェルブリッツ</p></li>
+              <a class="btn-match-detail" href="/match/{code}">試合情報</a></div>'''
+        scraper = LeagueOneDivisionsScraper()
+        scraper._schedule_start_year = 2026
+        html = card("31135", '12.12<span class="youbi">土</span>', "未定") + card("31146", "日付未定", "未定")
+        extracted = scraper._extract_matches(BeautifulSoup(html, "html.parser"))
+        self.assertEqual(2, len(extracted))
+        self.assertEqual("2026-12-12", extracted[0]["kickoff_date"])
+        self.assertEqual("not_announced", extracted[0]["kickoff_unknown_reason"])
+        self.assertEqual("", extracted[0]["kickoff_utc"])
+        for div in (1, 2, 3):
+            with self.subTest(division=div), tempfile.TemporaryDirectory() as temporary:
+                matches = copy.deepcopy(extracted)
+                for match in matches:
+                    match["competition_id"] = f"jrlo-div{div}"
+                matches = scraper.assign_match_ids(matches)
+                included, coverage = scraper._partition_schedule_matches(matches, "2027")
+                self.assertEqual(1, len(included))
+                self.assertEqual(1, coverage["date_unannounced_count"])
+                self.assertEqual(2, coverage["observed_match_count"])
+                self.assertEqual("date_not_announced", coverage["date_unannounced"][0]["reason"])
+                self.assertEqual("https://league-one.jp/match/31146", coverage["date_unannounced"][0]["source_url"])
+                root = Path(temporary)
+                write_json_atomic(root / "competitions_base.json", [{"id": f"jrlo-div{div}", "official_sites": ["https://league-one.jp"]}])
+                path = root / f"matches/jrlo-div{div}/2027.json"
+                write_json_atomic(path, included)
+                self.assertEqual(1, validate_match_file(path)["unknown_kickoffs"])
+        for day, clock, expected in [('12.12<span class="youbi">土</span>', "13:00", "2026-12-12T04:00:00Z"), ("12.12", "13:00", "2026-12-12T04:00:00Z"), ('01.09<span class="youbi">土</span>', "13:00", "2027-01-09T04:00:00Z")]:
+            with self.subTest(day=day):
+                actual = scraper._extract_matches(BeautifulSoup(card("31135", day, clock), "html.parser"))[0]
+                self.assertEqual(expected, actual["kickoff_utc"])
+        for day, clock in [('02.30<span class="youbi">火</span>', "未定"), ("12.12", "broken"), ("unknown", "未定"), ("12.12garbage", "未定")]:
+            with self.subTest(day=day, clock=clock):
+                bad = scraper.assign_match_ids(scraper._extract_matches(BeautifulSoup(card("31135", day, clock), "html.parser")))
+                self.assertEqual("parse_failure", bad[0]["kickoff_unknown_reason"])
+                with self.assertRaises(ValueError):
+                    scraper._partition_schedule_matches(bad, "2027")
+
 
 class PublicationReliabilityTests(unittest.TestCase):
     def setUp(self):
@@ -373,6 +422,54 @@ class PublicationReliabilityTests(unittest.TestCase):
                 outcome = collect_source("urc", self.data_dir, self.health, run=self.fake_run([bad]))
                 self.assertEqual("failed", outcome["outcome"])
                 self.assertEqual(before, self.path.read_bytes())
+
+    def test_jrlo_mixed_dated_and_unannounced_dom_promotes_all_divisions_with_coverage(self):
+        masters = [{"id": f"jrlo-div{i}", "name": f"Division {i}", "official_sites": ["https://league-one.jp"]} for i in (1, 2, 3)]
+        write_json_atomic(self.data_dir / "competitions_base.json", masters)
+        def html(day='12.12<span class="youbi">土</span>', only_pending=False):
+            cards = []
+            for i in (1, 2, 3):
+                for index, date_text in enumerate((["日付未定"] if only_pending else [day, "日付未定"])):
+                    cards.append(f'''<div class="c-schedule"><h3 class="ttl">ディビジョン{i} 第1節</h3>
+                      <div class="datetime"><p class="date">{date_text}</p><p class="time">未定</p></div>
+                      <p class="place">ノエビアスタジアム神戸</p>
+                      <li class="home"><p class="name only-pc">コベルコ神戸スティーラーズ</p></li>
+                      <li class="away"><p class="name only-pc">トヨタヴェルブリッツ</p></li>
+                      <a class="btn-match-detail" href="/match/{31000 + i * 10 + index}">試合情報</a></div>''')
+            return '<select name="year"><option selected value="2026">2026-27</option></select>' + ''.join(cards)
+        def fake_jrlo(dom):
+            def run(command, *, env, **kwargs):
+                with patch.dict("os.environ", {"RUGBY_DATA_DIR": env["RUGBY_DATA_DIR"]}):
+                    scraper = LeagueOneDivisionsScraper()
+                    response = type("Response", (), {"content": dom.encode()})()
+                    with patch.object(scraper, "_fetch_schedule_page", return_value=response):
+                        result = scraper.scrape()
+                return subprocess.CompletedProcess(command, 1 if result is None else 0, "", "")
+            return run
+        result = collect_source("jrlo", self.data_dir, self.health, run=fake_jrlo(html()))
+        self.assertEqual("success", result["outcome"])
+        self.assertEqual(3, result["promoted_files"])
+        write_json_atomic(self.data_dir / "source_health.json", self.health)
+        _, manifest = build_competitions(self.data_dir)
+        before = {}
+        for comp in manifest["competitions"]:
+            path = self.data_dir / f"matches/{comp['id']}/2027.json"
+            before[path] = path.read_bytes()
+            self.assertEqual("partial", comp["status"])
+            self.assertEqual(1, comp["coverage"]["unknown_kickoffs"])
+            self.assertEqual(0, comp["coverage"]["known_kickoffs"])
+            self.assertEqual(1, comp["collection_coverage"]["date_unannounced_count"])
+            self.assertEqual("date_not_announced", comp["collection_coverage"]["date_unannounced"][0]["reason"])
+        for invalid in ['02.30<span class="youbi">火</span>', "missing"]:
+            result = collect_source("jrlo", self.data_dir, self.health, run=fake_jrlo(html(invalid)))
+            self.assertEqual("failed", result["outcome"])
+            for path, expected in before.items():
+                self.assertEqual(expected, path.read_bytes())
+        result = collect_source("jrlo", self.data_dir, self.health, run=fake_jrlo(html(only_pending=True)))
+        self.assertEqual("no_fixtures", result["outcome"])
+        self.assertEqual(0, result["promoted_files"])
+        for path, expected in before.items():
+            self.assertEqual(expected, path.read_bytes())
 
     def test_second_invalid_file_rejects_the_whole_source_without_promoting_first(self):
         before = self.path.read_bytes()

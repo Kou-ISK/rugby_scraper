@@ -162,7 +162,7 @@ def build_competitions(data_dir=DATA_DIR):
             status = "stale"
         elif datetime.now(timezone.utc) - date_parser.isoparse(last_success) > timedelta(days=14):
             status = "stale"
-        elif unknown or any(f["trust"] != "verified" for f in files):
+        elif unknown or source_health.get("collection_coverage", {}).get("date_unannounced_count", 0) or any(f["trust"] != "verified" for f in files):
             status = "partial"
         manifest_competitions.append({
             "id": comp_id, "name": base.get("name", comp_id),
@@ -172,6 +172,7 @@ def build_competitions(data_dir=DATA_DIR):
             "error": source_health.get("error", "") or ("No verified fixture files available" if not data_paths else ""),
             "coverage": {"match_count": match_count, "known_kickoffs": match_count - unknown,
                          "unknown_kickoffs": unknown, "date_range": date_range or {"start": "", "end": ""}},
+            "collection_coverage": source_health.get("collection_coverage", {}),
             "files": files,
         })
     return competitions, {"schema_version": 1, "generated_at": utc_now(), "competitions": manifest_competitions}
