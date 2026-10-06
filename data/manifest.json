@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-01T23:36:37.415832Z",
+  "generated_at": "2026-10-06T18:59:13.524032Z",
   "competitions": [
     {
       "id": "m6n",
@@ -196,10 +196,10 @@
       "seasons": [
         "2026-2027"
       ],
-      "status": "healthy",
+      "status": "partial",
       "last_success_at": "2026-10-01T23:06:49.366722Z",
       "last_attempt_at": "2026-10-01T23:06:49.366722Z",
-      "error": "",
+      "error": "Only observed official calendar rounds are covered; future rounds may be missing",
       "coverage": {
         "match_count": 7,
         "known_kickoffs": 7,
@@ -209,7 +209,13 @@
           "end": "2026-10-04T19:05:00Z"
         }
       },
-      "collection_coverage": {},
+      "collection_coverage": {
+        "scope": "observed_rounds",
+        "complete": false,
+        "included_match_count": 7,
+        "scope_evidence": "reviewed_legacy_collector",
+        "warning": "Only observed official calendar rounds are covered; future rounds may be missing"
+      },
       "files": [
         {
           "path": "data/matches/t14/2026-2027.json",
@@ -854,10 +860,10 @@
       "seasons": [
         "2026"
       ],
-      "status": "healthy",
+      "status": "partial",
       "last_success_at": "2026-10-01T23:06:29.062690Z",
       "last_attempt_at": "2026-10-01T23:06:29.062690Z",
-      "error": "",
+      "error": "Published regular-season draw only; finals are not included",
       "coverage": {
         "match_count": 77,
         "known_kickoffs": 77,
@@ -867,7 +873,13 @@
           "end": "2026-05-30T09:35:00Z"
         }
       },
-      "collection_coverage": {},
+      "collection_coverage": {
+        "scope": "regular_season",
+        "complete": false,
+        "included_match_count": 77,
+        "scope_evidence": "reviewed_legacy_collector",
+        "warning": "Published regular-season draw only; finals are not included"
+      },
       "files": [
         {
           "path": "data/matches/srp/2026.json",
