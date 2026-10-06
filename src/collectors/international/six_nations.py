@@ -273,7 +273,7 @@ class SixNationsBaseScraper(BaseScraper):
                 kickoff_dt = self._parse_display_datetime(date_text)
                 if kickoff_dt:
                     print(f"  パース結果: {kickoff_dt}")
-                    kickoff_dt = kickoff_dt.replace(tzinfo=ZoneInfo(timezone_name))
+                    kickoff_dt = kickoff_dt.astimezone(ZoneInfo(timezone_name))
             
             # どちらも取れない場合は警告
             if not kickoff_dt:
