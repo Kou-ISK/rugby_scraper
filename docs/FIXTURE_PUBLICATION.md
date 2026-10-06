@@ -93,6 +93,26 @@ CI. Draft branch dispatches upload evidence and do not publish to `data`. It doe
 not enable disabled schedules. The publisher uses a normal push and rejects a
 concurrent data writer instead of force-overwriting its history.
 
+## Legacy scope and display-clock compatibility
+
+Metadata generation annotates verified legacy TOP14 `2026-2027.json` and SRP
+`2026.json` when their source ledger has no declared collection scope. They use
+`observed_rounds` / `regular_season`, `complete: false`, retained included counts,
+and `scope_evidence: reviewed_legacy_collector`. No new observed count, success or
+attempt time, verified digest, or match bytes are produced. Explicit declarations
+and unknown future paths stay unchanged; failed/aged sources remain stale and
+missing verified data remains unavailable.
+
+Deploy a consumer that accepts this bounded-scope contract, verify it against the
+old manifest, then publish producer code and regenerate metadata only with
+`python -m src.repositories.competition_repository`. Source collection is not
+needed for that update. This change leaves season selection, PDF parsing, source
+requests and workflow definitions unchanged.
+
+Six Nations display clocks come from the browser's configured London timezone.
+Fallback conversion to Paris/Rome uses `astimezone` to retain the same instant;
+URL clocks keep their existing priority and venue-local interpretation.
+
 ## Commands
 
 ```bash

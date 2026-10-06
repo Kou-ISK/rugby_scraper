@@ -35,6 +35,37 @@ PLACEHOLDER_TEAM_TOKENS = [
 ]
 PLACEHOLDER_TEAM_EXACT = {"TBC", "TBD", "TBA", "-"}
 
+KNOWN_LEGACY_SCOPES = {
+    "t14": {
+        "paths": {"data/matches/t14/2026-2027.json"},
+        "scope": "observed_rounds",
+        "warning": "Only observed official calendar rounds are covered; future rounds may be missing",
+    },
+    "srp": {
+        "paths": {"data/matches/srp/2026.json"},
+        "scope": "regular_season",
+        "warning": "Published regular-season draw only; finals are not included",
+    },
+}
+
+
+def effective_collection_coverage(comp_id, data_paths, match_count, declared):
+    """Annotate reviewed legacy scope, never invent a new collection attempt."""
+    coverage = dict(declared) if isinstance(declared, dict) else {}
+    policy = KNOWN_LEGACY_SCOPES.get(comp_id)
+    if not data_paths or not policy or not set(data_paths).issubset(policy["paths"]):
+        return coverage
+    if coverage.get("scope") or isinstance(coverage.get("complete"), bool):
+        return coverage
+    return {
+        **coverage,
+        "scope": policy["scope"],
+        "complete": False,
+        "included_match_count": match_count,
+        "scope_evidence": "reviewed_legacy_collector",
+        "warning": policy["warning"],
+    }
+
 
 def load_base_competitions():
     if not BASE_JSON.exists():
@@ -154,6 +185,7 @@ def build_competitions(data_dir=DATA_DIR):
         }
         competitions.append(competition)
         source_health = health.get("sources", {}).get(comp_id, {})
+        collection_coverage = effective_collection_coverage(comp_id, data_paths, match_count, source_health.get("collection_coverage"))
         last_success = source_health.get("last_success_at", "")
         status = "healthy"
         if not data_paths:
@@ -162,17 +194,17 @@ def build_competitions(data_dir=DATA_DIR):
             status = "stale"
         elif datetime.now(timezone.utc) - date_parser.isoparse(last_success) > timedelta(days=14):
             status = "stale"
-        elif unknown or source_health.get("collection_coverage", {}).get("date_unannounced_count", 0) or any(f["trust"] != "verified" for f in files):
+        elif unknown or collection_coverage.get("complete") is False or collection_coverage.get("date_unannounced_count", 0) or any(f["trust"] != "verified" for f in files):
             status = "partial"
         manifest_competitions.append({
             "id": comp_id, "name": base.get("name", comp_id),
             "data_paths": data_paths, "seasons": sorted(seasons), "status": status,
             "last_success_at": last_success,
             "last_attempt_at": source_health.get("last_attempt_at", ""),
-            "error": source_health.get("error", "") or ("No verified fixture files available" if not data_paths else ""),
+            "error": source_health.get("error", "") or ("No verified fixture files available" if not data_paths else collection_coverage.get("warning", "")),
             "coverage": {"match_count": match_count, "known_kickoffs": match_count - unknown,
                          "unknown_kickoffs": unknown, "date_range": date_range or {"start": "", "end": ""}},
-            "collection_coverage": source_health.get("collection_coverage", {}),
+            "collection_coverage": collection_coverage,
             "files": files,
         })
     return competitions, {"schema_version": 1, "generated_at": utc_now(), "competitions": manifest_competitions}
